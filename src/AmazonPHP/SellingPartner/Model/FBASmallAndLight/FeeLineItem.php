@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace AmazonPHP\SellingPartner\Model\FBASmallAndLight;
+namespace Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight;
 
 use AmazonPHP\SellingPartner\ModelInterface;
 use AmazonPHP\SellingPartner\ObjectSerializer;

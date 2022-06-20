@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace AmazonPHP\SellingPartner\Model\Authorization;
+namespace Plenty\AmazonPHP\SellingPartner\Model\Authorization;
 
 use AmazonPHP\SellingPartner\ModelInterface;
 use AmazonPHP\SellingPartner\ObjectSerializer;

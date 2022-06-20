@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AmazonPHP\SellingPartner;
+namespace Plenty\AmazonPHP\SellingPartner;
 
 use AmazonPHP\SellingPartner\Exception\ApiException;
 use AmazonPHP\SellingPartner\STSClient\Credentials;

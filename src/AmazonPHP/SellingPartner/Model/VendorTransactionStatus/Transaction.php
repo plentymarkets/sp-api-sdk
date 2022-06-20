@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace AmazonPHP\SellingPartner\Model\VendorTransactionStatus;
+namespace Plenty\AmazonPHP\SellingPartner\Model\VendorTransactionStatus;
 
 use AmazonPHP\SellingPartner\ModelInterface;
 use AmazonPHP\SellingPartner\ObjectSerializer;

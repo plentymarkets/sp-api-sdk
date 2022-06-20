@@ -1,5 +1,5 @@
 {
-    "name": "amazon-php/sp-api-sdk",
+    "name": "plentymarkets/amazon-sp-api-sdk",
     "description": "Amazon Selling Partner API - PHP SDK",
     "keywords": ["amazon", "selling-partner-api", "php", "sdk", "rest", "api"],
     "homepage": "https://openapi-generator.tech",
@@ -31,10 +31,10 @@
         "monolog/monolog": "^2.2"
     },
     "autoload": {
-        "psr-4": { "AmazonPHP\\" : "src/AmazonPHP/" }
+        "psr-4": { "Plenty\\AmazonPHP\\" : "src/AmazonPHP/" }
     },
     "autoload-dev": {
-        "psr-4": { "AmazonPHP\\Test\\" : "tests/" }
+        "psr-4": { "Plenty\\AmazonPHP\\Test\\" : "tests/" }
     },
     "scripts": {
         "clean": [

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AmazonPHP\Test\AmazonPHP\SellingPartner\Tests\Unit;
+namespace Plenty\AmazonPHP\Test\AmazonPHP\SellingPartner\Tests\Unit;
 
 use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
 use AmazonPHP\SellingPartner\Marketplace;

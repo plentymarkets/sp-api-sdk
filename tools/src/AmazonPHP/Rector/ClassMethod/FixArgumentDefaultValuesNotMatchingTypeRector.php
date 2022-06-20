@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AmazonPHP\Rector\ClassMethod;
+namespace Plenty\AmazonPHP\Rector\ClassMethod;
 
 use PhpParser\Node;
 use PhpParser\Node\Stmt\ClassMethod;

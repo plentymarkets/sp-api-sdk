@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace AmazonPHP\SellingPartner\Model\ShipmentInvoicing;
+namespace Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing;
 
 use AmazonPHP\SellingPartner\ModelInterface;
 use AmazonPHP\SellingPartner\ObjectSerializer;

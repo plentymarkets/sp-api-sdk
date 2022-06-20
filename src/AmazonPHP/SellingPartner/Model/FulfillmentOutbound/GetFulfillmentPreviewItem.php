@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace AmazonPHP\SellingPartner\Model\FulfillmentOutbound;
+namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound;
 
 use AmazonPHP\SellingPartner\ModelInterface;
 use AmazonPHP\SellingPartner\ObjectSerializer;

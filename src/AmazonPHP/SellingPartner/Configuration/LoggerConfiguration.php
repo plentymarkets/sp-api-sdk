@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AmazonPHP\SellingPartner\Configuration;
+namespace Plenty\AmazonPHP\SellingPartner\Configuration;
 
 use Psr\Log\LogLevel;
 
