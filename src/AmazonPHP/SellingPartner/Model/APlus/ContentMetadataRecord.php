@@ -263,7 +263,7 @@ class ContentMetadataRecord implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets content_metadata.
      *
-     * @param \AmazonPHP\SellingPartner\Model\APlus\ContentMetadata $content_metadata content_metadata
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentMetadata $content_metadata content_metadata
      */
     public function setContentMetadata(ContentMetadata $content_metadata) : self
     {

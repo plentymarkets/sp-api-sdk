@@ -289,7 +289,7 @@ class SearchContentDocumentsResponse implements \ArrayAccess, \JsonSerializable,
     /**
      * Sets content_metadata_records.
      *
-     * @param \AmazonPHP\SellingPartner\Model\APlus\ContentMetadataRecord[] $content_metadata_records a list of A+ Content metadata records
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentMetadataRecord[] $content_metadata_records a list of A+ Content metadata records
      */
     public function setContentMetadataRecords(array $content_metadata_records) : self
     {

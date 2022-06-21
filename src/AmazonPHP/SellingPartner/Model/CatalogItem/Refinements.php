@@ -237,7 +237,7 @@ class Refinements implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets brands.
      *
-     * @param \AmazonPHP\SellingPartner\Model\CatalogItem\BrandRefinement[] $brands brand search refinements
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\CatalogItem\BrandRefinement[] $brands brand search refinements
      */
     public function setBrands(array $brands) : self
     {
@@ -259,7 +259,7 @@ class Refinements implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets classifications.
      *
-     * @param \AmazonPHP\SellingPartner\Model\CatalogItem\ClassificationRefinement[] $classifications classification search refinements
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\CatalogItem\ClassificationRefinement[] $classifications classification search refinements
      */
     public function setClassifications(array $classifications) : self
     {

@@ -227,7 +227,7 @@ class GetSolicitationActionsForOrderResponseEmbedded implements \ArrayAccess, \J
     /**
      * Sets actions.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Solicitations\GetSolicitationActionResponse[] $actions actions
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Solicitations\GetSolicitationActionResponse[] $actions actions
      */
     public function setActions(array $actions) : self
     {

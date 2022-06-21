@@ -235,7 +235,7 @@ class GetMessagingActionsForOrderResponseLinks implements \ArrayAccess, \JsonSer
     /**
      * Sets self.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Messaging\LinkObject $self self
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Messaging\LinkObject $self self
      */
     public function setSelf(LinkObject $self) : self
     {
@@ -257,7 +257,7 @@ class GetMessagingActionsForOrderResponseLinks implements \ArrayAccess, \JsonSer
     /**
      * Sets actions.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Messaging\LinkObject[] $actions eligible actions for the specified amazonOrderId
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Messaging\LinkObject[] $actions eligible actions for the specified amazonOrderId
      */
     public function setActions(array $actions) : self
     {

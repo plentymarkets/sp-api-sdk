@@ -237,7 +237,7 @@ class TransportResult implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets transport_status.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportStatus $transport_status transport_status
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportStatus $transport_status transport_status
      */
     public function setTransportStatus(TransportStatus $transport_status) : self
     {

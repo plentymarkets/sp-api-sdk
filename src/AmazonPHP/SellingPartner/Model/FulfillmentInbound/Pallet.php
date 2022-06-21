@@ -241,7 +241,7 @@ class Pallet implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets dimensions.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions $dimensions dimensions
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions $dimensions dimensions
      */
     public function setDimensions(Dimensions $dimensions) : self
     {

@@ -285,7 +285,7 @@ class SmallAndLightEnrollment implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Sets status.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FBASmallAndLight\SmallAndLightEnrollmentStatus $status status
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\SmallAndLightEnrollmentStatus $status status
      */
     public function setStatus(SmallAndLightEnrollmentStatus $status) : self
     {

@@ -68,8 +68,8 @@ final class FeedsSDK
      * @param AccessToken $accessToken
      * @param string $feed_id The identifier for the feed. This identifier is unique only in combination with a seller ID. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function cancelFeed(AccessToken $accessToken, string $region, string $feed_id)
     {
@@ -159,7 +159,7 @@ final class FeedsSDK
      * @param AccessToken $accessToken
      * @param string $feed_id The identifier for the feed. This identifier is unique only in combination with a seller ID. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function cancelFeedRequest(AccessToken $accessToken, string $region, string $feed_id) : RequestInterface
     {
@@ -249,12 +249,12 @@ final class FeedsSDK
      * Operation createFeed.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\Feeds\CreateFeedSpecification $body body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Feeds\CreateFeedSpecification $body body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createFeed(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\Feeds\CreateFeedSpecification $body) : \AmazonPHP\SellingPartner\Model\Feeds\CreateFeedResponse
+    public function createFeed(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\Feeds\CreateFeedSpecification $body) : \AmazonPHP\SellingPartner\Model\Feeds\CreateFeedResponse
     {
         $request = $this->createFeedRequest($accessToken, $region, $body);
 
@@ -345,11 +345,11 @@ final class FeedsSDK
      * Create request for operation 'createFeed'.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\Feeds\CreateFeedSpecification $body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Feeds\CreateFeedSpecification $body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createFeedRequest(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\Feeds\CreateFeedSpecification $body) : RequestInterface
+    public function createFeedRequest(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\Feeds\CreateFeedSpecification $body) : RequestInterface
     {
         // verify the required parameter 'body' is set
         if ($body === null || (\is_array($body) && \count($body) === 0)) {
@@ -436,12 +436,12 @@ final class FeedsSDK
      * Operation createFeedDocument.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\Feeds\CreateFeedDocumentSpecification $body body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Feeds\CreateFeedDocumentSpecification $body body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createFeedDocument(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\Feeds\CreateFeedDocumentSpecification $body) : \AmazonPHP\SellingPartner\Model\Feeds\CreateFeedDocumentResponse
+    public function createFeedDocument(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\Feeds\CreateFeedDocumentSpecification $body) : \AmazonPHP\SellingPartner\Model\Feeds\CreateFeedDocumentResponse
     {
         $request = $this->createFeedDocumentRequest($accessToken, $region, $body);
 
@@ -532,11 +532,11 @@ final class FeedsSDK
      * Create request for operation 'createFeedDocument'.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\Feeds\CreateFeedDocumentSpecification $body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Feeds\CreateFeedDocumentSpecification $body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createFeedDocumentRequest(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\Feeds\CreateFeedDocumentSpecification $body) : RequestInterface
+    public function createFeedDocumentRequest(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\Feeds\CreateFeedDocumentSpecification $body) : RequestInterface
     {
         // verify the required parameter 'body' is set
         if ($body === null || (\is_array($body) && \count($body) === 0)) {
@@ -625,8 +625,8 @@ final class FeedsSDK
      * @param AccessToken $accessToken
      * @param string $feed_id The identifier for the feed. This identifier is unique only in combination with a seller ID. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getFeed(AccessToken $accessToken, string $region, string $feed_id) : \AmazonPHP\SellingPartner\Model\Feeds\Feed
     {
@@ -721,7 +721,7 @@ final class FeedsSDK
      * @param AccessToken $accessToken
      * @param string $feed_id The identifier for the feed. This identifier is unique only in combination with a seller ID. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getFeedRequest(AccessToken $accessToken, string $region, string $feed_id) : RequestInterface
     {
@@ -813,8 +813,8 @@ final class FeedsSDK
      * @param AccessToken $accessToken
      * @param string $feed_document_id The identifier of the feed document. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getFeedDocument(AccessToken $accessToken, string $region, string $feed_document_id) : \AmazonPHP\SellingPartner\Model\Feeds\FeedDocument
     {
@@ -909,7 +909,7 @@ final class FeedsSDK
      * @param AccessToken $accessToken
      * @param string $feed_document_id The identifier of the feed document. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getFeedDocumentRequest(AccessToken $accessToken, string $region, string $feed_document_id) : RequestInterface
     {
@@ -1007,8 +1007,8 @@ final class FeedsSDK
      * @param \DateTime $created_until The latest feed creation date and time for feeds included in the response, in ISO 8601 format. The default is now. (optional)
      * @param string $next_token A string token returned in the response to your previous request. nextToken is returned when the number of results exceeds the specified pageSize value. To get the next page of results, call the getFeeds operation and include this token as the only parameter. Specifying nextToken with any other parameters will cause the request to fail. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getFeeds(AccessToken $accessToken, string $region, array $feed_types = null, array $marketplace_ids = null, int $page_size = 10, array $processing_statuses = null, \DateTimeInterface $created_since = null, \DateTimeInterface $created_until = null, string $next_token = null) : \AmazonPHP\SellingPartner\Model\Feeds\GetFeedsResponse
     {
@@ -1109,7 +1109,7 @@ final class FeedsSDK
      * @param \DateTime $created_until The latest feed creation date and time for feeds included in the response, in ISO 8601 format. The default is now. (optional)
      * @param string $next_token A string token returned in the response to your previous request. nextToken is returned when the number of results exceeds the specified pageSize value. To get the next page of results, call the getFeeds operation and include this token as the only parameter. Specifying nextToken with any other parameters will cause the request to fail. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getFeedsRequest(AccessToken $accessToken, string $region, array $feed_types = null, array $marketplace_ids = null, int $page_size = 10, array $processing_statuses = null, \DateTimeInterface $created_since = null, \DateTimeInterface $created_until = null, string $next_token = null) : RequestInterface
     {

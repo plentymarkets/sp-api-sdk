@@ -257,7 +257,7 @@ class CreateInboundShipmentPlanRequest implements \ArrayAccess, \JsonSerializabl
     /**
      * Sets ship_from_address.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Address $ship_from_address ship_from_address
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Address $ship_from_address ship_from_address
      */
     public function setShipFromAddress(Address $ship_from_address) : self
     {
@@ -277,7 +277,7 @@ class CreateInboundShipmentPlanRequest implements \ArrayAccess, \JsonSerializabl
     /**
      * Sets label_prep_preference.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\LabelPrepPreference $label_prep_preference label_prep_preference
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\LabelPrepPreference $label_prep_preference label_prep_preference
      */
     public function setLabelPrepPreference(LabelPrepPreference $label_prep_preference) : self
     {
@@ -339,7 +339,7 @@ class CreateInboundShipmentPlanRequest implements \ArrayAccess, \JsonSerializabl
     /**
      * Sets inbound_shipment_plan_request_items.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentPlanRequestItem[] $inbound_shipment_plan_request_items inbound_shipment_plan_request_items
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentPlanRequestItem[] $inbound_shipment_plan_request_items inbound_shipment_plan_request_items
      */
     public function setInboundShipmentPlanRequestItems(array $inbound_shipment_plan_request_items) : self
     {

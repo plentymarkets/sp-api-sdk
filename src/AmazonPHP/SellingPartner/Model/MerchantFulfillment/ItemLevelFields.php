@@ -257,7 +257,7 @@ class ItemLevelFields implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets additional_inputs.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalInputs[] $additional_inputs a list of additional inputs
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalInputs[] $additional_inputs a list of additional inputs
      */
     public function setAdditionalInputs(array $additional_inputs) : self
     {

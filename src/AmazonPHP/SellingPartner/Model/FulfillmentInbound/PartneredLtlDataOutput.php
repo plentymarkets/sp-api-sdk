@@ -349,7 +349,7 @@ class PartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets contact.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Contact $contact contact
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Contact $contact contact
      */
     public function setContact(Contact $contact) : self
     {
@@ -433,7 +433,7 @@ class PartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets pallet_list.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pallet[] $pallet_list a list of pallet information
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pallet[] $pallet_list a list of pallet information
      */
     public function setPalletList(array $pallet_list) : self
     {
@@ -453,7 +453,7 @@ class PartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets total_weight.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight $total_weight total_weight
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight $total_weight total_weight
      */
     public function setTotalWeight(Weight $total_weight) : self
     {
@@ -557,7 +557,7 @@ class PartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets preview_freight_class.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\SellerFreightClass $preview_freight_class preview_freight_class
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SellerFreightClass $preview_freight_class preview_freight_class
      */
     public function setPreviewFreightClass(SellerFreightClass $preview_freight_class) : self
     {

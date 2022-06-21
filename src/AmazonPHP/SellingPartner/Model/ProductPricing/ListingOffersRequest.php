@@ -287,7 +287,7 @@ class ListingOffersRequest implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Sets method.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\HttpMethod $method method
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\HttpMethod $method method
      */
     public function setMethod(HttpMethod $method) : self
     {
@@ -349,7 +349,7 @@ class ListingOffersRequest implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Sets item_condition.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\ItemCondition $item_condition item_condition
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ItemCondition $item_condition item_condition
      */
     public function setItemCondition(ItemCondition $item_condition) : self
     {

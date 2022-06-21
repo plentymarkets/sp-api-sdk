@@ -349,7 +349,7 @@ class ShipmentRequestDetails implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets item_list.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\Item[] $item_list the list of items to be included in a shipment
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Item[] $item_list the list of items to be included in a shipment
      */
     public function setItemList(array $item_list) : self
     {
@@ -369,7 +369,7 @@ class ShipmentRequestDetails implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets ship_from_address.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\Address $ship_from_address ship_from_address
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Address $ship_from_address ship_from_address
      */
     public function setShipFromAddress(Address $ship_from_address) : self
     {
@@ -389,7 +389,7 @@ class ShipmentRequestDetails implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets package_dimensions.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\PackageDimensions $package_dimensions package_dimensions
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\PackageDimensions $package_dimensions package_dimensions
      */
     public function setPackageDimensions(PackageDimensions $package_dimensions) : self
     {
@@ -409,7 +409,7 @@ class ShipmentRequestDetails implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets weight.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\Weight $weight weight
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Weight $weight weight
      */
     public function setWeight(Weight $weight) : self
     {
@@ -473,7 +473,7 @@ class ShipmentRequestDetails implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets shipping_service_options.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShippingServiceOptions $shipping_service_options shipping_service_options
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShippingServiceOptions $shipping_service_options shipping_service_options
      */
     public function setShippingServiceOptions(ShippingServiceOptions $shipping_service_options) : self
     {

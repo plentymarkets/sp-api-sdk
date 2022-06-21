@@ -315,7 +315,7 @@ class TransportHeader implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipment_type.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentType $shipment_type shipment_type
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentType $shipment_type shipment_type
      */
     public function setShipmentType(ShipmentType $shipment_type) : self
     {

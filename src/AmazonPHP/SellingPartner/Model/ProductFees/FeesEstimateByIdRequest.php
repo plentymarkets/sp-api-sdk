@@ -261,7 +261,7 @@ class FeesEstimateByIdRequest implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Sets id_type.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductFees\IdType $id_type id_type
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductFees\IdType $id_type id_type
      */
     public function setIdType(IdType $id_type) : self
     {

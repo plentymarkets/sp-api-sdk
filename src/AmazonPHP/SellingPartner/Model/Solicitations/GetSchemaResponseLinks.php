@@ -225,7 +225,7 @@ class GetSchemaResponseLinks implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets self.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Solicitations\LinkObject $self self
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Solicitations\LinkObject $self self
      */
     public function setSelf(LinkObject $self) : self
     {

@@ -297,7 +297,7 @@ class FulfillmentPreview implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets shipping_speed_category.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ShippingSpeedCategory $shipping_speed_category shipping_speed_category
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ShippingSpeedCategory $shipping_speed_category shipping_speed_category
      */
     public function setShippingSpeedCategory(ShippingSpeedCategory $shipping_speed_category) : self
     {

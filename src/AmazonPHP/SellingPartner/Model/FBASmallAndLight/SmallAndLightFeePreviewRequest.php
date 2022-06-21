@@ -261,7 +261,7 @@ class SmallAndLightFeePreviewRequest implements \ArrayAccess, \JsonSerializable,
     /**
      * Sets items.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FBASmallAndLight\Item[] $items a list of items for which to retrieve fee estimates (limit: 25)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\Item[] $items a list of items for which to retrieve fee estimates (limit: 25)
      */
     public function setItems(array $items) : self
     {

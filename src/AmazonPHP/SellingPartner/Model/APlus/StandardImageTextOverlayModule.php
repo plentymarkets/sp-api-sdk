@@ -231,7 +231,7 @@ class StandardImageTextOverlayModule implements \ArrayAccess, \JsonSerializable,
     /**
      * Sets overlay_color_type.
      *
-     * @param \AmazonPHP\SellingPartner\Model\APlus\ColorType $overlay_color_type overlay_color_type
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\APlus\ColorType $overlay_color_type overlay_color_type
      */
     public function setOverlayColorType(ColorType $overlay_color_type) : self
     {

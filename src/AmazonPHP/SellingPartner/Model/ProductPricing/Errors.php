@@ -227,7 +227,7 @@ class Errors implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets errors.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(array $errors) : self
     {

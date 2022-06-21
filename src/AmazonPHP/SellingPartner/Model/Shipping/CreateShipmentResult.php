@@ -257,7 +257,7 @@ class CreateShipmentResult implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Sets eligible_rates.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\Rate[] $eligible_rates a list of all the available rates that can be used to send the shipment
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\Rate[] $eligible_rates a list of all the available rates that can be used to send the shipment
      */
     public function setEligibleRates(array $eligible_rates) : self
     {

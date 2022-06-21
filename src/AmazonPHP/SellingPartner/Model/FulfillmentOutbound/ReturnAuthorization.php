@@ -305,7 +305,7 @@ class ReturnAuthorization implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets return_to_address.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Address $return_to_address return_to_address
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Address $return_to_address return_to_address
      */
     public function setReturnToAddress(Address $return_to_address) : self
     {

@@ -444,7 +444,7 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets remit_to_party.
      *
-     * @param \AmazonPHP\SellingPartner\Model\VendorInvoices\PartyIdentification $remit_to_party remit_to_party
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\PartyIdentification $remit_to_party remit_to_party
      */
     public function setRemitToParty(PartyIdentification $remit_to_party) : self
     {
@@ -544,7 +544,7 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets invoice_total.
      *
-     * @param \AmazonPHP\SellingPartner\Model\VendorInvoices\Money $invoice_total invoice_total
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\Money $invoice_total invoice_total
      */
     public function setInvoiceTotal(Money $invoice_total) : self
     {

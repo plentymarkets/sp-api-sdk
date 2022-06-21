@@ -336,7 +336,7 @@ class AllowanceDetails implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Sets allowance_amount.
      *
-     * @param \AmazonPHP\SellingPartner\Model\VendorInvoices\Money $allowance_amount allowance_amount
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\Money $allowance_amount allowance_amount
      */
     public function setAllowanceAmount(Money $allowance_amount) : self
     {

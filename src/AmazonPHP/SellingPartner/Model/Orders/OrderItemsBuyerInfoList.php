@@ -243,7 +243,7 @@ class OrderItemsBuyerInfoList implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Sets order_items.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Orders\OrderItemBuyerInfo[] $order_items a single order item's buyer information list
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Orders\OrderItemBuyerInfo[] $order_items a single order item's buyer information list
      */
     public function setOrderItems(array $order_items) : self
     {

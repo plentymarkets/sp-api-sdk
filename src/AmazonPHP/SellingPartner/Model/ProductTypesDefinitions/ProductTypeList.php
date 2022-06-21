@@ -227,7 +227,7 @@ class ProductTypeList implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets product_types.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\ProductType[] $product_types product_types
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\ProductType[] $product_types product_types
      */
     public function setProductTypes(array $product_types) : self
     {

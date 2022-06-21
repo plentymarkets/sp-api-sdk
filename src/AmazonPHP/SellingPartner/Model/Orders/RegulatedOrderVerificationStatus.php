@@ -263,7 +263,7 @@ class RegulatedOrderVerificationStatus implements \ArrayAccess, \JsonSerializabl
     /**
      * Sets status.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Orders\VerificationStatus $status status
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Orders\VerificationStatus $status status
      */
     public function setStatus(VerificationStatus $status) : self
     {
@@ -305,7 +305,7 @@ class RegulatedOrderVerificationStatus implements \ArrayAccess, \JsonSerializabl
     /**
      * Sets valid_rejection_reasons.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Orders\RejectionReason[] $valid_rejection_reasons a list of valid rejection reasons that may be used to reject the order's regulated information
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Orders\RejectionReason[] $valid_rejection_reasons a list of valid rejection reasons that may be used to reject the order's regulated information
      */
     public function setValidRejectionReasons(array $valid_rejection_reasons) : self
     {

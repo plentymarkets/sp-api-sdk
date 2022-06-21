@@ -227,7 +227,7 @@ class RegulatedInformation implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Sets fields.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Orders\RegulatedInformationField[] $fields a list of regulated information fields as collected from the regulatory form
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Orders\RegulatedInformationField[] $fields a list of regulated information fields as collected from the regulatory form
      */
     public function setFields(array $fields) : self
     {

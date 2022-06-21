@@ -285,7 +285,7 @@ class GetFulfillmentPreviewRequest implements \ArrayAccess, \JsonSerializable, M
     /**
      * Sets address.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Address $address address
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Address $address address
      */
     public function setAddress(Address $address) : self
     {
@@ -307,7 +307,7 @@ class GetFulfillmentPreviewRequest implements \ArrayAccess, \JsonSerializable, M
     /**
      * Sets items.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\GetFulfillmentPreviewItem[] $items an array of fulfillment preview item information
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\GetFulfillmentPreviewItem[] $items an array of fulfillment preview item information
      */
     public function setItems(array $items) : self
     {

@@ -261,7 +261,7 @@ class GetRatesRequest implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets ship_to.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\Address $ship_to ship_to
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\Address $ship_to ship_to
      */
     public function setShipTo(Address $ship_to) : self
     {
@@ -281,7 +281,7 @@ class GetRatesRequest implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets ship_from.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\Address $ship_from ship_from
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\Address $ship_from ship_from
      */
     public function setShipFrom(Address $ship_from) : self
     {
@@ -303,7 +303,7 @@ class GetRatesRequest implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets service_types.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\ServiceType[] $service_types a list of service types that can be used to send the shipment
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\ServiceType[] $service_types a list of service types that can be used to send the shipment
      */
     public function setServiceTypes(array $service_types) : self
     {
@@ -347,7 +347,7 @@ class GetRatesRequest implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets container_specifications.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\ContainerSpecification[] $container_specifications a list of container specifications
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\ContainerSpecification[] $container_specifications a list of container specifications
      */
     public function setContainerSpecifications(array $container_specifications) : self
     {

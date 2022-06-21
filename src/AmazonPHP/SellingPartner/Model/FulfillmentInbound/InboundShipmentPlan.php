@@ -311,7 +311,7 @@ class InboundShipmentPlan implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets ship_to_address.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Address $ship_to_address ship_to_address
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Address $ship_to_address ship_to_address
      */
     public function setShipToAddress(Address $ship_to_address) : self
     {
@@ -331,7 +331,7 @@ class InboundShipmentPlan implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets label_prep_type.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\LabelPrepType $label_prep_type label_prep_type
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\LabelPrepType $label_prep_type label_prep_type
      */
     public function setLabelPrepType(LabelPrepType $label_prep_type) : self
     {
@@ -353,7 +353,7 @@ class InboundShipmentPlan implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets items.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentPlanItem[] $items a list of inbound shipment plan item information
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentPlanItem[] $items a list of inbound shipment plan item information
      */
     public function setItems(array $items) : self
     {

@@ -227,7 +227,7 @@ class GetRatesResult implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets service_rates.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\ServiceRate[] $service_rates a list of service rates
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\ServiceRate[] $service_rates a list of service rates
      */
     public function setServiceRates(array $service_rates) : self
     {

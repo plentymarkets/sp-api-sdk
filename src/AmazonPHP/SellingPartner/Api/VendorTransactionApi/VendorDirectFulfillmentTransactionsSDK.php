@@ -48,8 +48,8 @@ final class VendorDirectFulfillmentTransactionsSDK
      * @param AccessToken $accessToken
      * @param string $transaction_id Previously returned in the response to the POST request of a specific transaction. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getTransactionStatus(AccessToken $accessToken, string $region, string $transaction_id) : \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentTransactions\TransactionStatus
     {
@@ -144,7 +144,7 @@ final class VendorDirectFulfillmentTransactionsSDK
      * @param AccessToken $accessToken
      * @param string $transaction_id Previously returned in the response to the POST request of a specific transaction. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getTransactionStatusRequest(AccessToken $accessToken, string $region, string $transaction_id) : RequestInterface
     {

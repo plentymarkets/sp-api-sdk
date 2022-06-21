@@ -55,8 +55,8 @@ final class CatalogItemSDK
      * @param string[] $included_data A comma-delimited list of data sets to include in the response. Default: summaries. (optional)
      * @param string $locale Locale for retrieving localized summaries. Defaults to the primary locale of the marketplace. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getCatalogItem(AccessToken $accessToken, string $region, string $asin, array $marketplace_ids, array $included_data = null, string $locale = null) : \AmazonPHP\SellingPartner\Model\CatalogItem\Item
     {
@@ -154,7 +154,7 @@ final class CatalogItemSDK
      * @param string[] $included_data A comma-delimited list of data sets to include in the response. Default: summaries. (optional)
      * @param string $locale Locale for retrieving localized summaries. Defaults to the primary locale of the marketplace. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getCatalogItemRequest(AccessToken $accessToken, string $region, string $asin, array $marketplace_ids, array $included_data = null, string $locale = null) : RequestInterface
     {
@@ -285,8 +285,8 @@ final class CatalogItemSDK
      * @param string $keywords_locale The language the keywords are provided in. Defaults to the primary locale of the marketplace. (optional)
      * @param string $locale Locale for retrieving localized summaries. Defaults to the primary locale of the marketplace. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function searchCatalogItems(AccessToken $accessToken, string $region, array $keywords, array $marketplace_ids, array $included_data = null, array $brand_names = null, array $classification_ids = null, int $page_size = 10, string $page_token = null, string $keywords_locale = null, string $locale = null) : \AmazonPHP\SellingPartner\Model\CatalogItem\ItemSearchResults
     {
@@ -389,7 +389,7 @@ final class CatalogItemSDK
      * @param string $keywords_locale The language the keywords are provided in. Defaults to the primary locale of the marketplace. (optional)
      * @param string $locale Locale for retrieving localized summaries. Defaults to the primary locale of the marketplace. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function searchCatalogItemsRequest(AccessToken $accessToken, string $region, array $keywords, array $marketplace_ids, array $included_data = null, array $brand_names = null, array $classification_ids = null, int $page_size = 10, string $page_token = null, string $keywords_locale = null, string $locale = null) : RequestInterface
     {

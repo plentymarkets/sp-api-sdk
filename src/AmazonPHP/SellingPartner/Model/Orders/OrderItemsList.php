@@ -243,7 +243,7 @@ class OrderItemsList implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets order_items.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Orders\OrderItem[] $order_items a list of order items
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Orders\OrderItem[] $order_items a list of order items
      */
     public function setOrderItems(array $order_items) : self
     {

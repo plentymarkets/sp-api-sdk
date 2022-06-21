@@ -225,7 +225,7 @@ class RetrieveShippingLabelRequest implements \ArrayAccess, \JsonSerializable, M
     /**
      * Sets label_specification.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\LabelSpecification $label_specification label_specification
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\LabelSpecification $label_specification label_specification
      */
     public function setLabelSpecification(LabelSpecification $label_specification) : self
     {

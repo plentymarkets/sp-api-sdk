@@ -285,7 +285,7 @@ class NonPartneredSmallParcelPackageOutput implements \ArrayAccess, \JsonSeriali
     /**
      * Sets package_status.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PackageStatus $package_status package_status
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PackageStatus $package_status package_status
      */
     public function setPackageStatus(PackageStatus $package_status) : self
     {

@@ -257,7 +257,7 @@ class NonPartneredSmallParcelDataInput implements \ArrayAccess, \JsonSerializabl
     /**
      * Sets package_list.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\NonPartneredSmallParcelPackageInput[] $package_list a list of package tracking information
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\NonPartneredSmallParcelPackageInput[] $package_list a list of package tracking information
      */
     public function setPackageList(array $package_list) : self
     {

@@ -235,7 +235,7 @@ class StandardTextListBlock implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets text_list.
      *
-     * @param \AmazonPHP\SellingPartner\Model\APlus\TextItem[] $text_list text_list
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\APlus\TextItem[] $text_list text_list
      */
     public function setTextList(array $text_list) : self
     {

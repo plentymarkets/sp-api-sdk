@@ -237,7 +237,7 @@ class PriceToEstimateFees implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets listing_price.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductFees\MoneyType $listing_price listing_price
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType $listing_price listing_price
      */
     public function setListingPrice(MoneyType $listing_price) : self
     {

@@ -257,7 +257,7 @@ class ItemIdentifiersByMarketplace implements \ArrayAccess, \JsonSerializable, M
     /**
      * Sets identifiers.
      *
-     * @param \AmazonPHP\SellingPartner\Model\CatalogItem\ItemIdentifier[] $identifiers identifiers associated with the item in the Amazon catalog for the indicated Amazon marketplace
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\CatalogItem\ItemIdentifier[] $identifiers identifiers associated with the item in the Amazon catalog for the indicated Amazon marketplace
      */
     public function setIdentifiers(array $identifiers) : self
     {

@@ -471,7 +471,7 @@ class ShippingService implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets rate.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\CurrencyAmount $rate rate
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CurrencyAmount $rate rate
      */
     public function setRate(CurrencyAmount $rate) : self
     {
@@ -491,7 +491,7 @@ class ShippingService implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipping_service_options.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShippingServiceOptions $shipping_service_options shipping_service_options
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShippingServiceOptions $shipping_service_options shipping_service_options
      */
     public function setShippingServiceOptions(ShippingServiceOptions $shipping_service_options) : self
     {

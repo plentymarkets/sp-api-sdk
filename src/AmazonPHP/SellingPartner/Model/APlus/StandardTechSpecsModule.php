@@ -275,7 +275,7 @@ class StandardTechSpecsModule implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Sets specification_list.
      *
-     * @param \AmazonPHP\SellingPartner\Model\APlus\StandardTextPairBlock[] $specification_list the specification list
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardTextPairBlock[] $specification_list the specification list
      */
     public function setSpecificationList(array $specification_list) : self
     {

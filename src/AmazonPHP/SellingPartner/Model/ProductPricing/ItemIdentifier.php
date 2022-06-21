@@ -307,7 +307,7 @@ class ItemIdentifier implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets item_condition.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\ConditionType $item_condition item_condition
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ConditionType $item_condition item_condition
      */
     public function setItemCondition(ConditionType $item_condition) : self
     {

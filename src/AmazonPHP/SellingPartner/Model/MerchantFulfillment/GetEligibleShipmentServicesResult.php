@@ -245,7 +245,7 @@ class GetEligibleShipmentServicesResult implements \ArrayAccess, \JsonSerializab
     /**
      * Sets shipping_service_list.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShippingService[] $shipping_service_list a list of shipping services offers
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShippingService[] $shipping_service_list a list of shipping services offers
      */
     public function setShippingServiceList(array $shipping_service_list) : self
     {

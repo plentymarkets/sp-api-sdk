@@ -285,7 +285,7 @@ class LabelDimensions implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets unit.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\UnitOfLength $unit unit
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\UnitOfLength $unit unit
      */
     public function setUnit(UnitOfLength $unit) : self
     {

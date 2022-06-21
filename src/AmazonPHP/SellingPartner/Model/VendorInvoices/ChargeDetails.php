@@ -351,7 +351,7 @@ class ChargeDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets charge_amount.
      *
-     * @param \AmazonPHP\SellingPartner\Model\VendorInvoices\Money $charge_amount charge_amount
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\Money $charge_amount charge_amount
      */
     public function setChargeAmount(Money $charge_amount) : self
     {

@@ -281,7 +281,7 @@ class Label implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets dimensions.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelDimensions $dimensions dimensions
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelDimensions $dimensions dimensions
      */
     public function setDimensions(LabelDimensions $dimensions) : self
     {
@@ -301,7 +301,7 @@ class Label implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets file_contents.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\FileContents $file_contents file_contents
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\FileContents $file_contents file_contents
      */
     public function setFileContents(FileContents $file_contents) : self
     {

@@ -225,7 +225,7 @@ class UpdateVerificationStatusRequest implements \ArrayAccess, \JsonSerializable
     /**
      * Sets regulated_order_verification_status.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Orders\UpdateVerificationStatusRequestBody $regulated_order_verification_status regulated_order_verification_status
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Orders\UpdateVerificationStatusRequestBody $regulated_order_verification_status regulated_order_verification_status
      */
     public function setRegulatedOrderVerificationStatus(UpdateVerificationStatusRequestBody $regulated_order_verification_status) : self
     {

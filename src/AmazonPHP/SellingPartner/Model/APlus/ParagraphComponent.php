@@ -235,7 +235,7 @@ class ParagraphComponent implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets text_list.
      *
-     * @param \AmazonPHP\SellingPartner\Model\APlus\TextComponent[] $text_list text_list
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent[] $text_list text_list
      */
     public function setTextList(array $text_list) : self
     {

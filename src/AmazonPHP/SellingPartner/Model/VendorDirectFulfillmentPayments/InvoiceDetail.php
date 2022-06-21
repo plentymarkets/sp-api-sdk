@@ -379,7 +379,7 @@ class InvoiceDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets remit_to_party.
      *
-     * @param \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\PartyIdentification $remit_to_party remit_to_party
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\PartyIdentification $remit_to_party remit_to_party
      */
     public function setRemitToParty(PartyIdentification $remit_to_party) : self
     {
@@ -399,7 +399,7 @@ class InvoiceDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets ship_from_party.
      *
-     * @param \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\PartyIdentification $ship_from_party ship_from_party
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\PartyIdentification $ship_from_party ship_from_party
      */
     public function setShipFromParty(PartyIdentification $ship_from_party) : self
     {
@@ -479,7 +479,7 @@ class InvoiceDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets invoice_total.
      *
-     * @param \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\Money $invoice_total invoice_total
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\Money $invoice_total invoice_total
      */
     public function setInvoiceTotal(Money $invoice_total) : self
     {
@@ -567,7 +567,7 @@ class InvoiceDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets items.
      *
-     * @param \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\InvoiceItem[] $items provides the details of the items in this invoice
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\InvoiceItem[] $items provides the details of the items in this invoice
      */
     public function setItems(array $items) : self
     {

@@ -367,7 +367,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets ordered_quantity.
      *
-     * @param \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\ItemQuantity $ordered_quantity ordered_quantity
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\ItemQuantity $ordered_quantity ordered_quantity
      */
     public function setOrderedQuantity(ItemQuantity $ordered_quantity) : self
     {
@@ -427,7 +427,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets net_price.
      *
-     * @param \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Money $net_price net_price
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Money $net_price net_price
      */
     public function setNetPrice(Money $net_price) : self
     {

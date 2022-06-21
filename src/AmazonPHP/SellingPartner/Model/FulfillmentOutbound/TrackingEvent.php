@@ -277,7 +277,7 @@ class TrackingEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets event_address.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\TrackingAddress $event_address event_address
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\TrackingAddress $event_address event_address
      */
     public function setEventAddress(TrackingAddress $event_address) : self
     {
@@ -297,7 +297,7 @@ class TrackingEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets event_code.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\EventCode $event_code event_code
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\EventCode $event_code event_code
      */
     public function setEventCode(EventCode $event_code) : self
     {

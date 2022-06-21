@@ -231,7 +231,7 @@ class StandardSingleSideImageModule implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets image_position_type.
      *
-     * @param \AmazonPHP\SellingPartner\Model\APlus\PositionType $image_position_type image_position_type
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\APlus\PositionType $image_position_type image_position_type
      */
     public function setImagePositionType(PositionType $image_position_type) : self
     {

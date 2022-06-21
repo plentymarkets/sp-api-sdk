@@ -277,7 +277,7 @@ class IncludedFeeDetail implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Sets fee_amount.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductFees\MoneyType $fee_amount fee_amount
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType $fee_amount fee_amount
      */
     public function setFeeAmount(MoneyType $fee_amount) : self
     {
@@ -337,7 +337,7 @@ class IncludedFeeDetail implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Sets final_fee.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductFees\MoneyType $final_fee final_fee
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType $final_fee final_fee
      */
     public function setFinalFee(MoneyType $final_fee) : self
     {

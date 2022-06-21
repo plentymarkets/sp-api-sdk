@@ -402,7 +402,7 @@ class OrderStatus implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets selling_party.
      *
-     * @param \AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification $selling_party selling_party
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification $selling_party selling_party
      */
     public function setSellingParty(PartyIdentification $selling_party) : self
     {
@@ -422,7 +422,7 @@ class OrderStatus implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets ship_to_party.
      *
-     * @param \AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification $ship_to_party ship_to_party
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification $ship_to_party ship_to_party
      */
     public function setShipToParty(PartyIdentification $ship_to_party) : self
     {
@@ -444,7 +444,7 @@ class OrderStatus implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets item_status.
      *
-     * @param \AmazonPHP\SellingPartner\Model\VendorOrders\OrderItemStatus[] $item_status detailed description of items order status
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderItemStatus[] $item_status detailed description of items order status
      */
     public function setItemStatus(array $item_status) : self
     {

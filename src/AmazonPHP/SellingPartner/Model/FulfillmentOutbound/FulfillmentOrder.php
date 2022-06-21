@@ -453,7 +453,7 @@ class FulfillmentOrder implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Sets shipping_speed_category.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ShippingSpeedCategory $shipping_speed_category shipping_speed_category
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ShippingSpeedCategory $shipping_speed_category shipping_speed_category
      */
     public function setShippingSpeedCategory(ShippingSpeedCategory $shipping_speed_category) : self
     {
@@ -493,7 +493,7 @@ class FulfillmentOrder implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Sets destination_address.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Address $destination_address destination_address
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Address $destination_address destination_address
      */
     public function setDestinationAddress(Address $destination_address) : self
     {
@@ -595,7 +595,7 @@ class FulfillmentOrder implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Sets fulfillment_order_status.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentOrderStatus $fulfillment_order_status fulfillment_order_status
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentOrderStatus $fulfillment_order_status fulfillment_order_status
      */
     public function setFulfillmentOrderStatus(FulfillmentOrderStatus $fulfillment_order_status) : self
     {

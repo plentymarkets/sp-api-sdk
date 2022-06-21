@@ -289,7 +289,7 @@ class ListContentDocumentAsinRelationsResponse implements \ArrayAccess, \JsonSer
     /**
      * Sets asin_metadata_set.
      *
-     * @param \AmazonPHP\SellingPartner\Model\APlus\AsinMetadata[] $asin_metadata_set the set of ASIN metadata
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\APlus\AsinMetadata[] $asin_metadata_set the set of ASIN metadata
      */
     public function setAsinMetadataSet(array $asin_metadata_set) : self
     {

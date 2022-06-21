@@ -225,7 +225,7 @@ class StandardProductDescriptionModule implements \ArrayAccess, \JsonSerializabl
     /**
      * Sets body.
      *
-     * @param \AmazonPHP\SellingPartner\Model\APlus\ParagraphComponent $body body
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\APlus\ParagraphComponent $body body
      */
     public function setBody(ParagraphComponent $body) : self
     {

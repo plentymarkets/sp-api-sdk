@@ -265,7 +265,7 @@ class PutTransportDetailsRequest implements \ArrayAccess, \JsonSerializable, Mod
     /**
      * Sets shipment_type.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentType $shipment_type shipment_type
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentType $shipment_type shipment_type
      */
     public function setShipmentType(ShipmentType $shipment_type) : self
     {
@@ -285,7 +285,7 @@ class PutTransportDetailsRequest implements \ArrayAccess, \JsonSerializable, Mod
     /**
      * Sets transport_details.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportDetailInput $transport_details transport_details
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportDetailInput $transport_details transport_details
      */
     public function setTransportDetails(TransportDetailInput $transport_details) : self
     {

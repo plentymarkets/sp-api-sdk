@@ -241,7 +241,7 @@ class UpdateVerificationStatusRequestBody implements \ArrayAccess, \JsonSerializ
     /**
      * Sets status.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Orders\VerificationStatus $status status
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Orders\VerificationStatus $status status
      */
     public function setStatus(VerificationStatus $status) : self
     {

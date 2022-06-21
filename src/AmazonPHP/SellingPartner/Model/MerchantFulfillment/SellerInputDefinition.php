@@ -319,7 +319,7 @@ class SellerInputDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets constraints.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\Constraint[] $constraints list of constraints
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Constraint[] $constraints list of constraints
      */
     public function setConstraints(array $constraints) : self
     {
@@ -379,7 +379,7 @@ class SellerInputDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets stored_value.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalSellerInput $stored_value stored_value
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalSellerInput $stored_value stored_value
      */
     public function setStoredValue(AdditionalSellerInput $stored_value) : self
     {

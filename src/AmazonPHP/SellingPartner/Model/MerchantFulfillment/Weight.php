@@ -255,7 +255,7 @@ class Weight implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets unit.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\UnitOfWeight $unit unit
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\UnitOfWeight $unit unit
      */
     public function setUnit(UnitOfWeight $unit) : self
     {

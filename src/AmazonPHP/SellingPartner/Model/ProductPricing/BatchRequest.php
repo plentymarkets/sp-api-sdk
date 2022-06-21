@@ -261,7 +261,7 @@ class BatchRequest implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets method.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\HttpMethod $method method
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\HttpMethod $method method
      */
     public function setMethod(HttpMethod $method) : self
     {

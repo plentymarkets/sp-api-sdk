@@ -351,7 +351,7 @@ class GetOffersResult implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets item_condition.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\ConditionType $item_condition item_condition
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ConditionType $item_condition item_condition
      */
     public function setItemCondition(ConditionType $item_condition) : self
     {
@@ -391,7 +391,7 @@ class GetOffersResult implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets identifier.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\ItemIdentifier $identifier identifier
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ItemIdentifier $identifier identifier
      */
     public function setIdentifier(ItemIdentifier $identifier) : self
     {
@@ -411,7 +411,7 @@ class GetOffersResult implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets summary.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\Summary $summary summary
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\Summary $summary summary
      */
     public function setSummary(Summary $summary) : self
     {
@@ -433,7 +433,7 @@ class GetOffersResult implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets offers.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\OfferDetail[] $offers offers
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\OfferDetail[] $offers offers
      */
     public function setOffers(array $offers) : self
     {

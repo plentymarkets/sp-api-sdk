@@ -297,7 +297,7 @@ class CompetitivePriceType implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Sets price.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\PriceType $price price
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\PriceType $price price
      */
     public function setPrice(PriceType $price) : self
     {

@@ -287,7 +287,7 @@ class ItemOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets body.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse $body body
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse $body body
      */
     public function setBody(GetOffersResponse $body) : self
     {
@@ -307,7 +307,7 @@ class ItemOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets request.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\ItemOffersRequestParams $request request
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ItemOffersRequestParams $request request
      */
     public function setRequest(ItemOffersRequestParams $request) : self
     {

@@ -225,7 +225,7 @@ class StandardCompanyLogoModule implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets company_logo.
      *
-     * @param \AmazonPHP\SellingPartner\Model\APlus\ImageComponent $company_logo company_logo
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\APlus\ImageComponent $company_logo company_logo
      */
     public function setCompanyLogo(ImageComponent $company_logo) : self
     {

@@ -237,7 +237,7 @@ class PartneredEstimate implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Sets amount.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount $amount amount
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount $amount amount
      */
     public function setAmount(Amount $amount) : self
     {

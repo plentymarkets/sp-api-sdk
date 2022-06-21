@@ -225,7 +225,7 @@ class GetContentDocumentResponseAllOf implements \ArrayAccess, \JsonSerializable
     /**
      * Sets content_record.
      *
-     * @param \AmazonPHP\SellingPartner\Model\APlus\ContentRecord $content_record content_record
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentRecord $content_record content_record
      */
     public function setContentRecord(ContentRecord $content_record) : self
     {

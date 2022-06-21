@@ -257,7 +257,7 @@ class ItemSalesRanksByMarketplace implements \ArrayAccess, \JsonSerializable, Mo
     /**
      * Sets ranks.
      *
-     * @param \AmazonPHP\SellingPartner\Model\CatalogItem\ItemSalesRank[] $ranks sales ranks of an Amazon catalog item for an Amazon marketplace
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\CatalogItem\ItemSalesRank[] $ranks sales ranks of an Amazon catalog item for an Amazon marketplace
      */
     public function setRanks(array $ranks) : self
     {

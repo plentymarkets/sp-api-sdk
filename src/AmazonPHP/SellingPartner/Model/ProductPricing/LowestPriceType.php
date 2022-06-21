@@ -389,7 +389,7 @@ class LowestPriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets landed_price.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $landed_price landed_price
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $landed_price landed_price
      */
     public function setLandedPrice(MoneyType $landed_price) : self
     {
@@ -409,7 +409,7 @@ class LowestPriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets listing_price.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $listing_price listing_price
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $listing_price listing_price
      */
     public function setListingPrice(MoneyType $listing_price) : self
     {
@@ -429,7 +429,7 @@ class LowestPriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipping.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $shipping shipping
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $shipping shipping
      */
     public function setShipping(MoneyType $shipping) : self
     {

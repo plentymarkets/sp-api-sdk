@@ -297,7 +297,7 @@ class InboundShipmentHeader implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets ship_from_address.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Address $ship_from_address ship_from_address
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Address $ship_from_address ship_from_address
      */
     public function setShipFromAddress(Address $ship_from_address) : self
     {
@@ -357,7 +357,7 @@ class InboundShipmentHeader implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets shipment_status.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentStatus $shipment_status shipment_status
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentStatus $shipment_status shipment_status
      */
     public function setShipmentStatus(ShipmentStatus $shipment_status) : self
     {
@@ -377,7 +377,7 @@ class InboundShipmentHeader implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets label_prep_preference.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\LabelPrepPreference $label_prep_preference label_prep_preference
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\LabelPrepPreference $label_prep_preference label_prep_preference
      */
     public function setLabelPrepPreference(LabelPrepPreference $label_prep_preference) : self
     {

@@ -253,7 +253,7 @@ class CreateRestrictedDataTokenRequest implements \ArrayAccess, \JsonSerializabl
     /**
      * Sets restricted_resources.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Tokens\RestrictedResource[] $restricted_resources A list of restricted resources. Maximum: 50
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Tokens\RestrictedResource[] $restricted_resources A list of restricted resources. Maximum: 50
      */
     public function setRestrictedResources(array $restricted_resources) : self
     {

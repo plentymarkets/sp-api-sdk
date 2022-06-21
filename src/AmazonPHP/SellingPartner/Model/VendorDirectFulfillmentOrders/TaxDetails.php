@@ -304,7 +304,7 @@ class TaxDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets tax_amount.
      *
-     * @param \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Money $tax_amount tax_amount
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Money $tax_amount tax_amount
      */
     public function setTaxAmount(Money $tax_amount) : self
     {

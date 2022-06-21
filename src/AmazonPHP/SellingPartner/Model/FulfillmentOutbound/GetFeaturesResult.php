@@ -227,7 +227,7 @@ class GetFeaturesResult implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Sets features.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Feature[] $features an array of features
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Feature[] $features an array of features
      */
     public function setFeatures(array $features) : self
     {

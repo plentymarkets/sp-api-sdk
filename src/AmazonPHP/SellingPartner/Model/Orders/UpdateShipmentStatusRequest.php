@@ -261,7 +261,7 @@ class UpdateShipmentStatusRequest implements \ArrayAccess, \JsonSerializable, Mo
     /**
      * Sets shipment_status.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Orders\ShipmentStatus $shipment_status shipment_status
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Orders\ShipmentStatus $shipment_status shipment_status
      */
     public function setShipmentStatus(ShipmentStatus $shipment_status) : self
     {

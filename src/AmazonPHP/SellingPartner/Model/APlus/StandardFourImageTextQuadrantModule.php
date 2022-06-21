@@ -255,7 +255,7 @@ class StandardFourImageTextQuadrantModule implements \ArrayAccess, \JsonSerializ
     /**
      * Sets block1.
      *
-     * @param \AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $block1 block1
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $block1 block1
      */
     public function setBlock1(StandardImageTextBlock $block1) : self
     {
@@ -275,7 +275,7 @@ class StandardFourImageTextQuadrantModule implements \ArrayAccess, \JsonSerializ
     /**
      * Sets block2.
      *
-     * @param \AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $block2 block2
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $block2 block2
      */
     public function setBlock2(StandardImageTextBlock $block2) : self
     {
@@ -295,7 +295,7 @@ class StandardFourImageTextQuadrantModule implements \ArrayAccess, \JsonSerializ
     /**
      * Sets block3.
      *
-     * @param \AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $block3 block3
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $block3 block3
      */
     public function setBlock3(StandardImageTextBlock $block3) : self
     {
@@ -315,7 +315,7 @@ class StandardFourImageTextQuadrantModule implements \ArrayAccess, \JsonSerializ
     /**
      * Sets block4.
      *
-     * @param \AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $block4 block4
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $block4 block4
      */
     public function setBlock4(StandardImageTextBlock $block4) : self
     {

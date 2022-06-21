@@ -275,7 +275,7 @@ class OrderRegulatedInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets regulated_information.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Orders\RegulatedInformation $regulated_information regulated_information
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Orders\RegulatedInformation $regulated_information regulated_information
      */
     public function setRegulatedInformation(RegulatedInformation $regulated_information) : self
     {
@@ -315,7 +315,7 @@ class OrderRegulatedInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets regulated_order_verification_status.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Orders\RegulatedOrderVerificationStatus $regulated_order_verification_status regulated_order_verification_status
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Orders\RegulatedOrderVerificationStatus $regulated_order_verification_status regulated_order_verification_status
      */
     public function setRegulatedOrderVerificationStatus(RegulatedOrderVerificationStatus $regulated_order_verification_status) : self
     {

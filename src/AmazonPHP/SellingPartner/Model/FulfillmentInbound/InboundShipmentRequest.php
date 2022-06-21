@@ -245,7 +245,7 @@ class InboundShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets inbound_shipment_header.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentHeader $inbound_shipment_header inbound_shipment_header
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentHeader $inbound_shipment_header inbound_shipment_header
      */
     public function setInboundShipmentHeader(InboundShipmentHeader $inbound_shipment_header) : self
     {
@@ -267,7 +267,7 @@ class InboundShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets inbound_shipment_items.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentItem[] $inbound_shipment_items a list of inbound shipment item information
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentItem[] $inbound_shipment_items a list of inbound shipment item information
      */
     public function setInboundShipmentItems(array $inbound_shipment_items) : self
     {

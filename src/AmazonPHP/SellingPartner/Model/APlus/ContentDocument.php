@@ -313,7 +313,7 @@ class ContentDocument implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets content_type.
      *
-     * @param \AmazonPHP\SellingPartner\Model\APlus\ContentType $content_type content_type
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentType $content_type content_type
      */
     public function setContentType(ContentType $content_type) : self
     {
@@ -383,7 +383,7 @@ class ContentDocument implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets content_module_list.
      *
-     * @param \AmazonPHP\SellingPartner\Model\APlus\ContentModule[] $content_module_list a list of A+ Content modules
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentModule[] $content_module_list a list of A+ Content modules
      */
     public function setContentModuleList(array $content_module_list) : self
     {

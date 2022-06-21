@@ -351,7 +351,7 @@ class InvoiceItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets invoiced_quantity.
      *
-     * @param \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\ItemQuantity $invoiced_quantity invoiced_quantity
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\ItemQuantity $invoiced_quantity invoiced_quantity
      */
     public function setInvoicedQuantity(ItemQuantity $invoiced_quantity) : self
     {
@@ -371,7 +371,7 @@ class InvoiceItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets net_cost.
      *
-     * @param \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\Money $net_cost net_cost
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\Money $net_cost net_cost
      */
     public function setNetCost(Money $net_cost) : self
     {

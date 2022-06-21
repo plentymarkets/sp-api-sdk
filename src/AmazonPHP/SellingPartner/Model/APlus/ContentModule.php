@@ -315,7 +315,7 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets content_module_type.
      *
-     * @param \AmazonPHP\SellingPartner\Model\APlus\ContentModuleType $content_module_type content_module_type
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentModuleType $content_module_type content_module_type
      */
     public function setContentModuleType(ContentModuleType $content_module_type) : self
     {

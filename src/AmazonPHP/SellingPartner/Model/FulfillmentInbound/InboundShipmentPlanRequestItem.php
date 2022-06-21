@@ -307,7 +307,7 @@ class InboundShipmentPlanRequestItem implements \ArrayAccess, \JsonSerializable,
     /**
      * Sets condition.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Condition $condition condition
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Condition $condition condition
      */
     public function setCondition(Condition $condition) : self
     {

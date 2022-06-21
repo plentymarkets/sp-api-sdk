@@ -47,12 +47,12 @@ final class VendorDirectFulfillmentInventorySDK
      *
      * @param AccessToken $accessToken
      * @param string $warehouse_id Identifier for the warehouse for which to update inventory. (required)
-     * @param \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\SubmitInventoryUpdateRequest $body body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\SubmitInventoryUpdateRequest $body body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function submitInventoryUpdate(AccessToken $accessToken, string $region, string $warehouse_id, \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\SubmitInventoryUpdateRequest $body) : \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\SubmitInventoryUpdateResponse
+    public function submitInventoryUpdate(AccessToken $accessToken, string $region, string $warehouse_id, \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\SubmitInventoryUpdateRequest $body) : \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\SubmitInventoryUpdateResponse
     {
         $request = $this->submitInventoryUpdateRequest($accessToken, $region, $warehouse_id, $body);
 
@@ -144,11 +144,11 @@ final class VendorDirectFulfillmentInventorySDK
      *
      * @param AccessToken $accessToken
      * @param string $warehouse_id Identifier for the warehouse for which to update inventory. (required)
-     * @param \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\SubmitInventoryUpdateRequest $body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\SubmitInventoryUpdateRequest $body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function submitInventoryUpdateRequest(AccessToken $accessToken, string $region, string $warehouse_id, \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\SubmitInventoryUpdateRequest $body) : RequestInterface
+    public function submitInventoryUpdateRequest(AccessToken $accessToken, string $region, string $warehouse_id, \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\SubmitInventoryUpdateRequest $body) : RequestInterface
     {
         // verify the required parameter 'warehouse_id' is set
         if ($warehouse_id === null || (\is_array($warehouse_id) && \count($warehouse_id) === 0)) {

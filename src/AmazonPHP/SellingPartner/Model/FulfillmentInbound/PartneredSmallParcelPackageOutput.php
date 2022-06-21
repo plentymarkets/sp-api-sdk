@@ -265,7 +265,7 @@ class PartneredSmallParcelPackageOutput implements \ArrayAccess, \JsonSerializab
     /**
      * Sets dimensions.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions $dimensions dimensions
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions $dimensions dimensions
      */
     public function setDimensions(Dimensions $dimensions) : self
     {
@@ -285,7 +285,7 @@ class PartneredSmallParcelPackageOutput implements \ArrayAccess, \JsonSerializab
     /**
      * Sets weight.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight $weight weight
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight $weight weight
      */
     public function setWeight(Weight $weight) : self
     {
@@ -345,7 +345,7 @@ class PartneredSmallParcelPackageOutput implements \ArrayAccess, \JsonSerializab
     /**
      * Sets package_status.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PackageStatus $package_status package_status
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PackageStatus $package_status package_status
      */
     public function setPackageStatus(PackageStatus $package_status) : self
     {

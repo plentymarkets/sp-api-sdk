@@ -225,7 +225,7 @@ class AddAppointmentRequest implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets appointment_time.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Services\AppointmentTimeInput $appointment_time appointment_time
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Services\AppointmentTimeInput $appointment_time appointment_time
      */
     public function setAppointmentTime(AppointmentTimeInput $appointment_time) : self
     {

@@ -425,7 +425,7 @@ class ReturnItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets status.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentReturnItemStatus $status status
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentReturnItemStatus $status status
      */
     public function setStatus(FulfillmentReturnItemStatus $status) : self
     {

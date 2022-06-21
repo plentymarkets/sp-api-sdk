@@ -235,7 +235,7 @@ class PaymentExecutionDetailItem implements \ArrayAccess, \JsonSerializable, Mod
     /**
      * Sets payment.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Orders\Money $payment payment
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Orders\Money $payment payment
      */
     public function setPayment(Money $payment) : self
     {

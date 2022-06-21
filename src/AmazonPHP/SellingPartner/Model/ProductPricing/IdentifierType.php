@@ -231,7 +231,7 @@ class IdentifierType implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets marketplace_asin.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\ASINIdentifier $marketplace_asin marketplace_asin
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ASINIdentifier $marketplace_asin marketplace_asin
      */
     public function setMarketplaceAsin(ASINIdentifier $marketplace_asin) : self
     {

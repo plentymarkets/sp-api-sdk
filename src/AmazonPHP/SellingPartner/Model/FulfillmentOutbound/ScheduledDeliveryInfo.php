@@ -257,7 +257,7 @@ class ScheduledDeliveryInfo implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets delivery_windows.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\DeliveryWindow[] $delivery_windows an array of delivery windows
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\DeliveryWindow[] $delivery_windows an array of delivery windows
      */
     public function setDeliveryWindows(array $delivery_windows) : self
     {

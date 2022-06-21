@@ -233,7 +233,7 @@ class PartneredSmallParcelDataOutput implements \ArrayAccess, \JsonSerializable,
     /**
      * Sets package_list.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredSmallParcelPackageOutput[] $package_list a list of packages, including shipping information from the Amazon-partnered carrier
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredSmallParcelPackageOutput[] $package_list a list of packages, including shipping information from the Amazon-partnered carrier
      */
     public function setPackageList(array $package_list) : self
     {

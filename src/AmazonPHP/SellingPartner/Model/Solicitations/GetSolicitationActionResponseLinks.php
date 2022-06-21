@@ -235,7 +235,7 @@ class GetSolicitationActionResponseLinks implements \ArrayAccess, \JsonSerializa
     /**
      * Sets self.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Solicitations\LinkObject $self self
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Solicitations\LinkObject $self self
      */
     public function setSelf(LinkObject $self) : self
     {
@@ -255,7 +255,7 @@ class GetSolicitationActionResponseLinks implements \ArrayAccess, \JsonSerializa
     /**
      * Sets schema.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Solicitations\LinkObject $schema schema
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Solicitations\LinkObject $schema schema
      */
     public function setSchema(LinkObject $schema) : self
     {

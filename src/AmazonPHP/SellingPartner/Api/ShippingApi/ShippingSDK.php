@@ -80,8 +80,8 @@ final class ShippingSDK
      * @param AccessToken $accessToken
      * @param string $shipment_id shipment_id (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function cancelShipment(AccessToken $accessToken, string $region, string $shipment_id) : \AmazonPHP\SellingPartner\Model\Shipping\CancelShipmentResponse
     {
@@ -176,7 +176,7 @@ final class ShippingSDK
      * @param AccessToken $accessToken
      * @param string $shipment_id (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function cancelShipmentRequest(AccessToken $accessToken, string $region, string $shipment_id) : RequestInterface
     {
@@ -266,12 +266,12 @@ final class ShippingSDK
      * Operation createShipment.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\CreateShipmentRequest $body body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\CreateShipmentRequest $body body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createShipment(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\Shipping\CreateShipmentRequest $body) : \AmazonPHP\SellingPartner\Model\Shipping\CreateShipmentResponse
+    public function createShipment(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\Shipping\CreateShipmentRequest $body) : \AmazonPHP\SellingPartner\Model\Shipping\CreateShipmentResponse
     {
         $request = $this->createShipmentRequest($accessToken, $region, $body);
 
@@ -362,11 +362,11 @@ final class ShippingSDK
      * Create request for operation 'createShipment'.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\CreateShipmentRequest $body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\CreateShipmentRequest $body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createShipmentRequest(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\Shipping\CreateShipmentRequest $body) : RequestInterface
+    public function createShipmentRequest(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\Shipping\CreateShipmentRequest $body) : RequestInterface
     {
         // verify the required parameter 'body' is set
         if ($body === null || (\is_array($body) && \count($body) === 0)) {
@@ -454,8 +454,8 @@ final class ShippingSDK
      *
      * @param AccessToken $accessToken
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getAccount(AccessToken $accessToken, string $region) : \AmazonPHP\SellingPartner\Model\Shipping\GetAccountResponse
     {
@@ -549,7 +549,7 @@ final class ShippingSDK
      *
      * @param AccessToken $accessToken
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getAccountRequest(AccessToken $accessToken, string $region) : RequestInterface
     {
@@ -623,12 +623,12 @@ final class ShippingSDK
      * Operation getRates.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\GetRatesRequest $body body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\GetRatesRequest $body body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getRates(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\Shipping\GetRatesRequest $body) : \AmazonPHP\SellingPartner\Model\Shipping\GetRatesResponse
+    public function getRates(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\Shipping\GetRatesRequest $body) : \AmazonPHP\SellingPartner\Model\Shipping\GetRatesResponse
     {
         $request = $this->getRatesRequest($accessToken, $region, $body);
 
@@ -719,11 +719,11 @@ final class ShippingSDK
      * Create request for operation 'getRates'.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\GetRatesRequest $body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\GetRatesRequest $body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getRatesRequest(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\Shipping\GetRatesRequest $body) : RequestInterface
+    public function getRatesRequest(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\Shipping\GetRatesRequest $body) : RequestInterface
     {
         // verify the required parameter 'body' is set
         if ($body === null || (\is_array($body) && \count($body) === 0)) {
@@ -812,8 +812,8 @@ final class ShippingSDK
      * @param AccessToken $accessToken
      * @param string $shipment_id shipment_id (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getShipment(AccessToken $accessToken, string $region, string $shipment_id) : \AmazonPHP\SellingPartner\Model\Shipping\GetShipmentResponse
     {
@@ -908,7 +908,7 @@ final class ShippingSDK
      * @param AccessToken $accessToken
      * @param string $shipment_id (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getShipmentRequest(AccessToken $accessToken, string $region, string $shipment_id) : RequestInterface
     {
@@ -1000,8 +1000,8 @@ final class ShippingSDK
      * @param AccessToken $accessToken
      * @param string $tracking_id tracking_id (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getTrackingInformation(AccessToken $accessToken, string $region, string $tracking_id) : \AmazonPHP\SellingPartner\Model\Shipping\GetTrackingInformationResponse
     {
@@ -1096,7 +1096,7 @@ final class ShippingSDK
      * @param AccessToken $accessToken
      * @param string $tracking_id (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getTrackingInformationRequest(AccessToken $accessToken, string $region, string $tracking_id) : RequestInterface
     {
@@ -1187,12 +1187,12 @@ final class ShippingSDK
      *
      * @param AccessToken $accessToken
      * @param string $shipment_id shipment_id (required)
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\PurchaseLabelsRequest $body body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\PurchaseLabelsRequest $body body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function purchaseLabels(AccessToken $accessToken, string $region, string $shipment_id, \AmazonPHP\SellingPartner\Model\Shipping\PurchaseLabelsRequest $body) : \AmazonPHP\SellingPartner\Model\Shipping\PurchaseLabelsResponse
+    public function purchaseLabels(AccessToken $accessToken, string $region, string $shipment_id, \Plenty\AmazonPHP\SellingPartner\Model\Shipping\PurchaseLabelsRequest $body) : \AmazonPHP\SellingPartner\Model\Shipping\PurchaseLabelsResponse
     {
         $request = $this->purchaseLabelsRequest($accessToken, $region, $shipment_id, $body);
 
@@ -1284,11 +1284,11 @@ final class ShippingSDK
      *
      * @param AccessToken $accessToken
      * @param string $shipment_id (required)
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\PurchaseLabelsRequest $body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\PurchaseLabelsRequest $body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function purchaseLabelsRequest(AccessToken $accessToken, string $region, string $shipment_id, \AmazonPHP\SellingPartner\Model\Shipping\PurchaseLabelsRequest $body) : RequestInterface
+    public function purchaseLabelsRequest(AccessToken $accessToken, string $region, string $shipment_id, \Plenty\AmazonPHP\SellingPartner\Model\Shipping\PurchaseLabelsRequest $body) : RequestInterface
     {
         // verify the required parameter 'shipment_id' is set
         if ($shipment_id === null || (\is_array($shipment_id) && \count($shipment_id) === 0)) {
@@ -1390,12 +1390,12 @@ final class ShippingSDK
      * Operation purchaseShipment.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\PurchaseShipmentRequest $body body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\PurchaseShipmentRequest $body body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function purchaseShipment(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\Shipping\PurchaseShipmentRequest $body) : \AmazonPHP\SellingPartner\Model\Shipping\PurchaseShipmentResponse
+    public function purchaseShipment(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\Shipping\PurchaseShipmentRequest $body) : \AmazonPHP\SellingPartner\Model\Shipping\PurchaseShipmentResponse
     {
         $request = $this->purchaseShipmentRequest($accessToken, $region, $body);
 
@@ -1486,11 +1486,11 @@ final class ShippingSDK
      * Create request for operation 'purchaseShipment'.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\PurchaseShipmentRequest $body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\PurchaseShipmentRequest $body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function purchaseShipmentRequest(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\Shipping\PurchaseShipmentRequest $body) : RequestInterface
+    public function purchaseShipmentRequest(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\Shipping\PurchaseShipmentRequest $body) : RequestInterface
     {
         // verify the required parameter 'body' is set
         if ($body === null || (\is_array($body) && \count($body) === 0)) {
@@ -1579,12 +1579,12 @@ final class ShippingSDK
      * @param AccessToken $accessToken
      * @param string $shipment_id shipment_id (required)
      * @param string $tracking_id tracking_id (required)
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\RetrieveShippingLabelRequest $body body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\RetrieveShippingLabelRequest $body body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function retrieveShippingLabel(AccessToken $accessToken, string $region, string $shipment_id, string $tracking_id, \AmazonPHP\SellingPartner\Model\Shipping\RetrieveShippingLabelRequest $body) : \AmazonPHP\SellingPartner\Model\Shipping\RetrieveShippingLabelResponse
+    public function retrieveShippingLabel(AccessToken $accessToken, string $region, string $shipment_id, string $tracking_id, \Plenty\AmazonPHP\SellingPartner\Model\Shipping\RetrieveShippingLabelRequest $body) : \AmazonPHP\SellingPartner\Model\Shipping\RetrieveShippingLabelResponse
     {
         $request = $this->retrieveShippingLabelRequest($accessToken, $region, $shipment_id, $tracking_id, $body);
 
@@ -1677,11 +1677,11 @@ final class ShippingSDK
      * @param AccessToken $accessToken
      * @param string $shipment_id (required)
      * @param string $tracking_id (required)
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\RetrieveShippingLabelRequest $body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\RetrieveShippingLabelRequest $body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function retrieveShippingLabelRequest(AccessToken $accessToken, string $region, string $shipment_id, string $tracking_id, \AmazonPHP\SellingPartner\Model\Shipping\RetrieveShippingLabelRequest $body) : RequestInterface
+    public function retrieveShippingLabelRequest(AccessToken $accessToken, string $region, string $shipment_id, string $tracking_id, \Plenty\AmazonPHP\SellingPartner\Model\Shipping\RetrieveShippingLabelRequest $body) : RequestInterface
     {
         // verify the required parameter 'shipment_id' is set
         if ($shipment_id === null || (\is_array($shipment_id) && \count($shipment_id) === 0)) {

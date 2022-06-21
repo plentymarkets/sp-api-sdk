@@ -235,7 +235,7 @@ class GetInventorySummariesResult implements \ArrayAccess, \JsonSerializable, Mo
     /**
      * Sets granularity.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FBAInventory\Granularity $granularity granularity
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\Granularity $granularity granularity
      */
     public function setGranularity(Granularity $granularity) : self
     {
@@ -257,7 +257,7 @@ class GetInventorySummariesResult implements \ArrayAccess, \JsonSerializable, Mo
     /**
      * Sets inventory_summaries.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FBAInventory\InventorySummary[] $inventory_summaries a list of inventory summaries
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\InventorySummary[] $inventory_summaries a list of inventory summaries
      */
     public function setInventorySummaries(array $inventory_summaries) : self
     {

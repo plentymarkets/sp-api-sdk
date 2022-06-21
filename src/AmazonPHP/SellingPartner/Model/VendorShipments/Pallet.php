@@ -263,7 +263,7 @@ class Pallet implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets pallet_identifiers.
      *
-     * @param \AmazonPHP\SellingPartner\Model\VendorShipments\ContainerIdentification[] $pallet_identifiers a list of pallet identifiers
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ContainerIdentification[] $pallet_identifiers a list of pallet identifiers
      */
     public function setPalletIdentifiers(array $pallet_identifiers) : self
     {

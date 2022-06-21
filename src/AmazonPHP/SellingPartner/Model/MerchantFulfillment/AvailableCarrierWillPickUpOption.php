@@ -235,7 +235,7 @@ class AvailableCarrierWillPickUpOption implements \ArrayAccess, \JsonSerializabl
     /**
      * Sets carrier_will_pick_up_option.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\CarrierWillPickUpOption $carrier_will_pick_up_option carrier_will_pick_up_option
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CarrierWillPickUpOption $carrier_will_pick_up_option carrier_will_pick_up_option
      */
     public function setCarrierWillPickUpOption(CarrierWillPickUpOption $carrier_will_pick_up_option) : self
     {
@@ -255,7 +255,7 @@ class AvailableCarrierWillPickUpOption implements \ArrayAccess, \JsonSerializabl
     /**
      * Sets charge.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\CurrencyAmount $charge charge
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CurrencyAmount $charge charge
      */
     public function setCharge(CurrencyAmount $charge) : self
     {

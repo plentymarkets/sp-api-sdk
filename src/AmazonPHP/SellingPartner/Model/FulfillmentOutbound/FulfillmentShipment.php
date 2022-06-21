@@ -450,7 +450,7 @@ class FulfillmentShipment implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets fulfillment_shipment_item.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentShipmentItem[] $fulfillment_shipment_item an array of fulfillment shipment item information
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentShipmentItem[] $fulfillment_shipment_item an array of fulfillment shipment item information
      */
     public function setFulfillmentShipmentItem(array $fulfillment_shipment_item) : self
     {

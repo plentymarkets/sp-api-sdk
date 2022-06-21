@@ -277,7 +277,7 @@ class BatchOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets body.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse $body body
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse $body body
      */
     public function setBody(GetOffersResponse $body) : self
     {

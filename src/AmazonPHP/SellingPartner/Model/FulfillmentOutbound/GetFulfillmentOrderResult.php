@@ -261,7 +261,7 @@ class GetFulfillmentOrderResult implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets fulfillment_order.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentOrder $fulfillment_order fulfillment_order
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentOrder $fulfillment_order fulfillment_order
      */
     public function setFulfillmentOrder(FulfillmentOrder $fulfillment_order) : self
     {
@@ -283,7 +283,7 @@ class GetFulfillmentOrderResult implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets fulfillment_order_items.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentOrderItem[] $fulfillment_order_items an array of fulfillment order item information
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentOrderItem[] $fulfillment_order_items an array of fulfillment order item information
      */
     public function setFulfillmentOrderItems(array $fulfillment_order_items) : self
     {
@@ -327,7 +327,7 @@ class GetFulfillmentOrderResult implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets return_items.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReturnItem[] $return_items An array of items that Amazon accepted for return. Returns empty if no items were accepted for return.
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReturnItem[] $return_items An array of items that Amazon accepted for return. Returns empty if no items were accepted for return.
      */
     public function setReturnItems(array $return_items) : self
     {
@@ -349,7 +349,7 @@ class GetFulfillmentOrderResult implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets return_authorizations.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReturnAuthorization[] $return_authorizations an array of return authorization information
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReturnAuthorization[] $return_authorizations an array of return authorization information
      */
     public function setReturnAuthorizations(array $return_authorizations) : self
     {

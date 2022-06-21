@@ -227,7 +227,7 @@ class GetMessagingActionsForOrderResponseEmbedded implements \ArrayAccess, \Json
     /**
      * Sets actions.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Messaging\GetMessagingActionResponse[] $actions actions
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Messaging\GetMessagingActionResponse[] $actions actions
      */
     public function setActions(array $actions) : self
     {

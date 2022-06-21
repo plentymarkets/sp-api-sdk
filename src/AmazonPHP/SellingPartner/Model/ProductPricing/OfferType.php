@@ -313,7 +313,7 @@ class OfferType implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets buying_price.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\PriceType $buying_price buying_price
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\PriceType $buying_price buying_price
      */
     public function setBuyingPrice(PriceType $buying_price) : self
     {
@@ -333,7 +333,7 @@ class OfferType implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets regular_price.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $regular_price regular_price
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $regular_price regular_price
      */
     public function setRegularPrice(MoneyType $regular_price) : self
     {

@@ -279,7 +279,7 @@ class ContainerItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets unit_price.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\Currency $unit_price unit_price
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\Currency $unit_price unit_price
      */
     public function setUnitPrice(Currency $unit_price) : self
     {
@@ -299,7 +299,7 @@ class ContainerItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets unit_weight.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\Weight $unit_weight unit_weight
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\Weight $unit_weight unit_weight
      */
     public function setUnitWeight(Weight $unit_weight) : self
     {

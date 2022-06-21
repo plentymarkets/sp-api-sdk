@@ -328,7 +328,7 @@ class ItemOfferByMarketplace implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets price.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ListingsItems\Money $price price
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\Money $price price
      */
     public function setPrice(Money $price) : self
     {

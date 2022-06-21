@@ -281,7 +281,7 @@ class ImageComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets image_crop_specification.
      *
-     * @param \AmazonPHP\SellingPartner\Model\APlus\ImageCropSpecification $image_crop_specification image_crop_specification
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\APlus\ImageCropSpecification $image_crop_specification image_crop_specification
      */
     public function setImageCropSpecification(ImageCropSpecification $image_crop_specification) : self
     {

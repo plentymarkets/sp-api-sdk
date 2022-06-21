@@ -423,7 +423,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets item_list.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\Item[] $item_list the list of items to be included in a shipment
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Item[] $item_list the list of items to be included in a shipment
      */
     public function setItemList(array $item_list) : self
     {
@@ -443,7 +443,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets ship_from_address.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\Address $ship_from_address ship_from_address
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Address $ship_from_address ship_from_address
      */
     public function setShipFromAddress(Address $ship_from_address) : self
     {
@@ -463,7 +463,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets ship_to_address.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\Address $ship_to_address ship_to_address
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Address $ship_to_address ship_to_address
      */
     public function setShipToAddress(Address $ship_to_address) : self
     {
@@ -483,7 +483,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets package_dimensions.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\PackageDimensions $package_dimensions package_dimensions
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\PackageDimensions $package_dimensions package_dimensions
      */
     public function setPackageDimensions(PackageDimensions $package_dimensions) : self
     {
@@ -503,7 +503,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets weight.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\Weight $weight weight
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Weight $weight weight
      */
     public function setWeight(Weight $weight) : self
     {
@@ -523,7 +523,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets insurance.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\CurrencyAmount $insurance insurance
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CurrencyAmount $insurance insurance
      */
     public function setInsurance(CurrencyAmount $insurance) : self
     {
@@ -543,7 +543,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipping_service.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShippingService $shipping_service shipping_service
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShippingService $shipping_service shipping_service
      */
     public function setShippingService(ShippingService $shipping_service) : self
     {
@@ -563,7 +563,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets label.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\Label $label label
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Label $label label
      */
     public function setLabel(Label $label) : self
     {
@@ -583,7 +583,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets status.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShipmentStatus $status status
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShipmentStatus $status status
      */
     public function setStatus(ShipmentStatus $status) : self
     {

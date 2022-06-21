@@ -298,7 +298,7 @@ class FeeLineItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets fee_charge.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FBASmallAndLight\MoneyType $fee_charge fee_charge
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\MoneyType $fee_charge fee_charge
      */
     public function setFeeCharge(MoneyType $fee_charge) : self
     {

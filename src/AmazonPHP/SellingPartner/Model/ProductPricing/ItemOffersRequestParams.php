@@ -267,7 +267,7 @@ class ItemOffersRequestParams implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Sets item_condition.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\ItemCondition $item_condition item_condition
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ItemCondition $item_condition item_condition
      */
     public function setItemCondition(ItemCondition $item_condition) : self
     {

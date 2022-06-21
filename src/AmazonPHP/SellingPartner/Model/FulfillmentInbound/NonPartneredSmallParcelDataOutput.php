@@ -227,7 +227,7 @@ class NonPartneredSmallParcelDataOutput implements \ArrayAccess, \JsonSerializab
     /**
      * Sets package_list.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\NonPartneredSmallParcelPackageOutput[] $package_list a list of packages, including carrier, tracking number, and status information for each package
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\NonPartneredSmallParcelPackageOutput[] $package_list a list of packages, including carrier, tracking number, and status information for each package
      */
     public function setPackageList(array $package_list) : self
     {

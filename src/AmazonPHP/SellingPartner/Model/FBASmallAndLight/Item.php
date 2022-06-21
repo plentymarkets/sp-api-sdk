@@ -255,7 +255,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets price.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FBASmallAndLight\MoneyType $price price
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\MoneyType $price price
      */
     public function setPrice(MoneyType $price) : self
     {

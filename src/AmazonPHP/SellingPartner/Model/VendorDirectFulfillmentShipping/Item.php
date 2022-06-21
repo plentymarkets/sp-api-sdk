@@ -307,7 +307,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipped_quantity.
      *
-     * @param \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ItemQuantity $shipped_quantity shipped_quantity
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ItemQuantity $shipped_quantity shipped_quantity
      */
     public function setShippedQuantity(ItemQuantity $shipped_quantity) : self
     {

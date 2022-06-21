@@ -227,7 +227,7 @@ class Route implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets stops.
      *
-     * @param \AmazonPHP\SellingPartner\Model\VendorShipments\Stop[] $stops stops
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Stop[] $stops stops
      */
     public function setStops(array $stops) : self
     {

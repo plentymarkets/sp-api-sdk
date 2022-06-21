@@ -376,7 +376,7 @@ class ProductTypeDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets schema.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\SchemaLink $schema schema
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\SchemaLink $schema schema
      */
     public function setSchema(SchemaLink $schema) : self
     {
@@ -542,7 +542,7 @@ class ProductTypeDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets product_type_version.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\ProductTypeVersion $product_type_version product_type_version
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\ProductTypeVersion $product_type_version product_type_version
      */
     public function setProductTypeVersion(ProductTypeVersion $product_type_version) : self
     {

@@ -271,7 +271,7 @@ class TextItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets text.
      *
-     * @param \AmazonPHP\SellingPartner\Model\APlus\TextComponent $text text
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent $text text
      */
     public function setText(TextComponent $text) : self
     {

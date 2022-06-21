@@ -451,7 +451,7 @@ class OfferDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipping_time.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\DetailedShippingTimeType $shipping_time shipping_time
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\DetailedShippingTimeType $shipping_time shipping_time
      */
     public function setShippingTime(DetailedShippingTimeType $shipping_time) : self
     {
@@ -471,7 +471,7 @@ class OfferDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets listing_price.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $listing_price listing_price
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $listing_price listing_price
      */
     public function setListingPrice(MoneyType $listing_price) : self
     {
@@ -533,7 +533,7 @@ class OfferDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipping.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $shipping shipping
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $shipping shipping
      */
     public function setShipping(MoneyType $shipping) : self
     {

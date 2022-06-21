@@ -354,7 +354,7 @@ class Container implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets value.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\Currency $value value
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\Currency $value value
      */
     public function setValue(Currency $value) : self
     {
@@ -374,7 +374,7 @@ class Container implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets dimensions.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\Dimensions $dimensions dimensions
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\Dimensions $dimensions dimensions
      */
     public function setDimensions(Dimensions $dimensions) : self
     {
@@ -396,7 +396,7 @@ class Container implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets items.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\ContainerItem[] $items a list of the items in the container
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\ContainerItem[] $items a list of the items in the container
      */
     public function setItems(array $items) : self
     {
@@ -416,7 +416,7 @@ class Container implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets weight.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Shipping\Weight $weight weight
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Shipping\Weight $weight weight
      */
     public function setWeight(Weight $weight) : self
     {

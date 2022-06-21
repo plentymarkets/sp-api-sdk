@@ -259,7 +259,7 @@ class CreateShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets shipment_request_details.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShipmentRequestDetails $shipment_request_details shipment_request_details
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShipmentRequestDetails $shipment_request_details shipment_request_details
      */
     public function setShipmentRequestDetails(ShipmentRequestDetails $shipment_request_details) : self
     {

@@ -297,7 +297,7 @@ class FeesEstimateRequest implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets price_to_estimate_fees.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductFees\PriceToEstimateFees $price_to_estimate_fees price_to_estimate_fees
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductFees\PriceToEstimateFees $price_to_estimate_fees price_to_estimate_fees
      */
     public function setPriceToEstimateFees(PriceToEstimateFees $price_to_estimate_fees) : self
     {

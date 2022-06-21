@@ -235,7 +235,7 @@ class PartneredSmallParcelPackageInput implements \ArrayAccess, \JsonSerializabl
     /**
      * Sets dimensions.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions $dimensions dimensions
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions $dimensions dimensions
      */
     public function setDimensions(Dimensions $dimensions) : self
     {
@@ -255,7 +255,7 @@ class PartneredSmallParcelPackageInput implements \ArrayAccess, \JsonSerializabl
     /**
      * Sets weight.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight $weight weight
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight $weight weight
      */
     public function setWeight(Weight $weight) : self
     {

@@ -331,7 +331,7 @@ class OrderAcknowledgementItem implements \ArrayAccess, \JsonSerializable, Model
     /**
      * Sets ordered_quantity.
      *
-     * @param \AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity $ordered_quantity ordered_quantity
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity $ordered_quantity ordered_quantity
      */
     public function setOrderedQuantity(ItemQuantity $ordered_quantity) : self
     {
@@ -413,7 +413,7 @@ class OrderAcknowledgementItem implements \ArrayAccess, \JsonSerializable, Model
     /**
      * Sets item_acknowledgements.
      *
-     * @param \AmazonPHP\SellingPartner\Model\VendorOrders\OrderItemAcknowledgement[] $item_acknowledgements this is used to indicate acknowledged quantity
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderItemAcknowledgement[] $item_acknowledgements this is used to indicate acknowledged quantity
      */
     public function setItemAcknowledgements(array $item_acknowledgements) : self
     {

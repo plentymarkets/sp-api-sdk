@@ -298,7 +298,7 @@ class Fee implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets amount.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money $amount amount
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money $amount amount
      */
     public function setAmount(Money $amount) : self
     {

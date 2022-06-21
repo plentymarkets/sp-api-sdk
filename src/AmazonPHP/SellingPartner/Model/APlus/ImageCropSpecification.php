@@ -231,7 +231,7 @@ class ImageCropSpecification implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets size.
      *
-     * @param \AmazonPHP\SellingPartner\Model\APlus\ImageDimensions $size size
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\APlus\ImageDimensions $size size
      */
     public function setSize(ImageDimensions $size) : self
     {

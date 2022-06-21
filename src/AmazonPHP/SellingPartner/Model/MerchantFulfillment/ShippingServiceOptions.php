@@ -253,7 +253,7 @@ class ShippingServiceOptions implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets delivery_experience.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\DeliveryExperienceType $delivery_experience delivery_experience
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\DeliveryExperienceType $delivery_experience delivery_experience
      */
     public function setDeliveryExperience(DeliveryExperienceType $delivery_experience) : self
     {

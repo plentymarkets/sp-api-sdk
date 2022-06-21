@@ -245,7 +245,7 @@ class TransportContent implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Sets transport_header.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportHeader $transport_header transport_header
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportHeader $transport_header transport_header
      */
     public function setTransportHeader(TransportHeader $transport_header) : self
     {
@@ -265,7 +265,7 @@ class TransportContent implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Sets transport_details.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportDetailOutput $transport_details transport_details
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportDetailOutput $transport_details transport_details
      */
     public function setTransportDetails(TransportDetailOutput $transport_details) : self
     {
@@ -285,7 +285,7 @@ class TransportContent implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Sets transport_result.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportResult $transport_result transport_result
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportResult $transport_result transport_result
      */
     public function setTransportResult(TransportResult $transport_result) : self
     {

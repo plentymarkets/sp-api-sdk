@@ -261,7 +261,7 @@ class ASINInboundGuidance implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets inbound_guidance.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundGuidance $inbound_guidance inbound_guidance
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundGuidance $inbound_guidance inbound_guidance
      */
     public function setInboundGuidance(InboundGuidance $inbound_guidance) : self
     {

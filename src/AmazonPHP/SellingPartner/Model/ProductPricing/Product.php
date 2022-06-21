@@ -255,7 +255,7 @@ class Product implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets identifiers.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\IdentifierType $identifiers identifiers
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\IdentifierType $identifiers identifiers
      */
     public function setIdentifiers(IdentifierType $identifiers) : self
     {

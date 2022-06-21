@@ -235,7 +235,7 @@ class PrepDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets prep_instruction.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction $prep_instruction prep_instruction
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction $prep_instruction prep_instruction
      */
     public function setPrepInstruction(PrepInstruction $prep_instruction) : self
     {
@@ -255,7 +255,7 @@ class PrepDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets prep_owner.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepOwner $prep_owner prep_owner
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepOwner $prep_owner prep_owner
      */
     public function setPrepOwner(PrepOwner $prep_owner) : self
     {

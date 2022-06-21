@@ -225,7 +225,7 @@ class ItemOffersResponseAllOf implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Sets request.
      *
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\ItemOffersRequestParams $request request
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ItemOffersRequestParams $request request
      */
     public function setRequest(ItemOffersRequestParams $request) : self
     {

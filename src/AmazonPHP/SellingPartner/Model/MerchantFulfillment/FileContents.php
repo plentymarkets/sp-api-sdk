@@ -265,7 +265,7 @@ class FileContents implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets file_type.
      *
-     * @param \AmazonPHP\SellingPartner\Model\MerchantFulfillment\FileType $file_type file_type
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\FileType $file_type file_type
      */
     public function setFileType(FileType $file_type) : self
     {
