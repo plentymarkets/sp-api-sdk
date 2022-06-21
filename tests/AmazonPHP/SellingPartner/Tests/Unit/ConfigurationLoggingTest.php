@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Plenty\AmazonPHP\Test\AmazonPHP\SellingPartner\Tests\Unit;
 
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\Configuration\LoggerConfiguration;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\Configuration\LoggerConfiguration;
 use PHPUnit\Framework\TestCase;
 
 final class ConfigurationLoggingTest extends TestCase

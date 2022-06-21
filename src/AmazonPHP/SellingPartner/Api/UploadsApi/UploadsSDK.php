@@ -2,13 +2,13 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Api\UploadsApi;
 
-use AmazonPHP\SellingPartner\AccessToken;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\Exception\ApiException;
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
-use AmazonPHP\SellingPartner\HttpFactory;
-use AmazonPHP\SellingPartner\HttpSignatureHeaders;
-use AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\AccessToken;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\HttpFactory;
+use Plenty\AmazonPHP\SellingPartner\HttpSignatureHeaders;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Plenty\AmazonPHP\SellingPartner;
 
-use AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
 use Psr\Http\Client\ClientInterface;
 use Psr\Log\LoggerInterface;
 

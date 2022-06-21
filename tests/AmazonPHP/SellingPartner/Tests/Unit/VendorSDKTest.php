@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace Plenty\AmazonPHP\Test\AmazonPHP\SellingPartner\Tests\Unit;
 
-use AmazonPHP\SellingPartner\Api\UpdateInventoryApi\VendorDirectFulfillmentInventorySDK;
-use AmazonPHP\SellingPartner\Api\VendorInvoiceApi\VendorDirectFulfillmentPaymentsSDK;
-use AmazonPHP\SellingPartner\Api\VendorOrdersApi\VendorDirectFulfillmentOrdersSDK;
-use AmazonPHP\SellingPartner\Api\VendorPaymentsApi\VendorInvoicesSDK;
-use AmazonPHP\SellingPartner\Api\VendorShippingApi\VendorShipmentsSDK;
-use AmazonPHP\SellingPartner\Api\VendorShippingLabelsApi\VendorDirectFulfillmentShippingSDK;
-use AmazonPHP\SellingPartner\Api\VendorTransactionApi\VendorDirectFulfillmentTransactionsSDK;
-use AmazonPHP\SellingPartner\Api\VendorTransactionApi\VendorTransactionStatusSDK;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\VendorSDK;
+use Plenty\AmazonPHP\SellingPartner\Api\UpdateInventoryApi\VendorDirectFulfillmentInventorySDK;
+use Plenty\AmazonPHP\SellingPartner\Api\VendorInvoiceApi\VendorDirectFulfillmentPaymentsSDK;
+use Plenty\AmazonPHP\SellingPartner\Api\VendorOrdersApi\VendorDirectFulfillmentOrdersSDK;
+use Plenty\AmazonPHP\SellingPartner\Api\VendorPaymentsApi\VendorInvoicesSDK;
+use Plenty\AmazonPHP\SellingPartner\Api\VendorShippingApi\VendorShipmentsSDK;
+use Plenty\AmazonPHP\SellingPartner\Api\VendorShippingLabelsApi\VendorDirectFulfillmentShippingSDK;
+use Plenty\AmazonPHP\SellingPartner\Api\VendorTransactionApi\VendorDirectFulfillmentTransactionsSDK;
+use Plenty\AmazonPHP\SellingPartner\Api\VendorTransactionApi\VendorTransactionStatusSDK;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\VendorSDK;
 use Buzz\Client\Curl;
 use Monolog\Logger;
 use Nyholm\Psr7\Factory\Psr17Factory;

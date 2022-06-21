@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Plenty\AmazonPHP\SellingPartner;
 
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
 
 /**
  * @method static CA()

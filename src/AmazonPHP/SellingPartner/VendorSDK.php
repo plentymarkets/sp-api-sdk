@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Plenty\AmazonPHP\SellingPartner;
 
-use AmazonPHP\SellingPartner\Api\UpdateInventoryApi\VendorDirectFulfillmentInventorySDK;
-use AmazonPHP\SellingPartner\Api\VendorInvoiceApi\VendorDirectFulfillmentPaymentsSDK;
-use AmazonPHP\SellingPartner\Api\VendorOrdersApi\VendorDirectFulfillmentOrdersSDK;
-use AmazonPHP\SellingPartner\Api\VendorPaymentsApi\VendorInvoicesSDK;
-use AmazonPHP\SellingPartner\Api\VendorShippingApi\VendorShipmentsSDK;
-use AmazonPHP\SellingPartner\Api\VendorShippingLabelsApi\VendorDirectFulfillmentShippingSDK;
-use AmazonPHP\SellingPartner\Api\VendorTransactionApi\VendorDirectFulfillmentTransactionsSDK;
-use AmazonPHP\SellingPartner\Api\VendorTransactionApi\VendorTransactionStatusSDK;
+use Plenty\AmazonPHP\SellingPartner\Api\UpdateInventoryApi\VendorDirectFulfillmentInventorySDK;
+use Plenty\AmazonPHP\SellingPartner\Api\VendorInvoiceApi\VendorDirectFulfillmentPaymentsSDK;
+use Plenty\AmazonPHP\SellingPartner\Api\VendorOrdersApi\VendorDirectFulfillmentOrdersSDK;
+use Plenty\AmazonPHP\SellingPartner\Api\VendorPaymentsApi\VendorInvoicesSDK;
+use Plenty\AmazonPHP\SellingPartner\Api\VendorShippingApi\VendorShipmentsSDK;
+use Plenty\AmazonPHP\SellingPartner\Api\VendorShippingLabelsApi\VendorDirectFulfillmentShippingSDK;
+use Plenty\AmazonPHP\SellingPartner\Api\VendorTransactionApi\VendorDirectFulfillmentTransactionsSDK;
+use Plenty\AmazonPHP\SellingPartner\Api\VendorTransactionApi\VendorTransactionStatusSDK;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestFactoryInterface;
 use Psr\Http\Message\StreamFactoryInterface;

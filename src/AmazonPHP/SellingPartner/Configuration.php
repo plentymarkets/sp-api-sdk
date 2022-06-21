@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Plenty\AmazonPHP\SellingPartner;
 
-use AmazonPHP\SellingPartner\Configuration\LoggerConfiguration;
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
-use AmazonPHP\SellingPartner\STSClient\Credentials;
+use Plenty\AmazonPHP\SellingPartner\Configuration\LoggerConfiguration;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\STSClient\Credentials;
 
 final class Configuration
 {

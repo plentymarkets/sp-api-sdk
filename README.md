@@ -130,9 +130,9 @@ Example of changing refresh token into access token.
 ```
 <?php
 
-use AmazonPHP\SellingPartner\OAuth;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\HttpFactory;
+use Plenty\AmazonPHP\SellingPartner\OAuth;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\HttpFactory;
 use Buzz\Client\Curl;
 use Nyholm\Psr7\Factory\Psr17Factory;
 
@@ -158,9 +158,9 @@ $accessToken = $oauth->exchangeRefreshToken('seller_oauth_refresh_token');
 ```
 <?php
 
-use AmazonPHP\SellingPartner\OAuth;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\HttpFactory;
+use Plenty\AmazonPHP\SellingPartner\OAuth;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\HttpFactory;
 use Buzz\Client\Curl;
 use Nyholm\Psr7\Factory\Psr17Factory;
 
@@ -215,12 +215,12 @@ composer generate
 ```php
 <?php
 
-use AmazonPHP\SellingPartner\Marketplace;
-use AmazonPHP\SellingPartner\Regions;
-use AmazonPHP\SellingPartner\SellingPartnerSDK;
+use Plenty\AmazonPHP\SellingPartner\Marketplace;
+use Plenty\AmazonPHP\SellingPartner\Regions;
+use Plenty\AmazonPHP\SellingPartner\SellingPartnerSDK;
 use Buzz\Client\Curl;
-use AmazonPHP\SellingPartner\Exception\ApiException;
-use AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
 use Nyholm\Psr7\Factory\Psr17Factory;

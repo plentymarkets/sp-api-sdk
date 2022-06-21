@@ -2,10 +2,10 @@
 
 namespace Plenty\AmazonPHP\Test\AmazonPHP\SellingPartner\Tests\Unit;
 
-use AmazonPHP\SellingPartner\AccessToken;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\HttpSignatureHeaders;
-use AmazonPHP\SellingPartner\Regions;
+use Plenty\AmazonPHP\SellingPartner\AccessToken;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\HttpSignatureHeaders;
+use Plenty\AmazonPHP\SellingPartner\Regions;
 use Nyholm\Psr7\Request;
 use PHPUnit\Framework\TestCase;
 

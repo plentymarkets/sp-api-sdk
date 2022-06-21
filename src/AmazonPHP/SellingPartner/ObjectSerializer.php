@@ -2,7 +2,7 @@
 
 namespace Plenty\AmazonPHP\SellingPartner;
 
-use AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat;
+use Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat;
 
 final class ObjectSerializer
 {

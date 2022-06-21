@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Plenty\AmazonPHP\Test\AmazonPHP\SellingPartner\Tests\Unit;
 
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
-use AmazonPHP\SellingPartner\Marketplace;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\Marketplace;
 use PHPUnit\Framework\TestCase;
 
 final class MarketplaceTest extends TestCase

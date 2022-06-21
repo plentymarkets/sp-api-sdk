@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Plenty\AmazonPHP\SellingPartner;
 
-use AmazonPHP\SellingPartner\Exception\ApiException;
-use AmazonPHP\SellingPartner\STSClient\Credentials;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\STSClient\Credentials;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestFactoryInterface;
