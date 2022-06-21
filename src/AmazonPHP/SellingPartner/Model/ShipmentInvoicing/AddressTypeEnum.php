@@ -42,7 +42,7 @@ class AddressTypeEnum
 
     public const COMMERCIAL = 'Commercial';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

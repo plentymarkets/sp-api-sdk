@@ -49,14 +49,14 @@ class OrderBuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'OrderBuyerInfo';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'OrderBuyerInfo';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'amazon_order_id' => 'string',
         'buyer_email' => 'string',
         'buyer_name' => 'string',
@@ -72,7 +72,7 @@ class OrderBuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'amazon_order_id' => null,
         'buyer_email' => null,
         'buyer_name' => null,
@@ -87,7 +87,7 @@ class OrderBuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'amazon_order_id' => 'AmazonOrderId',
         'buyer_email' => 'BuyerEmail',
         'buyer_name' => 'BuyerName',
@@ -101,7 +101,7 @@ class OrderBuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'amazon_order_id' => 'setAmazonOrderId',
         'buyer_email' => 'setBuyerEmail',
         'buyer_name' => 'setBuyerName',
@@ -115,7 +115,7 @@ class OrderBuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'amazon_order_id' => 'getAmazonOrderId',
         'buyer_email' => 'getBuyerEmail',
         'buyer_name' => 'getBuyerName',
@@ -129,7 +129,7 @@ class OrderBuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

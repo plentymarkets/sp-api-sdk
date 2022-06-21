@@ -50,7 +50,7 @@ class PrepInstruction
 
     public const HANG_GARMENT = 'HangGarment';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

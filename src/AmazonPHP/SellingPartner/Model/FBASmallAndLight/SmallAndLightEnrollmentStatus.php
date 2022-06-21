@@ -42,7 +42,7 @@ class SmallAndLightEnrollmentStatus
 
     public const NOT_ENROLLED = 'NOT_ENROLLED';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

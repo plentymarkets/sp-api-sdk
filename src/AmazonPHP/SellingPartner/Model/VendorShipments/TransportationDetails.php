@@ -55,14 +55,14 @@ class TransportationDetails implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'TransportationDetails';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'TransportationDetails';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'carrier_scac' => 'string',
         'carrier_shipment_reference_number' => 'string',
         'transportation_mode' => 'string',
@@ -76,7 +76,7 @@ class TransportationDetails implements \ArrayAccess, \JsonSerializable, ModelInt
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'carrier_scac' => null,
         'carrier_shipment_reference_number' => null,
         'transportation_mode' => null,
@@ -89,7 +89,7 @@ class TransportationDetails implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'carrier_scac' => 'carrierScac',
         'carrier_shipment_reference_number' => 'carrierShipmentReferenceNumber',
         'transportation_mode' => 'transportationMode',
@@ -101,7 +101,7 @@ class TransportationDetails implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'carrier_scac' => 'setCarrierScac',
         'carrier_shipment_reference_number' => 'setCarrierShipmentReferenceNumber',
         'transportation_mode' => 'setTransportationMode',
@@ -113,7 +113,7 @@ class TransportationDetails implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'carrier_scac' => 'getCarrierScac',
         'carrier_shipment_reference_number' => 'getCarrierShipmentReferenceNumber',
         'transportation_mode' => 'getTransportationMode',
@@ -125,7 +125,7 @@ class TransportationDetails implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

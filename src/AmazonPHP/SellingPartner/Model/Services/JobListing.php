@@ -49,14 +49,14 @@ class JobListing implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'JobListing';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'JobListing';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'total_result_size' => 'int',
         'next_page_token' => 'string',
         'previous_page_token' => 'string',
@@ -70,7 +70,7 @@ class JobListing implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'total_result_size' => null,
         'next_page_token' => null,
         'previous_page_token' => null,
@@ -83,7 +83,7 @@ class JobListing implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'total_result_size' => 'totalResultSize',
         'next_page_token' => 'nextPageToken',
         'previous_page_token' => 'previousPageToken',
@@ -95,7 +95,7 @@ class JobListing implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'total_result_size' => 'setTotalResultSize',
         'next_page_token' => 'setNextPageToken',
         'previous_page_token' => 'setPreviousPageToken',
@@ -107,7 +107,7 @@ class JobListing implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'total_result_size' => 'getTotalResultSize',
         'next_page_token' => 'getNextPageToken',
         'previous_page_token' => 'getPreviousPageToken',
@@ -119,7 +119,7 @@ class JobListing implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

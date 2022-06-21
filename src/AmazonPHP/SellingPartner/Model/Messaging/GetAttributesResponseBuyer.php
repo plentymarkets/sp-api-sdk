@@ -49,14 +49,14 @@ class GetAttributesResponseBuyer implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetAttributesResponse_buyer';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetAttributesResponse_buyer';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'locale' => 'string',
     ];
 
@@ -67,7 +67,7 @@ class GetAttributesResponseBuyer implements \ArrayAccess, \JsonSerializable, Mod
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'locale' => null,
     ];
 
@@ -77,7 +77,7 @@ class GetAttributesResponseBuyer implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'locale' => 'locale',
     ];
 
@@ -86,7 +86,7 @@ class GetAttributesResponseBuyer implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'locale' => 'setLocale',
     ];
 
@@ -95,7 +95,7 @@ class GetAttributesResponseBuyer implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'locale' => 'getLocale',
     ];
 
@@ -104,7 +104,7 @@ class GetAttributesResponseBuyer implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

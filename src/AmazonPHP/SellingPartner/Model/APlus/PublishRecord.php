@@ -49,14 +49,14 @@ class PublishRecord implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'PublishRecord';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'PublishRecord';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace_id' => 'string',
         'locale' => 'string',
         'asin' => 'string',
@@ -72,7 +72,7 @@ class PublishRecord implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'marketplace_id' => null,
         'locale' => null,
         'asin' => null,
@@ -87,7 +87,7 @@ class PublishRecord implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'marketplace_id' => 'marketplaceId',
         'locale' => 'locale',
         'asin' => 'asin',
@@ -101,7 +101,7 @@ class PublishRecord implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'marketplace_id' => 'setMarketplaceId',
         'locale' => 'setLocale',
         'asin' => 'setAsin',
@@ -115,7 +115,7 @@ class PublishRecord implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'marketplace_id' => 'getMarketplaceId',
         'locale' => 'getLocale',
         'asin' => 'getAsin',
@@ -129,7 +129,7 @@ class PublishRecord implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

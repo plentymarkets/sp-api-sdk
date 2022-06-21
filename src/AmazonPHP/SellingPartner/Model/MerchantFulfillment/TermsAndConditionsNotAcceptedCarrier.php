@@ -49,14 +49,14 @@ class TermsAndConditionsNotAcceptedCarrier implements \ArrayAccess, \JsonSeriali
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'TermsAndConditionsNotAcceptedCarrier';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'TermsAndConditionsNotAcceptedCarrier';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'carrier_name' => 'string',
     ];
 
@@ -67,7 +67,7 @@ class TermsAndConditionsNotAcceptedCarrier implements \ArrayAccess, \JsonSeriali
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'carrier_name' => null,
     ];
 
@@ -77,7 +77,7 @@ class TermsAndConditionsNotAcceptedCarrier implements \ArrayAccess, \JsonSeriali
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'carrier_name' => 'CarrierName',
     ];
 
@@ -86,7 +86,7 @@ class TermsAndConditionsNotAcceptedCarrier implements \ArrayAccess, \JsonSeriali
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'carrier_name' => 'setCarrierName',
     ];
 
@@ -95,7 +95,7 @@ class TermsAndConditionsNotAcceptedCarrier implements \ArrayAccess, \JsonSeriali
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'carrier_name' => 'getCarrierName',
     ];
 
@@ -104,7 +104,7 @@ class TermsAndConditionsNotAcceptedCarrier implements \ArrayAccess, \JsonSeriali
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

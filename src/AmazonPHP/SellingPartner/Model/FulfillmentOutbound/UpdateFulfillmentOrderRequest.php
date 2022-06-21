@@ -49,14 +49,14 @@ class UpdateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'UpdateFulfillmentOrderRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'UpdateFulfillmentOrderRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace_id' => 'string',
         'displayable_order_id' => 'string',
         'displayable_order_date' => '\DateTime',
@@ -78,7 +78,7 @@ class UpdateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'marketplace_id' => null,
         'displayable_order_id' => null,
         'displayable_order_date' => 'date-time',
@@ -99,7 +99,7 @@ class UpdateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'marketplace_id' => 'marketplaceId',
         'displayable_order_id' => 'displayableOrderId',
         'displayable_order_date' => 'displayableOrderDate',
@@ -119,7 +119,7 @@ class UpdateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'marketplace_id' => 'setMarketplaceId',
         'displayable_order_id' => 'setDisplayableOrderId',
         'displayable_order_date' => 'setDisplayableOrderDate',
@@ -139,7 +139,7 @@ class UpdateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'marketplace_id' => 'getMarketplaceId',
         'displayable_order_id' => 'getDisplayableOrderId',
         'displayable_order_date' => 'getDisplayableOrderDate',
@@ -159,7 +159,7 @@ class UpdateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

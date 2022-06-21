@@ -53,14 +53,14 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Invoice';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Invoice';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'invoice_type' => 'string',
         'id' => 'string',
         'reference_number' => 'string',
@@ -85,7 +85,7 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'invoice_type' => null,
         'id' => null,
         'reference_number' => null,
@@ -109,7 +109,7 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'invoice_type' => 'invoiceType',
         'id' => 'id',
         'reference_number' => 'referenceNumber',
@@ -132,7 +132,7 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'invoice_type' => 'setInvoiceType',
         'id' => 'setId',
         'reference_number' => 'setReferenceNumber',
@@ -155,7 +155,7 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'invoice_type' => 'getInvoiceType',
         'id' => 'getId',
         'reference_number' => 'getReferenceNumber',
@@ -178,7 +178,7 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

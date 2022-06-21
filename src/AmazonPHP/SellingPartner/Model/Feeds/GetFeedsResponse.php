@@ -49,14 +49,14 @@ class GetFeedsResponse implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetFeedsResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetFeedsResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'feeds' => '\AmazonPHP\SellingPartner\Model\Feeds\Feed[]',
         'next_token' => 'string',
     ];
@@ -68,7 +68,7 @@ class GetFeedsResponse implements \ArrayAccess, \JsonSerializable, ModelInterfac
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'feeds' => null,
         'next_token' => null,
     ];
@@ -79,7 +79,7 @@ class GetFeedsResponse implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'feeds' => 'feeds',
         'next_token' => 'nextToken',
     ];
@@ -89,7 +89,7 @@ class GetFeedsResponse implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'feeds' => 'setFeeds',
         'next_token' => 'setNextToken',
     ];
@@ -99,7 +99,7 @@ class GetFeedsResponse implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'feeds' => 'getFeeds',
         'next_token' => 'getNextToken',
     ];
@@ -109,7 +109,7 @@ class GetFeedsResponse implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

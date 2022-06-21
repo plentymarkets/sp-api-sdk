@@ -49,14 +49,14 @@ class ContentRecord implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ContentRecord';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ContentRecord';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'content_reference_key' => 'string',
         'content_metadata' => '\AmazonPHP\SellingPartner\Model\APlus\ContentMetadata',
         'content_document' => '\AmazonPHP\SellingPartner\Model\APlus\ContentDocument',
@@ -69,7 +69,7 @@ class ContentRecord implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'content_reference_key' => null,
         'content_metadata' => null,
         'content_document' => null,
@@ -81,7 +81,7 @@ class ContentRecord implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'content_reference_key' => 'contentReferenceKey',
         'content_metadata' => 'contentMetadata',
         'content_document' => 'contentDocument',
@@ -92,7 +92,7 @@ class ContentRecord implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'content_reference_key' => 'setContentReferenceKey',
         'content_metadata' => 'setContentMetadata',
         'content_document' => 'setContentDocument',
@@ -103,7 +103,7 @@ class ContentRecord implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'content_reference_key' => 'getContentReferenceKey',
         'content_metadata' => 'getContentMetadata',
         'content_document' => 'getContentDocument',
@@ -114,7 +114,7 @@ class ContentRecord implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

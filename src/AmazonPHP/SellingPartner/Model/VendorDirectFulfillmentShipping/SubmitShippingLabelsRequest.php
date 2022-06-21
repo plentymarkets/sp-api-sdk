@@ -49,14 +49,14 @@ class SubmitShippingLabelsRequest implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'SubmitShippingLabelsRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'SubmitShippingLabelsRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'shipping_label_requests' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabelRequest[]',
     ];
 
@@ -67,7 +67,7 @@ class SubmitShippingLabelsRequest implements \ArrayAccess, \JsonSerializable, Mo
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'shipping_label_requests' => null,
     ];
 
@@ -77,7 +77,7 @@ class SubmitShippingLabelsRequest implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'shipping_label_requests' => 'shippingLabelRequests',
     ];
 
@@ -86,7 +86,7 @@ class SubmitShippingLabelsRequest implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'shipping_label_requests' => 'setShippingLabelRequests',
     ];
 
@@ -95,7 +95,7 @@ class SubmitShippingLabelsRequest implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'shipping_label_requests' => 'getShippingLabelRequests',
     ];
 
@@ -104,7 +104,7 @@ class SubmitShippingLabelsRequest implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

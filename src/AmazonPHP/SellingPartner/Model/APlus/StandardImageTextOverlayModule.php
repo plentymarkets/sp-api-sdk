@@ -49,14 +49,14 @@ class StandardImageTextOverlayModule implements \ArrayAccess, \JsonSerializable,
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'StandardImageTextOverlayModule';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'StandardImageTextOverlayModule';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'overlay_color_type' => '\AmazonPHP\SellingPartner\Model\APlus\ColorType',
         'block' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
     ];
@@ -68,7 +68,7 @@ class StandardImageTextOverlayModule implements \ArrayAccess, \JsonSerializable,
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'overlay_color_type' => null,
         'block' => null,
     ];
@@ -79,7 +79,7 @@ class StandardImageTextOverlayModule implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'overlay_color_type' => 'overlayColorType',
         'block' => 'block',
     ];
@@ -89,7 +89,7 @@ class StandardImageTextOverlayModule implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'overlay_color_type' => 'setOverlayColorType',
         'block' => 'setBlock',
     ];
@@ -99,7 +99,7 @@ class StandardImageTextOverlayModule implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'overlay_color_type' => 'getOverlayColorType',
         'block' => 'getBlock',
     ];
@@ -109,7 +109,7 @@ class StandardImageTextOverlayModule implements \ArrayAccess, \JsonSerializable,
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

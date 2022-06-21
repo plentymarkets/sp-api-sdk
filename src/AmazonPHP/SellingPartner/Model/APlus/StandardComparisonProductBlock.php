@@ -49,14 +49,14 @@ class StandardComparisonProductBlock implements \ArrayAccess, \JsonSerializable,
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'StandardComparisonProductBlock';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'StandardComparisonProductBlock';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'position' => 'int',
         'image' => '\AmazonPHP\SellingPartner\Model\APlus\ImageComponent',
         'title' => 'string',
@@ -72,7 +72,7 @@ class StandardComparisonProductBlock implements \ArrayAccess, \JsonSerializable,
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'position' => null,
         'image' => null,
         'title' => null,
@@ -87,7 +87,7 @@ class StandardComparisonProductBlock implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'position' => 'position',
         'image' => 'image',
         'title' => 'title',
@@ -101,7 +101,7 @@ class StandardComparisonProductBlock implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'position' => 'setPosition',
         'image' => 'setImage',
         'title' => 'setTitle',
@@ -115,7 +115,7 @@ class StandardComparisonProductBlock implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'position' => 'getPosition',
         'image' => 'getImage',
         'title' => 'getTitle',
@@ -129,7 +129,7 @@ class StandardComparisonProductBlock implements \ArrayAccess, \JsonSerializable,
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

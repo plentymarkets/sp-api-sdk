@@ -49,14 +49,14 @@ class SKUPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'SKUPrepInstructions';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'SKUPrepInstructions';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'seller_sku' => 'string',
         'asin' => 'string',
         'barcode_instruction' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BarcodeInstruction',
@@ -72,7 +72,7 @@ class SKUPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInter
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'seller_sku' => null,
         'asin' => null,
         'barcode_instruction' => null,
@@ -87,7 +87,7 @@ class SKUPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'seller_sku' => 'SellerSKU',
         'asin' => 'ASIN',
         'barcode_instruction' => 'BarcodeInstruction',
@@ -101,7 +101,7 @@ class SKUPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'seller_sku' => 'setSellerSku',
         'asin' => 'setAsin',
         'barcode_instruction' => 'setBarcodeInstruction',
@@ -115,7 +115,7 @@ class SKUPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'seller_sku' => 'getSellerSku',
         'asin' => 'getAsin',
         'barcode_instruction' => 'getBarcodeInstruction',
@@ -129,7 +129,7 @@ class SKUPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

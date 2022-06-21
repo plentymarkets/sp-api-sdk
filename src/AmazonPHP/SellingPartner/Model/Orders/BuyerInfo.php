@@ -49,14 +49,14 @@ class BuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'BuyerInfo';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'BuyerInfo';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'buyer_email' => 'string',
         'buyer_name' => 'string',
         'buyer_county' => 'string',
@@ -71,7 +71,7 @@ class BuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'buyer_email' => null,
         'buyer_name' => null,
         'buyer_county' => null,
@@ -85,7 +85,7 @@ class BuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'buyer_email' => 'BuyerEmail',
         'buyer_name' => 'BuyerName',
         'buyer_county' => 'BuyerCounty',
@@ -98,7 +98,7 @@ class BuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'buyer_email' => 'setBuyerEmail',
         'buyer_name' => 'setBuyerName',
         'buyer_county' => 'setBuyerCounty',
@@ -111,7 +111,7 @@ class BuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'buyer_email' => 'getBuyerEmail',
         'buyer_name' => 'getBuyerName',
         'buyer_county' => 'getBuyerCounty',
@@ -124,7 +124,7 @@ class BuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

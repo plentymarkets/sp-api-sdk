@@ -49,14 +49,14 @@ class ReturnItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ReturnItem';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ReturnItem';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'seller_return_item_id' => 'string',
         'seller_fulfillment_order_item_id' => 'string',
         'amazon_shipment_id' => 'string',
@@ -77,7 +77,7 @@ class ReturnItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'seller_return_item_id' => null,
         'seller_fulfillment_order_item_id' => null,
         'amazon_shipment_id' => null,
@@ -97,7 +97,7 @@ class ReturnItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'seller_return_item_id' => 'sellerReturnItemId',
         'seller_fulfillment_order_item_id' => 'sellerFulfillmentOrderItemId',
         'amazon_shipment_id' => 'amazonShipmentId',
@@ -116,7 +116,7 @@ class ReturnItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'seller_return_item_id' => 'setSellerReturnItemId',
         'seller_fulfillment_order_item_id' => 'setSellerFulfillmentOrderItemId',
         'amazon_shipment_id' => 'setAmazonShipmentId',
@@ -135,7 +135,7 @@ class ReturnItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'seller_return_item_id' => 'getSellerReturnItemId',
         'seller_fulfillment_order_item_id' => 'getSellerFulfillmentOrderItemId',
         'amazon_shipment_id' => 'getAmazonShipmentId',
@@ -154,7 +154,7 @@ class ReturnItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

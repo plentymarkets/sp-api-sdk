@@ -49,14 +49,14 @@ class Expiry implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Expiry';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Expiry';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'manufacturer_date' => '\DateTime',
         'expiry_date' => '\DateTime',
         'expiry_after_duration' => '\AmazonPHP\SellingPartner\Model\VendorShipments\Duration',
@@ -69,7 +69,7 @@ class Expiry implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'manufacturer_date' => 'date-time',
         'expiry_date' => 'date-time',
         'expiry_after_duration' => null,
@@ -81,7 +81,7 @@ class Expiry implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'manufacturer_date' => 'manufacturerDate',
         'expiry_date' => 'expiryDate',
         'expiry_after_duration' => 'expiryAfterDuration',
@@ -92,7 +92,7 @@ class Expiry implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'manufacturer_date' => 'setManufacturerDate',
         'expiry_date' => 'setExpiryDate',
         'expiry_after_duration' => 'setExpiryAfterDuration',
@@ -103,7 +103,7 @@ class Expiry implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'manufacturer_date' => 'getManufacturerDate',
         'expiry_date' => 'getExpiryDate',
         'expiry_after_duration' => 'getExpiryAfterDuration',
@@ -114,7 +114,7 @@ class Expiry implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

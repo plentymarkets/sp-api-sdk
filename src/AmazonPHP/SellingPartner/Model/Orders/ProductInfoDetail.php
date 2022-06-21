@@ -49,14 +49,14 @@ class ProductInfoDetail implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ProductInfoDetail';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ProductInfoDetail';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'number_of_items' => 'int',
     ];
 
@@ -67,7 +67,7 @@ class ProductInfoDetail implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'number_of_items' => null,
     ];
 
@@ -77,7 +77,7 @@ class ProductInfoDetail implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'number_of_items' => 'NumberOfItems',
     ];
 
@@ -86,7 +86,7 @@ class ProductInfoDetail implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'number_of_items' => 'setNumberOfItems',
     ];
 
@@ -95,7 +95,7 @@ class ProductInfoDetail implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'number_of_items' => 'getNumberOfItems',
     ];
 
@@ -104,7 +104,7 @@ class ProductInfoDetail implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

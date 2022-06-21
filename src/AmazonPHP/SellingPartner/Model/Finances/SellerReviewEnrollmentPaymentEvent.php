@@ -49,14 +49,14 @@ class SellerReviewEnrollmentPaymentEvent implements \ArrayAccess, \JsonSerializa
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'SellerReviewEnrollmentPaymentEvent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'SellerReviewEnrollmentPaymentEvent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'posted_date' => '\DateTime',
         'enrollment_id' => 'string',
         'parent_asin' => 'string',
@@ -72,7 +72,7 @@ class SellerReviewEnrollmentPaymentEvent implements \ArrayAccess, \JsonSerializa
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'posted_date' => 'date-time',
         'enrollment_id' => null,
         'parent_asin' => null,
@@ -87,7 +87,7 @@ class SellerReviewEnrollmentPaymentEvent implements \ArrayAccess, \JsonSerializa
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'posted_date' => 'PostedDate',
         'enrollment_id' => 'EnrollmentId',
         'parent_asin' => 'ParentASIN',
@@ -101,7 +101,7 @@ class SellerReviewEnrollmentPaymentEvent implements \ArrayAccess, \JsonSerializa
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'posted_date' => 'setPostedDate',
         'enrollment_id' => 'setEnrollmentId',
         'parent_asin' => 'setParentAsin',
@@ -115,7 +115,7 @@ class SellerReviewEnrollmentPaymentEvent implements \ArrayAccess, \JsonSerializa
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'posted_date' => 'getPostedDate',
         'enrollment_id' => 'getEnrollmentId',
         'parent_asin' => 'getParentAsin',
@@ -129,7 +129,7 @@ class SellerReviewEnrollmentPaymentEvent implements \ArrayAccess, \JsonSerializa
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

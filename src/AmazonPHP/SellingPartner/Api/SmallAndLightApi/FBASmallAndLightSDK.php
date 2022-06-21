@@ -42,13 +42,13 @@ final class FBASmallAndLightSDK
 
     public const OPERATION_PUTSMALLANDLIGHTENROLLMENTBYSELLERSKU_PATH = '/fba/smallAndLight/v1/enrollments/{sellerSKU}';
 
-    private ClientInterface $client;
+    private /** [COMPAT] ClientInterface */ $client;
 
-    private HttpFactory $httpFactory;
+    private /** [COMPAT] HttpFactory */ $httpFactory;
 
-    private Configuration $configuration;
+    private /** [COMPAT] Configuration */ $configuration;
 
-    private LoggerInterface $logger;
+    private /** [COMPAT] LoggerInterface */ $logger;
 
     public function __construct(ClientInterface $client, HttpFactory $requestFactory, Configuration $configuration, LoggerInterface $logger)
     {

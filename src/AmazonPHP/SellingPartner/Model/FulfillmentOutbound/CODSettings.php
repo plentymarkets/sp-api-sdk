@@ -49,14 +49,14 @@ class CODSettings implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CODSettings';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CODSettings';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'is_cod_required' => 'bool',
         'cod_charge' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money',
         'cod_charge_tax' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money',
@@ -71,7 +71,7 @@ class CODSettings implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'is_cod_required' => null,
         'cod_charge' => null,
         'cod_charge_tax' => null,
@@ -85,7 +85,7 @@ class CODSettings implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'is_cod_required' => 'isCodRequired',
         'cod_charge' => 'codCharge',
         'cod_charge_tax' => 'codChargeTax',
@@ -98,7 +98,7 @@ class CODSettings implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'is_cod_required' => 'setIsCodRequired',
         'cod_charge' => 'setCodCharge',
         'cod_charge_tax' => 'setCodChargeTax',
@@ -111,7 +111,7 @@ class CODSettings implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'is_cod_required' => 'getIsCodRequired',
         'cod_charge' => 'getCodCharge',
         'cod_charge_tax' => 'getCodChargeTax',
@@ -124,7 +124,7 @@ class CODSettings implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class RetrochargeEvent implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'RetrochargeEvent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'RetrochargeEvent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'retrocharge_event_type' => 'string',
         'amazon_order_id' => 'string',
         'posted_date' => '\DateTime',
@@ -73,7 +73,7 @@ class RetrochargeEvent implements \ArrayAccess, \JsonSerializable, ModelInterfac
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'retrocharge_event_type' => null,
         'amazon_order_id' => null,
         'posted_date' => 'date-time',
@@ -89,7 +89,7 @@ class RetrochargeEvent implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'retrocharge_event_type' => 'RetrochargeEventType',
         'amazon_order_id' => 'AmazonOrderId',
         'posted_date' => 'PostedDate',
@@ -104,7 +104,7 @@ class RetrochargeEvent implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'retrocharge_event_type' => 'setRetrochargeEventType',
         'amazon_order_id' => 'setAmazonOrderId',
         'posted_date' => 'setPostedDate',
@@ -119,7 +119,7 @@ class RetrochargeEvent implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'retrocharge_event_type' => 'getRetrochargeEventType',
         'amazon_order_id' => 'getAmazonOrderId',
         'posted_date' => 'getPostedDate',
@@ -134,7 +134,7 @@ class RetrochargeEvent implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

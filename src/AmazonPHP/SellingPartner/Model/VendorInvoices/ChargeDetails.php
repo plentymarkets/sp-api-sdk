@@ -71,14 +71,14 @@ class ChargeDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ChargeDetails';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ChargeDetails';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'type' => 'string',
         'description' => 'string',
         'charge_amount' => '\AmazonPHP\SellingPartner\Model\VendorInvoices\Money',
@@ -92,7 +92,7 @@ class ChargeDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'type' => null,
         'description' => null,
         'charge_amount' => null,
@@ -105,7 +105,7 @@ class ChargeDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'type' => 'type',
         'description' => 'description',
         'charge_amount' => 'chargeAmount',
@@ -117,7 +117,7 @@ class ChargeDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'type' => 'setType',
         'description' => 'setDescription',
         'charge_amount' => 'setChargeAmount',
@@ -129,7 +129,7 @@ class ChargeDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'type' => 'getType',
         'description' => 'getDescription',
         'charge_amount' => 'getChargeAmount',
@@ -141,7 +141,7 @@ class ChargeDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

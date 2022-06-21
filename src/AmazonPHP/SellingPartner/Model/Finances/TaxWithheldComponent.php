@@ -49,14 +49,14 @@ class TaxWithheldComponent implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'TaxWithheldComponent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'TaxWithheldComponent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'tax_collection_model' => 'string',
         'taxes_withheld' => '\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[]',
     ];
@@ -68,7 +68,7 @@ class TaxWithheldComponent implements \ArrayAccess, \JsonSerializable, ModelInte
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'tax_collection_model' => null,
         'taxes_withheld' => null,
     ];
@@ -79,7 +79,7 @@ class TaxWithheldComponent implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'tax_collection_model' => 'TaxCollectionModel',
         'taxes_withheld' => 'TaxesWithheld',
     ];
@@ -89,7 +89,7 @@ class TaxWithheldComponent implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'tax_collection_model' => 'setTaxCollectionModel',
         'taxes_withheld' => 'setTaxesWithheld',
     ];
@@ -99,7 +99,7 @@ class TaxWithheldComponent implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'tax_collection_model' => 'getTaxCollectionModel',
         'taxes_withheld' => 'getTaxesWithheld',
     ];
@@ -109,7 +109,7 @@ class TaxWithheldComponent implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class CancelFulfillmentOrderResponse implements \ArrayAccess, \JsonSerializable,
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CancelFulfillmentOrderResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CancelFulfillmentOrderResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'errors' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Error[]',
     ];
 
@@ -67,7 +67,7 @@ class CancelFulfillmentOrderResponse implements \ArrayAccess, \JsonSerializable,
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'errors' => null,
     ];
 
@@ -77,7 +77,7 @@ class CancelFulfillmentOrderResponse implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'errors' => 'errors',
     ];
 
@@ -86,7 +86,7 @@ class CancelFulfillmentOrderResponse implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'errors' => 'setErrors',
     ];
 
@@ -95,7 +95,7 @@ class CancelFulfillmentOrderResponse implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'errors' => 'getErrors',
     ];
 
@@ -104,7 +104,7 @@ class CancelFulfillmentOrderResponse implements \ArrayAccess, \JsonSerializable,
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

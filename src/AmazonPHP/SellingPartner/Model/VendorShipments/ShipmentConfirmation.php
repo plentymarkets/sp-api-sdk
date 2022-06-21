@@ -73,14 +73,14 @@ class ShipmentConfirmation implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ShipmentConfirmation';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ShipmentConfirmation';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'shipment_identifier' => 'string',
         'shipment_confirmation_type' => 'string',
         'shipment_type' => 'string',
@@ -107,7 +107,7 @@ class ShipmentConfirmation implements \ArrayAccess, \JsonSerializable, ModelInte
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'shipment_identifier' => null,
         'shipment_confirmation_type' => null,
         'shipment_type' => null,
@@ -133,7 +133,7 @@ class ShipmentConfirmation implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'shipment_identifier' => 'shipmentIdentifier',
         'shipment_confirmation_type' => 'shipmentConfirmationType',
         'shipment_type' => 'shipmentType',
@@ -158,7 +158,7 @@ class ShipmentConfirmation implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'shipment_identifier' => 'setShipmentIdentifier',
         'shipment_confirmation_type' => 'setShipmentConfirmationType',
         'shipment_type' => 'setShipmentType',
@@ -183,7 +183,7 @@ class ShipmentConfirmation implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'shipment_identifier' => 'getShipmentIdentifier',
         'shipment_confirmation_type' => 'getShipmentConfirmationType',
         'shipment_type' => 'getShipmentType',
@@ -208,7 +208,7 @@ class ShipmentConfirmation implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

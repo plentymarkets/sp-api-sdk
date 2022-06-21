@@ -49,14 +49,14 @@ class InboundShipmentHeader implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'InboundShipmentHeader';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'InboundShipmentHeader';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'shipment_name' => 'string',
         'ship_from_address' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Address',
         'destination_fulfillment_center_id' => 'string',
@@ -73,7 +73,7 @@ class InboundShipmentHeader implements \ArrayAccess, \JsonSerializable, ModelInt
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'shipment_name' => null,
         'ship_from_address' => null,
         'destination_fulfillment_center_id' => null,
@@ -89,7 +89,7 @@ class InboundShipmentHeader implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'shipment_name' => 'ShipmentName',
         'ship_from_address' => 'ShipFromAddress',
         'destination_fulfillment_center_id' => 'DestinationFulfillmentCenterId',
@@ -104,7 +104,7 @@ class InboundShipmentHeader implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'shipment_name' => 'setShipmentName',
         'ship_from_address' => 'setShipFromAddress',
         'destination_fulfillment_center_id' => 'setDestinationFulfillmentCenterId',
@@ -119,7 +119,7 @@ class InboundShipmentHeader implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'shipment_name' => 'getShipmentName',
         'ship_from_address' => 'getShipFromAddress',
         'destination_fulfillment_center_id' => 'getDestinationFulfillmentCenterId',
@@ -134,7 +134,7 @@ class InboundShipmentHeader implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

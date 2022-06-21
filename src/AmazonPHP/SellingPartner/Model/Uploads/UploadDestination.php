@@ -49,14 +49,14 @@ class UploadDestination implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'UploadDestination';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'UploadDestination';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'upload_destination_id' => 'string',
         'url' => 'string',
         'headers' => 'object',
@@ -69,7 +69,7 @@ class UploadDestination implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'upload_destination_id' => null,
         'url' => null,
         'headers' => null,
@@ -81,7 +81,7 @@ class UploadDestination implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'upload_destination_id' => 'uploadDestinationId',
         'url' => 'url',
         'headers' => 'headers',
@@ -92,7 +92,7 @@ class UploadDestination implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'upload_destination_id' => 'setUploadDestinationId',
         'url' => 'setUrl',
         'headers' => 'setHeaders',
@@ -103,7 +103,7 @@ class UploadDestination implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'upload_destination_id' => 'getUploadDestinationId',
         'url' => 'getUrl',
         'headers' => 'getHeaders',
@@ -114,7 +114,7 @@ class UploadDestination implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

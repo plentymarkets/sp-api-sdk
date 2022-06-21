@@ -49,14 +49,14 @@ class SearchContentDocumentsResponseAllOf implements \ArrayAccess, \JsonSerializ
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'SearchContentDocumentsResponse_allOf';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'SearchContentDocumentsResponse_allOf';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'content_metadata_records' => '\AmazonPHP\SellingPartner\Model\APlus\ContentMetadataRecord[]',
     ];
 
@@ -67,7 +67,7 @@ class SearchContentDocumentsResponseAllOf implements \ArrayAccess, \JsonSerializ
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'content_metadata_records' => null,
     ];
 
@@ -77,7 +77,7 @@ class SearchContentDocumentsResponseAllOf implements \ArrayAccess, \JsonSerializ
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'content_metadata_records' => 'contentMetadataRecords',
     ];
 
@@ -86,7 +86,7 @@ class SearchContentDocumentsResponseAllOf implements \ArrayAccess, \JsonSerializ
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'content_metadata_records' => 'setContentMetadataRecords',
     ];
 
@@ -95,7 +95,7 @@ class SearchContentDocumentsResponseAllOf implements \ArrayAccess, \JsonSerializ
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'content_metadata_records' => 'getContentMetadataRecords',
     ];
 
@@ -104,7 +104,7 @@ class SearchContentDocumentsResponseAllOf implements \ArrayAccess, \JsonSerializ
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

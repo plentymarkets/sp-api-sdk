@@ -49,14 +49,14 @@ class InboundShipmentPlanRequestItem implements \ArrayAccess, \JsonSerializable,
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'InboundShipmentPlanRequestItem';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'InboundShipmentPlanRequestItem';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'seller_sku' => 'string',
         'asin' => 'string',
         'condition' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Condition',
@@ -72,7 +72,7 @@ class InboundShipmentPlanRequestItem implements \ArrayAccess, \JsonSerializable,
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'seller_sku' => null,
         'asin' => null,
         'condition' => null,
@@ -87,7 +87,7 @@ class InboundShipmentPlanRequestItem implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'seller_sku' => 'SellerSKU',
         'asin' => 'ASIN',
         'condition' => 'Condition',
@@ -101,7 +101,7 @@ class InboundShipmentPlanRequestItem implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'seller_sku' => 'setSellerSku',
         'asin' => 'setAsin',
         'condition' => 'setCondition',
@@ -115,7 +115,7 @@ class InboundShipmentPlanRequestItem implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'seller_sku' => 'getSellerSku',
         'asin' => 'getAsin',
         'condition' => 'getCondition',
@@ -129,7 +129,7 @@ class InboundShipmentPlanRequestItem implements \ArrayAccess, \JsonSerializable,
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

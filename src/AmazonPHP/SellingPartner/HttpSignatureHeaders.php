@@ -8,7 +8,7 @@ use Psr\Http\Message\RequestInterface;
 
 final class HttpSignatureHeaders
 {
-    private static array $cache = [];
+    private static /** [COMPAT] array */ $cache = [];
 
     public static function forConfig(
         Configuration $config,

@@ -49,14 +49,14 @@ class AplusPaginatedResponseAllOf implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'AplusPaginatedResponse_allOf';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'AplusPaginatedResponse_allOf';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'next_page_token' => 'string',
     ];
 
@@ -67,7 +67,7 @@ class AplusPaginatedResponseAllOf implements \ArrayAccess, \JsonSerializable, Mo
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'next_page_token' => null,
     ];
 
@@ -77,7 +77,7 @@ class AplusPaginatedResponseAllOf implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'next_page_token' => 'nextPageToken',
     ];
 
@@ -86,7 +86,7 @@ class AplusPaginatedResponseAllOf implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'next_page_token' => 'setNextPageToken',
     ];
 
@@ -95,7 +95,7 @@ class AplusPaginatedResponseAllOf implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'next_page_token' => 'getNextPageToken',
     ];
 
@@ -104,7 +104,7 @@ class AplusPaginatedResponseAllOf implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

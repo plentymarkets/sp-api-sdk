@@ -49,14 +49,14 @@ class ImageComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ImageComponent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ImageComponent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'upload_destination_id' => 'string',
         'image_crop_specification' => '\AmazonPHP\SellingPartner\Model\APlus\ImageCropSpecification',
         'alt_text' => 'string',
@@ -69,7 +69,7 @@ class ImageComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'upload_destination_id' => null,
         'image_crop_specification' => null,
         'alt_text' => null,
@@ -81,7 +81,7 @@ class ImageComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'upload_destination_id' => 'uploadDestinationId',
         'image_crop_specification' => 'imageCropSpecification',
         'alt_text' => 'altText',
@@ -92,7 +92,7 @@ class ImageComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'upload_destination_id' => 'setUploadDestinationId',
         'image_crop_specification' => 'setImageCropSpecification',
         'alt_text' => 'setAltText',
@@ -103,7 +103,7 @@ class ImageComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'upload_destination_id' => 'getUploadDestinationId',
         'image_crop_specification' => 'getImageCropSpecification',
         'alt_text' => 'getAltText',
@@ -114,7 +114,7 @@ class ImageComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

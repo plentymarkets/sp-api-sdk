@@ -13,11 +13,11 @@ use Psr\Http\Message\StreamFactoryInterface;
 
 final class STSClient
 {
-    private ClientInterface $client;
+    private /** [COMPAT] ClientInterface */ $client;
 
-    private RequestFactoryInterface $requestFactory;
+    private /** [COMPAT] RequestFactoryInterface */ $requestFactory;
 
-    private StreamFactoryInterface $streamFactory;
+    private /** [COMPAT] StreamFactoryInterface */ $streamFactory;
 
     public function __construct(
         ClientInterface $client,

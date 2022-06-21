@@ -55,14 +55,14 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Order';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Order';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'purchase_order_number' => 'string',
         'purchase_order_state' => 'string',
         'order_details' => '\AmazonPHP\SellingPartner\Model\VendorOrders\OrderDetails',
@@ -75,7 +75,7 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'purchase_order_number' => null,
         'purchase_order_state' => null,
         'order_details' => null,
@@ -87,7 +87,7 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'purchase_order_number' => 'purchaseOrderNumber',
         'purchase_order_state' => 'purchaseOrderState',
         'order_details' => 'orderDetails',
@@ -98,7 +98,7 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'purchase_order_number' => 'setPurchaseOrderNumber',
         'purchase_order_state' => 'setPurchaseOrderState',
         'order_details' => 'setOrderDetails',
@@ -109,7 +109,7 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'purchase_order_number' => 'getPurchaseOrderNumber',
         'purchase_order_state' => 'getPurchaseOrderState',
         'order_details' => 'getOrderDetails',
@@ -120,7 +120,7 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

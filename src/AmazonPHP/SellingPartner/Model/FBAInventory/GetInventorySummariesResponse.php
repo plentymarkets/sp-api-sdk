@@ -49,14 +49,14 @@ class GetInventorySummariesResponse implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetInventorySummariesResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetInventorySummariesResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'payload' => '\AmazonPHP\SellingPartner\Model\FBAInventory\GetInventorySummariesResult',
         'pagination' => '\AmazonPHP\SellingPartner\Model\FBAInventory\Pagination',
         'errors' => '\AmazonPHP\SellingPartner\Model\FBAInventory\Error[]',
@@ -69,7 +69,7 @@ class GetInventorySummariesResponse implements \ArrayAccess, \JsonSerializable, 
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'payload' => null,
         'pagination' => null,
         'errors' => null,
@@ -81,7 +81,7 @@ class GetInventorySummariesResponse implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'payload' => 'payload',
         'pagination' => 'pagination',
         'errors' => 'errors',
@@ -92,7 +92,7 @@ class GetInventorySummariesResponse implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'payload' => 'setPayload',
         'pagination' => 'setPagination',
         'errors' => 'setErrors',
@@ -103,7 +103,7 @@ class GetInventorySummariesResponse implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'payload' => 'getPayload',
         'pagination' => 'getPagination',
         'errors' => 'getErrors',
@@ -114,7 +114,7 @@ class GetInventorySummariesResponse implements \ArrayAccess, \JsonSerializable, 
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

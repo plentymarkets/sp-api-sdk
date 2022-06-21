@@ -61,14 +61,14 @@ class ImportDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ImportDetails';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ImportDetails';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'method_of_payment' => 'string',
         'seal_number' => 'string',
         'route' => '\AmazonPHP\SellingPartner\Model\VendorShipments\Route',
@@ -84,7 +84,7 @@ class ImportDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'method_of_payment' => null,
         'seal_number' => null,
         'route' => null,
@@ -99,7 +99,7 @@ class ImportDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'method_of_payment' => 'methodOfPayment',
         'seal_number' => 'sealNumber',
         'route' => 'route',
@@ -113,7 +113,7 @@ class ImportDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'method_of_payment' => 'setMethodOfPayment',
         'seal_number' => 'setSealNumber',
         'route' => 'setRoute',
@@ -127,7 +127,7 @@ class ImportDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'method_of_payment' => 'getMethodOfPayment',
         'seal_number' => 'getSealNumber',
         'route' => 'getRoute',
@@ -141,7 +141,7 @@ class ImportDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

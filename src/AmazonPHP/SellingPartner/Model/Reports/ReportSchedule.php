@@ -49,14 +49,14 @@ class ReportSchedule implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ReportSchedule';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ReportSchedule';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'report_schedule_id' => 'string',
         'report_type' => 'string',
         'marketplace_ids' => 'string[]',
@@ -72,7 +72,7 @@ class ReportSchedule implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'report_schedule_id' => null,
         'report_type' => null,
         'marketplace_ids' => null,
@@ -87,7 +87,7 @@ class ReportSchedule implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'report_schedule_id' => 'reportScheduleId',
         'report_type' => 'reportType',
         'marketplace_ids' => 'marketplaceIds',
@@ -101,7 +101,7 @@ class ReportSchedule implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'report_schedule_id' => 'setReportScheduleId',
         'report_type' => 'setReportType',
         'marketplace_ids' => 'setMarketplaceIds',
@@ -115,7 +115,7 @@ class ReportSchedule implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'report_schedule_id' => 'getReportScheduleId',
         'report_type' => 'getReportType',
         'marketplace_ids' => 'getMarketplaceIds',
@@ -129,7 +129,7 @@ class ReportSchedule implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

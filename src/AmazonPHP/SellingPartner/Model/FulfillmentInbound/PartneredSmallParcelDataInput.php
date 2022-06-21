@@ -49,14 +49,14 @@ class PartneredSmallParcelDataInput implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'PartneredSmallParcelDataInput';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'PartneredSmallParcelDataInput';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'package_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredSmallParcelPackageInput[]',
         'carrier_name' => 'string',
     ];
@@ -68,7 +68,7 @@ class PartneredSmallParcelDataInput implements \ArrayAccess, \JsonSerializable, 
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'package_list' => null,
         'carrier_name' => null,
     ];
@@ -79,7 +79,7 @@ class PartneredSmallParcelDataInput implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'package_list' => 'PackageList',
         'carrier_name' => 'CarrierName',
     ];
@@ -89,7 +89,7 @@ class PartneredSmallParcelDataInput implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'package_list' => 'setPackageList',
         'carrier_name' => 'setCarrierName',
     ];
@@ -99,7 +99,7 @@ class PartneredSmallParcelDataInput implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'package_list' => 'getPackageList',
         'carrier_name' => 'getCarrierName',
     ];
@@ -109,7 +109,7 @@ class PartneredSmallParcelDataInput implements \ArrayAccess, \JsonSerializable, 
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

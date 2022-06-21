@@ -49,14 +49,14 @@ class SubmitAcknowledgementRequest implements \ArrayAccess, \JsonSerializable, M
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'SubmitAcknowledgementRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'SubmitAcknowledgementRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'acknowledgements' => '\AmazonPHP\SellingPartner\Model\VendorOrders\OrderAcknowledgement[]',
     ];
 
@@ -67,7 +67,7 @@ class SubmitAcknowledgementRequest implements \ArrayAccess, \JsonSerializable, M
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'acknowledgements' => null,
     ];
 
@@ -77,7 +77,7 @@ class SubmitAcknowledgementRequest implements \ArrayAccess, \JsonSerializable, M
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'acknowledgements' => 'acknowledgements',
     ];
 
@@ -86,7 +86,7 @@ class SubmitAcknowledgementRequest implements \ArrayAccess, \JsonSerializable, M
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'acknowledgements' => 'setAcknowledgements',
     ];
 
@@ -95,7 +95,7 @@ class SubmitAcknowledgementRequest implements \ArrayAccess, \JsonSerializable, M
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'acknowledgements' => 'getAcknowledgements',
     ];
 
@@ -104,7 +104,7 @@ class SubmitAcknowledgementRequest implements \ArrayAccess, \JsonSerializable, M
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

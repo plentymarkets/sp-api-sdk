@@ -49,14 +49,14 @@ class ShipmentDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ShipmentDetail';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ShipmentDetail';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'warehouse_id' => 'string',
         'amazon_order_id' => 'string',
         'amazon_shipment_id' => 'string',
@@ -80,7 +80,7 @@ class ShipmentDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'warehouse_id' => null,
         'amazon_order_id' => null,
         'amazon_shipment_id' => null,
@@ -103,7 +103,7 @@ class ShipmentDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'warehouse_id' => 'WarehouseId',
         'amazon_order_id' => 'AmazonOrderId',
         'amazon_shipment_id' => 'AmazonShipmentId',
@@ -125,7 +125,7 @@ class ShipmentDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'warehouse_id' => 'setWarehouseId',
         'amazon_order_id' => 'setAmazonOrderId',
         'amazon_shipment_id' => 'setAmazonShipmentId',
@@ -147,7 +147,7 @@ class ShipmentDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'warehouse_id' => 'getWarehouseId',
         'amazon_order_id' => 'getAmazonOrderId',
         'amazon_shipment_id' => 'getAmazonShipmentId',
@@ -169,7 +169,7 @@ class ShipmentDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

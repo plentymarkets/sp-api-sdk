@@ -42,19 +42,19 @@ final class SellingPartnerSDK
     /**
      * @var array<class-string>
      */
-    private array $instances;
+    private /** [COMPAT] array */ $instances;
 
-    private ClientInterface $httpClient;
+    private /** [COMPAT] ClientInterface */ $httpClient;
 
-    private RequestFactoryInterface $requestFactory;
+    private /** [COMPAT] RequestFactoryInterface */ $requestFactory;
 
-    private StreamFactoryInterface $streamFactory;
+    private /** [COMPAT] StreamFactoryInterface */ $streamFactory;
 
-    private Configuration $configuration;
+    private /** [COMPAT] Configuration */ $configuration;
 
-    private LoggerInterface $logger;
+    private /** [COMPAT] LoggerInterface */ $logger;
 
-    private HttpFactory $httpFactory;
+    private /** [COMPAT] HttpFactory */ $httpFactory;
 
     public function __construct(
         ClientInterface $httpClient,

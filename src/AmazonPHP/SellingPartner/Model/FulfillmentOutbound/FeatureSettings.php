@@ -53,14 +53,14 @@ class FeatureSettings implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'FeatureSettings';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'FeatureSettings';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'feature_name' => 'string',
         'feature_fulfillment_policy' => 'string',
     ];
@@ -72,7 +72,7 @@ class FeatureSettings implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'feature_name' => null,
         'feature_fulfillment_policy' => null,
     ];
@@ -83,7 +83,7 @@ class FeatureSettings implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'feature_name' => 'featureName',
         'feature_fulfillment_policy' => 'featureFulfillmentPolicy',
     ];
@@ -93,7 +93,7 @@ class FeatureSettings implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'feature_name' => 'setFeatureName',
         'feature_fulfillment_policy' => 'setFeatureFulfillmentPolicy',
     ];
@@ -103,7 +103,7 @@ class FeatureSettings implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'feature_name' => 'getFeatureName',
         'feature_fulfillment_policy' => 'getFeatureFulfillmentPolicy',
     ];
@@ -113,7 +113,7 @@ class FeatureSettings implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

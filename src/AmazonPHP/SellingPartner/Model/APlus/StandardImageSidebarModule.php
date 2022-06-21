@@ -49,14 +49,14 @@ class StandardImageSidebarModule implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'StandardImageSidebarModule';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'StandardImageSidebarModule';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'headline' => '\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
         'image_caption_block' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageCaptionBlock',
         'description_text_block' => '\AmazonPHP\SellingPartner\Model\APlus\StandardTextBlock',
@@ -72,7 +72,7 @@ class StandardImageSidebarModule implements \ArrayAccess, \JsonSerializable, Mod
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'headline' => null,
         'image_caption_block' => null,
         'description_text_block' => null,
@@ -87,7 +87,7 @@ class StandardImageSidebarModule implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'headline' => 'headline',
         'image_caption_block' => 'imageCaptionBlock',
         'description_text_block' => 'descriptionTextBlock',
@@ -101,7 +101,7 @@ class StandardImageSidebarModule implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'headline' => 'setHeadline',
         'image_caption_block' => 'setImageCaptionBlock',
         'description_text_block' => 'setDescriptionTextBlock',
@@ -115,7 +115,7 @@ class StandardImageSidebarModule implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'headline' => 'getHeadline',
         'image_caption_block' => 'getImageCaptionBlock',
         'description_text_block' => 'getDescriptionTextBlock',
@@ -129,7 +129,7 @@ class StandardImageSidebarModule implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

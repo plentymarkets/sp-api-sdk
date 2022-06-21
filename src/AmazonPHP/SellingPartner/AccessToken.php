@@ -6,15 +6,15 @@ namespace Plenty\AmazonPHP\SellingPartner;
 
 final class AccessToken
 {
-    private string $accessToken;
+    private /** [COMPAT] string */ $accessToken;
 
-    private string $refreshToken;
+    private /** [COMPAT] string */ $refreshToken;
 
-    private string $type;
+    private /** [COMPAT] string */ $type;
 
-    private int $expiresIn;
+    private /** [COMPAT] int */ $expiresIn;
 
-    private string $grantType;
+    private /** [COMPAT] string */ $grantType;
 
     public function __construct(string $accessToken, string $refreshToken, string $type, int $expiresIn, string $grantType)
     {

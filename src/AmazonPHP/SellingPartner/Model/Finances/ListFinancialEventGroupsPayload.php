@@ -49,14 +49,14 @@ class ListFinancialEventGroupsPayload implements \ArrayAccess, \JsonSerializable
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ListFinancialEventGroupsPayload';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ListFinancialEventGroupsPayload';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'next_token' => 'string',
         'financial_event_group_list' => '\AmazonPHP\SellingPartner\Model\Finances\FinancialEventGroup[]',
     ];
@@ -68,7 +68,7 @@ class ListFinancialEventGroupsPayload implements \ArrayAccess, \JsonSerializable
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'next_token' => null,
         'financial_event_group_list' => null,
     ];
@@ -79,7 +79,7 @@ class ListFinancialEventGroupsPayload implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'next_token' => 'NextToken',
         'financial_event_group_list' => 'FinancialEventGroupList',
     ];
@@ -89,7 +89,7 @@ class ListFinancialEventGroupsPayload implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'next_token' => 'setNextToken',
         'financial_event_group_list' => 'setFinancialEventGroupList',
     ];
@@ -99,7 +99,7 @@ class ListFinancialEventGroupsPayload implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'next_token' => 'getNextToken',
         'financial_event_group_list' => 'getFinancialEventGroupList',
     ];
@@ -109,7 +109,7 @@ class ListFinancialEventGroupsPayload implements \ArrayAccess, \JsonSerializable
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

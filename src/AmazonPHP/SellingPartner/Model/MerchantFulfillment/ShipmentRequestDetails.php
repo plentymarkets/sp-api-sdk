@@ -49,14 +49,14 @@ class ShipmentRequestDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ShipmentRequestDetails';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ShipmentRequestDetails';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'amazon_order_id' => 'string',
         'seller_order_id' => 'string',
         'item_list' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Item[]',
@@ -76,7 +76,7 @@ class ShipmentRequestDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'amazon_order_id' => null,
         'seller_order_id' => null,
         'item_list' => null,
@@ -95,7 +95,7 @@ class ShipmentRequestDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'amazon_order_id' => 'AmazonOrderId',
         'seller_order_id' => 'SellerOrderId',
         'item_list' => 'ItemList',
@@ -113,7 +113,7 @@ class ShipmentRequestDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'amazon_order_id' => 'setAmazonOrderId',
         'seller_order_id' => 'setSellerOrderId',
         'item_list' => 'setItemList',
@@ -131,7 +131,7 @@ class ShipmentRequestDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'amazon_order_id' => 'getAmazonOrderId',
         'seller_order_id' => 'getSellerOrderId',
         'item_list' => 'getItemList',
@@ -149,7 +149,7 @@ class ShipmentRequestDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

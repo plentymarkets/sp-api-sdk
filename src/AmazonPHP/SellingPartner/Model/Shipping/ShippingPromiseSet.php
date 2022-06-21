@@ -49,14 +49,14 @@ class ShippingPromiseSet implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ShippingPromiseSet';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ShippingPromiseSet';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'delivery_window' => '\AmazonPHP\SellingPartner\Model\Shipping\TimeRange',
         'receive_window' => '\AmazonPHP\SellingPartner\Model\Shipping\TimeRange',
     ];
@@ -68,7 +68,7 @@ class ShippingPromiseSet implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'delivery_window' => null,
         'receive_window' => null,
     ];
@@ -79,7 +79,7 @@ class ShippingPromiseSet implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'delivery_window' => 'deliveryWindow',
         'receive_window' => 'receiveWindow',
     ];
@@ -89,7 +89,7 @@ class ShippingPromiseSet implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'delivery_window' => 'setDeliveryWindow',
         'receive_window' => 'setReceiveWindow',
     ];
@@ -99,7 +99,7 @@ class ShippingPromiseSet implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'delivery_window' => 'getDeliveryWindow',
         'receive_window' => 'getReceiveWindow',
     ];
@@ -109,7 +109,7 @@ class ShippingPromiseSet implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

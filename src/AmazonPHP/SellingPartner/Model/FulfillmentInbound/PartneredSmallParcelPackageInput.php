@@ -49,14 +49,14 @@ class PartneredSmallParcelPackageInput implements \ArrayAccess, \JsonSerializabl
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'PartneredSmallParcelPackageInput';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'PartneredSmallParcelPackageInput';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'dimensions' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions',
         'weight' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight',
     ];
@@ -68,7 +68,7 @@ class PartneredSmallParcelPackageInput implements \ArrayAccess, \JsonSerializabl
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'dimensions' => null,
         'weight' => null,
     ];
@@ -79,7 +79,7 @@ class PartneredSmallParcelPackageInput implements \ArrayAccess, \JsonSerializabl
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'dimensions' => 'Dimensions',
         'weight' => 'Weight',
     ];
@@ -89,7 +89,7 @@ class PartneredSmallParcelPackageInput implements \ArrayAccess, \JsonSerializabl
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'dimensions' => 'setDimensions',
         'weight' => 'setWeight',
     ];
@@ -99,7 +99,7 @@ class PartneredSmallParcelPackageInput implements \ArrayAccess, \JsonSerializabl
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'dimensions' => 'getDimensions',
         'weight' => 'getWeight',
     ];
@@ -109,7 +109,7 @@ class PartneredSmallParcelPackageInput implements \ArrayAccess, \JsonSerializabl
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

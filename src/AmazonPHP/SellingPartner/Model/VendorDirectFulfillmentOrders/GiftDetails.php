@@ -49,14 +49,14 @@ class GiftDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GiftDetails';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GiftDetails';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'gift_message' => 'string',
         'gift_wrap_id' => 'string',
     ];
@@ -68,7 +68,7 @@ class GiftDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'gift_message' => null,
         'gift_wrap_id' => null,
     ];
@@ -79,7 +79,7 @@ class GiftDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'gift_message' => 'giftMessage',
         'gift_wrap_id' => 'giftWrapId',
     ];
@@ -89,7 +89,7 @@ class GiftDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'gift_message' => 'setGiftMessage',
         'gift_wrap_id' => 'setGiftWrapId',
     ];
@@ -99,7 +99,7 @@ class GiftDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'gift_message' => 'getGiftMessage',
         'gift_wrap_id' => 'getGiftWrapId',
     ];
@@ -109,7 +109,7 @@ class GiftDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

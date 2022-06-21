@@ -49,14 +49,14 @@ class InboundShipmentInfo implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'InboundShipmentInfo';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'InboundShipmentInfo';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'shipment_id' => 'string',
         'shipment_name' => 'string',
         'ship_from_address' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Address',
@@ -76,7 +76,7 @@ class InboundShipmentInfo implements \ArrayAccess, \JsonSerializable, ModelInter
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'shipment_id' => null,
         'shipment_name' => null,
         'ship_from_address' => null,
@@ -95,7 +95,7 @@ class InboundShipmentInfo implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'shipment_id' => 'ShipmentId',
         'shipment_name' => 'ShipmentName',
         'ship_from_address' => 'ShipFromAddress',
@@ -113,7 +113,7 @@ class InboundShipmentInfo implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'shipment_id' => 'setShipmentId',
         'shipment_name' => 'setShipmentName',
         'ship_from_address' => 'setShipFromAddress',
@@ -131,7 +131,7 @@ class InboundShipmentInfo implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'shipment_id' => 'getShipmentId',
         'shipment_name' => 'getShipmentName',
         'ship_from_address' => 'getShipFromAddress',
@@ -149,7 +149,7 @@ class InboundShipmentInfo implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class GetSolicitationActionResponse implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetSolicitationActionResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetSolicitationActionResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         '_links' => '\AmazonPHP\SellingPartner\Model\Solicitations\GetSolicitationActionResponseLinks',
         '_embedded' => '\AmazonPHP\SellingPartner\Model\Solicitations\GetSolicitationActionResponseEmbedded',
         'payload' => '\AmazonPHP\SellingPartner\Model\Solicitations\SolicitationsAction',
@@ -70,7 +70,7 @@ class GetSolicitationActionResponse implements \ArrayAccess, \JsonSerializable, 
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         '_links' => null,
         '_embedded' => null,
         'payload' => null,
@@ -83,7 +83,7 @@ class GetSolicitationActionResponse implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         '_links' => '_links',
         '_embedded' => '_embedded',
         'payload' => 'payload',
@@ -95,7 +95,7 @@ class GetSolicitationActionResponse implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         '_links' => 'setLinks',
         '_embedded' => 'setEmbedded',
         'payload' => 'setPayload',
@@ -107,7 +107,7 @@ class GetSolicitationActionResponse implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         '_links' => 'getLinks',
         '_embedded' => 'getEmbedded',
         'payload' => 'getPayload',
@@ -119,7 +119,7 @@ class GetSolicitationActionResponse implements \ArrayAccess, \JsonSerializable, 
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

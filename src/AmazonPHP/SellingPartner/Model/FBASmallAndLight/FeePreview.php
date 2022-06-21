@@ -49,14 +49,14 @@ class FeePreview implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'FeePreview';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'FeePreview';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'asin' => 'string',
         'price' => '\AmazonPHP\SellingPartner\Model\FBASmallAndLight\MoneyType',
         'fee_breakdown' => '\AmazonPHP\SellingPartner\Model\FBASmallAndLight\FeeLineItem[]',
@@ -71,7 +71,7 @@ class FeePreview implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'asin' => null,
         'price' => null,
         'fee_breakdown' => null,
@@ -85,7 +85,7 @@ class FeePreview implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'asin' => 'asin',
         'price' => 'price',
         'fee_breakdown' => 'feeBreakdown',
@@ -98,7 +98,7 @@ class FeePreview implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'asin' => 'setAsin',
         'price' => 'setPrice',
         'fee_breakdown' => 'setFeeBreakdown',
@@ -111,7 +111,7 @@ class FeePreview implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'asin' => 'getAsin',
         'price' => 'getPrice',
         'fee_breakdown' => 'getFeeBreakdown',
@@ -124,7 +124,7 @@ class FeePreview implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

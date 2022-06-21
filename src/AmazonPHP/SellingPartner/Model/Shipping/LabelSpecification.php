@@ -53,14 +53,14 @@ class LabelSpecification implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'LabelSpecification';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'LabelSpecification';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'label_format' => 'string',
         'label_stock_size' => 'string',
     ];
@@ -72,7 +72,7 @@ class LabelSpecification implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'label_format' => null,
         'label_stock_size' => null,
     ];
@@ -83,7 +83,7 @@ class LabelSpecification implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'label_format' => 'labelFormat',
         'label_stock_size' => 'labelStockSize',
     ];
@@ -93,7 +93,7 @@ class LabelSpecification implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'label_format' => 'setLabelFormat',
         'label_stock_size' => 'setLabelStockSize',
     ];
@@ -103,7 +103,7 @@ class LabelSpecification implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'label_format' => 'getLabelFormat',
         'label_stock_size' => 'getLabelStockSize',
     ];
@@ -113,7 +113,7 @@ class LabelSpecification implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class ContainerSpecification implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ContainerSpecification';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ContainerSpecification';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'dimensions' => '\AmazonPHP\SellingPartner\Model\Shipping\Dimensions',
         'weight' => '\AmazonPHP\SellingPartner\Model\Shipping\Weight',
     ];
@@ -68,7 +68,7 @@ class ContainerSpecification implements \ArrayAccess, \JsonSerializable, ModelIn
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'dimensions' => null,
         'weight' => null,
     ];
@@ -79,7 +79,7 @@ class ContainerSpecification implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'dimensions' => 'dimensions',
         'weight' => 'weight',
     ];
@@ -89,7 +89,7 @@ class ContainerSpecification implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'dimensions' => 'setDimensions',
         'weight' => 'setWeight',
     ];
@@ -99,7 +99,7 @@ class ContainerSpecification implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'dimensions' => 'getDimensions',
         'weight' => 'getWeight',
     ];
@@ -109,7 +109,7 @@ class ContainerSpecification implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

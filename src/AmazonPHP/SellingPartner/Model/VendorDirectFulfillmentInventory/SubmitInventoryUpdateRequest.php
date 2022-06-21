@@ -49,14 +49,14 @@ class SubmitInventoryUpdateRequest implements \ArrayAccess, \JsonSerializable, M
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'SubmitInventoryUpdateRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'SubmitInventoryUpdateRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'inventory' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\InventoryUpdate',
     ];
 
@@ -67,7 +67,7 @@ class SubmitInventoryUpdateRequest implements \ArrayAccess, \JsonSerializable, M
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'inventory' => null,
     ];
 
@@ -77,7 +77,7 @@ class SubmitInventoryUpdateRequest implements \ArrayAccess, \JsonSerializable, M
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'inventory' => 'inventory',
     ];
 
@@ -86,7 +86,7 @@ class SubmitInventoryUpdateRequest implements \ArrayAccess, \JsonSerializable, M
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'inventory' => 'setInventory',
     ];
 
@@ -95,7 +95,7 @@ class SubmitInventoryUpdateRequest implements \ArrayAccess, \JsonSerializable, M
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'inventory' => 'getInventory',
     ];
 
@@ -104,7 +104,7 @@ class SubmitInventoryUpdateRequest implements \ArrayAccess, \JsonSerializable, M
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -53,14 +53,14 @@ class FulfillmentPreviewItem implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'FulfillmentPreviewItem';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'FulfillmentPreviewItem';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'seller_sku' => 'string',
         'quantity' => 'int',
         'seller_fulfillment_order_item_id' => 'string',
@@ -75,7 +75,7 @@ class FulfillmentPreviewItem implements \ArrayAccess, \JsonSerializable, ModelIn
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'seller_sku' => null,
         'quantity' => 'int32',
         'seller_fulfillment_order_item_id' => null,
@@ -89,7 +89,7 @@ class FulfillmentPreviewItem implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'seller_sku' => 'sellerSku',
         'quantity' => 'quantity',
         'seller_fulfillment_order_item_id' => 'sellerFulfillmentOrderItemId',
@@ -102,7 +102,7 @@ class FulfillmentPreviewItem implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'seller_sku' => 'setSellerSku',
         'quantity' => 'setQuantity',
         'seller_fulfillment_order_item_id' => 'setSellerFulfillmentOrderItemId',
@@ -115,7 +115,7 @@ class FulfillmentPreviewItem implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'seller_sku' => 'getSellerSku',
         'quantity' => 'getQuantity',
         'seller_fulfillment_order_item_id' => 'getSellerFulfillmentOrderItemId',
@@ -128,7 +128,7 @@ class FulfillmentPreviewItem implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

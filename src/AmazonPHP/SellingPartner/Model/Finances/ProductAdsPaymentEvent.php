@@ -49,14 +49,14 @@ class ProductAdsPaymentEvent implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ProductAdsPaymentEvent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ProductAdsPaymentEvent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'posted_date' => '\DateTime',
         'transaction_type' => 'string',
         'invoice_id' => 'string',
@@ -72,7 +72,7 @@ class ProductAdsPaymentEvent implements \ArrayAccess, \JsonSerializable, ModelIn
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'posted_date' => 'date-time',
         'transaction_type' => null,
         'invoice_id' => null,
@@ -87,7 +87,7 @@ class ProductAdsPaymentEvent implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'posted_date' => 'postedDate',
         'transaction_type' => 'transactionType',
         'invoice_id' => 'invoiceId',
@@ -101,7 +101,7 @@ class ProductAdsPaymentEvent implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'posted_date' => 'setPostedDate',
         'transaction_type' => 'setTransactionType',
         'invoice_id' => 'setInvoiceId',
@@ -115,7 +115,7 @@ class ProductAdsPaymentEvent implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'posted_date' => 'getPostedDate',
         'transaction_type' => 'getTransactionType',
         'invoice_id' => 'getInvoiceId',
@@ -129,7 +129,7 @@ class ProductAdsPaymentEvent implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

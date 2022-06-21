@@ -49,14 +49,14 @@ class OfferListingCountType implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'OfferListingCountType';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'OfferListingCountType';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'count' => 'int',
         'condition' => 'string',
     ];
@@ -68,7 +68,7 @@ class OfferListingCountType implements \ArrayAccess, \JsonSerializable, ModelInt
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'count' => 'int32',
         'condition' => null,
     ];
@@ -79,7 +79,7 @@ class OfferListingCountType implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'count' => 'Count',
         'condition' => 'condition',
     ];
@@ -89,7 +89,7 @@ class OfferListingCountType implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'count' => 'setCount',
         'condition' => 'setCondition',
     ];
@@ -99,7 +99,7 @@ class OfferListingCountType implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'count' => 'getCount',
         'condition' => 'getCondition',
     ];
@@ -109,7 +109,7 @@ class OfferListingCountType implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

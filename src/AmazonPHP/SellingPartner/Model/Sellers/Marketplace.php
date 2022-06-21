@@ -49,14 +49,14 @@ class Marketplace implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Marketplace';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Marketplace';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
         'country_code' => 'string',
@@ -72,7 +72,7 @@ class Marketplace implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'id' => null,
         'name' => null,
         'country_code' => null,
@@ -87,7 +87,7 @@ class Marketplace implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'id' => 'id',
         'name' => 'name',
         'country_code' => 'countryCode',
@@ -101,7 +101,7 @@ class Marketplace implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'id' => 'setId',
         'name' => 'setName',
         'country_code' => 'setCountryCode',
@@ -115,7 +115,7 @@ class Marketplace implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'id' => 'getId',
         'name' => 'getName',
         'country_code' => 'getCountryCode',
@@ -129,7 +129,7 @@ class Marketplace implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

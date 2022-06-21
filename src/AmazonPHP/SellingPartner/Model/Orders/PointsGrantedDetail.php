@@ -49,14 +49,14 @@ class PointsGrantedDetail implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'PointsGrantedDetail';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'PointsGrantedDetail';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'points_number' => 'int',
         'points_monetary_value' => '\AmazonPHP\SellingPartner\Model\Orders\Money',
     ];
@@ -68,7 +68,7 @@ class PointsGrantedDetail implements \ArrayAccess, \JsonSerializable, ModelInter
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'points_number' => null,
         'points_monetary_value' => null,
     ];
@@ -79,7 +79,7 @@ class PointsGrantedDetail implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'points_number' => 'PointsNumber',
         'points_monetary_value' => 'PointsMonetaryValue',
     ];
@@ -89,7 +89,7 @@ class PointsGrantedDetail implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'points_number' => 'setPointsNumber',
         'points_monetary_value' => 'setPointsMonetaryValue',
     ];
@@ -99,7 +99,7 @@ class PointsGrantedDetail implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'points_number' => 'getPointsNumber',
         'points_monetary_value' => 'getPointsMonetaryValue',
     ];
@@ -109,7 +109,7 @@ class PointsGrantedDetail implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

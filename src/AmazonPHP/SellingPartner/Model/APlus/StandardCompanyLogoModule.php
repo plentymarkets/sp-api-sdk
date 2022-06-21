@@ -49,14 +49,14 @@ class StandardCompanyLogoModule implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'StandardCompanyLogoModule';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'StandardCompanyLogoModule';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'company_logo' => '\AmazonPHP\SellingPartner\Model\APlus\ImageComponent',
     ];
 
@@ -67,7 +67,7 @@ class StandardCompanyLogoModule implements \ArrayAccess, \JsonSerializable, Mode
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'company_logo' => null,
     ];
 
@@ -77,7 +77,7 @@ class StandardCompanyLogoModule implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'company_logo' => 'companyLogo',
     ];
 
@@ -86,7 +86,7 @@ class StandardCompanyLogoModule implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'company_logo' => 'setCompanyLogo',
     ];
 
@@ -95,7 +95,7 @@ class StandardCompanyLogoModule implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'company_logo' => 'getCompanyLogo',
     ];
 
@@ -104,7 +104,7 @@ class StandardCompanyLogoModule implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

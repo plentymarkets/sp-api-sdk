@@ -49,14 +49,14 @@ class ContentDocument implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ContentDocument';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ContentDocument';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'name' => 'string',
         'content_type' => '\AmazonPHP\SellingPartner\Model\APlus\ContentType',
         'content_sub_type' => 'string',
@@ -71,7 +71,7 @@ class ContentDocument implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'name' => null,
         'content_type' => null,
         'content_sub_type' => null,
@@ -85,7 +85,7 @@ class ContentDocument implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'name' => 'name',
         'content_type' => 'contentType',
         'content_sub_type' => 'contentSubType',
@@ -98,7 +98,7 @@ class ContentDocument implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'name' => 'setName',
         'content_type' => 'setContentType',
         'content_sub_type' => 'setContentSubType',
@@ -111,7 +111,7 @@ class ContentDocument implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'name' => 'getName',
         'content_type' => 'getContentType',
         'content_sub_type' => 'getContentSubType',
@@ -124,7 +124,7 @@ class ContentDocument implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

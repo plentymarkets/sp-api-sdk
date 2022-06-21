@@ -49,14 +49,14 @@ class FBALiquidationEvent implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'FBALiquidationEvent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'FBALiquidationEvent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'posted_date' => '\DateTime',
         'original_removal_order_id' => 'string',
         'liquidation_proceeds_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
@@ -70,7 +70,7 @@ class FBALiquidationEvent implements \ArrayAccess, \JsonSerializable, ModelInter
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'posted_date' => 'date-time',
         'original_removal_order_id' => null,
         'liquidation_proceeds_amount' => null,
@@ -83,7 +83,7 @@ class FBALiquidationEvent implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'posted_date' => 'PostedDate',
         'original_removal_order_id' => 'OriginalRemovalOrderId',
         'liquidation_proceeds_amount' => 'LiquidationProceedsAmount',
@@ -95,7 +95,7 @@ class FBALiquidationEvent implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'posted_date' => 'setPostedDate',
         'original_removal_order_id' => 'setOriginalRemovalOrderId',
         'liquidation_proceeds_amount' => 'setLiquidationProceedsAmount',
@@ -107,7 +107,7 @@ class FBALiquidationEvent implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'posted_date' => 'getPostedDate',
         'original_removal_order_id' => 'getOriginalRemovalOrderId',
         'liquidation_proceeds_amount' => 'getLiquidationProceedsAmount',
@@ -119,7 +119,7 @@ class FBALiquidationEvent implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

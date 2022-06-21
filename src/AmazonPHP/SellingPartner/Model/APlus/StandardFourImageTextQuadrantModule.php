@@ -49,14 +49,14 @@ class StandardFourImageTextQuadrantModule implements \ArrayAccess, \JsonSerializ
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'StandardFourImageTextQuadrantModule';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'StandardFourImageTextQuadrantModule';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'block1' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
         'block2' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
         'block3' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
@@ -70,7 +70,7 @@ class StandardFourImageTextQuadrantModule implements \ArrayAccess, \JsonSerializ
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'block1' => null,
         'block2' => null,
         'block3' => null,
@@ -83,7 +83,7 @@ class StandardFourImageTextQuadrantModule implements \ArrayAccess, \JsonSerializ
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'block1' => 'block1',
         'block2' => 'block2',
         'block3' => 'block3',
@@ -95,7 +95,7 @@ class StandardFourImageTextQuadrantModule implements \ArrayAccess, \JsonSerializ
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'block1' => 'setBlock1',
         'block2' => 'setBlock2',
         'block3' => 'setBlock3',
@@ -107,7 +107,7 @@ class StandardFourImageTextQuadrantModule implements \ArrayAccess, \JsonSerializ
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'block1' => 'getBlock1',
         'block2' => 'getBlock2',
         'block3' => 'getBlock3',
@@ -119,7 +119,7 @@ class StandardFourImageTextQuadrantModule implements \ArrayAccess, \JsonSerializ
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

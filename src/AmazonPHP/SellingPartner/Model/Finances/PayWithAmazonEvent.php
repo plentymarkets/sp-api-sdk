@@ -49,14 +49,14 @@ class PayWithAmazonEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'PayWithAmazonEvent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'PayWithAmazonEvent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'seller_order_id' => 'string',
         'transaction_posted_date' => '\DateTime',
         'business_object_type' => 'string',
@@ -76,7 +76,7 @@ class PayWithAmazonEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'seller_order_id' => null,
         'transaction_posted_date' => 'date-time',
         'business_object_type' => null,
@@ -95,7 +95,7 @@ class PayWithAmazonEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'seller_order_id' => 'SellerOrderId',
         'transaction_posted_date' => 'TransactionPostedDate',
         'business_object_type' => 'BusinessObjectType',
@@ -113,7 +113,7 @@ class PayWithAmazonEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'seller_order_id' => 'setSellerOrderId',
         'transaction_posted_date' => 'setTransactionPostedDate',
         'business_object_type' => 'setBusinessObjectType',
@@ -131,7 +131,7 @@ class PayWithAmazonEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'seller_order_id' => 'getSellerOrderId',
         'transaction_posted_date' => 'getTransactionPostedDate',
         'business_object_type' => 'getBusinessObjectType',
@@ -149,7 +149,7 @@ class PayWithAmazonEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

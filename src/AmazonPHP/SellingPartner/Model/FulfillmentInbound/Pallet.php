@@ -49,14 +49,14 @@ class Pallet implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Pallet';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Pallet';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'dimensions' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions',
         'weight' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight',
         'is_stacked' => 'bool',
@@ -69,7 +69,7 @@ class Pallet implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'dimensions' => null,
         'weight' => null,
         'is_stacked' => null,
@@ -81,7 +81,7 @@ class Pallet implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'dimensions' => 'Dimensions',
         'weight' => 'Weight',
         'is_stacked' => 'IsStacked',
@@ -92,7 +92,7 @@ class Pallet implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'dimensions' => 'setDimensions',
         'weight' => 'setWeight',
         'is_stacked' => 'setIsStacked',
@@ -103,7 +103,7 @@ class Pallet implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'dimensions' => 'getDimensions',
         'weight' => 'getWeight',
         'is_stacked' => 'getIsStacked',
@@ -114,7 +114,7 @@ class Pallet implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

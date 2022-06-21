@@ -49,14 +49,14 @@ class ItemDelivery implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ItemDelivery';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ItemDelivery';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'estimated_delivery_date' => '\DateTime',
         'item_delivery_promise' => '\AmazonPHP\SellingPartner\Model\Services\ItemDeliveryPromise',
     ];
@@ -68,7 +68,7 @@ class ItemDelivery implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'estimated_delivery_date' => 'date-time',
         'item_delivery_promise' => null,
     ];
@@ -79,7 +79,7 @@ class ItemDelivery implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'estimated_delivery_date' => 'estimatedDeliveryDate',
         'item_delivery_promise' => 'itemDeliveryPromise',
     ];
@@ -89,7 +89,7 @@ class ItemDelivery implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'estimated_delivery_date' => 'setEstimatedDeliveryDate',
         'item_delivery_promise' => 'setItemDeliveryPromise',
     ];
@@ -99,7 +99,7 @@ class ItemDelivery implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'estimated_delivery_date' => 'getEstimatedDeliveryDate',
         'item_delivery_promise' => 'getItemDeliveryPromise',
     ];
@@ -109,7 +109,7 @@ class ItemDelivery implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

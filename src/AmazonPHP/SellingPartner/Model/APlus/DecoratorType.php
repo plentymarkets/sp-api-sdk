@@ -54,7 +54,7 @@ class DecoratorType
 
     public const STYLE_UNDERLINE = 'STYLE_UNDERLINE';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

@@ -49,14 +49,14 @@ class ItemOffersRequest implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ItemOffersRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ItemOffersRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'uri' => 'string',
         'method' => '\AmazonPHP\SellingPartner\Model\ProductPricing\HttpMethod',
         'headers' => 'array<string,string>',
@@ -72,7 +72,7 @@ class ItemOffersRequest implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'uri' => null,
         'method' => null,
         'headers' => null,
@@ -87,7 +87,7 @@ class ItemOffersRequest implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'uri' => 'uri',
         'method' => 'method',
         'headers' => 'headers',
@@ -101,7 +101,7 @@ class ItemOffersRequest implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'uri' => 'setUri',
         'method' => 'setMethod',
         'headers' => 'setHeaders',
@@ -115,7 +115,7 @@ class ItemOffersRequest implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'uri' => 'getUri',
         'method' => 'getMethod',
         'headers' => 'getHeaders',
@@ -129,7 +129,7 @@ class ItemOffersRequest implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

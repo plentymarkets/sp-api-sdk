@@ -44,7 +44,7 @@ class ServiceType
 
     public const PREMIUM = 'Amazon Shipping Premium';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

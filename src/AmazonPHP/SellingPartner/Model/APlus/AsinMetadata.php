@@ -49,14 +49,14 @@ class AsinMetadata implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'AsinMetadata';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'AsinMetadata';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'asin' => 'string',
         'badge_set' => '\AmazonPHP\SellingPartner\Model\APlus\AsinBadge[]',
         'parent' => 'string',
@@ -72,7 +72,7 @@ class AsinMetadata implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'asin' => null,
         'badge_set' => null,
         'parent' => null,
@@ -87,7 +87,7 @@ class AsinMetadata implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'asin' => 'asin',
         'badge_set' => 'badgeSet',
         'parent' => 'parent',
@@ -101,7 +101,7 @@ class AsinMetadata implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'asin' => 'setAsin',
         'badge_set' => 'setBadgeSet',
         'parent' => 'setParent',
@@ -115,7 +115,7 @@ class AsinMetadata implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'asin' => 'getAsin',
         'badge_set' => 'getBadgeSet',
         'parent' => 'getParent',
@@ -129,7 +129,7 @@ class AsinMetadata implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

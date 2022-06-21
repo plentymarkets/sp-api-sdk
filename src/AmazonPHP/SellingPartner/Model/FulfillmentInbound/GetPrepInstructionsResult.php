@@ -49,14 +49,14 @@ class GetPrepInstructionsResult implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetPrepInstructionsResult';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetPrepInstructionsResult';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'sku_prep_instructions_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SKUPrepInstructions[]',
         'invalid_sku_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidSKU[]',
         'asin_prep_instructions_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ASINPrepInstructions[]',
@@ -70,7 +70,7 @@ class GetPrepInstructionsResult implements \ArrayAccess, \JsonSerializable, Mode
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'sku_prep_instructions_list' => null,
         'invalid_sku_list' => null,
         'asin_prep_instructions_list' => null,
@@ -83,7 +83,7 @@ class GetPrepInstructionsResult implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'sku_prep_instructions_list' => 'SKUPrepInstructionsList',
         'invalid_sku_list' => 'InvalidSKUList',
         'asin_prep_instructions_list' => 'ASINPrepInstructionsList',
@@ -95,7 +95,7 @@ class GetPrepInstructionsResult implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'sku_prep_instructions_list' => 'setSkuPrepInstructionsList',
         'invalid_sku_list' => 'setInvalidSkuList',
         'asin_prep_instructions_list' => 'setAsinPrepInstructionsList',
@@ -107,7 +107,7 @@ class GetPrepInstructionsResult implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'sku_prep_instructions_list' => 'getSkuPrepInstructionsList',
         'invalid_sku_list' => 'getInvalidSkuList',
         'asin_prep_instructions_list' => 'getAsinPrepInstructionsList',
@@ -119,7 +119,7 @@ class GetPrepInstructionsResult implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -6,7 +6,7 @@ use AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat;
 
 final class ObjectSerializer
 {
-    private static string $dateTimeFormat = \DateTimeInterface::ATOM;
+    private static /** [COMPAT] string */ $dateTimeFormat = \DateTimeInterface::ATOM;
 
     /**
      * Change the date format.

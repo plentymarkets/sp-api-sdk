@@ -49,14 +49,14 @@ class ItemSalesRanksByMarketplace implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ItemSalesRanksByMarketplace';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ItemSalesRanksByMarketplace';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace_id' => 'string',
         'ranks' => '\AmazonPHP\SellingPartner\Model\CatalogItem\ItemSalesRank[]',
     ];
@@ -68,7 +68,7 @@ class ItemSalesRanksByMarketplace implements \ArrayAccess, \JsonSerializable, Mo
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'marketplace_id' => null,
         'ranks' => null,
     ];
@@ -79,7 +79,7 @@ class ItemSalesRanksByMarketplace implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'marketplace_id' => 'marketplaceId',
         'ranks' => 'ranks',
     ];
@@ -89,7 +89,7 @@ class ItemSalesRanksByMarketplace implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'marketplace_id' => 'setMarketplaceId',
         'ranks' => 'setRanks',
     ];
@@ -99,7 +99,7 @@ class ItemSalesRanksByMarketplace implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'marketplace_id' => 'getMarketplaceId',
         'ranks' => 'getRanks',
     ];
@@ -109,7 +109,7 @@ class ItemSalesRanksByMarketplace implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

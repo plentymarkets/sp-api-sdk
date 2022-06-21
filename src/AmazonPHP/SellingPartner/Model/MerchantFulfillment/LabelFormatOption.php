@@ -49,14 +49,14 @@ class LabelFormatOption implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'LabelFormatOption';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'LabelFormatOption';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'include_packing_slip_with_label' => 'bool',
         'label_format' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat',
     ];
@@ -68,7 +68,7 @@ class LabelFormatOption implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'include_packing_slip_with_label' => null,
         'label_format' => null,
     ];
@@ -79,7 +79,7 @@ class LabelFormatOption implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'include_packing_slip_with_label' => 'IncludePackingSlipWithLabel',
         'label_format' => 'LabelFormat',
     ];
@@ -89,7 +89,7 @@ class LabelFormatOption implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'include_packing_slip_with_label' => 'setIncludePackingSlipWithLabel',
         'label_format' => 'setLabelFormat',
     ];
@@ -99,7 +99,7 @@ class LabelFormatOption implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'include_packing_slip_with_label' => 'getIncludePackingSlipWithLabel',
         'label_format' => 'getLabelFormat',
     ];
@@ -109,7 +109,7 @@ class LabelFormatOption implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

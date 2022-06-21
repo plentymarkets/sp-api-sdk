@@ -49,14 +49,14 @@ class DebtRecoveryItem implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'DebtRecoveryItem';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'DebtRecoveryItem';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'recovery_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
         'original_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
         'group_begin_date' => '\DateTime',
@@ -70,7 +70,7 @@ class DebtRecoveryItem implements \ArrayAccess, \JsonSerializable, ModelInterfac
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'recovery_amount' => null,
         'original_amount' => null,
         'group_begin_date' => 'date-time',
@@ -83,7 +83,7 @@ class DebtRecoveryItem implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'recovery_amount' => 'RecoveryAmount',
         'original_amount' => 'OriginalAmount',
         'group_begin_date' => 'GroupBeginDate',
@@ -95,7 +95,7 @@ class DebtRecoveryItem implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'recovery_amount' => 'setRecoveryAmount',
         'original_amount' => 'setOriginalAmount',
         'group_begin_date' => 'setGroupBeginDate',
@@ -107,7 +107,7 @@ class DebtRecoveryItem implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'recovery_amount' => 'getRecoveryAmount',
         'original_amount' => 'getOriginalAmount',
         'group_begin_date' => 'getGroupBeginDate',
@@ -119,7 +119,7 @@ class DebtRecoveryItem implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

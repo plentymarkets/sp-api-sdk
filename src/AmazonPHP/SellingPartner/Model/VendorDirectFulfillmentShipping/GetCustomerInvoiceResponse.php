@@ -49,14 +49,14 @@ class GetCustomerInvoiceResponse implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetCustomerInvoiceResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetCustomerInvoiceResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'payload' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\CustomerInvoice',
         'errors' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ErrorList',
     ];
@@ -68,7 +68,7 @@ class GetCustomerInvoiceResponse implements \ArrayAccess, \JsonSerializable, Mod
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'payload' => null,
         'errors' => null,
     ];
@@ -79,7 +79,7 @@ class GetCustomerInvoiceResponse implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'payload' => 'payload',
         'errors' => 'errors',
     ];
@@ -89,7 +89,7 @@ class GetCustomerInvoiceResponse implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'payload' => 'setPayload',
         'errors' => 'setErrors',
     ];
@@ -99,7 +99,7 @@ class GetCustomerInvoiceResponse implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'payload' => 'getPayload',
         'errors' => 'getErrors',
     ];
@@ -109,7 +109,7 @@ class GetCustomerInvoiceResponse implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

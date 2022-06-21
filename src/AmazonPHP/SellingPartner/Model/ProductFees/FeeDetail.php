@@ -49,14 +49,14 @@ class FeeDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'FeeDetail';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'FeeDetail';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'fee_type' => 'string',
         'fee_amount' => '\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
         'fee_promotion' => '\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
@@ -72,7 +72,7 @@ class FeeDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'fee_type' => null,
         'fee_amount' => null,
         'fee_promotion' => null,
@@ -87,7 +87,7 @@ class FeeDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'fee_type' => 'FeeType',
         'fee_amount' => 'FeeAmount',
         'fee_promotion' => 'FeePromotion',
@@ -101,7 +101,7 @@ class FeeDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'fee_type' => 'setFeeType',
         'fee_amount' => 'setFeeAmount',
         'fee_promotion' => 'setFeePromotion',
@@ -115,7 +115,7 @@ class FeeDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'fee_type' => 'getFeeType',
         'fee_amount' => 'getFeeAmount',
         'fee_promotion' => 'getFeePromotion',
@@ -129,7 +129,7 @@ class FeeDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

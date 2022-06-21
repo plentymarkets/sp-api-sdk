@@ -49,14 +49,14 @@ class ListingOffersRequestParamsAllOf implements \ArrayAccess, \JsonSerializable
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ListingOffersRequestParams_allOf';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ListingOffersRequestParams_allOf';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'seller_sku' => 'string',
     ];
 
@@ -67,7 +67,7 @@ class ListingOffersRequestParamsAllOf implements \ArrayAccess, \JsonSerializable
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'seller_sku' => null,
     ];
 
@@ -77,7 +77,7 @@ class ListingOffersRequestParamsAllOf implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'seller_sku' => 'SellerSKU',
     ];
 
@@ -86,7 +86,7 @@ class ListingOffersRequestParamsAllOf implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'seller_sku' => 'setSellerSku',
     ];
 
@@ -95,7 +95,7 @@ class ListingOffersRequestParamsAllOf implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'seller_sku' => 'getSellerSku',
     ];
 
@@ -104,7 +104,7 @@ class ListingOffersRequestParamsAllOf implements \ArrayAccess, \JsonSerializable
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

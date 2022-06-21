@@ -49,14 +49,14 @@ class AdditionalSellerInputs implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'AdditionalSellerInputs';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'AdditionalSellerInputs';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'additional_input_field_name' => 'string',
         'additional_seller_input' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalSellerInput',
     ];
@@ -68,7 +68,7 @@ class AdditionalSellerInputs implements \ArrayAccess, \JsonSerializable, ModelIn
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'additional_input_field_name' => null,
         'additional_seller_input' => null,
     ];
@@ -79,7 +79,7 @@ class AdditionalSellerInputs implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'additional_input_field_name' => 'AdditionalInputFieldName',
         'additional_seller_input' => 'AdditionalSellerInput',
     ];
@@ -89,7 +89,7 @@ class AdditionalSellerInputs implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'additional_input_field_name' => 'setAdditionalInputFieldName',
         'additional_seller_input' => 'setAdditionalSellerInput',
     ];
@@ -99,7 +99,7 @@ class AdditionalSellerInputs implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'additional_input_field_name' => 'getAdditionalInputFieldName',
         'additional_seller_input' => 'getAdditionalSellerInput',
     ];
@@ -109,7 +109,7 @@ class AdditionalSellerInputs implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

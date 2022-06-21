@@ -49,14 +49,14 @@ class BuyBoxPriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'BuyBoxPriceType';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'BuyBoxPriceType';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'condition' => 'string',
         'offer_type' => '\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCustomerType',
         'quantity_tier' => 'int',
@@ -75,7 +75,7 @@ class BuyBoxPriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'condition' => null,
         'offer_type' => null,
         'quantity_tier' => 'int32',
@@ -93,7 +93,7 @@ class BuyBoxPriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'condition' => 'condition',
         'offer_type' => 'offerType',
         'quantity_tier' => 'quantityTier',
@@ -110,7 +110,7 @@ class BuyBoxPriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'condition' => 'setCondition',
         'offer_type' => 'setOfferType',
         'quantity_tier' => 'setQuantityTier',
@@ -127,7 +127,7 @@ class BuyBoxPriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'condition' => 'getCondition',
         'offer_type' => 'getOfferType',
         'quantity_tier' => 'getQuantityTier',
@@ -144,7 +144,7 @@ class BuyBoxPriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

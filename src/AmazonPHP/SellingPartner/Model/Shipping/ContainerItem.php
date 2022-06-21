@@ -49,14 +49,14 @@ class ContainerItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ContainerItem';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ContainerItem';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'quantity' => 'float',
         'unit_price' => '\AmazonPHP\SellingPartner\Model\Shipping\Currency',
         'unit_weight' => '\AmazonPHP\SellingPartner\Model\Shipping\Weight',
@@ -70,7 +70,7 @@ class ContainerItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'quantity' => null,
         'unit_price' => null,
         'unit_weight' => null,
@@ -83,7 +83,7 @@ class ContainerItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'quantity' => 'quantity',
         'unit_price' => 'unitPrice',
         'unit_weight' => 'unitWeight',
@@ -95,7 +95,7 @@ class ContainerItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'quantity' => 'setQuantity',
         'unit_price' => 'setUnitPrice',
         'unit_weight' => 'setUnitWeight',
@@ -107,7 +107,7 @@ class ContainerItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'quantity' => 'getQuantity',
         'unit_price' => 'getUnitPrice',
         'unit_weight' => 'getUnitWeight',
@@ -119,7 +119,7 @@ class ContainerItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

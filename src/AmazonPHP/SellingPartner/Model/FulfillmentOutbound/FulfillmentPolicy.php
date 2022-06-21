@@ -44,7 +44,7 @@ class FulfillmentPolicy
 
     public const FILL_ALL_AVAILABLE = 'FillAllAvailable';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

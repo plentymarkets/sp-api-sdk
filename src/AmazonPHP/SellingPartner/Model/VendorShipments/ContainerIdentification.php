@@ -59,14 +59,14 @@ class ContainerIdentification implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ContainerIdentification';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ContainerIdentification';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'container_identification_type' => 'string',
         'container_identification_number' => 'string',
     ];
@@ -78,7 +78,7 @@ class ContainerIdentification implements \ArrayAccess, \JsonSerializable, ModelI
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'container_identification_type' => null,
         'container_identification_number' => null,
     ];
@@ -89,7 +89,7 @@ class ContainerIdentification implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'container_identification_type' => 'containerIdentificationType',
         'container_identification_number' => 'containerIdentificationNumber',
     ];
@@ -99,7 +99,7 @@ class ContainerIdentification implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'container_identification_type' => 'setContainerIdentificationType',
         'container_identification_number' => 'setContainerIdentificationNumber',
     ];
@@ -109,7 +109,7 @@ class ContainerIdentification implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'container_identification_type' => 'getContainerIdentificationType',
         'container_identification_number' => 'getContainerIdentificationNumber',
     ];
@@ -119,7 +119,7 @@ class ContainerIdentification implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

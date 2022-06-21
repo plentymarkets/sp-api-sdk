@@ -49,14 +49,14 @@ class OrderRegulatedInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'OrderRegulatedInfo';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'OrderRegulatedInfo';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'amazon_order_id' => 'string',
         'regulated_information' => '\AmazonPHP\SellingPartner\Model\Orders\RegulatedInformation',
         'requires_dosage_label' => 'bool',
@@ -70,7 +70,7 @@ class OrderRegulatedInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'amazon_order_id' => null,
         'regulated_information' => null,
         'requires_dosage_label' => null,
@@ -83,7 +83,7 @@ class OrderRegulatedInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'amazon_order_id' => 'AmazonOrderId',
         'regulated_information' => 'RegulatedInformation',
         'requires_dosage_label' => 'RequiresDosageLabel',
@@ -95,7 +95,7 @@ class OrderRegulatedInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'amazon_order_id' => 'setAmazonOrderId',
         'regulated_information' => 'setRegulatedInformation',
         'requires_dosage_label' => 'setRequiresDosageLabel',
@@ -107,7 +107,7 @@ class OrderRegulatedInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'amazon_order_id' => 'getAmazonOrderId',
         'regulated_information' => 'getRegulatedInformation',
         'requires_dosage_label' => 'getRequiresDosageLabel',
@@ -119,7 +119,7 @@ class OrderRegulatedInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

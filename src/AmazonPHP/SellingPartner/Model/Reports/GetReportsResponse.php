@@ -49,14 +49,14 @@ class GetReportsResponse implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetReportsResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetReportsResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'reports' => '\AmazonPHP\SellingPartner\Model\Reports\Report[]',
         'next_token' => 'string',
     ];
@@ -68,7 +68,7 @@ class GetReportsResponse implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'reports' => null,
         'next_token' => null,
     ];
@@ -79,7 +79,7 @@ class GetReportsResponse implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'reports' => 'reports',
         'next_token' => 'nextToken',
     ];
@@ -89,7 +89,7 @@ class GetReportsResponse implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'reports' => 'setReports',
         'next_token' => 'setNextToken',
     ];
@@ -99,7 +99,7 @@ class GetReportsResponse implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'reports' => 'getReports',
         'next_token' => 'getNextToken',
     ];
@@ -109,7 +109,7 @@ class GetReportsResponse implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

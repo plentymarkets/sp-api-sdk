@@ -49,14 +49,14 @@ class StandardTextModule implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'StandardTextModule';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'StandardTextModule';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'headline' => '\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
         'body' => '\AmazonPHP\SellingPartner\Model\APlus\ParagraphComponent',
     ];
@@ -68,7 +68,7 @@ class StandardTextModule implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'headline' => null,
         'body' => null,
     ];
@@ -79,7 +79,7 @@ class StandardTextModule implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'headline' => 'headline',
         'body' => 'body',
     ];
@@ -89,7 +89,7 @@ class StandardTextModule implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'headline' => 'setHeadline',
         'body' => 'setBody',
     ];
@@ -99,7 +99,7 @@ class StandardTextModule implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'headline' => 'getHeadline',
         'body' => 'getBody',
     ];
@@ -109,7 +109,7 @@ class StandardTextModule implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

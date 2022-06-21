@@ -49,14 +49,14 @@ class CreateInboundShipmentPlanRequest implements \ArrayAccess, \JsonSerializabl
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CreateInboundShipmentPlanRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CreateInboundShipmentPlanRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'ship_from_address' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Address',
         'label_prep_preference' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\LabelPrepPreference',
         'ship_to_country_code' => 'string',
@@ -71,7 +71,7 @@ class CreateInboundShipmentPlanRequest implements \ArrayAccess, \JsonSerializabl
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'ship_from_address' => null,
         'label_prep_preference' => null,
         'ship_to_country_code' => null,
@@ -85,7 +85,7 @@ class CreateInboundShipmentPlanRequest implements \ArrayAccess, \JsonSerializabl
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'ship_from_address' => 'ShipFromAddress',
         'label_prep_preference' => 'LabelPrepPreference',
         'ship_to_country_code' => 'ShipToCountryCode',
@@ -98,7 +98,7 @@ class CreateInboundShipmentPlanRequest implements \ArrayAccess, \JsonSerializabl
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'ship_from_address' => 'setShipFromAddress',
         'label_prep_preference' => 'setLabelPrepPreference',
         'ship_to_country_code' => 'setShipToCountryCode',
@@ -111,7 +111,7 @@ class CreateInboundShipmentPlanRequest implements \ArrayAccess, \JsonSerializabl
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'ship_from_address' => 'getShipFromAddress',
         'label_prep_preference' => 'getLabelPrepPreference',
         'ship_to_country_code' => 'getShipToCountryCode',
@@ -124,7 +124,7 @@ class CreateInboundShipmentPlanRequest implements \ArrayAccess, \JsonSerializabl
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

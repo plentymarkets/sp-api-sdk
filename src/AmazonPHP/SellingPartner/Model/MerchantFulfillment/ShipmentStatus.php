@@ -46,7 +46,7 @@ class ShipmentStatus
 
     public const REFUND_APPLIED = 'RefundApplied';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

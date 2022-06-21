@@ -49,14 +49,14 @@ class ItemDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ItemDetails';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ItemDetails';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'buyer_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
         'available_quantity' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\ItemQuantity',
@@ -70,7 +70,7 @@ class ItemDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'buyer_product_identifier' => null,
         'vendor_product_identifier' => null,
         'available_quantity' => null,
@@ -83,7 +83,7 @@ class ItemDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'buyer_product_identifier' => 'buyerProductIdentifier',
         'vendor_product_identifier' => 'vendorProductIdentifier',
         'available_quantity' => 'availableQuantity',
@@ -95,7 +95,7 @@ class ItemDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'buyer_product_identifier' => 'setBuyerProductIdentifier',
         'vendor_product_identifier' => 'setVendorProductIdentifier',
         'available_quantity' => 'setAvailableQuantity',
@@ -107,7 +107,7 @@ class ItemDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'buyer_product_identifier' => 'getBuyerProductIdentifier',
         'vendor_product_identifier' => 'getVendorProductIdentifier',
         'available_quantity' => 'getAvailableQuantity',
@@ -119,7 +119,7 @@ class ItemDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

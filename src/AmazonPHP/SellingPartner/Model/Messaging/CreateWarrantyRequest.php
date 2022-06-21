@@ -49,14 +49,14 @@ class CreateWarrantyRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CreateWarrantyRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CreateWarrantyRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'attachments' => '\AmazonPHP\SellingPartner\Model\Messaging\Attachment[]',
         'coverage_start_date' => '\DateTime',
         'coverage_end_date' => '\DateTime',
@@ -69,7 +69,7 @@ class CreateWarrantyRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'attachments' => null,
         'coverage_start_date' => 'date-time',
         'coverage_end_date' => 'date-time',
@@ -81,7 +81,7 @@ class CreateWarrantyRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'attachments' => 'attachments',
         'coverage_start_date' => 'coverageStartDate',
         'coverage_end_date' => 'coverageEndDate',
@@ -92,7 +92,7 @@ class CreateWarrantyRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'attachments' => 'setAttachments',
         'coverage_start_date' => 'setCoverageStartDate',
         'coverage_end_date' => 'setCoverageEndDate',
@@ -103,7 +103,7 @@ class CreateWarrantyRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'attachments' => 'getAttachments',
         'coverage_start_date' => 'getCoverageStartDate',
         'coverage_end_date' => 'getCoverageEndDate',
@@ -114,7 +114,7 @@ class CreateWarrantyRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

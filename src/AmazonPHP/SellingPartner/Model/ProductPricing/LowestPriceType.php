@@ -49,14 +49,14 @@ class LowestPriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'LowestPriceType';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'LowestPriceType';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'condition' => 'string',
         'fulfillment_channel' => 'string',
         'offer_type' => '\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCustomerType',
@@ -75,7 +75,7 @@ class LowestPriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'condition' => null,
         'fulfillment_channel' => null,
         'offer_type' => null,
@@ -93,7 +93,7 @@ class LowestPriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'condition' => 'condition',
         'fulfillment_channel' => 'fulfillmentChannel',
         'offer_type' => 'offerType',
@@ -110,7 +110,7 @@ class LowestPriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'condition' => 'setCondition',
         'fulfillment_channel' => 'setFulfillmentChannel',
         'offer_type' => 'setOfferType',
@@ -127,7 +127,7 @@ class LowestPriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'condition' => 'getCondition',
         'fulfillment_channel' => 'getFulfillmentChannel',
         'offer_type' => 'getOfferType',
@@ -144,7 +144,7 @@ class LowestPriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class ItemSalesRank implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ItemSalesRank';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ItemSalesRank';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'title' => 'string',
         'link' => 'string',
         'rank' => 'int',
@@ -69,7 +69,7 @@ class ItemSalesRank implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'title' => null,
         'link' => null,
         'rank' => null,
@@ -81,7 +81,7 @@ class ItemSalesRank implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'title' => 'title',
         'link' => 'link',
         'rank' => 'rank',
@@ -92,7 +92,7 @@ class ItemSalesRank implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'title' => 'setTitle',
         'link' => 'setLink',
         'rank' => 'setRank',
@@ -103,7 +103,7 @@ class ItemSalesRank implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'title' => 'getTitle',
         'link' => 'getLink',
         'rank' => 'getRank',
@@ -114,7 +114,7 @@ class ItemSalesRank implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

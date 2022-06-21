@@ -49,14 +49,14 @@ class SmallAndLightFeePreviews implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'SmallAndLightFeePreviews';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'SmallAndLightFeePreviews';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'data' => '\AmazonPHP\SellingPartner\Model\FBASmallAndLight\FeePreview[]',
     ];
 
@@ -67,7 +67,7 @@ class SmallAndLightFeePreviews implements \ArrayAccess, \JsonSerializable, Model
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'data' => null,
     ];
 
@@ -77,7 +77,7 @@ class SmallAndLightFeePreviews implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'data' => 'data',
     ];
 
@@ -86,7 +86,7 @@ class SmallAndLightFeePreviews implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'data' => 'setData',
     ];
 
@@ -95,7 +95,7 @@ class SmallAndLightFeePreviews implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'data' => 'getData',
     ];
 
@@ -104,7 +104,7 @@ class SmallAndLightFeePreviews implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

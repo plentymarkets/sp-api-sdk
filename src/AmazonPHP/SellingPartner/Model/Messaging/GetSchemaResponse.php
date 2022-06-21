@@ -49,14 +49,14 @@ class GetSchemaResponse implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetSchemaResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetSchemaResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         '_links' => '\AmazonPHP\SellingPartner\Model\Messaging\GetSchemaResponseLinks',
         'payload' => 'object',
         'errors' => '\AmazonPHP\SellingPartner\Model\Messaging\Error[]',
@@ -69,7 +69,7 @@ class GetSchemaResponse implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         '_links' => null,
         'payload' => null,
         'errors' => null,
@@ -81,7 +81,7 @@ class GetSchemaResponse implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         '_links' => '_links',
         'payload' => 'payload',
         'errors' => 'errors',
@@ -92,7 +92,7 @@ class GetSchemaResponse implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         '_links' => 'setLinks',
         'payload' => 'setPayload',
         'errors' => 'setErrors',
@@ -103,7 +103,7 @@ class GetSchemaResponse implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         '_links' => 'getLinks',
         'payload' => 'getPayload',
         'errors' => 'getErrors',
@@ -114,7 +114,7 @@ class GetSchemaResponse implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

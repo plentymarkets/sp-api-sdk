@@ -49,14 +49,14 @@ class MarketplaceTaxInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'MarketplaceTaxInfo';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'MarketplaceTaxInfo';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'tax_classifications' => '\AmazonPHP\SellingPartner\Model\Orders\TaxClassification[]',
     ];
 
@@ -67,7 +67,7 @@ class MarketplaceTaxInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'tax_classifications' => null,
     ];
 
@@ -77,7 +77,7 @@ class MarketplaceTaxInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'tax_classifications' => 'TaxClassifications',
     ];
 
@@ -86,7 +86,7 @@ class MarketplaceTaxInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'tax_classifications' => 'setTaxClassifications',
     ];
 
@@ -95,7 +95,7 @@ class MarketplaceTaxInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'tax_classifications' => 'getTaxClassifications',
     ];
 
@@ -104,7 +104,7 @@ class MarketplaceTaxInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

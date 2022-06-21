@@ -51,14 +51,14 @@ class Container implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Container';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Container';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'container_type' => 'string',
         'container_reference_id' => 'string',
         'value' => '\AmazonPHP\SellingPartner\Model\Shipping\Currency',
@@ -74,7 +74,7 @@ class Container implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'container_type' => null,
         'container_reference_id' => null,
         'value' => null,
@@ -89,7 +89,7 @@ class Container implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'container_type' => 'containerType',
         'container_reference_id' => 'containerReferenceId',
         'value' => 'value',
@@ -103,7 +103,7 @@ class Container implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'container_type' => 'setContainerType',
         'container_reference_id' => 'setContainerReferenceId',
         'value' => 'setValue',
@@ -117,7 +117,7 @@ class Container implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'container_type' => 'getContainerType',
         'container_reference_id' => 'getContainerReferenceId',
         'value' => 'getValue',
@@ -131,7 +131,7 @@ class Container implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

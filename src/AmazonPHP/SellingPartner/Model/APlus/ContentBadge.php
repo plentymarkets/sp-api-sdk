@@ -48,7 +48,7 @@ class ContentBadge
 
     public const STANDARD = 'STANDARD';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

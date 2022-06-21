@@ -49,14 +49,14 @@ class AmazonPrepFeesDetails implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'AmazonPrepFeesDetails';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'AmazonPrepFeesDetails';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'prep_instruction' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction',
         'fee_per_unit' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount',
     ];
@@ -68,7 +68,7 @@ class AmazonPrepFeesDetails implements \ArrayAccess, \JsonSerializable, ModelInt
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'prep_instruction' => null,
         'fee_per_unit' => null,
     ];
@@ -79,7 +79,7 @@ class AmazonPrepFeesDetails implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'prep_instruction' => 'PrepInstruction',
         'fee_per_unit' => 'FeePerUnit',
     ];
@@ -89,7 +89,7 @@ class AmazonPrepFeesDetails implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'prep_instruction' => 'setPrepInstruction',
         'fee_per_unit' => 'setFeePerUnit',
     ];
@@ -99,7 +99,7 @@ class AmazonPrepFeesDetails implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'prep_instruction' => 'getPrepInstruction',
         'fee_per_unit' => 'getFeePerUnit',
     ];
@@ -109,7 +109,7 @@ class AmazonPrepFeesDetails implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

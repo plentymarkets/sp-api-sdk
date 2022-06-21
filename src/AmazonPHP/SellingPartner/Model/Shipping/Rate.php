@@ -49,14 +49,14 @@ class Rate implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Rate';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Rate';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'rate_id' => 'string',
         'total_charge' => '\AmazonPHP\SellingPartner\Model\Shipping\Currency',
         'billed_weight' => '\AmazonPHP\SellingPartner\Model\Shipping\Weight',
@@ -72,7 +72,7 @@ class Rate implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'rate_id' => null,
         'total_charge' => null,
         'billed_weight' => null,
@@ -87,7 +87,7 @@ class Rate implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'rate_id' => 'rateId',
         'total_charge' => 'totalCharge',
         'billed_weight' => 'billedWeight',
@@ -101,7 +101,7 @@ class Rate implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'rate_id' => 'setRateId',
         'total_charge' => 'setTotalCharge',
         'billed_weight' => 'setBilledWeight',
@@ -115,7 +115,7 @@ class Rate implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'rate_id' => 'getRateId',
         'total_charge' => 'getTotalCharge',
         'billed_weight' => 'getBilledWeight',
@@ -129,7 +129,7 @@ class Rate implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

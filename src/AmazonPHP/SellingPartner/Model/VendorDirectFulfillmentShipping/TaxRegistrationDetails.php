@@ -53,14 +53,14 @@ class TaxRegistrationDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'TaxRegistrationDetails';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'TaxRegistrationDetails';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'tax_registration_type' => 'string',
         'tax_registration_number' => 'string',
         'tax_registration_address' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Address',
@@ -74,7 +74,7 @@ class TaxRegistrationDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'tax_registration_type' => null,
         'tax_registration_number' => null,
         'tax_registration_address' => null,
@@ -87,7 +87,7 @@ class TaxRegistrationDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'tax_registration_type' => 'taxRegistrationType',
         'tax_registration_number' => 'taxRegistrationNumber',
         'tax_registration_address' => 'taxRegistrationAddress',
@@ -99,7 +99,7 @@ class TaxRegistrationDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'tax_registration_type' => 'setTaxRegistrationType',
         'tax_registration_number' => 'setTaxRegistrationNumber',
         'tax_registration_address' => 'setTaxRegistrationAddress',
@@ -111,7 +111,7 @@ class TaxRegistrationDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'tax_registration_type' => 'getTaxRegistrationType',
         'tax_registration_number' => 'getTaxRegistrationNumber',
         'tax_registration_address' => 'getTaxRegistrationAddress',
@@ -123,7 +123,7 @@ class TaxRegistrationDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

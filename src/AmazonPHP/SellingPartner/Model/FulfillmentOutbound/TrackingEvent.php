@@ -49,14 +49,14 @@ class TrackingEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'TrackingEvent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'TrackingEvent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'event_date' => '\DateTime',
         'event_address' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\TrackingAddress',
         'event_code' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\EventCode',
@@ -70,7 +70,7 @@ class TrackingEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'event_date' => 'date-time',
         'event_address' => null,
         'event_code' => null,
@@ -83,7 +83,7 @@ class TrackingEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'event_date' => 'eventDate',
         'event_address' => 'eventAddress',
         'event_code' => 'eventCode',
@@ -95,7 +95,7 @@ class TrackingEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'event_date' => 'setEventDate',
         'event_address' => 'setEventAddress',
         'event_code' => 'setEventCode',
@@ -107,7 +107,7 @@ class TrackingEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'event_date' => 'getEventDate',
         'event_address' => 'getEventAddress',
         'event_code' => 'getEventCode',
@@ -119,7 +119,7 @@ class TrackingEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class StandardComparisonTableModule implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'StandardComparisonTableModule';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'StandardComparisonTableModule';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'product_columns' => '\AmazonPHP\SellingPartner\Model\APlus\StandardComparisonProductBlock[]',
         'metric_row_labels' => '\AmazonPHP\SellingPartner\Model\APlus\PlainTextItem[]',
     ];
@@ -68,7 +68,7 @@ class StandardComparisonTableModule implements \ArrayAccess, \JsonSerializable, 
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'product_columns' => null,
         'metric_row_labels' => null,
     ];
@@ -79,7 +79,7 @@ class StandardComparisonTableModule implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'product_columns' => 'productColumns',
         'metric_row_labels' => 'metricRowLabels',
     ];
@@ -89,7 +89,7 @@ class StandardComparisonTableModule implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'product_columns' => 'setProductColumns',
         'metric_row_labels' => 'setMetricRowLabels',
     ];
@@ -99,7 +99,7 @@ class StandardComparisonTableModule implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'product_columns' => 'getProductColumns',
         'metric_row_labels' => 'getMetricRowLabels',
     ];
@@ -109,7 +109,7 @@ class StandardComparisonTableModule implements \ArrayAccess, \JsonSerializable, 
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

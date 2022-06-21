@@ -49,14 +49,14 @@ class Destination implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Destination';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Destination';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'name' => 'string',
         'destination_id' => 'string',
         'resource' => '\AmazonPHP\SellingPartner\Model\Notifications\DestinationResource',
@@ -69,7 +69,7 @@ class Destination implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'name' => null,
         'destination_id' => null,
         'resource' => null,
@@ -81,7 +81,7 @@ class Destination implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'name' => 'name',
         'destination_id' => 'destinationId',
         'resource' => 'resource',
@@ -92,7 +92,7 @@ class Destination implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'name' => 'setName',
         'destination_id' => 'setDestinationId',
         'resource' => 'setResource',
@@ -103,7 +103,7 @@ class Destination implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'name' => 'getName',
         'destination_id' => 'getDestinationId',
         'resource' => 'getResource',
@@ -114,7 +114,7 @@ class Destination implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

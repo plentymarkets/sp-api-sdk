@@ -49,14 +49,14 @@ class AppointmentTimeInput implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'AppointmentTimeInput';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'AppointmentTimeInput';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'start_time' => '\DateTime',
         'duration_in_minutes' => 'int',
     ];
@@ -68,7 +68,7 @@ class AppointmentTimeInput implements \ArrayAccess, \JsonSerializable, ModelInte
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'start_time' => 'date-time',
         'duration_in_minutes' => null,
     ];
@@ -79,7 +79,7 @@ class AppointmentTimeInput implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'start_time' => 'startTime',
         'duration_in_minutes' => 'durationInMinutes',
     ];
@@ -89,7 +89,7 @@ class AppointmentTimeInput implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'start_time' => 'setStartTime',
         'duration_in_minutes' => 'setDurationInMinutes',
     ];
@@ -99,7 +99,7 @@ class AppointmentTimeInput implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'start_time' => 'getStartTime',
         'duration_in_minutes' => 'getDurationInMinutes',
     ];
@@ -109,7 +109,7 @@ class AppointmentTimeInput implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

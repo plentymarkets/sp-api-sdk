@@ -49,14 +49,14 @@ class SearchContentPublishRecordsResponseAllOf implements \ArrayAccess, \JsonSer
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'SearchContentPublishRecordsResponse_allOf';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'SearchContentPublishRecordsResponse_allOf';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'publish_record_list' => '\AmazonPHP\SellingPartner\Model\APlus\PublishRecord[]',
     ];
 
@@ -67,7 +67,7 @@ class SearchContentPublishRecordsResponseAllOf implements \ArrayAccess, \JsonSer
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'publish_record_list' => null,
     ];
 
@@ -77,7 +77,7 @@ class SearchContentPublishRecordsResponseAllOf implements \ArrayAccess, \JsonSer
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'publish_record_list' => 'publishRecordList',
     ];
 
@@ -86,7 +86,7 @@ class SearchContentPublishRecordsResponseAllOf implements \ArrayAccess, \JsonSer
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'publish_record_list' => 'setPublishRecordList',
     ];
 
@@ -95,7 +95,7 @@ class SearchContentPublishRecordsResponseAllOf implements \ArrayAccess, \JsonSer
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'publish_record_list' => 'getPublishRecordList',
     ];
 
@@ -104,7 +104,7 @@ class SearchContentPublishRecordsResponseAllOf implements \ArrayAccess, \JsonSer
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class GetEligibleShipmentServicesResult implements \ArrayAccess, \JsonSerializab
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetEligibleShipmentServicesResult';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetEligibleShipmentServicesResult';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'shipping_service_list' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShippingService[]',
         'rejected_shipping_service_list' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\RejectedShippingService[]',
         'temporarily_unavailable_carrier_list' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\TemporarilyUnavailableCarrier[]',
@@ -70,7 +70,7 @@ class GetEligibleShipmentServicesResult implements \ArrayAccess, \JsonSerializab
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'shipping_service_list' => null,
         'rejected_shipping_service_list' => null,
         'temporarily_unavailable_carrier_list' => null,
@@ -83,7 +83,7 @@ class GetEligibleShipmentServicesResult implements \ArrayAccess, \JsonSerializab
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'shipping_service_list' => 'ShippingServiceList',
         'rejected_shipping_service_list' => 'RejectedShippingServiceList',
         'temporarily_unavailable_carrier_list' => 'TemporarilyUnavailableCarrierList',
@@ -95,7 +95,7 @@ class GetEligibleShipmentServicesResult implements \ArrayAccess, \JsonSerializab
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'shipping_service_list' => 'setShippingServiceList',
         'rejected_shipping_service_list' => 'setRejectedShippingServiceList',
         'temporarily_unavailable_carrier_list' => 'setTemporarilyUnavailableCarrierList',
@@ -107,7 +107,7 @@ class GetEligibleShipmentServicesResult implements \ArrayAccess, \JsonSerializab
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'shipping_service_list' => 'getShippingServiceList',
         'rejected_shipping_service_list' => 'getRejectedShippingServiceList',
         'temporarily_unavailable_carrier_list' => 'getTemporarilyUnavailableCarrierList',
@@ -119,7 +119,7 @@ class GetEligibleShipmentServicesResult implements \ArrayAccess, \JsonSerializab
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

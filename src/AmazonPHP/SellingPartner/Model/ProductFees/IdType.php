@@ -42,7 +42,7 @@ class IdType
 
     public const SELLER_SKU = 'SellerSKU';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

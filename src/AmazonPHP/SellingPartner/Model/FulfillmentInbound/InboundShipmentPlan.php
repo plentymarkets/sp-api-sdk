@@ -49,14 +49,14 @@ class InboundShipmentPlan implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'InboundShipmentPlan';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'InboundShipmentPlan';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'shipment_id' => 'string',
         'destination_fulfillment_center_id' => 'string',
         'ship_to_address' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Address',
@@ -72,7 +72,7 @@ class InboundShipmentPlan implements \ArrayAccess, \JsonSerializable, ModelInter
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'shipment_id' => null,
         'destination_fulfillment_center_id' => null,
         'ship_to_address' => null,
@@ -87,7 +87,7 @@ class InboundShipmentPlan implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'shipment_id' => 'ShipmentId',
         'destination_fulfillment_center_id' => 'DestinationFulfillmentCenterId',
         'ship_to_address' => 'ShipToAddress',
@@ -101,7 +101,7 @@ class InboundShipmentPlan implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'shipment_id' => 'setShipmentId',
         'destination_fulfillment_center_id' => 'setDestinationFulfillmentCenterId',
         'ship_to_address' => 'setShipToAddress',
@@ -115,7 +115,7 @@ class InboundShipmentPlan implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'shipment_id' => 'getShipmentId',
         'destination_fulfillment_center_id' => 'getDestinationFulfillmentCenterId',
         'ship_to_address' => 'getShipToAddress',
@@ -129,7 +129,7 @@ class InboundShipmentPlan implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

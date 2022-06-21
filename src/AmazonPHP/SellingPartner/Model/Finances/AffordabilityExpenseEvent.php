@@ -49,14 +49,14 @@ class AffordabilityExpenseEvent implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'AffordabilityExpenseEvent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'AffordabilityExpenseEvent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'amazon_order_id' => 'string',
         'posted_date' => '\DateTime',
         'marketplace_id' => 'string',
@@ -75,7 +75,7 @@ class AffordabilityExpenseEvent implements \ArrayAccess, \JsonSerializable, Mode
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'amazon_order_id' => null,
         'posted_date' => 'date-time',
         'marketplace_id' => null,
@@ -93,7 +93,7 @@ class AffordabilityExpenseEvent implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'amazon_order_id' => 'AmazonOrderId',
         'posted_date' => 'PostedDate',
         'marketplace_id' => 'MarketplaceId',
@@ -110,7 +110,7 @@ class AffordabilityExpenseEvent implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'amazon_order_id' => 'setAmazonOrderId',
         'posted_date' => 'setPostedDate',
         'marketplace_id' => 'setMarketplaceId',
@@ -127,7 +127,7 @@ class AffordabilityExpenseEvent implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'amazon_order_id' => 'getAmazonOrderId',
         'posted_date' => 'getPostedDate',
         'marketplace_id' => 'getMarketplaceId',
@@ -144,7 +144,7 @@ class AffordabilityExpenseEvent implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class BuyerCustomizedInfoDetail implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'BuyerCustomizedInfoDetail';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'BuyerCustomizedInfoDetail';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'customized_url' => 'string',
     ];
 
@@ -67,7 +67,7 @@ class BuyerCustomizedInfoDetail implements \ArrayAccess, \JsonSerializable, Mode
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'customized_url' => null,
     ];
 
@@ -77,7 +77,7 @@ class BuyerCustomizedInfoDetail implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'customized_url' => 'CustomizedURL',
     ];
 
@@ -86,7 +86,7 @@ class BuyerCustomizedInfoDetail implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'customized_url' => 'setCustomizedUrl',
     ];
 
@@ -95,7 +95,7 @@ class BuyerCustomizedInfoDetail implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'customized_url' => 'getCustomizedUrl',
     ];
 
@@ -104,7 +104,7 @@ class BuyerCustomizedInfoDetail implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

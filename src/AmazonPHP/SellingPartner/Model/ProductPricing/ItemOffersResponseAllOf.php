@@ -49,14 +49,14 @@ class ItemOffersResponseAllOf implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ItemOffersResponse_allOf';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ItemOffersResponse_allOf';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'request' => '\AmazonPHP\SellingPartner\Model\ProductPricing\ItemOffersRequestParams',
     ];
 
@@ -67,7 +67,7 @@ class ItemOffersResponseAllOf implements \ArrayAccess, \JsonSerializable, ModelI
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'request' => null,
     ];
 
@@ -77,7 +77,7 @@ class ItemOffersResponseAllOf implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'request' => 'request',
     ];
 
@@ -86,7 +86,7 @@ class ItemOffersResponseAllOf implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'request' => 'setRequest',
     ];
 
@@ -95,7 +95,7 @@ class ItemOffersResponseAllOf implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'request' => 'getRequest',
     ];
 
@@ -104,7 +104,7 @@ class ItemOffersResponseAllOf implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

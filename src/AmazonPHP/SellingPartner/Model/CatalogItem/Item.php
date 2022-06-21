@@ -49,14 +49,14 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Item';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Item';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'asin' => 'string',
         'attributes' => 'object',
         'identifiers' => '\AmazonPHP\SellingPartner\Model\CatalogItem\ItemIdentifiersByMarketplace[]',
@@ -75,7 +75,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'asin' => null,
         'attributes' => null,
         'identifiers' => null,
@@ -93,7 +93,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'asin' => 'asin',
         'attributes' => 'attributes',
         'identifiers' => 'identifiers',
@@ -110,7 +110,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'asin' => 'setAsin',
         'attributes' => 'setAttributes',
         'identifiers' => 'setIdentifiers',
@@ -127,7 +127,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'asin' => 'getAsin',
         'attributes' => 'getAttributes',
         'identifiers' => 'getIdentifiers',
@@ -144,7 +144,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

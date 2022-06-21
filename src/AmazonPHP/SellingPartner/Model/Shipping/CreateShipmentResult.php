@@ -49,14 +49,14 @@ class CreateShipmentResult implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CreateShipmentResult';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CreateShipmentResult';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'shipment_id' => 'string',
         'eligible_rates' => '\AmazonPHP\SellingPartner\Model\Shipping\Rate[]',
     ];
@@ -68,7 +68,7 @@ class CreateShipmentResult implements \ArrayAccess, \JsonSerializable, ModelInte
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'shipment_id' => null,
         'eligible_rates' => null,
     ];
@@ -79,7 +79,7 @@ class CreateShipmentResult implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'shipment_id' => 'shipmentId',
         'eligible_rates' => 'eligibleRates',
     ];
@@ -89,7 +89,7 @@ class CreateShipmentResult implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'shipment_id' => 'setShipmentId',
         'eligible_rates' => 'setEligibleRates',
     ];
@@ -99,7 +99,7 @@ class CreateShipmentResult implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'shipment_id' => 'getShipmentId',
         'eligible_rates' => 'getEligibleRates',
     ];
@@ -109,7 +109,7 @@ class CreateShipmentResult implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

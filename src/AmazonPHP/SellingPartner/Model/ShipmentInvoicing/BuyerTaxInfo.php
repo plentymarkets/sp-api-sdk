@@ -49,14 +49,14 @@ class BuyerTaxInfo implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'BuyerTaxInfo';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'BuyerTaxInfo';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'company_legal_name' => 'string',
         'taxing_region' => 'string',
         'tax_classifications' => '\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\TaxClassification[]',
@@ -69,7 +69,7 @@ class BuyerTaxInfo implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'company_legal_name' => null,
         'taxing_region' => null,
         'tax_classifications' => null,
@@ -81,7 +81,7 @@ class BuyerTaxInfo implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'company_legal_name' => 'CompanyLegalName',
         'taxing_region' => 'TaxingRegion',
         'tax_classifications' => 'TaxClassifications',
@@ -92,7 +92,7 @@ class BuyerTaxInfo implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'company_legal_name' => 'setCompanyLegalName',
         'taxing_region' => 'setTaxingRegion',
         'tax_classifications' => 'setTaxClassifications',
@@ -103,7 +103,7 @@ class BuyerTaxInfo implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'company_legal_name' => 'getCompanyLegalName',
         'taxing_region' => 'getTaxingRegion',
         'tax_classifications' => 'getTaxClassifications',
@@ -114,7 +114,7 @@ class BuyerTaxInfo implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

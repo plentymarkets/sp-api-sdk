@@ -49,14 +49,14 @@ class ShippingServiceOptions implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ShippingServiceOptions';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ShippingServiceOptions';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'delivery_experience' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\DeliveryExperienceType',
         'declared_value' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CurrencyAmount',
         'carrier_will_pick_up' => 'bool',
@@ -71,7 +71,7 @@ class ShippingServiceOptions implements \ArrayAccess, \JsonSerializable, ModelIn
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'delivery_experience' => null,
         'declared_value' => null,
         'carrier_will_pick_up' => null,
@@ -85,7 +85,7 @@ class ShippingServiceOptions implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'delivery_experience' => 'DeliveryExperience',
         'declared_value' => 'DeclaredValue',
         'carrier_will_pick_up' => 'CarrierWillPickUp',
@@ -98,7 +98,7 @@ class ShippingServiceOptions implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'delivery_experience' => 'setDeliveryExperience',
         'declared_value' => 'setDeclaredValue',
         'carrier_will_pick_up' => 'setCarrierWillPickUp',
@@ -111,7 +111,7 @@ class ShippingServiceOptions implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'delivery_experience' => 'getDeliveryExperience',
         'declared_value' => 'getDeclaredValue',
         'carrier_will_pick_up' => 'getCarrierWillPickUp',
@@ -124,7 +124,7 @@ class ShippingServiceOptions implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

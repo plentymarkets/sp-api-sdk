@@ -61,14 +61,14 @@ class PaymentTerms implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'PaymentTerms';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'PaymentTerms';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'type' => 'string',
         'discount_percent' => 'string',
         'discount_due_days' => 'float',
@@ -82,7 +82,7 @@ class PaymentTerms implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'type' => null,
         'discount_percent' => null,
         'discount_due_days' => null,
@@ -95,7 +95,7 @@ class PaymentTerms implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'type' => 'type',
         'discount_percent' => 'discountPercent',
         'discount_due_days' => 'discountDueDays',
@@ -107,7 +107,7 @@ class PaymentTerms implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'type' => 'setType',
         'discount_percent' => 'setDiscountPercent',
         'discount_due_days' => 'setDiscountDueDays',
@@ -119,7 +119,7 @@ class PaymentTerms implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'type' => 'getType',
         'discount_percent' => 'getDiscountPercent',
         'discount_due_days' => 'getDiscountDueDays',
@@ -131,7 +131,7 @@ class PaymentTerms implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

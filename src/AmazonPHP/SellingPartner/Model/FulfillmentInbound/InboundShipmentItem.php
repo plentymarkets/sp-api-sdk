@@ -49,14 +49,14 @@ class InboundShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'InboundShipmentItem';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'InboundShipmentItem';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'shipment_id' => 'string',
         'seller_sku' => 'string',
         'fulfillment_network_sku' => 'string',
@@ -74,7 +74,7 @@ class InboundShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInter
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'shipment_id' => null,
         'seller_sku' => null,
         'fulfillment_network_sku' => null,
@@ -91,7 +91,7 @@ class InboundShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'shipment_id' => 'ShipmentId',
         'seller_sku' => 'SellerSKU',
         'fulfillment_network_sku' => 'FulfillmentNetworkSKU',
@@ -107,7 +107,7 @@ class InboundShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'shipment_id' => 'setShipmentId',
         'seller_sku' => 'setSellerSku',
         'fulfillment_network_sku' => 'setFulfillmentNetworkSku',
@@ -123,7 +123,7 @@ class InboundShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'shipment_id' => 'getShipmentId',
         'seller_sku' => 'getSellerSku',
         'fulfillment_network_sku' => 'getFulfillmentNetworkSku',
@@ -139,7 +139,7 @@ class InboundShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

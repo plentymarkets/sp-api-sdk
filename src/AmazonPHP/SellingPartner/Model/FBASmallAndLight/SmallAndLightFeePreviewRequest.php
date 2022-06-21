@@ -49,14 +49,14 @@ class SmallAndLightFeePreviewRequest implements \ArrayAccess, \JsonSerializable,
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'SmallAndLightFeePreviewRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'SmallAndLightFeePreviewRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace_id' => 'string',
         'items' => '\AmazonPHP\SellingPartner\Model\FBASmallAndLight\Item[]',
     ];
@@ -68,7 +68,7 @@ class SmallAndLightFeePreviewRequest implements \ArrayAccess, \JsonSerializable,
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'marketplace_id' => null,
         'items' => null,
     ];
@@ -79,7 +79,7 @@ class SmallAndLightFeePreviewRequest implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'marketplace_id' => 'marketplaceId',
         'items' => 'items',
     ];
@@ -89,7 +89,7 @@ class SmallAndLightFeePreviewRequest implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'marketplace_id' => 'setMarketplaceId',
         'items' => 'setItems',
     ];
@@ -99,7 +99,7 @@ class SmallAndLightFeePreviewRequest implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'marketplace_id' => 'getMarketplaceId',
         'items' => 'getItems',
     ];
@@ -109,7 +109,7 @@ class SmallAndLightFeePreviewRequest implements \ArrayAccess, \JsonSerializable,
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

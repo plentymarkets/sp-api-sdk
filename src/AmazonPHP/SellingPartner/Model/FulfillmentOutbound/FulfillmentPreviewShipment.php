@@ -49,14 +49,14 @@ class FulfillmentPreviewShipment implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'FulfillmentPreviewShipment';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'FulfillmentPreviewShipment';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'earliest_ship_date' => '\DateTime',
         'latest_ship_date' => '\DateTime',
         'earliest_arrival_date' => '\DateTime',
@@ -72,7 +72,7 @@ class FulfillmentPreviewShipment implements \ArrayAccess, \JsonSerializable, Mod
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'earliest_ship_date' => 'date-time',
         'latest_ship_date' => 'date-time',
         'earliest_arrival_date' => 'date-time',
@@ -87,7 +87,7 @@ class FulfillmentPreviewShipment implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'earliest_ship_date' => 'earliestShipDate',
         'latest_ship_date' => 'latestShipDate',
         'earliest_arrival_date' => 'earliestArrivalDate',
@@ -101,7 +101,7 @@ class FulfillmentPreviewShipment implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'earliest_ship_date' => 'setEarliestShipDate',
         'latest_ship_date' => 'setLatestShipDate',
         'earliest_arrival_date' => 'setEarliestArrivalDate',
@@ -115,7 +115,7 @@ class FulfillmentPreviewShipment implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'earliest_ship_date' => 'getEarliestShipDate',
         'latest_ship_date' => 'getLatestShipDate',
         'earliest_arrival_date' => 'getEarliestArrivalDate',
@@ -129,7 +129,7 @@ class FulfillmentPreviewShipment implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

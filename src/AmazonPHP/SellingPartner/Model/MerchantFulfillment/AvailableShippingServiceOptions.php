@@ -49,14 +49,14 @@ class AvailableShippingServiceOptions implements \ArrayAccess, \JsonSerializable
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'AvailableShippingServiceOptions';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'AvailableShippingServiceOptions';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'available_carrier_will_pick_up_options' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AvailableCarrierWillPickUpOption[]',
         'available_delivery_experience_options' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AvailableDeliveryExperienceOption[]',
     ];
@@ -68,7 +68,7 @@ class AvailableShippingServiceOptions implements \ArrayAccess, \JsonSerializable
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'available_carrier_will_pick_up_options' => null,
         'available_delivery_experience_options' => null,
     ];
@@ -79,7 +79,7 @@ class AvailableShippingServiceOptions implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'available_carrier_will_pick_up_options' => 'AvailableCarrierWillPickUpOptions',
         'available_delivery_experience_options' => 'AvailableDeliveryExperienceOptions',
     ];
@@ -89,7 +89,7 @@ class AvailableShippingServiceOptions implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'available_carrier_will_pick_up_options' => 'setAvailableCarrierWillPickUpOptions',
         'available_delivery_experience_options' => 'setAvailableDeliveryExperienceOptions',
     ];
@@ -99,7 +99,7 @@ class AvailableShippingServiceOptions implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'available_carrier_will_pick_up_options' => 'getAvailableCarrierWillPickUpOptions',
         'available_delivery_experience_options' => 'getAvailableDeliveryExperienceOptions',
     ];
@@ -109,7 +109,7 @@ class AvailableShippingServiceOptions implements \ArrayAccess, \JsonSerializable
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

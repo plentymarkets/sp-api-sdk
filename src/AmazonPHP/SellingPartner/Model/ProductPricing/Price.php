@@ -49,14 +49,14 @@ class Price implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Price';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Price';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'status' => 'string',
         'seller_sku' => 'string',
         'asin' => 'string',
@@ -70,7 +70,7 @@ class Price implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'status' => null,
         'seller_sku' => null,
         'asin' => null,
@@ -83,7 +83,7 @@ class Price implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'status' => 'status',
         'seller_sku' => 'SellerSKU',
         'asin' => 'ASIN',
@@ -95,7 +95,7 @@ class Price implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'status' => 'setStatus',
         'seller_sku' => 'setSellerSku',
         'asin' => 'setAsin',
@@ -107,7 +107,7 @@ class Price implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'status' => 'getStatus',
         'seller_sku' => 'getSellerSku',
         'asin' => 'getAsin',
@@ -119,7 +119,7 @@ class Price implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

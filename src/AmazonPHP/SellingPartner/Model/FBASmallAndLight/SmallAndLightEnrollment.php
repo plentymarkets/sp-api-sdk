@@ -49,14 +49,14 @@ class SmallAndLightEnrollment implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'SmallAndLightEnrollment';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'SmallAndLightEnrollment';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace_id' => 'string',
         'seller_sku' => 'string',
         'status' => '\AmazonPHP\SellingPartner\Model\FBASmallAndLight\SmallAndLightEnrollmentStatus',
@@ -69,7 +69,7 @@ class SmallAndLightEnrollment implements \ArrayAccess, \JsonSerializable, ModelI
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'marketplace_id' => null,
         'seller_sku' => null,
         'status' => null,
@@ -81,7 +81,7 @@ class SmallAndLightEnrollment implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'marketplace_id' => 'marketplaceId',
         'seller_sku' => 'sellerSKU',
         'status' => 'status',
@@ -92,7 +92,7 @@ class SmallAndLightEnrollment implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'marketplace_id' => 'setMarketplaceId',
         'seller_sku' => 'setSellerSku',
         'status' => 'setStatus',
@@ -103,7 +103,7 @@ class SmallAndLightEnrollment implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'marketplace_id' => 'getMarketplaceId',
         'seller_sku' => 'getSellerSku',
         'status' => 'getStatus',
@@ -114,7 +114,7 @@ class SmallAndLightEnrollment implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -44,7 +44,7 @@ class PrepGuidance
 
     public const SEE_PREP_INSTRUCTIONS_LIST = 'SeePrepInstructionsList';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

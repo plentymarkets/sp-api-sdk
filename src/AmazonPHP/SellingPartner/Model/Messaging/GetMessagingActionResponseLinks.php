@@ -49,14 +49,14 @@ class GetMessagingActionResponseLinks implements \ArrayAccess, \JsonSerializable
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetMessagingActionResponse__links';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetMessagingActionResponse__links';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'self' => '\AmazonPHP\SellingPartner\Model\Messaging\LinkObject',
         'schema' => '\AmazonPHP\SellingPartner\Model\Messaging\LinkObject',
     ];
@@ -68,7 +68,7 @@ class GetMessagingActionResponseLinks implements \ArrayAccess, \JsonSerializable
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'self' => null,
         'schema' => null,
     ];
@@ -79,7 +79,7 @@ class GetMessagingActionResponseLinks implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'self' => 'self',
         'schema' => 'schema',
     ];
@@ -89,7 +89,7 @@ class GetMessagingActionResponseLinks implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'self' => 'setSelf',
         'schema' => 'setSchema',
     ];
@@ -99,7 +99,7 @@ class GetMessagingActionResponseLinks implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'self' => 'getSelf',
         'schema' => 'getSchema',
     ];
@@ -109,7 +109,7 @@ class GetMessagingActionResponseLinks implements \ArrayAccess, \JsonSerializable
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

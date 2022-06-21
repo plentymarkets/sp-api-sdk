@@ -49,14 +49,14 @@ class Pallet implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Pallet';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Pallet';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'pallet_identifiers' => '\AmazonPHP\SellingPartner\Model\VendorShipments\ContainerIdentification[]',
         'tier' => 'int',
         'block' => 'int',
@@ -73,7 +73,7 @@ class Pallet implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'pallet_identifiers' => null,
         'tier' => null,
         'block' => null,
@@ -89,7 +89,7 @@ class Pallet implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'pallet_identifiers' => 'palletIdentifiers',
         'tier' => 'tier',
         'block' => 'block',
@@ -104,7 +104,7 @@ class Pallet implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'pallet_identifiers' => 'setPalletIdentifiers',
         'tier' => 'setTier',
         'block' => 'setBlock',
@@ -119,7 +119,7 @@ class Pallet implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'pallet_identifiers' => 'getPalletIdentifiers',
         'tier' => 'getTier',
         'block' => 'getBlock',
@@ -134,7 +134,7 @@ class Pallet implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

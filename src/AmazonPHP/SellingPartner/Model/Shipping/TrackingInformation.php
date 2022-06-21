@@ -49,14 +49,14 @@ class TrackingInformation implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'TrackingInformation';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'TrackingInformation';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'tracking_id' => 'string',
         'summary' => '\AmazonPHP\SellingPartner\Model\Shipping\TrackingSummary',
         'promised_delivery_date' => '\DateTime',
@@ -70,7 +70,7 @@ class TrackingInformation implements \ArrayAccess, \JsonSerializable, ModelInter
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'tracking_id' => null,
         'summary' => null,
         'promised_delivery_date' => 'date-time',
@@ -83,7 +83,7 @@ class TrackingInformation implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'tracking_id' => 'trackingId',
         'summary' => 'summary',
         'promised_delivery_date' => 'promisedDeliveryDate',
@@ -95,7 +95,7 @@ class TrackingInformation implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'tracking_id' => 'setTrackingId',
         'summary' => 'setSummary',
         'promised_delivery_date' => 'setPromisedDeliveryDate',
@@ -107,7 +107,7 @@ class TrackingInformation implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'tracking_id' => 'getTrackingId',
         'summary' => 'getSummary',
         'promised_delivery_date' => 'getPromisedDeliveryDate',
@@ -119,7 +119,7 @@ class TrackingInformation implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

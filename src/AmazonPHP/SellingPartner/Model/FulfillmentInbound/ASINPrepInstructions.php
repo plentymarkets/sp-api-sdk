@@ -49,14 +49,14 @@ class ASINPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ASINPrepInstructions';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ASINPrepInstructions';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'asin' => 'string',
         'barcode_instruction' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BarcodeInstruction',
         'prep_guidance' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepGuidance',
@@ -70,7 +70,7 @@ class ASINPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInte
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'asin' => null,
         'barcode_instruction' => null,
         'prep_guidance' => null,
@@ -83,7 +83,7 @@ class ASINPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'asin' => 'ASIN',
         'barcode_instruction' => 'BarcodeInstruction',
         'prep_guidance' => 'PrepGuidance',
@@ -95,7 +95,7 @@ class ASINPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'asin' => 'setAsin',
         'barcode_instruction' => 'setBarcodeInstruction',
         'prep_guidance' => 'setPrepGuidance',
@@ -107,7 +107,7 @@ class ASINPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'asin' => 'getAsin',
         'barcode_instruction' => 'getBarcodeInstruction',
         'prep_guidance' => 'getPrepGuidance',
@@ -119,7 +119,7 @@ class ASINPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

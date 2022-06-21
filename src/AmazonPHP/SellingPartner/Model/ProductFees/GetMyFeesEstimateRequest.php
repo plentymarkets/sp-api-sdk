@@ -49,14 +49,14 @@ class GetMyFeesEstimateRequest implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetMyFeesEstimateRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetMyFeesEstimateRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'fees_estimate_request' => '\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimateRequest',
     ];
 
@@ -67,7 +67,7 @@ class GetMyFeesEstimateRequest implements \ArrayAccess, \JsonSerializable, Model
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'fees_estimate_request' => null,
     ];
 
@@ -77,7 +77,7 @@ class GetMyFeesEstimateRequest implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'fees_estimate_request' => 'FeesEstimateRequest',
     ];
 
@@ -86,7 +86,7 @@ class GetMyFeesEstimateRequest implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'fees_estimate_request' => 'setFeesEstimateRequest',
     ];
 
@@ -95,7 +95,7 @@ class GetMyFeesEstimateRequest implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'fees_estimate_request' => 'getFeesEstimateRequest',
     ];
 
@@ -104,7 +104,7 @@ class GetMyFeesEstimateRequest implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class MarketplaceParticipation implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'MarketplaceParticipation';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'MarketplaceParticipation';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace' => '\AmazonPHP\SellingPartner\Model\Sellers\Marketplace',
         'participation' => '\AmazonPHP\SellingPartner\Model\Sellers\Participation',
     ];
@@ -68,7 +68,7 @@ class MarketplaceParticipation implements \ArrayAccess, \JsonSerializable, Model
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'marketplace' => null,
         'participation' => null,
     ];
@@ -79,7 +79,7 @@ class MarketplaceParticipation implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'marketplace' => 'marketplace',
         'participation' => 'participation',
     ];
@@ -89,7 +89,7 @@ class MarketplaceParticipation implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'marketplace' => 'setMarketplace',
         'participation' => 'setParticipation',
     ];
@@ -99,7 +99,7 @@ class MarketplaceParticipation implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'marketplace' => 'getMarketplace',
         'participation' => 'getParticipation',
     ];
@@ -109,7 +109,7 @@ class MarketplaceParticipation implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

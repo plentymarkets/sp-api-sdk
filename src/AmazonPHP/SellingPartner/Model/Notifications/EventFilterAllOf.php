@@ -49,14 +49,14 @@ class EventFilterAllOf implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'EventFilter_allOf';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'EventFilter_allOf';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'event_filter_type' => 'string',
     ];
 
@@ -67,7 +67,7 @@ class EventFilterAllOf implements \ArrayAccess, \JsonSerializable, ModelInterfac
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'event_filter_type' => null,
     ];
 
@@ -77,7 +77,7 @@ class EventFilterAllOf implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'event_filter_type' => 'eventFilterType',
     ];
 
@@ -86,7 +86,7 @@ class EventFilterAllOf implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'event_filter_type' => 'setEventFilterType',
     ];
 
@@ -95,7 +95,7 @@ class EventFilterAllOf implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'event_filter_type' => 'getEventFilterType',
     ];
 
@@ -104,7 +104,7 @@ class EventFilterAllOf implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

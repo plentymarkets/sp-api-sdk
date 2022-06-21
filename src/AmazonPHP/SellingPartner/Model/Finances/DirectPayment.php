@@ -49,14 +49,14 @@ class DirectPayment implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'DirectPayment';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'DirectPayment';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'direct_payment_type' => 'string',
         'direct_payment_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
     ];
@@ -68,7 +68,7 @@ class DirectPayment implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'direct_payment_type' => null,
         'direct_payment_amount' => null,
     ];
@@ -79,7 +79,7 @@ class DirectPayment implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'direct_payment_type' => 'DirectPaymentType',
         'direct_payment_amount' => 'DirectPaymentAmount',
     ];
@@ -89,7 +89,7 @@ class DirectPayment implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'direct_payment_type' => 'setDirectPaymentType',
         'direct_payment_amount' => 'setDirectPaymentAmount',
     ];
@@ -99,7 +99,7 @@ class DirectPayment implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'direct_payment_type' => 'getDirectPaymentType',
         'direct_payment_amount' => 'getDirectPaymentAmount',
     ];
@@ -109,7 +109,7 @@ class DirectPayment implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

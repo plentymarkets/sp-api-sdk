@@ -49,14 +49,14 @@ class CouponPaymentEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CouponPaymentEvent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CouponPaymentEvent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'posted_date' => '\DateTime',
         'coupon_id' => 'string',
         'seller_coupon_description' => 'string',
@@ -74,7 +74,7 @@ class CouponPaymentEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'posted_date' => 'date-time',
         'coupon_id' => null,
         'seller_coupon_description' => null,
@@ -91,7 +91,7 @@ class CouponPaymentEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'posted_date' => 'PostedDate',
         'coupon_id' => 'CouponId',
         'seller_coupon_description' => 'SellerCouponDescription',
@@ -107,7 +107,7 @@ class CouponPaymentEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'posted_date' => 'setPostedDate',
         'coupon_id' => 'setCouponId',
         'seller_coupon_description' => 'setSellerCouponDescription',
@@ -123,7 +123,7 @@ class CouponPaymentEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'posted_date' => 'getPostedDate',
         'coupon_id' => 'getCouponId',
         'seller_coupon_description' => 'getSellerCouponDescription',
@@ -139,7 +139,7 @@ class CouponPaymentEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

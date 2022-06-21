@@ -57,14 +57,14 @@ class OrderDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'OrderDetails';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'OrderDetails';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'customer_order_number' => 'string',
         'order_date' => '\DateTime',
         'order_status' => 'string',
@@ -84,7 +84,7 @@ class OrderDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'customer_order_number' => null,
         'order_date' => 'date-time',
         'order_status' => null,
@@ -103,7 +103,7 @@ class OrderDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'customer_order_number' => 'customerOrderNumber',
         'order_date' => 'orderDate',
         'order_status' => 'orderStatus',
@@ -121,7 +121,7 @@ class OrderDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'customer_order_number' => 'setCustomerOrderNumber',
         'order_date' => 'setOrderDate',
         'order_status' => 'setOrderStatus',
@@ -139,7 +139,7 @@ class OrderDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'customer_order_number' => 'getCustomerOrderNumber',
         'order_date' => 'getOrderDate',
         'order_status' => 'getOrderStatus',
@@ -157,7 +157,7 @@ class OrderDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

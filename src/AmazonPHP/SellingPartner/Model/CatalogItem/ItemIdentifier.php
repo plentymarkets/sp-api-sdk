@@ -49,14 +49,14 @@ class ItemIdentifier implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ItemIdentifier';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ItemIdentifier';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'identifier_type' => 'string',
         'identifier' => 'string',
     ];
@@ -68,7 +68,7 @@ class ItemIdentifier implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'identifier_type' => null,
         'identifier' => null,
     ];
@@ -79,7 +79,7 @@ class ItemIdentifier implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'identifier_type' => 'identifierType',
         'identifier' => 'identifier',
     ];
@@ -89,7 +89,7 @@ class ItemIdentifier implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'identifier_type' => 'setIdentifierType',
         'identifier' => 'setIdentifier',
     ];
@@ -99,7 +99,7 @@ class ItemIdentifier implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'identifier_type' => 'getIdentifierType',
         'identifier' => 'getIdentifier',
     ];
@@ -109,7 +109,7 @@ class ItemIdentifier implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

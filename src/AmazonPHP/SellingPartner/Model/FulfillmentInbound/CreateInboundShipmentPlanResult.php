@@ -49,14 +49,14 @@ class CreateInboundShipmentPlanResult implements \ArrayAccess, \JsonSerializable
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CreateInboundShipmentPlanResult';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CreateInboundShipmentPlanResult';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'inbound_shipment_plans' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentPlan[]',
     ];
 
@@ -67,7 +67,7 @@ class CreateInboundShipmentPlanResult implements \ArrayAccess, \JsonSerializable
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'inbound_shipment_plans' => null,
     ];
 
@@ -77,7 +77,7 @@ class CreateInboundShipmentPlanResult implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'inbound_shipment_plans' => 'InboundShipmentPlans',
     ];
 
@@ -86,7 +86,7 @@ class CreateInboundShipmentPlanResult implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'inbound_shipment_plans' => 'setInboundShipmentPlans',
     ];
 
@@ -95,7 +95,7 @@ class CreateInboundShipmentPlanResult implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'inbound_shipment_plans' => 'getInboundShipmentPlans',
     ];
 
@@ -104,7 +104,7 @@ class CreateInboundShipmentPlanResult implements \ArrayAccess, \JsonSerializable
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

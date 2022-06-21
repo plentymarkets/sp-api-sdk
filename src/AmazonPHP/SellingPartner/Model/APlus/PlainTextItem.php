@@ -49,14 +49,14 @@ class PlainTextItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'PlainTextItem';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'PlainTextItem';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'position' => 'int',
         'value' => 'string',
     ];
@@ -68,7 +68,7 @@ class PlainTextItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'position' => null,
         'value' => null,
     ];
@@ -79,7 +79,7 @@ class PlainTextItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'position' => 'position',
         'value' => 'value',
     ];
@@ -89,7 +89,7 @@ class PlainTextItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'position' => 'setPosition',
         'value' => 'setValue',
     ];
@@ -99,7 +99,7 @@ class PlainTextItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'position' => 'getPosition',
         'value' => 'getValue',
     ];
@@ -109,7 +109,7 @@ class PlainTextItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

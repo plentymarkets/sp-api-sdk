@@ -49,14 +49,14 @@ class ShippingLabelList implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ShippingLabelList';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ShippingLabelList';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'pagination' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Pagination',
         'shipping_labels' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabel[]',
     ];
@@ -68,7 +68,7 @@ class ShippingLabelList implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'pagination' => null,
         'shipping_labels' => null,
     ];
@@ -79,7 +79,7 @@ class ShippingLabelList implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'pagination' => 'pagination',
         'shipping_labels' => 'shippingLabels',
     ];
@@ -89,7 +89,7 @@ class ShippingLabelList implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'pagination' => 'setPagination',
         'shipping_labels' => 'setShippingLabels',
     ];
@@ -99,7 +99,7 @@ class ShippingLabelList implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'pagination' => 'getPagination',
         'shipping_labels' => 'getShippingLabels',
     ];
@@ -109,7 +109,7 @@ class ShippingLabelList implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class InvoiceItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'InvoiceItem';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'InvoiceItem';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'item_sequence_number' => 'int',
         'amazon_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
@@ -77,7 +77,7 @@ class InvoiceItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'item_sequence_number' => null,
         'amazon_product_identifier' => null,
         'vendor_product_identifier' => null,
@@ -97,7 +97,7 @@ class InvoiceItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'item_sequence_number' => 'itemSequenceNumber',
         'amazon_product_identifier' => 'amazonProductIdentifier',
         'vendor_product_identifier' => 'vendorProductIdentifier',
@@ -116,7 +116,7 @@ class InvoiceItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'item_sequence_number' => 'setItemSequenceNumber',
         'amazon_product_identifier' => 'setAmazonProductIdentifier',
         'vendor_product_identifier' => 'setVendorProductIdentifier',
@@ -135,7 +135,7 @@ class InvoiceItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'item_sequence_number' => 'getItemSequenceNumber',
         'amazon_product_identifier' => 'getAmazonProductIdentifier',
         'vendor_product_identifier' => 'getVendorProductIdentifier',
@@ -154,7 +154,7 @@ class InvoiceItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -44,7 +44,7 @@ class ShipmentStatus
 
     public const REFUSED_PICKUP = 'RefusedPickup';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

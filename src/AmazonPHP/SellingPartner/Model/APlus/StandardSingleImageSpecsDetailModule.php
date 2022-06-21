@@ -49,14 +49,14 @@ class StandardSingleImageSpecsDetailModule implements \ArrayAccess, \JsonSeriali
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'StandardSingleImageSpecsDetailModule';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'StandardSingleImageSpecsDetailModule';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'headline' => '\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
         'image' => '\AmazonPHP\SellingPartner\Model\APlus\ImageComponent',
         'description_headline' => '\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
@@ -74,7 +74,7 @@ class StandardSingleImageSpecsDetailModule implements \ArrayAccess, \JsonSeriali
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'headline' => null,
         'image' => null,
         'description_headline' => null,
@@ -91,7 +91,7 @@ class StandardSingleImageSpecsDetailModule implements \ArrayAccess, \JsonSeriali
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'headline' => 'headline',
         'image' => 'image',
         'description_headline' => 'descriptionHeadline',
@@ -107,7 +107,7 @@ class StandardSingleImageSpecsDetailModule implements \ArrayAccess, \JsonSeriali
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'headline' => 'setHeadline',
         'image' => 'setImage',
         'description_headline' => 'setDescriptionHeadline',
@@ -123,7 +123,7 @@ class StandardSingleImageSpecsDetailModule implements \ArrayAccess, \JsonSeriali
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'headline' => 'getHeadline',
         'image' => 'getImage',
         'description_headline' => 'getDescriptionHeadline',
@@ -139,7 +139,7 @@ class StandardSingleImageSpecsDetailModule implements \ArrayAccess, \JsonSeriali
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

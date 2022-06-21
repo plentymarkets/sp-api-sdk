@@ -49,14 +49,14 @@ class SubmitShipmentConfirmationsRequest implements \ArrayAccess, \JsonSerializa
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'SubmitShipmentConfirmationsRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'SubmitShipmentConfirmationsRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'shipment_confirmations' => '\AmazonPHP\SellingPartner\Model\VendorShipments\ShipmentConfirmation[]',
     ];
 
@@ -67,7 +67,7 @@ class SubmitShipmentConfirmationsRequest implements \ArrayAccess, \JsonSerializa
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'shipment_confirmations' => null,
     ];
 
@@ -77,7 +77,7 @@ class SubmitShipmentConfirmationsRequest implements \ArrayAccess, \JsonSerializa
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'shipment_confirmations' => 'shipmentConfirmations',
     ];
 
@@ -86,7 +86,7 @@ class SubmitShipmentConfirmationsRequest implements \ArrayAccess, \JsonSerializa
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'shipment_confirmations' => 'setShipmentConfirmations',
     ];
 
@@ -95,7 +95,7 @@ class SubmitShipmentConfirmationsRequest implements \ArrayAccess, \JsonSerializa
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'shipment_confirmations' => 'getShipmentConfirmations',
     ];
 
@@ -104,7 +104,7 @@ class SubmitShipmentConfirmationsRequest implements \ArrayAccess, \JsonSerializa
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

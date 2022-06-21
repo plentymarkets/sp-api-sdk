@@ -49,14 +49,14 @@ class PriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'PriceType';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'PriceType';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'landed_price' => '\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
         'listing_price' => '\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
         'shipping' => '\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
@@ -70,7 +70,7 @@ class PriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'landed_price' => null,
         'listing_price' => null,
         'shipping' => null,
@@ -83,7 +83,7 @@ class PriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'landed_price' => 'LandedPrice',
         'listing_price' => 'ListingPrice',
         'shipping' => 'Shipping',
@@ -95,7 +95,7 @@ class PriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'landed_price' => 'setLandedPrice',
         'listing_price' => 'setListingPrice',
         'shipping' => 'setShipping',
@@ -107,7 +107,7 @@ class PriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'landed_price' => 'getLandedPrice',
         'listing_price' => 'getListingPrice',
         'shipping' => 'getShipping',
@@ -119,7 +119,7 @@ class PriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

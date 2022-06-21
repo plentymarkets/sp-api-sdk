@@ -55,14 +55,14 @@ class Transaction implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Transaction';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Transaction';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'transaction_id' => 'string',
         'status' => 'string',
         'errors' => '\AmazonPHP\SellingPartner\Model\VendorTransactionStatus\Error[]',
@@ -75,7 +75,7 @@ class Transaction implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'transaction_id' => null,
         'status' => null,
         'errors' => null,
@@ -87,7 +87,7 @@ class Transaction implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'transaction_id' => 'transactionId',
         'status' => 'status',
         'errors' => 'errors',
@@ -98,7 +98,7 @@ class Transaction implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'transaction_id' => 'setTransactionId',
         'status' => 'setStatus',
         'errors' => 'setErrors',
@@ -109,7 +109,7 @@ class Transaction implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'transaction_id' => 'getTransactionId',
         'status' => 'getStatus',
         'errors' => 'getErrors',
@@ -120,7 +120,7 @@ class Transaction implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

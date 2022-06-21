@@ -49,14 +49,14 @@ class OrderItemStatusOrderedQuantity implements \ArrayAccess, \JsonSerializable,
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'OrderItemStatus_orderedQuantity';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'OrderItemStatus_orderedQuantity';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'ordered_quantity' => '\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
         'ordered_quantity_details' => '\AmazonPHP\SellingPartner\Model\VendorOrders\OrderedQuantityDetails[]',
     ];
@@ -68,7 +68,7 @@ class OrderItemStatusOrderedQuantity implements \ArrayAccess, \JsonSerializable,
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'ordered_quantity' => null,
         'ordered_quantity_details' => null,
     ];
@@ -79,7 +79,7 @@ class OrderItemStatusOrderedQuantity implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'ordered_quantity' => 'orderedQuantity',
         'ordered_quantity_details' => 'orderedQuantityDetails',
     ];
@@ -89,7 +89,7 @@ class OrderItemStatusOrderedQuantity implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'ordered_quantity' => 'setOrderedQuantity',
         'ordered_quantity_details' => 'setOrderedQuantityDetails',
     ];
@@ -99,7 +99,7 @@ class OrderItemStatusOrderedQuantity implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'ordered_quantity' => 'getOrderedQuantity',
         'ordered_quantity_details' => 'getOrderedQuantityDetails',
     ];
@@ -109,7 +109,7 @@ class OrderItemStatusOrderedQuantity implements \ArrayAccess, \JsonSerializable,
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

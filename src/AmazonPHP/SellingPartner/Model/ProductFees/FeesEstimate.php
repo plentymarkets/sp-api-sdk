@@ -49,14 +49,14 @@ class FeesEstimate implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'FeesEstimate';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'FeesEstimate';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'time_of_fees_estimation' => '\DateTime',
         'total_fees_estimate' => '\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
         'fee_detail_list' => '\AmazonPHP\SellingPartner\Model\ProductFees\FeeDetail[]',
@@ -69,7 +69,7 @@ class FeesEstimate implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'time_of_fees_estimation' => 'date-time',
         'total_fees_estimate' => null,
         'fee_detail_list' => null,
@@ -81,7 +81,7 @@ class FeesEstimate implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'time_of_fees_estimation' => 'TimeOfFeesEstimation',
         'total_fees_estimate' => 'TotalFeesEstimate',
         'fee_detail_list' => 'FeeDetailList',
@@ -92,7 +92,7 @@ class FeesEstimate implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'time_of_fees_estimation' => 'setTimeOfFeesEstimation',
         'total_fees_estimate' => 'setTotalFeesEstimate',
         'fee_detail_list' => 'setFeeDetailList',
@@ -103,7 +103,7 @@ class FeesEstimate implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'time_of_fees_estimation' => 'getTimeOfFeesEstimation',
         'total_fees_estimate' => 'getTotalFeesEstimate',
         'fee_detail_list' => 'getFeeDetailList',
@@ -114,7 +114,7 @@ class FeesEstimate implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

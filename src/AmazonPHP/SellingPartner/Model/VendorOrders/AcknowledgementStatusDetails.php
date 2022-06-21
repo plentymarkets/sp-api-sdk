@@ -49,14 +49,14 @@ class AcknowledgementStatusDetails implements \ArrayAccess, \JsonSerializable, M
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'AcknowledgementStatusDetails';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'AcknowledgementStatusDetails';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'acknowledgement_date' => '\DateTime',
         'accepted_quantity' => '\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
         'rejected_quantity' => '\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
@@ -69,7 +69,7 @@ class AcknowledgementStatusDetails implements \ArrayAccess, \JsonSerializable, M
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'acknowledgement_date' => 'date-time',
         'accepted_quantity' => null,
         'rejected_quantity' => null,
@@ -81,7 +81,7 @@ class AcknowledgementStatusDetails implements \ArrayAccess, \JsonSerializable, M
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'acknowledgement_date' => 'acknowledgementDate',
         'accepted_quantity' => 'acceptedQuantity',
         'rejected_quantity' => 'rejectedQuantity',
@@ -92,7 +92,7 @@ class AcknowledgementStatusDetails implements \ArrayAccess, \JsonSerializable, M
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'acknowledgement_date' => 'setAcknowledgementDate',
         'accepted_quantity' => 'setAcceptedQuantity',
         'rejected_quantity' => 'setRejectedQuantity',
@@ -103,7 +103,7 @@ class AcknowledgementStatusDetails implements \ArrayAccess, \JsonSerializable, M
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'acknowledgement_date' => 'getAcknowledgementDate',
         'accepted_quantity' => 'getAcceptedQuantity',
         'rejected_quantity' => 'getRejectedQuantity',
@@ -114,7 +114,7 @@ class AcknowledgementStatusDetails implements \ArrayAccess, \JsonSerializable, M
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

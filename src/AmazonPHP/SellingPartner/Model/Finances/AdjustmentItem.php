@@ -49,14 +49,14 @@ class AdjustmentItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'AdjustmentItem';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'AdjustmentItem';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'quantity' => 'string',
         'per_unit_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
         'total_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
@@ -73,7 +73,7 @@ class AdjustmentItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'quantity' => null,
         'per_unit_amount' => null,
         'total_amount' => null,
@@ -89,7 +89,7 @@ class AdjustmentItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'quantity' => 'Quantity',
         'per_unit_amount' => 'PerUnitAmount',
         'total_amount' => 'TotalAmount',
@@ -104,7 +104,7 @@ class AdjustmentItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'quantity' => 'setQuantity',
         'per_unit_amount' => 'setPerUnitAmount',
         'total_amount' => 'setTotalAmount',
@@ -119,7 +119,7 @@ class AdjustmentItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'quantity' => 'getQuantity',
         'per_unit_amount' => 'getPerUnitAmount',
         'total_amount' => 'getTotalAmount',
@@ -134,7 +134,7 @@ class AdjustmentItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

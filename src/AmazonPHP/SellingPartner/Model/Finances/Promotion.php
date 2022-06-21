@@ -49,14 +49,14 @@ class Promotion implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Promotion';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Promotion';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'promotion_type' => 'string',
         'promotion_id' => 'string',
         'promotion_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
@@ -69,7 +69,7 @@ class Promotion implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'promotion_type' => null,
         'promotion_id' => null,
         'promotion_amount' => null,
@@ -81,7 +81,7 @@ class Promotion implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'promotion_type' => 'PromotionType',
         'promotion_id' => 'PromotionId',
         'promotion_amount' => 'PromotionAmount',
@@ -92,7 +92,7 @@ class Promotion implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'promotion_type' => 'setPromotionType',
         'promotion_id' => 'setPromotionId',
         'promotion_amount' => 'setPromotionAmount',
@@ -103,7 +103,7 @@ class Promotion implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'promotion_type' => 'getPromotionType',
         'promotion_id' => 'getPromotionId',
         'promotion_amount' => 'getPromotionAmount',
@@ -114,7 +114,7 @@ class Promotion implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

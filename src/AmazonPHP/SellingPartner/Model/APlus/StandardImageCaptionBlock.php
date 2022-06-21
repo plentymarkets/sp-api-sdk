@@ -49,14 +49,14 @@ class StandardImageCaptionBlock implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'StandardImageCaptionBlock';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'StandardImageCaptionBlock';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'image' => '\AmazonPHP\SellingPartner\Model\APlus\ImageComponent',
         'caption' => '\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
     ];
@@ -68,7 +68,7 @@ class StandardImageCaptionBlock implements \ArrayAccess, \JsonSerializable, Mode
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'image' => null,
         'caption' => null,
     ];
@@ -79,7 +79,7 @@ class StandardImageCaptionBlock implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'image' => 'image',
         'caption' => 'caption',
     ];
@@ -89,7 +89,7 @@ class StandardImageCaptionBlock implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'image' => 'setImage',
         'caption' => 'setCaption',
     ];
@@ -99,7 +99,7 @@ class StandardImageCaptionBlock implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'image' => 'getImage',
         'caption' => 'getCaption',
     ];
@@ -109,7 +109,7 @@ class StandardImageCaptionBlock implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class FinancialEventGroup implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'FinancialEventGroup';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'FinancialEventGroup';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'financial_event_group_id' => 'string',
         'processing_status' => 'string',
         'fund_transfer_status' => 'string',
@@ -77,7 +77,7 @@ class FinancialEventGroup implements \ArrayAccess, \JsonSerializable, ModelInter
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'financial_event_group_id' => null,
         'processing_status' => null,
         'fund_transfer_status' => null,
@@ -97,7 +97,7 @@ class FinancialEventGroup implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'financial_event_group_id' => 'FinancialEventGroupId',
         'processing_status' => 'ProcessingStatus',
         'fund_transfer_status' => 'FundTransferStatus',
@@ -116,7 +116,7 @@ class FinancialEventGroup implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'financial_event_group_id' => 'setFinancialEventGroupId',
         'processing_status' => 'setProcessingStatus',
         'fund_transfer_status' => 'setFundTransferStatus',
@@ -135,7 +135,7 @@ class FinancialEventGroup implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'financial_event_group_id' => 'getFinancialEventGroupId',
         'processing_status' => 'getProcessingStatus',
         'fund_transfer_status' => 'getFundTransferStatus',
@@ -154,7 +154,7 @@ class FinancialEventGroup implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

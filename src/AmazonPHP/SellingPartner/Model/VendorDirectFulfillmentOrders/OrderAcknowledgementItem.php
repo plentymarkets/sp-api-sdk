@@ -49,14 +49,14 @@ class OrderAcknowledgementItem implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'OrderAcknowledgementItem';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'OrderAcknowledgementItem';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'purchase_order_number' => 'string',
         'vendor_order_number' => 'string',
         'acknowledgement_date' => '\DateTime',
@@ -73,7 +73,7 @@ class OrderAcknowledgementItem implements \ArrayAccess, \JsonSerializable, Model
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'purchase_order_number' => null,
         'vendor_order_number' => null,
         'acknowledgement_date' => 'date-time',
@@ -89,7 +89,7 @@ class OrderAcknowledgementItem implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'purchase_order_number' => 'purchaseOrderNumber',
         'vendor_order_number' => 'vendorOrderNumber',
         'acknowledgement_date' => 'acknowledgementDate',
@@ -104,7 +104,7 @@ class OrderAcknowledgementItem implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'purchase_order_number' => 'setPurchaseOrderNumber',
         'vendor_order_number' => 'setVendorOrderNumber',
         'acknowledgement_date' => 'setAcknowledgementDate',
@@ -119,7 +119,7 @@ class OrderAcknowledgementItem implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'purchase_order_number' => 'getPurchaseOrderNumber',
         'vendor_order_number' => 'getVendorOrderNumber',
         'acknowledgement_date' => 'getAcknowledgementDate',
@@ -134,7 +134,7 @@ class OrderAcknowledgementItem implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

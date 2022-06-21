@@ -49,14 +49,14 @@ class ListAllFulfillmentOrdersResult implements \ArrayAccess, \JsonSerializable,
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ListAllFulfillmentOrdersResult';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ListAllFulfillmentOrdersResult';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'next_token' => 'string',
         'fulfillment_orders' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentOrder[]',
     ];
@@ -68,7 +68,7 @@ class ListAllFulfillmentOrdersResult implements \ArrayAccess, \JsonSerializable,
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'next_token' => null,
         'fulfillment_orders' => null,
     ];
@@ -79,7 +79,7 @@ class ListAllFulfillmentOrdersResult implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'next_token' => 'nextToken',
         'fulfillment_orders' => 'fulfillmentOrders',
     ];
@@ -89,7 +89,7 @@ class ListAllFulfillmentOrdersResult implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'next_token' => 'setNextToken',
         'fulfillment_orders' => 'setFulfillmentOrders',
     ];
@@ -99,7 +99,7 @@ class ListAllFulfillmentOrdersResult implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'next_token' => 'getNextToken',
         'fulfillment_orders' => 'getFulfillmentOrders',
     ];
@@ -109,7 +109,7 @@ class ListAllFulfillmentOrdersResult implements \ArrayAccess, \JsonSerializable,
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

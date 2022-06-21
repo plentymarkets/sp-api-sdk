@@ -49,14 +49,14 @@ class AdjustmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'AdjustmentEvent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'AdjustmentEvent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'adjustment_type' => 'string',
         'posted_date' => '\DateTime',
         'adjustment_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
@@ -70,7 +70,7 @@ class AdjustmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'adjustment_type' => null,
         'posted_date' => 'date-time',
         'adjustment_amount' => null,
@@ -83,7 +83,7 @@ class AdjustmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'adjustment_type' => 'AdjustmentType',
         'posted_date' => 'PostedDate',
         'adjustment_amount' => 'AdjustmentAmount',
@@ -95,7 +95,7 @@ class AdjustmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'adjustment_type' => 'setAdjustmentType',
         'posted_date' => 'setPostedDate',
         'adjustment_amount' => 'setAdjustmentAmount',
@@ -107,7 +107,7 @@ class AdjustmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'adjustment_type' => 'getAdjustmentType',
         'posted_date' => 'getPostedDate',
         'adjustment_amount' => 'getAdjustmentAmount',
@@ -119,7 +119,7 @@ class AdjustmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

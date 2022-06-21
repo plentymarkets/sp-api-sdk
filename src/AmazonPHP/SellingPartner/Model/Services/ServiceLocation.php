@@ -55,14 +55,14 @@ class ServiceLocation implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ServiceLocation';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ServiceLocation';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'service_location_type' => 'string',
         'address' => '\AmazonPHP\SellingPartner\Model\Services\Address',
     ];
@@ -74,7 +74,7 @@ class ServiceLocation implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'service_location_type' => null,
         'address' => null,
     ];
@@ -85,7 +85,7 @@ class ServiceLocation implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'service_location_type' => 'serviceLocationType',
         'address' => 'address',
     ];
@@ -95,7 +95,7 @@ class ServiceLocation implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'service_location_type' => 'setServiceLocationType',
         'address' => 'setAddress',
     ];
@@ -105,7 +105,7 @@ class ServiceLocation implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'service_location_type' => 'getServiceLocationType',
         'address' => 'getAddress',
     ];
@@ -115,7 +115,7 @@ class ServiceLocation implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

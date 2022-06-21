@@ -49,14 +49,14 @@ class SearchContentDocumentsResponse implements \ArrayAccess, \JsonSerializable,
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'SearchContentDocumentsResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'SearchContentDocumentsResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'warnings' => '\AmazonPHP\SellingPartner\Model\APlus\Error[]',
         'next_page_token' => 'string',
         'content_metadata_records' => '\AmazonPHP\SellingPartner\Model\APlus\ContentMetadataRecord[]',
@@ -69,7 +69,7 @@ class SearchContentDocumentsResponse implements \ArrayAccess, \JsonSerializable,
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'warnings' => null,
         'next_page_token' => null,
         'content_metadata_records' => null,
@@ -81,7 +81,7 @@ class SearchContentDocumentsResponse implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'warnings' => 'warnings',
         'next_page_token' => 'nextPageToken',
         'content_metadata_records' => 'contentMetadataRecords',
@@ -92,7 +92,7 @@ class SearchContentDocumentsResponse implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'warnings' => 'setWarnings',
         'next_page_token' => 'setNextPageToken',
         'content_metadata_records' => 'setContentMetadataRecords',
@@ -103,7 +103,7 @@ class SearchContentDocumentsResponse implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'warnings' => 'getWarnings',
         'next_page_token' => 'getNextPageToken',
         'content_metadata_records' => 'getContentMetadataRecords',
@@ -114,7 +114,7 @@ class SearchContentDocumentsResponse implements \ArrayAccess, \JsonSerializable,
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

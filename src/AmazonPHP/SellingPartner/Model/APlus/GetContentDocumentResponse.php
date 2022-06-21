@@ -49,14 +49,14 @@ class GetContentDocumentResponse implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetContentDocumentResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetContentDocumentResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'warnings' => '\AmazonPHP\SellingPartner\Model\APlus\Error[]',
         'content_record' => '\AmazonPHP\SellingPartner\Model\APlus\ContentRecord',
     ];
@@ -68,7 +68,7 @@ class GetContentDocumentResponse implements \ArrayAccess, \JsonSerializable, Mod
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'warnings' => null,
         'content_record' => null,
     ];
@@ -79,7 +79,7 @@ class GetContentDocumentResponse implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'warnings' => 'warnings',
         'content_record' => 'contentRecord',
     ];
@@ -89,7 +89,7 @@ class GetContentDocumentResponse implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'warnings' => 'setWarnings',
         'content_record' => 'setContentRecord',
     ];
@@ -99,7 +99,7 @@ class GetContentDocumentResponse implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'warnings' => 'getWarnings',
         'content_record' => 'getContentRecord',
     ];
@@ -109,7 +109,7 @@ class GetContentDocumentResponse implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

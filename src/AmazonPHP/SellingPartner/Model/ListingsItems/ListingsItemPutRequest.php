@@ -55,14 +55,14 @@ class ListingsItemPutRequest implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ListingsItemPutRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ListingsItemPutRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'product_type' => 'string',
         'requirements' => 'string',
         'attributes' => 'object',
@@ -75,7 +75,7 @@ class ListingsItemPutRequest implements \ArrayAccess, \JsonSerializable, ModelIn
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'product_type' => null,
         'requirements' => null,
         'attributes' => null,
@@ -87,7 +87,7 @@ class ListingsItemPutRequest implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'product_type' => 'productType',
         'requirements' => 'requirements',
         'attributes' => 'attributes',
@@ -98,7 +98,7 @@ class ListingsItemPutRequest implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'product_type' => 'setProductType',
         'requirements' => 'setRequirements',
         'attributes' => 'setAttributes',
@@ -109,7 +109,7 @@ class ListingsItemPutRequest implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'product_type' => 'getProductType',
         'requirements' => 'getRequirements',
         'attributes' => 'getAttributes',
@@ -120,7 +120,7 @@ class ListingsItemPutRequest implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

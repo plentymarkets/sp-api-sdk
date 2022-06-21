@@ -49,14 +49,14 @@ class Subscription implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Subscription';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Subscription';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'subscription_id' => 'string',
         'payload_version' => 'string',
         'destination_id' => 'string',
@@ -70,7 +70,7 @@ class Subscription implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'subscription_id' => null,
         'payload_version' => null,
         'destination_id' => null,
@@ -83,7 +83,7 @@ class Subscription implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'subscription_id' => 'subscriptionId',
         'payload_version' => 'payloadVersion',
         'destination_id' => 'destinationId',
@@ -95,7 +95,7 @@ class Subscription implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'subscription_id' => 'setSubscriptionId',
         'payload_version' => 'setPayloadVersion',
         'destination_id' => 'setDestinationId',
@@ -107,7 +107,7 @@ class Subscription implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'subscription_id' => 'getSubscriptionId',
         'payload_version' => 'getPayloadVersion',
         'destination_id' => 'getDestinationId',
@@ -119,7 +119,7 @@ class Subscription implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

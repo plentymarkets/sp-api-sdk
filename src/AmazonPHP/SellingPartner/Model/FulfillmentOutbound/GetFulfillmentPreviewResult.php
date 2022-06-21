@@ -49,14 +49,14 @@ class GetFulfillmentPreviewResult implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetFulfillmentPreviewResult';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetFulfillmentPreviewResult';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'fulfillment_previews' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPreview[]',
     ];
 
@@ -67,7 +67,7 @@ class GetFulfillmentPreviewResult implements \ArrayAccess, \JsonSerializable, Mo
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'fulfillment_previews' => null,
     ];
 
@@ -77,7 +77,7 @@ class GetFulfillmentPreviewResult implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'fulfillment_previews' => 'fulfillmentPreviews',
     ];
 
@@ -86,7 +86,7 @@ class GetFulfillmentPreviewResult implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'fulfillment_previews' => 'setFulfillmentPreviews',
     ];
 
@@ -95,7 +95,7 @@ class GetFulfillmentPreviewResult implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'fulfillment_previews' => 'getFulfillmentPreviews',
     ];
 
@@ -104,7 +104,7 @@ class GetFulfillmentPreviewResult implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

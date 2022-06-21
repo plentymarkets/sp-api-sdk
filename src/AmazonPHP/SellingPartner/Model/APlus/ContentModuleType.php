@@ -68,7 +68,7 @@ class ContentModuleType
 
     public const THREE_IMAGE_TEXT = 'STANDARD_THREE_IMAGE_TEXT';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

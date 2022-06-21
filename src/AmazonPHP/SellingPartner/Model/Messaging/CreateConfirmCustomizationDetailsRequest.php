@@ -49,14 +49,14 @@ class CreateConfirmCustomizationDetailsRequest implements \ArrayAccess, \JsonSer
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CreateConfirmCustomizationDetailsRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CreateConfirmCustomizationDetailsRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'text' => 'string',
         'attachments' => '\AmazonPHP\SellingPartner\Model\Messaging\Attachment[]',
     ];
@@ -68,7 +68,7 @@ class CreateConfirmCustomizationDetailsRequest implements \ArrayAccess, \JsonSer
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'text' => null,
         'attachments' => null,
     ];
@@ -79,7 +79,7 @@ class CreateConfirmCustomizationDetailsRequest implements \ArrayAccess, \JsonSer
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'text' => 'text',
         'attachments' => 'attachments',
     ];
@@ -89,7 +89,7 @@ class CreateConfirmCustomizationDetailsRequest implements \ArrayAccess, \JsonSer
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'text' => 'setText',
         'attachments' => 'setAttachments',
     ];
@@ -99,7 +99,7 @@ class CreateConfirmCustomizationDetailsRequest implements \ArrayAccess, \JsonSer
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'text' => 'getText',
         'attachments' => 'getAttachments',
     ];
@@ -109,7 +109,7 @@ class CreateConfirmCustomizationDetailsRequest implements \ArrayAccess, \JsonSer
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

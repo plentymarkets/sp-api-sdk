@@ -49,14 +49,14 @@ class OfferType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'OfferType';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'OfferType';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'offer_type' => '\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCustomerType',
         'buying_price' => '\AmazonPHP\SellingPartner\Model\ProductPricing\PriceType',
         'regular_price' => '\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
@@ -75,7 +75,7 @@ class OfferType implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'offer_type' => null,
         'buying_price' => null,
         'regular_price' => null,
@@ -93,7 +93,7 @@ class OfferType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'offer_type' => 'offerType',
         'buying_price' => 'BuyingPrice',
         'regular_price' => 'RegularPrice',
@@ -110,7 +110,7 @@ class OfferType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'offer_type' => 'setOfferType',
         'buying_price' => 'setBuyingPrice',
         'regular_price' => 'setRegularPrice',
@@ -127,7 +127,7 @@ class OfferType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'offer_type' => 'getOfferType',
         'buying_price' => 'getBuyingPrice',
         'regular_price' => 'getRegularPrice',
@@ -144,7 +144,7 @@ class OfferType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

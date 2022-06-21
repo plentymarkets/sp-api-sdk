@@ -49,14 +49,14 @@ class SAFETReimbursementItem implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'SAFETReimbursementItem';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'SAFETReimbursementItem';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'item_charge_list' => '\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[]',
         'product_description' => 'string',
         'quantity' => 'string',
@@ -69,7 +69,7 @@ class SAFETReimbursementItem implements \ArrayAccess, \JsonSerializable, ModelIn
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'item_charge_list' => null,
         'product_description' => null,
         'quantity' => null,
@@ -81,7 +81,7 @@ class SAFETReimbursementItem implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'item_charge_list' => 'itemChargeList',
         'product_description' => 'productDescription',
         'quantity' => 'quantity',
@@ -92,7 +92,7 @@ class SAFETReimbursementItem implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'item_charge_list' => 'setItemChargeList',
         'product_description' => 'setProductDescription',
         'quantity' => 'setQuantity',
@@ -103,7 +103,7 @@ class SAFETReimbursementItem implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'item_charge_list' => 'getItemChargeList',
         'product_description' => 'getProductDescription',
         'quantity' => 'getQuantity',
@@ -114,7 +114,7 @@ class SAFETReimbursementItem implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

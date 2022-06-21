@@ -49,14 +49,14 @@ class Shipment implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Shipment';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Shipment';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'shipment_id' => 'string',
         'client_reference_id' => 'string',
         'ship_from' => '\AmazonPHP\SellingPartner\Model\Shipping\Address',
@@ -73,7 +73,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'shipment_id' => null,
         'client_reference_id' => null,
         'ship_from' => null,
@@ -89,7 +89,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'shipment_id' => 'shipmentId',
         'client_reference_id' => 'clientReferenceId',
         'ship_from' => 'shipFrom',
@@ -104,7 +104,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'shipment_id' => 'setShipmentId',
         'client_reference_id' => 'setClientReferenceId',
         'ship_from' => 'setShipFrom',
@@ -119,7 +119,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'shipment_id' => 'getShipmentId',
         'client_reference_id' => 'getClientReferenceId',
         'ship_from' => 'getShipFrom',
@@ -134,7 +134,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

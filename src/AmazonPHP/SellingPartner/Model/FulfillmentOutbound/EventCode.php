@@ -104,7 +104,7 @@ class EventCode
 
     public const _419 = 'EVENT_419';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

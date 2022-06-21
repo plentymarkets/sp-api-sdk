@@ -90,7 +90,7 @@ class AdditionalLocationInfo
 
     public const SIDE_DOOR = 'SIDE_DOOR';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

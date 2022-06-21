@@ -49,14 +49,14 @@ class AvailableDeliveryExperienceOption implements \ArrayAccess, \JsonSerializab
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'AvailableDeliveryExperienceOption';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'AvailableDeliveryExperienceOption';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'delivery_experience_option' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\DeliveryExperienceOption',
         'charge' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CurrencyAmount',
     ];
@@ -68,7 +68,7 @@ class AvailableDeliveryExperienceOption implements \ArrayAccess, \JsonSerializab
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'delivery_experience_option' => null,
         'charge' => null,
     ];
@@ -79,7 +79,7 @@ class AvailableDeliveryExperienceOption implements \ArrayAccess, \JsonSerializab
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'delivery_experience_option' => 'DeliveryExperienceOption',
         'charge' => 'Charge',
     ];
@@ -89,7 +89,7 @@ class AvailableDeliveryExperienceOption implements \ArrayAccess, \JsonSerializab
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'delivery_experience_option' => 'setDeliveryExperienceOption',
         'charge' => 'setCharge',
     ];
@@ -99,7 +99,7 @@ class AvailableDeliveryExperienceOption implements \ArrayAccess, \JsonSerializab
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'delivery_experience_option' => 'getDeliveryExperienceOption',
         'charge' => 'getCharge',
     ];
@@ -109,7 +109,7 @@ class AvailableDeliveryExperienceOption implements \ArrayAccess, \JsonSerializab
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

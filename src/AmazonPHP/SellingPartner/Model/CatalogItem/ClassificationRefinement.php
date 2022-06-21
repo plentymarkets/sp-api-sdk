@@ -49,14 +49,14 @@ class ClassificationRefinement implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ClassificationRefinement';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ClassificationRefinement';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'number_of_results' => 'int',
         'display_name' => 'string',
         'classification_id' => 'string',
@@ -69,7 +69,7 @@ class ClassificationRefinement implements \ArrayAccess, \JsonSerializable, Model
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'number_of_results' => null,
         'display_name' => null,
         'classification_id' => null,
@@ -81,7 +81,7 @@ class ClassificationRefinement implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'number_of_results' => 'numberOfResults',
         'display_name' => 'displayName',
         'classification_id' => 'classificationId',
@@ -92,7 +92,7 @@ class ClassificationRefinement implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'number_of_results' => 'setNumberOfResults',
         'display_name' => 'setDisplayName',
         'classification_id' => 'setClassificationId',
@@ -103,7 +103,7 @@ class ClassificationRefinement implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'number_of_results' => 'getNumberOfResults',
         'display_name' => 'getDisplayName',
         'classification_id' => 'getClassificationId',
@@ -114,7 +114,7 @@ class ClassificationRefinement implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

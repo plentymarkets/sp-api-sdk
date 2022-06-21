@@ -63,14 +63,14 @@ class ChargeDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ChargeDetails';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ChargeDetails';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'type' => 'string',
         'charge_amount' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\Money',
         'tax_details' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\TaxDetail[]',
@@ -83,7 +83,7 @@ class ChargeDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'type' => null,
         'charge_amount' => null,
         'tax_details' => null,
@@ -95,7 +95,7 @@ class ChargeDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'type' => 'type',
         'charge_amount' => 'chargeAmount',
         'tax_details' => 'taxDetails',
@@ -106,7 +106,7 @@ class ChargeDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'type' => 'setType',
         'charge_amount' => 'setChargeAmount',
         'tax_details' => 'setTaxDetails',
@@ -117,7 +117,7 @@ class ChargeDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'type' => 'getType',
         'charge_amount' => 'getChargeAmount',
         'tax_details' => 'getTaxDetails',
@@ -128,7 +128,7 @@ class ChargeDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

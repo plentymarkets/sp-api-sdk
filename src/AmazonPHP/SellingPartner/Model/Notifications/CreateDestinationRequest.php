@@ -49,14 +49,14 @@ class CreateDestinationRequest implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CreateDestinationRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CreateDestinationRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'resource_specification' => '\AmazonPHP\SellingPartner\Model\Notifications\DestinationResourceSpecification',
         'name' => 'string',
     ];
@@ -68,7 +68,7 @@ class CreateDestinationRequest implements \ArrayAccess, \JsonSerializable, Model
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'resource_specification' => null,
         'name' => null,
     ];
@@ -79,7 +79,7 @@ class CreateDestinationRequest implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'resource_specification' => 'resourceSpecification',
         'name' => 'name',
     ];
@@ -89,7 +89,7 @@ class CreateDestinationRequest implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'resource_specification' => 'setResourceSpecification',
         'name' => 'setName',
     ];
@@ -99,7 +99,7 @@ class CreateDestinationRequest implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'resource_specification' => 'getResourceSpecification',
         'name' => 'getName',
     ];
@@ -109,7 +109,7 @@ class CreateDestinationRequest implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

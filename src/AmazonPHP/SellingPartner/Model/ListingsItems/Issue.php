@@ -55,14 +55,14 @@ class Issue implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Issue';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Issue';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'code' => 'string',
         'message' => 'string',
         'severity' => 'string',
@@ -76,7 +76,7 @@ class Issue implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'code' => null,
         'message' => null,
         'severity' => null,
@@ -89,7 +89,7 @@ class Issue implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'code' => 'code',
         'message' => 'message',
         'severity' => 'severity',
@@ -101,7 +101,7 @@ class Issue implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'code' => 'setCode',
         'message' => 'setMessage',
         'severity' => 'setSeverity',
@@ -113,7 +113,7 @@ class Issue implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'code' => 'getCode',
         'message' => 'getMessage',
         'severity' => 'getSeverity',
@@ -125,7 +125,7 @@ class Issue implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

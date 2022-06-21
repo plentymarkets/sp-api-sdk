@@ -49,14 +49,14 @@ class GetFeatureInventoryResult implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetFeatureInventoryResult';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetFeatureInventoryResult';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace_id' => 'string',
         'feature_name' => 'string',
         'next_token' => 'string',
@@ -70,7 +70,7 @@ class GetFeatureInventoryResult implements \ArrayAccess, \JsonSerializable, Mode
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'marketplace_id' => null,
         'feature_name' => null,
         'next_token' => null,
@@ -83,7 +83,7 @@ class GetFeatureInventoryResult implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'marketplace_id' => 'marketplaceId',
         'feature_name' => 'featureName',
         'next_token' => 'nextToken',
@@ -95,7 +95,7 @@ class GetFeatureInventoryResult implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'marketplace_id' => 'setMarketplaceId',
         'feature_name' => 'setFeatureName',
         'next_token' => 'setNextToken',
@@ -107,7 +107,7 @@ class GetFeatureInventoryResult implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'marketplace_id' => 'getMarketplaceId',
         'feature_name' => 'getFeatureName',
         'next_token' => 'getNextToken',
@@ -119,7 +119,7 @@ class GetFeatureInventoryResult implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

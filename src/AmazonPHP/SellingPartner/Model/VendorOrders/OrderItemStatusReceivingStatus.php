@@ -55,14 +55,14 @@ class OrderItemStatusReceivingStatus implements \ArrayAccess, \JsonSerializable,
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'OrderItemStatus_receivingStatus';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'OrderItemStatus_receivingStatus';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'receive_status' => 'string',
         'received_quantity' => '\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
         'last_receive_date' => '\DateTime',
@@ -75,7 +75,7 @@ class OrderItemStatusReceivingStatus implements \ArrayAccess, \JsonSerializable,
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'receive_status' => null,
         'received_quantity' => null,
         'last_receive_date' => 'date-time',
@@ -87,7 +87,7 @@ class OrderItemStatusReceivingStatus implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'receive_status' => 'receiveStatus',
         'received_quantity' => 'receivedQuantity',
         'last_receive_date' => 'lastReceiveDate',
@@ -98,7 +98,7 @@ class OrderItemStatusReceivingStatus implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'receive_status' => 'setReceiveStatus',
         'received_quantity' => 'setReceivedQuantity',
         'last_receive_date' => 'setLastReceiveDate',
@@ -109,7 +109,7 @@ class OrderItemStatusReceivingStatus implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'receive_status' => 'getReceiveStatus',
         'received_quantity' => 'getReceivedQuantity',
         'last_receive_date' => 'getLastReceiveDate',
@@ -120,7 +120,7 @@ class OrderItemStatusReceivingStatus implements \ArrayAccess, \JsonSerializable,
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class OfferDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'OfferDetail';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'OfferDetail';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'my_offer' => 'bool',
         'offer_type' => '\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCustomerType',
         'sub_condition' => 'string',
@@ -82,7 +82,7 @@ class OfferDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'my_offer' => null,
         'offer_type' => null,
         'sub_condition' => null,
@@ -107,7 +107,7 @@ class OfferDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'my_offer' => 'MyOffer',
         'offer_type' => 'offerType',
         'sub_condition' => 'SubCondition',
@@ -131,7 +131,7 @@ class OfferDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'my_offer' => 'setMyOffer',
         'offer_type' => 'setOfferType',
         'sub_condition' => 'setSubCondition',
@@ -155,7 +155,7 @@ class OfferDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'my_offer' => 'getMyOffer',
         'offer_type' => 'getOfferType',
         'sub_condition' => 'getSubCondition',
@@ -179,7 +179,7 @@ class OfferDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

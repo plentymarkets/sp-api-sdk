@@ -40,7 +40,7 @@ class StandardIdForLabel
      */
     public const AMAZON_ORDER_ID = 'AmazonOrderId';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {
