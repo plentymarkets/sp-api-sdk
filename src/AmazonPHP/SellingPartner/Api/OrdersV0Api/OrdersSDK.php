@@ -79,7 +79,7 @@ final class OrdersSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getOrder(AccessToken $accessToken, string $region, string $order_id) : \AmazonPHP\SellingPartner\Model\Orders\GetOrderResponse
+    public function getOrder(AccessToken $accessToken, string $region, string $order_id) : \Plenty\AmazonPHP\SellingPartner\Model\Orders\GetOrderResponse
     {
         $request = $this->getOrderRequest($accessToken, $region, $order_id);
 
@@ -267,7 +267,7 @@ final class OrdersSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getOrderAddress(AccessToken $accessToken, string $region, string $order_id) : \AmazonPHP\SellingPartner\Model\Orders\GetOrderAddressResponse
+    public function getOrderAddress(AccessToken $accessToken, string $region, string $order_id) : \Plenty\AmazonPHP\SellingPartner\Model\Orders\GetOrderAddressResponse
     {
         $request = $this->getOrderAddressRequest($accessToken, $region, $order_id);
 
@@ -455,7 +455,7 @@ final class OrdersSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getOrderBuyerInfo(AccessToken $accessToken, string $region, string $order_id) : \AmazonPHP\SellingPartner\Model\Orders\GetOrderBuyerInfoResponse
+    public function getOrderBuyerInfo(AccessToken $accessToken, string $region, string $order_id) : \Plenty\AmazonPHP\SellingPartner\Model\Orders\GetOrderBuyerInfoResponse
     {
         $request = $this->getOrderBuyerInfoRequest($accessToken, $region, $order_id);
 
@@ -644,7 +644,7 @@ final class OrdersSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getOrderItems(AccessToken $accessToken, string $region, string $order_id, string $next_token = null) : \AmazonPHP\SellingPartner\Model\Orders\GetOrderItemsResponse
+    public function getOrderItems(AccessToken $accessToken, string $region, string $order_id, string $next_token = null) : \Plenty\AmazonPHP\SellingPartner\Model\Orders\GetOrderItemsResponse
     {
         $request = $this->getOrderItemsRequest($accessToken, $region, $order_id, $next_token);
 
@@ -843,7 +843,7 @@ final class OrdersSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getOrderItemsBuyerInfo(AccessToken $accessToken, string $region, string $order_id, string $next_token = null) : \AmazonPHP\SellingPartner\Model\Orders\GetOrderItemsBuyerInfoResponse
+    public function getOrderItemsBuyerInfo(AccessToken $accessToken, string $region, string $order_id, string $next_token = null) : \Plenty\AmazonPHP\SellingPartner\Model\Orders\GetOrderItemsBuyerInfoResponse
     {
         $request = $this->getOrderItemsBuyerInfoRequest($accessToken, $region, $order_id, $next_token);
 
@@ -1041,7 +1041,7 @@ final class OrdersSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getOrderRegulatedInfo(AccessToken $accessToken, string $region, string $order_id) : \AmazonPHP\SellingPartner\Model\Orders\GetOrderRegulatedInfoResponse
+    public function getOrderRegulatedInfo(AccessToken $accessToken, string $region, string $order_id) : \Plenty\AmazonPHP\SellingPartner\Model\Orders\GetOrderRegulatedInfoResponse
     {
         $request = $this->getOrderRegulatedInfoRequest($accessToken, $region, $order_id);
 
@@ -1245,7 +1245,7 @@ final class OrdersSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getOrders(AccessToken $accessToken, string $region, array $marketplace_ids, string $created_after = null, string $created_before = null, string $last_updated_after = null, string $last_updated_before = null, array $order_statuses = null, array $fulfillment_channels = null, array $payment_methods = null, string $buyer_email = null, string $seller_order_id = null, int $max_results_per_page = null, array $easy_ship_shipment_statuses = null, string $next_token = null, array $amazon_order_ids = null, string $actual_fulfillment_supply_source_id = null, bool $is_ispu = null, string $store_chain_store_id = null) : \AmazonPHP\SellingPartner\Model\Orders\GetOrdersResponse
+    public function getOrders(AccessToken $accessToken, string $region, array $marketplace_ids, string $created_after = null, string $created_before = null, string $last_updated_after = null, string $last_updated_before = null, array $order_statuses = null, array $fulfillment_channels = null, array $payment_methods = null, string $buyer_email = null, string $seller_order_id = null, int $max_results_per_page = null, array $easy_ship_shipment_statuses = null, string $next_token = null, array $amazon_order_ids = null, string $actual_fulfillment_supply_source_id = null, bool $is_ispu = null, string $store_chain_store_id = null) : \Plenty\AmazonPHP\SellingPartner\Model\Orders\GetOrdersResponse
     {
         $request = $this->getOrdersRequest($accessToken, $region, $marketplace_ids, $created_after, $created_before, $last_updated_after, $last_updated_before, $order_statuses, $fulfillment_channels, $payment_methods, $buyer_email, $seller_order_id, $max_results_per_page, $easy_ship_shipment_statuses, $next_token, $amazon_order_ids, $actual_fulfillment_supply_source_id, $is_ispu, $store_chain_store_id);
 

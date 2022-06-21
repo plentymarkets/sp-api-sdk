@@ -54,7 +54,7 @@ final class UploadsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createUploadDestinationForResource(AccessToken $accessToken, string $region, array $marketplace_ids, string $content_md5, string $resource, string $content_type = null) : \AmazonPHP\SellingPartner\Model\Uploads\CreateUploadDestinationResponse
+    public function createUploadDestinationForResource(AccessToken $accessToken, string $region, array $marketplace_ids, string $content_md5, string $resource, string $content_type = null) : \Plenty\AmazonPHP\SellingPartner\Model\Uploads\CreateUploadDestinationResponse
     {
         $request = $this->createUploadDestinationForResourceRequest($accessToken, $region, $marketplace_ids, $content_md5, $resource, $content_type);
 

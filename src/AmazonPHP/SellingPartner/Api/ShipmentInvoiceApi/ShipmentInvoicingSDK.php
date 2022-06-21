@@ -59,7 +59,7 @@ final class ShipmentInvoicingSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getInvoiceStatus(AccessToken $accessToken, string $region, string $shipment_id) : \AmazonPHP\SellingPartner\Model\ShipmentInvoicing\GetInvoiceStatusResponse
+    public function getInvoiceStatus(AccessToken $accessToken, string $region, string $shipment_id) : \Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\GetInvoiceStatusResponse
     {
         $request = $this->getInvoiceStatusRequest($accessToken, $region, $shipment_id);
 
@@ -247,7 +247,7 @@ final class ShipmentInvoicingSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getShipmentDetails(AccessToken $accessToken, string $region, string $shipment_id) : \AmazonPHP\SellingPartner\Model\ShipmentInvoicing\GetShipmentDetailsResponse
+    public function getShipmentDetails(AccessToken $accessToken, string $region, string $shipment_id) : \Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\GetShipmentDetailsResponse
     {
         $request = $this->getShipmentDetailsRequest($accessToken, $region, $shipment_id);
 
@@ -436,7 +436,7 @@ final class ShipmentInvoicingSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function submitInvoice(AccessToken $accessToken, string $region, string $shipment_id, \Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\SubmitInvoiceRequest $body) : \AmazonPHP\SellingPartner\Model\ShipmentInvoicing\SubmitInvoiceResponse
+    public function submitInvoice(AccessToken $accessToken, string $region, string $shipment_id, \Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\SubmitInvoiceRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\SubmitInvoiceResponse
     {
         $request = $this->submitInvoiceRequest($accessToken, $region, $shipment_id, $body);
 

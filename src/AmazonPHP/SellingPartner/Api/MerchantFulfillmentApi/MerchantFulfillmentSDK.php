@@ -79,7 +79,7 @@ final class MerchantFulfillmentSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function cancelShipment(AccessToken $accessToken, string $region, string $shipment_id) : \AmazonPHP\SellingPartner\Model\MerchantFulfillment\CancelShipmentResponse
+    public function cancelShipment(AccessToken $accessToken, string $region, string $shipment_id) : \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CancelShipmentResponse
     {
         $request = $this->cancelShipmentRequest($accessToken, $region, $shipment_id);
 
@@ -271,7 +271,7 @@ final class MerchantFulfillmentSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function cancelShipmentOld(AccessToken $accessToken, string $region, string $shipment_id) : \AmazonPHP\SellingPartner\Model\MerchantFulfillment\CancelShipmentResponse
+    public function cancelShipmentOld(AccessToken $accessToken, string $region, string $shipment_id) : \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CancelShipmentResponse
     {
         $request = $this->cancelShipmentOldRequest($accessToken, $region, $shipment_id);
 
@@ -463,7 +463,7 @@ final class MerchantFulfillmentSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createShipment(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CreateShipmentRequest $body) : \AmazonPHP\SellingPartner\Model\MerchantFulfillment\CreateShipmentResponse
+    public function createShipment(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CreateShipmentRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CreateShipmentResponse
     {
         $request = $this->createShipmentRequest($accessToken, $region, $body);
 
@@ -650,7 +650,7 @@ final class MerchantFulfillmentSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getAdditionalSellerInputs(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\GetAdditionalSellerInputsRequest $body) : \AmazonPHP\SellingPartner\Model\MerchantFulfillment\GetAdditionalSellerInputsResponse
+    public function getAdditionalSellerInputs(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\GetAdditionalSellerInputsRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\GetAdditionalSellerInputsResponse
     {
         $request = $this->getAdditionalSellerInputsRequest($accessToken, $region, $body);
 
@@ -837,7 +837,7 @@ final class MerchantFulfillmentSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getAdditionalSellerInputsOld(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\GetAdditionalSellerInputsRequest $body) : \AmazonPHP\SellingPartner\Model\MerchantFulfillment\GetAdditionalSellerInputsResponse
+    public function getAdditionalSellerInputsOld(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\GetAdditionalSellerInputsRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\GetAdditionalSellerInputsResponse
     {
         $request = $this->getAdditionalSellerInputsOldRequest($accessToken, $region, $body);
 
@@ -1024,7 +1024,7 @@ final class MerchantFulfillmentSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getEligibleShipmentServices(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\GetEligibleShipmentServicesRequest $body) : \AmazonPHP\SellingPartner\Model\MerchantFulfillment\GetEligibleShipmentServicesResponse
+    public function getEligibleShipmentServices(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\GetEligibleShipmentServicesRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\GetEligibleShipmentServicesResponse
     {
         $request = $this->getEligibleShipmentServicesRequest($accessToken, $region, $body);
 
@@ -1211,7 +1211,7 @@ final class MerchantFulfillmentSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getEligibleShipmentServicesOld(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\GetEligibleShipmentServicesRequest $body) : \AmazonPHP\SellingPartner\Model\MerchantFulfillment\GetEligibleShipmentServicesResponse
+    public function getEligibleShipmentServicesOld(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\GetEligibleShipmentServicesRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\GetEligibleShipmentServicesResponse
     {
         $request = $this->getEligibleShipmentServicesOldRequest($accessToken, $region, $body);
 
@@ -1398,7 +1398,7 @@ final class MerchantFulfillmentSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getShipment(AccessToken $accessToken, string $region, string $shipment_id) : \AmazonPHP\SellingPartner\Model\MerchantFulfillment\GetShipmentResponse
+    public function getShipment(AccessToken $accessToken, string $region, string $shipment_id) : \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\GetShipmentResponse
     {
         $request = $this->getShipmentRequest($accessToken, $region, $shipment_id);
 

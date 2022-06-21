@@ -49,7 +49,7 @@ final class SellersSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getMarketplaceParticipations(AccessToken $accessToken, string $region) : \AmazonPHP\SellingPartner\Model\Sellers\GetMarketplaceParticipationsResponse
+    public function getMarketplaceParticipations(AccessToken $accessToken, string $region) : \Plenty\AmazonPHP\SellingPartner\Model\Sellers\GetMarketplaceParticipationsResponse
     {
         $request = $this->getMarketplaceParticipationsRequest($accessToken, $region);
 

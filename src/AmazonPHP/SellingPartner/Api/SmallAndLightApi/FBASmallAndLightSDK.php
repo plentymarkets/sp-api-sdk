@@ -272,7 +272,7 @@ final class FBASmallAndLightSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getSmallAndLightEligibilityBySellerSKU(AccessToken $accessToken, string $region, string $seller_sku, array $marketplace_ids) : \AmazonPHP\SellingPartner\Model\FBASmallAndLight\SmallAndLightEligibility
+    public function getSmallAndLightEligibilityBySellerSKU(AccessToken $accessToken, string $region, string $seller_sku, array $marketplace_ids) : \Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\SmallAndLightEligibility
     {
         $request = $this->getSmallAndLightEligibilityBySellerSKURequest($accessToken, $region, $seller_sku, $marketplace_ids);
 
@@ -481,7 +481,7 @@ final class FBASmallAndLightSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getSmallAndLightEnrollmentBySellerSKU(AccessToken $accessToken, string $region, string $seller_sku, array $marketplace_ids) : \AmazonPHP\SellingPartner\Model\FBASmallAndLight\SmallAndLightEnrollment
+    public function getSmallAndLightEnrollmentBySellerSKU(AccessToken $accessToken, string $region, string $seller_sku, array $marketplace_ids) : \Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\SmallAndLightEnrollment
     {
         $request = $this->getSmallAndLightEnrollmentBySellerSKURequest($accessToken, $region, $seller_sku, $marketplace_ids);
 
@@ -689,7 +689,7 @@ final class FBASmallAndLightSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getSmallAndLightFeePreview(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\SmallAndLightFeePreviewRequest $body) : \AmazonPHP\SellingPartner\Model\FBASmallAndLight\SmallAndLightFeePreviews
+    public function getSmallAndLightFeePreview(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\SmallAndLightFeePreviewRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\SmallAndLightFeePreviews
     {
         $request = $this->getSmallAndLightFeePreviewRequest($accessToken, $region, $body);
 
@@ -877,7 +877,7 @@ final class FBASmallAndLightSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function putSmallAndLightEnrollmentBySellerSKU(AccessToken $accessToken, string $region, string $seller_sku, array $marketplace_ids) : \AmazonPHP\SellingPartner\Model\FBASmallAndLight\SmallAndLightEnrollment
+    public function putSmallAndLightEnrollmentBySellerSKU(AccessToken $accessToken, string $region, string $seller_sku, array $marketplace_ids) : \Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\SmallAndLightEnrollment
     {
         $request = $this->putSmallAndLightEnrollmentBySellerSKURequest($accessToken, $region, $seller_sku, $marketplace_ids);
 

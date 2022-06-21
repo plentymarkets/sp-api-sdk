@@ -97,7 +97,7 @@ final class MessagingSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function confirmCustomizationDetails(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids, \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateConfirmCustomizationDetailsRequest $body) : \AmazonPHP\SellingPartner\Model\Messaging\CreateConfirmCustomizationDetailsResponse
+    public function confirmCustomizationDetails(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids, \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateConfirmCustomizationDetailsRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateConfirmCustomizationDetailsResponse
     {
         $request = $this->confirmCustomizationDetailsRequest($accessToken, $region, $amazon_order_id, $marketplace_ids, $body);
 
@@ -323,7 +323,7 @@ final class MessagingSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createAmazonMotors(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids, \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateAmazonMotorsRequest $body) : \AmazonPHP\SellingPartner\Model\Messaging\CreateAmazonMotorsResponse
+    public function createAmazonMotors(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids, \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateAmazonMotorsRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateAmazonMotorsResponse
     {
         $request = $this->createAmazonMotorsRequest($accessToken, $region, $amazon_order_id, $marketplace_ids, $body);
 
@@ -549,7 +549,7 @@ final class MessagingSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createConfirmDeliveryDetails(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids, \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateConfirmDeliveryDetailsRequest $body) : \AmazonPHP\SellingPartner\Model\Messaging\CreateConfirmDeliveryDetailsResponse
+    public function createConfirmDeliveryDetails(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids, \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateConfirmDeliveryDetailsRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateConfirmDeliveryDetailsResponse
     {
         $request = $this->createConfirmDeliveryDetailsRequest($accessToken, $region, $amazon_order_id, $marketplace_ids, $body);
 
@@ -775,7 +775,7 @@ final class MessagingSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createConfirmOrderDetails(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids, \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateConfirmOrderDetailsRequest $body) : \AmazonPHP\SellingPartner\Model\Messaging\CreateConfirmOrderDetailsResponse
+    public function createConfirmOrderDetails(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids, \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateConfirmOrderDetailsRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateConfirmOrderDetailsResponse
     {
         $request = $this->createConfirmOrderDetailsRequest($accessToken, $region, $amazon_order_id, $marketplace_ids, $body);
 
@@ -1001,7 +1001,7 @@ final class MessagingSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createConfirmServiceDetails(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids, \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateConfirmServiceDetailsRequest $body) : \AmazonPHP\SellingPartner\Model\Messaging\CreateConfirmServiceDetailsResponse
+    public function createConfirmServiceDetails(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids, \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateConfirmServiceDetailsRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateConfirmServiceDetailsResponse
     {
         $request = $this->createConfirmServiceDetailsRequest($accessToken, $region, $amazon_order_id, $marketplace_ids, $body);
 
@@ -1227,7 +1227,7 @@ final class MessagingSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createDigitalAccessKey(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids, \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateDigitalAccessKeyRequest $body) : \AmazonPHP\SellingPartner\Model\Messaging\CreateDigitalAccessKeyResponse
+    public function createDigitalAccessKey(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids, \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateDigitalAccessKeyRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateDigitalAccessKeyResponse
     {
         $request = $this->createDigitalAccessKeyRequest($accessToken, $region, $amazon_order_id, $marketplace_ids, $body);
 
@@ -1453,7 +1453,7 @@ final class MessagingSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createLegalDisclosure(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids, \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateLegalDisclosureRequest $body) : \AmazonPHP\SellingPartner\Model\Messaging\CreateLegalDisclosureResponse
+    public function createLegalDisclosure(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids, \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateLegalDisclosureRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateLegalDisclosureResponse
     {
         $request = $this->createLegalDisclosureRequest($accessToken, $region, $amazon_order_id, $marketplace_ids, $body);
 
@@ -1678,7 +1678,7 @@ final class MessagingSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createNegativeFeedbackRemoval(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids) : \AmazonPHP\SellingPartner\Model\Messaging\CreateNegativeFeedbackRemovalResponse
+    public function createNegativeFeedbackRemoval(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids) : \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateNegativeFeedbackRemovalResponse
     {
         $request = $this->createNegativeFeedbackRemovalRequest($accessToken, $region, $amazon_order_id, $marketplace_ids);
 
@@ -1888,7 +1888,7 @@ final class MessagingSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createUnexpectedProblem(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids, \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateUnexpectedProblemRequest $body) : \AmazonPHP\SellingPartner\Model\Messaging\CreateUnexpectedProblemResponse
+    public function createUnexpectedProblem(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids, \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateUnexpectedProblemRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateUnexpectedProblemResponse
     {
         $request = $this->createUnexpectedProblemRequest($accessToken, $region, $amazon_order_id, $marketplace_ids, $body);
 
@@ -2114,7 +2114,7 @@ final class MessagingSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createWarranty(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids, \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateWarrantyRequest $body) : \AmazonPHP\SellingPartner\Model\Messaging\CreateWarrantyResponse
+    public function createWarranty(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids, \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateWarrantyRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\Messaging\CreateWarrantyResponse
     {
         $request = $this->createWarrantyRequest($accessToken, $region, $amazon_order_id, $marketplace_ids, $body);
 
@@ -2339,7 +2339,7 @@ final class MessagingSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getAttributes(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids) : \AmazonPHP\SellingPartner\Model\Messaging\GetAttributesResponse
+    public function getAttributes(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids) : \Plenty\AmazonPHP\SellingPartner\Model\Messaging\GetAttributesResponse
     {
         $request = $this->getAttributesRequest($accessToken, $region, $amazon_order_id, $marketplace_ids);
 
@@ -2548,7 +2548,7 @@ final class MessagingSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getMessagingActionsForOrder(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids) : \AmazonPHP\SellingPartner\Model\Messaging\GetMessagingActionsForOrderResponse
+    public function getMessagingActionsForOrder(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids) : \Plenty\AmazonPHP\SellingPartner\Model\Messaging\GetMessagingActionsForOrderResponse
     {
         $request = $this->getMessagingActionsForOrderRequest($accessToken, $region, $amazon_order_id, $marketplace_ids);
 

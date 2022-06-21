@@ -79,7 +79,7 @@ final class NotificationsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createDestination(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\Notifications\CreateDestinationRequest $body) : \AmazonPHP\SellingPartner\Model\Notifications\CreateDestinationResponse
+    public function createDestination(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\Notifications\CreateDestinationRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\Notifications\CreateDestinationResponse
     {
         $request = $this->createDestinationRequest($accessToken, $region, $body);
 
@@ -267,7 +267,7 @@ final class NotificationsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createSubscription(AccessToken $accessToken, string $region, string $notification_type, \Plenty\AmazonPHP\SellingPartner\Model\Notifications\CreateSubscriptionRequest $body) : \AmazonPHP\SellingPartner\Model\Notifications\CreateSubscriptionResponse
+    public function createSubscription(AccessToken $accessToken, string $region, string $notification_type, \Plenty\AmazonPHP\SellingPartner\Model\Notifications\CreateSubscriptionRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\Notifications\CreateSubscriptionResponse
     {
         $request = $this->createSubscriptionRequest($accessToken, $region, $notification_type, $body);
 
@@ -470,7 +470,7 @@ final class NotificationsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function deleteDestination(AccessToken $accessToken, string $region, string $destination_id) : \AmazonPHP\SellingPartner\Model\Notifications\DeleteDestinationResponse
+    public function deleteDestination(AccessToken $accessToken, string $region, string $destination_id) : \Plenty\AmazonPHP\SellingPartner\Model\Notifications\DeleteDestinationResponse
     {
         $request = $this->deleteDestinationRequest($accessToken, $region, $destination_id);
 
@@ -659,7 +659,7 @@ final class NotificationsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function deleteSubscriptionById(AccessToken $accessToken, string $region, string $subscription_id, string $notification_type) : \AmazonPHP\SellingPartner\Model\Notifications\DeleteSubscriptionByIdResponse
+    public function deleteSubscriptionById(AccessToken $accessToken, string $region, string $subscription_id, string $notification_type) : \Plenty\AmazonPHP\SellingPartner\Model\Notifications\DeleteSubscriptionByIdResponse
     {
         $request = $this->deleteSubscriptionByIdRequest($accessToken, $region, $subscription_id, $notification_type);
 
@@ -862,7 +862,7 @@ final class NotificationsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getDestination(AccessToken $accessToken, string $region, string $destination_id) : \AmazonPHP\SellingPartner\Model\Notifications\GetDestinationResponse
+    public function getDestination(AccessToken $accessToken, string $region, string $destination_id) : \Plenty\AmazonPHP\SellingPartner\Model\Notifications\GetDestinationResponse
     {
         $request = $this->getDestinationRequest($accessToken, $region, $destination_id);
 
@@ -1049,7 +1049,7 @@ final class NotificationsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getDestinations(AccessToken $accessToken, string $region) : \AmazonPHP\SellingPartner\Model\Notifications\GetDestinationsResponse
+    public function getDestinations(AccessToken $accessToken, string $region) : \Plenty\AmazonPHP\SellingPartner\Model\Notifications\GetDestinationsResponse
     {
         $request = $this->getDestinationsRequest($accessToken, $region);
 
@@ -1220,7 +1220,7 @@ final class NotificationsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getSubscription(AccessToken $accessToken, string $region, string $notification_type) : \AmazonPHP\SellingPartner\Model\Notifications\GetSubscriptionResponse
+    public function getSubscription(AccessToken $accessToken, string $region, string $notification_type) : \Plenty\AmazonPHP\SellingPartner\Model\Notifications\GetSubscriptionResponse
     {
         $request = $this->getSubscriptionRequest($accessToken, $region, $notification_type);
 
@@ -1409,7 +1409,7 @@ final class NotificationsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getSubscriptionById(AccessToken $accessToken, string $region, string $subscription_id, string $notification_type) : \AmazonPHP\SellingPartner\Model\Notifications\GetSubscriptionByIdResponse
+    public function getSubscriptionById(AccessToken $accessToken, string $region, string $subscription_id, string $notification_type) : \Plenty\AmazonPHP\SellingPartner\Model\Notifications\GetSubscriptionByIdResponse
     {
         $request = $this->getSubscriptionByIdRequest($accessToken, $region, $subscription_id, $notification_type);
 

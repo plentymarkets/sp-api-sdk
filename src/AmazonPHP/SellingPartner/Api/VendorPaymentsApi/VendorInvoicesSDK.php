@@ -51,7 +51,7 @@ final class VendorInvoicesSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function submitInvoices(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\SubmitInvoicesRequest $body) : \AmazonPHP\SellingPartner\Model\VendorInvoices\SubmitInvoicesResponse
+    public function submitInvoices(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\SubmitInvoicesRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\SubmitInvoicesResponse
     {
         $request = $this->submitInvoicesRequest($accessToken, $region, $body);
 

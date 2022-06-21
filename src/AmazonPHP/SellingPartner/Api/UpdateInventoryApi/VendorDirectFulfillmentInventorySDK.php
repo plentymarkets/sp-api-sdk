@@ -52,7 +52,7 @@ final class VendorDirectFulfillmentInventorySDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function submitInventoryUpdate(AccessToken $accessToken, string $region, string $warehouse_id, \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\SubmitInventoryUpdateRequest $body) : \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\SubmitInventoryUpdateResponse
+    public function submitInventoryUpdate(AccessToken $accessToken, string $region, string $warehouse_id, \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\SubmitInventoryUpdateRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\SubmitInventoryUpdateResponse
     {
         $request = $this->submitInventoryUpdateRequest($accessToken, $region, $warehouse_id, $body);
 

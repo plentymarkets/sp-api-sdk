@@ -51,7 +51,7 @@ final class VendorShipmentsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function submitShipmentConfirmations(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\SubmitShipmentConfirmationsRequest $body) : \AmazonPHP\SellingPartner\Model\VendorShipments\SubmitShipmentConfirmationsResponse
+    public function submitShipmentConfirmations(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\SubmitShipmentConfirmationsRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\SubmitShipmentConfirmationsResponse
     {
         $request = $this->submitShipmentConfirmationsRequest($accessToken, $region, $body);
 

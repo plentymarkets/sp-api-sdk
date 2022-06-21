@@ -51,7 +51,7 @@ final class TokensSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createRestrictedDataToken(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\Tokens\CreateRestrictedDataTokenRequest $body) : \AmazonPHP\SellingPartner\Model\Tokens\CreateRestrictedDataTokenResponse
+    public function createRestrictedDataToken(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\Tokens\CreateRestrictedDataTokenRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\Tokens\CreateRestrictedDataTokenResponse
     {
         $request = $this->createRestrictedDataTokenRequest($accessToken, $region, $body);
 

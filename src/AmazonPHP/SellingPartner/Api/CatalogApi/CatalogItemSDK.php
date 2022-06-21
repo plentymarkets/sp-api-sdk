@@ -58,7 +58,7 @@ final class CatalogItemSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getCatalogItem(AccessToken $accessToken, string $region, string $asin, array $marketplace_ids, array $included_data = null, string $locale = null) : \AmazonPHP\SellingPartner\Model\CatalogItem\Item
+    public function getCatalogItem(AccessToken $accessToken, string $region, string $asin, array $marketplace_ids, array $included_data = null, string $locale = null) : \Plenty\AmazonPHP\SellingPartner\Model\CatalogItem\Item
     {
         $request = $this->getCatalogItemRequest($accessToken, $region, $asin, $marketplace_ids, $included_data, $locale);
 
@@ -288,7 +288,7 @@ final class CatalogItemSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function searchCatalogItems(AccessToken $accessToken, string $region, array $keywords, array $marketplace_ids, array $included_data = null, array $brand_names = null, array $classification_ids = null, int $page_size = 10, string $page_token = null, string $keywords_locale = null, string $locale = null) : \AmazonPHP\SellingPartner\Model\CatalogItem\ItemSearchResults
+    public function searchCatalogItems(AccessToken $accessToken, string $region, array $keywords, array $marketplace_ids, array $included_data = null, array $brand_names = null, array $classification_ids = null, int $page_size = 10, string $page_token = null, string $keywords_locale = null, string $locale = null) : \Plenty\AmazonPHP\SellingPartner\Model\CatalogItem\ItemSearchResults
     {
         $request = $this->searchCatalogItemsRequest($accessToken, $region, $keywords, $marketplace_ids, $included_data, $brand_names, $classification_ids, $page_size, $page_token, $keywords_locale, $locale);
 

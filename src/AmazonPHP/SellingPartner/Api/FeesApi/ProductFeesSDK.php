@@ -60,7 +60,7 @@ final class ProductFeesSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getMyFeesEstimateForASIN(AccessToken $accessToken, string $region, string $asin, \Plenty\AmazonPHP\SellingPartner\Model\ProductFees\GetMyFeesEstimateRequest $body) : \AmazonPHP\SellingPartner\Model\ProductFees\GetMyFeesEstimateResponse
+    public function getMyFeesEstimateForASIN(AccessToken $accessToken, string $region, string $asin, \Plenty\AmazonPHP\SellingPartner\Model\ProductFees\GetMyFeesEstimateRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\ProductFees\GetMyFeesEstimateResponse
     {
         $request = $this->getMyFeesEstimateForASINRequest($accessToken, $region, $asin, $body);
 
@@ -264,7 +264,7 @@ final class ProductFeesSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getMyFeesEstimateForSKU(AccessToken $accessToken, string $region, string $seller_sku, \Plenty\AmazonPHP\SellingPartner\Model\ProductFees\GetMyFeesEstimateRequest $body) : \AmazonPHP\SellingPartner\Model\ProductFees\GetMyFeesEstimateResponse
+    public function getMyFeesEstimateForSKU(AccessToken $accessToken, string $region, string $seller_sku, \Plenty\AmazonPHP\SellingPartner\Model\ProductFees\GetMyFeesEstimateRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\ProductFees\GetMyFeesEstimateResponse
     {
         $request = $this->getMyFeesEstimateForSKURequest($accessToken, $region, $seller_sku, $body);
 

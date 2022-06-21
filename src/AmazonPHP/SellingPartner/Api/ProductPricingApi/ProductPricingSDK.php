@@ -75,7 +75,7 @@ final class ProductPricingSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getCompetitivePricing(AccessToken $accessToken, string $region, string $marketplace_id, string $item_type, array $asins = null, array $skus = null, string $customer_type = null) : \AmazonPHP\SellingPartner\Model\ProductPricing\GetPricingResponse
+    public function getCompetitivePricing(AccessToken $accessToken, string $region, string $marketplace_id, string $item_type, array $asins = null, array $skus = null, string $customer_type = null) : \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetPricingResponse
     {
         $request = $this->getCompetitivePricingRequest($accessToken, $region, $marketplace_id, $item_type, $asins, $skus, $customer_type);
 
@@ -316,7 +316,7 @@ final class ProductPricingSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getItemOffers(AccessToken $accessToken, string $region, string $marketplace_id, string $item_condition, string $asin, string $customer_type = null) : \AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse
+    public function getItemOffers(AccessToken $accessToken, string $region, string $marketplace_id, string $item_condition, string $asin, string $customer_type = null) : \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse
     {
         $request = $this->getItemOffersRequest($accessToken, $region, $marketplace_id, $item_condition, $asin, $customer_type);
 
@@ -544,7 +544,7 @@ final class ProductPricingSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getItemOffersBatch(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetItemOffersBatchRequest $get_item_offers_batch_request_body) : \AmazonPHP\SellingPartner\Model\ProductPricing\GetItemOffersBatchResponse
+    public function getItemOffersBatch(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetItemOffersBatchRequest $get_item_offers_batch_request_body) : \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetItemOffersBatchResponse
     {
         $request = $this->getItemOffersBatchRequest($accessToken, $region, $get_item_offers_batch_request_body);
 
@@ -734,7 +734,7 @@ final class ProductPricingSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getListingOffers(AccessToken $accessToken, string $region, string $marketplace_id, string $item_condition, string $seller_sku, string $customer_type = null) : \AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse
+    public function getListingOffers(AccessToken $accessToken, string $region, string $marketplace_id, string $item_condition, string $seller_sku, string $customer_type = null) : \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse
     {
         $request = $this->getListingOffersRequest($accessToken, $region, $marketplace_id, $item_condition, $seller_sku, $customer_type);
 
@@ -962,7 +962,7 @@ final class ProductPricingSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getListingOffersBatch(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetListingOffersBatchRequest $get_listing_offers_batch_request_body) : \AmazonPHP\SellingPartner\Model\ProductPricing\GetListingOffersBatchResponse
+    public function getListingOffersBatch(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetListingOffersBatchRequest $get_listing_offers_batch_request_body) : \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetListingOffersBatchResponse
     {
         $request = $this->getListingOffersBatchRequest($accessToken, $region, $get_listing_offers_batch_request_body);
 
@@ -1154,7 +1154,7 @@ final class ProductPricingSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getPricing(AccessToken $accessToken, string $region, string $marketplace_id, string $item_type, array $asins = null, array $skus = null, string $item_condition = null, string $offer_type = null) : \AmazonPHP\SellingPartner\Model\ProductPricing\GetPricingResponse
+    public function getPricing(AccessToken $accessToken, string $region, string $marketplace_id, string $item_type, array $asins = null, array $skus = null, string $item_condition = null, string $offer_type = null) : \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetPricingResponse
     {
         $request = $this->getPricingRequest($accessToken, $region, $marketplace_id, $item_type, $asins, $skus, $item_condition, $offer_type);
 

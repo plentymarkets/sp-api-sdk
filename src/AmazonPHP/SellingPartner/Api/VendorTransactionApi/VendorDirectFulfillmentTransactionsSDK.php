@@ -51,7 +51,7 @@ final class VendorDirectFulfillmentTransactionsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getTransactionStatus(AccessToken $accessToken, string $region, string $transaction_id) : \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentTransactions\TransactionStatus
+    public function getTransactionStatus(AccessToken $accessToken, string $region, string $transaction_id) : \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentTransactions\TransactionStatus
     {
         $request = $this->getTransactionStatusRequest($accessToken, $region, $transaction_id);
 

@@ -254,7 +254,7 @@ final class FeedsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createFeed(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\Feeds\CreateFeedSpecification $body) : \AmazonPHP\SellingPartner\Model\Feeds\CreateFeedResponse
+    public function createFeed(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\Feeds\CreateFeedSpecification $body) : \Plenty\AmazonPHP\SellingPartner\Model\Feeds\CreateFeedResponse
     {
         $request = $this->createFeedRequest($accessToken, $region, $body);
 
@@ -441,7 +441,7 @@ final class FeedsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createFeedDocument(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\Feeds\CreateFeedDocumentSpecification $body) : \AmazonPHP\SellingPartner\Model\Feeds\CreateFeedDocumentResponse
+    public function createFeedDocument(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\Feeds\CreateFeedDocumentSpecification $body) : \Plenty\AmazonPHP\SellingPartner\Model\Feeds\CreateFeedDocumentResponse
     {
         $request = $this->createFeedDocumentRequest($accessToken, $region, $body);
 
@@ -628,7 +628,7 @@ final class FeedsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getFeed(AccessToken $accessToken, string $region, string $feed_id) : \AmazonPHP\SellingPartner\Model\Feeds\Feed
+    public function getFeed(AccessToken $accessToken, string $region, string $feed_id) : \Plenty\AmazonPHP\SellingPartner\Model\Feeds\Feed
     {
         $request = $this->getFeedRequest($accessToken, $region, $feed_id);
 
@@ -816,7 +816,7 @@ final class FeedsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getFeedDocument(AccessToken $accessToken, string $region, string $feed_document_id) : \AmazonPHP\SellingPartner\Model\Feeds\FeedDocument
+    public function getFeedDocument(AccessToken $accessToken, string $region, string $feed_document_id) : \Plenty\AmazonPHP\SellingPartner\Model\Feeds\FeedDocument
     {
         $request = $this->getFeedDocumentRequest($accessToken, $region, $feed_document_id);
 
@@ -1010,7 +1010,7 @@ final class FeedsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getFeeds(AccessToken $accessToken, string $region, array $feed_types = null, array $marketplace_ids = null, int $page_size = 10, array $processing_statuses = null, \DateTimeInterface $created_since = null, \DateTimeInterface $created_until = null, string $next_token = null) : \AmazonPHP\SellingPartner\Model\Feeds\GetFeedsResponse
+    public function getFeeds(AccessToken $accessToken, string $region, array $feed_types = null, array $marketplace_ids = null, int $page_size = 10, array $processing_statuses = null, \DateTimeInterface $created_since = null, \DateTimeInterface $created_until = null, string $next_token = null) : \Plenty\AmazonPHP\SellingPartner\Model\Feeds\GetFeedsResponse
     {
         $request = $this->getFeedsRequest($accessToken, $region, $feed_types, $marketplace_ids, $page_size, $processing_statuses, $created_since, $created_until, $next_token);
 

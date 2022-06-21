@@ -449,7 +449,7 @@ final class ReportsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createReport(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\Reports\CreateReportSpecification $body) : \AmazonPHP\SellingPartner\Model\Reports\CreateReportResponse
+    public function createReport(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\Reports\CreateReportSpecification $body) : \Plenty\AmazonPHP\SellingPartner\Model\Reports\CreateReportResponse
     {
         $request = $this->createReportRequest($accessToken, $region, $body);
 
@@ -636,7 +636,7 @@ final class ReportsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createReportSchedule(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\Reports\CreateReportScheduleSpecification $body) : \AmazonPHP\SellingPartner\Model\Reports\CreateReportScheduleResponse
+    public function createReportSchedule(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\Reports\CreateReportScheduleSpecification $body) : \Plenty\AmazonPHP\SellingPartner\Model\Reports\CreateReportScheduleResponse
     {
         $request = $this->createReportScheduleRequest($accessToken, $region, $body);
 
@@ -823,7 +823,7 @@ final class ReportsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getReport(AccessToken $accessToken, string $region, string $report_id) : \AmazonPHP\SellingPartner\Model\Reports\Report
+    public function getReport(AccessToken $accessToken, string $region, string $report_id) : \Plenty\AmazonPHP\SellingPartner\Model\Reports\Report
     {
         $request = $this->getReportRequest($accessToken, $region, $report_id);
 
@@ -1011,7 +1011,7 @@ final class ReportsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getReportDocument(AccessToken $accessToken, string $region, string $report_document_id) : \AmazonPHP\SellingPartner\Model\Reports\ReportDocument
+    public function getReportDocument(AccessToken $accessToken, string $region, string $report_document_id) : \Plenty\AmazonPHP\SellingPartner\Model\Reports\ReportDocument
     {
         $request = $this->getReportDocumentRequest($accessToken, $region, $report_document_id);
 
@@ -1199,7 +1199,7 @@ final class ReportsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getReportSchedule(AccessToken $accessToken, string $region, string $report_schedule_id) : \AmazonPHP\SellingPartner\Model\Reports\ReportSchedule
+    public function getReportSchedule(AccessToken $accessToken, string $region, string $report_schedule_id) : \Plenty\AmazonPHP\SellingPartner\Model\Reports\ReportSchedule
     {
         $request = $this->getReportScheduleRequest($accessToken, $region, $report_schedule_id);
 
@@ -1387,7 +1387,7 @@ final class ReportsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getReportSchedules(AccessToken $accessToken, string $region, array $report_types) : \AmazonPHP\SellingPartner\Model\Reports\ReportScheduleList
+    public function getReportSchedules(AccessToken $accessToken, string $region, array $report_types) : \Plenty\AmazonPHP\SellingPartner\Model\Reports\ReportScheduleList
     {
         $request = $this->getReportSchedulesRequest($accessToken, $region, $report_types);
 
@@ -1589,7 +1589,7 @@ final class ReportsSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getReports(AccessToken $accessToken, string $region, array $report_types = null, array $processing_statuses = null, array $marketplace_ids = null, int $page_size = 10, \DateTimeInterface $created_since = null, \DateTimeInterface $created_until = null, string $next_token = null) : \AmazonPHP\SellingPartner\Model\Reports\GetReportsResponse
+    public function getReports(AccessToken $accessToken, string $region, array $report_types = null, array $processing_statuses = null, array $marketplace_ids = null, int $page_size = 10, \DateTimeInterface $created_since = null, \DateTimeInterface $created_until = null, string $next_token = null) : \Plenty\AmazonPHP\SellingPartner\Model\Reports\GetReportsResponse
     {
         $request = $this->getReportsRequest($accessToken, $region, $report_types, $processing_statuses, $marketplace_ids, $page_size, $created_since, $created_until, $next_token);
 

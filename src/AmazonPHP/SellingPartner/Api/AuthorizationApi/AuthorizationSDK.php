@@ -55,7 +55,7 @@ final class AuthorizationSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getAuthorizationCode(AccessToken $accessToken, string $region, string $selling_partner_id, string $developer_id, string $mws_auth_token) : \AmazonPHP\SellingPartner\Model\Authorization\GetAuthorizationCodeResponse
+    public function getAuthorizationCode(AccessToken $accessToken, string $region, string $selling_partner_id, string $developer_id, string $mws_auth_token) : \Plenty\AmazonPHP\SellingPartner\Model\Authorization\GetAuthorizationCodeResponse
     {
         $request = $this->getAuthorizationCodeRequest($accessToken, $region, $selling_partner_id, $developer_id, $mws_auth_token);
 
