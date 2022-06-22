@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Plenty\AmazonPHP\SellingPartner\Model\FBAInbound;
+namespace AmazonPHP\SellingPartner\Model\FBAInbound;
 
 use AmazonPHP\SellingPartner\ModelInterface;
 use AmazonPHP\SellingPartner\ObjectSerializer;

@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Plenty\AmazonPHP\SellingPartner\Model\APlus;
+namespace AmazonPHP\SellingPartner\Model\APlus;
 
 use AmazonPHP\SellingPartner\ModelInterface;
 use AmazonPHP\SellingPartner\ObjectSerializer;

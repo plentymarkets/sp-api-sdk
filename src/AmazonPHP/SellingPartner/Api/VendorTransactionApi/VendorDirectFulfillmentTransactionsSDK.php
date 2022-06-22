@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Plenty\AmazonPHP\SellingPartner\Api\VendorTransactionApi;
+namespace AmazonPHP\SellingPartner\Api\VendorTransactionApi;
 
 use AmazonPHP\SellingPartner\AccessToken;
 use AmazonPHP\SellingPartner\Configuration;

@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Plenty\AmazonPHP\SellingPartner\Model\Feeds;
+namespace AmazonPHP\SellingPartner\Model\Feeds;
 
 use AmazonPHP\SellingPartner\ModelInterface;
 use AmazonPHP\SellingPartner\ObjectSerializer;

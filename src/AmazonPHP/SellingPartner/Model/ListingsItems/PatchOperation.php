@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Plenty\AmazonPHP\SellingPartner\Model\ListingsItems;
+namespace AmazonPHP\SellingPartner\Model\ListingsItems;
 
 use AmazonPHP\SellingPartner\ModelInterface;
 use AmazonPHP\SellingPartner\ObjectSerializer;

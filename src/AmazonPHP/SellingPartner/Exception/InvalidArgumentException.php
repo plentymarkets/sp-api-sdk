@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Plenty\AmazonPHP\SellingPartner\Exception;
+namespace AmazonPHP\SellingPartner\Exception;
 
 class InvalidArgumentException extends Exception
 {

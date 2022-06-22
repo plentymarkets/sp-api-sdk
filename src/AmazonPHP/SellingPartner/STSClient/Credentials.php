@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Plenty\AmazonPHP\SellingPartner\STSClient;
+namespace AmazonPHP\SellingPartner\STSClient;
 
 final class Credentials
 {

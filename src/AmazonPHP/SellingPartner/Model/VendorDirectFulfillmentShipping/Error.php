@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping;
+namespace AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping;
 
 use AmazonPHP\SellingPartner\ModelInterface;
 use AmazonPHP\SellingPartner\ObjectSerializer;

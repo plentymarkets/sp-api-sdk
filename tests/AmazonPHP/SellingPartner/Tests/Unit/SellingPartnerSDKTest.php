@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Plenty\AmazonPHP\Test\AmazonPHP\SellingPartner\Tests\Unit;
+namespace AmazonPHP\Test\AmazonPHP\SellingPartner\Tests\Unit;
 
 use AmazonPHP\SellingPartner\Api\AplusContentApi\APlusSDK;
 use AmazonPHP\SellingPartner\Api\AuthorizationApi\AuthorizationSDK;

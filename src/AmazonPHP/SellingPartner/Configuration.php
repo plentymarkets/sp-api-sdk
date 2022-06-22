@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Plenty\AmazonPHP\SellingPartner;
+namespace AmazonPHP\SellingPartner;
 
 use AmazonPHP\SellingPartner\Configuration\LoggerConfiguration;
 use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;

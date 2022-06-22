@@ -1,6 +1,6 @@
 <?php
 
-namespace Plenty\AmazonPHP\Test\AmazonPHP\SellingPartner\Tests\Unit;
+namespace AmazonPHP\Test\AmazonPHP\SellingPartner\Tests\Unit;
 
 use AmazonPHP\SellingPartner\AccessToken;
 use AmazonPHP\SellingPartner\Configuration;

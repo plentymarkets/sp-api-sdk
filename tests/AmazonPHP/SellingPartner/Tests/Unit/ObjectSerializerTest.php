@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Plenty\AmazonPHP\Test\AmazonPHP\SellingPartner\Tests\Unit;
+namespace AmazonPHP\Test\AmazonPHP\SellingPartner\Tests\Unit;
 
 use AmazonPHP\SellingPartner\Configuration;
 use AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions;
