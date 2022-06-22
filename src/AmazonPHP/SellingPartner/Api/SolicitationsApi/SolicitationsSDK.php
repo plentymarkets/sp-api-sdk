@@ -138,7 +138,7 @@ final class SolicitationsSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Solicitations\CreateProductReviewAndSellerFeedbackSolicitationResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Solicitations\CreateProductReviewAndSellerFeedbackSolicitationResponse',
             []
         );
     }
@@ -347,7 +347,7 @@ final class SolicitationsSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Solicitations\GetSolicitationActionsForOrderResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Solicitations\GetSolicitationActionsForOrderResponse',
             []
         );
     }

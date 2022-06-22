@@ -62,9 +62,9 @@ class CouponPaymentEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
         'seller_coupon_description' => 'string',
         'clip_or_redemption_count' => 'int',
         'payment_event_id' => 'string',
-        'fee_component' => '\AmazonPHP\SellingPartner\Model\Finances\FeeComponent',
-        'charge_component' => '\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent',
-        'total_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'fee_component' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\FeeComponent',
+        'charge_component' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent',
+        'total_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
     ];
 
     /**
@@ -363,7 +363,7 @@ class CouponPaymentEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets fee_component.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\FeeComponent $fee_component fee_component
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\FeeComponent $fee_component fee_component
      */
     public function setFeeComponent(?FeeComponent $fee_component) : self
     {
@@ -383,7 +383,7 @@ class CouponPaymentEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets charge_component.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent $charge_component charge_component
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent $charge_component charge_component
      */
     public function setChargeComponent(?ChargeComponent $charge_component) : self
     {
@@ -403,7 +403,7 @@ class CouponPaymentEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets total_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $total_amount total_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $total_amount total_amount
      */
     public function setTotalAmount(?Currency $total_amount) : self
     {

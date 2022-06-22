@@ -58,7 +58,7 @@ class DirectPayment implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'direct_payment_type' => 'string',
-        'direct_payment_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'direct_payment_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
     ];
 
     /**
@@ -245,7 +245,7 @@ class DirectPayment implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets direct_payment_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $direct_payment_amount direct_payment_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $direct_payment_amount direct_payment_amount
      */
     public function setDirectPaymentAmount(?Currency $direct_payment_amount) : self
     {

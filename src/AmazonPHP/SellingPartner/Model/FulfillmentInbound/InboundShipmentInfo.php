@@ -59,14 +59,14 @@ class InboundShipmentInfo implements \ArrayAccess, \JsonSerializable, ModelInter
     protected static /** [COMPAT] array */ $openAPITypes = [
         'shipment_id' => 'string',
         'shipment_name' => 'string',
-        'ship_from_address' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Address',
+        'ship_from_address' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Address',
         'destination_fulfillment_center_id' => 'string',
-        'shipment_status' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentStatus',
-        'label_prep_type' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\LabelPrepType',
+        'shipment_status' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentStatus',
+        'label_prep_type' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\LabelPrepType',
         'are_cases_required' => 'bool',
         'confirmed_need_by_date' => '\DateTime',
-        'box_contents_source' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BoxContentsSource',
-        'estimated_box_contents_fee' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BoxContentsFeeDetails',
+        'box_contents_source' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BoxContentsSource',
+        'estimated_box_contents_fee' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BoxContentsFeeDetails',
     ];
 
     /**
@@ -363,7 +363,7 @@ class InboundShipmentInfo implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets shipment_status.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentStatus $shipment_status shipment_status
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentStatus $shipment_status shipment_status
      */
     public function setShipmentStatus(?ShipmentStatus $shipment_status) : self
     {
@@ -383,7 +383,7 @@ class InboundShipmentInfo implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets label_prep_type.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\LabelPrepType $label_prep_type label_prep_type
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\LabelPrepType $label_prep_type label_prep_type
      */
     public function setLabelPrepType(?LabelPrepType $label_prep_type) : self
     {
@@ -445,7 +445,7 @@ class InboundShipmentInfo implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets box_contents_source.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BoxContentsSource $box_contents_source box_contents_source
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BoxContentsSource $box_contents_source box_contents_source
      */
     public function setBoxContentsSource(?BoxContentsSource $box_contents_source) : self
     {
@@ -465,7 +465,7 @@ class InboundShipmentInfo implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets estimated_box_contents_fee.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BoxContentsFeeDetails $estimated_box_contents_fee estimated_box_contents_fee
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BoxContentsFeeDetails $estimated_box_contents_fee estimated_box_contents_fee
      */
     public function setEstimatedBoxContentsFee(?BoxContentsFeeDetails $estimated_box_contents_fee) : self
     {

@@ -57,7 +57,7 @@ class ParagraphComponent implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'text_list' => '\AmazonPHP\SellingPartner\Model\APlus\TextComponent[]',
+        'text_list' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent[]',
     ];
 
     /**

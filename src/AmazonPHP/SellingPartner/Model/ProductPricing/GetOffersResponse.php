@@ -57,8 +57,8 @@ class GetOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResult',
-        'errors' => '\AmazonPHP\SellingPartner\Model\ProductPricing\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResult',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\Error[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class GetOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResult $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResult $payload payload
      */
     public function setPayload(?GetOffersResult $payload) : self
     {
@@ -237,7 +237,7 @@ class GetOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ProductPricing\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\Error[]
      */
     public function getErrors() : ?array
     {
@@ -247,7 +247,7 @@ class GetOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

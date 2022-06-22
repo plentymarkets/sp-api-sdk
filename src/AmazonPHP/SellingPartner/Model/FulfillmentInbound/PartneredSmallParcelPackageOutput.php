@@ -57,11 +57,11 @@ class PartneredSmallParcelPackageOutput implements \ArrayAccess, \JsonSerializab
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'dimensions' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions',
-        'weight' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight',
+        'dimensions' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions',
+        'weight' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight',
         'carrier_name' => 'string',
         'tracking_id' => 'string',
-        'package_status' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PackageStatus',
+        'package_status' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PackageStatus',
     ];
 
     /**

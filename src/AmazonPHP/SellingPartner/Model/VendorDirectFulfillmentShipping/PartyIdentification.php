@@ -58,8 +58,8 @@ class PartyIdentification implements \ArrayAccess, \JsonSerializable, ModelInter
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'party_id' => 'string',
-        'address' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Address',
-        'tax_registration_details' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\TaxRegistrationDetails[]',
+        'address' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Address',
+        'tax_registration_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\TaxRegistrationDetails[]',
     ];
 
     /**
@@ -257,7 +257,7 @@ class PartyIdentification implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets address.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Address $address address
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Address $address address
      */
     public function setAddress(?Address $address) : self
     {
@@ -269,7 +269,7 @@ class PartyIdentification implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Gets tax_registration_details.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\TaxRegistrationDetails[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\TaxRegistrationDetails[]
      */
     public function getTaxRegistrationDetails() : ?array
     {
@@ -279,7 +279,7 @@ class PartyIdentification implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets tax_registration_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\TaxRegistrationDetails[] $tax_registration_details tax registration details of the entity
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\TaxRegistrationDetails[] $tax_registration_details tax registration details of the entity
      */
     public function setTaxRegistrationDetails(?array $tax_registration_details) : self
     {

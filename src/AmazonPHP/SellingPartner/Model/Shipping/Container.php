@@ -61,10 +61,10 @@ class Container implements \ArrayAccess, \JsonSerializable, ModelInterface
     protected static /** [COMPAT] array */ $openAPITypes = [
         'container_type' => 'string',
         'container_reference_id' => 'string',
-        'value' => '\AmazonPHP\SellingPartner\Model\Shipping\Currency',
-        'dimensions' => '\AmazonPHP\SellingPartner\Model\Shipping\Dimensions',
-        'items' => '\AmazonPHP\SellingPartner\Model\Shipping\ContainerItem[]',
-        'weight' => '\AmazonPHP\SellingPartner\Model\Shipping\Weight',
+        'value' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Currency',
+        'dimensions' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Dimensions',
+        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\ContainerItem[]',
+        'weight' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Weight',
     ];
 
     /**

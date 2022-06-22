@@ -57,8 +57,8 @@ class ImageCropSpecification implements \ArrayAccess, \JsonSerializable, ModelIn
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'size' => '\AmazonPHP\SellingPartner\Model\APlus\ImageDimensions',
-        'offset' => '\AmazonPHP\SellingPartner\Model\APlus\ImageOffsets',
+        'size' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ImageDimensions',
+        'offset' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ImageOffsets',
     ];
 
     /**
@@ -251,7 +251,7 @@ class ImageCropSpecification implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets offset.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\ImageOffsets $offset offset
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\ImageOffsets $offset offset
      */
     public function setOffset(?ImageOffsets $offset) : self
     {

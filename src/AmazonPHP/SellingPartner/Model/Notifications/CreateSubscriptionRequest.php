@@ -59,7 +59,7 @@ class CreateSubscriptionRequest implements \ArrayAccess, \JsonSerializable, Mode
     protected static /** [COMPAT] array */ $openAPITypes = [
         'payload_version' => 'string',
         'destination_id' => 'string',
-        'processing_directive' => '\AmazonPHP\SellingPartner\Model\Notifications\ProcessingDirective',
+        'processing_directive' => '\Plenty\AmazonPHP\SellingPartner\Model\Notifications\ProcessingDirective',
     ];
 
     /**
@@ -271,7 +271,7 @@ class CreateSubscriptionRequest implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets processing_directive.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Notifications\ProcessingDirective $processing_directive processing_directive
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Notifications\ProcessingDirective $processing_directive processing_directive
      */
     public function setProcessingDirective(?ProcessingDirective $processing_directive) : self
     {

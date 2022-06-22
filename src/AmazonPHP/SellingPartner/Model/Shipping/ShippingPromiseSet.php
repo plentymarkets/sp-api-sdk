@@ -57,8 +57,8 @@ class ShippingPromiseSet implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'delivery_window' => '\AmazonPHP\SellingPartner\Model\Shipping\TimeRange',
-        'receive_window' => '\AmazonPHP\SellingPartner\Model\Shipping\TimeRange',
+        'delivery_window' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\TimeRange',
+        'receive_window' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\TimeRange',
     ];
 
     /**
@@ -225,7 +225,7 @@ class ShippingPromiseSet implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets delivery_window.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Shipping\TimeRange $delivery_window delivery_window
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Shipping\TimeRange $delivery_window delivery_window
      */
     public function setDeliveryWindow(?TimeRange $delivery_window) : self
     {
@@ -245,7 +245,7 @@ class ShippingPromiseSet implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets receive_window.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Shipping\TimeRange $receive_window receive_window
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Shipping\TimeRange $receive_window receive_window
      */
     public function setReceiveWindow(?TimeRange $receive_window) : self
     {

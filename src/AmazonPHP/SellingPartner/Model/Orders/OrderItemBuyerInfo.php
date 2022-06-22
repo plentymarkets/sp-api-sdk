@@ -58,9 +58,9 @@ class OrderItemBuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'order_item_id' => 'string',
-        'buyer_customized_info' => '\AmazonPHP\SellingPartner\Model\Orders\BuyerCustomizedInfoDetail',
-        'gift_wrap_price' => '\AmazonPHP\SellingPartner\Model\Orders\Money',
-        'gift_wrap_tax' => '\AmazonPHP\SellingPartner\Model\Orders\Money',
+        'buyer_customized_info' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\BuyerCustomizedInfoDetail',
+        'gift_wrap_price' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money',
+        'gift_wrap_tax' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money',
         'gift_message_text' => 'string',
         'gift_wrap_level' => 'string',
     ];
@@ -275,7 +275,7 @@ class OrderItemBuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets buyer_customized_info.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\BuyerCustomizedInfoDetail $buyer_customized_info buyer_customized_info
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\BuyerCustomizedInfoDetail $buyer_customized_info buyer_customized_info
      */
     public function setBuyerCustomizedInfo(?BuyerCustomizedInfoDetail $buyer_customized_info) : self
     {
@@ -295,7 +295,7 @@ class OrderItemBuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets gift_wrap_price.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\Money $gift_wrap_price gift_wrap_price
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money $gift_wrap_price gift_wrap_price
      */
     public function setGiftWrapPrice(?Money $gift_wrap_price) : self
     {
@@ -315,7 +315,7 @@ class OrderItemBuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets gift_wrap_tax.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\Money $gift_wrap_tax gift_wrap_tax
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money $gift_wrap_tax gift_wrap_tax
      */
     public function setGiftWrapTax(?Money $gift_wrap_tax) : self
     {

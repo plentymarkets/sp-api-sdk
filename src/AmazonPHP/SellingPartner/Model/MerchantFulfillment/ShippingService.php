@@ -64,11 +64,11 @@ class ShippingService implements \ArrayAccess, \JsonSerializable, ModelInterface
         'ship_date' => '\DateTime',
         'earliest_estimated_delivery_date' => '\DateTime',
         'latest_estimated_delivery_date' => '\DateTime',
-        'rate' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CurrencyAmount',
-        'shipping_service_options' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShippingServiceOptions',
-        'available_shipping_service_options' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AvailableShippingServiceOptions',
-        'available_label_formats' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat[]',
-        'available_format_options_for_label' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormatOption[]',
+        'rate' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CurrencyAmount',
+        'shipping_service_options' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShippingServiceOptions',
+        'available_shipping_service_options' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AvailableShippingServiceOptions',
+        'available_label_formats' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat[]',
+        'available_format_options_for_label' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormatOption[]',
         'requires_additional_seller_inputs' => 'bool',
     ];
 
@@ -511,7 +511,7 @@ class ShippingService implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets available_shipping_service_options.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AvailableShippingServiceOptions $available_shipping_service_options available_shipping_service_options
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AvailableShippingServiceOptions $available_shipping_service_options available_shipping_service_options
      */
     public function setAvailableShippingServiceOptions(?AvailableShippingServiceOptions $available_shipping_service_options) : self
     {
@@ -523,7 +523,7 @@ class ShippingService implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets available_label_formats.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat[]
      */
     public function getAvailableLabelFormats() : ?array
     {
@@ -533,7 +533,7 @@ class ShippingService implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets available_label_formats.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat[] $available_label_formats list of label formats
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat[] $available_label_formats list of label formats
      */
     public function setAvailableLabelFormats(?array $available_label_formats) : self
     {
@@ -545,7 +545,7 @@ class ShippingService implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets available_format_options_for_label.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormatOption[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormatOption[]
      */
     public function getAvailableFormatOptionsForLabel() : ?array
     {
@@ -555,7 +555,7 @@ class ShippingService implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets available_format_options_for_label.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormatOption[] $available_format_options_for_label the available label formats
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormatOption[] $available_format_options_for_label the available label formats
      */
     public function setAvailableFormatOptionsForLabel(?array $available_format_options_for_label) : self
     {

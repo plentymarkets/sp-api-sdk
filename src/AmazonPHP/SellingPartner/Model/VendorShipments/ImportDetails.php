@@ -71,9 +71,9 @@ class ImportDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     protected static /** [COMPAT] array */ $openAPITypes = [
         'method_of_payment' => 'string',
         'seal_number' => 'string',
-        'route' => '\AmazonPHP\SellingPartner\Model\VendorShipments\Route',
+        'route' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Route',
         'import_containers' => 'string',
-        'billable_weight' => '\AmazonPHP\SellingPartner\Model\VendorShipments\Weight',
+        'billable_weight' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Weight',
         'estimated_ship_by_date' => '\DateTime',
     ];
 
@@ -345,7 +345,7 @@ class ImportDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets route.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\Route $route route
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Route $route route
      */
     public function setRoute(?Route $route) : self
     {
@@ -389,7 +389,7 @@ class ImportDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets billable_weight.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\Weight $billable_weight billable_weight
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Weight $billable_weight billable_weight
      */
     public function setBillableWeight(?Weight $billable_weight) : self
     {

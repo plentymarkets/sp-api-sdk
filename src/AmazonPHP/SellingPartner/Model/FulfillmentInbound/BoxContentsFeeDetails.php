@@ -58,8 +58,8 @@ class BoxContentsFeeDetails implements \ArrayAccess, \JsonSerializable, ModelInt
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'total_units' => 'int',
-        'fee_per_unit' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount',
-        'total_fee' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount',
+        'fee_per_unit' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount',
+        'total_fee' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount',
     ];
 
     /**
@@ -251,7 +251,7 @@ class BoxContentsFeeDetails implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets fee_per_unit.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount $fee_per_unit fee_per_unit
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount $fee_per_unit fee_per_unit
      */
     public function setFeePerUnit(?Amount $fee_per_unit) : self
     {
@@ -271,7 +271,7 @@ class BoxContentsFeeDetails implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets total_fee.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount $total_fee total_fee
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount $total_fee total_fee
      */
     public function setTotalFee(?Amount $total_fee) : self
     {

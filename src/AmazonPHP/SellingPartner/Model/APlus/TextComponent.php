@@ -58,7 +58,7 @@ class TextComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'value' => 'string',
-        'decorator_set' => '\AmazonPHP\SellingPartner\Model\APlus\Decorator[]',
+        'decorator_set' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\Decorator[]',
     ];
 
     /**
@@ -259,7 +259,7 @@ class TextComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets decorator_set.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\APlus\Decorator[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\Decorator[]
      */
     public function getDecoratorSet() : ?array
     {
@@ -269,7 +269,7 @@ class TextComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets decorator_set.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\Decorator[] $decorator_set a set of content decorators
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\Decorator[] $decorator_set a set of content decorators
      */
     public function setDecoratorSet(?array $decorator_set) : self
     {

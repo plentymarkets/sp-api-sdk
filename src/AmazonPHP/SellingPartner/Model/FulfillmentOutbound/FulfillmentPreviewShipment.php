@@ -62,7 +62,7 @@ class FulfillmentPreviewShipment implements \ArrayAccess, \JsonSerializable, Mod
         'earliest_arrival_date' => '\DateTime',
         'latest_arrival_date' => '\DateTime',
         'shipping_notes' => 'string[]',
-        'fulfillment_preview_items' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPreviewItem[]',
+        'fulfillment_preview_items' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPreviewItem[]',
     ];
 
     /**

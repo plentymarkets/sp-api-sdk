@@ -58,7 +58,7 @@ class Length implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'value' => 'float',
-        'unit' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\UnitOfLength',
+        'unit' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\UnitOfLength',
     ];
 
     /**
@@ -245,7 +245,7 @@ class Length implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets unit.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\UnitOfLength $unit unit
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\UnitOfLength $unit unit
      */
     public function setUnit(?UnitOfLength $unit) : self
     {

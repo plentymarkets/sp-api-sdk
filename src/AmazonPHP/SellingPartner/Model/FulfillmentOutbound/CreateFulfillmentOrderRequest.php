@@ -62,16 +62,16 @@ class CreateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
         'displayable_order_id' => 'string',
         'displayable_order_date' => '\DateTime',
         'displayable_order_comment' => 'string',
-        'shipping_speed_category' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ShippingSpeedCategory',
-        'delivery_window' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\DeliveryWindow',
-        'destination_address' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Address',
-        'fulfillment_action' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentAction',
-        'fulfillment_policy' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPolicy',
-        'cod_settings' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\CODSettings',
+        'shipping_speed_category' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ShippingSpeedCategory',
+        'delivery_window' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\DeliveryWindow',
+        'destination_address' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Address',
+        'fulfillment_action' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentAction',
+        'fulfillment_policy' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPolicy',
+        'cod_settings' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\CODSettings',
         'ship_from_country_code' => 'string',
         'notification_emails' => 'string[]',
-        'feature_constraints' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[]',
-        'items' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\CreateFulfillmentOrderItem[]',
+        'feature_constraints' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[]',
+        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\CreateFulfillmentOrderItem[]',
     ];
 
     /**
@@ -479,7 +479,7 @@ class CreateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets delivery_window.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\DeliveryWindow $delivery_window delivery_window
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\DeliveryWindow $delivery_window delivery_window
      */
     public function setDeliveryWindow(?DeliveryWindow $delivery_window) : self
     {
@@ -519,7 +519,7 @@ class CreateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets fulfillment_action.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentAction $fulfillment_action fulfillment_action
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentAction $fulfillment_action fulfillment_action
      */
     public function setFulfillmentAction(?FulfillmentAction $fulfillment_action) : self
     {
@@ -539,7 +539,7 @@ class CreateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets fulfillment_policy.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPolicy $fulfillment_policy fulfillment_policy
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPolicy $fulfillment_policy fulfillment_policy
      */
     public function setFulfillmentPolicy(?FulfillmentPolicy $fulfillment_policy) : self
     {
@@ -559,7 +559,7 @@ class CreateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets cod_settings.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\CODSettings $cod_settings cod_settings
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\CODSettings $cod_settings cod_settings
      */
     public function setCodSettings(?CODSettings $cod_settings) : self
     {
@@ -613,7 +613,7 @@ class CreateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
     /**
      * Gets feature_constraints.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[]
      */
     public function getFeatureConstraints() : ?array
     {
@@ -623,7 +623,7 @@ class CreateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets feature_constraints.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[] $feature_constraints a list of features and their fulfillment policies to apply to the order
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[] $feature_constraints a list of features and their fulfillment policies to apply to the order
      */
     public function setFeatureConstraints(?array $feature_constraints) : self
     {

@@ -57,9 +57,9 @@ class InventoryUpdate implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'selling_party' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\PartyIdentification',
+        'selling_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\PartyIdentification',
         'is_full_update' => 'bool',
-        'items' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\ItemDetails[]',
+        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\ItemDetails[]',
     ];
 
     /**

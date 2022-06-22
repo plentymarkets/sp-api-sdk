@@ -57,7 +57,7 @@ class StandardTextListBlock implements \ArrayAccess, \JsonSerializable, ModelInt
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'text_list' => '\AmazonPHP\SellingPartner\Model\APlus\TextItem[]',
+        'text_list' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextItem[]',
     ];
 
     /**

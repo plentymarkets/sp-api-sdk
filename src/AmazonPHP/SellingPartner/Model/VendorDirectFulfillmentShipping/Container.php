@@ -70,9 +70,9 @@ class Container implements \ArrayAccess, \JsonSerializable, ModelInterface
         'scac_code' => 'string',
         'carrier' => 'string',
         'container_sequence_number' => 'int',
-        'dimensions' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Dimensions',
-        'weight' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Weight',
-        'packed_items' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\PackedItem[]',
+        'dimensions' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Dimensions',
+        'weight' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Weight',
+        'packed_items' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\PackedItem[]',
     ];
 
     /**
@@ -516,7 +516,7 @@ class Container implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets dimensions.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Dimensions $dimensions dimensions
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Dimensions $dimensions dimensions
      */
     public function setDimensions(?Dimensions $dimensions) : self
     {
@@ -536,7 +536,7 @@ class Container implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets weight.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Weight $weight weight
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Weight $weight weight
      */
     public function setWeight(?Weight $weight) : self
     {

@@ -60,10 +60,10 @@ class RetrochargeEvent implements \ArrayAccess, \JsonSerializable, ModelInterfac
         'retrocharge_event_type' => 'string',
         'amazon_order_id' => 'string',
         'posted_date' => '\DateTime',
-        'base_tax' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
-        'shipping_tax' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'base_tax' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'shipping_tax' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
         'marketplace_name' => 'string',
-        'retrocharge_tax_withheld_list' => '\AmazonPHP\SellingPartner\Model\Finances\TaxWithheldComponent[]',
+        'retrocharge_tax_withheld_list' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\TaxWithheldComponent[]',
     ];
 
     /**
@@ -317,7 +317,7 @@ class RetrochargeEvent implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Sets base_tax.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $base_tax base_tax
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $base_tax base_tax
      */
     public function setBaseTax(?Currency $base_tax) : self
     {
@@ -337,7 +337,7 @@ class RetrochargeEvent implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Sets shipping_tax.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $shipping_tax shipping_tax
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $shipping_tax shipping_tax
      */
     public function setShippingTax(?Currency $shipping_tax) : self
     {
@@ -369,7 +369,7 @@ class RetrochargeEvent implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Gets retrocharge_tax_withheld_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Finances\TaxWithheldComponent[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\TaxWithheldComponent[]
      */
     public function getRetrochargeTaxWithheldList() : ?array
     {
@@ -379,7 +379,7 @@ class RetrochargeEvent implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Sets retrocharge_tax_withheld_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\TaxWithheldComponent[] $retrocharge_tax_withheld_list a list of information about taxes withheld
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\TaxWithheldComponent[] $retrocharge_tax_withheld_list a list of information about taxes withheld
      */
     public function setRetrochargeTaxWithheldList(?array $retrocharge_tax_withheld_list) : self
     {

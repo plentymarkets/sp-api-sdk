@@ -58,11 +58,11 @@ class FeeDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'fee_type' => 'string',
-        'fee_amount' => '\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
-        'fee_promotion' => '\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
-        'tax_amount' => '\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
-        'final_fee' => '\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
-        'included_fee_detail_list' => '\AmazonPHP\SellingPartner\Model\ProductFees\IncludedFeeDetail[]',
+        'fee_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
+        'fee_promotion' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
+        'tax_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
+        'final_fee' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
+        'included_fee_detail_list' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\IncludedFeeDetail[]',
     ];
 
     /**
@@ -303,7 +303,7 @@ class FeeDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets fee_promotion.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType $fee_promotion fee_promotion
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType $fee_promotion fee_promotion
      */
     public function setFeePromotion(?MoneyType $fee_promotion) : self
     {
@@ -323,7 +323,7 @@ class FeeDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets tax_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType $tax_amount tax_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType $tax_amount tax_amount
      */
     public function setTaxAmount(?MoneyType $tax_amount) : self
     {
@@ -355,7 +355,7 @@ class FeeDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets included_fee_detail_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ProductFees\IncludedFeeDetail[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\IncludedFeeDetail[]
      */
     public function getIncludedFeeDetailList() : ?array
     {
@@ -365,7 +365,7 @@ class FeeDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets included_fee_detail_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductFees\IncludedFeeDetail[] $included_fee_detail_list a list of other fees that contribute to a given fee
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\IncludedFeeDetail[] $included_fee_detail_list a list of other fees that contribute to a given fee
      */
     public function setIncludedFeeDetailList(?array $included_fee_detail_list) : self
     {

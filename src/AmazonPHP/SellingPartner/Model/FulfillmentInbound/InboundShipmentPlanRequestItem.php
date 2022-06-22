@@ -59,10 +59,10 @@ class InboundShipmentPlanRequestItem implements \ArrayAccess, \JsonSerializable,
     protected static /** [COMPAT] array */ $openAPITypes = [
         'seller_sku' => 'string',
         'asin' => 'string',
-        'condition' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Condition',
+        'condition' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Condition',
         'quantity' => 'int',
         'quantity_in_case' => 'int',
-        'prep_details_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepDetails[]',
+        'prep_details_list' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepDetails[]',
     ];
 
     /**
@@ -359,7 +359,7 @@ class InboundShipmentPlanRequestItem implements \ArrayAccess, \JsonSerializable,
     /**
      * Gets prep_details_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepDetails[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepDetails[]
      */
     public function getPrepDetailsList() : ?array
     {
@@ -369,7 +369,7 @@ class InboundShipmentPlanRequestItem implements \ArrayAccess, \JsonSerializable,
     /**
      * Sets prep_details_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepDetails[] $prep_details_list a list of preparation instructions and who is responsible for that preparation
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepDetails[] $prep_details_list a list of preparation instructions and who is responsible for that preparation
      */
     public function setPrepDetailsList(?array $prep_details_list) : self
     {

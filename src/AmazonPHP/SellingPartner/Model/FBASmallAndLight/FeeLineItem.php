@@ -66,7 +66,7 @@ class FeeLineItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'fee_type' => 'string',
-        'fee_charge' => '\AmazonPHP\SellingPartner\Model\FBASmallAndLight\MoneyType',
+        'fee_charge' => '\Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\MoneyType',
     ];
 
     /**

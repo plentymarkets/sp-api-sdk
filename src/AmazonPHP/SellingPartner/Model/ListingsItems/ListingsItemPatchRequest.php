@@ -58,7 +58,7 @@ class ListingsItemPatchRequest implements \ArrayAccess, \JsonSerializable, Model
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'product_type' => 'string',
-        'patches' => '\AmazonPHP\SellingPartner\Model\ListingsItems\PatchOperation[]',
+        'patches' => '\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\PatchOperation[]',
     ];
 
     /**

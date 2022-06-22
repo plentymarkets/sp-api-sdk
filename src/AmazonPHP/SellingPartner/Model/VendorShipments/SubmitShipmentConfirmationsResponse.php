@@ -57,8 +57,8 @@ class SubmitShipmentConfirmationsResponse implements \ArrayAccess, \JsonSerializ
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\VendorShipments\TransactionReference',
-        'errors' => '\AmazonPHP\SellingPartner\Model\VendorShipments\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\TransactionReference',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Error[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class SubmitShipmentConfirmationsResponse implements \ArrayAccess, \JsonSerializ
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\TransactionReference $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\TransactionReference $payload payload
      */
     public function setPayload(?TransactionReference $payload) : self
     {
@@ -237,7 +237,7 @@ class SubmitShipmentConfirmationsResponse implements \ArrayAccess, \JsonSerializ
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorShipments\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Error[]
      */
     public function getErrors() : ?array
     {
@@ -247,7 +247,7 @@ class SubmitShipmentConfirmationsResponse implements \ArrayAccess, \JsonSerializ
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

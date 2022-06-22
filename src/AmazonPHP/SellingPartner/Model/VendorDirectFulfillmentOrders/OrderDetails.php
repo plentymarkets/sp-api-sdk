@@ -68,13 +68,13 @@ class OrderDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
         'customer_order_number' => 'string',
         'order_date' => '\DateTime',
         'order_status' => 'string',
-        'shipment_details' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\ShipmentDetails',
-        'tax_total' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TaxItemDetails',
-        'selling_party' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\PartyIdentification',
-        'ship_from_party' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\PartyIdentification',
-        'ship_to_party' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Address',
-        'bill_to_party' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\PartyIdentification',
-        'items' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\OrderItem[]',
+        'shipment_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\ShipmentDetails',
+        'tax_total' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TaxItemDetails',
+        'selling_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\PartyIdentification',
+        'ship_from_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\PartyIdentification',
+        'ship_to_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Address',
+        'bill_to_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\PartyIdentification',
+        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\OrderItem[]',
     ];
 
     /**
@@ -432,7 +432,7 @@ class OrderDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets tax_total.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TaxItemDetails $tax_total tax_total
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TaxItemDetails $tax_total tax_total
      */
     public function setTaxTotal(?TaxItemDetails $tax_total) : self
     {

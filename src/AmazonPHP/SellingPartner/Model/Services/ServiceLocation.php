@@ -64,7 +64,7 @@ class ServiceLocation implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'service_location_type' => 'string',
-        'address' => '\AmazonPHP\SellingPartner\Model\Services\Address',
+        'address' => '\Plenty\AmazonPHP\SellingPartner\Model\Services\Address',
     ];
 
     /**
@@ -288,7 +288,7 @@ class ServiceLocation implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets address.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Services\Address $address address
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Services\Address $address address
      */
     public function setAddress(?Address $address) : self
     {

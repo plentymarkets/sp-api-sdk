@@ -58,9 +58,9 @@ class CreateShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'client_reference_id' => 'string',
-        'ship_to' => '\AmazonPHP\SellingPartner\Model\Shipping\Address',
-        'ship_from' => '\AmazonPHP\SellingPartner\Model\Shipping\Address',
-        'containers' => '\AmazonPHP\SellingPartner\Model\Shipping\Container[]',
+        'ship_to' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Address',
+        'ship_from' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Address',
+        'containers' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Container[]',
     ];
 
     /**

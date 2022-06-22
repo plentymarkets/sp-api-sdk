@@ -59,10 +59,10 @@ class SKUPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInter
     protected static /** [COMPAT] array */ $openAPITypes = [
         'seller_sku' => 'string',
         'asin' => 'string',
-        'barcode_instruction' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BarcodeInstruction',
-        'prep_guidance' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepGuidance',
-        'prep_instruction_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction[]',
-        'amazon_prep_fees_details_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\AmazonPrepFeesDetails[]',
+        'barcode_instruction' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BarcodeInstruction',
+        'prep_guidance' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepGuidance',
+        'prep_instruction_list' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction[]',
+        'amazon_prep_fees_details_list' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\AmazonPrepFeesDetails[]',
     ];
 
     /**
@@ -289,7 +289,7 @@ class SKUPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets barcode_instruction.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BarcodeInstruction $barcode_instruction barcode_instruction
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BarcodeInstruction $barcode_instruction barcode_instruction
      */
     public function setBarcodeInstruction(?BarcodeInstruction $barcode_instruction) : self
     {
@@ -309,7 +309,7 @@ class SKUPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets prep_guidance.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepGuidance $prep_guidance prep_guidance
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepGuidance $prep_guidance prep_guidance
      */
     public function setPrepGuidance(?PrepGuidance $prep_guidance) : self
     {
@@ -321,7 +321,7 @@ class SKUPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Gets prep_instruction_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction[]
      */
     public function getPrepInstructionList() : ?array
     {
@@ -331,7 +331,7 @@ class SKUPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets prep_instruction_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction[] $prep_instruction_list a list of preparation instructions to help with item sourcing decisions
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction[] $prep_instruction_list a list of preparation instructions to help with item sourcing decisions
      */
     public function setPrepInstructionList(?array $prep_instruction_list) : self
     {
@@ -343,7 +343,7 @@ class SKUPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Gets amazon_prep_fees_details_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\AmazonPrepFeesDetails[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\AmazonPrepFeesDetails[]
      */
     public function getAmazonPrepFeesDetailsList() : ?array
     {
@@ -353,7 +353,7 @@ class SKUPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets amazon_prep_fees_details_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\AmazonPrepFeesDetails[] $amazon_prep_fees_details_list a list of preparation instructions and fees for Amazon to prep goods for shipment
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\AmazonPrepFeesDetails[] $amazon_prep_fees_details_list a list of preparation instructions and fees for Amazon to prep goods for shipment
      */
     public function setAmazonPrepFeesDetailsList(?array $amazon_prep_fees_details_list) : self
     {

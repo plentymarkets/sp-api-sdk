@@ -70,7 +70,7 @@ class OrderItemAcknowledgement implements \ArrayAccess, \JsonSerializable, Model
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'acknowledgement_code' => 'string',
-        'acknowledged_quantity' => '\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
+        'acknowledged_quantity' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
         'scheduled_ship_date' => '\DateTime',
         'scheduled_delivery_date' => '\DateTime',
         'rejection_reason' => 'string',

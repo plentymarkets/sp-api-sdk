@@ -58,9 +58,9 @@ class ShippingLabelRequest implements \ArrayAccess, \JsonSerializable, ModelInte
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'purchase_order_number' => 'string',
-        'selling_party' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\PartyIdentification',
-        'ship_from_party' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\PartyIdentification',
-        'containers' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Container[]',
+        'selling_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\PartyIdentification',
+        'ship_from_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\PartyIdentification',
+        'containers' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Container[]',
     ];
 
     /**
@@ -311,7 +311,7 @@ class ShippingLabelRequest implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Gets containers.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Container[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Container[]
      */
     public function getContainers() : ?array
     {
@@ -321,7 +321,7 @@ class ShippingLabelRequest implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Sets containers.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Container[] $containers a list of the packages in this shipment
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Container[] $containers a list of the packages in this shipment
      */
     public function setContainers(?array $containers) : self
     {

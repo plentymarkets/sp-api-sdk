@@ -59,10 +59,10 @@ class SellerInputDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
     protected static /** [COMPAT] array */ $openAPITypes = [
         'is_required' => 'bool',
         'data_type' => 'string',
-        'constraints' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Constraint[]',
+        'constraints' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Constraint[]',
         'input_display_text' => 'string',
-        'input_target' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\InputTargetType',
-        'stored_value' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalSellerInput',
+        'input_target' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\InputTargetType',
+        'stored_value' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalSellerInput',
         'restricted_set_values' => 'string[]',
     ];
 
@@ -359,7 +359,7 @@ class SellerInputDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets input_target.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\InputTargetType $input_target input_target
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\InputTargetType $input_target input_target
      */
     public function setInputTarget(?InputTargetType $input_target) : self
     {

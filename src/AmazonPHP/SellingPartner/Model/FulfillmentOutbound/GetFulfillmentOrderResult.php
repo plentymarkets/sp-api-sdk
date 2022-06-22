@@ -57,11 +57,11 @@ class GetFulfillmentOrderResult implements \ArrayAccess, \JsonSerializable, Mode
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'fulfillment_order' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentOrder',
-        'fulfillment_order_items' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentOrderItem[]',
-        'fulfillment_shipments' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentShipment[]',
-        'return_items' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReturnItem[]',
-        'return_authorizations' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReturnAuthorization[]',
+        'fulfillment_order' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentOrder',
+        'fulfillment_order_items' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentOrderItem[]',
+        'fulfillment_shipments' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentShipment[]',
+        'return_items' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReturnItem[]',
+        'return_authorizations' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReturnAuthorization[]',
     ];
 
     /**
@@ -295,7 +295,7 @@ class GetFulfillmentOrderResult implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Gets fulfillment_shipments.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentShipment[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentShipment[]
      */
     public function getFulfillmentShipments() : ?array
     {
@@ -305,7 +305,7 @@ class GetFulfillmentOrderResult implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets fulfillment_shipments.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentShipment[] $fulfillment_shipments an array of fulfillment shipment information
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentShipment[] $fulfillment_shipments an array of fulfillment shipment information
      */
     public function setFulfillmentShipments(?array $fulfillment_shipments) : self
     {

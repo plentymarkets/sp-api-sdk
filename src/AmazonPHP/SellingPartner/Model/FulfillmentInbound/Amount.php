@@ -57,7 +57,7 @@ class Amount implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'currency_code' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\CurrencyCode',
+        'currency_code' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\CurrencyCode',
         'value' => 'double',
     ];
 

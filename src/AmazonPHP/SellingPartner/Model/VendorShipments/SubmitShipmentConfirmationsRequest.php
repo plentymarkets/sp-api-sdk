@@ -57,7 +57,7 @@ class SubmitShipmentConfirmationsRequest implements \ArrayAccess, \JsonSerializa
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'shipment_confirmations' => '\AmazonPHP\SellingPartner\Model\VendorShipments\ShipmentConfirmation[]',
+        'shipment_confirmations' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ShipmentConfirmation[]',
     ];
 
     /**
@@ -211,7 +211,7 @@ class SubmitShipmentConfirmationsRequest implements \ArrayAccess, \JsonSerializa
     /**
      * Gets shipment_confirmations.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorShipments\ShipmentConfirmation[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ShipmentConfirmation[]
      */
     public function getShipmentConfirmations() : ?array
     {
@@ -221,7 +221,7 @@ class SubmitShipmentConfirmationsRequest implements \ArrayAccess, \JsonSerializa
     /**
      * Sets shipment_confirmations.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\ShipmentConfirmation[] $shipment_confirmations shipment_confirmations
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ShipmentConfirmation[] $shipment_confirmations shipment_confirmations
      */
     public function setShipmentConfirmations(?array $shipment_confirmations) : self
     {

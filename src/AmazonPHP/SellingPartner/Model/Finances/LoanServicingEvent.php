@@ -57,7 +57,7 @@ class LoanServicingEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'loan_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'loan_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
         'source_business_event_type' => 'string',
     ];
 
@@ -225,7 +225,7 @@ class LoanServicingEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets loan_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $loan_amount loan_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $loan_amount loan_amount
      */
     public function setLoanAmount(?Currency $loan_amount) : self
     {

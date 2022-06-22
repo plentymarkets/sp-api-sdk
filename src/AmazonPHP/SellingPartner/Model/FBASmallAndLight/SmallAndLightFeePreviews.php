@@ -57,7 +57,7 @@ class SmallAndLightFeePreviews implements \ArrayAccess, \JsonSerializable, Model
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'data' => '\AmazonPHP\SellingPartner\Model\FBASmallAndLight\FeePreview[]',
+        'data' => '\Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\FeePreview[]',
     ];
 
     /**
@@ -211,7 +211,7 @@ class SmallAndLightFeePreviews implements \ArrayAccess, \JsonSerializable, Model
     /**
      * Gets data.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FBASmallAndLight\FeePreview[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\FeePreview[]
      */
     public function getData() : ?array
     {
@@ -221,7 +221,7 @@ class SmallAndLightFeePreviews implements \ArrayAccess, \JsonSerializable, Model
     /**
      * Sets data.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FBASmallAndLight\FeePreview[] $data A list of fee estimates for the requested items. The order of the fee estimates will follow the same order as the items in the request, with duplicates removed.
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\FeePreview[] $data A list of fee estimates for the requested items. The order of the fee estimates will follow the same order as the items in the request, with duplicates removed.
      */
     public function setData(?array $data) : self
     {

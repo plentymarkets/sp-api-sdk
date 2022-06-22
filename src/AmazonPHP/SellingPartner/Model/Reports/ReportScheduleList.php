@@ -57,7 +57,7 @@ class ReportScheduleList implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'report_schedules' => '\AmazonPHP\SellingPartner\Model\Reports\ReportSchedule[]',
+        'report_schedules' => '\Plenty\AmazonPHP\SellingPartner\Model\Reports\ReportSchedule[]',
     ];
 
     /**

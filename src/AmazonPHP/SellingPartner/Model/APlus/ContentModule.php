@@ -57,22 +57,22 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'content_module_type' => '\AmazonPHP\SellingPartner\Model\APlus\ContentModuleType',
-        'standard_company_logo' => '\AmazonPHP\SellingPartner\Model\APlus\StandardCompanyLogoModule',
-        'standard_comparison_table' => '\AmazonPHP\SellingPartner\Model\APlus\StandardComparisonTableModule',
-        'standard_four_image_text' => '\AmazonPHP\SellingPartner\Model\APlus\StandardFourImageTextModule',
-        'standard_four_image_text_quadrant' => '\AmazonPHP\SellingPartner\Model\APlus\StandardFourImageTextQuadrantModule',
-        'standard_header_image_text' => '\AmazonPHP\SellingPartner\Model\APlus\StandardHeaderImageTextModule',
-        'standard_image_sidebar' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageSidebarModule',
-        'standard_image_text_overlay' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextOverlayModule',
-        'standard_multiple_image_text' => '\AmazonPHP\SellingPartner\Model\APlus\StandardMultipleImageTextModule',
-        'standard_product_description' => '\AmazonPHP\SellingPartner\Model\APlus\StandardProductDescriptionModule',
-        'standard_single_image_highlights' => '\AmazonPHP\SellingPartner\Model\APlus\StandardSingleImageHighlightsModule',
-        'standard_single_image_specs_detail' => '\AmazonPHP\SellingPartner\Model\APlus\StandardSingleImageSpecsDetailModule',
-        'standard_single_side_image' => '\AmazonPHP\SellingPartner\Model\APlus\StandardSingleSideImageModule',
-        'standard_tech_specs' => '\AmazonPHP\SellingPartner\Model\APlus\StandardTechSpecsModule',
-        'standard_text' => '\AmazonPHP\SellingPartner\Model\APlus\StandardTextModule',
-        'standard_three_image_text' => '\AmazonPHP\SellingPartner\Model\APlus\StandardThreeImageTextModule',
+        'content_module_type' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentModuleType',
+        'standard_company_logo' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardCompanyLogoModule',
+        'standard_comparison_table' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardComparisonTableModule',
+        'standard_four_image_text' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardFourImageTextModule',
+        'standard_four_image_text_quadrant' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardFourImageTextQuadrantModule',
+        'standard_header_image_text' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardHeaderImageTextModule',
+        'standard_image_sidebar' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageSidebarModule',
+        'standard_image_text_overlay' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextOverlayModule',
+        'standard_multiple_image_text' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardMultipleImageTextModule',
+        'standard_product_description' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardProductDescriptionModule',
+        'standard_single_image_highlights' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardSingleImageHighlightsModule',
+        'standard_single_image_specs_detail' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardSingleImageSpecsDetailModule',
+        'standard_single_side_image' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardSingleSideImageModule',
+        'standard_tech_specs' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardTechSpecsModule',
+        'standard_text' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardTextModule',
+        'standard_three_image_text' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardThreeImageTextModule',
     ];
 
     /**
@@ -335,7 +335,7 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets standard_company_logo.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardCompanyLogoModule $standard_company_logo standard_company_logo
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardCompanyLogoModule $standard_company_logo standard_company_logo
      */
     public function setStandardCompanyLogo(?StandardCompanyLogoModule $standard_company_logo) : self
     {
@@ -355,7 +355,7 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets standard_comparison_table.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardComparisonTableModule $standard_comparison_table standard_comparison_table
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardComparisonTableModule $standard_comparison_table standard_comparison_table
      */
     public function setStandardComparisonTable(?StandardComparisonTableModule $standard_comparison_table) : self
     {
@@ -375,7 +375,7 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets standard_four_image_text.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardFourImageTextModule $standard_four_image_text standard_four_image_text
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardFourImageTextModule $standard_four_image_text standard_four_image_text
      */
     public function setStandardFourImageText(?StandardFourImageTextModule $standard_four_image_text) : self
     {
@@ -395,7 +395,7 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets standard_four_image_text_quadrant.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardFourImageTextQuadrantModule $standard_four_image_text_quadrant standard_four_image_text_quadrant
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardFourImageTextQuadrantModule $standard_four_image_text_quadrant standard_four_image_text_quadrant
      */
     public function setStandardFourImageTextQuadrant(?StandardFourImageTextQuadrantModule $standard_four_image_text_quadrant) : self
     {
@@ -415,7 +415,7 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets standard_header_image_text.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardHeaderImageTextModule $standard_header_image_text standard_header_image_text
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardHeaderImageTextModule $standard_header_image_text standard_header_image_text
      */
     public function setStandardHeaderImageText(?StandardHeaderImageTextModule $standard_header_image_text) : self
     {
@@ -435,7 +435,7 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets standard_image_sidebar.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardImageSidebarModule $standard_image_sidebar standard_image_sidebar
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageSidebarModule $standard_image_sidebar standard_image_sidebar
      */
     public function setStandardImageSidebar(?StandardImageSidebarModule $standard_image_sidebar) : self
     {
@@ -455,7 +455,7 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets standard_image_text_overlay.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextOverlayModule $standard_image_text_overlay standard_image_text_overlay
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextOverlayModule $standard_image_text_overlay standard_image_text_overlay
      */
     public function setStandardImageTextOverlay(?StandardImageTextOverlayModule $standard_image_text_overlay) : self
     {
@@ -475,7 +475,7 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets standard_multiple_image_text.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardMultipleImageTextModule $standard_multiple_image_text standard_multiple_image_text
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardMultipleImageTextModule $standard_multiple_image_text standard_multiple_image_text
      */
     public function setStandardMultipleImageText(?StandardMultipleImageTextModule $standard_multiple_image_text) : self
     {
@@ -495,7 +495,7 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets standard_product_description.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardProductDescriptionModule $standard_product_description standard_product_description
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardProductDescriptionModule $standard_product_description standard_product_description
      */
     public function setStandardProductDescription(?StandardProductDescriptionModule $standard_product_description) : self
     {
@@ -515,7 +515,7 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets standard_single_image_highlights.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardSingleImageHighlightsModule $standard_single_image_highlights standard_single_image_highlights
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardSingleImageHighlightsModule $standard_single_image_highlights standard_single_image_highlights
      */
     public function setStandardSingleImageHighlights(?StandardSingleImageHighlightsModule $standard_single_image_highlights) : self
     {
@@ -535,7 +535,7 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets standard_single_image_specs_detail.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardSingleImageSpecsDetailModule $standard_single_image_specs_detail standard_single_image_specs_detail
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardSingleImageSpecsDetailModule $standard_single_image_specs_detail standard_single_image_specs_detail
      */
     public function setStandardSingleImageSpecsDetail(?StandardSingleImageSpecsDetailModule $standard_single_image_specs_detail) : self
     {
@@ -555,7 +555,7 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets standard_single_side_image.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardSingleSideImageModule $standard_single_side_image standard_single_side_image
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardSingleSideImageModule $standard_single_side_image standard_single_side_image
      */
     public function setStandardSingleSideImage(?StandardSingleSideImageModule $standard_single_side_image) : self
     {
@@ -575,7 +575,7 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets standard_tech_specs.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardTechSpecsModule $standard_tech_specs standard_tech_specs
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardTechSpecsModule $standard_tech_specs standard_tech_specs
      */
     public function setStandardTechSpecs(?StandardTechSpecsModule $standard_tech_specs) : self
     {
@@ -595,7 +595,7 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets standard_text.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardTextModule $standard_text standard_text
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardTextModule $standard_text standard_text
      */
     public function setStandardText(?StandardTextModule $standard_text) : self
     {
@@ -615,7 +615,7 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets standard_three_image_text.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardThreeImageTextModule $standard_three_image_text standard_three_image_text
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardThreeImageTextModule $standard_three_image_text standard_three_image_text
      */
     public function setStandardThreeImageText(?StandardThreeImageTextModule $standard_three_image_text) : self
     {

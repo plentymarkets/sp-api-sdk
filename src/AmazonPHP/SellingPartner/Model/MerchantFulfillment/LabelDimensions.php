@@ -59,7 +59,7 @@ class LabelDimensions implements \ArrayAccess, \JsonSerializable, ModelInterface
     protected static /** [COMPAT] array */ $openAPITypes = [
         'length' => 'float',
         'width' => 'float',
-        'unit' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\UnitOfLength',
+        'unit' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\UnitOfLength',
     ];
 
     /**

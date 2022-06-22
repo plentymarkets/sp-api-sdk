@@ -57,8 +57,8 @@ class OrderListStatus implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'pagination' => '\AmazonPHP\SellingPartner\Model\VendorOrders\Pagination',
-        'orders_status' => '\AmazonPHP\SellingPartner\Model\VendorOrders\OrderStatus[]',
+        'pagination' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\Pagination',
+        'orders_status' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderStatus[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class OrderListStatus implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets pagination.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\Pagination $pagination pagination
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\Pagination $pagination pagination
      */
     public function setPagination(?Pagination $pagination) : self
     {
@@ -237,7 +237,7 @@ class OrderListStatus implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets orders_status.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorOrders\OrderStatus[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderStatus[]
      */
     public function getOrdersStatus() : ?array
     {
@@ -247,7 +247,7 @@ class OrderListStatus implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets orders_status.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\OrderStatus[] $orders_status orders_status
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderStatus[] $orders_status orders_status
      */
     public function setOrdersStatus(?array $orders_status) : self
     {

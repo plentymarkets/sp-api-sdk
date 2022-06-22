@@ -77,16 +77,16 @@ class OrderDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
         'purchase_order_changed_date' => '\DateTime',
         'purchase_order_state_changed_date' => '\DateTime',
         'purchase_order_type' => 'string',
-        'import_details' => '\AmazonPHP\SellingPartner\Model\VendorOrders\ImportDetails',
+        'import_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\ImportDetails',
         'deal_code' => 'string',
         'payment_method' => 'string',
-        'buying_party' => '\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification',
-        'selling_party' => '\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification',
-        'ship_to_party' => '\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification',
-        'bill_to_party' => '\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification',
+        'buying_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification',
+        'selling_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification',
+        'ship_to_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification',
+        'bill_to_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification',
         'ship_window' => 'string',
         'delivery_window' => 'string',
-        'items' => '\AmazonPHP\SellingPartner\Model\VendorOrders\OrderItem[]',
+        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderItem[]',
     ];
 
     /**
@@ -473,7 +473,7 @@ class OrderDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets import_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\ImportDetails $import_details import_details
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\ImportDetails $import_details import_details
      */
     public function setImportDetails(?ImportDetails $import_details) : self
     {
@@ -544,7 +544,7 @@ class OrderDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets buying_party.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification $buying_party buying_party
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification $buying_party buying_party
      */
     public function setBuyingParty(?PartyIdentification $buying_party) : self
     {
@@ -564,7 +564,7 @@ class OrderDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets selling_party.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification $selling_party selling_party
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification $selling_party selling_party
      */
     public function setSellingParty(?PartyIdentification $selling_party) : self
     {
@@ -584,7 +584,7 @@ class OrderDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets ship_to_party.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification $ship_to_party ship_to_party
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification $ship_to_party ship_to_party
      */
     public function setShipToParty(?PartyIdentification $ship_to_party) : self
     {
@@ -604,7 +604,7 @@ class OrderDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets bill_to_party.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification $bill_to_party bill_to_party
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification $bill_to_party bill_to_party
      */
     public function setBillToParty(?PartyIdentification $bill_to_party) : self
     {

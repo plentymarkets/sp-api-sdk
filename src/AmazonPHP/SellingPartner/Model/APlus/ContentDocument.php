@@ -58,10 +58,10 @@ class ContentDocument implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'name' => 'string',
-        'content_type' => '\AmazonPHP\SellingPartner\Model\APlus\ContentType',
+        'content_type' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentType',
         'content_sub_type' => 'string',
         'locale' => 'string',
-        'content_module_list' => '\AmazonPHP\SellingPartner\Model\APlus\ContentModule[]',
+        'content_module_list' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentModule[]',
     ];
 
     /**

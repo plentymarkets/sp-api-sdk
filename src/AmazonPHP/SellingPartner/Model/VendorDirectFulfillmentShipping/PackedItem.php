@@ -60,7 +60,7 @@ class PackedItem implements \ArrayAccess, \JsonSerializable, ModelInterface
         'item_sequence_number' => 'int',
         'buyer_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
-        'packed_quantity' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ItemQuantity',
+        'packed_quantity' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ItemQuantity',
     ];
 
     /**

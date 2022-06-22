@@ -57,11 +57,11 @@ class GetRatesRequest implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'ship_to' => '\AmazonPHP\SellingPartner\Model\Shipping\Address',
-        'ship_from' => '\AmazonPHP\SellingPartner\Model\Shipping\Address',
-        'service_types' => '\AmazonPHP\SellingPartner\Model\Shipping\ServiceType[]',
+        'ship_to' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Address',
+        'ship_from' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Address',
+        'service_types' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\ServiceType[]',
         'ship_date' => '\DateTime',
-        'container_specifications' => '\AmazonPHP\SellingPartner\Model\Shipping\ContainerSpecification[]',
+        'container_specifications' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\ContainerSpecification[]',
     ];
 
     /**

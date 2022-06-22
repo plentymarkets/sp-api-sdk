@@ -59,8 +59,8 @@ class FBALiquidationEvent implements \ArrayAccess, \JsonSerializable, ModelInter
     protected static /** [COMPAT] array */ $openAPITypes = [
         'posted_date' => '\DateTime',
         'original_removal_order_id' => 'string',
-        'liquidation_proceeds_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
-        'liquidation_fee_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'liquidation_proceeds_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'liquidation_fee_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
     ];
 
     /**
@@ -279,7 +279,7 @@ class FBALiquidationEvent implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets liquidation_proceeds_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $liquidation_proceeds_amount liquidation_proceeds_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $liquidation_proceeds_amount liquidation_proceeds_amount
      */
     public function setLiquidationProceedsAmount(?Currency $liquidation_proceeds_amount) : self
     {
@@ -299,7 +299,7 @@ class FBALiquidationEvent implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets liquidation_fee_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $liquidation_fee_amount liquidation_fee_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $liquidation_fee_amount liquidation_fee_amount
      */
     public function setLiquidationFeeAmount(?Currency $liquidation_fee_amount) : self
     {

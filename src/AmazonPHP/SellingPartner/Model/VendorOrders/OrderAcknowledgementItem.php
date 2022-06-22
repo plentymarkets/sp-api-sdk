@@ -60,11 +60,11 @@ class OrderAcknowledgementItem implements \ArrayAccess, \JsonSerializable, Model
         'item_sequence_number' => 'string',
         'amazon_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
-        'ordered_quantity' => '\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
-        'net_cost' => '\AmazonPHP\SellingPartner\Model\VendorOrders\Money',
-        'list_price' => '\AmazonPHP\SellingPartner\Model\VendorOrders\Money',
+        'ordered_quantity' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
+        'net_cost' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\Money',
+        'list_price' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\Money',
         'discount_multiplier' => 'string',
-        'item_acknowledgements' => '\AmazonPHP\SellingPartner\Model\VendorOrders\OrderItemAcknowledgement[]',
+        'item_acknowledgements' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderItemAcknowledgement[]',
     ];
 
     /**
@@ -351,7 +351,7 @@ class OrderAcknowledgementItem implements \ArrayAccess, \JsonSerializable, Model
     /**
      * Sets net_cost.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\Money $net_cost net_cost
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\Money $net_cost net_cost
      */
     public function setNetCost(?Money $net_cost) : self
     {
@@ -371,7 +371,7 @@ class OrderAcknowledgementItem implements \ArrayAccess, \JsonSerializable, Model
     /**
      * Sets list_price.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\Money $list_price list_price
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\Money $list_price list_price
      */
     public function setListPrice(?Money $list_price) : self
     {

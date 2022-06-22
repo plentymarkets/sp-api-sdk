@@ -59,7 +59,7 @@ class GetFulfillmentPreviewItem implements \ArrayAccess, \JsonSerializable, Mode
     protected static /** [COMPAT] array */ $openAPITypes = [
         'seller_sku' => 'string',
         'quantity' => 'int',
-        'per_unit_declared_value' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money',
+        'per_unit_declared_value' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money',
         'seller_fulfillment_order_item_id' => 'string',
     ];
 
@@ -303,7 +303,7 @@ class GetFulfillmentPreviewItem implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets per_unit_declared_value.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money $per_unit_declared_value per_unit_declared_value
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money $per_unit_declared_value per_unit_declared_value
      */
     public function setPerUnitDeclaredValue(?Money $per_unit_declared_value) : self
     {

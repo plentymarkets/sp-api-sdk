@@ -60,10 +60,10 @@ class OrderAcknowledgementItem implements \ArrayAccess, \JsonSerializable, Model
         'purchase_order_number' => 'string',
         'vendor_order_number' => 'string',
         'acknowledgement_date' => '\DateTime',
-        'acknowledgement_status' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\AcknowledgementStatus',
-        'selling_party' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\PartyIdentification',
-        'ship_from_party' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\PartyIdentification',
-        'item_acknowledgements' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\OrderItemAcknowledgement[]',
+        'acknowledgement_status' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\AcknowledgementStatus',
+        'selling_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\PartyIdentification',
+        'ship_from_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\PartyIdentification',
+        'item_acknowledgements' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\OrderItemAcknowledgement[]',
     ];
 
     /**

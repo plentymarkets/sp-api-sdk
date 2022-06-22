@@ -57,8 +57,8 @@ class SubmitInvoicesResponse implements \ArrayAccess, \JsonSerializable, ModelIn
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\VendorInvoices\TransactionId',
-        'errors' => '\AmazonPHP\SellingPartner\Model\VendorInvoices\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\TransactionId',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\Error[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class SubmitInvoicesResponse implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorInvoices\TransactionId $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\TransactionId $payload payload
      */
     public function setPayload(?TransactionId $payload) : self
     {
@@ -237,7 +237,7 @@ class SubmitInvoicesResponse implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorInvoices\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\Error[]
      */
     public function getErrors() : ?array
     {
@@ -247,7 +247,7 @@ class SubmitInvoicesResponse implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorInvoices\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

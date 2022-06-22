@@ -57,7 +57,7 @@ class ListReturnReasonCodesResult implements \ArrayAccess, \JsonSerializable, Mo
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'reason_code_details' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReasonCodeDetails[]',
+        'reason_code_details' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReasonCodeDetails[]',
     ];
 
     /**
@@ -211,7 +211,7 @@ class ListReturnReasonCodesResult implements \ArrayAccess, \JsonSerializable, Mo
     /**
      * Gets reason_code_details.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReasonCodeDetails[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReasonCodeDetails[]
      */
     public function getReasonCodeDetails() : ?array
     {
@@ -221,7 +221,7 @@ class ListReturnReasonCodesResult implements \ArrayAccess, \JsonSerializable, Mo
     /**
      * Sets reason_code_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReasonCodeDetails[] $reason_code_details an array of return reason code details
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReasonCodeDetails[] $reason_code_details an array of return reason code details
      */
     public function setReasonCodeDetails(?array $reason_code_details) : self
     {

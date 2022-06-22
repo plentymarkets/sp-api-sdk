@@ -58,7 +58,7 @@ class SmallAndLightFeePreviewRequest implements \ArrayAccess, \JsonSerializable,
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace_id' => 'string',
-        'items' => '\AmazonPHP\SellingPartner\Model\FBASmallAndLight\Item[]',
+        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\Item[]',
     ];
 
     /**

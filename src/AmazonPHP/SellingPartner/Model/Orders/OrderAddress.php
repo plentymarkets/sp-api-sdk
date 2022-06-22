@@ -58,7 +58,7 @@ class OrderAddress implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'amazon_order_id' => 'string',
-        'shipping_address' => '\AmazonPHP\SellingPartner\Model\Orders\Address',
+        'shipping_address' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\Address',
     ];
 
     /**
@@ -251,7 +251,7 @@ class OrderAddress implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipping_address.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\Address $shipping_address shipping_address
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\Address $shipping_address shipping_address
      */
     public function setShippingAddress(?Address $shipping_address) : self
     {

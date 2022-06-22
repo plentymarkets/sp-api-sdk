@@ -66,9 +66,9 @@ class OrderItemStatusAcknowledgementStatus implements \ArrayAccess, \JsonSeriali
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'confirmation_status' => 'string',
-        'accepted_quantity' => '\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
-        'rejected_quantity' => '\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
-        'acknowledgement_status_details' => '\AmazonPHP\SellingPartner\Model\VendorOrders\AcknowledgementStatusDetails[]',
+        'accepted_quantity' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
+        'rejected_quantity' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
+        'acknowledgement_status_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\AcknowledgementStatusDetails[]',
     ];
 
     /**
@@ -303,7 +303,7 @@ class OrderItemStatusAcknowledgementStatus implements \ArrayAccess, \JsonSeriali
     /**
      * Sets accepted_quantity.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity $accepted_quantity accepted_quantity
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity $accepted_quantity accepted_quantity
      */
     public function setAcceptedQuantity(?ItemQuantity $accepted_quantity) : self
     {
@@ -323,7 +323,7 @@ class OrderItemStatusAcknowledgementStatus implements \ArrayAccess, \JsonSeriali
     /**
      * Sets rejected_quantity.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity $rejected_quantity rejected_quantity
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity $rejected_quantity rejected_quantity
      */
     public function setRejectedQuantity(?ItemQuantity $rejected_quantity) : self
     {
@@ -335,7 +335,7 @@ class OrderItemStatusAcknowledgementStatus implements \ArrayAccess, \JsonSeriali
     /**
      * Gets acknowledgement_status_details.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorOrders\AcknowledgementStatusDetails[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\AcknowledgementStatusDetails[]
      */
     public function getAcknowledgementStatusDetails() : ?array
     {
@@ -345,7 +345,7 @@ class OrderItemStatusAcknowledgementStatus implements \ArrayAccess, \JsonSeriali
     /**
      * Sets acknowledgement_status_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\AcknowledgementStatusDetails[] $acknowledgement_status_details details of item quantity confirmed
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\AcknowledgementStatusDetails[] $acknowledgement_status_details details of item quantity confirmed
      */
     public function setAcknowledgementStatusDetails(?array $acknowledgement_status_details) : self
     {

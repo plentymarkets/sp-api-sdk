@@ -58,10 +58,10 @@ class Label implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'custom_text_for_label' => 'string',
-        'dimensions' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelDimensions',
-        'file_contents' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\FileContents',
-        'label_format' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat',
-        'standard_id_for_label' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\StandardIdForLabel',
+        'dimensions' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelDimensions',
+        'file_contents' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\FileContents',
+        'label_format' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat',
+        'standard_id_for_label' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\StandardIdForLabel',
     ];
 
     /**
@@ -321,7 +321,7 @@ class Label implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets label_format.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat $label_format label_format
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat $label_format label_format
      */
     public function setLabelFormat(?LabelFormat $label_format) : self
     {
@@ -341,7 +341,7 @@ class Label implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets standard_id_for_label.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\StandardIdForLabel $standard_id_for_label standard_id_for_label
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\StandardIdForLabel $standard_id_for_label standard_id_for_label
      */
     public function setStandardIdForLabel(?StandardIdForLabel $standard_id_for_label) : self
     {

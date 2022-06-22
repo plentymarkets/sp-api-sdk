@@ -58,7 +58,7 @@ class CreateRestrictedDataTokenRequest implements \ArrayAccess, \JsonSerializabl
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'target_application' => 'string',
-        'restricted_resources' => '\AmazonPHP\SellingPartner\Model\Tokens\RestrictedResource[]',
+        'restricted_resources' => '\Plenty\AmazonPHP\SellingPartner\Model\Tokens\RestrictedResource[]',
     ];
 
     /**

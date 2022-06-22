@@ -157,7 +157,7 @@ final class ProductPricingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\ProductPricing\GetPricingResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetPricingResponse',
             []
         );
     }
@@ -398,7 +398,7 @@ final class ProductPricingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse',
             []
         );
     }
@@ -626,7 +626,7 @@ final class ProductPricingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\ProductPricing\GetItemOffersBatchResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetItemOffersBatchResponse',
             []
         );
     }
@@ -816,7 +816,7 @@ final class ProductPricingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse',
             []
         );
     }
@@ -1044,7 +1044,7 @@ final class ProductPricingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\ProductPricing\GetListingOffersBatchResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetListingOffersBatchResponse',
             []
         );
     }
@@ -1236,7 +1236,7 @@ final class ProductPricingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\ProductPricing\GetPricingResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetPricingResponse',
             []
         );
     }

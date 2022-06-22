@@ -57,8 +57,8 @@ class StandardHeaderImageTextModule implements \ArrayAccess, \JsonSerializable, 
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'headline' => '\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
-        'block' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
+        'headline' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
+        'block' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
     ];
 
     /**
@@ -225,7 +225,7 @@ class StandardHeaderImageTextModule implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets headline.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\TextComponent $headline headline
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent $headline headline
      */
     public function setHeadline(?TextComponent $headline) : self
     {
@@ -245,7 +245,7 @@ class StandardHeaderImageTextModule implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets block.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $block block
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $block block
      */
     public function setBlock(?StandardImageTextBlock $block) : self
     {

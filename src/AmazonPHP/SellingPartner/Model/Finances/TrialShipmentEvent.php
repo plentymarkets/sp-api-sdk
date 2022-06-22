@@ -61,7 +61,7 @@ class TrialShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
         'financial_event_group_id' => 'string',
         'posted_date' => '\DateTime',
         'sku' => 'string',
-        'fee_list' => '\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]',
+        'fee_list' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]',
     ];
 
     /**
@@ -317,7 +317,7 @@ class TrialShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Gets fee_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]
      */
     public function getFeeList() : ?array
     {
@@ -327,7 +327,7 @@ class TrialShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets fee_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[] $fee_list a list of fee component information
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[] $fee_list a list of fee component information
      */
     public function setFeeList(?array $fee_list) : self
     {

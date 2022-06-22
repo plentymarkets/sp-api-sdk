@@ -57,8 +57,8 @@ class AmazonPrepFeesDetails implements \ArrayAccess, \JsonSerializable, ModelInt
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'prep_instruction' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction',
-        'fee_per_unit' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount',
+        'prep_instruction' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction',
+        'fee_per_unit' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount',
     ];
 
     /**
@@ -225,7 +225,7 @@ class AmazonPrepFeesDetails implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets prep_instruction.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction $prep_instruction prep_instruction
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction $prep_instruction prep_instruction
      */
     public function setPrepInstruction(?PrepInstruction $prep_instruction) : self
     {
@@ -245,7 +245,7 @@ class AmazonPrepFeesDetails implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets fee_per_unit.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount $fee_per_unit fee_per_unit
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount $fee_per_unit fee_per_unit
      */
     public function setFeePerUnit(?Amount $fee_per_unit) : self
     {

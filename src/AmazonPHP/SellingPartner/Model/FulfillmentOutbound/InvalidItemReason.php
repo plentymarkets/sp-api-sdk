@@ -57,7 +57,7 @@ class InvalidItemReason implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'invalid_item_reason_code' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\InvalidItemReasonCode',
+        'invalid_item_reason_code' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\InvalidItemReasonCode',
         'description' => 'string',
     ];
 

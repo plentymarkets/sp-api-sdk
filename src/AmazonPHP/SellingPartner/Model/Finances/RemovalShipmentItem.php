@@ -61,10 +61,10 @@ class RemovalShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInter
         'tax_collection_model' => 'string',
         'fulfillment_network_sku' => 'string',
         'quantity' => 'int',
-        'revenue' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
-        'fee_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
-        'tax_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
-        'tax_withheld' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'revenue' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'fee_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'tax_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'tax_withheld' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
     ];
 
     /**
@@ -341,7 +341,7 @@ class RemovalShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets revenue.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $revenue revenue
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $revenue revenue
      */
     public function setRevenue(?Currency $revenue) : self
     {
@@ -361,7 +361,7 @@ class RemovalShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets fee_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $fee_amount fee_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $fee_amount fee_amount
      */
     public function setFeeAmount(?Currency $fee_amount) : self
     {
@@ -381,7 +381,7 @@ class RemovalShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets tax_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $tax_amount tax_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $tax_amount tax_amount
      */
     public function setTaxAmount(?Currency $tax_amount) : self
     {
@@ -401,7 +401,7 @@ class RemovalShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets tax_withheld.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $tax_withheld tax_withheld
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $tax_withheld tax_withheld
      */
     public function setTaxWithheld(?Currency $tax_withheld) : self
     {

@@ -143,7 +143,7 @@ final class ProductTypesDefinitionsSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\ProductTypeDefinition',
+            '\Plenty\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\ProductTypeDefinition',
             []
         );
     }
@@ -393,7 +393,7 @@ final class ProductTypesDefinitionsSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\ProductTypeList',
+            '\Plenty\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\ProductTypeList',
             []
         );
     }

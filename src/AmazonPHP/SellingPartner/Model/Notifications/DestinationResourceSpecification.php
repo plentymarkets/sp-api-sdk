@@ -57,8 +57,8 @@ class DestinationResourceSpecification implements \ArrayAccess, \JsonSerializabl
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'sqs' => '\AmazonPHP\SellingPartner\Model\Notifications\SqsResource',
-        'event_bridge' => '\AmazonPHP\SellingPartner\Model\Notifications\EventBridgeResourceSpecification',
+        'sqs' => '\Plenty\AmazonPHP\SellingPartner\Model\Notifications\SqsResource',
+        'event_bridge' => '\Plenty\AmazonPHP\SellingPartner\Model\Notifications\EventBridgeResourceSpecification',
     ];
 
     /**
@@ -225,7 +225,7 @@ class DestinationResourceSpecification implements \ArrayAccess, \JsonSerializabl
     /**
      * Sets sqs.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Notifications\SqsResource $sqs sqs
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Notifications\SqsResource $sqs sqs
      */
     public function setSqs(?SqsResource $sqs) : self
     {
@@ -245,7 +245,7 @@ class DestinationResourceSpecification implements \ArrayAccess, \JsonSerializabl
     /**
      * Sets event_bridge.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Notifications\EventBridgeResourceSpecification $event_bridge event_bridge
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Notifications\EventBridgeResourceSpecification $event_bridge event_bridge
      */
     public function setEventBridge(?EventBridgeResourceSpecification $event_bridge) : self
     {

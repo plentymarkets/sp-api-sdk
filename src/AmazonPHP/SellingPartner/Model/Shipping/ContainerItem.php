@@ -58,8 +58,8 @@ class ContainerItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'quantity' => 'float',
-        'unit_price' => '\AmazonPHP\SellingPartner\Model\Shipping\Currency',
-        'unit_weight' => '\AmazonPHP\SellingPartner\Model\Shipping\Weight',
+        'unit_price' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Currency',
+        'unit_weight' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Weight',
         'title' => 'string',
     ];
 

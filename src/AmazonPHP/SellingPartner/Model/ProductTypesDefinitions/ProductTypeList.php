@@ -57,7 +57,7 @@ class ProductTypeList implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'product_types' => '\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\ProductType[]',
+        'product_types' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\ProductType[]',
     ];
 
     /**

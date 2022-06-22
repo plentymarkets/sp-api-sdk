@@ -57,7 +57,7 @@ class Decorator implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'type' => '\AmazonPHP\SellingPartner\Model\APlus\DecoratorType',
+        'type' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\DecoratorType',
         'offset' => 'int',
         'length' => 'int',
         'depth' => 'int',
@@ -263,7 +263,7 @@ class Decorator implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets type.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\DecoratorType $type type
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\DecoratorType $type type
      */
     public function setType(?DecoratorType $type) : self
     {

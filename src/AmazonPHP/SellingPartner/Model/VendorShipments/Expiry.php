@@ -59,7 +59,7 @@ class Expiry implements \ArrayAccess, \JsonSerializable, ModelInterface
     protected static /** [COMPAT] array */ $openAPITypes = [
         'manufacturer_date' => '\DateTime',
         'expiry_date' => '\DateTime',
-        'expiry_after_duration' => '\AmazonPHP\SellingPartner\Model\VendorShipments\Duration',
+        'expiry_after_duration' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Duration',
     ];
 
     /**
@@ -275,7 +275,7 @@ class Expiry implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets expiry_after_duration.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\Duration $expiry_after_duration expiry_after_duration
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Duration $expiry_after_duration expiry_after_duration
      */
     public function setExpiryAfterDuration(?Duration $expiry_after_duration) : self
     {

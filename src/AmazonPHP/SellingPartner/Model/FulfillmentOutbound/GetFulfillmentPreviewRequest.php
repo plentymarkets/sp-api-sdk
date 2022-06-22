@@ -58,12 +58,12 @@ class GetFulfillmentPreviewRequest implements \ArrayAccess, \JsonSerializable, M
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace_id' => 'string',
-        'address' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Address',
-        'items' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\GetFulfillmentPreviewItem[]',
-        'shipping_speed_categories' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ShippingSpeedCategory[]',
+        'address' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Address',
+        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\GetFulfillmentPreviewItem[]',
+        'shipping_speed_categories' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ShippingSpeedCategory[]',
         'include_cod_fulfillment_preview' => 'bool',
         'include_delivery_windows' => 'bool',
-        'feature_constraints' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[]',
+        'feature_constraints' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[]',
     ];
 
     /**
@@ -319,7 +319,7 @@ class GetFulfillmentPreviewRequest implements \ArrayAccess, \JsonSerializable, M
     /**
      * Gets shipping_speed_categories.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ShippingSpeedCategory[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ShippingSpeedCategory[]
      */
     public function getShippingSpeedCategories() : ?array
     {
@@ -329,7 +329,7 @@ class GetFulfillmentPreviewRequest implements \ArrayAccess, \JsonSerializable, M
     /**
      * Sets shipping_speed_categories.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ShippingSpeedCategory[] $shipping_speed_categories shipping_speed_categories
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ShippingSpeedCategory[] $shipping_speed_categories shipping_speed_categories
      */
     public function setShippingSpeedCategories(?array $shipping_speed_categories) : self
     {
@@ -381,7 +381,7 @@ class GetFulfillmentPreviewRequest implements \ArrayAccess, \JsonSerializable, M
     /**
      * Gets feature_constraints.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[]
      */
     public function getFeatureConstraints() : ?array
     {
@@ -391,7 +391,7 @@ class GetFulfillmentPreviewRequest implements \ArrayAccess, \JsonSerializable, M
     /**
      * Sets feature_constraints.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[] $feature_constraints a list of features and their fulfillment policies to apply to the order
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[] $feature_constraints a list of features and their fulfillment policies to apply to the order
      */
     public function setFeatureConstraints(?array $feature_constraints) : self
     {

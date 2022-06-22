@@ -65,17 +65,17 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
         'id' => 'string',
         'reference_number' => 'string',
         'date' => '\DateTime',
-        'remit_to_party' => '\AmazonPHP\SellingPartner\Model\VendorInvoices\PartyIdentification',
-        'ship_to_party' => '\AmazonPHP\SellingPartner\Model\VendorInvoices\PartyIdentification',
-        'ship_from_party' => '\AmazonPHP\SellingPartner\Model\VendorInvoices\PartyIdentification',
-        'bill_to_party' => '\AmazonPHP\SellingPartner\Model\VendorInvoices\PartyIdentification',
-        'payment_terms' => '\AmazonPHP\SellingPartner\Model\VendorInvoices\PaymentTerms',
-        'invoice_total' => '\AmazonPHP\SellingPartner\Model\VendorInvoices\Money',
-        'tax_details' => '\AmazonPHP\SellingPartner\Model\VendorInvoices\TaxDetails[]',
-        'additional_details' => '\AmazonPHP\SellingPartner\Model\VendorInvoices\AdditionalDetails[]',
-        'charge_details' => '\AmazonPHP\SellingPartner\Model\VendorInvoices\ChargeDetails[]',
-        'allowance_details' => '\AmazonPHP\SellingPartner\Model\VendorInvoices\AllowanceDetails[]',
-        'items' => '\AmazonPHP\SellingPartner\Model\VendorInvoices\InvoiceItem[]',
+        'remit_to_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\PartyIdentification',
+        'ship_to_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\PartyIdentification',
+        'ship_from_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\PartyIdentification',
+        'bill_to_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\PartyIdentification',
+        'payment_terms' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\PaymentTerms',
+        'invoice_total' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\Money',
+        'tax_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\TaxDetails[]',
+        'additional_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\AdditionalDetails[]',
+        'charge_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\ChargeDetails[]',
+        'allowance_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\AllowanceDetails[]',
+        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\InvoiceItem[]',
     ];
 
     /**
@@ -464,7 +464,7 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets ship_to_party.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorInvoices\PartyIdentification $ship_to_party ship_to_party
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\PartyIdentification $ship_to_party ship_to_party
      */
     public function setShipToParty(?PartyIdentification $ship_to_party) : self
     {
@@ -484,7 +484,7 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets ship_from_party.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorInvoices\PartyIdentification $ship_from_party ship_from_party
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\PartyIdentification $ship_from_party ship_from_party
      */
     public function setShipFromParty(?PartyIdentification $ship_from_party) : self
     {
@@ -504,7 +504,7 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets bill_to_party.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorInvoices\PartyIdentification $bill_to_party bill_to_party
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\PartyIdentification $bill_to_party bill_to_party
      */
     public function setBillToParty(?PartyIdentification $bill_to_party) : self
     {
@@ -524,7 +524,7 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets payment_terms.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorInvoices\PaymentTerms $payment_terms payment_terms
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\PaymentTerms $payment_terms payment_terms
      */
     public function setPaymentTerms(?PaymentTerms $payment_terms) : self
     {
@@ -556,7 +556,7 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets tax_details.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorInvoices\TaxDetails[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\TaxDetails[]
      */
     public function getTaxDetails() : ?array
     {
@@ -566,7 +566,7 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets tax_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorInvoices\TaxDetails[] $tax_details total tax amount details for all line items
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\TaxDetails[] $tax_details total tax amount details for all line items
      */
     public function setTaxDetails(?array $tax_details) : self
     {
@@ -578,7 +578,7 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets additional_details.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorInvoices\AdditionalDetails[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\AdditionalDetails[]
      */
     public function getAdditionalDetails() : ?array
     {
@@ -588,7 +588,7 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets additional_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorInvoices\AdditionalDetails[] $additional_details additional details provided by the selling party, for tax related or other purposes
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\AdditionalDetails[] $additional_details additional details provided by the selling party, for tax related or other purposes
      */
     public function setAdditionalDetails(?array $additional_details) : self
     {
@@ -600,7 +600,7 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets charge_details.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorInvoices\ChargeDetails[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\ChargeDetails[]
      */
     public function getChargeDetails() : ?array
     {
@@ -610,7 +610,7 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets charge_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorInvoices\ChargeDetails[] $charge_details total charge amount details for all line items
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\ChargeDetails[] $charge_details total charge amount details for all line items
      */
     public function setChargeDetails(?array $charge_details) : self
     {
@@ -622,7 +622,7 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets allowance_details.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorInvoices\AllowanceDetails[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\AllowanceDetails[]
      */
     public function getAllowanceDetails() : ?array
     {
@@ -632,7 +632,7 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets allowance_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorInvoices\AllowanceDetails[] $allowance_details total allowance amount details for all line items
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\AllowanceDetails[] $allowance_details total allowance amount details for all line items
      */
     public function setAllowanceDetails(?array $allowance_details) : self
     {
@@ -644,7 +644,7 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets items.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorInvoices\InvoiceItem[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\InvoiceItem[]
      */
     public function getItems() : ?array
     {
@@ -654,7 +654,7 @@ class Invoice implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets items.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorInvoices\InvoiceItem[] $items the list of invoice items
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\InvoiceItem[] $items the list of invoice items
      */
     public function setItems(?array $items) : self
     {

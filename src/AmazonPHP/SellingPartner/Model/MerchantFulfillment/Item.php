@@ -59,10 +59,10 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
     protected static /** [COMPAT] array */ $openAPITypes = [
         'order_item_id' => 'string',
         'quantity' => 'int',
-        'item_weight' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Weight',
+        'item_weight' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Weight',
         'item_description' => 'string',
         'transparency_code_list' => 'string[]',
-        'item_level_seller_inputs_list' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalSellerInputs[]',
+        'item_level_seller_inputs_list' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalSellerInputs[]',
     ];
 
     /**
@@ -299,7 +299,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets item_weight.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Weight $item_weight item_weight
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Weight $item_weight item_weight
      */
     public function setItemWeight(?Weight $item_weight) : self
     {
@@ -353,7 +353,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets item_level_seller_inputs_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalSellerInputs[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalSellerInputs[]
      */
     public function getItemLevelSellerInputsList() : ?array
     {
@@ -363,7 +363,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets item_level_seller_inputs_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalSellerInputs[] $item_level_seller_inputs_list a list of additional seller input pairs required to purchase shipping
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalSellerInputs[] $item_level_seller_inputs_list a list of additional seller input pairs required to purchase shipping
      */
     public function setItemLevelSellerInputsList(?array $item_level_seller_inputs_list) : self
     {

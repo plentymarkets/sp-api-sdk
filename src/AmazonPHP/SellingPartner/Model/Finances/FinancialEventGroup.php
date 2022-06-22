@@ -60,12 +60,12 @@ class FinancialEventGroup implements \ArrayAccess, \JsonSerializable, ModelInter
         'financial_event_group_id' => 'string',
         'processing_status' => 'string',
         'fund_transfer_status' => 'string',
-        'original_total' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
-        'converted_total' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'original_total' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'converted_total' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
         'fund_transfer_date' => '\DateTime',
         'trace_id' => 'string',
         'account_tail' => 'string',
-        'beginning_balance' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'beginning_balance' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
         'financial_event_group_start' => '\DateTime',
         'financial_event_group_end' => '\DateTime',
     ];
@@ -339,7 +339,7 @@ class FinancialEventGroup implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets original_total.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $original_total original_total
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $original_total original_total
      */
     public function setOriginalTotal(?Currency $original_total) : self
     {
@@ -359,7 +359,7 @@ class FinancialEventGroup implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets converted_total.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $converted_total converted_total
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $converted_total converted_total
      */
     public function setConvertedTotal(?Currency $converted_total) : self
     {
@@ -441,7 +441,7 @@ class FinancialEventGroup implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets beginning_balance.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $beginning_balance beginning_balance
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $beginning_balance beginning_balance
      */
     public function setBeginningBalance(?Currency $beginning_balance) : self
     {

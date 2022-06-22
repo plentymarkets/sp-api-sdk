@@ -57,7 +57,7 @@ class UpdateVerificationStatusRequest implements \ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'regulated_order_verification_status' => '\AmazonPHP\SellingPartner\Model\Orders\UpdateVerificationStatusRequestBody',
+        'regulated_order_verification_status' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\UpdateVerificationStatusRequestBody',
     ];
 
     /**

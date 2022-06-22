@@ -57,9 +57,9 @@ class GetInventorySummariesResponse implements \ArrayAccess, \JsonSerializable, 
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\FBAInventory\GetInventorySummariesResult',
-        'pagination' => '\AmazonPHP\SellingPartner\Model\FBAInventory\Pagination',
-        'errors' => '\AmazonPHP\SellingPartner\Model\FBAInventory\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\GetInventorySummariesResult',
+        'pagination' => '\Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\Pagination',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\Error[]',
     ];
 
     /**
@@ -231,7 +231,7 @@ class GetInventorySummariesResponse implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FBAInventory\GetInventorySummariesResult $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\GetInventorySummariesResult $payload payload
      */
     public function setPayload(?GetInventorySummariesResult $payload) : self
     {
@@ -251,7 +251,7 @@ class GetInventorySummariesResponse implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets pagination.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FBAInventory\Pagination $pagination pagination
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\Pagination $pagination pagination
      */
     public function setPagination(?Pagination $pagination) : self
     {
@@ -263,7 +263,7 @@ class GetInventorySummariesResponse implements \ArrayAccess, \JsonSerializable, 
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FBAInventory\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\Error[]
      */
     public function getErrors() : ?array
     {
@@ -273,7 +273,7 @@ class GetInventorySummariesResponse implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FBAInventory\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

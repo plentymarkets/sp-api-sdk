@@ -60,8 +60,8 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
         'item_sequence_number' => 'string',
         'amazon_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
-        'shipped_quantity' => '\AmazonPHP\SellingPartner\Model\VendorShipments\ItemQuantity',
-        'item_details' => '\AmazonPHP\SellingPartner\Model\VendorShipments\ItemDetails',
+        'shipped_quantity' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ItemQuantity',
+        'item_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ItemDetails',
     ];
 
     /**
@@ -333,7 +333,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets item_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\ItemDetails $item_details item_details
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ItemDetails $item_details item_details
      */
     public function setItemDetails(?ItemDetails $item_details) : self
     {

@@ -57,13 +57,13 @@ class PartneredLtlDataInput implements \ArrayAccess, \JsonSerializable, ModelInt
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'contact' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Contact',
+        'contact' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Contact',
         'box_count' => 'int',
-        'seller_freight_class' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SellerFreightClass',
+        'seller_freight_class' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SellerFreightClass',
         'freight_ready_date' => '\DateTime',
-        'pallet_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pallet[]',
-        'total_weight' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight',
-        'seller_declared_value' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount',
+        'pallet_list' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pallet[]',
+        'total_weight' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight',
+        'seller_declared_value' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount',
     ];
 
     /**
@@ -255,7 +255,7 @@ class PartneredLtlDataInput implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets contact.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Contact $contact contact
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Contact $contact contact
      */
     public function setContact(?Contact $contact) : self
     {
@@ -295,7 +295,7 @@ class PartneredLtlDataInput implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets seller_freight_class.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SellerFreightClass $seller_freight_class seller_freight_class
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SellerFreightClass $seller_freight_class seller_freight_class
      */
     public function setSellerFreightClass(?SellerFreightClass $seller_freight_class) : self
     {
@@ -329,7 +329,7 @@ class PartneredLtlDataInput implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Gets pallet_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pallet[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pallet[]
      */
     public function getPalletList() : ?array
     {
@@ -339,7 +339,7 @@ class PartneredLtlDataInput implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets pallet_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pallet[] $pallet_list a list of pallet information
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pallet[] $pallet_list a list of pallet information
      */
     public function setPalletList(?array $pallet_list) : self
     {
@@ -359,7 +359,7 @@ class PartneredLtlDataInput implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets total_weight.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight $total_weight total_weight
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight $total_weight total_weight
      */
     public function setTotalWeight(?Weight $total_weight) : self
     {
@@ -379,7 +379,7 @@ class PartneredLtlDataInput implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets seller_declared_value.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount $seller_declared_value seller_declared_value
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount $seller_declared_value seller_declared_value
      */
     public function setSellerDeclaredValue(?Amount $seller_declared_value) : self
     {

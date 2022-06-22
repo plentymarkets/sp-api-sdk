@@ -58,7 +58,7 @@ class ScheduledDeliveryInfo implements \ArrayAccess, \JsonSerializable, ModelInt
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'delivery_time_zone' => 'string',
-        'delivery_windows' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\DeliveryWindow[]',
+        'delivery_windows' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\DeliveryWindow[]',
     ];
 
     /**

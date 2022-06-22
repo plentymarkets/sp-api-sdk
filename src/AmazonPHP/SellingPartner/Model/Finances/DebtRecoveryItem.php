@@ -57,8 +57,8 @@ class DebtRecoveryItem implements \ArrayAccess, \JsonSerializable, ModelInterfac
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'recovery_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
-        'original_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'recovery_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'original_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
         'group_begin_date' => '\DateTime',
         'group_end_date' => '\DateTime',
     ];
@@ -237,7 +237,7 @@ class DebtRecoveryItem implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Sets recovery_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $recovery_amount recovery_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $recovery_amount recovery_amount
      */
     public function setRecoveryAmount(?Currency $recovery_amount) : self
     {
@@ -257,7 +257,7 @@ class DebtRecoveryItem implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Sets original_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $original_amount original_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $original_amount original_amount
      */
     public function setOriginalAmount(?Currency $original_amount) : self
     {

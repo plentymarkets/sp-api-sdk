@@ -57,8 +57,8 @@ class GetPurchaseOrdersResponse implements \ArrayAccess, \JsonSerializable, Mode
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\VendorOrders\OrderList',
-        'errors' => '\AmazonPHP\SellingPartner\Model\VendorOrders\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderList',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\Error[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class GetPurchaseOrdersResponse implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\OrderList $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderList $payload payload
      */
     public function setPayload(?OrderList $payload) : self
     {
@@ -237,7 +237,7 @@ class GetPurchaseOrdersResponse implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorOrders\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\Error[]
      */
     public function getErrors() : ?array
     {
@@ -247,7 +247,7 @@ class GetPurchaseOrdersResponse implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

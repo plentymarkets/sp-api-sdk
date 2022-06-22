@@ -60,7 +60,7 @@ class TransportHeader implements \ArrayAccess, \JsonSerializable, ModelInterface
         'seller_id' => 'string',
         'shipment_id' => 'string',
         'is_partnered' => 'bool',
-        'shipment_type' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentType',
+        'shipment_type' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentType',
     ];
 
     /**

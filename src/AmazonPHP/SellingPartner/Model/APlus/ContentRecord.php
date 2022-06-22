@@ -58,8 +58,8 @@ class ContentRecord implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'content_reference_key' => 'string',
-        'content_metadata' => '\AmazonPHP\SellingPartner\Model\APlus\ContentMetadata',
-        'content_document' => '\AmazonPHP\SellingPartner\Model\APlus\ContentDocument',
+        'content_metadata' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentMetadata',
+        'content_document' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentDocument',
     ];
 
     /**
@@ -265,7 +265,7 @@ class ContentRecord implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets content_metadata.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\ContentMetadata $content_metadata content_metadata
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentMetadata $content_metadata content_metadata
      */
     public function setContentMetadata(?ContentMetadata $content_metadata) : self
     {
@@ -285,7 +285,7 @@ class ContentRecord implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets content_document.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\ContentDocument $content_document content_document
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentDocument $content_document content_document
      */
     public function setContentDocument(?ContentDocument $content_document) : self
     {

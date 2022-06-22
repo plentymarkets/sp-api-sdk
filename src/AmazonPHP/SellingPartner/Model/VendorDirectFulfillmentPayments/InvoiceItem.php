@@ -60,13 +60,13 @@ class InvoiceItem implements \ArrayAccess, \JsonSerializable, ModelInterface
         'item_sequence_number' => 'string',
         'buyer_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
-        'invoiced_quantity' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\ItemQuantity',
-        'net_cost' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\Money',
+        'invoiced_quantity' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\ItemQuantity',
+        'net_cost' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\Money',
         'purchase_order_number' => 'string',
         'vendor_order_number' => 'string',
         'hsn_code' => 'string',
-        'tax_details' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\TaxDetail[]',
-        'charge_details' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\ChargeDetails[]',
+        'tax_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\TaxDetail[]',
+        'charge_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\ChargeDetails[]',
     ];
 
     /**
@@ -443,7 +443,7 @@ class InvoiceItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets tax_details.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\TaxDetail[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\TaxDetail[]
      */
     public function getTaxDetails() : ?array
     {
@@ -453,7 +453,7 @@ class InvoiceItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets tax_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\TaxDetail[] $tax_details individual tax details per line item
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\TaxDetail[] $tax_details individual tax details per line item
      */
     public function setTaxDetails(?array $tax_details) : self
     {
@@ -465,7 +465,7 @@ class InvoiceItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets charge_details.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\ChargeDetails[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\ChargeDetails[]
      */
     public function getChargeDetails() : ?array
     {
@@ -475,7 +475,7 @@ class InvoiceItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets charge_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\ChargeDetails[] $charge_details individual charge details per line item
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\ChargeDetails[] $charge_details individual charge details per line item
      */
     public function setChargeDetails(?array $charge_details) : self
     {

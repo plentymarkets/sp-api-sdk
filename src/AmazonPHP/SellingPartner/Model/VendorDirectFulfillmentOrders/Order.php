@@ -58,7 +58,7 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'purchase_order_number' => 'string',
-        'order_details' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\OrderDetails',
+        'order_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\OrderDetails',
     ];
 
     /**
@@ -251,7 +251,7 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets order_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\OrderDetails $order_details order_details
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\OrderDetails $order_details order_details
      */
     public function setOrderDetails(?OrderDetails $order_details) : self
     {

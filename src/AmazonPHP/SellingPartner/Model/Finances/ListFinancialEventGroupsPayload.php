@@ -58,7 +58,7 @@ class ListFinancialEventGroupsPayload implements \ArrayAccess, \JsonSerializable
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'next_token' => 'string',
-        'financial_event_group_list' => '\AmazonPHP\SellingPartner\Model\Finances\FinancialEventGroup[]',
+        'financial_event_group_list' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\FinancialEventGroup[]',
     ];
 
     /**
@@ -237,7 +237,7 @@ class ListFinancialEventGroupsPayload implements \ArrayAccess, \JsonSerializable
     /**
      * Gets financial_event_group_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Finances\FinancialEventGroup[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\FinancialEventGroup[]
      */
     public function getFinancialEventGroupList() : ?array
     {
@@ -247,7 +247,7 @@ class ListFinancialEventGroupsPayload implements \ArrayAccess, \JsonSerializable
     /**
      * Sets financial_event_group_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\FinancialEventGroup[] $financial_event_group_list a list of financial event group information
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\FinancialEventGroup[] $financial_event_group_list a list of financial event group information
      */
     public function setFinancialEventGroupList(?array $financial_event_group_list) : self
     {

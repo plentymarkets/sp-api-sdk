@@ -58,7 +58,7 @@ class CreateShipmentResult implements \ArrayAccess, \JsonSerializable, ModelInte
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'shipment_id' => 'string',
-        'eligible_rates' => '\AmazonPHP\SellingPartner\Model\Shipping\Rate[]',
+        'eligible_rates' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Rate[]',
     ];
 
     /**

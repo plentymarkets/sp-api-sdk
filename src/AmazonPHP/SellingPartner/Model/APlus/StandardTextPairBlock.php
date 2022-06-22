@@ -57,8 +57,8 @@ class StandardTextPairBlock implements \ArrayAccess, \JsonSerializable, ModelInt
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'label' => '\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
-        'description' => '\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
+        'label' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
+        'description' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
     ];
 
     /**
@@ -225,7 +225,7 @@ class StandardTextPairBlock implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets label.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\TextComponent $label label
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent $label label
      */
     public function setLabel(?TextComponent $label) : self
     {
@@ -245,7 +245,7 @@ class StandardTextPairBlock implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets description.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\TextComponent $description description
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent $description description
      */
     public function setDescription(?TextComponent $description) : self
     {

@@ -57,7 +57,7 @@ class ShipmentInvoiceStatusResponse implements \ArrayAccess, \JsonSerializable, 
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'shipments' => '\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\ShipmentInvoiceStatusInfo',
+        'shipments' => '\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\ShipmentInvoiceStatusInfo',
     ];
 
     /**
@@ -219,7 +219,7 @@ class ShipmentInvoiceStatusResponse implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets shipments.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\ShipmentInvoiceStatusInfo $shipments shipments
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\ShipmentInvoiceStatusInfo $shipments shipments
      */
     public function setShipments(?ShipmentInvoiceStatusInfo $shipments) : self
     {

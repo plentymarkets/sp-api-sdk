@@ -57,9 +57,9 @@ class PriceToEstimateFees implements \ArrayAccess, \JsonSerializable, ModelInter
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'listing_price' => '\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
-        'shipping' => '\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
-        'points' => '\AmazonPHP\SellingPartner\Model\ProductFees\Points',
+        'listing_price' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
+        'shipping' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
+        'points' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\Points',
     ];
 
     /**
@@ -257,7 +257,7 @@ class PriceToEstimateFees implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets shipping.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType $shipping shipping
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType $shipping shipping
      */
     public function setShipping(?MoneyType $shipping) : self
     {
@@ -277,7 +277,7 @@ class PriceToEstimateFees implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets points.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductFees\Points $points points
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\Points $points points
      */
     public function setPoints(?Points $points) : self
     {

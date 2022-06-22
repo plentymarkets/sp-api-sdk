@@ -57,7 +57,7 @@ class PostContentDocumentRequest implements \ArrayAccess, \JsonSerializable, Mod
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'content_document' => '\AmazonPHP\SellingPartner\Model\APlus\ContentDocument',
+        'content_document' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentDocument',
     ];
 
     /**

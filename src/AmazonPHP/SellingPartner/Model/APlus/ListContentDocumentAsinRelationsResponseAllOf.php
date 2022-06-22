@@ -57,7 +57,7 @@ class ListContentDocumentAsinRelationsResponseAllOf implements \ArrayAccess, \Js
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'asin_metadata_set' => '\AmazonPHP\SellingPartner\Model\APlus\AsinMetadata[]',
+        'asin_metadata_set' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\AsinMetadata[]',
     ];
 
     /**

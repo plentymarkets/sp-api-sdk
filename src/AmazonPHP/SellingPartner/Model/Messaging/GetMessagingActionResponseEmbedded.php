@@ -57,7 +57,7 @@ class GetMessagingActionResponseEmbedded implements \ArrayAccess, \JsonSerializa
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'schema' => '\AmazonPHP\SellingPartner\Model\Messaging\GetSchemaResponse',
+        'schema' => '\Plenty\AmazonPHP\SellingPartner\Model\Messaging\GetSchemaResponse',
     ];
 
     /**
@@ -219,7 +219,7 @@ class GetMessagingActionResponseEmbedded implements \ArrayAccess, \JsonSerializa
     /**
      * Sets schema.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Messaging\GetSchemaResponse $schema schema
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Messaging\GetSchemaResponse $schema schema
      */
     public function setSchema(?GetSchemaResponse $schema) : self
     {

@@ -57,7 +57,7 @@ class GetShipmentItemsResult implements \ArrayAccess, \JsonSerializable, ModelIn
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'item_data' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentItem[]',
+        'item_data' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentItem[]',
         'next_token' => 'string',
     ];
 
@@ -217,7 +217,7 @@ class GetShipmentItemsResult implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets item_data.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentItem[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentItem[]
      */
     public function getItemData() : ?array
     {
@@ -227,7 +227,7 @@ class GetShipmentItemsResult implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets item_data.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentItem[] $item_data a list of inbound shipment item information
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentItem[] $item_data a list of inbound shipment item information
      */
     public function setItemData(?array $item_data) : self
     {

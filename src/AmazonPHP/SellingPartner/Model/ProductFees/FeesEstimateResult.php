@@ -58,9 +58,9 @@ class FeesEstimateResult implements \ArrayAccess, \JsonSerializable, ModelInterf
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'status' => 'string',
-        'fees_estimate_identifier' => '\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimateIdentifier',
-        'fees_estimate' => '\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimate',
-        'error' => '\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimateError',
+        'fees_estimate_identifier' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimateIdentifier',
+        'fees_estimate' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimate',
+        'error' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimateError',
     ];
 
     /**
@@ -257,7 +257,7 @@ class FeesEstimateResult implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets fees_estimate_identifier.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimateIdentifier $fees_estimate_identifier fees_estimate_identifier
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimateIdentifier $fees_estimate_identifier fees_estimate_identifier
      */
     public function setFeesEstimateIdentifier(?FeesEstimateIdentifier $fees_estimate_identifier) : self
     {
@@ -277,7 +277,7 @@ class FeesEstimateResult implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets fees_estimate.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimate $fees_estimate fees_estimate
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimate $fees_estimate fees_estimate
      */
     public function setFeesEstimate(?FeesEstimate $fees_estimate) : self
     {
@@ -297,7 +297,7 @@ class FeesEstimateResult implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets error.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimateError $error error
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimateError $error error
      */
     public function setError(?FeesEstimateError $error) : self
     {

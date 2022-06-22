@@ -58,7 +58,7 @@ class OfferCountType implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'condition' => 'string',
-        'fulfillment_channel' => '\AmazonPHP\SellingPartner\Model\ProductPricing\FulfillmentChannelType',
+        'fulfillment_channel' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\FulfillmentChannelType',
         'offer_count' => 'int',
     ];
 
@@ -251,7 +251,7 @@ class OfferCountType implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets fulfillment_channel.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\FulfillmentChannelType $fulfillment_channel fulfillment_channel
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\FulfillmentChannelType $fulfillment_channel fulfillment_channel
      */
     public function setFulfillmentChannel(?FulfillmentChannelType $fulfillment_channel) : self
     {

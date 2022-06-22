@@ -57,7 +57,7 @@ class GetTransportDetailsResult implements \ArrayAccess, \JsonSerializable, Mode
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'transport_content' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportContent',
+        'transport_content' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportContent',
     ];
 
     /**
@@ -219,7 +219,7 @@ class GetTransportDetailsResult implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets transport_content.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportContent $transport_content transport_content
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportContent $transport_content transport_content
      */
     public function setTransportContent(?TransportContent $transport_content) : self
     {

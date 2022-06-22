@@ -57,8 +57,8 @@ class ShipmentMeasurements implements \ArrayAccess, \JsonSerializable, ModelInte
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'gross_shipment_weight' => '\AmazonPHP\SellingPartner\Model\VendorShipments\Weight',
-        'shipment_volume' => '\AmazonPHP\SellingPartner\Model\VendorShipments\Volume',
+        'gross_shipment_weight' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Weight',
+        'shipment_volume' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Volume',
         'carton_count' => 'int',
         'pallet_count' => 'int',
     ];
@@ -237,7 +237,7 @@ class ShipmentMeasurements implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Sets gross_shipment_weight.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\Weight $gross_shipment_weight gross_shipment_weight
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Weight $gross_shipment_weight gross_shipment_weight
      */
     public function setGrossShipmentWeight(?Weight $gross_shipment_weight) : self
     {
@@ -257,7 +257,7 @@ class ShipmentMeasurements implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Sets shipment_volume.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\Volume $shipment_volume shipment_volume
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Volume $shipment_volume shipment_volume
      */
     public function setShipmentVolume(?Volume $shipment_volume) : self
     {

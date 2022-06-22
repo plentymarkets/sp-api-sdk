@@ -57,8 +57,8 @@ class Pallet implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'dimensions' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions',
-        'weight' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight',
+        'dimensions' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions',
+        'weight' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight',
         'is_stacked' => 'bool',
     ];
 
@@ -261,7 +261,7 @@ class Pallet implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets weight.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight $weight weight
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight $weight weight
      */
     public function setWeight(?Weight $weight) : self
     {

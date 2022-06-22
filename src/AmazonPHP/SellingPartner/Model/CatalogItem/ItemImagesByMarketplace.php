@@ -58,7 +58,7 @@ class ItemImagesByMarketplace implements \ArrayAccess, \JsonSerializable, ModelI
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace_id' => 'string',
-        'images' => '\AmazonPHP\SellingPartner\Model\CatalogItem\ItemImage[]',
+        'images' => '\Plenty\AmazonPHP\SellingPartner\Model\CatalogItem\ItemImage[]',
     ];
 
     /**

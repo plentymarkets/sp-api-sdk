@@ -57,10 +57,10 @@ class ServiceRate implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'total_charge' => '\AmazonPHP\SellingPartner\Model\Shipping\Currency',
-        'billable_weight' => '\AmazonPHP\SellingPartner\Model\Shipping\Weight',
-        'service_type' => '\AmazonPHP\SellingPartner\Model\Shipping\ServiceType',
-        'promise' => '\AmazonPHP\SellingPartner\Model\Shipping\ShippingPromiseSet',
+        'total_charge' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Currency',
+        'billable_weight' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Weight',
+        'service_type' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\ServiceType',
+        'promise' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\ShippingPromiseSet',
     ];
 
     /**

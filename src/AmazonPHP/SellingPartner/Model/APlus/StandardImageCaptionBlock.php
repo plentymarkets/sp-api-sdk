@@ -57,8 +57,8 @@ class StandardImageCaptionBlock implements \ArrayAccess, \JsonSerializable, Mode
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'image' => '\AmazonPHP\SellingPartner\Model\APlus\ImageComponent',
-        'caption' => '\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
+        'image' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ImageComponent',
+        'caption' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
     ];
 
     /**
@@ -225,7 +225,7 @@ class StandardImageCaptionBlock implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets image.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\ImageComponent $image image
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\ImageComponent $image image
      */
     public function setImage(?ImageComponent $image) : self
     {
@@ -245,7 +245,7 @@ class StandardImageCaptionBlock implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets caption.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\TextComponent $caption caption
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent $caption caption
      */
     public function setCaption(?TextComponent $caption) : self
     {

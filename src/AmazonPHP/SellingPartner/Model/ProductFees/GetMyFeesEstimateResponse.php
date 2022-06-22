@@ -57,8 +57,8 @@ class GetMyFeesEstimateResponse implements \ArrayAccess, \JsonSerializable, Mode
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\ProductFees\GetMyFeesEstimateResult',
-        'errors' => '\AmazonPHP\SellingPartner\Model\ProductFees\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\GetMyFeesEstimateResult',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\Error[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class GetMyFeesEstimateResponse implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductFees\GetMyFeesEstimateResult $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\GetMyFeesEstimateResult $payload payload
      */
     public function setPayload(?GetMyFeesEstimateResult $payload) : self
     {
@@ -237,7 +237,7 @@ class GetMyFeesEstimateResponse implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ProductFees\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\Error[]
      */
     public function getErrors() : ?array
     {
@@ -247,7 +247,7 @@ class GetMyFeesEstimateResponse implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductFees\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

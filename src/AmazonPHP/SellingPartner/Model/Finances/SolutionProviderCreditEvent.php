@@ -65,7 +65,7 @@ class SolutionProviderCreditEvent implements \ArrayAccess, \JsonSerializable, Mo
         'seller_store_name' => 'string',
         'provider_id' => 'string',
         'provider_store_name' => 'string',
-        'transaction_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'transaction_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
         'transaction_creation_date' => '\DateTime',
     ];
 
@@ -433,7 +433,7 @@ class SolutionProviderCreditEvent implements \ArrayAccess, \JsonSerializable, Mo
     /**
      * Sets transaction_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $transaction_amount transaction_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $transaction_amount transaction_amount
      */
     public function setTransactionAmount(?Currency $transaction_amount) : self
     {

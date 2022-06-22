@@ -57,10 +57,10 @@ class GetInboundGuidanceResult implements \ArrayAccess, \JsonSerializable, Model
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'sku_inbound_guidance_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SKUInboundGuidance[]',
-        'invalid_sku_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidSKU[]',
-        'asin_inbound_guidance_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ASINInboundGuidance[]',
-        'invalid_asin_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidASIN[]',
+        'sku_inbound_guidance_list' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SKUInboundGuidance[]',
+        'invalid_sku_list' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidSKU[]',
+        'asin_inbound_guidance_list' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ASINInboundGuidance[]',
+        'invalid_asin_list' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidASIN[]',
     ];
 
     /**
@@ -229,7 +229,7 @@ class GetInboundGuidanceResult implements \ArrayAccess, \JsonSerializable, Model
     /**
      * Gets sku_inbound_guidance_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SKUInboundGuidance[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SKUInboundGuidance[]
      */
     public function getSkuInboundGuidanceList() : ?array
     {
@@ -239,7 +239,7 @@ class GetInboundGuidanceResult implements \ArrayAccess, \JsonSerializable, Model
     /**
      * Sets sku_inbound_guidance_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SKUInboundGuidance[] $sku_inbound_guidance_list a list of SKU inbound guidance information
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SKUInboundGuidance[] $sku_inbound_guidance_list a list of SKU inbound guidance information
      */
     public function setSkuInboundGuidanceList(?array $sku_inbound_guidance_list) : self
     {
@@ -251,7 +251,7 @@ class GetInboundGuidanceResult implements \ArrayAccess, \JsonSerializable, Model
     /**
      * Gets invalid_sku_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidSKU[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidSKU[]
      */
     public function getInvalidSkuList() : ?array
     {
@@ -261,7 +261,7 @@ class GetInboundGuidanceResult implements \ArrayAccess, \JsonSerializable, Model
     /**
      * Sets invalid_sku_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidSKU[] $invalid_sku_list a list of invalid SKU values and the reason they are invalid
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidSKU[] $invalid_sku_list a list of invalid SKU values and the reason they are invalid
      */
     public function setInvalidSkuList(?array $invalid_sku_list) : self
     {
@@ -273,7 +273,7 @@ class GetInboundGuidanceResult implements \ArrayAccess, \JsonSerializable, Model
     /**
      * Gets asin_inbound_guidance_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ASINInboundGuidance[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ASINInboundGuidance[]
      */
     public function getAsinInboundGuidanceList() : ?array
     {
@@ -283,7 +283,7 @@ class GetInboundGuidanceResult implements \ArrayAccess, \JsonSerializable, Model
     /**
      * Sets asin_inbound_guidance_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ASINInboundGuidance[] $asin_inbound_guidance_list a list of ASINs and their associated inbound guidance
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ASINInboundGuidance[] $asin_inbound_guidance_list a list of ASINs and their associated inbound guidance
      */
     public function setAsinInboundGuidanceList(?array $asin_inbound_guidance_list) : self
     {
@@ -295,7 +295,7 @@ class GetInboundGuidanceResult implements \ArrayAccess, \JsonSerializable, Model
     /**
      * Gets invalid_asin_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidASIN[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidASIN[]
      */
     public function getInvalidAsinList() : ?array
     {
@@ -305,7 +305,7 @@ class GetInboundGuidanceResult implements \ArrayAccess, \JsonSerializable, Model
     /**
      * Sets invalid_asin_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidASIN[] $invalid_asin_list a list of invalid ASIN values and the reasons they are invalid
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidASIN[] $invalid_asin_list a list of invalid ASIN values and the reasons they are invalid
      */
     public function setInvalidAsinList(?array $invalid_asin_list) : self
     {

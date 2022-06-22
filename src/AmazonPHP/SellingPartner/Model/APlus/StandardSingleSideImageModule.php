@@ -57,8 +57,8 @@ class StandardSingleSideImageModule implements \ArrayAccess, \JsonSerializable, 
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'image_position_type' => '\AmazonPHP\SellingPartner\Model\APlus\PositionType',
-        'block' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
+        'image_position_type' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\PositionType',
+        'block' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
     ];
 
     /**
@@ -251,7 +251,7 @@ class StandardSingleSideImageModule implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets block.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $block block
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $block block
      */
     public function setBlock(?StandardImageTextBlock $block) : self
     {

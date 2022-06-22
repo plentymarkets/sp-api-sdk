@@ -58,7 +58,7 @@ class PurchaseLabelsRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'rate_id' => 'string',
-        'label_specification' => '\AmazonPHP\SellingPartner\Model\Shipping\LabelSpecification',
+        'label_specification' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\LabelSpecification',
     ];
 
     /**

@@ -58,8 +58,8 @@ class ASINInboundGuidance implements \ArrayAccess, \JsonSerializable, ModelInter
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'asin' => 'string',
-        'inbound_guidance' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundGuidance',
-        'guidance_reason_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GuidanceReason[]',
+        'inbound_guidance' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundGuidance',
+        'guidance_reason_list' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GuidanceReason[]',
     ];
 
     /**
@@ -273,7 +273,7 @@ class ASINInboundGuidance implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Gets guidance_reason_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GuidanceReason[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GuidanceReason[]
      */
     public function getGuidanceReasonList() : ?array
     {
@@ -283,7 +283,7 @@ class ASINInboundGuidance implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets guidance_reason_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GuidanceReason[] $guidance_reason_list a list of inbound guidance reason information
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GuidanceReason[] $guidance_reason_list a list of inbound guidance reason information
      */
     public function setGuidanceReasonList(?array $guidance_reason_list) : self
     {

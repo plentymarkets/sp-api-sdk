@@ -58,7 +58,7 @@ class ChargeComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'charge_type' => 'string',
-        'charge_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'charge_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
     ];
 
     /**
@@ -245,7 +245,7 @@ class ChargeComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets charge_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $charge_amount charge_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $charge_amount charge_amount
      */
     public function setChargeAmount(?Currency $charge_amount) : self
     {

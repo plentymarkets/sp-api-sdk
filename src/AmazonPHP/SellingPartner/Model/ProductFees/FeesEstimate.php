@@ -58,8 +58,8 @@ class FeesEstimate implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'time_of_fees_estimation' => '\DateTime',
-        'total_fees_estimate' => '\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
-        'fee_detail_list' => '\AmazonPHP\SellingPartner\Model\ProductFees\FeeDetail[]',
+        'total_fees_estimate' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
+        'fee_detail_list' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\FeeDetail[]',
     ];
 
     /**
@@ -259,7 +259,7 @@ class FeesEstimate implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets total_fees_estimate.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType $total_fees_estimate total_fees_estimate
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType $total_fees_estimate total_fees_estimate
      */
     public function setTotalFeesEstimate(?MoneyType $total_fees_estimate) : self
     {
@@ -271,7 +271,7 @@ class FeesEstimate implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets fee_detail_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ProductFees\FeeDetail[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\FeeDetail[]
      */
     public function getFeeDetailList() : ?array
     {
@@ -281,7 +281,7 @@ class FeesEstimate implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets fee_detail_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductFees\FeeDetail[] $fee_detail_list a list of other fees that contribute to a given fee
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\FeeDetail[] $fee_detail_list a list of other fees that contribute to a given fee
      */
     public function setFeeDetailList(?array $fee_detail_list) : self
     {

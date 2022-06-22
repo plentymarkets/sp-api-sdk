@@ -58,7 +58,7 @@ class TextItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'position' => 'int',
-        'text' => '\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
+        'text' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
     ];
 
     /**

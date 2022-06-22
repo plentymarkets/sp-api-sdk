@@ -57,7 +57,7 @@ class RegulatedInformation implements \ArrayAccess, \JsonSerializable, ModelInte
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'fields' => '\AmazonPHP\SellingPartner\Model\Orders\RegulatedInformationField[]',
+        'fields' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\RegulatedInformationField[]',
     ];
 
     /**

@@ -59,7 +59,7 @@ class Destination implements \ArrayAccess, \JsonSerializable, ModelInterface
     protected static /** [COMPAT] array */ $openAPITypes = [
         'name' => 'string',
         'destination_id' => 'string',
-        'resource' => '\AmazonPHP\SellingPartner\Model\Notifications\DestinationResource',
+        'resource' => '\Plenty\AmazonPHP\SellingPartner\Model\Notifications\DestinationResource',
     ];
 
     /**

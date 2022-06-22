@@ -65,10 +65,10 @@ class Appointment implements \ArrayAccess, \JsonSerializable, ModelInterface
     protected static /** [COMPAT] array */ $openAPITypes = [
         'appointment_id' => 'string',
         'appointment_status' => 'string',
-        'appointment_time' => '\AmazonPHP\SellingPartner\Model\Services\AppointmentTime',
-        'assigned_technicians' => '\AmazonPHP\SellingPartner\Model\Services\Technician[]',
+        'appointment_time' => '\Plenty\AmazonPHP\SellingPartner\Model\Services\AppointmentTime',
+        'assigned_technicians' => '\Plenty\AmazonPHP\SellingPartner\Model\Services\Technician[]',
         'rescheduled_appointment_id' => 'string',
-        'poa' => '\AmazonPHP\SellingPartner\Model\Services\Poa',
+        'poa' => '\Plenty\AmazonPHP\SellingPartner\Model\Services\Poa',
     ];
 
     /**
@@ -360,7 +360,7 @@ class Appointment implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets appointment_time.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Services\AppointmentTime $appointment_time appointment_time
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Services\AppointmentTime $appointment_time appointment_time
      */
     public function setAppointmentTime(?AppointmentTime $appointment_time) : self
     {
@@ -372,7 +372,7 @@ class Appointment implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets assigned_technicians.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Services\Technician[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Services\Technician[]
      */
     public function getAssignedTechnicians() : ?array
     {
@@ -382,7 +382,7 @@ class Appointment implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets assigned_technicians.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Services\Technician[] $assigned_technicians a list of technicians assigned to the service job
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Services\Technician[] $assigned_technicians a list of technicians assigned to the service job
      */
     public function setAssignedTechnicians(?array $assigned_technicians) : self
     {
@@ -433,7 +433,7 @@ class Appointment implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets poa.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Services\Poa $poa poa
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Services\Poa $poa poa
      */
     public function setPoa(?Poa $poa) : self
     {

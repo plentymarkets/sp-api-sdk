@@ -57,8 +57,8 @@ class GetMessagingActionsForOrderResponseLinks implements \ArrayAccess, \JsonSer
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'self' => '\AmazonPHP\SellingPartner\Model\Messaging\LinkObject',
-        'actions' => '\AmazonPHP\SellingPartner\Model\Messaging\LinkObject[]',
+        'self' => '\Plenty\AmazonPHP\SellingPartner\Model\Messaging\LinkObject',
+        'actions' => '\Plenty\AmazonPHP\SellingPartner\Model\Messaging\LinkObject[]',
     ];
 
     /**

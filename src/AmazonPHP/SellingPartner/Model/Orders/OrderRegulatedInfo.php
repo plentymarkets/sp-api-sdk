@@ -58,9 +58,9 @@ class OrderRegulatedInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'amazon_order_id' => 'string',
-        'regulated_information' => '\AmazonPHP\SellingPartner\Model\Orders\RegulatedInformation',
+        'regulated_information' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\RegulatedInformation',
         'requires_dosage_label' => 'bool',
-        'regulated_order_verification_status' => '\AmazonPHP\SellingPartner\Model\Orders\RegulatedOrderVerificationStatus',
+        'regulated_order_verification_status' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\RegulatedOrderVerificationStatus',
     ];
 
     /**

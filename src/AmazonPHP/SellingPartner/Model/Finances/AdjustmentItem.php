@@ -58,8 +58,8 @@ class AdjustmentItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'quantity' => 'string',
-        'per_unit_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
-        'total_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'per_unit_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'total_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
         'seller_sku' => 'string',
         'fn_sku' => 'string',
         'product_description' => 'string',
@@ -275,7 +275,7 @@ class AdjustmentItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets per_unit_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $per_unit_amount per_unit_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $per_unit_amount per_unit_amount
      */
     public function setPerUnitAmount(?Currency $per_unit_amount) : self
     {
@@ -295,7 +295,7 @@ class AdjustmentItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets total_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $total_amount total_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $total_amount total_amount
      */
     public function setTotalAmount(?Currency $total_amount) : self
     {

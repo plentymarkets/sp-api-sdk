@@ -57,8 +57,8 @@ class GetSolicitationActionResponseLinks implements \ArrayAccess, \JsonSerializa
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'self' => '\AmazonPHP\SellingPartner\Model\Solicitations\LinkObject',
-        'schema' => '\AmazonPHP\SellingPartner\Model\Solicitations\LinkObject',
+        'self' => '\Plenty\AmazonPHP\SellingPartner\Model\Solicitations\LinkObject',
+        'schema' => '\Plenty\AmazonPHP\SellingPartner\Model\Solicitations\LinkObject',
     ];
 
     /**

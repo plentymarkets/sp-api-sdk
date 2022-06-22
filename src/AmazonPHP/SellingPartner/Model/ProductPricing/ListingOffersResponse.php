@@ -57,10 +57,10 @@ class ListingOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInt
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'headers' => '\AmazonPHP\SellingPartner\Model\ProductPricing\HttpResponseHeaders',
-        'status' => '\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersHttpStatusLine',
-        'body' => '\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse',
-        'request' => '\AmazonPHP\SellingPartner\Model\ProductPricing\ListingOffersRequestParams',
+        'headers' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\HttpResponseHeaders',
+        'status' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersHttpStatusLine',
+        'body' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse',
+        'request' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ListingOffersRequestParams',
     ];
 
     /**
@@ -243,7 +243,7 @@ class ListingOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets headers.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\HttpResponseHeaders $headers headers
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\HttpResponseHeaders $headers headers
      */
     public function setHeaders(?HttpResponseHeaders $headers) : self
     {
@@ -263,7 +263,7 @@ class ListingOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets status.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersHttpStatusLine $status status
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersHttpStatusLine $status status
      */
     public function setStatus(?GetOffersHttpStatusLine $status) : self
     {
@@ -303,7 +303,7 @@ class ListingOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets request.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\ListingOffersRequestParams $request request
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ListingOffersRequestParams $request request
      */
     public function setRequest(?ListingOffersRequestParams $request) : self
     {

@@ -57,7 +57,7 @@ class GetFulfillmentPreviewResult implements \ArrayAccess, \JsonSerializable, Mo
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'fulfillment_previews' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPreview[]',
+        'fulfillment_previews' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPreview[]',
     ];
 
     /**
@@ -211,7 +211,7 @@ class GetFulfillmentPreviewResult implements \ArrayAccess, \JsonSerializable, Mo
     /**
      * Gets fulfillment_previews.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPreview[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPreview[]
      */
     public function getFulfillmentPreviews() : ?array
     {
@@ -221,7 +221,7 @@ class GetFulfillmentPreviewResult implements \ArrayAccess, \JsonSerializable, Mo
     /**
      * Sets fulfillment_previews.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPreview[] $fulfillment_previews an array of fulfillment preview information
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPreview[] $fulfillment_previews an array of fulfillment preview information
      */
     public function setFulfillmentPreviews(?array $fulfillment_previews) : self
     {

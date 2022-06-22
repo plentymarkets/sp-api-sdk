@@ -106,10 +106,10 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
         'sales_channel' => 'string',
         'order_channel' => 'string',
         'ship_service_level' => 'string',
-        'order_total' => '\AmazonPHP\SellingPartner\Model\Orders\Money',
+        'order_total' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money',
         'number_of_items_shipped' => 'int',
         'number_of_items_unshipped' => 'int',
-        'payment_execution_detail' => '\AmazonPHP\SellingPartner\Model\Orders\PaymentExecutionDetailItem[]',
+        'payment_execution_detail' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\PaymentExecutionDetailItem[]',
         'payment_method' => 'string',
         'payment_method_details' => 'string[]',
         'marketplace_id' => 'string',
@@ -131,17 +131,17 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
         'is_estimated_ship_date_set' => 'bool',
         'is_sold_by_ab' => 'bool',
         'is_iba' => 'bool',
-        'default_ship_from_location_address' => '\AmazonPHP\SellingPartner\Model\Orders\Address',
+        'default_ship_from_location_address' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\Address',
         'buyer_invoice_preference' => 'string',
-        'buyer_tax_information' => '\AmazonPHP\SellingPartner\Model\Orders\BuyerTaxInformation',
-        'fulfillment_instruction' => '\AmazonPHP\SellingPartner\Model\Orders\FulfillmentInstruction',
+        'buyer_tax_information' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\BuyerTaxInformation',
+        'fulfillment_instruction' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\FulfillmentInstruction',
         'is_ispu' => 'bool',
         'is_access_point_order' => 'bool',
-        'marketplace_tax_info' => '\AmazonPHP\SellingPartner\Model\Orders\MarketplaceTaxInfo',
+        'marketplace_tax_info' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\MarketplaceTaxInfo',
         'seller_display_name' => 'string',
-        'shipping_address' => '\AmazonPHP\SellingPartner\Model\Orders\Address',
-        'buyer_info' => '\AmazonPHP\SellingPartner\Model\Orders\BuyerInfo',
-        'automated_shipping_settings' => '\AmazonPHP\SellingPartner\Model\Orders\AutomatedShippingSettings',
+        'shipping_address' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\Address',
+        'buyer_info' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\BuyerInfo',
+        'automated_shipping_settings' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\AutomatedShippingSettings',
         'has_regulated_items' => 'bool',
     ];
 
@@ -873,7 +873,7 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets order_total.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\Money $order_total order_total
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money $order_total order_total
      */
     public function setOrderTotal(?Money $order_total) : self
     {
@@ -925,7 +925,7 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets payment_execution_detail.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Orders\PaymentExecutionDetailItem[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\PaymentExecutionDetailItem[]
      */
     public function getPaymentExecutionDetail() : ?array
     {
@@ -935,7 +935,7 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets payment_execution_detail.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\PaymentExecutionDetailItem[] $payment_execution_detail a list of payment execution detail items
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\PaymentExecutionDetailItem[] $payment_execution_detail a list of payment execution detail items
      */
     public function setPaymentExecutionDetail(?array $payment_execution_detail) : self
     {
@@ -1399,7 +1399,7 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets default_ship_from_location_address.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\Address $default_ship_from_location_address default_ship_from_location_address
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\Address $default_ship_from_location_address default_ship_from_location_address
      */
     public function setDefaultShipFromLocationAddress(?Address $default_ship_from_location_address) : self
     {
@@ -1450,7 +1450,7 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets buyer_tax_information.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\BuyerTaxInformation $buyer_tax_information buyer_tax_information
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\BuyerTaxInformation $buyer_tax_information buyer_tax_information
      */
     public function setBuyerTaxInformation(?BuyerTaxInformation $buyer_tax_information) : self
     {
@@ -1470,7 +1470,7 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets fulfillment_instruction.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\FulfillmentInstruction $fulfillment_instruction fulfillment_instruction
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\FulfillmentInstruction $fulfillment_instruction fulfillment_instruction
      */
     public function setFulfillmentInstruction(?FulfillmentInstruction $fulfillment_instruction) : self
     {
@@ -1530,7 +1530,7 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets marketplace_tax_info.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\MarketplaceTaxInfo $marketplace_tax_info marketplace_tax_info
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\MarketplaceTaxInfo $marketplace_tax_info marketplace_tax_info
      */
     public function setMarketplaceTaxInfo(?MarketplaceTaxInfo $marketplace_tax_info) : self
     {
@@ -1570,7 +1570,7 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipping_address.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\Address $shipping_address shipping_address
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\Address $shipping_address shipping_address
      */
     public function setShippingAddress(?Address $shipping_address) : self
     {
@@ -1590,7 +1590,7 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets buyer_info.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\BuyerInfo $buyer_info buyer_info
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\BuyerInfo $buyer_info buyer_info
      */
     public function setBuyerInfo(?BuyerInfo $buyer_info) : self
     {
@@ -1610,7 +1610,7 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets automated_shipping_settings.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\AutomatedShippingSettings $automated_shipping_settings automated_shipping_settings
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\AutomatedShippingSettings $automated_shipping_settings automated_shipping_settings
      */
     public function setAutomatedShippingSettings(?AutomatedShippingSettings $automated_shipping_settings) : self
     {

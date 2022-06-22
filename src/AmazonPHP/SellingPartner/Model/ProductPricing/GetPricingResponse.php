@@ -57,8 +57,8 @@ class GetPricingResponse implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\ProductPricing\Price[]',
-        'errors' => '\AmazonPHP\SellingPartner\Model\ProductPricing\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\Price[]',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\Error[]',
     ];
 
     /**
@@ -223,7 +223,7 @@ class GetPricingResponse implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Gets payload.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ProductPricing\Price[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\Price[]
      */
     public function getPayload() : ?array
     {
@@ -233,7 +233,7 @@ class GetPricingResponse implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\Price[] $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\Price[] $payload payload
      */
     public function setPayload(?array $payload) : self
     {
@@ -248,7 +248,7 @@ class GetPricingResponse implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ProductPricing\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\Error[]
      */
     public function getErrors() : ?array
     {
@@ -258,7 +258,7 @@ class GetPricingResponse implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

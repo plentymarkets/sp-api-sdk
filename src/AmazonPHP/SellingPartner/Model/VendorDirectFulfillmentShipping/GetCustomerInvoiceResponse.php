@@ -57,8 +57,8 @@ class GetCustomerInvoiceResponse implements \ArrayAccess, \JsonSerializable, Mod
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\CustomerInvoice',
-        'errors' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ErrorList',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\CustomerInvoice',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ErrorList',
     ];
 
     /**
@@ -225,7 +225,7 @@ class GetCustomerInvoiceResponse implements \ArrayAccess, \JsonSerializable, Mod
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\CustomerInvoice $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\CustomerInvoice $payload payload
      */
     public function setPayload(?CustomerInvoice $payload) : self
     {
@@ -245,7 +245,7 @@ class GetCustomerInvoiceResponse implements \ArrayAccess, \JsonSerializable, Mod
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ErrorList $errors errors
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ErrorList $errors errors
      */
     public function setErrors(?ErrorList $errors) : self
     {

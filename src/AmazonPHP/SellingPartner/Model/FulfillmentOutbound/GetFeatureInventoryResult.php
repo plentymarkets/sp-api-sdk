@@ -60,7 +60,7 @@ class GetFeatureInventoryResult implements \ArrayAccess, \JsonSerializable, Mode
         'marketplace_id' => 'string',
         'feature_name' => 'string',
         'next_token' => 'string',
-        'feature_skus' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSku[]',
+        'feature_skus' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSku[]',
     ];
 
     /**
@@ -299,7 +299,7 @@ class GetFeatureInventoryResult implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Gets feature_skus.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSku[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSku[]
      */
     public function getFeatureSkus() : ?array
     {
@@ -309,7 +309,7 @@ class GetFeatureInventoryResult implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets feature_skus.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSku[] $feature_skus an array of SKUs eligible for this feature and the quantity available
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSku[] $feature_skus an array of SKUs eligible for this feature and the quantity available
      */
     public function setFeatureSkus(?array $feature_skus) : self
     {

@@ -57,7 +57,7 @@ class CreateWarrantyRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'attachments' => '\AmazonPHP\SellingPartner\Model\Messaging\Attachment[]',
+        'attachments' => '\Plenty\AmazonPHP\SellingPartner\Model\Messaging\Attachment[]',
         'coverage_start_date' => '\DateTime',
         'coverage_end_date' => '\DateTime',
     ];
@@ -223,7 +223,7 @@ class CreateWarrantyRequest implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Gets attachments.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Messaging\Attachment[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Messaging\Attachment[]
      */
     public function getAttachments() : ?array
     {
@@ -233,7 +233,7 @@ class CreateWarrantyRequest implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets attachments.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Messaging\Attachment[] $attachments Attachments to include in the message to the buyer. If any text is included in the attachment, the text must be written in the buyer's language of preference, which can be retrieved from the GetAttributes operation.
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Messaging\Attachment[] $attachments Attachments to include in the message to the buyer. If any text is included in the attachment, the text must be written in the buyer's language of preference, which can be retrieved from the GetAttributes operation.
      */
     public function setAttachments(?array $attachments) : self
     {

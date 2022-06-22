@@ -58,7 +58,7 @@ class GetAdditionalSellerInputsRequest implements \ArrayAccess, \JsonSerializabl
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'shipping_service_id' => 'string',
-        'ship_from_address' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Address',
+        'ship_from_address' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Address',
         'order_id' => 'string',
     ];
 

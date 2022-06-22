@@ -57,7 +57,7 @@ class PartneredSmallParcelDataInput implements \ArrayAccess, \JsonSerializable, 
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'package_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredSmallParcelPackageInput[]',
+        'package_list' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredSmallParcelPackageInput[]',
         'carrier_name' => 'string',
     ];
 
@@ -217,7 +217,7 @@ class PartneredSmallParcelDataInput implements \ArrayAccess, \JsonSerializable, 
     /**
      * Gets package_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredSmallParcelPackageInput[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredSmallParcelPackageInput[]
      */
     public function getPackageList() : ?array
     {
@@ -227,7 +227,7 @@ class PartneredSmallParcelDataInput implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets package_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredSmallParcelPackageInput[] $package_list a list of dimensions and weight information for packages
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredSmallParcelPackageInput[] $package_list a list of dimensions and weight information for packages
      */
     public function setPackageList(?array $package_list) : self
     {

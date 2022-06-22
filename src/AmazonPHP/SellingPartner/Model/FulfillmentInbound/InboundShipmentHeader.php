@@ -58,12 +58,12 @@ class InboundShipmentHeader implements \ArrayAccess, \JsonSerializable, ModelInt
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'shipment_name' => 'string',
-        'ship_from_address' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Address',
+        'ship_from_address' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Address',
         'destination_fulfillment_center_id' => 'string',
         'are_cases_required' => 'bool',
-        'shipment_status' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentStatus',
-        'label_prep_preference' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\LabelPrepPreference',
-        'intended_box_contents_source' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\IntendedBoxContentsSource',
+        'shipment_status' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentStatus',
+        'label_prep_preference' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\LabelPrepPreference',
+        'intended_box_contents_source' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\IntendedBoxContentsSource',
     ];
 
     /**
@@ -397,7 +397,7 @@ class InboundShipmentHeader implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets intended_box_contents_source.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\IntendedBoxContentsSource $intended_box_contents_source intended_box_contents_source
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\IntendedBoxContentsSource $intended_box_contents_source intended_box_contents_source
      */
     public function setIntendedBoxContentsSource(?IntendedBoxContentsSource $intended_box_contents_source) : self
     {

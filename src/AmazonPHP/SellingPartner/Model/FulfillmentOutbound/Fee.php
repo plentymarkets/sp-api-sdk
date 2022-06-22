@@ -66,7 +66,7 @@ class Fee implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'name' => 'string',
-        'amount' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money',
+        'amount' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money',
     ];
 
     /**

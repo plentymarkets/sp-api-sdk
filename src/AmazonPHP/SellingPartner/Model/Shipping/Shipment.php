@@ -59,11 +59,11 @@ class Shipment implements \ArrayAccess, \JsonSerializable, ModelInterface
     protected static /** [COMPAT] array */ $openAPITypes = [
         'shipment_id' => 'string',
         'client_reference_id' => 'string',
-        'ship_from' => '\AmazonPHP\SellingPartner\Model\Shipping\Address',
-        'ship_to' => '\AmazonPHP\SellingPartner\Model\Shipping\Address',
-        'accepted_rate' => '\AmazonPHP\SellingPartner\Model\Shipping\AcceptedRate',
-        'shipper' => '\AmazonPHP\SellingPartner\Model\Shipping\Party',
-        'containers' => '\AmazonPHP\SellingPartner\Model\Shipping\Container[]',
+        'ship_from' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Address',
+        'ship_to' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Address',
+        'accepted_rate' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\AcceptedRate',
+        'shipper' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Party',
+        'containers' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Container[]',
     ];
 
     /**
@@ -365,7 +365,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets accepted_rate.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Shipping\AcceptedRate $accepted_rate accepted_rate
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Shipping\AcceptedRate $accepted_rate accepted_rate
      */
     public function setAcceptedRate(?AcceptedRate $accepted_rate) : self
     {
@@ -385,7 +385,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipper.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Shipping\Party $shipper shipper
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Party $shipper shipper
      */
     public function setShipper(?Party $shipper) : self
     {

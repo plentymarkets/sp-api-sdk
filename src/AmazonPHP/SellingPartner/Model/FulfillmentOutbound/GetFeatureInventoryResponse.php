@@ -57,8 +57,8 @@ class GetFeatureInventoryResponse implements \ArrayAccess, \JsonSerializable, Mo
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\GetFeatureInventoryResult',
-        'errors' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\GetFeatureInventoryResult',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Error[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class GetFeatureInventoryResponse implements \ArrayAccess, \JsonSerializable, Mo
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\GetFeatureInventoryResult $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\GetFeatureInventoryResult $payload payload
      */
     public function setPayload(?GetFeatureInventoryResult $payload) : self
     {
@@ -237,7 +237,7 @@ class GetFeatureInventoryResponse implements \ArrayAccess, \JsonSerializable, Mo
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Error[]
      */
     public function getErrors() : ?array
     {
@@ -247,7 +247,7 @@ class GetFeatureInventoryResponse implements \ArrayAccess, \JsonSerializable, Mo
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

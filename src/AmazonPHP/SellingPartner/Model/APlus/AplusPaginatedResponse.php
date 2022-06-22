@@ -57,7 +57,7 @@ class AplusPaginatedResponse implements \ArrayAccess, \JsonSerializable, ModelIn
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'warnings' => '\AmazonPHP\SellingPartner\Model\APlus\Error[]',
+        'warnings' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\Error[]',
         'next_page_token' => 'string',
     ];
 
@@ -223,7 +223,7 @@ class AplusPaginatedResponse implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets warnings.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\APlus\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\Error[]
      */
     public function getWarnings() : ?array
     {
@@ -233,7 +233,7 @@ class AplusPaginatedResponse implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets warnings.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\Error[] $warnings a set of messages to the user, such as warnings or comments
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\Error[] $warnings a set of messages to the user, such as warnings or comments
      */
     public function setWarnings(?array $warnings) : self
     {

@@ -57,8 +57,8 @@ class GetEligibleShipmentServicesResponse implements \ArrayAccess, \JsonSerializ
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\GetEligibleShipmentServicesResult',
-        'errors' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\GetEligibleShipmentServicesResult',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Error[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class GetEligibleShipmentServicesResponse implements \ArrayAccess, \JsonSerializ
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\GetEligibleShipmentServicesResult $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\GetEligibleShipmentServicesResult $payload payload
      */
     public function setPayload(?GetEligibleShipmentServicesResult $payload) : self
     {
@@ -237,7 +237,7 @@ class GetEligibleShipmentServicesResponse implements \ArrayAccess, \JsonSerializ
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Error[]
      */
     public function getErrors() : ?array
     {
@@ -247,7 +247,7 @@ class GetEligibleShipmentServicesResponse implements \ArrayAccess, \JsonSerializ
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

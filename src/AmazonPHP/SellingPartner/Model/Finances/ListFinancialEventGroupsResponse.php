@@ -57,8 +57,8 @@ class ListFinancialEventGroupsResponse implements \ArrayAccess, \JsonSerializabl
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\Finances\ListFinancialEventGroupsPayload',
-        'errors' => '\AmazonPHP\SellingPartner\Model\Finances\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\ListFinancialEventGroupsPayload',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Error[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class ListFinancialEventGroupsResponse implements \ArrayAccess, \JsonSerializabl
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\ListFinancialEventGroupsPayload $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\ListFinancialEventGroupsPayload $payload payload
      */
     public function setPayload(?ListFinancialEventGroupsPayload $payload) : self
     {
@@ -237,7 +237,7 @@ class ListFinancialEventGroupsResponse implements \ArrayAccess, \JsonSerializabl
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Finances\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Error[]
      */
     public function getErrors() : ?array
     {
@@ -247,7 +247,7 @@ class ListFinancialEventGroupsResponse implements \ArrayAccess, \JsonSerializabl
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

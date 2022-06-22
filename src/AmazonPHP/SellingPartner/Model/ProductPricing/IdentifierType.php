@@ -57,8 +57,8 @@ class IdentifierType implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'marketplace_asin' => '\AmazonPHP\SellingPartner\Model\ProductPricing\ASINIdentifier',
-        'sku_identifier' => '\AmazonPHP\SellingPartner\Model\ProductPricing\SellerSKUIdentifier',
+        'marketplace_asin' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ASINIdentifier',
+        'sku_identifier' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\SellerSKUIdentifier',
     ];
 
     /**
@@ -251,7 +251,7 @@ class IdentifierType implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets sku_identifier.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\SellerSKUIdentifier $sku_identifier sku_identifier
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\SellerSKUIdentifier $sku_identifier sku_identifier
      */
     public function setSkuIdentifier(?SellerSKUIdentifier $sku_identifier) : self
     {

@@ -57,7 +57,7 @@ class AddAppointmentRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'appointment_time' => '\AmazonPHP\SellingPartner\Model\Services\AppointmentTimeInput',
+        'appointment_time' => '\Plenty\AmazonPHP\SellingPartner\Model\Services\AppointmentTimeInput',
     ];
 
     /**

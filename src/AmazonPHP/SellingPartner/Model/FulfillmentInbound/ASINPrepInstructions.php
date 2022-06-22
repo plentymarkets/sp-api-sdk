@@ -58,9 +58,9 @@ class ASINPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInte
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'asin' => 'string',
-        'barcode_instruction' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BarcodeInstruction',
-        'prep_guidance' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepGuidance',
-        'prep_instruction_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction[]',
+        'barcode_instruction' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BarcodeInstruction',
+        'prep_guidance' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepGuidance',
+        'prep_instruction_list' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction[]',
     ];
 
     /**
@@ -257,7 +257,7 @@ class ASINPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Sets barcode_instruction.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BarcodeInstruction $barcode_instruction barcode_instruction
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BarcodeInstruction $barcode_instruction barcode_instruction
      */
     public function setBarcodeInstruction(?BarcodeInstruction $barcode_instruction) : self
     {
@@ -277,7 +277,7 @@ class ASINPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Sets prep_guidance.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepGuidance $prep_guidance prep_guidance
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepGuidance $prep_guidance prep_guidance
      */
     public function setPrepGuidance(?PrepGuidance $prep_guidance) : self
     {
@@ -289,7 +289,7 @@ class ASINPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Gets prep_instruction_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction[]
      */
     public function getPrepInstructionList() : ?array
     {
@@ -299,7 +299,7 @@ class ASINPrepInstructions implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Sets prep_instruction_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction[] $prep_instruction_list a list of preparation instructions to help with item sourcing decisions
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction[] $prep_instruction_list a list of preparation instructions to help with item sourcing decisions
      */
     public function setPrepInstructionList(?array $prep_instruction_list) : self
     {

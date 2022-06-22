@@ -57,7 +57,7 @@ class TransportResult implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'transport_status' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportStatus',
+        'transport_status' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportStatus',
         'error_code' => 'string',
         'error_description' => 'string',
     ];

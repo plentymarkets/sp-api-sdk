@@ -57,8 +57,8 @@ class StandardTextBlock implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'headline' => '\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
-        'body' => '\AmazonPHP\SellingPartner\Model\APlus\ParagraphComponent',
+        'headline' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
+        'body' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ParagraphComponent',
     ];
 
     /**
@@ -225,7 +225,7 @@ class StandardTextBlock implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Sets headline.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\TextComponent $headline headline
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent $headline headline
      */
     public function setHeadline(?TextComponent $headline) : self
     {
@@ -245,7 +245,7 @@ class StandardTextBlock implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Sets body.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\ParagraphComponent $body body
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\ParagraphComponent $body body
      */
     public function setBody(?ParagraphComponent $body) : self
     {

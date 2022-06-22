@@ -58,12 +58,12 @@ class CompetitivePriceType implements \ArrayAccess, \JsonSerializable, ModelInte
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'competitive_price_id' => 'string',
-        'price' => '\AmazonPHP\SellingPartner\Model\ProductPricing\PriceType',
+        'price' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\PriceType',
         'condition' => 'string',
         'subcondition' => 'string',
-        'offer_type' => '\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCustomerType',
+        'offer_type' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCustomerType',
         'quantity_tier' => 'int',
-        'quantity_discount_type' => '\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountType',
+        'quantity_discount_type' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountType',
         'seller_id' => 'string',
         'belongs_to_requester' => 'bool',
     ];
@@ -357,7 +357,7 @@ class CompetitivePriceType implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Sets offer_type.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCustomerType $offer_type offer_type
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCustomerType $offer_type offer_type
      */
     public function setOfferType(?OfferCustomerType $offer_type) : self
     {
@@ -397,7 +397,7 @@ class CompetitivePriceType implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Sets quantity_discount_type.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountType $quantity_discount_type quantity_discount_type
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountType $quantity_discount_type quantity_discount_type
      */
     public function setQuantityDiscountType(?QuantityDiscountType $quantity_discount_type) : self
     {

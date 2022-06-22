@@ -165,7 +165,7 @@ final class ShippingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Shipping\CancelShipmentResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\CancelShipmentResponse',
             []
         );
     }
@@ -353,7 +353,7 @@ final class ShippingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Shipping\CreateShipmentResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\CreateShipmentResponse',
             []
         );
     }
@@ -539,7 +539,7 @@ final class ShippingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Shipping\GetAccountResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\GetAccountResponse',
             []
         );
     }
@@ -710,7 +710,7 @@ final class ShippingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Shipping\GetRatesResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\GetRatesResponse',
             []
         );
     }
@@ -897,7 +897,7 @@ final class ShippingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Shipping\GetShipmentResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\GetShipmentResponse',
             []
         );
     }
@@ -1085,7 +1085,7 @@ final class ShippingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Shipping\GetTrackingInformationResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\GetTrackingInformationResponse',
             []
         );
     }
@@ -1274,7 +1274,7 @@ final class ShippingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Shipping\PurchaseLabelsResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\PurchaseLabelsResponse',
             []
         );
     }
@@ -1477,7 +1477,7 @@ final class ShippingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Shipping\PurchaseShipmentResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\PurchaseShipmentResponse',
             []
         );
     }
@@ -1666,7 +1666,7 @@ final class ShippingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Shipping\RetrieveShippingLabelResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\RetrieveShippingLabelResponse',
             []
         );
     }

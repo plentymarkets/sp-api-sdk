@@ -58,11 +58,11 @@ class ItemOffersRequest implements \ArrayAccess, \JsonSerializable, ModelInterfa
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'uri' => 'string',
-        'method' => '\AmazonPHP\SellingPartner\Model\ProductPricing\HttpMethod',
+        'method' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\HttpMethod',
         'headers' => 'array<string,string>',
         'marketplace_id' => 'string',
-        'item_condition' => '\AmazonPHP\SellingPartner\Model\ProductPricing\ItemCondition',
-        'customer_type' => '\AmazonPHP\SellingPartner\Model\ProductPricing\CustomerType',
+        'item_condition' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ItemCondition',
+        'customer_type' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\CustomerType',
     ];
 
     /**
@@ -369,7 +369,7 @@ class ItemOffersRequest implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Sets customer_type.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\CustomerType $customer_type customer_type
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\CustomerType $customer_type customer_type
      */
     public function setCustomerType(?CustomerType $customer_type) : self
     {

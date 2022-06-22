@@ -57,7 +57,7 @@ class ItemOffersResponseAllOf implements \ArrayAccess, \JsonSerializable, ModelI
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'request' => '\AmazonPHP\SellingPartner\Model\ProductPricing\ItemOffersRequestParams',
+        'request' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ItemOffersRequestParams',
     ];
 
     /**

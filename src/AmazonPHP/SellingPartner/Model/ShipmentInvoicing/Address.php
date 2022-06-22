@@ -68,7 +68,7 @@ class Address implements \ArrayAccess, \JsonSerializable, ModelInterface
         'postal_code' => 'string',
         'country_code' => 'string',
         'phone' => 'string',
-        'address_type' => '\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\AddressTypeEnum',
+        'address_type' => '\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\AddressTypeEnum',
     ];
 
     /**
@@ -505,7 +505,7 @@ class Address implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets address_type.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\AddressTypeEnum $address_type address_type
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\AddressTypeEnum $address_type address_type
      */
     public function setAddressType(?AddressTypeEnum $address_type) : self
     {

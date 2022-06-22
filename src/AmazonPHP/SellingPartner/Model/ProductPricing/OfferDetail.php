@@ -58,19 +58,19 @@ class OfferDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'my_offer' => 'bool',
-        'offer_type' => '\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCustomerType',
+        'offer_type' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCustomerType',
         'sub_condition' => 'string',
         'seller_id' => 'string',
         'condition_notes' => 'string',
-        'seller_feedback_rating' => '\AmazonPHP\SellingPartner\Model\ProductPricing\SellerFeedbackType',
-        'shipping_time' => '\AmazonPHP\SellingPartner\Model\ProductPricing\DetailedShippingTimeType',
-        'listing_price' => '\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
-        'quantity_discount_prices' => '\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountPriceType[]',
-        'points' => '\AmazonPHP\SellingPartner\Model\ProductPricing\Points',
-        'shipping' => '\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
-        'ships_from' => '\AmazonPHP\SellingPartner\Model\ProductPricing\ShipsFromType',
+        'seller_feedback_rating' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\SellerFeedbackType',
+        'shipping_time' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\DetailedShippingTimeType',
+        'listing_price' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
+        'quantity_discount_prices' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountPriceType[]',
+        'points' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\Points',
+        'shipping' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
+        'ships_from' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ShipsFromType',
         'is_fulfilled_by_amazon' => 'bool',
-        'prime_information' => '\AmazonPHP\SellingPartner\Model\ProductPricing\PrimeInformationType',
+        'prime_information' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\PrimeInformationType',
         'is_buy_box_winner' => 'bool',
         'is_featured_merchant' => 'bool',
     ];
@@ -351,7 +351,7 @@ class OfferDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets offer_type.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCustomerType $offer_type offer_type
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCustomerType $offer_type offer_type
      */
     public function setOfferType(?OfferCustomerType $offer_type) : self
     {
@@ -431,7 +431,7 @@ class OfferDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets seller_feedback_rating.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\SellerFeedbackType $seller_feedback_rating seller_feedback_rating
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\SellerFeedbackType $seller_feedback_rating seller_feedback_rating
      */
     public function setSellerFeedbackRating(?SellerFeedbackType $seller_feedback_rating) : self
     {
@@ -483,7 +483,7 @@ class OfferDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets quantity_discount_prices.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountPriceType[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountPriceType[]
      */
     public function getQuantityDiscountPrices() : ?array
     {
@@ -493,7 +493,7 @@ class OfferDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets quantity_discount_prices.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountPriceType[] $quantity_discount_prices quantity_discount_prices
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountPriceType[] $quantity_discount_prices quantity_discount_prices
      */
     public function setQuantityDiscountPrices(?array $quantity_discount_prices) : self
     {
@@ -513,7 +513,7 @@ class OfferDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets points.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\Points $points points
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\Points $points points
      */
     public function setPoints(?Points $points) : self
     {
@@ -553,7 +553,7 @@ class OfferDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets ships_from.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\ShipsFromType $ships_from ships_from
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ShipsFromType $ships_from ships_from
      */
     public function setShipsFrom(?ShipsFromType $ships_from) : self
     {
@@ -593,7 +593,7 @@ class OfferDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets prime_information.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\PrimeInformationType $prime_information prime_information
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\PrimeInformationType $prime_information prime_information
      */
     public function setPrimeInformation(?PrimeInformationType $prime_information) : self
     {

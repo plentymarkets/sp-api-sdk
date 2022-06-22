@@ -57,11 +57,11 @@ class ShippingServiceOptions implements \ArrayAccess, \JsonSerializable, ModelIn
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'delivery_experience' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\DeliveryExperienceType',
-        'declared_value' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CurrencyAmount',
+        'delivery_experience' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\DeliveryExperienceType',
+        'declared_value' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CurrencyAmount',
         'carrier_will_pick_up' => 'bool',
-        'carrier_will_pick_up_option' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CarrierWillPickUpOption',
-        'label_format' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat',
+        'carrier_will_pick_up_option' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CarrierWillPickUpOption',
+        'label_format' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat',
     ];
 
     /**
@@ -273,7 +273,7 @@ class ShippingServiceOptions implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets declared_value.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CurrencyAmount $declared_value declared_value
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CurrencyAmount $declared_value declared_value
      */
     public function setDeclaredValue(?CurrencyAmount $declared_value) : self
     {
@@ -313,7 +313,7 @@ class ShippingServiceOptions implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets carrier_will_pick_up_option.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CarrierWillPickUpOption $carrier_will_pick_up_option carrier_will_pick_up_option
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CarrierWillPickUpOption $carrier_will_pick_up_option carrier_will_pick_up_option
      */
     public function setCarrierWillPickUpOption(?CarrierWillPickUpOption $carrier_will_pick_up_option) : self
     {
@@ -333,7 +333,7 @@ class ShippingServiceOptions implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets label_format.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat $label_format label_format
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat $label_format label_format
      */
     public function setLabelFormat(?LabelFormat $label_format) : self
     {

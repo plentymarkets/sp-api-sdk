@@ -57,10 +57,10 @@ class TransportDetailOutput implements \ArrayAccess, \JsonSerializable, ModelInt
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'partnered_small_parcel_data' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredSmallParcelDataOutput',
-        'non_partnered_small_parcel_data' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\NonPartneredSmallParcelDataOutput',
-        'partnered_ltl_data' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredLtlDataOutput',
-        'non_partnered_ltl_data' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\NonPartneredLtlDataOutput',
+        'partnered_small_parcel_data' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredSmallParcelDataOutput',
+        'non_partnered_small_parcel_data' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\NonPartneredSmallParcelDataOutput',
+        'partnered_ltl_data' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredLtlDataOutput',
+        'non_partnered_ltl_data' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\NonPartneredLtlDataOutput',
     ];
 
     /**
@@ -237,7 +237,7 @@ class TransportDetailOutput implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets partnered_small_parcel_data.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredSmallParcelDataOutput $partnered_small_parcel_data partnered_small_parcel_data
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredSmallParcelDataOutput $partnered_small_parcel_data partnered_small_parcel_data
      */
     public function setPartneredSmallParcelData(?PartneredSmallParcelDataOutput $partnered_small_parcel_data) : self
     {
@@ -257,7 +257,7 @@ class TransportDetailOutput implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets non_partnered_small_parcel_data.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\NonPartneredSmallParcelDataOutput $non_partnered_small_parcel_data non_partnered_small_parcel_data
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\NonPartneredSmallParcelDataOutput $non_partnered_small_parcel_data non_partnered_small_parcel_data
      */
     public function setNonPartneredSmallParcelData(?NonPartneredSmallParcelDataOutput $non_partnered_small_parcel_data) : self
     {
@@ -277,7 +277,7 @@ class TransportDetailOutput implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets partnered_ltl_data.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredLtlDataOutput $partnered_ltl_data partnered_ltl_data
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredLtlDataOutput $partnered_ltl_data partnered_ltl_data
      */
     public function setPartneredLtlData(?PartneredLtlDataOutput $partnered_ltl_data) : self
     {
@@ -297,7 +297,7 @@ class TransportDetailOutput implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets non_partnered_ltl_data.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\NonPartneredLtlDataOutput $non_partnered_ltl_data non_partnered_ltl_data
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\NonPartneredLtlDataOutput $non_partnered_ltl_data non_partnered_ltl_data
      */
     public function setNonPartneredLtlData(?NonPartneredLtlDataOutput $non_partnered_ltl_data) : self
     {

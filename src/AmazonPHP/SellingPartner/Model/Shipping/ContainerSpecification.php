@@ -57,8 +57,8 @@ class ContainerSpecification implements \ArrayAccess, \JsonSerializable, ModelIn
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'dimensions' => '\AmazonPHP\SellingPartner\Model\Shipping\Dimensions',
-        'weight' => '\AmazonPHP\SellingPartner\Model\Shipping\Weight',
+        'dimensions' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Dimensions',
+        'weight' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Weight',
     ];
 
     /**

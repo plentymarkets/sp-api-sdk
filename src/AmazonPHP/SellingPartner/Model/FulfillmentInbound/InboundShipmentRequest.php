@@ -57,8 +57,8 @@ class InboundShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelIn
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'inbound_shipment_header' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentHeader',
-        'inbound_shipment_items' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentItem[]',
+        'inbound_shipment_header' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentHeader',
+        'inbound_shipment_items' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentItem[]',
         'marketplace_id' => 'string',
     ];
 

@@ -58,8 +58,8 @@ class SetAppointmentResponse implements \ArrayAccess, \JsonSerializable, ModelIn
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'appointment_id' => 'string',
-        'warnings' => '\AmazonPHP\SellingPartner\Model\Services\Warning[]',
-        'errors' => '\AmazonPHP\SellingPartner\Model\Services\Error[]',
+        'warnings' => '\Plenty\AmazonPHP\SellingPartner\Model\Services\Warning[]',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\Services\Error[]',
     ];
 
     /**
@@ -261,7 +261,7 @@ class SetAppointmentResponse implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets warnings.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Services\Warning[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Services\Warning[]
      */
     public function getWarnings() : ?array
     {
@@ -271,7 +271,7 @@ class SetAppointmentResponse implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets warnings.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Services\Warning[] $warnings a list of warnings returned in the sucessful execution response of an API request
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Services\Warning[] $warnings a list of warnings returned in the sucessful execution response of an API request
      */
     public function setWarnings(?array $warnings) : self
     {
@@ -283,7 +283,7 @@ class SetAppointmentResponse implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Services\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Services\Error[]
      */
     public function getErrors() : ?array
     {
@@ -293,7 +293,7 @@ class SetAppointmentResponse implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Services\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Services\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

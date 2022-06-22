@@ -60,16 +60,16 @@ class ShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
         'amazon_order_id' => 'string',
         'seller_order_id' => 'string',
         'marketplace_name' => 'string',
-        'order_charge_list' => '\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[]',
-        'order_charge_adjustment_list' => '\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[]',
-        'shipment_fee_list' => '\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]',
-        'shipment_fee_adjustment_list' => '\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]',
-        'order_fee_list' => '\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]',
-        'order_fee_adjustment_list' => '\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]',
-        'direct_payment_list' => '\AmazonPHP\SellingPartner\Model\Finances\DirectPayment[]',
+        'order_charge_list' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[]',
+        'order_charge_adjustment_list' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[]',
+        'shipment_fee_list' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]',
+        'shipment_fee_adjustment_list' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]',
+        'order_fee_list' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]',
+        'order_fee_adjustment_list' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]',
+        'direct_payment_list' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\DirectPayment[]',
         'posted_date' => '\DateTime',
-        'shipment_item_list' => '\AmazonPHP\SellingPartner\Model\Finances\ShipmentItem[]',
-        'shipment_item_adjustment_list' => '\AmazonPHP\SellingPartner\Model\Finances\ShipmentItem[]',
+        'shipment_item_list' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\ShipmentItem[]',
+        'shipment_item_adjustment_list' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\ShipmentItem[]',
     ];
 
     /**
@@ -343,7 +343,7 @@ class ShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets order_charge_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[]
      */
     public function getOrderChargeList() : ?array
     {
@@ -353,7 +353,7 @@ class ShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets order_charge_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[] $order_charge_list a list of charge information on the seller's account
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[] $order_charge_list a list of charge information on the seller's account
      */
     public function setOrderChargeList(?array $order_charge_list) : self
     {
@@ -365,7 +365,7 @@ class ShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets order_charge_adjustment_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[]
      */
     public function getOrderChargeAdjustmentList() : ?array
     {
@@ -375,7 +375,7 @@ class ShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets order_charge_adjustment_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[] $order_charge_adjustment_list a list of charge information on the seller's account
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[] $order_charge_adjustment_list a list of charge information on the seller's account
      */
     public function setOrderChargeAdjustmentList(?array $order_charge_adjustment_list) : self
     {
@@ -387,7 +387,7 @@ class ShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets shipment_fee_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]
      */
     public function getShipmentFeeList() : ?array
     {
@@ -397,7 +397,7 @@ class ShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipment_fee_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[] $shipment_fee_list a list of fee component information
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[] $shipment_fee_list a list of fee component information
      */
     public function setShipmentFeeList(?array $shipment_fee_list) : self
     {
@@ -409,7 +409,7 @@ class ShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets shipment_fee_adjustment_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]
      */
     public function getShipmentFeeAdjustmentList() : ?array
     {
@@ -419,7 +419,7 @@ class ShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipment_fee_adjustment_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[] $shipment_fee_adjustment_list a list of fee component information
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[] $shipment_fee_adjustment_list a list of fee component information
      */
     public function setShipmentFeeAdjustmentList(?array $shipment_fee_adjustment_list) : self
     {
@@ -431,7 +431,7 @@ class ShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets order_fee_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]
      */
     public function getOrderFeeList() : ?array
     {
@@ -441,7 +441,7 @@ class ShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets order_fee_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[] $order_fee_list a list of fee component information
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[] $order_fee_list a list of fee component information
      */
     public function setOrderFeeList(?array $order_fee_list) : self
     {
@@ -453,7 +453,7 @@ class ShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets order_fee_adjustment_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]
      */
     public function getOrderFeeAdjustmentList() : ?array
     {
@@ -463,7 +463,7 @@ class ShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets order_fee_adjustment_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[] $order_fee_adjustment_list a list of fee component information
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[] $order_fee_adjustment_list a list of fee component information
      */
     public function setOrderFeeAdjustmentList(?array $order_fee_adjustment_list) : self
     {
@@ -475,7 +475,7 @@ class ShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets direct_payment_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Finances\DirectPayment[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\DirectPayment[]
      */
     public function getDirectPaymentList() : ?array
     {
@@ -485,7 +485,7 @@ class ShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets direct_payment_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\DirectPayment[] $direct_payment_list a list of direct payment information
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\DirectPayment[] $direct_payment_list a list of direct payment information
      */
     public function setDirectPaymentList(?array $direct_payment_list) : self
     {
@@ -519,7 +519,7 @@ class ShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets shipment_item_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Finances\ShipmentItem[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\ShipmentItem[]
      */
     public function getShipmentItemList() : ?array
     {
@@ -529,7 +529,7 @@ class ShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipment_item_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\ShipmentItem[] $shipment_item_list a list of shipment items
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\ShipmentItem[] $shipment_item_list a list of shipment items
      */
     public function setShipmentItemList(?array $shipment_item_list) : self
     {
@@ -541,7 +541,7 @@ class ShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets shipment_item_adjustment_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Finances\ShipmentItem[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\ShipmentItem[]
      */
     public function getShipmentItemAdjustmentList() : ?array
     {
@@ -551,7 +551,7 @@ class ShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipment_item_adjustment_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\ShipmentItem[] $shipment_item_adjustment_list a list of shipment items
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\ShipmentItem[] $shipment_item_adjustment_list a list of shipment items
      */
     public function setShipmentItemAdjustmentList(?array $shipment_item_adjustment_list) : self
     {

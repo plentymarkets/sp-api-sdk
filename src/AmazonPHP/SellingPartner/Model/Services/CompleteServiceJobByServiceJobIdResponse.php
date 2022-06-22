@@ -57,7 +57,7 @@ class CompleteServiceJobByServiceJobIdResponse implements \ArrayAccess, \JsonSer
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'errors' => '\AmazonPHP\SellingPartner\Model\Services\Error[]',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\Services\Error[]',
     ];
 
     /**
@@ -211,7 +211,7 @@ class CompleteServiceJobByServiceJobIdResponse implements \ArrayAccess, \JsonSer
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Services\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Services\Error[]
      */
     public function getErrors() : ?array
     {
@@ -221,7 +221,7 @@ class CompleteServiceJobByServiceJobIdResponse implements \ArrayAccess, \JsonSer
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Services\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Services\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

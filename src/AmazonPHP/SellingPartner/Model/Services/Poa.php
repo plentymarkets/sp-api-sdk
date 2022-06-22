@@ -65,8 +65,8 @@ class Poa implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'appointment_time' => '\AmazonPHP\SellingPartner\Model\Services\AppointmentTime',
-        'technicians' => '\AmazonPHP\SellingPartner\Model\Services\Technician[]',
+        'appointment_time' => '\Plenty\AmazonPHP\SellingPartner\Model\Services\AppointmentTime',
+        'technicians' => '\Plenty\AmazonPHP\SellingPartner\Model\Services\Technician[]',
         'uploading_technician' => 'string',
         'upload_time' => '\DateTime',
         'poa_type' => 'string',
@@ -286,7 +286,7 @@ class Poa implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets appointment_time.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Services\AppointmentTime $appointment_time appointment_time
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Services\AppointmentTime $appointment_time appointment_time
      */
     public function setAppointmentTime(?AppointmentTime $appointment_time) : self
     {
@@ -298,7 +298,7 @@ class Poa implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets technicians.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Services\Technician[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Services\Technician[]
      */
     public function getTechnicians() : ?array
     {
@@ -308,7 +308,7 @@ class Poa implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets technicians.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Services\Technician[] $technicians a list of technicians
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Services\Technician[] $technicians a list of technicians
      */
     public function setTechnicians(?array $technicians) : self
     {

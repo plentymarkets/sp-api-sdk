@@ -57,8 +57,8 @@ class GetTransactionResponse implements \ArrayAccess, \JsonSerializable, ModelIn
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\VendorTransactionStatus\TransactionStatus',
-        'errors' => '\AmazonPHP\SellingPartner\Model\VendorTransactionStatus\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorTransactionStatus\TransactionStatus',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorTransactionStatus\Error[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class GetTransactionResponse implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorTransactionStatus\TransactionStatus $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorTransactionStatus\TransactionStatus $payload payload
      */
     public function setPayload(?TransactionStatus $payload) : self
     {
@@ -237,7 +237,7 @@ class GetTransactionResponse implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorTransactionStatus\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorTransactionStatus\Error[]
      */
     public function getErrors() : ?array
     {
@@ -247,7 +247,7 @@ class GetTransactionResponse implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorTransactionStatus\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorTransactionStatus\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

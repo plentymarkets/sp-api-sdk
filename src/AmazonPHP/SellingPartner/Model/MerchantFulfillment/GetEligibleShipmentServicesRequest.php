@@ -57,8 +57,8 @@ class GetEligibleShipmentServicesRequest implements \ArrayAccess, \JsonSerializa
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'shipment_request_details' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShipmentRequestDetails',
-        'shipping_offering_filter' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShippingOfferingFilter',
+        'shipment_request_details' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShipmentRequestDetails',
+        'shipping_offering_filter' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShippingOfferingFilter',
     ];
 
     /**
@@ -251,7 +251,7 @@ class GetEligibleShipmentServicesRequest implements \ArrayAccess, \JsonSerializa
     /**
      * Sets shipping_offering_filter.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShippingOfferingFilter $shipping_offering_filter shipping_offering_filter
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShippingOfferingFilter $shipping_offering_filter shipping_offering_filter
      */
     public function setShippingOfferingFilter(?ShippingOfferingFilter $shipping_offering_filter) : self
     {

@@ -67,8 +67,8 @@ class ItemDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     protected static /** [COMPAT] array */ $openAPITypes = [
         'purchase_order_number' => 'string',
         'lot_number' => 'string',
-        'expiry' => '\AmazonPHP\SellingPartner\Model\VendorShipments\Expiry',
-        'maximum_retail_price' => '\AmazonPHP\SellingPartner\Model\VendorShipments\Money',
+        'expiry' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Expiry',
+        'maximum_retail_price' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Money',
         'handling_code' => 'string',
     ];
 
@@ -318,7 +318,7 @@ class ItemDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets expiry.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\Expiry $expiry expiry
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Expiry $expiry expiry
      */
     public function setExpiry(?Expiry $expiry) : self
     {
@@ -338,7 +338,7 @@ class ItemDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets maximum_retail_price.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\Money $maximum_retail_price maximum_retail_price
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Money $maximum_retail_price maximum_retail_price
      */
     public function setMaximumRetailPrice(?Money $maximum_retail_price) : self
     {

@@ -59,12 +59,12 @@ class FeesEstimateIdentifier implements \ArrayAccess, \JsonSerializable, ModelIn
     protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace_id' => 'string',
         'seller_id' => 'string',
-        'id_type' => '\AmazonPHP\SellingPartner\Model\ProductFees\IdType',
+        'id_type' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\IdType',
         'id_value' => 'string',
         'is_amazon_fulfilled' => 'bool',
-        'price_to_estimate_fees' => '\AmazonPHP\SellingPartner\Model\ProductFees\PriceToEstimateFees',
+        'price_to_estimate_fees' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\PriceToEstimateFees',
         'seller_input_identifier' => 'string',
-        'optional_fulfillment_program' => '\AmazonPHP\SellingPartner\Model\ProductFees\OptionalFulfillmentProgram',
+        'optional_fulfillment_program' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\OptionalFulfillmentProgram',
     ];
 
     /**
@@ -301,7 +301,7 @@ class FeesEstimateIdentifier implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets id_type.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductFees\IdType $id_type id_type
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\IdType $id_type id_type
      */
     public function setIdType(?IdType $id_type) : self
     {
@@ -361,7 +361,7 @@ class FeesEstimateIdentifier implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets price_to_estimate_fees.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductFees\PriceToEstimateFees $price_to_estimate_fees price_to_estimate_fees
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\PriceToEstimateFees $price_to_estimate_fees price_to_estimate_fees
      */
     public function setPriceToEstimateFees(?PriceToEstimateFees $price_to_estimate_fees) : self
     {
@@ -401,7 +401,7 @@ class FeesEstimateIdentifier implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets optional_fulfillment_program.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductFees\OptionalFulfillmentProgram $optional_fulfillment_program optional_fulfillment_program
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\OptionalFulfillmentProgram $optional_fulfillment_program optional_fulfillment_program
      */
     public function setOptionalFulfillmentProgram(?OptionalFulfillmentProgram $optional_fulfillment_program) : self
     {

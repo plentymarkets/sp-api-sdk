@@ -64,7 +64,7 @@ class FulfillmentPreviewItem implements \ArrayAccess, \JsonSerializable, ModelIn
         'seller_sku' => 'string',
         'quantity' => 'int',
         'seller_fulfillment_order_item_id' => 'string',
-        'estimated_shipping_weight' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Weight',
+        'estimated_shipping_weight' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Weight',
         'shipping_weight_calculation_method' => 'string',
     ];
 
@@ -343,7 +343,7 @@ class FulfillmentPreviewItem implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets estimated_shipping_weight.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Weight $estimated_shipping_weight estimated_shipping_weight
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Weight $estimated_shipping_weight estimated_shipping_weight
      */
     public function setEstimatedShippingWeight(?Weight $estimated_shipping_weight) : self
     {

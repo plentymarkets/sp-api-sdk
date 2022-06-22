@@ -58,8 +58,8 @@ class ContainerItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'item_reference' => 'string',
-        'shipped_quantity' => '\AmazonPHP\SellingPartner\Model\VendorShipments\ItemQuantity',
-        'item_details' => '\AmazonPHP\SellingPartner\Model\VendorShipments\ItemDetails',
+        'shipped_quantity' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ItemQuantity',
+        'item_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ItemDetails',
     ];
 
     /**
@@ -281,7 +281,7 @@ class ContainerItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets item_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\ItemDetails $item_details item_details
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ItemDetails $item_details item_details
      */
     public function setItemDetails(?ItemDetails $item_details) : self
     {

@@ -58,7 +58,7 @@ class ResearchingQuantity implements \ArrayAccess, \JsonSerializable, ModelInter
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'total_researching_quantity' => 'int',
-        'researching_quantity_breakdown' => '\AmazonPHP\SellingPartner\Model\FBAInventory\ResearchingQuantityEntry[]',
+        'researching_quantity_breakdown' => '\Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\ResearchingQuantityEntry[]',
     ];
 
     /**
@@ -237,7 +237,7 @@ class ResearchingQuantity implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Gets researching_quantity_breakdown.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FBAInventory\ResearchingQuantityEntry[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\ResearchingQuantityEntry[]
      */
     public function getResearchingQuantityBreakdown() : ?array
     {
@@ -247,7 +247,7 @@ class ResearchingQuantity implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets researching_quantity_breakdown.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FBAInventory\ResearchingQuantityEntry[] $researching_quantity_breakdown a list of quantity details for items currently being researched
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\ResearchingQuantityEntry[] $researching_quantity_breakdown a list of quantity details for items currently being researched
      */
     public function setResearchingQuantityBreakdown(?array $researching_quantity_breakdown) : self
     {

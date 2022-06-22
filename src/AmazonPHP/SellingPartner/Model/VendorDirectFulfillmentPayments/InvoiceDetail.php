@@ -60,16 +60,16 @@ class InvoiceDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
         'invoice_number' => 'string',
         'invoice_date' => '\DateTime',
         'reference_number' => 'string',
-        'remit_to_party' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\PartyIdentification',
-        'ship_from_party' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\PartyIdentification',
-        'bill_to_party' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\PartyIdentification',
+        'remit_to_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\PartyIdentification',
+        'ship_from_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\PartyIdentification',
+        'bill_to_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\PartyIdentification',
         'ship_to_country_code' => 'string',
         'payment_terms_code' => 'string',
-        'invoice_total' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\Money',
-        'tax_totals' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\TaxDetail[]',
-        'additional_details' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\AdditionalDetails[]',
-        'charge_details' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\ChargeDetails[]',
-        'items' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\InvoiceItem[]',
+        'invoice_total' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\Money',
+        'tax_totals' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\TaxDetail[]',
+        'additional_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\AdditionalDetails[]',
+        'charge_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\ChargeDetails[]',
+        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\InvoiceItem[]',
     ];
 
     /**
@@ -419,7 +419,7 @@ class InvoiceDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets bill_to_party.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\PartyIdentification $bill_to_party bill_to_party
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\PartyIdentification $bill_to_party bill_to_party
      */
     public function setBillToParty(?PartyIdentification $bill_to_party) : self
     {
@@ -491,7 +491,7 @@ class InvoiceDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets tax_totals.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\TaxDetail[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\TaxDetail[]
      */
     public function getTaxTotals() : ?array
     {
@@ -501,7 +501,7 @@ class InvoiceDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets tax_totals.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\TaxDetail[] $tax_totals individual tax details per line item
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\TaxDetail[] $tax_totals individual tax details per line item
      */
     public function setTaxTotals(?array $tax_totals) : self
     {
@@ -513,7 +513,7 @@ class InvoiceDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets additional_details.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\AdditionalDetails[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\AdditionalDetails[]
      */
     public function getAdditionalDetails() : ?array
     {
@@ -523,7 +523,7 @@ class InvoiceDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets additional_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\AdditionalDetails[] $additional_details additional details provided by the selling party, for tax related or other purposes
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\AdditionalDetails[] $additional_details additional details provided by the selling party, for tax related or other purposes
      */
     public function setAdditionalDetails(?array $additional_details) : self
     {
@@ -535,7 +535,7 @@ class InvoiceDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets charge_details.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\ChargeDetails[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\ChargeDetails[]
      */
     public function getChargeDetails() : ?array
     {
@@ -545,7 +545,7 @@ class InvoiceDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets charge_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\ChargeDetails[] $charge_details total charge amount details for all line items
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\ChargeDetails[] $charge_details total charge amount details for all line items
      */
     public function setChargeDetails(?array $charge_details) : self
     {

@@ -57,7 +57,7 @@ class AggregationSettings implements \ArrayAccess, \JsonSerializable, ModelInter
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'aggregation_time_period' => '\AmazonPHP\SellingPartner\Model\Notifications\AggregationTimePeriod',
+        'aggregation_time_period' => '\Plenty\AmazonPHP\SellingPartner\Model\Notifications\AggregationTimePeriod',
     ];
 
     /**

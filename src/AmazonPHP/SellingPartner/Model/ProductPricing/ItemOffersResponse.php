@@ -57,10 +57,10 @@ class ItemOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'headers' => '\AmazonPHP\SellingPartner\Model\ProductPricing\HttpResponseHeaders',
-        'status' => '\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersHttpStatusLine',
-        'body' => '\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse',
-        'request' => '\AmazonPHP\SellingPartner\Model\ProductPricing\ItemOffersRequestParams',
+        'headers' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\HttpResponseHeaders',
+        'status' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersHttpStatusLine',
+        'body' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse',
+        'request' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ItemOffersRequestParams',
     ];
 
     /**
@@ -247,7 +247,7 @@ class ItemOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets headers.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\HttpResponseHeaders $headers headers
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\HttpResponseHeaders $headers headers
      */
     public function setHeaders(?HttpResponseHeaders $headers) : self
     {
@@ -267,7 +267,7 @@ class ItemOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets status.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersHttpStatusLine $status status
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersHttpStatusLine $status status
      */
     public function setStatus(?GetOffersHttpStatusLine $status) : self
     {

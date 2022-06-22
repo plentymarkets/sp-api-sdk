@@ -58,7 +58,7 @@ class InvalidSKU implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'seller_sku' => 'string',
-        'error_reason' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ErrorReason',
+        'error_reason' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ErrorReason',
     ];
 
     /**
@@ -245,7 +245,7 @@ class InvalidSKU implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets error_reason.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ErrorReason $error_reason error_reason
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ErrorReason $error_reason error_reason
      */
     public function setErrorReason(?ErrorReason $error_reason) : self
     {

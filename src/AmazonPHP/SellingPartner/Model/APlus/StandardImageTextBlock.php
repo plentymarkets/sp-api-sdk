@@ -57,9 +57,9 @@ class StandardImageTextBlock implements \ArrayAccess, \JsonSerializable, ModelIn
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'image' => '\AmazonPHP\SellingPartner\Model\APlus\ImageComponent',
-        'headline' => '\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
-        'body' => '\AmazonPHP\SellingPartner\Model\APlus\ParagraphComponent',
+        'image' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ImageComponent',
+        'headline' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
+        'body' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ParagraphComponent',
     ];
 
     /**
@@ -231,7 +231,7 @@ class StandardImageTextBlock implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets image.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\ImageComponent $image image
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\ImageComponent $image image
      */
     public function setImage(?ImageComponent $image) : self
     {
@@ -251,7 +251,7 @@ class StandardImageTextBlock implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets headline.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\TextComponent $headline headline
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent $headline headline
      */
     public function setHeadline(?TextComponent $headline) : self
     {
@@ -271,7 +271,7 @@ class StandardImageTextBlock implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets body.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\ParagraphComponent $body body
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\ParagraphComponent $body body
      */
     public function setBody(?ParagraphComponent $body) : self
     {

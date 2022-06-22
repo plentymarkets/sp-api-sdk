@@ -58,7 +58,7 @@ class CreateDigitalAccessKeyRequest implements \ArrayAccess, \JsonSerializable, 
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'text' => 'string',
-        'attachments' => '\AmazonPHP\SellingPartner\Model\Messaging\Attachment[]',
+        'attachments' => '\Plenty\AmazonPHP\SellingPartner\Model\Messaging\Attachment[]',
     ];
 
     /**
@@ -255,7 +255,7 @@ class CreateDigitalAccessKeyRequest implements \ArrayAccess, \JsonSerializable, 
     /**
      * Gets attachments.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Messaging\Attachment[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Messaging\Attachment[]
      */
     public function getAttachments() : ?array
     {
@@ -265,7 +265,7 @@ class CreateDigitalAccessKeyRequest implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets attachments.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Messaging\Attachment[] $attachments attachments to include in the message to the buyer
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Messaging\Attachment[] $attachments attachments to include in the message to the buyer
      */
     public function setAttachments(?array $attachments) : self
     {

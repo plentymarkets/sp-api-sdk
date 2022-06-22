@@ -57,10 +57,10 @@ class AcceptedRate implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'total_charge' => '\AmazonPHP\SellingPartner\Model\Shipping\Currency',
-        'billed_weight' => '\AmazonPHP\SellingPartner\Model\Shipping\Weight',
-        'service_type' => '\AmazonPHP\SellingPartner\Model\Shipping\ServiceType',
-        'promise' => '\AmazonPHP\SellingPartner\Model\Shipping\ShippingPromiseSet',
+        'total_charge' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Currency',
+        'billed_weight' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Weight',
+        'service_type' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\ServiceType',
+        'promise' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\ShippingPromiseSet',
     ];
 
     /**
@@ -237,7 +237,7 @@ class AcceptedRate implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets total_charge.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Shipping\Currency $total_charge total_charge
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Currency $total_charge total_charge
      */
     public function setTotalCharge(?Currency $total_charge) : self
     {
@@ -257,7 +257,7 @@ class AcceptedRate implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets billed_weight.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Shipping\Weight $billed_weight billed_weight
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Weight $billed_weight billed_weight
      */
     public function setBilledWeight(?Weight $billed_weight) : self
     {
@@ -277,7 +277,7 @@ class AcceptedRate implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets service_type.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Shipping\ServiceType $service_type service_type
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Shipping\ServiceType $service_type service_type
      */
     public function setServiceType(?ServiceType $service_type) : self
     {
@@ -297,7 +297,7 @@ class AcceptedRate implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets promise.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Shipping\ShippingPromiseSet $promise promise
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Shipping\ShippingPromiseSet $promise promise
      */
     public function setPromise(?ShippingPromiseSet $promise) : self
     {

@@ -57,7 +57,7 @@ class ProcessingDirective implements \ArrayAccess, \JsonSerializable, ModelInter
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'event_filter' => '\AmazonPHP\SellingPartner\Model\Notifications\EventFilter',
+        'event_filter' => '\Plenty\AmazonPHP\SellingPartner\Model\Notifications\EventFilter',
     ];
 
     /**
@@ -219,7 +219,7 @@ class ProcessingDirective implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets event_filter.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Notifications\EventFilter $event_filter event_filter
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Notifications\EventFilter $event_filter event_filter
      */
     public function setEventFilter(?EventFilter $event_filter) : self
     {

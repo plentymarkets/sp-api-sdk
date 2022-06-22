@@ -57,7 +57,7 @@ class ListingOffersResponseAllOf implements \ArrayAccess, \JsonSerializable, Mod
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'request' => '\AmazonPHP\SellingPartner\Model\ProductPricing\ListingOffersRequestParams',
+        'request' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ListingOffersRequestParams',
     ];
 
     /**
@@ -219,7 +219,7 @@ class ListingOffersResponseAllOf implements \ArrayAccess, \JsonSerializable, Mod
     /**
      * Sets request.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\ListingOffersRequestParams $request request
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ListingOffersRequestParams $request request
      */
     public function setRequest(?ListingOffersRequestParams $request) : self
     {

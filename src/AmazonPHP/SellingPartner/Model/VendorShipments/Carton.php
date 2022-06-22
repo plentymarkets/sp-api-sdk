@@ -57,12 +57,12 @@ class Carton implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'carton_identifiers' => '\AmazonPHP\SellingPartner\Model\VendorShipments\ContainerIdentification[]',
+        'carton_identifiers' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ContainerIdentification[]',
         'carton_sequence_number' => 'string',
-        'dimensions' => '\AmazonPHP\SellingPartner\Model\VendorShipments\Dimensions',
-        'weight' => '\AmazonPHP\SellingPartner\Model\VendorShipments\Weight',
+        'dimensions' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Dimensions',
+        'weight' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Weight',
         'tracking_number' => 'string',
-        'items' => '\AmazonPHP\SellingPartner\Model\VendorShipments\ContainerItem[]',
+        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ContainerItem[]',
     ];
 
     /**
@@ -251,7 +251,7 @@ class Carton implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets carton_identifiers.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorShipments\ContainerIdentification[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ContainerIdentification[]
      */
     public function getCartonIdentifiers() : ?array
     {
@@ -261,7 +261,7 @@ class Carton implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets carton_identifiers.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\ContainerIdentification[] $carton_identifiers a list of carton identifiers
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ContainerIdentification[] $carton_identifiers a list of carton identifiers
      */
     public function setCartonIdentifiers(?array $carton_identifiers) : self
     {
@@ -301,7 +301,7 @@ class Carton implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets dimensions.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\Dimensions $dimensions dimensions
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Dimensions $dimensions dimensions
      */
     public function setDimensions(?Dimensions $dimensions) : self
     {
@@ -321,7 +321,7 @@ class Carton implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets weight.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\Weight $weight weight
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Weight $weight weight
      */
     public function setWeight(?Weight $weight) : self
     {

@@ -57,10 +57,10 @@ class StandardFourImageTextQuadrantModule implements \ArrayAccess, \JsonSerializ
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'block1' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
-        'block2' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
-        'block3' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
-        'block4' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
+        'block1' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
+        'block2' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
+        'block3' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
+        'block4' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
     ];
 
     /**

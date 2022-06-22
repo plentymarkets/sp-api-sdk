@@ -57,8 +57,8 @@ class CreateUploadDestinationResponse implements \ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\Uploads\UploadDestination',
-        'errors' => '\AmazonPHP\SellingPartner\Model\Uploads\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\Uploads\UploadDestination',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\Uploads\Error[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class CreateUploadDestinationResponse implements \ArrayAccess, \JsonSerializable
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Uploads\UploadDestination $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Uploads\UploadDestination $payload payload
      */
     public function setPayload(?UploadDestination $payload) : self
     {
@@ -237,7 +237,7 @@ class CreateUploadDestinationResponse implements \ArrayAccess, \JsonSerializable
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Uploads\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Uploads\Error[]
      */
     public function getErrors() : ?array
     {
@@ -247,7 +247,7 @@ class CreateUploadDestinationResponse implements \ArrayAccess, \JsonSerializable
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Uploads\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Uploads\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

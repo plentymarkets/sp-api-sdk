@@ -87,8 +87,8 @@ class TaxDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     protected static /** [COMPAT] array */ $openAPITypes = [
         'tax_type' => 'string',
         'tax_rate' => 'string',
-        'tax_amount' => '\AmazonPHP\SellingPartner\Model\VendorInvoices\Money',
-        'taxable_amount' => '\AmazonPHP\SellingPartner\Model\VendorInvoices\Money',
+        'tax_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\Money',
+        'taxable_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\Money',
     ];
 
     /**
@@ -380,7 +380,7 @@ class TaxDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets taxable_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorInvoices\Money $taxable_amount taxable_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\Money $taxable_amount taxable_amount
      */
     public function setTaxableAmount(?Money $taxable_amount) : self
     {

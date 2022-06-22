@@ -57,9 +57,9 @@ class GetSchemaResponse implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        '_links' => '\AmazonPHP\SellingPartner\Model\Messaging\GetSchemaResponseLinks',
+        '_links' => '\Plenty\AmazonPHP\SellingPartner\Model\Messaging\GetSchemaResponseLinks',
         'payload' => 'object',
-        'errors' => '\AmazonPHP\SellingPartner\Model\Messaging\Error[]',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\Messaging\Error[]',
     ];
 
     /**
@@ -231,7 +231,7 @@ class GetSchemaResponse implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Sets _links.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Messaging\GetSchemaResponseLinks $_links _links
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Messaging\GetSchemaResponseLinks $_links _links
      */
     public function setLinks(?GetSchemaResponseLinks $_links) : self
     {
@@ -265,7 +265,7 @@ class GetSchemaResponse implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Messaging\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Messaging\Error[]
      */
     public function getErrors() : ?array
     {
@@ -275,7 +275,7 @@ class GetSchemaResponse implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Messaging\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Messaging\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

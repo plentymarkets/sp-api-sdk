@@ -58,7 +58,7 @@ class Points implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'points_number' => 'int',
-        'points_monetary_value' => '\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
+        'points_monetary_value' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
     ];
 
     /**
@@ -245,7 +245,7 @@ class Points implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets points_monetary_value.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType $points_monetary_value points_monetary_value
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType $points_monetary_value points_monetary_value
      */
     public function setPointsMonetaryValue(?MoneyType $points_monetary_value) : self
     {

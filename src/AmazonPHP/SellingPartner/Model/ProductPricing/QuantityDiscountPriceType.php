@@ -58,8 +58,8 @@ class QuantityDiscountPriceType implements \ArrayAccess, \JsonSerializable, Mode
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'quantity_tier' => 'int',
-        'quantity_discount_type' => '\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountType',
-        'listing_price' => '\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
+        'quantity_discount_type' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountType',
+        'listing_price' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
     ];
 
     /**

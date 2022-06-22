@@ -57,7 +57,7 @@ class GetItemOffersBatchResponse implements \ArrayAccess, \JsonSerializable, Mod
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'responses' => '\AmazonPHP\SellingPartner\Model\ProductPricing\ItemOffersResponse[]',
+        'responses' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ItemOffersResponse[]',
     ];
 
     /**
@@ -221,7 +221,7 @@ class GetItemOffersBatchResponse implements \ArrayAccess, \JsonSerializable, Mod
     /**
      * Gets responses.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ProductPricing\ItemOffersResponse[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ItemOffersResponse[]
      */
     public function getResponses() : ?array
     {
@@ -231,7 +231,7 @@ class GetItemOffersBatchResponse implements \ArrayAccess, \JsonSerializable, Mod
     /**
      * Sets responses.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\ItemOffersResponse[] $responses a list of getItemOffers batched responses
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ItemOffersResponse[] $responses a list of getItemOffers batched responses
      */
     public function setResponses(?array $responses) : self
     {

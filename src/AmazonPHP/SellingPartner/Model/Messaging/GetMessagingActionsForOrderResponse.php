@@ -57,9 +57,9 @@ class GetMessagingActionsForOrderResponse implements \ArrayAccess, \JsonSerializ
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        '_links' => '\AmazonPHP\SellingPartner\Model\Messaging\GetMessagingActionsForOrderResponseLinks',
-        '_embedded' => '\AmazonPHP\SellingPartner\Model\Messaging\GetMessagingActionsForOrderResponseEmbedded',
-        'errors' => '\AmazonPHP\SellingPartner\Model\Messaging\Error[]',
+        '_links' => '\Plenty\AmazonPHP\SellingPartner\Model\Messaging\GetMessagingActionsForOrderResponseLinks',
+        '_embedded' => '\Plenty\AmazonPHP\SellingPartner\Model\Messaging\GetMessagingActionsForOrderResponseEmbedded',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\Messaging\Error[]',
     ];
 
     /**
@@ -231,7 +231,7 @@ class GetMessagingActionsForOrderResponse implements \ArrayAccess, \JsonSerializ
     /**
      * Sets _links.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Messaging\GetMessagingActionsForOrderResponseLinks $_links _links
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Messaging\GetMessagingActionsForOrderResponseLinks $_links _links
      */
     public function setLinks(?GetMessagingActionsForOrderResponseLinks $_links) : self
     {
@@ -251,7 +251,7 @@ class GetMessagingActionsForOrderResponse implements \ArrayAccess, \JsonSerializ
     /**
      * Sets _embedded.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Messaging\GetMessagingActionsForOrderResponseEmbedded $_embedded _embedded
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Messaging\GetMessagingActionsForOrderResponseEmbedded $_embedded _embedded
      */
     public function setEmbedded(?GetMessagingActionsForOrderResponseEmbedded $_embedded) : self
     {
@@ -263,7 +263,7 @@ class GetMessagingActionsForOrderResponse implements \ArrayAccess, \JsonSerializ
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Messaging\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Messaging\Error[]
      */
     public function getErrors() : ?array
     {
@@ -273,7 +273,7 @@ class GetMessagingActionsForOrderResponse implements \ArrayAccess, \JsonSerializ
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Messaging\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Messaging\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

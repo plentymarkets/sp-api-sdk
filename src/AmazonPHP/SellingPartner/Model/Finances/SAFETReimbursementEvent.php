@@ -59,9 +59,9 @@ class SAFETReimbursementEvent implements \ArrayAccess, \JsonSerializable, ModelI
     protected static /** [COMPAT] array */ $openAPITypes = [
         'posted_date' => '\DateTime',
         'safet_claim_id' => 'string',
-        'reimbursed_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'reimbursed_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
         'reason_code' => 'string',
-        'safet_reimbursement_item_list' => '\AmazonPHP\SellingPartner\Model\Finances\SAFETReimbursementItem[]',
+        'safet_reimbursement_item_list' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\SAFETReimbursementItem[]',
     ];
 
     /**
@@ -285,7 +285,7 @@ class SAFETReimbursementEvent implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Sets reimbursed_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $reimbursed_amount reimbursed_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $reimbursed_amount reimbursed_amount
      */
     public function setReimbursedAmount(?Currency $reimbursed_amount) : self
     {
@@ -317,7 +317,7 @@ class SAFETReimbursementEvent implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Gets safet_reimbursement_item_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Finances\SAFETReimbursementItem[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\SAFETReimbursementItem[]
      */
     public function getSafetReimbursementItemList() : ?array
     {
@@ -327,7 +327,7 @@ class SAFETReimbursementEvent implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Sets safet_reimbursement_item_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\SAFETReimbursementItem[] $safet_reimbursement_item_list a list of SAFETReimbursementItems
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\SAFETReimbursementItem[] $safet_reimbursement_item_list a list of SAFETReimbursementItems
      */
     public function setSafetReimbursementItemList(?array $safet_reimbursement_item_list) : self
     {

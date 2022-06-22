@@ -57,7 +57,7 @@ class SubmitAcknowledgementRequest implements \ArrayAccess, \JsonSerializable, M
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'acknowledgements' => '\AmazonPHP\SellingPartner\Model\VendorOrders\OrderAcknowledgement[]',
+        'acknowledgements' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderAcknowledgement[]',
     ];
 
     /**
@@ -211,7 +211,7 @@ class SubmitAcknowledgementRequest implements \ArrayAccess, \JsonSerializable, M
     /**
      * Gets acknowledgements.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorOrders\OrderAcknowledgement[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderAcknowledgement[]
      */
     public function getAcknowledgements() : ?array
     {
@@ -221,7 +221,7 @@ class SubmitAcknowledgementRequest implements \ArrayAccess, \JsonSerializable, M
     /**
      * Sets acknowledgements.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\OrderAcknowledgement[] $acknowledgements acknowledgements
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderAcknowledgement[] $acknowledgements acknowledgements
      */
     public function setAcknowledgements(?array $acknowledgements) : self
     {

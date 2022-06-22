@@ -57,8 +57,8 @@ class SubmitAcknowledgementResponse implements \ArrayAccess, \JsonSerializable, 
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TransactionId',
-        'errors' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\ErrorList',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TransactionId',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\ErrorList',
     ];
 
     /**
@@ -225,7 +225,7 @@ class SubmitAcknowledgementResponse implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TransactionId $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TransactionId $payload payload
      */
     public function setPayload(?TransactionId $payload) : self
     {
@@ -245,7 +245,7 @@ class SubmitAcknowledgementResponse implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\ErrorList $errors errors
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\ErrorList $errors errors
      */
     public function setErrors(?ErrorList $errors) : self
     {

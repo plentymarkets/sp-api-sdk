@@ -58,7 +58,7 @@ class NonPartneredSmallParcelDataInput implements \ArrayAccess, \JsonSerializabl
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'carrier_name' => 'string',
-        'package_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\NonPartneredSmallParcelPackageInput[]',
+        'package_list' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\NonPartneredSmallParcelPackageInput[]',
     ];
 
     /**

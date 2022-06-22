@@ -57,7 +57,7 @@ class ErrorList implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'errors' => '\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\Error[]',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\Error[]',
     ];
 
     /**

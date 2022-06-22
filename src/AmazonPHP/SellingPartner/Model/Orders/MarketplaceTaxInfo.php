@@ -57,7 +57,7 @@ class MarketplaceTaxInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'tax_classifications' => '\AmazonPHP\SellingPartner\Model\Orders\TaxClassification[]',
+        'tax_classifications' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\TaxClassification[]',
     ];
 
     /**
@@ -211,7 +211,7 @@ class MarketplaceTaxInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Gets tax_classifications.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Orders\TaxClassification[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\TaxClassification[]
      */
     public function getTaxClassifications() : ?array
     {
@@ -221,7 +221,7 @@ class MarketplaceTaxInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets tax_classifications.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\TaxClassification[] $tax_classifications a list of tax classifications that apply to the order
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\TaxClassification[] $tax_classifications a list of tax classifications that apply to the order
      */
     public function setTaxClassifications(?array $tax_classifications) : self
     {

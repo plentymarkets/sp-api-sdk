@@ -62,7 +62,7 @@ class RemovalShipmentAdjustmentEvent implements \ArrayAccess, \JsonSerializable,
         'merchant_order_id' => 'string',
         'order_id' => 'string',
         'transaction_type' => 'string',
-        'removal_shipment_item_adjustment_list' => '\AmazonPHP\SellingPartner\Model\Finances\RemovalShipmentItemAdjustment[]',
+        'removal_shipment_item_adjustment_list' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\RemovalShipmentItemAdjustment[]',
     ];
 
     /**
@@ -343,7 +343,7 @@ class RemovalShipmentAdjustmentEvent implements \ArrayAccess, \JsonSerializable,
     /**
      * Gets removal_shipment_item_adjustment_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Finances\RemovalShipmentItemAdjustment[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\RemovalShipmentItemAdjustment[]
      */
     public function getRemovalShipmentItemAdjustmentList() : ?array
     {
@@ -353,7 +353,7 @@ class RemovalShipmentAdjustmentEvent implements \ArrayAccess, \JsonSerializable,
     /**
      * Sets removal_shipment_item_adjustment_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\RemovalShipmentItemAdjustment[] $removal_shipment_item_adjustment_list a comma-delimited list of Removal shipmentItemAdjustment details for FBA inventory
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\RemovalShipmentItemAdjustment[] $removal_shipment_item_adjustment_list a comma-delimited list of Removal shipmentItemAdjustment details for FBA inventory
      */
     public function setRemovalShipmentItemAdjustmentList(?array $removal_shipment_item_adjustment_list) : self
     {

@@ -64,7 +64,7 @@ class OrderItemStatusReceivingStatus implements \ArrayAccess, \JsonSerializable,
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'receive_status' => 'string',
-        'received_quantity' => '\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
+        'received_quantity' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
         'last_receive_date' => '\DateTime',
     ];
 
@@ -294,7 +294,7 @@ class OrderItemStatusReceivingStatus implements \ArrayAccess, \JsonSerializable,
     /**
      * Sets received_quantity.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity $received_quantity received_quantity
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity $received_quantity received_quantity
      */
     public function setReceivedQuantity(?ItemQuantity $received_quantity) : self
     {

@@ -58,7 +58,7 @@ class ContentMetadataRecord implements \ArrayAccess, \JsonSerializable, ModelInt
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'content_reference_key' => 'string',
-        'content_metadata' => '\AmazonPHP\SellingPartner\Model\APlus\ContentMetadata',
+        'content_metadata' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentMetadata',
     ];
 
     /**

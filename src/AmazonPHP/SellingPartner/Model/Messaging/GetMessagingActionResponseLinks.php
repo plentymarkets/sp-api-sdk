@@ -57,8 +57,8 @@ class GetMessagingActionResponseLinks implements \ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'self' => '\AmazonPHP\SellingPartner\Model\Messaging\LinkObject',
-        'schema' => '\AmazonPHP\SellingPartner\Model\Messaging\LinkObject',
+        'self' => '\Plenty\AmazonPHP\SellingPartner\Model\Messaging\LinkObject',
+        'schema' => '\Plenty\AmazonPHP\SellingPartner\Model\Messaging\LinkObject',
     ];
 
     /**

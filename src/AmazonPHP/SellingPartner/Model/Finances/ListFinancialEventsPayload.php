@@ -58,7 +58,7 @@ class ListFinancialEventsPayload implements \ArrayAccess, \JsonSerializable, Mod
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'next_token' => 'string',
-        'financial_events' => '\AmazonPHP\SellingPartner\Model\Finances\FinancialEvents',
+        'financial_events' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\FinancialEvents',
     ];
 
     /**
@@ -245,7 +245,7 @@ class ListFinancialEventsPayload implements \ArrayAccess, \JsonSerializable, Mod
     /**
      * Sets financial_events.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\FinancialEvents $financial_events financial_events
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\FinancialEvents $financial_events financial_events
      */
     public function setFinancialEvents(?FinancialEvents $financial_events) : self
     {

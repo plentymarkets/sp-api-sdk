@@ -61,9 +61,9 @@ class RemovalShipmentItemAdjustment implements \ArrayAccess, \JsonSerializable, 
         'tax_collection_model' => 'string',
         'fulfillment_network_sku' => 'string',
         'adjusted_quantity' => 'int',
-        'revenue_adjustment' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
-        'tax_amount_adjustment' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
-        'tax_withheld_adjustment' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'revenue_adjustment' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'tax_amount_adjustment' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'tax_withheld_adjustment' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
     ];
 
     /**
@@ -335,7 +335,7 @@ class RemovalShipmentItemAdjustment implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets revenue_adjustment.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $revenue_adjustment revenue_adjustment
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $revenue_adjustment revenue_adjustment
      */
     public function setRevenueAdjustment(?Currency $revenue_adjustment) : self
     {
@@ -355,7 +355,7 @@ class RemovalShipmentItemAdjustment implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets tax_amount_adjustment.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $tax_amount_adjustment tax_amount_adjustment
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $tax_amount_adjustment tax_amount_adjustment
      */
     public function setTaxAmountAdjustment(?Currency $tax_amount_adjustment) : self
     {
@@ -375,7 +375,7 @@ class RemovalShipmentItemAdjustment implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets tax_withheld_adjustment.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $tax_withheld_adjustment tax_withheld_adjustment
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $tax_withheld_adjustment tax_withheld_adjustment
      */
     public function setTaxWithheldAdjustment(?Currency $tax_withheld_adjustment) : self
     {

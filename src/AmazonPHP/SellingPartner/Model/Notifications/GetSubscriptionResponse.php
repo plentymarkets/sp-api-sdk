@@ -57,8 +57,8 @@ class GetSubscriptionResponse implements \ArrayAccess, \JsonSerializable, ModelI
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\Notifications\Subscription',
-        'errors' => '\AmazonPHP\SellingPartner\Model\Notifications\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\Notifications\Subscription',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\Notifications\Error[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class GetSubscriptionResponse implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Notifications\Subscription $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Notifications\Subscription $payload payload
      */
     public function setPayload(?Subscription $payload) : self
     {
@@ -237,7 +237,7 @@ class GetSubscriptionResponse implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Notifications\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Notifications\Error[]
      */
     public function getErrors() : ?array
     {
@@ -247,7 +247,7 @@ class GetSubscriptionResponse implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Notifications\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Notifications\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

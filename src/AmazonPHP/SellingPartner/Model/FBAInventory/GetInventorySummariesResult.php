@@ -57,8 +57,8 @@ class GetInventorySummariesResult implements \ArrayAccess, \JsonSerializable, Mo
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'granularity' => '\AmazonPHP\SellingPartner\Model\FBAInventory\Granularity',
-        'inventory_summaries' => '\AmazonPHP\SellingPartner\Model\FBAInventory\InventorySummary[]',
+        'granularity' => '\Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\Granularity',
+        'inventory_summaries' => '\Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\InventorySummary[]',
     ];
 
     /**

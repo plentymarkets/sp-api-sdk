@@ -58,9 +58,9 @@ class TaxWithholdingEvent implements \ArrayAccess, \JsonSerializable, ModelInter
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'posted_date' => '\DateTime',
-        'base_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
-        'withheld_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
-        'tax_withholding_period' => '\AmazonPHP\SellingPartner\Model\Finances\TaxWithholdingPeriod',
+        'base_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'withheld_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'tax_withholding_period' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\TaxWithholdingPeriod',
     ];
 
     /**
@@ -259,7 +259,7 @@ class TaxWithholdingEvent implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets base_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $base_amount base_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $base_amount base_amount
      */
     public function setBaseAmount(?Currency $base_amount) : self
     {
@@ -279,7 +279,7 @@ class TaxWithholdingEvent implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets withheld_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $withheld_amount withheld_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $withheld_amount withheld_amount
      */
     public function setWithheldAmount(?Currency $withheld_amount) : self
     {
@@ -299,7 +299,7 @@ class TaxWithholdingEvent implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets tax_withholding_period.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\TaxWithholdingPeriod $tax_withholding_period tax_withholding_period
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\TaxWithholdingPeriod $tax_withholding_period tax_withholding_period
      */
     public function setTaxWithholdingPeriod(?TaxWithholdingPeriod $tax_withholding_period) : self
     {

@@ -58,7 +58,7 @@ class UpdateShipmentStatusRequest implements \ArrayAccess, \JsonSerializable, Mo
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace_id' => 'string',
-        'shipment_status' => '\AmazonPHP\SellingPartner\Model\Orders\ShipmentStatus',
+        'shipment_status' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\ShipmentStatus',
         'order_items' => 'object[]',
     ];
 

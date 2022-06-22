@@ -57,7 +57,7 @@ class Route implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'stops' => '\AmazonPHP\SellingPartner\Model\VendorShipments\Stop[]',
+        'stops' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Stop[]',
     ];
 
     /**

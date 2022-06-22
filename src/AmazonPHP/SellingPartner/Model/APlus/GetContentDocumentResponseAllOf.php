@@ -57,7 +57,7 @@ class GetContentDocumentResponseAllOf implements \ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'content_record' => '\AmazonPHP\SellingPartner\Model\APlus\ContentRecord',
+        'content_record' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentRecord',
     ];
 
     /**

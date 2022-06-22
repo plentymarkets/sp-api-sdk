@@ -57,7 +57,7 @@ class RetrieveShippingLabelRequest implements \ArrayAccess, \JsonSerializable, M
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'label_specification' => '\AmazonPHP\SellingPartner\Model\Shipping\LabelSpecification',
+        'label_specification' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\LabelSpecification',
     ];
 
     /**

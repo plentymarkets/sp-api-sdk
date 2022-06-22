@@ -71,8 +71,8 @@ class AllowanceDetails implements \ArrayAccess, \JsonSerializable, ModelInterfac
     protected static /** [COMPAT] array */ $openAPITypes = [
         'type' => 'string',
         'description' => 'string',
-        'allowance_amount' => '\AmazonPHP\SellingPartner\Model\VendorInvoices\Money',
-        'tax_details' => '\AmazonPHP\SellingPartner\Model\VendorInvoices\TaxDetails[]',
+        'allowance_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\Money',
+        'tax_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\TaxDetails[]',
     ];
 
     /**
@@ -348,7 +348,7 @@ class AllowanceDetails implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Gets tax_details.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorInvoices\TaxDetails[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\TaxDetails[]
      */
     public function getTaxDetails() : ?array
     {
@@ -358,7 +358,7 @@ class AllowanceDetails implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Sets tax_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorInvoices\TaxDetails[] $tax_details tax amount details applied on this allowance
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\TaxDetails[] $tax_details tax amount details applied on this allowance
      */
     public function setTaxDetails(?array $tax_details) : self
     {

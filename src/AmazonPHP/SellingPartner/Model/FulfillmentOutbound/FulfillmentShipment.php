@@ -71,8 +71,8 @@ class FulfillmentShipment implements \ArrayAccess, \JsonSerializable, ModelInter
         'shipping_date' => '\DateTime',
         'estimated_arrival_date' => '\DateTime',
         'shipping_notes' => 'string[]',
-        'fulfillment_shipment_item' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentShipmentItem[]',
-        'fulfillment_shipment_package' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentShipmentPackage[]',
+        'fulfillment_shipment_item' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentShipmentItem[]',
+        'fulfillment_shipment_package' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentShipmentPackage[]',
     ];
 
     /**
@@ -462,7 +462,7 @@ class FulfillmentShipment implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Gets fulfillment_shipment_package.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentShipmentPackage[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentShipmentPackage[]
      */
     public function getFulfillmentShipmentPackage() : ?array
     {
@@ -472,7 +472,7 @@ class FulfillmentShipment implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets fulfillment_shipment_package.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentShipmentPackage[] $fulfillment_shipment_package an array of fulfillment shipment package information
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentShipmentPackage[] $fulfillment_shipment_package an array of fulfillment shipment package information
      */
     public function setFulfillmentShipmentPackage(?array $fulfillment_shipment_package) : self
     {

@@ -57,7 +57,7 @@ class GetRatesResult implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'service_rates' => '\AmazonPHP\SellingPartner\Model\Shipping\ServiceRate[]',
+        'service_rates' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\ServiceRate[]',
     ];
 
     /**

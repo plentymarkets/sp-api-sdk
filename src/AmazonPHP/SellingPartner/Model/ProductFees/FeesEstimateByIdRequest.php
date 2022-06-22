@@ -57,8 +57,8 @@ class FeesEstimateByIdRequest implements \ArrayAccess, \JsonSerializable, ModelI
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'fees_estimate_request' => '\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimateRequest',
-        'id_type' => '\AmazonPHP\SellingPartner\Model\ProductFees\IdType',
+        'fees_estimate_request' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimateRequest',
+        'id_type' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\IdType',
         'id_value' => 'string',
     ];
 
@@ -241,7 +241,7 @@ class FeesEstimateByIdRequest implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Sets fees_estimate_request.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimateRequest $fees_estimate_request fees_estimate_request
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimateRequest $fees_estimate_request fees_estimate_request
      */
     public function setFeesEstimateRequest(?FeesEstimateRequest $fees_estimate_request) : self
     {

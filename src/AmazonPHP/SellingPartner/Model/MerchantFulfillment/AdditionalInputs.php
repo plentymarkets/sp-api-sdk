@@ -58,7 +58,7 @@ class AdditionalInputs implements \ArrayAccess, \JsonSerializable, ModelInterfac
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'additional_input_field_name' => 'string',
-        'seller_input_definition' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\SellerInputDefinition',
+        'seller_input_definition' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\SellerInputDefinition',
     ];
 
     /**
@@ -245,7 +245,7 @@ class AdditionalInputs implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Sets seller_input_definition.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\SellerInputDefinition $seller_input_definition seller_input_definition
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\SellerInputDefinition $seller_input_definition seller_input_definition
      */
     public function setSellerInputDefinition(?SellerInputDefinition $seller_input_definition) : self
     {

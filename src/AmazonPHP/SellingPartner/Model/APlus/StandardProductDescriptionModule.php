@@ -57,7 +57,7 @@ class StandardProductDescriptionModule implements \ArrayAccess, \JsonSerializabl
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'body' => '\AmazonPHP\SellingPartner\Model\APlus\ParagraphComponent',
+        'body' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ParagraphComponent',
     ];
 
     /**

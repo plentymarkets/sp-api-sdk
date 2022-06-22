@@ -57,7 +57,7 @@ class CreateDestinationRequest implements \ArrayAccess, \JsonSerializable, Model
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'resource_specification' => '\AmazonPHP\SellingPartner\Model\Notifications\DestinationResourceSpecification',
+        'resource_specification' => '\Plenty\AmazonPHP\SellingPartner\Model\Notifications\DestinationResourceSpecification',
         'name' => 'string',
     ];
 

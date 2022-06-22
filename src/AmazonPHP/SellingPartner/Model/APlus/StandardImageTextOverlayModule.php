@@ -57,8 +57,8 @@ class StandardImageTextOverlayModule implements \ArrayAccess, \JsonSerializable,
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'overlay_color_type' => '\AmazonPHP\SellingPartner\Model\APlus\ColorType',
-        'block' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
+        'overlay_color_type' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ColorType',
+        'block' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
     ];
 
     /**
@@ -251,7 +251,7 @@ class StandardImageTextOverlayModule implements \ArrayAccess, \JsonSerializable,
     /**
      * Sets block.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $block block
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $block block
      */
     public function setBlock(?StandardImageTextBlock $block) : self
     {

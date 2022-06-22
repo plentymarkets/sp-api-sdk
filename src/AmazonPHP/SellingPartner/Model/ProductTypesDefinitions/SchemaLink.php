@@ -57,7 +57,7 @@ class SchemaLink implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'link' => '\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\SchemaLinkLink',
+        'link' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\SchemaLinkLink',
         'checksum' => 'string',
     ];
 

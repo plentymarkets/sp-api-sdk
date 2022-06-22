@@ -57,10 +57,10 @@ class GetPrepInstructionsResult implements \ArrayAccess, \JsonSerializable, Mode
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'sku_prep_instructions_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SKUPrepInstructions[]',
-        'invalid_sku_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidSKU[]',
-        'asin_prep_instructions_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ASINPrepInstructions[]',
-        'invalid_asin_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidASIN[]',
+        'sku_prep_instructions_list' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SKUPrepInstructions[]',
+        'invalid_sku_list' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidSKU[]',
+        'asin_prep_instructions_list' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ASINPrepInstructions[]',
+        'invalid_asin_list' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidASIN[]',
     ];
 
     /**
@@ -229,7 +229,7 @@ class GetPrepInstructionsResult implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Gets sku_prep_instructions_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SKUPrepInstructions[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SKUPrepInstructions[]
      */
     public function getSkuPrepInstructionsList() : ?array
     {
@@ -239,7 +239,7 @@ class GetPrepInstructionsResult implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets sku_prep_instructions_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SKUPrepInstructions[] $sku_prep_instructions_list a list of SKU labeling requirements and item preparation instructions
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SKUPrepInstructions[] $sku_prep_instructions_list a list of SKU labeling requirements and item preparation instructions
      */
     public function setSkuPrepInstructionsList(?array $sku_prep_instructions_list) : self
     {
@@ -251,7 +251,7 @@ class GetPrepInstructionsResult implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Gets invalid_sku_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidSKU[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidSKU[]
      */
     public function getInvalidSkuList() : ?array
     {
@@ -261,7 +261,7 @@ class GetPrepInstructionsResult implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets invalid_sku_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidSKU[] $invalid_sku_list a list of invalid SKU values and the reason they are invalid
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidSKU[] $invalid_sku_list a list of invalid SKU values and the reason they are invalid
      */
     public function setInvalidSkuList(?array $invalid_sku_list) : self
     {
@@ -273,7 +273,7 @@ class GetPrepInstructionsResult implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Gets asin_prep_instructions_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ASINPrepInstructions[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ASINPrepInstructions[]
      */
     public function getAsinPrepInstructionsList() : ?array
     {
@@ -283,7 +283,7 @@ class GetPrepInstructionsResult implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets asin_prep_instructions_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ASINPrepInstructions[] $asin_prep_instructions_list a list of item preparation instructions
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ASINPrepInstructions[] $asin_prep_instructions_list a list of item preparation instructions
      */
     public function setAsinPrepInstructionsList(?array $asin_prep_instructions_list) : self
     {
@@ -295,7 +295,7 @@ class GetPrepInstructionsResult implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Gets invalid_asin_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidASIN[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidASIN[]
      */
     public function getInvalidAsinList() : ?array
     {
@@ -305,7 +305,7 @@ class GetPrepInstructionsResult implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets invalid_asin_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidASIN[] $invalid_asin_list a list of invalid ASIN values and the reasons they are invalid
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidASIN[] $invalid_asin_list a list of invalid ASIN values and the reasons they are invalid
      */
     public function setInvalidAsinList(?array $invalid_asin_list) : self
     {

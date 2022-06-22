@@ -57,8 +57,8 @@ class StandardComparisonTableModule implements \ArrayAccess, \JsonSerializable, 
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'product_columns' => '\AmazonPHP\SellingPartner\Model\APlus\StandardComparisonProductBlock[]',
-        'metric_row_labels' => '\AmazonPHP\SellingPartner\Model\APlus\PlainTextItem[]',
+        'product_columns' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardComparisonProductBlock[]',
+        'metric_row_labels' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\PlainTextItem[]',
     ];
 
     /**
@@ -235,7 +235,7 @@ class StandardComparisonTableModule implements \ArrayAccess, \JsonSerializable, 
     /**
      * Gets product_columns.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\APlus\StandardComparisonProductBlock[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardComparisonProductBlock[]
      */
     public function getProductColumns() : ?array
     {
@@ -245,7 +245,7 @@ class StandardComparisonTableModule implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets product_columns.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardComparisonProductBlock[] $product_columns product_columns
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardComparisonProductBlock[] $product_columns product_columns
      */
     public function setProductColumns(?array $product_columns) : self
     {
@@ -264,7 +264,7 @@ class StandardComparisonTableModule implements \ArrayAccess, \JsonSerializable, 
     /**
      * Gets metric_row_labels.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\APlus\PlainTextItem[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\PlainTextItem[]
      */
     public function getMetricRowLabels() : ?array
     {
@@ -274,7 +274,7 @@ class StandardComparisonTableModule implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets metric_row_labels.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\PlainTextItem[] $metric_row_labels metric_row_labels
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\PlainTextItem[] $metric_row_labels metric_row_labels
      */
     public function setMetricRowLabels(?array $metric_row_labels) : self
     {

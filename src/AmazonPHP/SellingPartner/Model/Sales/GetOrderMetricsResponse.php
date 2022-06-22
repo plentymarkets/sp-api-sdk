@@ -57,8 +57,8 @@ class GetOrderMetricsResponse implements \ArrayAccess, \JsonSerializable, ModelI
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\Sales\OrderMetricsInterval[]',
-        'errors' => '\AmazonPHP\SellingPartner\Model\Sales\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\Sales\OrderMetricsInterval[]',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\Sales\Error[]',
     ];
 
     /**
@@ -217,7 +217,7 @@ class GetOrderMetricsResponse implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Gets payload.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Sales\OrderMetricsInterval[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Sales\OrderMetricsInterval[]
      */
     public function getPayload() : ?array
     {
@@ -227,7 +227,7 @@ class GetOrderMetricsResponse implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Sales\OrderMetricsInterval[] $payload a set of order metrics, each scoped to a particular time interval
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Sales\OrderMetricsInterval[] $payload a set of order metrics, each scoped to a particular time interval
      */
     public function setPayload(?array $payload) : self
     {
@@ -239,7 +239,7 @@ class GetOrderMetricsResponse implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Sales\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Sales\Error[]
      */
     public function getErrors() : ?array
     {
@@ -249,7 +249,7 @@ class GetOrderMetricsResponse implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Sales\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Sales\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

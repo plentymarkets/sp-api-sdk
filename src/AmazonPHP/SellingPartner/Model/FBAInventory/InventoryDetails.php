@@ -61,9 +61,9 @@ class InventoryDetails implements \ArrayAccess, \JsonSerializable, ModelInterfac
         'inbound_working_quantity' => 'int',
         'inbound_shipped_quantity' => 'int',
         'inbound_receiving_quantity' => 'int',
-        'reserved_quantity' => '\AmazonPHP\SellingPartner\Model\FBAInventory\ReservedQuantity',
-        'researching_quantity' => '\AmazonPHP\SellingPartner\Model\FBAInventory\ResearchingQuantity',
-        'unfulfillable_quantity' => '\AmazonPHP\SellingPartner\Model\FBAInventory\UnfulfillableQuantity',
+        'reserved_quantity' => '\Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\ReservedQuantity',
+        'researching_quantity' => '\Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\ResearchingQuantity',
+        'unfulfillable_quantity' => '\Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\UnfulfillableQuantity',
     ];
 
     /**
@@ -335,7 +335,7 @@ class InventoryDetails implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Sets reserved_quantity.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FBAInventory\ReservedQuantity $reserved_quantity reserved_quantity
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\ReservedQuantity $reserved_quantity reserved_quantity
      */
     public function setReservedQuantity(?ReservedQuantity $reserved_quantity) : self
     {
@@ -355,7 +355,7 @@ class InventoryDetails implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Sets researching_quantity.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FBAInventory\ResearchingQuantity $researching_quantity researching_quantity
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\ResearchingQuantity $researching_quantity researching_quantity
      */
     public function setResearchingQuantity(?ResearchingQuantity $researching_quantity) : self
     {
@@ -375,7 +375,7 @@ class InventoryDetails implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Sets unfulfillable_quantity.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FBAInventory\UnfulfillableQuantity $unfulfillable_quantity unfulfillable_quantity
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\UnfulfillableQuantity $unfulfillable_quantity unfulfillable_quantity
      */
     public function setUnfulfillableQuantity(?UnfulfillableQuantity $unfulfillable_quantity) : self
     {

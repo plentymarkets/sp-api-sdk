@@ -57,17 +57,17 @@ class FulfillmentPreview implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'shipping_speed_category' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ShippingSpeedCategory',
-        'scheduled_delivery_info' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ScheduledDeliveryInfo',
+        'shipping_speed_category' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ShippingSpeedCategory',
+        'scheduled_delivery_info' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ScheduledDeliveryInfo',
         'is_fulfillable' => 'bool',
         'is_cod_capable' => 'bool',
-        'estimated_shipping_weight' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Weight',
-        'estimated_fees' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Fee[]',
-        'fulfillment_preview_shipments' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPreviewShipment[]',
-        'unfulfillable_preview_items' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\UnfulfillablePreviewItem[]',
+        'estimated_shipping_weight' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Weight',
+        'estimated_fees' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Fee[]',
+        'fulfillment_preview_shipments' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPreviewShipment[]',
+        'unfulfillable_preview_items' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\UnfulfillablePreviewItem[]',
         'order_unfulfillable_reasons' => 'string[]',
         'marketplace_id' => 'string',
-        'feature_constraints' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[]',
+        'feature_constraints' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[]',
     ];
 
     /**
@@ -317,7 +317,7 @@ class FulfillmentPreview implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets scheduled_delivery_info.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ScheduledDeliveryInfo $scheduled_delivery_info scheduled_delivery_info
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ScheduledDeliveryInfo $scheduled_delivery_info scheduled_delivery_info
      */
     public function setScheduledDeliveryInfo(?ScheduledDeliveryInfo $scheduled_delivery_info) : self
     {
@@ -377,7 +377,7 @@ class FulfillmentPreview implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets estimated_shipping_weight.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Weight $estimated_shipping_weight estimated_shipping_weight
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Weight $estimated_shipping_weight estimated_shipping_weight
      */
     public function setEstimatedShippingWeight(?Weight $estimated_shipping_weight) : self
     {
@@ -389,7 +389,7 @@ class FulfillmentPreview implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Gets estimated_fees.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Fee[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Fee[]
      */
     public function getEstimatedFees() : ?array
     {
@@ -399,7 +399,7 @@ class FulfillmentPreview implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets estimated_fees.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Fee[] $estimated_fees an array of fee type and cost pairs
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Fee[] $estimated_fees an array of fee type and cost pairs
      */
     public function setEstimatedFees(?array $estimated_fees) : self
     {
@@ -411,7 +411,7 @@ class FulfillmentPreview implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Gets fulfillment_preview_shipments.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPreviewShipment[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPreviewShipment[]
      */
     public function getFulfillmentPreviewShipments() : ?array
     {
@@ -421,7 +421,7 @@ class FulfillmentPreview implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets fulfillment_preview_shipments.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPreviewShipment[] $fulfillment_preview_shipments an array of fulfillment preview shipment information
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPreviewShipment[] $fulfillment_preview_shipments an array of fulfillment preview shipment information
      */
     public function setFulfillmentPreviewShipments(?array $fulfillment_preview_shipments) : self
     {
@@ -433,7 +433,7 @@ class FulfillmentPreview implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Gets unfulfillable_preview_items.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\UnfulfillablePreviewItem[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\UnfulfillablePreviewItem[]
      */
     public function getUnfulfillablePreviewItems() : ?array
     {
@@ -443,7 +443,7 @@ class FulfillmentPreview implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets unfulfillable_preview_items.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\UnfulfillablePreviewItem[] $unfulfillable_preview_items an array of unfulfillable preview item information
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\UnfulfillablePreviewItem[] $unfulfillable_preview_items an array of unfulfillable preview item information
      */
     public function setUnfulfillablePreviewItems(?array $unfulfillable_preview_items) : self
     {
@@ -497,7 +497,7 @@ class FulfillmentPreview implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Gets feature_constraints.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[]
      */
     public function getFeatureConstraints() : ?array
     {
@@ -507,7 +507,7 @@ class FulfillmentPreview implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets feature_constraints.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[] $feature_constraints a list of features and their fulfillment policies to apply to the order
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[] $feature_constraints a list of features and their fulfillment policies to apply to the order
      */
     public function setFeatureConstraints(?array $feature_constraints) : self
     {

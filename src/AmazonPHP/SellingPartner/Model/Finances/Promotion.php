@@ -59,7 +59,7 @@ class Promotion implements \ArrayAccess, \JsonSerializable, ModelInterface
     protected static /** [COMPAT] array */ $openAPITypes = [
         'promotion_type' => 'string',
         'promotion_id' => 'string',
-        'promotion_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'promotion_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
     ];
 
     /**
@@ -271,7 +271,7 @@ class Promotion implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets promotion_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $promotion_amount promotion_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $promotion_amount promotion_amount
      */
     public function setPromotionAmount(?Currency $promotion_amount) : self
     {

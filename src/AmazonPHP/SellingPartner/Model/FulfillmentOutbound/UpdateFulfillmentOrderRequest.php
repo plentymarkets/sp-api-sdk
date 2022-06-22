@@ -61,14 +61,14 @@ class UpdateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
         'displayable_order_id' => 'string',
         'displayable_order_date' => '\DateTime',
         'displayable_order_comment' => 'string',
-        'shipping_speed_category' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ShippingSpeedCategory',
-        'destination_address' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Address',
-        'fulfillment_action' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentAction',
-        'fulfillment_policy' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPolicy',
+        'shipping_speed_category' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ShippingSpeedCategory',
+        'destination_address' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Address',
+        'fulfillment_action' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentAction',
+        'fulfillment_policy' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPolicy',
         'ship_from_country_code' => 'string',
         'notification_emails' => 'string[]',
-        'feature_constraints' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[]',
-        'items' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\UpdateFulfillmentOrderItem[]',
+        'feature_constraints' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[]',
+        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\UpdateFulfillmentOrderItem[]',
     ];
 
     /**
@@ -385,7 +385,7 @@ class UpdateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets shipping_speed_category.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ShippingSpeedCategory $shipping_speed_category shipping_speed_category
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ShippingSpeedCategory $shipping_speed_category shipping_speed_category
      */
     public function setShippingSpeedCategory(?ShippingSpeedCategory $shipping_speed_category) : self
     {
@@ -405,7 +405,7 @@ class UpdateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets destination_address.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Address $destination_address destination_address
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Address $destination_address destination_address
      */
     public function setDestinationAddress(?Address $destination_address) : self
     {
@@ -425,7 +425,7 @@ class UpdateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets fulfillment_action.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentAction $fulfillment_action fulfillment_action
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentAction $fulfillment_action fulfillment_action
      */
     public function setFulfillmentAction(?FulfillmentAction $fulfillment_action) : self
     {
@@ -445,7 +445,7 @@ class UpdateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets fulfillment_policy.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPolicy $fulfillment_policy fulfillment_policy
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPolicy $fulfillment_policy fulfillment_policy
      */
     public function setFulfillmentPolicy(?FulfillmentPolicy $fulfillment_policy) : self
     {
@@ -499,7 +499,7 @@ class UpdateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
     /**
      * Gets feature_constraints.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[]
      */
     public function getFeatureConstraints() : ?array
     {
@@ -509,7 +509,7 @@ class UpdateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets feature_constraints.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[] $feature_constraints a list of features and their fulfillment policies to apply to the order
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSettings[] $feature_constraints a list of features and their fulfillment policies to apply to the order
      */
     public function setFeatureConstraints(?array $feature_constraints) : self
     {
@@ -521,7 +521,7 @@ class UpdateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
     /**
      * Gets items.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\UpdateFulfillmentOrderItem[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\UpdateFulfillmentOrderItem[]
      */
     public function getItems() : ?array
     {
@@ -531,7 +531,7 @@ class UpdateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets items.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\UpdateFulfillmentOrderItem[] $items an array of fulfillment order item information for updating a fulfillment order
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\UpdateFulfillmentOrderItem[] $items an array of fulfillment order item information for updating a fulfillment order
      */
     public function setItems(?array $items) : self
     {

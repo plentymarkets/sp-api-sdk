@@ -57,7 +57,7 @@ class CreateFulfillmentReturnRequest implements \ArrayAccess, \JsonSerializable,
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'items' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\CreateReturnItem[]',
+        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\CreateReturnItem[]',
     ];
 
     /**

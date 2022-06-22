@@ -71,7 +71,7 @@ class AssociatedItem implements \ArrayAccess, \JsonSerializable, ModelInterface
         'order_id' => 'string',
         'item_status' => 'string',
         'brand_name' => 'string',
-        'item_delivery' => '\AmazonPHP\SellingPartner\Model\Services\ItemDelivery',
+        'item_delivery' => '\Plenty\AmazonPHP\SellingPartner\Model\Services\ItemDelivery',
     ];
 
     /**
@@ -437,7 +437,7 @@ class AssociatedItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets item_delivery.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Services\ItemDelivery $item_delivery item_delivery
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Services\ItemDelivery $item_delivery item_delivery
      */
     public function setItemDelivery(?ItemDelivery $item_delivery) : self
     {

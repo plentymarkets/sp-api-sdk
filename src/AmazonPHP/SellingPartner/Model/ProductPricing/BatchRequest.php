@@ -58,7 +58,7 @@ class BatchRequest implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'uri' => 'string',
-        'method' => '\AmazonPHP\SellingPartner\Model\ProductPricing\HttpMethod',
+        'method' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\HttpMethod',
         'headers' => 'array<string,string>',
     ];
 

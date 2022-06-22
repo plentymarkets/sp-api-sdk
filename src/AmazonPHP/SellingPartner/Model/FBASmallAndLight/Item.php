@@ -58,7 +58,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'asin' => 'string',
-        'price' => '\AmazonPHP\SellingPartner\Model\FBASmallAndLight\MoneyType',
+        'price' => '\Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\MoneyType',
     ];
 
     /**

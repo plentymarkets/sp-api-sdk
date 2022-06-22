@@ -58,7 +58,7 @@ class Label implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'label_stream' => 'string',
-        'label_specification' => '\AmazonPHP\SellingPartner\Model\Shipping\LabelSpecification',
+        'label_specification' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\LabelSpecification',
     ];
 
     /**
@@ -245,7 +245,7 @@ class Label implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets label_specification.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Shipping\LabelSpecification $label_specification label_specification
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Shipping\LabelSpecification $label_specification label_specification
      */
     public function setLabelSpecification(?LabelSpecification $label_specification) : self
     {

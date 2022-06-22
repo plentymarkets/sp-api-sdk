@@ -57,8 +57,8 @@ class PartneredSmallParcelDataOutput implements \ArrayAccess, \JsonSerializable,
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'package_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredSmallParcelPackageOutput[]',
-        'partnered_estimate' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredEstimate',
+        'package_list' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredSmallParcelPackageOutput[]',
+        'partnered_estimate' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredEstimate',
     ];
 
     /**
@@ -253,7 +253,7 @@ class PartneredSmallParcelDataOutput implements \ArrayAccess, \JsonSerializable,
     /**
      * Sets partnered_estimate.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredEstimate $partnered_estimate partnered_estimate
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredEstimate $partnered_estimate partnered_estimate
      */
     public function setPartneredEstimate(?PartneredEstimate $partnered_estimate) : self
     {

@@ -65,7 +65,7 @@ class Transaction implements \ArrayAccess, \JsonSerializable, ModelInterface
     protected static /** [COMPAT] array */ $openAPITypes = [
         'transaction_id' => 'string',
         'status' => 'string',
-        'errors' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentTransactions\ErrorList',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentTransactions\ErrorList',
     ];
 
     /**
@@ -321,7 +321,7 @@ class Transaction implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentTransactions\ErrorList $errors errors
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentTransactions\ErrorList $errors errors
      */
     public function setErrors(?ErrorList $errors) : self
     {

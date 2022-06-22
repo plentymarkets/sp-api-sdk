@@ -57,9 +57,9 @@ class BatchOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInter
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'headers' => '\AmazonPHP\SellingPartner\Model\ProductPricing\HttpResponseHeaders',
-        'status' => '\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersHttpStatusLine',
-        'body' => '\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse',
+        'headers' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\HttpResponseHeaders',
+        'status' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersHttpStatusLine',
+        'body' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse',
     ];
 
     /**
@@ -237,7 +237,7 @@ class BatchOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets headers.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\HttpResponseHeaders $headers headers
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\HttpResponseHeaders $headers headers
      */
     public function setHeaders(?HttpResponseHeaders $headers) : self
     {
@@ -257,7 +257,7 @@ class BatchOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets status.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersHttpStatusLine $status status
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersHttpStatusLine $status status
      */
     public function setStatus(?GetOffersHttpStatusLine $status) : self
     {

@@ -57,7 +57,7 @@ class PaymentExecutionDetailItem implements \ArrayAccess, \JsonSerializable, Mod
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payment' => '\AmazonPHP\SellingPartner\Model\Orders\Money',
+        'payment' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money',
         'payment_method' => 'string',
     ];
 

@@ -58,7 +58,7 @@ class AsinMetadata implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'asin' => 'string',
-        'badge_set' => '\AmazonPHP\SellingPartner\Model\APlus\AsinBadge[]',
+        'badge_set' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\AsinBadge[]',
         'parent' => 'string',
         'title' => 'string',
         'image_url' => 'string',
@@ -287,7 +287,7 @@ class AsinMetadata implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets badge_set.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\APlus\AsinBadge[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\AsinBadge[]
      */
     public function getBadgeSet() : ?array
     {
@@ -297,7 +297,7 @@ class AsinMetadata implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets badge_set.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\AsinBadge[] $badge_set the set of ASIN badges
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\AsinBadge[] $badge_set the set of ASIN badges
      */
     public function setBadgeSet(?array $badge_set) : self
     {

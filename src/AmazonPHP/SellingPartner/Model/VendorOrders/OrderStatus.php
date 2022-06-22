@@ -65,9 +65,9 @@ class OrderStatus implements \ArrayAccess, \JsonSerializable, ModelInterface
         'purchase_order_status' => 'string',
         'purchase_order_date' => '\DateTime',
         'last_updated_date' => '\DateTime',
-        'selling_party' => '\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification',
-        'ship_to_party' => '\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification',
-        'item_status' => '\AmazonPHP\SellingPartner\Model\VendorOrders\OrderItemStatus[]',
+        'selling_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification',
+        'ship_to_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification',
+        'item_status' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderItemStatus[]',
     ];
 
     /**

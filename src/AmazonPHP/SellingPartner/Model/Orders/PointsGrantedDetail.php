@@ -58,7 +58,7 @@ class PointsGrantedDetail implements \ArrayAccess, \JsonSerializable, ModelInter
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'points_number' => 'int',
-        'points_monetary_value' => '\AmazonPHP\SellingPartner\Model\Orders\Money',
+        'points_monetary_value' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money',
     ];
 
     /**
@@ -245,7 +245,7 @@ class PointsGrantedDetail implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets points_monetary_value.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\Money $points_monetary_value points_monetary_value
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money $points_monetary_value points_monetary_value
      */
     public function setPointsMonetaryValue(?Money $points_monetary_value) : self
     {

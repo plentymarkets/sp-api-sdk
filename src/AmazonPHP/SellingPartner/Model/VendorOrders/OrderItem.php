@@ -60,10 +60,10 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
         'item_sequence_number' => 'string',
         'amazon_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
-        'ordered_quantity' => '\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
+        'ordered_quantity' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
         'is_back_order_allowed' => 'bool',
-        'net_cost' => '\AmazonPHP\SellingPartner\Model\VendorOrders\Money',
-        'list_price' => '\AmazonPHP\SellingPartner\Model\VendorOrders\Money',
+        'net_cost' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\Money',
+        'list_price' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\Money',
     ];
 
     /**
@@ -369,7 +369,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets net_cost.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\Money $net_cost net_cost
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\Money $net_cost net_cost
      */
     public function setNetCost(?Money $net_cost) : self
     {
@@ -389,7 +389,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets list_price.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\Money $list_price list_price
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\Money $list_price list_price
      */
     public function setListPrice(?Money $list_price) : self
     {

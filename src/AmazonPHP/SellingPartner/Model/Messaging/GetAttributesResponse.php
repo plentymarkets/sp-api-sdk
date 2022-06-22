@@ -57,8 +57,8 @@ class GetAttributesResponse implements \ArrayAccess, \JsonSerializable, ModelInt
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'buyer' => '\AmazonPHP\SellingPartner\Model\Messaging\GetAttributesResponseBuyer',
-        'errors' => '\AmazonPHP\SellingPartner\Model\Messaging\Error[]',
+        'buyer' => '\Plenty\AmazonPHP\SellingPartner\Model\Messaging\GetAttributesResponseBuyer',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\Messaging\Error[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class GetAttributesResponse implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets buyer.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Messaging\GetAttributesResponseBuyer $buyer buyer
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Messaging\GetAttributesResponseBuyer $buyer buyer
      */
     public function setBuyer(?GetAttributesResponseBuyer $buyer) : self
     {
@@ -237,7 +237,7 @@ class GetAttributesResponse implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Messaging\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Messaging\Error[]
      */
     public function getErrors() : ?array
     {
@@ -247,7 +247,7 @@ class GetAttributesResponse implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Messaging\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Messaging\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

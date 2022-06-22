@@ -57,8 +57,8 @@ class GetAuthorizationCodeResponse implements \ArrayAccess, \JsonSerializable, M
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\Authorization\AuthorizationCode',
-        'errors' => '\AmazonPHP\SellingPartner\Model\Authorization\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\Authorization\AuthorizationCode',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\Authorization\Error[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class GetAuthorizationCodeResponse implements \ArrayAccess, \JsonSerializable, M
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Authorization\AuthorizationCode $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Authorization\AuthorizationCode $payload payload
      */
     public function setPayload(?AuthorizationCode $payload) : self
     {
@@ -237,7 +237,7 @@ class GetAuthorizationCodeResponse implements \ArrayAccess, \JsonSerializable, M
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Authorization\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Authorization\Error[]
      */
     public function getErrors() : ?array
     {
@@ -247,7 +247,7 @@ class GetAuthorizationCodeResponse implements \ArrayAccess, \JsonSerializable, M
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Authorization\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Authorization\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

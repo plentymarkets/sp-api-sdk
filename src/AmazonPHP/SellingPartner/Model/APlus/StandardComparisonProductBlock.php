@@ -58,11 +58,11 @@ class StandardComparisonProductBlock implements \ArrayAccess, \JsonSerializable,
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'position' => 'int',
-        'image' => '\AmazonPHP\SellingPartner\Model\APlus\ImageComponent',
+        'image' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ImageComponent',
         'title' => 'string',
         'asin' => 'string',
         'highlight' => 'bool',
-        'metrics' => '\AmazonPHP\SellingPartner\Model\APlus\PlainTextItem[]',
+        'metrics' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\PlainTextItem[]',
     ];
 
     /**
@@ -311,7 +311,7 @@ class StandardComparisonProductBlock implements \ArrayAccess, \JsonSerializable,
     /**
      * Sets image.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\ImageComponent $image image
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\ImageComponent $image image
      */
     public function setImage(?ImageComponent $image) : self
     {
@@ -395,7 +395,7 @@ class StandardComparisonProductBlock implements \ArrayAccess, \JsonSerializable,
     /**
      * Gets metrics.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\APlus\PlainTextItem[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\PlainTextItem[]
      */
     public function getMetrics() : ?array
     {
@@ -405,7 +405,7 @@ class StandardComparisonProductBlock implements \ArrayAccess, \JsonSerializable,
     /**
      * Sets metrics.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\PlainTextItem[] $metrics comparison metrics for the product
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\PlainTextItem[] $metrics comparison metrics for the product
      */
     public function setMetrics(?array $metrics) : self
     {

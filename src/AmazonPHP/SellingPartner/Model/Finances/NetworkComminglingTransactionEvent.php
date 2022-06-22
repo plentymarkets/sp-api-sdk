@@ -63,8 +63,8 @@ class NetworkComminglingTransactionEvent implements \ArrayAccess, \JsonSerializa
         'swap_reason' => 'string',
         'asin' => 'string',
         'marketplace_id' => 'string',
-        'tax_exclusive_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
-        'tax_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'tax_exclusive_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'tax_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
     ];
 
     /**
@@ -383,7 +383,7 @@ class NetworkComminglingTransactionEvent implements \ArrayAccess, \JsonSerializa
     /**
      * Sets tax_exclusive_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $tax_exclusive_amount tax_exclusive_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $tax_exclusive_amount tax_exclusive_amount
      */
     public function setTaxExclusiveAmount(?Currency $tax_exclusive_amount) : self
     {
@@ -403,7 +403,7 @@ class NetworkComminglingTransactionEvent implements \ArrayAccess, \JsonSerializa
     /**
      * Sets tax_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $tax_amount tax_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $tax_amount tax_amount
      */
     public function setTaxAmount(?Currency $tax_amount) : self
     {

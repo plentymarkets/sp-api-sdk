@@ -133,7 +133,7 @@ final class VendorInvoicesSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\VendorInvoices\SubmitInvoicesResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\SubmitInvoicesResponse',
             []
         );
     }

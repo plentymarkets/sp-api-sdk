@@ -57,8 +57,8 @@ class ImageDimensions implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'width' => '\AmazonPHP\SellingPartner\Model\APlus\IntegerWithUnits',
-        'height' => '\AmazonPHP\SellingPartner\Model\APlus\IntegerWithUnits',
+        'width' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\IntegerWithUnits',
+        'height' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\IntegerWithUnits',
     ];
 
     /**

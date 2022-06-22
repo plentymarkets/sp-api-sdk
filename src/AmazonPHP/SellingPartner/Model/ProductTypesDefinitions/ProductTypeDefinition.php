@@ -67,15 +67,15 @@ class ProductTypeDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'meta_schema' => '\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\SchemaLink',
-        'schema' => '\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\SchemaLink',
+        'meta_schema' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\SchemaLink',
+        'schema' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\SchemaLink',
         'requirements' => 'string',
         'requirements_enforced' => 'string',
-        'property_groups' => 'array<string,\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\PropertyGroup>',
+        'property_groups' => 'array<string,\Plenty\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\PropertyGroup>',
         'locale' => 'string',
         'marketplace_ids' => 'string[]',
         'product_type' => 'string',
-        'product_type_version' => '\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\ProductTypeVersion',
+        'product_type_version' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\ProductTypeVersion',
     ];
 
     /**
@@ -356,7 +356,7 @@ class ProductTypeDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets meta_schema.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\SchemaLink $meta_schema meta_schema
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\SchemaLink $meta_schema meta_schema
      */
     public function setMetaSchema(?SchemaLink $meta_schema) : self
     {
@@ -450,7 +450,7 @@ class ProductTypeDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Gets property_groups.
      *
-     * @return array<string,\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\PropertyGroup>
+     * @return array<string,\Plenty\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\PropertyGroup>
      */
     public function getPropertyGroups() : array
     {
@@ -460,7 +460,7 @@ class ProductTypeDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets property_groups.
      *
-     * @param array<string,\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\PropertyGroup> $property_groups Mapping of property group names to property groups. Property groups represent logical groupings of schema properties that can be used for display or informational purposes.
+     * @param array<string,\Plenty\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\PropertyGroup> $property_groups Mapping of property group names to property groups. Property groups represent logical groupings of schema properties that can be used for display or informational purposes.
      */
     public function setPropertyGroups(array $property_groups) : self
     {

@@ -57,7 +57,7 @@ class CancelShipmentResponse implements \ArrayAccess, \JsonSerializable, ModelIn
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'errors' => '\AmazonPHP\SellingPartner\Model\Shipping\Error[]',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Error[]',
     ];
 
     /**
@@ -211,7 +211,7 @@ class CancelShipmentResponse implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Shipping\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Error[]
      */
     public function getErrors() : ?array
     {
@@ -221,7 +221,7 @@ class CancelShipmentResponse implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Shipping\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

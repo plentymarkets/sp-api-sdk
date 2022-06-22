@@ -57,7 +57,7 @@ class ItemProcurement implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'cost_price' => '\AmazonPHP\SellingPartner\Model\ListingsItems\Money',
+        'cost_price' => '\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\Money',
     ];
 
     /**

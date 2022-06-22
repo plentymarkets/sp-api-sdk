@@ -57,7 +57,7 @@ class SearchContentPublishRecordsResponseAllOf implements \ArrayAccess, \JsonSer
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'publish_record_list' => '\AmazonPHP\SellingPartner\Model\APlus\PublishRecord[]',
+        'publish_record_list' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\PublishRecord[]',
     ];
 
     /**

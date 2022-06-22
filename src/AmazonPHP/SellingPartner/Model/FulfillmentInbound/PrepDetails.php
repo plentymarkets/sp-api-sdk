@@ -57,8 +57,8 @@ class PrepDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'prep_instruction' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction',
-        'prep_owner' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepOwner',
+        'prep_instruction' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction',
+        'prep_owner' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepOwner',
     ];
 
     /**

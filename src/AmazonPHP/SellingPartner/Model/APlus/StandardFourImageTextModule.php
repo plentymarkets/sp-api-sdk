@@ -57,11 +57,11 @@ class StandardFourImageTextModule implements \ArrayAccess, \JsonSerializable, Mo
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'headline' => '\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
-        'block1' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
-        'block2' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
-        'block3' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
-        'block4' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
+        'headline' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
+        'block1' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
+        'block2' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
+        'block3' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
+        'block4' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
     ];
 
     /**
@@ -243,7 +243,7 @@ class StandardFourImageTextModule implements \ArrayAccess, \JsonSerializable, Mo
     /**
      * Sets headline.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\TextComponent $headline headline
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent $headline headline
      */
     public function setHeadline(?TextComponent $headline) : self
     {
@@ -263,7 +263,7 @@ class StandardFourImageTextModule implements \ArrayAccess, \JsonSerializable, Mo
     /**
      * Sets block1.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $block1 block1
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $block1 block1
      */
     public function setBlock1(?StandardImageTextBlock $block1) : self
     {
@@ -283,7 +283,7 @@ class StandardFourImageTextModule implements \ArrayAccess, \JsonSerializable, Mo
     /**
      * Sets block2.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $block2 block2
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $block2 block2
      */
     public function setBlock2(?StandardImageTextBlock $block2) : self
     {
@@ -303,7 +303,7 @@ class StandardFourImageTextModule implements \ArrayAccess, \JsonSerializable, Mo
     /**
      * Sets block3.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $block3 block3
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $block3 block3
      */
     public function setBlock3(?StandardImageTextBlock $block3) : self
     {
@@ -323,7 +323,7 @@ class StandardFourImageTextModule implements \ArrayAccess, \JsonSerializable, Mo
     /**
      * Sets block4.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $block4 block4
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $block4 block4
      */
     public function setBlock4(?StandardImageTextBlock $block4) : self
     {

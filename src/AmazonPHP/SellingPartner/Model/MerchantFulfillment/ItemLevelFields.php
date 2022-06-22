@@ -58,7 +58,7 @@ class ItemLevelFields implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'asin' => 'string',
-        'additional_inputs' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalInputs[]',
+        'additional_inputs' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalInputs[]',
     ];
 
     /**

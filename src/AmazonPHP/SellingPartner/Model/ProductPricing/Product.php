@@ -57,12 +57,12 @@ class Product implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'identifiers' => '\AmazonPHP\SellingPartner\Model\ProductPricing\IdentifierType',
+        'identifiers' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\IdentifierType',
         'attribute_sets' => 'object[]',
         'relationships' => 'object[]',
-        'competitive_pricing' => '\AmazonPHP\SellingPartner\Model\ProductPricing\CompetitivePricingType',
-        'sales_rankings' => '\AmazonPHP\SellingPartner\Model\ProductPricing\SalesRankType[]',
-        'offers' => '\AmazonPHP\SellingPartner\Model\ProductPricing\OfferType[]',
+        'competitive_pricing' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\CompetitivePricingType',
+        'sales_rankings' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\SalesRankType[]',
+        'offers' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\OfferType[]',
     ];
 
     /**
@@ -319,7 +319,7 @@ class Product implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets competitive_pricing.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\CompetitivePricingType $competitive_pricing competitive_pricing
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\CompetitivePricingType $competitive_pricing competitive_pricing
      */
     public function setCompetitivePricing(?CompetitivePricingType $competitive_pricing) : self
     {
@@ -331,7 +331,7 @@ class Product implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets sales_rankings.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ProductPricing\SalesRankType[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\SalesRankType[]
      */
     public function getSalesRankings() : ?array
     {
@@ -341,7 +341,7 @@ class Product implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets sales_rankings.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\SalesRankType[] $sales_rankings a list of sales rank information for the item, by category
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\SalesRankType[] $sales_rankings a list of sales rank information for the item, by category
      */
     public function setSalesRankings(?array $sales_rankings) : self
     {
@@ -353,7 +353,7 @@ class Product implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets offers.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ProductPricing\OfferType[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\OfferType[]
      */
     public function getOffers() : ?array
     {
@@ -363,7 +363,7 @@ class Product implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets offers.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\OfferType[] $offers a list of offers
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\OfferType[] $offers a list of offers
      */
     public function setOffers(?array $offers) : self
     {

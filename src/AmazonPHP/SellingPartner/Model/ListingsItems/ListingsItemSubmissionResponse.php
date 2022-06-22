@@ -64,7 +64,7 @@ class ListingsItemSubmissionResponse implements \ArrayAccess, \JsonSerializable,
         'sku' => 'string',
         'status' => 'string',
         'submission_id' => 'string',
-        'issues' => '\AmazonPHP\SellingPartner\Model\ListingsItems\Issue[]',
+        'issues' => '\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\Issue[]',
     ];
 
     /**
@@ -340,7 +340,7 @@ class ListingsItemSubmissionResponse implements \ArrayAccess, \JsonSerializable,
     /**
      * Gets issues.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ListingsItems\Issue[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\Issue[]
      */
     public function getIssues() : ?array
     {
@@ -350,7 +350,7 @@ class ListingsItemSubmissionResponse implements \ArrayAccess, \JsonSerializable,
     /**
      * Sets issues.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ListingsItems\Issue[] $issues listings item issues related to the listings item submission
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\Issue[] $issues listings item issues related to the listings item submission
      */
     public function setIssues(?array $issues) : self
     {

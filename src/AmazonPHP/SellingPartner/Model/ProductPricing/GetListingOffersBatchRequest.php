@@ -57,7 +57,7 @@ class GetListingOffersBatchRequest implements \ArrayAccess, \JsonSerializable, M
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'requests' => '\AmazonPHP\SellingPartner\Model\ProductPricing\ListingOffersRequest[]',
+        'requests' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ListingOffersRequest[]',
     ];
 
     /**
@@ -221,7 +221,7 @@ class GetListingOffersBatchRequest implements \ArrayAccess, \JsonSerializable, M
     /**
      * Gets requests.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ProductPricing\ListingOffersRequest[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ListingOffersRequest[]
      */
     public function getRequests() : ?array
     {
@@ -231,7 +231,7 @@ class GetListingOffersBatchRequest implements \ArrayAccess, \JsonSerializable, M
     /**
      * Sets requests.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\ListingOffersRequest[] $requests a list of getItemOffers batched requests to run
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ListingOffersRequest[] $requests a list of getItemOffers batched requests to run
      */
     public function setRequests(?array $requests) : self
     {

@@ -58,12 +58,12 @@ class PurchaseShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelI
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'client_reference_id' => 'string',
-        'ship_to' => '\AmazonPHP\SellingPartner\Model\Shipping\Address',
-        'ship_from' => '\AmazonPHP\SellingPartner\Model\Shipping\Address',
+        'ship_to' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Address',
+        'ship_from' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Address',
         'ship_date' => '\DateTime',
-        'service_type' => '\AmazonPHP\SellingPartner\Model\Shipping\ServiceType',
-        'containers' => '\AmazonPHP\SellingPartner\Model\Shipping\Container[]',
-        'label_specification' => '\AmazonPHP\SellingPartner\Model\Shipping\LabelSpecification',
+        'service_type' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\ServiceType',
+        'containers' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Container[]',
+        'label_specification' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\LabelSpecification',
     ];
 
     /**

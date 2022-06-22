@@ -57,7 +57,7 @@ class OrdersList implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'orders' => '\AmazonPHP\SellingPartner\Model\Orders\Order[]',
+        'orders' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\Order[]',
         'next_token' => 'string',
         'last_updated_before' => 'string',
         'created_before' => 'string',

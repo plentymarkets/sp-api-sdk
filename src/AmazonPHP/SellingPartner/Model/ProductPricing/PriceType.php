@@ -57,10 +57,10 @@ class PriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'landed_price' => '\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
-        'listing_price' => '\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
-        'shipping' => '\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
-        'points' => '\AmazonPHP\SellingPartner\Model\ProductPricing\Points',
+        'landed_price' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
+        'listing_price' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
+        'shipping' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
+        'points' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\Points',
     ];
 
     /**
@@ -243,7 +243,7 @@ class PriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets landed_price.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $landed_price landed_price
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $landed_price landed_price
      */
     public function setLandedPrice(?MoneyType $landed_price) : self
     {
@@ -283,7 +283,7 @@ class PriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipping.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $shipping shipping
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $shipping shipping
      */
     public function setShipping(?MoneyType $shipping) : self
     {
@@ -303,7 +303,7 @@ class PriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets points.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\Points $points points
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\Points $points points
      */
     public function setPoints(?Points $points) : self
     {

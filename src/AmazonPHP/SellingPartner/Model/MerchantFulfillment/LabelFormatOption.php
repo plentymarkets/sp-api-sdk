@@ -58,7 +58,7 @@ class LabelFormatOption implements \ArrayAccess, \JsonSerializable, ModelInterfa
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'include_packing_slip_with_label' => 'bool',
-        'label_format' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat',
+        'label_format' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat',
     ];
 
     /**
@@ -245,7 +245,7 @@ class LabelFormatOption implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Sets label_format.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat $label_format label_format
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat $label_format label_format
      */
     public function setLabelFormat(?LabelFormat $label_format) : self
     {

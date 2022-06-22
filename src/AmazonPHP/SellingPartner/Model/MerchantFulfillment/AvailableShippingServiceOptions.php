@@ -57,8 +57,8 @@ class AvailableShippingServiceOptions implements \ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'available_carrier_will_pick_up_options' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AvailableCarrierWillPickUpOption[]',
-        'available_delivery_experience_options' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AvailableDeliveryExperienceOption[]',
+        'available_carrier_will_pick_up_options' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AvailableCarrierWillPickUpOption[]',
+        'available_delivery_experience_options' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AvailableDeliveryExperienceOption[]',
     ];
 
     /**

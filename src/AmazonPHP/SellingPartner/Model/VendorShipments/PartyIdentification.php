@@ -57,9 +57,9 @@ class PartyIdentification implements \ArrayAccess, \JsonSerializable, ModelInter
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'address' => '\AmazonPHP\SellingPartner\Model\VendorShipments\Address',
+        'address' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Address',
         'party_id' => 'string',
-        'tax_registration_details' => '\AmazonPHP\SellingPartner\Model\VendorShipments\TaxRegistrationDetails[]',
+        'tax_registration_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\TaxRegistrationDetails[]',
     ];
 
     /**
@@ -237,7 +237,7 @@ class PartyIdentification implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets address.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\Address $address address
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Address $address address
      */
     public function setAddress(?Address $address) : self
     {
@@ -269,7 +269,7 @@ class PartyIdentification implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Gets tax_registration_details.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorShipments\TaxRegistrationDetails[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\TaxRegistrationDetails[]
      */
     public function getTaxRegistrationDetails() : ?array
     {
@@ -279,7 +279,7 @@ class PartyIdentification implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets tax_registration_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\TaxRegistrationDetails[] $tax_registration_details tax registration details of the entity
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\TaxRegistrationDetails[] $tax_registration_details tax registration details of the entity
      */
     public function setTaxRegistrationDetails(?array $tax_registration_details) : self
     {

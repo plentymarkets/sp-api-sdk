@@ -57,7 +57,7 @@ class EventFilter implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'aggregation_settings' => '\AmazonPHP\SellingPartner\Model\Notifications\AggregationSettings',
+        'aggregation_settings' => '\Plenty\AmazonPHP\SellingPartner\Model\Notifications\AggregationSettings',
         'marketplace_ids' => 'string[]',
         'event_filter_type' => 'string',
     ];
@@ -237,7 +237,7 @@ class EventFilter implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets aggregation_settings.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Notifications\AggregationSettings $aggregation_settings aggregation_settings
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Notifications\AggregationSettings $aggregation_settings aggregation_settings
      */
     public function setAggregationSettings(?AggregationSettings $aggregation_settings) : self
     {

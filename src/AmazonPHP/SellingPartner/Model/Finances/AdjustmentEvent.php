@@ -59,8 +59,8 @@ class AdjustmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     protected static /** [COMPAT] array */ $openAPITypes = [
         'adjustment_type' => 'string',
         'posted_date' => '\DateTime',
-        'adjustment_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
-        'adjustment_item_list' => '\AmazonPHP\SellingPartner\Model\Finances\AdjustmentItem[]',
+        'adjustment_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'adjustment_item_list' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\AdjustmentItem[]',
     ];
 
     /**
@@ -279,7 +279,7 @@ class AdjustmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets adjustment_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $adjustment_amount adjustment_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $adjustment_amount adjustment_amount
      */
     public function setAdjustmentAmount(?Currency $adjustment_amount) : self
     {
@@ -291,7 +291,7 @@ class AdjustmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets adjustment_item_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Finances\AdjustmentItem[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\AdjustmentItem[]
      */
     public function getAdjustmentItemList() : ?array
     {
@@ -301,7 +301,7 @@ class AdjustmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets adjustment_item_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\AdjustmentItem[] $adjustment_item_list a list of information about items in an adjustment to the seller's account
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\AdjustmentItem[] $adjustment_item_list a list of information about items in an adjustment to the seller's account
      */
     public function setAdjustmentItemList(?array $adjustment_item_list) : self
     {

@@ -57,8 +57,8 @@ class RetrieveShippingLabelResponse implements \ArrayAccess, \JsonSerializable, 
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\Shipping\RetrieveShippingLabelResult',
-        'errors' => '\AmazonPHP\SellingPartner\Model\Shipping\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\RetrieveShippingLabelResult',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Error[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class RetrieveShippingLabelResponse implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Shipping\RetrieveShippingLabelResult $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Shipping\RetrieveShippingLabelResult $payload payload
      */
     public function setPayload(?RetrieveShippingLabelResult $payload) : self
     {
@@ -237,7 +237,7 @@ class RetrieveShippingLabelResponse implements \ArrayAccess, \JsonSerializable, 
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Shipping\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Error[]
      */
     public function getErrors() : ?array
     {
@@ -247,7 +247,7 @@ class RetrieveShippingLabelResponse implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Shipping\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

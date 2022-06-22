@@ -61,16 +61,16 @@ class ShipmentDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
         'amazon_order_id' => 'string',
         'amazon_shipment_id' => 'string',
         'purchase_date' => '\DateTime',
-        'shipping_address' => '\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Address',
+        'shipping_address' => '\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Address',
         'payment_method_details' => 'string[]',
         'marketplace_id' => 'string',
         'seller_id' => 'string',
         'buyer_name' => 'string',
         'buyer_county' => 'string',
-        'buyer_tax_info' => '\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\BuyerTaxInfo',
-        'marketplace_tax_info' => '\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\MarketplaceTaxInfo',
+        'buyer_tax_info' => '\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\BuyerTaxInfo',
+        'marketplace_tax_info' => '\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\MarketplaceTaxInfo',
         'seller_display_name' => 'string',
-        'shipment_items' => '\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\ShipmentItem[]',
+        'shipment_items' => '\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\ShipmentItem[]',
     ];
 
     /**
@@ -379,7 +379,7 @@ class ShipmentDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipping_address.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Address $shipping_address shipping_address
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Address $shipping_address shipping_address
      */
     public function setShippingAddress(?Address $shipping_address) : self
     {
@@ -501,7 +501,7 @@ class ShipmentDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets buyer_tax_info.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\BuyerTaxInfo $buyer_tax_info buyer_tax_info
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\BuyerTaxInfo $buyer_tax_info buyer_tax_info
      */
     public function setBuyerTaxInfo(?BuyerTaxInfo $buyer_tax_info) : self
     {
@@ -521,7 +521,7 @@ class ShipmentDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets marketplace_tax_info.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\MarketplaceTaxInfo $marketplace_tax_info marketplace_tax_info
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\MarketplaceTaxInfo $marketplace_tax_info marketplace_tax_info
      */
     public function setMarketplaceTaxInfo(?MarketplaceTaxInfo $marketplace_tax_info) : self
     {
@@ -553,7 +553,7 @@ class ShipmentDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets shipment_items.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\ShipmentItem[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\ShipmentItem[]
      */
     public function getShipmentItems() : ?array
     {
@@ -563,7 +563,7 @@ class ShipmentDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipment_items.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\ShipmentItem[] $shipment_items a list of shipment items
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\ShipmentItem[] $shipment_items a list of shipment items
      */
     public function setShipmentItems(?array $shipment_items) : self
     {

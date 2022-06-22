@@ -58,8 +58,8 @@ class BatchOffersRequestParams implements \ArrayAccess, \JsonSerializable, Model
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace_id' => 'string',
-        'item_condition' => '\AmazonPHP\SellingPartner\Model\ProductPricing\ItemCondition',
-        'customer_type' => '\AmazonPHP\SellingPartner\Model\ProductPricing\CustomerType',
+        'item_condition' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ItemCondition',
+        'customer_type' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\CustomerType',
     ];
 
     /**
@@ -281,7 +281,7 @@ class BatchOffersRequestParams implements \ArrayAccess, \JsonSerializable, Model
     /**
      * Sets customer_type.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\CustomerType $customer_type customer_type
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\CustomerType $customer_type customer_type
      */
     public function setCustomerType(?CustomerType $customer_type) : self
     {

@@ -85,19 +85,19 @@ class ShipmentConfirmation implements \ArrayAccess, \JsonSerializable, ModelInte
         'shipment_confirmation_type' => 'string',
         'shipment_type' => 'string',
         'shipment_structure' => 'string',
-        'transportation_details' => '\AmazonPHP\SellingPartner\Model\VendorShipments\TransportationDetails',
+        'transportation_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\TransportationDetails',
         'amazon_reference_number' => 'string',
         'shipment_confirmation_date' => '\DateTime',
         'shipped_date' => '\DateTime',
         'estimated_delivery_date' => '\DateTime',
-        'selling_party' => '\AmazonPHP\SellingPartner\Model\VendorShipments\PartyIdentification',
-        'ship_from_party' => '\AmazonPHP\SellingPartner\Model\VendorShipments\PartyIdentification',
-        'ship_to_party' => '\AmazonPHP\SellingPartner\Model\VendorShipments\PartyIdentification',
-        'shipment_measurements' => '\AmazonPHP\SellingPartner\Model\VendorShipments\ShipmentMeasurements',
-        'import_details' => '\AmazonPHP\SellingPartner\Model\VendorShipments\ImportDetails',
-        'shipped_items' => '\AmazonPHP\SellingPartner\Model\VendorShipments\Item[]',
-        'cartons' => '\AmazonPHP\SellingPartner\Model\VendorShipments\Carton[]',
-        'pallets' => '\AmazonPHP\SellingPartner\Model\VendorShipments\Pallet[]',
+        'selling_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\PartyIdentification',
+        'ship_from_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\PartyIdentification',
+        'ship_to_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\PartyIdentification',
+        'shipment_measurements' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ShipmentMeasurements',
+        'import_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ImportDetails',
+        'shipped_items' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Item[]',
+        'cartons' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Carton[]',
+        'pallets' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Pallet[]',
     ];
 
     /**
@@ -556,7 +556,7 @@ class ShipmentConfirmation implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Sets transportation_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\TransportationDetails $transportation_details transportation_details
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\TransportationDetails $transportation_details transportation_details
      */
     public function setTransportationDetails(?TransportationDetails $transportation_details) : self
     {
@@ -722,7 +722,7 @@ class ShipmentConfirmation implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Sets shipment_measurements.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\ShipmentMeasurements $shipment_measurements shipment_measurements
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ShipmentMeasurements $shipment_measurements shipment_measurements
      */
     public function setShipmentMeasurements(?ShipmentMeasurements $shipment_measurements) : self
     {
@@ -742,7 +742,7 @@ class ShipmentConfirmation implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Sets import_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\ImportDetails $import_details import_details
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ImportDetails $import_details import_details
      */
     public function setImportDetails(?ImportDetails $import_details) : self
     {
@@ -776,7 +776,7 @@ class ShipmentConfirmation implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Gets cartons.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorShipments\Carton[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Carton[]
      */
     public function getCartons() : ?array
     {
@@ -786,7 +786,7 @@ class ShipmentConfirmation implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Sets cartons.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\Carton[] $cartons a list of the cartons in this shipment
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Carton[] $cartons a list of the cartons in this shipment
      */
     public function setCartons(?array $cartons) : self
     {
@@ -798,7 +798,7 @@ class ShipmentConfirmation implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Gets pallets.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorShipments\Pallet[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Pallet[]
      */
     public function getPallets() : ?array
     {
@@ -808,7 +808,7 @@ class ShipmentConfirmation implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Sets pallets.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\Pallet[] $pallets a list of the pallets in this shipment
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Pallet[] $pallets a list of the pallets in this shipment
      */
     public function setPallets(?array $pallets) : self
     {

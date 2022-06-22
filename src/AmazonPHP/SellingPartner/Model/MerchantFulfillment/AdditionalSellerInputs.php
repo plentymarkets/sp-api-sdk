@@ -58,7 +58,7 @@ class AdditionalSellerInputs implements \ArrayAccess, \JsonSerializable, ModelIn
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'additional_input_field_name' => 'string',
-        'additional_seller_input' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalSellerInput',
+        'additional_seller_input' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalSellerInput',
     ];
 
     /**

@@ -64,7 +64,7 @@ class Stop implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'function_code' => 'string',
-        'location_identification' => '\AmazonPHP\SellingPartner\Model\VendorShipments\Location',
+        'location_identification' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Location',
         'arrival_time' => '\DateTime',
         'departure_time' => '\DateTime',
     ];
@@ -303,7 +303,7 @@ class Stop implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets location_identification.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\Location $location_identification location_identification
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Location $location_identification location_identification
      */
     public function setLocationIdentification(?Location $location_identification) : self
     {

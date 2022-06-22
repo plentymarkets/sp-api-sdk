@@ -57,7 +57,7 @@ class TaxItemDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'tax_line_item' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TaxDetails[]',
+        'tax_line_item' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TaxDetails[]',
     ];
 
     /**
@@ -211,7 +211,7 @@ class TaxItemDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets tax_line_item.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TaxDetails[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TaxDetails[]
      */
     public function getTaxLineItem() : ?array
     {
@@ -221,7 +221,7 @@ class TaxItemDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets tax_line_item.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TaxDetails[] $tax_line_item a list of tax line items
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TaxDetails[] $tax_line_item a list of tax line items
      */
     public function setTaxLineItem(?array $tax_line_item) : self
     {

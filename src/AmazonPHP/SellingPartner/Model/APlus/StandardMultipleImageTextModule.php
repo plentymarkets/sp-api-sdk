@@ -57,7 +57,7 @@ class StandardMultipleImageTextModule implements \ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'blocks' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextCaptionBlock[]',
+        'blocks' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextCaptionBlock[]',
     ];
 
     /**
@@ -211,7 +211,7 @@ class StandardMultipleImageTextModule implements \ArrayAccess, \JsonSerializable
     /**
      * Gets blocks.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextCaptionBlock[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextCaptionBlock[]
      */
     public function getBlocks() : ?array
     {
@@ -221,7 +221,7 @@ class StandardMultipleImageTextModule implements \ArrayAccess, \JsonSerializable
     /**
      * Sets blocks.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextCaptionBlock[] $blocks blocks
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextCaptionBlock[] $blocks blocks
      */
     public function setBlocks(?array $blocks) : self
     {

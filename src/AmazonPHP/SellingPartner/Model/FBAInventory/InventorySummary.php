@@ -61,7 +61,7 @@ class InventorySummary implements \ArrayAccess, \JsonSerializable, ModelInterfac
         'fn_sku' => 'string',
         'seller_sku' => 'string',
         'condition' => 'string',
-        'inventory_details' => '\AmazonPHP\SellingPartner\Model\FBAInventory\InventoryDetails',
+        'inventory_details' => '\Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\InventoryDetails',
         'last_updated_time' => '\DateTime',
         'product_name' => 'string',
         'total_quantity' => 'int',
@@ -341,7 +341,7 @@ class InventorySummary implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Sets inventory_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FBAInventory\InventoryDetails $inventory_details inventory_details
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\InventoryDetails $inventory_details inventory_details
      */
     public function setInventoryDetails(?InventoryDetails $inventory_details) : self
     {

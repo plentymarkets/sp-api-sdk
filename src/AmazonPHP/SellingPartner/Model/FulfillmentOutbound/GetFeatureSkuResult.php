@@ -61,7 +61,7 @@ class GetFeatureSkuResult implements \ArrayAccess, \JsonSerializable, ModelInter
         'feature_name' => 'string',
         'is_eligible' => 'bool',
         'ineligible_reasons' => 'string[]',
-        'sku_info' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSku',
+        'sku_info' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSku',
     ];
 
     /**
@@ -339,7 +339,7 @@ class GetFeatureSkuResult implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets sku_info.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSku $sku_info sku_info
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FeatureSku $sku_info sku_info
      */
     public function setSkuInfo(?FeatureSku $sku_info) : self
     {

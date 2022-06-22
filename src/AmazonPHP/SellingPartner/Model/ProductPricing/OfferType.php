@@ -57,11 +57,11 @@ class OfferType implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'offer_type' => '\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCustomerType',
-        'buying_price' => '\AmazonPHP\SellingPartner\Model\ProductPricing\PriceType',
-        'regular_price' => '\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
-        'business_price' => '\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
-        'quantity_discount_prices' => '\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountPriceType[]',
+        'offer_type' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCustomerType',
+        'buying_price' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\PriceType',
+        'regular_price' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
+        'business_price' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
+        'quantity_discount_prices' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountPriceType[]',
         'fulfillment_channel' => 'string',
         'item_condition' => 'string',
         'item_sub_condition' => 'string',
@@ -293,7 +293,7 @@ class OfferType implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets offer_type.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCustomerType $offer_type offer_type
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCustomerType $offer_type offer_type
      */
     public function setOfferType(?OfferCustomerType $offer_type) : self
     {
@@ -353,7 +353,7 @@ class OfferType implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets business_price.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $business_price business_price
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $business_price business_price
      */
     public function setBusinessPrice(?MoneyType $business_price) : self
     {
@@ -365,7 +365,7 @@ class OfferType implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets quantity_discount_prices.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountPriceType[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountPriceType[]
      */
     public function getQuantityDiscountPrices() : ?array
     {
@@ -375,7 +375,7 @@ class OfferType implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets quantity_discount_prices.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountPriceType[] $quantity_discount_prices quantity_discount_prices
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountPriceType[] $quantity_discount_prices quantity_discount_prices
      */
     public function setQuantityDiscountPrices(?array $quantity_discount_prices) : self
     {

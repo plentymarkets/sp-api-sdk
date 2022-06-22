@@ -57,7 +57,7 @@ class GetSolicitationActionResponseEmbedded implements \ArrayAccess, \JsonSerial
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'schema' => '\AmazonPHP\SellingPartner\Model\Solicitations\GetSchemaResponse',
+        'schema' => '\Plenty\AmazonPHP\SellingPartner\Model\Solicitations\GetSchemaResponse',
     ];
 
     /**
@@ -219,7 +219,7 @@ class GetSolicitationActionResponseEmbedded implements \ArrayAccess, \JsonSerial
     /**
      * Sets schema.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Solicitations\GetSchemaResponse $schema schema
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Solicitations\GetSchemaResponse $schema schema
      */
     public function setSchema(?GetSchemaResponse $schema) : self
     {

@@ -59,7 +59,7 @@ class ItemDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     protected static /** [COMPAT] array */ $openAPITypes = [
         'buyer_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
-        'available_quantity' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\ItemQuantity',
+        'available_quantity' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\ItemQuantity',
         'is_obsolete' => 'bool',
     ];
 

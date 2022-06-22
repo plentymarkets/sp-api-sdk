@@ -64,9 +64,9 @@ class UpdateFulfillmentOrderItem implements \ArrayAccess, \JsonSerializable, Mod
         'displayable_comment' => 'string',
         'fulfillment_network_sku' => 'string',
         'order_item_disposition' => 'string',
-        'per_unit_declared_value' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money',
-        'per_unit_price' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money',
-        'per_unit_tax' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money',
+        'per_unit_declared_value' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money',
+        'per_unit_price' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money',
+        'per_unit_tax' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money',
     ];
 
     /**
@@ -447,7 +447,7 @@ class UpdateFulfillmentOrderItem implements \ArrayAccess, \JsonSerializable, Mod
     /**
      * Sets per_unit_declared_value.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money $per_unit_declared_value per_unit_declared_value
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money $per_unit_declared_value per_unit_declared_value
      */
     public function setPerUnitDeclaredValue(?Money $per_unit_declared_value) : self
     {
@@ -467,7 +467,7 @@ class UpdateFulfillmentOrderItem implements \ArrayAccess, \JsonSerializable, Mod
     /**
      * Sets per_unit_price.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money $per_unit_price per_unit_price
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money $per_unit_price per_unit_price
      */
     public function setPerUnitPrice(?Money $per_unit_price) : self
     {
@@ -487,7 +487,7 @@ class UpdateFulfillmentOrderItem implements \ArrayAccess, \JsonSerializable, Mod
     /**
      * Sets per_unit_tax.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money $per_unit_tax per_unit_tax
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money $per_unit_tax per_unit_tax
      */
     public function setPerUnitTax(?Money $per_unit_tax) : self
     {

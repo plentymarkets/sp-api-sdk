@@ -60,7 +60,7 @@ class Price implements \ArrayAccess, \JsonSerializable, ModelInterface
         'status' => 'string',
         'seller_sku' => 'string',
         'asin' => 'string',
-        'product' => '\AmazonPHP\SellingPartner\Model\ProductPricing\Product',
+        'product' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\Product',
     ];
 
     /**
@@ -303,7 +303,7 @@ class Price implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets product.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\Product $product product
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\Product $product product
      */
     public function setProduct(?Product $product) : self
     {

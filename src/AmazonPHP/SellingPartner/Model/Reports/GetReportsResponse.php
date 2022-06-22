@@ -57,7 +57,7 @@ class GetReportsResponse implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'reports' => '\AmazonPHP\SellingPartner\Model\Reports\Report[]',
+        'reports' => '\Plenty\AmazonPHP\SellingPartner\Model\Reports\Report[]',
         'next_token' => 'string',
     ];
 

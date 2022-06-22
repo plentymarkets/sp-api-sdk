@@ -60,7 +60,7 @@ class JobListing implements \ArrayAccess, \JsonSerializable, ModelInterface
         'total_result_size' => 'int',
         'next_page_token' => 'string',
         'previous_page_token' => 'string',
-        'jobs' => '\AmazonPHP\SellingPartner\Model\Services\ServiceJob[]',
+        'jobs' => '\Plenty\AmazonPHP\SellingPartner\Model\Services\ServiceJob[]',
     ];
 
     /**
@@ -289,7 +289,7 @@ class JobListing implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets jobs.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Services\ServiceJob[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Services\ServiceJob[]
      */
     public function getJobs() : ?array
     {
@@ -299,7 +299,7 @@ class JobListing implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets jobs.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Services\ServiceJob[] $jobs list of job details for the given input
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Services\ServiceJob[] $jobs list of job details for the given input
      */
     public function setJobs(?array $jobs) : self
     {

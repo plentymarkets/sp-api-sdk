@@ -57,7 +57,7 @@ class GetMyFeesEstimateRequest implements \ArrayAccess, \JsonSerializable, Model
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'fees_estimate_request' => '\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimateRequest',
+        'fees_estimate_request' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimateRequest',
     ];
 
     /**
@@ -219,7 +219,7 @@ class GetMyFeesEstimateRequest implements \ArrayAccess, \JsonSerializable, Model
     /**
      * Sets fees_estimate_request.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimateRequest $fees_estimate_request fees_estimate_request
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimateRequest $fees_estimate_request fees_estimate_request
      */
     public function setFeesEstimateRequest(?FeesEstimateRequest $fees_estimate_request) : self
     {

@@ -360,7 +360,7 @@ final class ObjectSerializer
         $discriminator = $class::DISCRIMINATOR;
 
         if (!empty($discriminator) && isset($data->{$discriminator}) && \is_string($data->{$discriminator})) {
-            $subclass = '\AmazonPHP\SellingPartner\Model\\' . $data->{$discriminator};
+            $subclass = '\Plenty\AmazonPHP\SellingPartner\Model\\' . $data->{$discriminator};
 
             if (\is_subclass_of($subclass, $class)) {
                 $class = $subclass;

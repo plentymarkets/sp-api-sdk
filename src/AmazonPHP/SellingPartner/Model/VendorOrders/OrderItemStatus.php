@@ -60,11 +60,11 @@ class OrderItemStatus implements \ArrayAccess, \JsonSerializable, ModelInterface
         'item_sequence_number' => 'string',
         'buyer_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
-        'net_cost' => '\AmazonPHP\SellingPartner\Model\VendorOrders\Money',
-        'list_price' => '\AmazonPHP\SellingPartner\Model\VendorOrders\Money',
-        'ordered_quantity' => '\AmazonPHP\SellingPartner\Model\VendorOrders\OrderItemStatusOrderedQuantity',
-        'acknowledgement_status' => '\AmazonPHP\SellingPartner\Model\VendorOrders\OrderItemStatusAcknowledgementStatus',
-        'receiving_status' => '\AmazonPHP\SellingPartner\Model\VendorOrders\OrderItemStatusReceivingStatus',
+        'net_cost' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\Money',
+        'list_price' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\Money',
+        'ordered_quantity' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderItemStatusOrderedQuantity',
+        'acknowledgement_status' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderItemStatusAcknowledgementStatus',
+        'receiving_status' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderItemStatusReceivingStatus',
     ];
 
     /**
@@ -327,7 +327,7 @@ class OrderItemStatus implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets net_cost.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\Money $net_cost net_cost
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\Money $net_cost net_cost
      */
     public function setNetCost(?Money $net_cost) : self
     {
@@ -347,7 +347,7 @@ class OrderItemStatus implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets list_price.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\Money $list_price list_price
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\Money $list_price list_price
      */
     public function setListPrice(?Money $list_price) : self
     {
@@ -367,7 +367,7 @@ class OrderItemStatus implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets ordered_quantity.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\OrderItemStatusOrderedQuantity $ordered_quantity ordered_quantity
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderItemStatusOrderedQuantity $ordered_quantity ordered_quantity
      */
     public function setOrderedQuantity(?OrderItemStatusOrderedQuantity $ordered_quantity) : self
     {
@@ -387,7 +387,7 @@ class OrderItemStatus implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets acknowledgement_status.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\OrderItemStatusAcknowledgementStatus $acknowledgement_status acknowledgement_status
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderItemStatusAcknowledgementStatus $acknowledgement_status acknowledgement_status
      */
     public function setAcknowledgementStatus(?OrderItemStatusAcknowledgementStatus $acknowledgement_status) : self
     {
@@ -407,7 +407,7 @@ class OrderItemStatus implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets receiving_status.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\OrderItemStatusReceivingStatus $receiving_status receiving_status
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderItemStatusReceivingStatus $receiving_status receiving_status
      */
     public function setReceivingStatus(?OrderItemStatusReceivingStatus $receiving_status) : self
     {

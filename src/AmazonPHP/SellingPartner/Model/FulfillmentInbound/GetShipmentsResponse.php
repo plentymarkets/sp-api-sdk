@@ -57,8 +57,8 @@ class GetShipmentsResponse implements \ArrayAccess, \JsonSerializable, ModelInte
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetShipmentsResult',
-        'errors' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetShipmentsResult',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Error[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class GetShipmentsResponse implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetShipmentsResult $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetShipmentsResult $payload payload
      */
     public function setPayload(?GetShipmentsResult $payload) : self
     {
@@ -237,7 +237,7 @@ class GetShipmentsResponse implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Error[]
      */
     public function getErrors() : ?array
     {
@@ -247,7 +247,7 @@ class GetShipmentsResponse implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

@@ -57,7 +57,7 @@ class UpdateFulfillmentOrderResponse implements \ArrayAccess, \JsonSerializable,
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'errors' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Error[]',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Error[]',
     ];
 
     /**
@@ -211,7 +211,7 @@ class UpdateFulfillmentOrderResponse implements \ArrayAccess, \JsonSerializable,
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Error[]
      */
     public function getErrors() : ?array
     {
@@ -221,7 +221,7 @@ class UpdateFulfillmentOrderResponse implements \ArrayAccess, \JsonSerializable,
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

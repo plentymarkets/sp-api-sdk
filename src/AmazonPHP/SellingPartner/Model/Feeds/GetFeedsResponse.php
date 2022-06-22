@@ -57,7 +57,7 @@ class GetFeedsResponse implements \ArrayAccess, \JsonSerializable, ModelInterfac
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'feeds' => '\AmazonPHP\SellingPartner\Model\Feeds\Feed[]',
+        'feeds' => '\Plenty\AmazonPHP\SellingPartner\Model\Feeds\Feed[]',
         'next_token' => 'string',
     ];
 

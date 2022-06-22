@@ -60,11 +60,11 @@ class GetOffersResult implements \ArrayAccess, \JsonSerializable, ModelInterface
         'marketplace_id' => 'string',
         'asin' => 'string',
         'sku' => 'string',
-        'item_condition' => '\AmazonPHP\SellingPartner\Model\ProductPricing\ConditionType',
+        'item_condition' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ConditionType',
         'status' => 'string',
-        'identifier' => '\AmazonPHP\SellingPartner\Model\ProductPricing\ItemIdentifier',
-        'summary' => '\AmazonPHP\SellingPartner\Model\ProductPricing\Summary',
-        'offers' => '\AmazonPHP\SellingPartner\Model\ProductPricing\OfferDetail[]',
+        'identifier' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ItemIdentifier',
+        'summary' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\Summary',
+        'offers' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\OfferDetail[]',
     ];
 
     /**

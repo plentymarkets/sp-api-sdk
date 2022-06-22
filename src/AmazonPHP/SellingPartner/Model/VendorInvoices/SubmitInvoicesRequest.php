@@ -57,7 +57,7 @@ class SubmitInvoicesRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'invoices' => '\AmazonPHP\SellingPartner\Model\VendorInvoices\Invoice[]',
+        'invoices' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\Invoice[]',
     ];
 
     /**
@@ -211,7 +211,7 @@ class SubmitInvoicesRequest implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Gets invoices.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorInvoices\Invoice[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\Invoice[]
      */
     public function getInvoices() : ?array
     {
@@ -221,7 +221,7 @@ class SubmitInvoicesRequest implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets invoices.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorInvoices\Invoice[] $invoices invoices
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\Invoice[] $invoices invoices
      */
     public function setInvoices(?array $invoices) : self
     {

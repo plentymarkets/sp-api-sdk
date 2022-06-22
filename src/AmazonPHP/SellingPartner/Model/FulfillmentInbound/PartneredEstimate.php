@@ -57,7 +57,7 @@ class PartneredEstimate implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'amount' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount',
+        'amount' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount',
         'confirm_deadline' => '\DateTime',
         'void_deadline' => '\DateTime',
     ];

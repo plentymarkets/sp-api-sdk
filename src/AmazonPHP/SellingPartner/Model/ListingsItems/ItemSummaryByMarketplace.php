@@ -96,7 +96,7 @@ class ItemSummaryByMarketplace implements \ArrayAccess, \JsonSerializable, Model
         'item_name' => 'string',
         'created_date' => '\DateTime',
         'last_updated_date' => '\DateTime',
-        'main_image' => '\AmazonPHP\SellingPartner\Model\ListingsItems\ItemImage',
+        'main_image' => '\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\ItemImage',
     ];
 
     /**
@@ -586,7 +586,7 @@ class ItemSummaryByMarketplace implements \ArrayAccess, \JsonSerializable, Model
     /**
      * Sets main_image.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ListingsItems\ItemImage $main_image main_image
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\ItemImage $main_image main_image
      */
     public function setMainImage(?ItemImage $main_image) : self
     {

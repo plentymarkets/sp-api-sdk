@@ -57,20 +57,20 @@ class PartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, ModelIn
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'contact' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Contact',
+        'contact' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Contact',
         'box_count' => 'int',
-        'seller_freight_class' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SellerFreightClass',
+        'seller_freight_class' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SellerFreightClass',
         'freight_ready_date' => '\DateTime',
-        'pallet_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pallet[]',
-        'total_weight' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight',
-        'seller_declared_value' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount',
-        'amazon_calculated_value' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount',
+        'pallet_list' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pallet[]',
+        'total_weight' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight',
+        'seller_declared_value' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount',
+        'amazon_calculated_value' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount',
         'preview_pickup_date' => '\DateTime',
         'preview_delivery_date' => '\DateTime',
-        'preview_freight_class' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SellerFreightClass',
+        'preview_freight_class' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SellerFreightClass',
         'amazon_reference_id' => 'string',
         'is_bill_of_lading_available' => 'bool',
-        'partnered_estimate' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredEstimate',
+        'partnered_estimate' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredEstimate',
         'carrier_name' => 'string',
     ];
 
@@ -389,7 +389,7 @@ class PartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets seller_freight_class.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SellerFreightClass $seller_freight_class seller_freight_class
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SellerFreightClass $seller_freight_class seller_freight_class
      */
     public function setSellerFreightClass(?SellerFreightClass $seller_freight_class) : self
     {
@@ -473,7 +473,7 @@ class PartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets seller_declared_value.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount $seller_declared_value seller_declared_value
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount $seller_declared_value seller_declared_value
      */
     public function setSellerDeclaredValue(?Amount $seller_declared_value) : self
     {
@@ -493,7 +493,7 @@ class PartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets amazon_calculated_value.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount $amazon_calculated_value amazon_calculated_value
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount $amazon_calculated_value amazon_calculated_value
      */
     public function setAmazonCalculatedValue(?Amount $amazon_calculated_value) : self
     {
@@ -617,7 +617,7 @@ class PartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets partnered_estimate.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredEstimate $partnered_estimate partnered_estimate
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredEstimate $partnered_estimate partnered_estimate
      */
     public function setPartneredEstimate(?PartneredEstimate $partnered_estimate) : self
     {

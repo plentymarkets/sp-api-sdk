@@ -57,7 +57,7 @@ class GetSolicitationActionsForOrderResponseEmbedded implements \ArrayAccess, \J
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'actions' => '\AmazonPHP\SellingPartner\Model\Solicitations\GetSolicitationActionResponse[]',
+        'actions' => '\Plenty\AmazonPHP\SellingPartner\Model\Solicitations\GetSolicitationActionResponse[]',
     ];
 
     /**

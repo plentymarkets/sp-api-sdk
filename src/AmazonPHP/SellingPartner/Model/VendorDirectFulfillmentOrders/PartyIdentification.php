@@ -58,8 +58,8 @@ class PartyIdentification implements \ArrayAccess, \JsonSerializable, ModelInter
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'party_id' => 'string',
-        'address' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Address',
-        'tax_info' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TaxRegistrationDetails',
+        'address' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Address',
+        'tax_info' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TaxRegistrationDetails',
     ];
 
     /**
@@ -257,7 +257,7 @@ class PartyIdentification implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets address.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Address $address address
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Address $address address
      */
     public function setAddress(?Address $address) : self
     {
@@ -277,7 +277,7 @@ class PartyIdentification implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets tax_info.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TaxRegistrationDetails $tax_info tax_info
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TaxRegistrationDetails $tax_info tax_info
      */
     public function setTaxInfo(?TaxRegistrationDetails $tax_info) : self
     {

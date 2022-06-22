@@ -60,7 +60,7 @@ class Subscription implements \ArrayAccess, \JsonSerializable, ModelInterface
         'subscription_id' => 'string',
         'payload_version' => 'string',
         'destination_id' => 'string',
-        'processing_directive' => '\AmazonPHP\SellingPartner\Model\Notifications\ProcessingDirective',
+        'processing_directive' => '\Plenty\AmazonPHP\SellingPartner\Model\Notifications\ProcessingDirective',
     ];
 
     /**
@@ -311,7 +311,7 @@ class Subscription implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets processing_directive.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Notifications\ProcessingDirective $processing_directive processing_directive
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Notifications\ProcessingDirective $processing_directive processing_directive
      */
     public function setProcessingDirective(?ProcessingDirective $processing_directive) : self
     {

@@ -58,8 +58,8 @@ class PurchaseShipmentResult implements \ArrayAccess, \JsonSerializable, ModelIn
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'shipment_id' => 'string',
-        'service_rate' => '\AmazonPHP\SellingPartner\Model\Shipping\ServiceRate',
-        'label_results' => '\AmazonPHP\SellingPartner\Model\Shipping\LabelResult[]',
+        'service_rate' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\ServiceRate',
+        'label_results' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\LabelResult[]',
     ];
 
     /**

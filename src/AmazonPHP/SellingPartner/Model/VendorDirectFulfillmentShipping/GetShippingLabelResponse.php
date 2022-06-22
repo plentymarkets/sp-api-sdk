@@ -57,8 +57,8 @@ class GetShippingLabelResponse implements \ArrayAccess, \JsonSerializable, Model
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabel',
-        'errors' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ErrorList',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabel',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ErrorList',
     ];
 
     /**
@@ -225,7 +225,7 @@ class GetShippingLabelResponse implements \ArrayAccess, \JsonSerializable, Model
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabel $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabel $payload payload
      */
     public function setPayload(?ShippingLabel $payload) : self
     {
@@ -245,7 +245,7 @@ class GetShippingLabelResponse implements \ArrayAccess, \JsonSerializable, Model
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ErrorList $errors errors
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ErrorList $errors errors
      */
     public function setErrors(?ErrorList $errors) : self
     {

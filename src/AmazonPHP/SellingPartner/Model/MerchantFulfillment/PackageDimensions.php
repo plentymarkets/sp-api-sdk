@@ -60,8 +60,8 @@ class PackageDimensions implements \ArrayAccess, \JsonSerializable, ModelInterfa
         'length' => 'double',
         'width' => 'double',
         'height' => 'double',
-        'unit' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\UnitOfLength',
-        'predefined_package_dimensions' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\PredefinedPackageDimensions',
+        'unit' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\UnitOfLength',
+        'predefined_package_dimensions' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\PredefinedPackageDimensions',
     ];
 
     /**
@@ -303,7 +303,7 @@ class PackageDimensions implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Sets unit.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\UnitOfLength $unit unit
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\UnitOfLength $unit unit
      */
     public function setUnit(?UnitOfLength $unit) : self
     {
@@ -323,7 +323,7 @@ class PackageDimensions implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Sets predefined_package_dimensions.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\PredefinedPackageDimensions $predefined_package_dimensions predefined_package_dimensions
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\PredefinedPackageDimensions $predefined_package_dimensions predefined_package_dimensions
      */
     public function setPredefinedPackageDimensions(?PredefinedPackageDimensions $predefined_package_dimensions) : self
     {

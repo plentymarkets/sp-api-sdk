@@ -67,19 +67,19 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
         'title' => 'string',
         'quantity_ordered' => 'int',
         'quantity_shipped' => 'int',
-        'product_info' => '\AmazonPHP\SellingPartner\Model\Orders\ProductInfoDetail',
-        'points_granted' => '\AmazonPHP\SellingPartner\Model\Orders\PointsGrantedDetail',
-        'item_price' => '\AmazonPHP\SellingPartner\Model\Orders\Money',
-        'shipping_price' => '\AmazonPHP\SellingPartner\Model\Orders\Money',
-        'item_tax' => '\AmazonPHP\SellingPartner\Model\Orders\Money',
-        'shipping_tax' => '\AmazonPHP\SellingPartner\Model\Orders\Money',
-        'shipping_discount' => '\AmazonPHP\SellingPartner\Model\Orders\Money',
-        'shipping_discount_tax' => '\AmazonPHP\SellingPartner\Model\Orders\Money',
-        'promotion_discount' => '\AmazonPHP\SellingPartner\Model\Orders\Money',
-        'promotion_discount_tax' => '\AmazonPHP\SellingPartner\Model\Orders\Money',
+        'product_info' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\ProductInfoDetail',
+        'points_granted' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\PointsGrantedDetail',
+        'item_price' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money',
+        'shipping_price' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money',
+        'item_tax' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money',
+        'shipping_tax' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money',
+        'shipping_discount' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money',
+        'shipping_discount_tax' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money',
+        'promotion_discount' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money',
+        'promotion_discount_tax' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money',
         'promotion_ids' => 'string[]',
-        'cod_fee' => '\AmazonPHP\SellingPartner\Model\Orders\Money',
-        'cod_fee_discount' => '\AmazonPHP\SellingPartner\Model\Orders\Money',
+        'cod_fee' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money',
+        'cod_fee_discount' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money',
         'is_gift' => 'bool',
         'condition_note' => 'string',
         'condition_id' => 'string',
@@ -87,14 +87,14 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
         'scheduled_delivery_start_date' => 'string',
         'scheduled_delivery_end_date' => 'string',
         'price_designation' => 'string',
-        'tax_collection' => '\AmazonPHP\SellingPartner\Model\Orders\TaxCollection',
+        'tax_collection' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\TaxCollection',
         'serial_number_required' => 'bool',
         'is_transparency' => 'bool',
         'ioss_number' => 'string',
         'store_chain_store_id' => 'string',
         'deemed_reseller_category' => 'string',
-        'buyer_info' => '\AmazonPHP\SellingPartner\Model\Orders\ItemBuyerInfo',
-        'buyer_requested_cancel' => '\AmazonPHP\SellingPartner\Model\Orders\BuyerRequestedCancel',
+        'buyer_info' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\ItemBuyerInfo',
+        'buyer_requested_cancel' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\BuyerRequestedCancel',
     ];
 
     /**
@@ -577,7 +577,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets product_info.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\ProductInfoDetail $product_info product_info
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\ProductInfoDetail $product_info product_info
      */
     public function setProductInfo(?ProductInfoDetail $product_info) : self
     {
@@ -597,7 +597,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets points_granted.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\PointsGrantedDetail $points_granted points_granted
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\PointsGrantedDetail $points_granted points_granted
      */
     public function setPointsGranted(?PointsGrantedDetail $points_granted) : self
     {
@@ -617,7 +617,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets item_price.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\Money $item_price item_price
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money $item_price item_price
      */
     public function setItemPrice(?Money $item_price) : self
     {
@@ -637,7 +637,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipping_price.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\Money $shipping_price shipping_price
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money $shipping_price shipping_price
      */
     public function setShippingPrice(?Money $shipping_price) : self
     {
@@ -657,7 +657,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets item_tax.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\Money $item_tax item_tax
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money $item_tax item_tax
      */
     public function setItemTax(?Money $item_tax) : self
     {
@@ -677,7 +677,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipping_tax.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\Money $shipping_tax shipping_tax
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money $shipping_tax shipping_tax
      */
     public function setShippingTax(?Money $shipping_tax) : self
     {
@@ -697,7 +697,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipping_discount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\Money $shipping_discount shipping_discount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money $shipping_discount shipping_discount
      */
     public function setShippingDiscount(?Money $shipping_discount) : self
     {
@@ -717,7 +717,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipping_discount_tax.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\Money $shipping_discount_tax shipping_discount_tax
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money $shipping_discount_tax shipping_discount_tax
      */
     public function setShippingDiscountTax(?Money $shipping_discount_tax) : self
     {
@@ -737,7 +737,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets promotion_discount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\Money $promotion_discount promotion_discount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money $promotion_discount promotion_discount
      */
     public function setPromotionDiscount(?Money $promotion_discount) : self
     {
@@ -757,7 +757,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets promotion_discount_tax.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\Money $promotion_discount_tax promotion_discount_tax
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money $promotion_discount_tax promotion_discount_tax
      */
     public function setPromotionDiscountTax(?Money $promotion_discount_tax) : self
     {
@@ -799,7 +799,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets cod_fee.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\Money $cod_fee cod_fee
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money $cod_fee cod_fee
      */
     public function setCodFee(?Money $cod_fee) : self
     {
@@ -819,7 +819,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets cod_fee_discount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\Money $cod_fee_discount cod_fee_discount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\Money $cod_fee_discount cod_fee_discount
      */
     public function setCodFeeDiscount(?Money $cod_fee_discount) : self
     {
@@ -979,7 +979,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets tax_collection.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\TaxCollection $tax_collection tax_collection
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\TaxCollection $tax_collection tax_collection
      */
     public function setTaxCollection(?TaxCollection $tax_collection) : self
     {
@@ -1110,7 +1110,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets buyer_info.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\ItemBuyerInfo $buyer_info buyer_info
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\ItemBuyerInfo $buyer_info buyer_info
      */
     public function setBuyerInfo(?ItemBuyerInfo $buyer_info) : self
     {
@@ -1130,7 +1130,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets buyer_requested_cancel.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\BuyerRequestedCancel $buyer_requested_cancel buyer_requested_cancel
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\BuyerRequestedCancel $buyer_requested_cancel buyer_requested_cancel
      */
     public function setBuyerRequestedCancel(?BuyerRequestedCancel $buyer_requested_cancel) : self
     {

@@ -57,7 +57,7 @@ class TransactionStatus implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'transaction_status' => '\AmazonPHP\SellingPartner\Model\VendorTransactionStatus\Transaction',
+        'transaction_status' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorTransactionStatus\Transaction',
     ];
 
     /**
@@ -219,7 +219,7 @@ class TransactionStatus implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Sets transaction_status.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorTransactionStatus\Transaction $transaction_status transaction_status
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorTransactionStatus\Transaction $transaction_status transaction_status
      */
     public function setTransactionStatus(?Transaction $transaction_status) : self
     {

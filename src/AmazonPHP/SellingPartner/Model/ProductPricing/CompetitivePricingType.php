@@ -57,9 +57,9 @@ class CompetitivePricingType implements \ArrayAccess, \JsonSerializable, ModelIn
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'competitive_prices' => '\AmazonPHP\SellingPartner\Model\ProductPricing\CompetitivePriceType[]',
-        'number_of_offer_listings' => '\AmazonPHP\SellingPartner\Model\ProductPricing\OfferListingCountType[]',
-        'trade_in_value' => '\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
+        'competitive_prices' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\CompetitivePriceType[]',
+        'number_of_offer_listings' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\OfferListingCountType[]',
+        'trade_in_value' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
     ];
 
     /**
@@ -285,7 +285,7 @@ class CompetitivePricingType implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets trade_in_value.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $trade_in_value trade_in_value
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $trade_in_value trade_in_value
      */
     public function setTradeInValue(?MoneyType $trade_in_value) : self
     {

@@ -59,7 +59,7 @@ class LabelResult implements \ArrayAccess, \JsonSerializable, ModelInterface
     protected static /** [COMPAT] array */ $openAPITypes = [
         'container_reference_id' => 'string',
         'tracking_id' => 'string',
-        'label' => '\AmazonPHP\SellingPartner\Model\Shipping\Label',
+        'label' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Label',
     ];
 
     /**
@@ -281,7 +281,7 @@ class LabelResult implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets label.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Shipping\Label $label label
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Label $label label
      */
     public function setLabel(?Label $label) : self
     {

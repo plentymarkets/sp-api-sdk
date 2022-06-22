@@ -57,8 +57,8 @@ class OrderList implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'pagination' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Pagination',
-        'orders' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Order[]',
+        'pagination' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Pagination',
+        'orders' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Order[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class OrderList implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets pagination.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Pagination $pagination pagination
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Pagination $pagination pagination
      */
     public function setPagination(?Pagination $pagination) : self
     {
@@ -237,7 +237,7 @@ class OrderList implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets orders.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Order[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Order[]
      */
     public function getOrders() : ?array
     {
@@ -247,7 +247,7 @@ class OrderList implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets orders.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Order[] $orders orders
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Order[] $orders orders
      */
     public function setOrders(?array $orders) : self
     {

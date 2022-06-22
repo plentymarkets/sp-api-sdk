@@ -60,7 +60,7 @@ class PublishRecord implements \ArrayAccess, \JsonSerializable, ModelInterface
         'marketplace_id' => 'string',
         'locale' => 'string',
         'asin' => 'string',
-        'content_type' => '\AmazonPHP\SellingPartner\Model\APlus\ContentType',
+        'content_type' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentType',
         'content_sub_type' => 'string',
         'content_reference_key' => 'string',
     ];

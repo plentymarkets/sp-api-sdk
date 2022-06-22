@@ -59,7 +59,7 @@ class ChargeInstrument implements \ArrayAccess, \JsonSerializable, ModelInterfac
     protected static /** [COMPAT] array */ $openAPITypes = [
         'description' => 'string',
         'tail' => 'string',
-        'amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'amount' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
     ];
 
     /**
@@ -271,7 +271,7 @@ class ChargeInstrument implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Sets amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $amount amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $amount amount
      */
     public function setAmount(?Currency $amount) : self
     {

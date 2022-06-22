@@ -58,7 +58,7 @@ class ShipmentInvoiceStatusInfo implements \ArrayAccess, \JsonSerializable, Mode
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'amazon_shipment_id' => 'string',
-        'invoice_status' => '\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\ShipmentInvoiceStatus',
+        'invoice_status' => '\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\ShipmentInvoiceStatus',
     ];
 
     /**
@@ -245,7 +245,7 @@ class ShipmentInvoiceStatusInfo implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets invoice_status.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\ShipmentInvoiceStatus $invoice_status invoice_status
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\ShipmentInvoiceStatus $invoice_status invoice_status
      */
     public function setInvoiceStatus(?ShipmentInvoiceStatus $invoice_status) : self
     {

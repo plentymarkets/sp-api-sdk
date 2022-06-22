@@ -58,8 +58,8 @@ class PutTransportDetailsRequest implements \ArrayAccess, \JsonSerializable, Mod
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'is_partnered' => 'bool',
-        'shipment_type' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentType',
-        'transport_details' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportDetailInput',
+        'shipment_type' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentType',
+        'transport_details' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportDetailInput',
     ];
 
     /**

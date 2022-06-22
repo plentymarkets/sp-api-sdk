@@ -58,9 +58,9 @@ class ItemSearchResults implements \ArrayAccess, \JsonSerializable, ModelInterfa
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'number_of_results' => 'int',
-        'pagination' => '\AmazonPHP\SellingPartner\Model\CatalogItem\Pagination',
-        'refinements' => '\AmazonPHP\SellingPartner\Model\CatalogItem\Refinements',
-        'items' => '\AmazonPHP\SellingPartner\Model\CatalogItem\Item[]',
+        'pagination' => '\Plenty\AmazonPHP\SellingPartner\Model\CatalogItem\Pagination',
+        'refinements' => '\Plenty\AmazonPHP\SellingPartner\Model\CatalogItem\Refinements',
+        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\CatalogItem\Item[]',
     ];
 
     /**

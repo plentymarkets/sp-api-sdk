@@ -58,7 +58,7 @@ class FeeComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'fee_type' => 'string',
-        'fee_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'fee_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
     ];
 
     /**
@@ -245,7 +245,7 @@ class FeeComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets fee_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $fee_amount fee_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $fee_amount fee_amount
      */
     public function setFeeAmount(?Currency $fee_amount) : self
     {

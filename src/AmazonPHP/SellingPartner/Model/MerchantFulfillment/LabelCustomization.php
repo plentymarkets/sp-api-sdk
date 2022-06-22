@@ -58,7 +58,7 @@ class LabelCustomization implements \ArrayAccess, \JsonSerializable, ModelInterf
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'custom_text_for_label' => 'string',
-        'standard_id_for_label' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\StandardIdForLabel',
+        'standard_id_for_label' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\StandardIdForLabel',
     ];
 
     /**
@@ -255,7 +255,7 @@ class LabelCustomization implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets standard_id_for_label.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\StandardIdForLabel $standard_id_for_label standard_id_for_label
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\StandardIdForLabel $standard_id_for_label standard_id_for_label
      */
     public function setStandardIdForLabel(?StandardIdForLabel $standard_id_for_label) : self
     {

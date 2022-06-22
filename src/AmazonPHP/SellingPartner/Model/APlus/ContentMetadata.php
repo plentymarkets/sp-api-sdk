@@ -59,8 +59,8 @@ class ContentMetadata implements \ArrayAccess, \JsonSerializable, ModelInterface
     protected static /** [COMPAT] array */ $openAPITypes = [
         'name' => 'string',
         'marketplace_id' => 'string',
-        'status' => '\AmazonPHP\SellingPartner\Model\APlus\ContentStatus',
-        'badge_set' => '\AmazonPHP\SellingPartner\Model\APlus\ContentBadge[]',
+        'status' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentStatus',
+        'badge_set' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentBadge[]',
         'update_time' => '\DateTime',
     ];
 

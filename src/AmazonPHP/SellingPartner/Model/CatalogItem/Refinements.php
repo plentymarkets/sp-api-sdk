@@ -57,8 +57,8 @@ class Refinements implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'brands' => '\AmazonPHP\SellingPartner\Model\CatalogItem\BrandRefinement[]',
-        'classifications' => '\AmazonPHP\SellingPartner\Model\CatalogItem\ClassificationRefinement[]',
+        'brands' => '\Plenty\AmazonPHP\SellingPartner\Model\CatalogItem\BrandRefinement[]',
+        'classifications' => '\Plenty\AmazonPHP\SellingPartner\Model\CatalogItem\ClassificationRefinement[]',
     ];
 
     /**

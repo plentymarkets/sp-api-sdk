@@ -59,7 +59,7 @@ class NonPartneredSmallParcelPackageOutput implements \ArrayAccess, \JsonSeriali
     protected static /** [COMPAT] array */ $openAPITypes = [
         'carrier_name' => 'string',
         'tracking_id' => 'string',
-        'package_status' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PackageStatus',
+        'package_status' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PackageStatus',
     ];
 
     /**

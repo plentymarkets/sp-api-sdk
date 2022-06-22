@@ -57,12 +57,12 @@ class CreateShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'shipment_request_details' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShipmentRequestDetails',
+        'shipment_request_details' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShipmentRequestDetails',
         'shipping_service_id' => 'string',
         'shipping_service_offer_id' => 'string',
-        'hazmat_type' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\HazmatType',
-        'label_format_option' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormatOptionRequest',
-        'shipment_level_seller_inputs_list' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalSellerInputs[]',
+        'hazmat_type' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\HazmatType',
+        'label_format_option' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormatOptionRequest',
+        'shipment_level_seller_inputs_list' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalSellerInputs[]',
     ];
 
     /**
@@ -319,7 +319,7 @@ class CreateShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets hazmat_type.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\HazmatType $hazmat_type hazmat_type
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\HazmatType $hazmat_type hazmat_type
      */
     public function setHazmatType(?HazmatType $hazmat_type) : self
     {
@@ -339,7 +339,7 @@ class CreateShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets label_format_option.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormatOptionRequest $label_format_option label_format_option
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormatOptionRequest $label_format_option label_format_option
      */
     public function setLabelFormatOption(?LabelFormatOptionRequest $label_format_option) : self
     {
@@ -351,7 +351,7 @@ class CreateShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Gets shipment_level_seller_inputs_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalSellerInputs[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalSellerInputs[]
      */
     public function getShipmentLevelSellerInputsList() : ?array
     {
@@ -361,7 +361,7 @@ class CreateShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets shipment_level_seller_inputs_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalSellerInputs[] $shipment_level_seller_inputs_list a list of additional seller input pairs required to purchase shipping
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalSellerInputs[] $shipment_level_seller_inputs_list a list of additional seller input pairs required to purchase shipping
      */
     public function setShipmentLevelSellerInputsList(?array $shipment_level_seller_inputs_list) : self
     {

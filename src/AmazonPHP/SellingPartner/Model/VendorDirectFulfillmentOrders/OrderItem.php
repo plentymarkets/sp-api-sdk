@@ -61,12 +61,12 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
         'buyer_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
         'title' => 'string',
-        'ordered_quantity' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\ItemQuantity',
-        'scheduled_delivery_shipment' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\ScheduledDeliveryShipment',
-        'gift_details' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\GiftDetails',
-        'net_price' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Money',
-        'tax_details' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TaxItemDetails',
-        'total_price' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Money',
+        'ordered_quantity' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\ItemQuantity',
+        'scheduled_delivery_shipment' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\ScheduledDeliveryShipment',
+        'gift_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\GiftDetails',
+        'net_price' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Money',
+        'tax_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TaxItemDetails',
+        'total_price' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Money',
     ];
 
     /**
@@ -387,7 +387,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets scheduled_delivery_shipment.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\ScheduledDeliveryShipment $scheduled_delivery_shipment scheduled_delivery_shipment
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\ScheduledDeliveryShipment $scheduled_delivery_shipment scheduled_delivery_shipment
      */
     public function setScheduledDeliveryShipment(?ScheduledDeliveryShipment $scheduled_delivery_shipment) : self
     {
@@ -407,7 +407,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets gift_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\GiftDetails $gift_details gift_details
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\GiftDetails $gift_details gift_details
      */
     public function setGiftDetails(?GiftDetails $gift_details) : self
     {
@@ -447,7 +447,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets tax_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TaxItemDetails $tax_details tax_details
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TaxItemDetails $tax_details tax_details
      */
     public function setTaxDetails(?TaxItemDetails $tax_details) : self
     {
@@ -467,7 +467,7 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets total_price.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Money $total_price total_price
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Money $total_price total_price
      */
     public function setTotalPrice(?Money $total_price) : self
     {

@@ -57,7 +57,7 @@ class StandardCompanyLogoModule implements \ArrayAccess, \JsonSerializable, Mode
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'company_logo' => '\AmazonPHP\SellingPartner\Model\APlus\ImageComponent',
+        'company_logo' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ImageComponent',
     ];
 
     /**

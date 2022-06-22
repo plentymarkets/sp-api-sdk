@@ -60,7 +60,7 @@ class Dimensions implements \ArrayAccess, \JsonSerializable, ModelInterface
         'length' => 'double',
         'width' => 'double',
         'height' => 'double',
-        'unit' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\UnitOfMeasurement',
+        'unit' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\UnitOfMeasurement',
     ];
 
     /**

@@ -59,13 +59,13 @@ class LowestPriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
     protected static /** [COMPAT] array */ $openAPITypes = [
         'condition' => 'string',
         'fulfillment_channel' => 'string',
-        'offer_type' => '\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCustomerType',
+        'offer_type' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCustomerType',
         'quantity_tier' => 'int',
-        'quantity_discount_type' => '\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountType',
-        'landed_price' => '\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
-        'listing_price' => '\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
-        'shipping' => '\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
-        'points' => '\AmazonPHP\SellingPartner\Model\ProductPricing\Points',
+        'quantity_discount_type' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountType',
+        'landed_price' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
+        'listing_price' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
+        'shipping' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
+        'points' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\Points',
     ];
 
     /**
@@ -329,7 +329,7 @@ class LowestPriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets offer_type.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCustomerType $offer_type offer_type
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCustomerType $offer_type offer_type
      */
     public function setOfferType(?OfferCustomerType $offer_type) : self
     {
@@ -369,7 +369,7 @@ class LowestPriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets quantity_discount_type.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountType $quantity_discount_type quantity_discount_type
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountType $quantity_discount_type quantity_discount_type
      */
     public function setQuantityDiscountType(?QuantityDiscountType $quantity_discount_type) : self
     {
@@ -449,7 +449,7 @@ class LowestPriceType implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets points.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\Points $points points
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\Points $points points
      */
     public function setPoints(?Points $points) : self
     {

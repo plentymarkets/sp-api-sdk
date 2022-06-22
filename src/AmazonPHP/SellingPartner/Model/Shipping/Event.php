@@ -59,7 +59,7 @@ class Event implements \ArrayAccess, \JsonSerializable, ModelInterface
     protected static /** [COMPAT] array */ $openAPITypes = [
         'event_code' => 'string',
         'event_time' => '\DateTime',
-        'location' => '\AmazonPHP\SellingPartner\Model\Shipping\Location',
+        'location' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Location',
     ];
 
     /**
@@ -299,7 +299,7 @@ class Event implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets location.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Shipping\Location $location location
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Location $location location
      */
     public function setLocation(?Location $location) : self
     {

@@ -58,14 +58,14 @@ class Summary implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'total_offer_count' => 'int',
-        'number_of_offers' => '\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCountType[]',
-        'lowest_prices' => '\AmazonPHP\SellingPartner\Model\ProductPricing\LowestPriceType[]',
-        'buy_box_prices' => '\AmazonPHP\SellingPartner\Model\ProductPricing\BuyBoxPriceType[]',
-        'list_price' => '\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
-        'competitive_price_threshold' => '\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
-        'suggested_lower_price_plus_shipping' => '\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
-        'sales_rankings' => '\AmazonPHP\SellingPartner\Model\ProductPricing\SalesRankType[]',
-        'buy_box_eligible_offers' => '\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCountType[]',
+        'number_of_offers' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCountType[]',
+        'lowest_prices' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\LowestPriceType[]',
+        'buy_box_prices' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\BuyBoxPriceType[]',
+        'list_price' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
+        'competitive_price_threshold' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
+        'suggested_lower_price_plus_shipping' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
+        'sales_rankings' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\SalesRankType[]',
+        'buy_box_eligible_offers' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCountType[]',
         'offers_available_time' => '\DateTime',
     ];
 
@@ -291,7 +291,7 @@ class Summary implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets number_of_offers.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCountType[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCountType[]
      */
     public function getNumberOfOffers() : ?array
     {
@@ -301,7 +301,7 @@ class Summary implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets number_of_offers.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCountType[] $number_of_offers number_of_offers
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCountType[] $number_of_offers number_of_offers
      */
     public function setNumberOfOffers(?array $number_of_offers) : self
     {
@@ -313,7 +313,7 @@ class Summary implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets lowest_prices.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ProductPricing\LowestPriceType[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\LowestPriceType[]
      */
     public function getLowestPrices() : ?array
     {
@@ -323,7 +323,7 @@ class Summary implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets lowest_prices.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\LowestPriceType[] $lowest_prices lowest_prices
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\LowestPriceType[] $lowest_prices lowest_prices
      */
     public function setLowestPrices(?array $lowest_prices) : self
     {
@@ -335,7 +335,7 @@ class Summary implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets buy_box_prices.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ProductPricing\BuyBoxPriceType[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\BuyBoxPriceType[]
      */
     public function getBuyBoxPrices() : ?array
     {
@@ -345,7 +345,7 @@ class Summary implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets buy_box_prices.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\BuyBoxPriceType[] $buy_box_prices buy_box_prices
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\BuyBoxPriceType[] $buy_box_prices buy_box_prices
      */
     public function setBuyBoxPrices(?array $buy_box_prices) : self
     {
@@ -365,7 +365,7 @@ class Summary implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets list_price.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $list_price list_price
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $list_price list_price
      */
     public function setListPrice(?MoneyType $list_price) : self
     {
@@ -385,7 +385,7 @@ class Summary implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets competitive_price_threshold.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $competitive_price_threshold competitive_price_threshold
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $competitive_price_threshold competitive_price_threshold
      */
     public function setCompetitivePriceThreshold(?MoneyType $competitive_price_threshold) : self
     {
@@ -405,7 +405,7 @@ class Summary implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets suggested_lower_price_plus_shipping.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $suggested_lower_price_plus_shipping suggested_lower_price_plus_shipping
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType $suggested_lower_price_plus_shipping suggested_lower_price_plus_shipping
      */
     public function setSuggestedLowerPricePlusShipping(?MoneyType $suggested_lower_price_plus_shipping) : self
     {
@@ -417,7 +417,7 @@ class Summary implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets sales_rankings.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ProductPricing\SalesRankType[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\SalesRankType[]
      */
     public function getSalesRankings() : ?array
     {
@@ -427,7 +427,7 @@ class Summary implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets sales_rankings.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\SalesRankType[] $sales_rankings a list of sales rank information for the item, by category
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\SalesRankType[] $sales_rankings a list of sales rank information for the item, by category
      */
     public function setSalesRankings(?array $sales_rankings) : self
     {
@@ -439,7 +439,7 @@ class Summary implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets buy_box_eligible_offers.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCountType[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCountType[]
      */
     public function getBuyBoxEligibleOffers() : ?array
     {
@@ -449,7 +449,7 @@ class Summary implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets buy_box_eligible_offers.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCountType[] $buy_box_eligible_offers buy_box_eligible_offers
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCountType[] $buy_box_eligible_offers buy_box_eligible_offers
      */
     public function setBuyBoxEligibleOffers(?array $buy_box_eligible_offers) : self
     {

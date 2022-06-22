@@ -57,7 +57,7 @@ class CommonTransportResult implements \ArrayAccess, \JsonSerializable, ModelInt
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'transport_result' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportResult',
+        'transport_result' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportResult',
     ];
 
     /**
@@ -219,7 +219,7 @@ class CommonTransportResult implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets transport_result.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportResult $transport_result transport_result
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportResult $transport_result transport_result
      */
     public function setTransportResult(?TransportResult $transport_result) : self
     {

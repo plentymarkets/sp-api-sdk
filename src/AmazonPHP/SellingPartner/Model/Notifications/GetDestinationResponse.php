@@ -57,8 +57,8 @@ class GetDestinationResponse implements \ArrayAccess, \JsonSerializable, ModelIn
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\Notifications\Destination',
-        'errors' => '\AmazonPHP\SellingPartner\Model\Notifications\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\Notifications\Destination',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\Notifications\Error[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class GetDestinationResponse implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Notifications\Destination $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Notifications\Destination $payload payload
      */
     public function setPayload(?Destination $payload) : self
     {
@@ -237,7 +237,7 @@ class GetDestinationResponse implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Notifications\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Notifications\Error[]
      */
     public function getErrors() : ?array
     {
@@ -247,7 +247,7 @@ class GetDestinationResponse implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Notifications\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Notifications\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

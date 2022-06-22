@@ -58,9 +58,9 @@ class TrackingInformation implements \ArrayAccess, \JsonSerializable, ModelInter
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'tracking_id' => 'string',
-        'summary' => '\AmazonPHP\SellingPartner\Model\Shipping\TrackingSummary',
+        'summary' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\TrackingSummary',
         'promised_delivery_date' => '\DateTime',
-        'event_history' => '\AmazonPHP\SellingPartner\Model\Shipping\Event[]',
+        'event_history' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Event[]',
     ];
 
     /**

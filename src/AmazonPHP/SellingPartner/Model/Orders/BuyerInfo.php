@@ -60,7 +60,7 @@ class BuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterface
         'buyer_email' => 'string',
         'buyer_name' => 'string',
         'buyer_county' => 'string',
-        'buyer_tax_info' => '\AmazonPHP\SellingPartner\Model\Orders\BuyerTaxInfo',
+        'buyer_tax_info' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\BuyerTaxInfo',
         'purchase_order_number' => 'string',
     ];
 
@@ -303,7 +303,7 @@ class BuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets buyer_tax_info.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\BuyerTaxInfo $buyer_tax_info buyer_tax_info
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\BuyerTaxInfo $buyer_tax_info buyer_tax_info
      */
     public function setBuyerTaxInfo(?BuyerTaxInfo $buyer_tax_info) : self
     {

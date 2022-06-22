@@ -57,7 +57,7 @@ class SearchContentDocumentsResponseAllOf implements \ArrayAccess, \JsonSerializ
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'content_metadata_records' => '\AmazonPHP\SellingPartner\Model\APlus\ContentMetadataRecord[]',
+        'content_metadata_records' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentMetadataRecord[]',
     ];
 
     /**

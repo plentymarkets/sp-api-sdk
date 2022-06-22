@@ -57,7 +57,7 @@ class ErrorList implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'errors' => '\AmazonPHP\SellingPartner\Model\FBASmallAndLight\Error[]',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\Error[]',
     ];
 
     /**
@@ -211,7 +211,7 @@ class ErrorList implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FBASmallAndLight\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\Error[]
      */
     public function getErrors() : ?array
     {
@@ -221,7 +221,7 @@ class ErrorList implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FBASmallAndLight\Error[] $errors errors
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\Error[] $errors errors
      */
     public function setErrors(?array $errors) : self
     {

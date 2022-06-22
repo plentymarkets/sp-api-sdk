@@ -63,7 +63,7 @@ class TaxRegistrationDetails implements \ArrayAccess, \JsonSerializable, ModelIn
     protected static /** [COMPAT] array */ $openAPITypes = [
         'tax_registration_type' => 'string',
         'tax_registration_number' => 'string',
-        'tax_registration_address' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Address',
+        'tax_registration_address' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Address',
         'tax_registration_messages' => 'string',
     ];
 
@@ -321,7 +321,7 @@ class TaxRegistrationDetails implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets tax_registration_address.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Address $tax_registration_address tax_registration_address
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Address $tax_registration_address tax_registration_address
      */
     public function setTaxRegistrationAddress(?Address $tax_registration_address) : self
     {

@@ -59,7 +59,7 @@ class SmallAndLightEligibility implements \ArrayAccess, \JsonSerializable, Model
     protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace_id' => 'string',
         'seller_sku' => 'string',
-        'status' => '\AmazonPHP\SellingPartner\Model\FBASmallAndLight\SmallAndLightEligibilityStatus',
+        'status' => '\Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\SmallAndLightEligibilityStatus',
     ];
 
     /**

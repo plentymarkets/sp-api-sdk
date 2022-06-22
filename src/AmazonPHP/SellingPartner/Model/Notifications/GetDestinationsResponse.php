@@ -57,8 +57,8 @@ class GetDestinationsResponse implements \ArrayAccess, \JsonSerializable, ModelI
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\Notifications\Destination[]',
-        'errors' => '\AmazonPHP\SellingPartner\Model\Notifications\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\Notifications\Destination[]',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\Notifications\Error[]',
     ];
 
     /**
@@ -217,7 +217,7 @@ class GetDestinationsResponse implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Gets payload.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Notifications\Destination[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Notifications\Destination[]
      */
     public function getPayload() : ?array
     {
@@ -227,7 +227,7 @@ class GetDestinationsResponse implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Notifications\Destination[] $payload a list of destinations
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Notifications\Destination[] $payload a list of destinations
      */
     public function setPayload(?array $payload) : self
     {
@@ -239,7 +239,7 @@ class GetDestinationsResponse implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Notifications\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Notifications\Error[]
      */
     public function getErrors() : ?array
     {
@@ -249,7 +249,7 @@ class GetDestinationsResponse implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Notifications\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Notifications\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

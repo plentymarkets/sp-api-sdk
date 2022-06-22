@@ -57,8 +57,8 @@ class GetServiceJobByServiceJobIdResponse implements \ArrayAccess, \JsonSerializ
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\Services\ServiceJob',
-        'errors' => '\AmazonPHP\SellingPartner\Model\Services\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\Services\ServiceJob',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\Services\Error[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class GetServiceJobByServiceJobIdResponse implements \ArrayAccess, \JsonSerializ
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Services\ServiceJob $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Services\ServiceJob $payload payload
      */
     public function setPayload(?ServiceJob $payload) : self
     {
@@ -237,7 +237,7 @@ class GetServiceJobByServiceJobIdResponse implements \ArrayAccess, \JsonSerializ
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Services\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Services\Error[]
      */
     public function getErrors() : ?array
     {
@@ -247,7 +247,7 @@ class GetServiceJobByServiceJobIdResponse implements \ArrayAccess, \JsonSerializ
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Services\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Services\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

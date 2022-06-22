@@ -58,12 +58,12 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'sku' => 'string',
-        'summaries' => '\AmazonPHP\SellingPartner\Model\ListingsItems\ItemSummaryByMarketplace[]',
+        'summaries' => '\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\ItemSummaryByMarketplace[]',
         'attributes' => 'object',
-        'issues' => '\AmazonPHP\SellingPartner\Model\ListingsItems\Issue[]',
-        'offers' => '\AmazonPHP\SellingPartner\Model\ListingsItems\ItemOfferByMarketplace[]',
-        'fulfillment_availability' => '\AmazonPHP\SellingPartner\Model\ListingsItems\FulfillmentAvailability[]',
-        'procurement' => '\AmazonPHP\SellingPartner\Model\ListingsItems\ItemProcurement',
+        'issues' => '\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\Issue[]',
+        'offers' => '\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\ItemOfferByMarketplace[]',
+        'fulfillment_availability' => '\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\FulfillmentAvailability[]',
+        'procurement' => '\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\ItemProcurement',
     ];
 
     /**
@@ -273,7 +273,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets summaries.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ListingsItems\ItemSummaryByMarketplace[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\ItemSummaryByMarketplace[]
      */
     public function getSummaries() : ?array
     {
@@ -283,7 +283,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets summaries.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ListingsItems\ItemSummaryByMarketplace[] $summaries summary details of a listings item
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\ItemSummaryByMarketplace[] $summaries summary details of a listings item
      */
     public function setSummaries(?array $summaries) : self
     {
@@ -315,7 +315,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets issues.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ListingsItems\Issue[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\Issue[]
      */
     public function getIssues() : ?array
     {
@@ -325,7 +325,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets issues.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ListingsItems\Issue[] $issues issues associated with the listings item
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\Issue[] $issues issues associated with the listings item
      */
     public function setIssues(?array $issues) : self
     {
@@ -337,7 +337,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets offers.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ListingsItems\ItemOfferByMarketplace[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\ItemOfferByMarketplace[]
      */
     public function getOffers() : ?array
     {
@@ -347,7 +347,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets offers.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ListingsItems\ItemOfferByMarketplace[] $offers offer details for the listings item
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\ItemOfferByMarketplace[] $offers offer details for the listings item
      */
     public function setOffers(?array $offers) : self
     {
@@ -359,7 +359,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets fulfillment_availability.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\ListingsItems\FulfillmentAvailability[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\FulfillmentAvailability[]
      */
     public function getFulfillmentAvailability() : ?array
     {
@@ -369,7 +369,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets fulfillment_availability.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ListingsItems\FulfillmentAvailability[] $fulfillment_availability fulfillment availability for the listings item
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\FulfillmentAvailability[] $fulfillment_availability fulfillment availability for the listings item
      */
     public function setFulfillmentAvailability(?array $fulfillment_availability) : self
     {
@@ -389,7 +389,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets procurement.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ListingsItems\ItemProcurement $procurement procurement
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\ItemProcurement $procurement procurement
      */
     public function setProcurement(?ItemProcurement $procurement) : self
     {

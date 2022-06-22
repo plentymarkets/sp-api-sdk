@@ -57,8 +57,8 @@ class ImageOffsets implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'x' => '\AmazonPHP\SellingPartner\Model\APlus\IntegerWithUnits',
-        'y' => '\AmazonPHP\SellingPartner\Model\APlus\IntegerWithUnits',
+        'x' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\IntegerWithUnits',
+        'y' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\IntegerWithUnits',
     ];
 
     /**

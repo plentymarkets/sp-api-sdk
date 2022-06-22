@@ -57,7 +57,7 @@ class SubmitInventoryUpdateRequest implements \ArrayAccess, \JsonSerializable, M
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'inventory' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\InventoryUpdate',
+        'inventory' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\InventoryUpdate',
     ];
 
     /**
@@ -219,7 +219,7 @@ class SubmitInventoryUpdateRequest implements \ArrayAccess, \JsonSerializable, M
     /**
      * Sets inventory.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\InventoryUpdate $inventory inventory
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\InventoryUpdate $inventory inventory
      */
     public function setInventory(?InventoryUpdate $inventory) : self
     {

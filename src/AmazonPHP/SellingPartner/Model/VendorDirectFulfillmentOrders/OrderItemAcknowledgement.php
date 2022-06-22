@@ -60,7 +60,7 @@ class OrderItemAcknowledgement implements \ArrayAccess, \JsonSerializable, Model
         'item_sequence_number' => 'string',
         'buyer_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
-        'acknowledged_quantity' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\ItemQuantity',
+        'acknowledged_quantity' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\ItemQuantity',
     ];
 
     /**

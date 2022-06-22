@@ -58,7 +58,7 @@ class ImageComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'upload_destination_id' => 'string',
-        'image_crop_specification' => '\AmazonPHP\SellingPartner\Model\APlus\ImageCropSpecification',
+        'image_crop_specification' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ImageCropSpecification',
         'alt_text' => 'string',
     ];
 

@@ -58,7 +58,7 @@ class ItemDelivery implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'estimated_delivery_date' => '\DateTime',
-        'item_delivery_promise' => '\AmazonPHP\SellingPartner\Model\Services\ItemDeliveryPromise',
+        'item_delivery_promise' => '\Plenty\AmazonPHP\SellingPartner\Model\Services\ItemDeliveryPromise',
     ];
 
     /**
@@ -247,7 +247,7 @@ class ItemDelivery implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets item_delivery_promise.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Services\ItemDeliveryPromise $item_delivery_promise item_delivery_promise
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Services\ItemDeliveryPromise $item_delivery_promise item_delivery_promise
      */
     public function setItemDeliveryPromise(?ItemDeliveryPromise $item_delivery_promise) : self
     {

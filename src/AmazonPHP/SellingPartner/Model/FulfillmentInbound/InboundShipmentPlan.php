@@ -59,10 +59,10 @@ class InboundShipmentPlan implements \ArrayAccess, \JsonSerializable, ModelInter
     protected static /** [COMPAT] array */ $openAPITypes = [
         'shipment_id' => 'string',
         'destination_fulfillment_center_id' => 'string',
-        'ship_to_address' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Address',
-        'label_prep_type' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\LabelPrepType',
-        'items' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentPlanItem[]',
-        'estimated_box_contents_fee' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BoxContentsFeeDetails',
+        'ship_to_address' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Address',
+        'label_prep_type' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\LabelPrepType',
+        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentPlanItem[]',
+        'estimated_box_contents_fee' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BoxContentsFeeDetails',
     ];
 
     /**
@@ -373,7 +373,7 @@ class InboundShipmentPlan implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets estimated_box_contents_fee.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BoxContentsFeeDetails $estimated_box_contents_fee estimated_box_contents_fee
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BoxContentsFeeDetails $estimated_box_contents_fee estimated_box_contents_fee
      */
     public function setEstimatedBoxContentsFee(?BoxContentsFeeDetails $estimated_box_contents_fee) : self
     {

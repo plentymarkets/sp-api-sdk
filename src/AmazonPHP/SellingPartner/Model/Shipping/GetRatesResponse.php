@@ -57,8 +57,8 @@ class GetRatesResponse implements \ArrayAccess, \JsonSerializable, ModelInterfac
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\Shipping\GetRatesResult',
-        'errors' => '\AmazonPHP\SellingPartner\Model\Shipping\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\GetRatesResult',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Error[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class GetRatesResponse implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Shipping\GetRatesResult $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Shipping\GetRatesResult $payload payload
      */
     public function setPayload(?GetRatesResult $payload) : self
     {
@@ -237,7 +237,7 @@ class GetRatesResponse implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Shipping\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Error[]
      */
     public function getErrors() : ?array
     {
@@ -247,7 +247,7 @@ class GetRatesResponse implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Shipping\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Shipping\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

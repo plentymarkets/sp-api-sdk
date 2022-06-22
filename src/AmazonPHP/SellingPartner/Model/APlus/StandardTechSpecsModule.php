@@ -57,8 +57,8 @@ class StandardTechSpecsModule implements \ArrayAccess, \JsonSerializable, ModelI
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'headline' => '\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
-        'specification_list' => '\AmazonPHP\SellingPartner\Model\APlus\StandardTextPairBlock[]',
+        'headline' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
+        'specification_list' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardTextPairBlock[]',
         'table_count' => 'int',
     ];
 
@@ -253,7 +253,7 @@ class StandardTechSpecsModule implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Sets headline.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\TextComponent $headline headline
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent $headline headline
      */
     public function setHeadline(?TextComponent $headline) : self
     {

@@ -57,8 +57,8 @@ class AvailableDeliveryExperienceOption implements \ArrayAccess, \JsonSerializab
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'delivery_experience_option' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\DeliveryExperienceOption',
-        'charge' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CurrencyAmount',
+        'delivery_experience_option' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\DeliveryExperienceOption',
+        'charge' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CurrencyAmount',
     ];
 
     /**

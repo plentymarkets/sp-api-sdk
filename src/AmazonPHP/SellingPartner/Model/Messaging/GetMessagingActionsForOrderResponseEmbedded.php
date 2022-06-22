@@ -57,7 +57,7 @@ class GetMessagingActionsForOrderResponseEmbedded implements \ArrayAccess, \Json
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'actions' => '\AmazonPHP\SellingPartner\Model\Messaging\GetMessagingActionResponse[]',
+        'actions' => '\Plenty\AmazonPHP\SellingPartner\Model\Messaging\GetMessagingActionResponse[]',
     ];
 
     /**

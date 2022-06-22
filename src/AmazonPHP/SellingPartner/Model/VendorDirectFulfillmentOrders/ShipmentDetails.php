@@ -62,7 +62,7 @@ class ShipmentDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
         'is_pslip_required' => 'bool',
         'is_gift' => 'bool',
         'ship_method' => 'string',
-        'shipment_dates' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\ShipmentDates',
+        'shipment_dates' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\ShipmentDates',
         'message_to_customer' => 'string',
     ];
 

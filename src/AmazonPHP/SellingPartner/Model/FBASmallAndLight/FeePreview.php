@@ -58,10 +58,10 @@ class FeePreview implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'asin' => 'string',
-        'price' => '\AmazonPHP\SellingPartner\Model\FBASmallAndLight\MoneyType',
-        'fee_breakdown' => '\AmazonPHP\SellingPartner\Model\FBASmallAndLight\FeeLineItem[]',
-        'total_fees' => '\AmazonPHP\SellingPartner\Model\FBASmallAndLight\MoneyType',
-        'errors' => '\AmazonPHP\SellingPartner\Model\FBASmallAndLight\Error[]',
+        'price' => '\Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\MoneyType',
+        'fee_breakdown' => '\Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\FeeLineItem[]',
+        'total_fees' => '\Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\MoneyType',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\Error[]',
     ];
 
     /**
@@ -263,7 +263,7 @@ class FeePreview implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets price.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FBASmallAndLight\MoneyType $price price
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\MoneyType $price price
      */
     public function setPrice(?MoneyType $price) : self
     {
@@ -275,7 +275,7 @@ class FeePreview implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets fee_breakdown.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FBASmallAndLight\FeeLineItem[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\FeeLineItem[]
      */
     public function getFeeBreakdown() : ?array
     {
@@ -285,7 +285,7 @@ class FeePreview implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets fee_breakdown.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FBASmallAndLight\FeeLineItem[] $fee_breakdown a list of the Small and Light fees for the item
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\FeeLineItem[] $fee_breakdown a list of the Small and Light fees for the item
      */
     public function setFeeBreakdown(?array $fee_breakdown) : self
     {
@@ -305,7 +305,7 @@ class FeePreview implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets total_fees.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FBASmallAndLight\MoneyType $total_fees total_fees
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\MoneyType $total_fees total_fees
      */
     public function setTotalFees(?MoneyType $total_fees) : self
     {
@@ -317,7 +317,7 @@ class FeePreview implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FBASmallAndLight\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\Error[]
      */
     public function getErrors() : ?array
     {
@@ -327,7 +327,7 @@ class FeePreview implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FBASmallAndLight\Error[] $errors one or more unexpected errors occurred during the getSmallAndLightFeePreview operation
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\Error[] $errors one or more unexpected errors occurred during the getSmallAndLightFeePreview operation
      */
     public function setErrors(?array $errors) : self
     {

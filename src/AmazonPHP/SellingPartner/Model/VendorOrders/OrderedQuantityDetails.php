@@ -58,8 +58,8 @@ class OrderedQuantityDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'updated_date' => '\DateTime',
-        'ordered_quantity' => '\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
-        'cancelled_quantity' => '\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
+        'ordered_quantity' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
+        'cancelled_quantity' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
     ];
 
     /**
@@ -253,7 +253,7 @@ class OrderedQuantityDetails implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets ordered_quantity.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity $ordered_quantity ordered_quantity
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity $ordered_quantity ordered_quantity
      */
     public function setOrderedQuantity(?ItemQuantity $ordered_quantity) : self
     {
@@ -273,7 +273,7 @@ class OrderedQuantityDetails implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets cancelled_quantity.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity $cancelled_quantity cancelled_quantity
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity $cancelled_quantity cancelled_quantity
      */
     public function setCancelledQuantity(?ItemQuantity $cancelled_quantity) : self
     {

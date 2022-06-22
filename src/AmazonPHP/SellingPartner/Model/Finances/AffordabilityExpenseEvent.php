@@ -61,11 +61,11 @@ class AffordabilityExpenseEvent implements \ArrayAccess, \JsonSerializable, Mode
         'posted_date' => '\DateTime',
         'marketplace_id' => 'string',
         'transaction_type' => 'string',
-        'base_expense' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
-        'tax_type_cgst' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
-        'tax_type_sgst' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
-        'tax_type_igst' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
-        'total_expense' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'base_expense' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'tax_type_cgst' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'tax_type_sgst' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'tax_type_igst' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
+        'total_expense' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency',
     ];
 
     /**
@@ -363,7 +363,7 @@ class AffordabilityExpenseEvent implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets base_expense.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $base_expense base_expense
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $base_expense base_expense
      */
     public function setBaseExpense(?Currency $base_expense) : self
     {
@@ -443,7 +443,7 @@ class AffordabilityExpenseEvent implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Sets total_expense.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\Currency $total_expense total_expense
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\Currency $total_expense total_expense
      */
     public function setTotalExpense(?Currency $total_expense) : self
     {

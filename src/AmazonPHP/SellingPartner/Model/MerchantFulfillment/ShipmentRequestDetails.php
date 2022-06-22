@@ -59,14 +59,14 @@ class ShipmentRequestDetails implements \ArrayAccess, \JsonSerializable, ModelIn
     protected static /** [COMPAT] array */ $openAPITypes = [
         'amazon_order_id' => 'string',
         'seller_order_id' => 'string',
-        'item_list' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Item[]',
-        'ship_from_address' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Address',
-        'package_dimensions' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\PackageDimensions',
-        'weight' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Weight',
+        'item_list' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Item[]',
+        'ship_from_address' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Address',
+        'package_dimensions' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\PackageDimensions',
+        'weight' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Weight',
         'must_arrive_by_date' => '\DateTime',
         'ship_date' => '\DateTime',
-        'shipping_service_options' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShippingServiceOptions',
-        'label_customization' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelCustomization',
+        'shipping_service_options' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShippingServiceOptions',
+        'label_customization' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelCustomization',
     ];
 
     /**
@@ -493,7 +493,7 @@ class ShipmentRequestDetails implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets label_customization.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelCustomization $label_customization label_customization
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelCustomization $label_customization label_customization
      */
     public function setLabelCustomization(?LabelCustomization $label_customization) : self
     {

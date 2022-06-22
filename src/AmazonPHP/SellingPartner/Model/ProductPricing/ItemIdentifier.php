@@ -60,7 +60,7 @@ class ItemIdentifier implements \ArrayAccess, \JsonSerializable, ModelInterface
         'marketplace_id' => 'string',
         'asin' => 'string',
         'seller_sku' => 'string',
-        'item_condition' => '\AmazonPHP\SellingPartner\Model\ProductPricing\ConditionType',
+        'item_condition' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\ConditionType',
     ];
 
     /**

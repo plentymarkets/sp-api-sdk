@@ -57,7 +57,7 @@ class UpdateVerificationStatusRequestBody implements \ArrayAccess, \JsonSerializ
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'status' => '\AmazonPHP\SellingPartner\Model\Orders\VerificationStatus',
+        'status' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\VerificationStatus',
         'external_reviewer_id' => 'string',
         'rejection_reason_id' => 'string',
     ];

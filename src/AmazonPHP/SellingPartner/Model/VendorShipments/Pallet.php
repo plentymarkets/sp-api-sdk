@@ -57,13 +57,13 @@ class Pallet implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'pallet_identifiers' => '\AmazonPHP\SellingPartner\Model\VendorShipments\ContainerIdentification[]',
+        'pallet_identifiers' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ContainerIdentification[]',
         'tier' => 'int',
         'block' => 'int',
-        'dimensions' => '\AmazonPHP\SellingPartner\Model\VendorShipments\Dimensions',
-        'weight' => '\AmazonPHP\SellingPartner\Model\VendorShipments\Weight',
-        'carton_reference_details' => '\AmazonPHP\SellingPartner\Model\VendorShipments\CartonReferenceDetails',
-        'items' => '\AmazonPHP\SellingPartner\Model\VendorShipments\ContainerItem[]',
+        'dimensions' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Dimensions',
+        'weight' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Weight',
+        'carton_reference_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\CartonReferenceDetails',
+        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ContainerItem[]',
     ];
 
     /**
@@ -323,7 +323,7 @@ class Pallet implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets dimensions.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\Dimensions $dimensions dimensions
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Dimensions $dimensions dimensions
      */
     public function setDimensions(?Dimensions $dimensions) : self
     {
@@ -343,7 +343,7 @@ class Pallet implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets weight.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\Weight $weight weight
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Weight $weight weight
      */
     public function setWeight(?Weight $weight) : self
     {
@@ -363,7 +363,7 @@ class Pallet implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets carton_reference_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\CartonReferenceDetails $carton_reference_details carton_reference_details
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\CartonReferenceDetails $carton_reference_details carton_reference_details
      */
     public function setCartonReferenceDetails(?CartonReferenceDetails $carton_reference_details) : self
     {
@@ -375,7 +375,7 @@ class Pallet implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets items.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorShipments\ContainerItem[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ContainerItem[]
      */
     public function getItems() : ?array
     {
@@ -385,7 +385,7 @@ class Pallet implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets items.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorShipments\ContainerItem[] $items a list of container item details
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ContainerItem[] $items a list of container item details
      */
     public function setItems(?array $items) : self
     {

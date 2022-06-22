@@ -63,8 +63,8 @@ class ItemOfferByMarketplace implements \ArrayAccess, \JsonSerializable, ModelIn
     protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace_id' => 'string',
         'offer_type' => 'string',
-        'price' => '\AmazonPHP\SellingPartner\Model\ListingsItems\Money',
-        'points' => '\AmazonPHP\SellingPartner\Model\ListingsItems\Points',
+        'price' => '\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\Money',
+        'points' => '\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\Points',
     ];
 
     /**
@@ -348,7 +348,7 @@ class ItemOfferByMarketplace implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets points.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ListingsItems\Points $points points
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\Points $points points
      */
     public function setPoints(?Points $points) : self
     {

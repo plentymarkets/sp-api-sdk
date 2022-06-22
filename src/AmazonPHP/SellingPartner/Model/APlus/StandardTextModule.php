@@ -57,8 +57,8 @@ class StandardTextModule implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'headline' => '\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
-        'body' => '\AmazonPHP\SellingPartner\Model\APlus\ParagraphComponent',
+        'headline' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
+        'body' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ParagraphComponent',
     ];
 
     /**
@@ -231,7 +231,7 @@ class StandardTextModule implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets headline.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\TextComponent $headline headline
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent $headline headline
      */
     public function setHeadline(?TextComponent $headline) : self
     {

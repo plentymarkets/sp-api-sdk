@@ -59,9 +59,9 @@ class FeesEstimateRequest implements \ArrayAccess, \JsonSerializable, ModelInter
     protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace_id' => 'string',
         'is_amazon_fulfilled' => 'bool',
-        'price_to_estimate_fees' => '\AmazonPHP\SellingPartner\Model\ProductFees\PriceToEstimateFees',
+        'price_to_estimate_fees' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\PriceToEstimateFees',
         'identifier' => 'string',
-        'optional_fulfillment_program' => '\AmazonPHP\SellingPartner\Model\ProductFees\OptionalFulfillmentProgram',
+        'optional_fulfillment_program' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\OptionalFulfillmentProgram',
     ];
 
     /**
@@ -337,7 +337,7 @@ class FeesEstimateRequest implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets optional_fulfillment_program.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductFees\OptionalFulfillmentProgram $optional_fulfillment_program optional_fulfillment_program
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\OptionalFulfillmentProgram $optional_fulfillment_program optional_fulfillment_program
      */
     public function setOptionalFulfillmentProgram(?OptionalFulfillmentProgram $optional_fulfillment_program) : self
     {

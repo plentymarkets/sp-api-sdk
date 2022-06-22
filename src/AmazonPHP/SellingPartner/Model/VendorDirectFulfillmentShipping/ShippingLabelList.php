@@ -57,8 +57,8 @@ class ShippingLabelList implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'pagination' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Pagination',
-        'shipping_labels' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabel[]',
+        'pagination' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Pagination',
+        'shipping_labels' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabel[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class ShippingLabelList implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Sets pagination.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Pagination $pagination pagination
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Pagination $pagination pagination
      */
     public function setPagination(?Pagination $pagination) : self
     {
@@ -237,7 +237,7 @@ class ShippingLabelList implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Gets shipping_labels.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabel[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabel[]
      */
     public function getShippingLabels() : ?array
     {
@@ -247,7 +247,7 @@ class ShippingLabelList implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Sets shipping_labels.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabel[] $shipping_labels shipping_labels
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabel[] $shipping_labels shipping_labels
      */
     public function setShippingLabels(?array $shipping_labels) : self
     {

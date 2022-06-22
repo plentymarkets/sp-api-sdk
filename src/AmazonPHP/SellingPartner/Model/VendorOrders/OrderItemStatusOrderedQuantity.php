@@ -57,8 +57,8 @@ class OrderItemStatusOrderedQuantity implements \ArrayAccess, \JsonSerializable,
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'ordered_quantity' => '\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
-        'ordered_quantity_details' => '\AmazonPHP\SellingPartner\Model\VendorOrders\OrderedQuantityDetails[]',
+        'ordered_quantity' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
+        'ordered_quantity_details' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderedQuantityDetails[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class OrderItemStatusOrderedQuantity implements \ArrayAccess, \JsonSerializable,
     /**
      * Sets ordered_quantity.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity $ordered_quantity ordered_quantity
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity $ordered_quantity ordered_quantity
      */
     public function setOrderedQuantity(?ItemQuantity $ordered_quantity) : self
     {
@@ -237,7 +237,7 @@ class OrderItemStatusOrderedQuantity implements \ArrayAccess, \JsonSerializable,
     /**
      * Gets ordered_quantity_details.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorOrders\OrderedQuantityDetails[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderedQuantityDetails[]
      */
     public function getOrderedQuantityDetails() : ?array
     {
@@ -247,7 +247,7 @@ class OrderItemStatusOrderedQuantity implements \ArrayAccess, \JsonSerializable,
     /**
      * Sets ordered_quantity_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\OrderedQuantityDetails[] $ordered_quantity_details details of item quantity ordered
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderedQuantityDetails[] $ordered_quantity_details details of item quantity ordered
      */
     public function setOrderedQuantityDetails(?array $ordered_quantity_details) : self
     {

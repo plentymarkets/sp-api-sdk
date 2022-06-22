@@ -62,11 +62,11 @@ class ShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInterface
         'order_item_id' => 'string',
         'title' => 'string',
         'quantity_ordered' => 'float',
-        'item_price' => '\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Money',
-        'shipping_price' => '\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Money',
-        'gift_wrap_price' => '\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Money',
-        'shipping_discount' => '\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Money',
-        'promotion_discount' => '\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Money',
+        'item_price' => '\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Money',
+        'shipping_price' => '\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Money',
+        'gift_wrap_price' => '\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Money',
+        'shipping_discount' => '\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Money',
+        'promotion_discount' => '\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Money',
         'serial_numbers' => 'string[]',
     ];
 
@@ -379,7 +379,7 @@ class ShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets item_price.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Money $item_price item_price
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Money $item_price item_price
      */
     public function setItemPrice(?Money $item_price) : self
     {
@@ -399,7 +399,7 @@ class ShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipping_price.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Money $shipping_price shipping_price
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Money $shipping_price shipping_price
      */
     public function setShippingPrice(?Money $shipping_price) : self
     {
@@ -419,7 +419,7 @@ class ShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets gift_wrap_price.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Money $gift_wrap_price gift_wrap_price
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Money $gift_wrap_price gift_wrap_price
      */
     public function setGiftWrapPrice(?Money $gift_wrap_price) : self
     {
@@ -439,7 +439,7 @@ class ShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipping_discount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Money $shipping_discount shipping_discount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Money $shipping_discount shipping_discount
      */
     public function setShippingDiscount(?Money $shipping_discount) : self
     {
@@ -459,7 +459,7 @@ class ShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets promotion_discount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Money $promotion_discount promotion_discount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\Money $promotion_discount promotion_discount
      */
     public function setPromotionDiscount(?Money $promotion_discount) : self
     {

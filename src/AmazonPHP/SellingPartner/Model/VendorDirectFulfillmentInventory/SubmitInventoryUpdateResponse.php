@@ -57,8 +57,8 @@ class SubmitInventoryUpdateResponse implements \ArrayAccess, \JsonSerializable, 
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\TransactionReference',
-        'errors' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\TransactionReference',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\Error[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class SubmitInventoryUpdateResponse implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\TransactionReference $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\TransactionReference $payload payload
      */
     public function setPayload(?TransactionReference $payload) : self
     {
@@ -237,7 +237,7 @@ class SubmitInventoryUpdateResponse implements \ArrayAccess, \JsonSerializable, 
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\Error[]
      */
     public function getErrors() : ?array
     {
@@ -247,7 +247,7 @@ class SubmitInventoryUpdateResponse implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

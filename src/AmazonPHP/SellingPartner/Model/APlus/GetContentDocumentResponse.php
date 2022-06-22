@@ -57,8 +57,8 @@ class GetContentDocumentResponse implements \ArrayAccess, \JsonSerializable, Mod
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'warnings' => '\AmazonPHP\SellingPartner\Model\APlus\Error[]',
-        'content_record' => '\AmazonPHP\SellingPartner\Model\APlus\ContentRecord',
+        'warnings' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\Error[]',
+        'content_record' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentRecord',
     ];
 
     /**
@@ -223,7 +223,7 @@ class GetContentDocumentResponse implements \ArrayAccess, \JsonSerializable, Mod
     /**
      * Gets warnings.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\APlus\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\Error[]
      */
     public function getWarnings() : ?array
     {
@@ -233,7 +233,7 @@ class GetContentDocumentResponse implements \ArrayAccess, \JsonSerializable, Mod
     /**
      * Sets warnings.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\Error[] $warnings a set of messages to the user, such as warnings or comments
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\Error[] $warnings a set of messages to the user, such as warnings or comments
      */
     public function setWarnings(?array $warnings) : self
     {

@@ -59,7 +59,7 @@ class InvalidReturnItem implements \ArrayAccess, \JsonSerializable, ModelInterfa
     protected static /** [COMPAT] array */ $openAPITypes = [
         'seller_return_item_id' => 'string',
         'seller_fulfillment_order_item_id' => 'string',
-        'invalid_item_reason' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\InvalidItemReason',
+        'invalid_item_reason' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\InvalidItemReason',
     ];
 
     /**

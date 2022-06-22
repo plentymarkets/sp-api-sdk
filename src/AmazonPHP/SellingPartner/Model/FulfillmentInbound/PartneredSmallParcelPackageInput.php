@@ -57,8 +57,8 @@ class PartneredSmallParcelPackageInput implements \ArrayAccess, \JsonSerializabl
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'dimensions' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions',
-        'weight' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight',
+        'dimensions' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions',
+        'weight' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight',
     ];
 
     /**

@@ -65,12 +65,12 @@ class PackageTrackingDetails implements \ArrayAccess, \JsonSerializable, ModelIn
         'carrier_url' => 'string',
         'ship_date' => '\DateTime',
         'estimated_arrival_date' => '\DateTime',
-        'ship_to_address' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\TrackingAddress',
-        'current_status' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\CurrentStatus',
+        'ship_to_address' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\TrackingAddress',
+        'current_status' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\CurrentStatus',
         'current_status_description' => 'string',
         'signed_for_by' => 'string',
-        'additional_location_info' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\AdditionalLocationInfo',
-        'tracking_events' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\TrackingEvent[]',
+        'additional_location_info' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\AdditionalLocationInfo',
+        'tracking_events' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\TrackingEvent[]',
     ];
 
     /**
@@ -467,7 +467,7 @@ class PackageTrackingDetails implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets ship_to_address.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\TrackingAddress $ship_to_address ship_to_address
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\TrackingAddress $ship_to_address ship_to_address
      */
     public function setShipToAddress(?TrackingAddress $ship_to_address) : self
     {
@@ -487,7 +487,7 @@ class PackageTrackingDetails implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets current_status.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\CurrentStatus $current_status current_status
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\CurrentStatus $current_status current_status
      */
     public function setCurrentStatus(?CurrentStatus $current_status) : self
     {
@@ -547,7 +547,7 @@ class PackageTrackingDetails implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets additional_location_info.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\AdditionalLocationInfo $additional_location_info additional_location_info
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\AdditionalLocationInfo $additional_location_info additional_location_info
      */
     public function setAdditionalLocationInfo(?AdditionalLocationInfo $additional_location_info) : self
     {
@@ -559,7 +559,7 @@ class PackageTrackingDetails implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets tracking_events.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\TrackingEvent[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\TrackingEvent[]
      */
     public function getTrackingEvents() : ?array
     {
@@ -569,7 +569,7 @@ class PackageTrackingDetails implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets tracking_events.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\TrackingEvent[] $tracking_events an array of tracking event information
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\TrackingEvent[] $tracking_events an array of tracking event information
      */
     public function setTrackingEvents(?array $tracking_events) : self
     {

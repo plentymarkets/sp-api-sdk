@@ -58,7 +58,7 @@ class FileContents implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'contents' => 'string',
-        'file_type' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\FileType',
+        'file_type' => '\Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\FileType',
         'checksum' => 'string',
     ];
 

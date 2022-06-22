@@ -57,7 +57,7 @@ class CreateInboundShipmentPlanResult implements \ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'inbound_shipment_plans' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentPlan[]',
+        'inbound_shipment_plans' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentPlan[]',
     ];
 
     /**
@@ -211,7 +211,7 @@ class CreateInboundShipmentPlanResult implements \ArrayAccess, \JsonSerializable
     /**
      * Gets inbound_shipment_plans.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentPlan[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentPlan[]
      */
     public function getInboundShipmentPlans() : ?array
     {
@@ -221,7 +221,7 @@ class CreateInboundShipmentPlanResult implements \ArrayAccess, \JsonSerializable
     /**
      * Sets inbound_shipment_plans.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentPlan[] $inbound_shipment_plans A list of inbound shipment plan information
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentPlan[] $inbound_shipment_plans A list of inbound shipment plan information
      */
     public function setInboundShipmentPlans(?array $inbound_shipment_plans) : self
     {

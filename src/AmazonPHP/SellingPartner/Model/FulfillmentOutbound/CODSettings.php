@@ -58,10 +58,10 @@ class CODSettings implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'is_cod_required' => 'bool',
-        'cod_charge' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money',
-        'cod_charge_tax' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money',
-        'shipping_charge' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money',
-        'shipping_charge_tax' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money',
+        'cod_charge' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money',
+        'cod_charge_tax' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money',
+        'shipping_charge' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money',
+        'shipping_charge_tax' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money',
     ];
 
     /**
@@ -269,7 +269,7 @@ class CODSettings implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets cod_charge.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money $cod_charge cod_charge
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money $cod_charge cod_charge
      */
     public function setCodCharge(?Money $cod_charge) : self
     {
@@ -289,7 +289,7 @@ class CODSettings implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets cod_charge_tax.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money $cod_charge_tax cod_charge_tax
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money $cod_charge_tax cod_charge_tax
      */
     public function setCodChargeTax(?Money $cod_charge_tax) : self
     {
@@ -309,7 +309,7 @@ class CODSettings implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipping_charge.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money $shipping_charge shipping_charge
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money $shipping_charge shipping_charge
      */
     public function setShippingCharge(?Money $shipping_charge) : self
     {
@@ -329,7 +329,7 @@ class CODSettings implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets shipping_charge_tax.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money $shipping_charge_tax shipping_charge_tax
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money $shipping_charge_tax shipping_charge_tax
      */
     public function setShippingChargeTax(?Money $shipping_charge_tax) : self
     {

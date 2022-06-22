@@ -57,12 +57,12 @@ class StandardImageSidebarModule implements \ArrayAccess, \JsonSerializable, Mod
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'headline' => '\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
-        'image_caption_block' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageCaptionBlock',
-        'description_text_block' => '\AmazonPHP\SellingPartner\Model\APlus\StandardTextBlock',
-        'description_list_block' => '\AmazonPHP\SellingPartner\Model\APlus\StandardTextListBlock',
-        'sidebar_image_text_block' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
-        'sidebar_list_block' => '\AmazonPHP\SellingPartner\Model\APlus\StandardTextListBlock',
+        'headline' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
+        'image_caption_block' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageCaptionBlock',
+        'description_text_block' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardTextBlock',
+        'description_list_block' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardTextListBlock',
+        'sidebar_image_text_block' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
+        'sidebar_list_block' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardTextListBlock',
     ];
 
     /**
@@ -249,7 +249,7 @@ class StandardImageSidebarModule implements \ArrayAccess, \JsonSerializable, Mod
     /**
      * Sets headline.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\TextComponent $headline headline
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\TextComponent $headline headline
      */
     public function setHeadline(?TextComponent $headline) : self
     {
@@ -269,7 +269,7 @@ class StandardImageSidebarModule implements \ArrayAccess, \JsonSerializable, Mod
     /**
      * Sets image_caption_block.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardImageCaptionBlock $image_caption_block image_caption_block
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageCaptionBlock $image_caption_block image_caption_block
      */
     public function setImageCaptionBlock(?StandardImageCaptionBlock $image_caption_block) : self
     {
@@ -289,7 +289,7 @@ class StandardImageSidebarModule implements \ArrayAccess, \JsonSerializable, Mod
     /**
      * Sets description_text_block.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardTextBlock $description_text_block description_text_block
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardTextBlock $description_text_block description_text_block
      */
     public function setDescriptionTextBlock(?StandardTextBlock $description_text_block) : self
     {
@@ -309,7 +309,7 @@ class StandardImageSidebarModule implements \ArrayAccess, \JsonSerializable, Mod
     /**
      * Sets description_list_block.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardTextListBlock $description_list_block description_list_block
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardTextListBlock $description_list_block description_list_block
      */
     public function setDescriptionListBlock(?StandardTextListBlock $description_list_block) : self
     {
@@ -329,7 +329,7 @@ class StandardImageSidebarModule implements \ArrayAccess, \JsonSerializable, Mod
     /**
      * Sets sidebar_image_text_block.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $sidebar_image_text_block sidebar_image_text_block
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock $sidebar_image_text_block sidebar_image_text_block
      */
     public function setSidebarImageTextBlock(?StandardImageTextBlock $sidebar_image_text_block) : self
     {
@@ -349,7 +349,7 @@ class StandardImageSidebarModule implements \ArrayAccess, \JsonSerializable, Mod
     /**
      * Sets sidebar_list_block.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\StandardTextListBlock $sidebar_list_block sidebar_list_block
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardTextListBlock $sidebar_list_block sidebar_list_block
      */
     public function setSidebarListBlock(?StandardTextListBlock $sidebar_list_block) : self
     {

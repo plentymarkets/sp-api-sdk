@@ -57,7 +57,7 @@ class SubmitShippingLabelsRequest implements \ArrayAccess, \JsonSerializable, Mo
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'shipping_label_requests' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabelRequest[]',
+        'shipping_label_requests' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabelRequest[]',
     ];
 
     /**
@@ -211,7 +211,7 @@ class SubmitShippingLabelsRequest implements \ArrayAccess, \JsonSerializable, Mo
     /**
      * Gets shipping_label_requests.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabelRequest[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabelRequest[]
      */
     public function getShippingLabelRequests() : ?array
     {
@@ -221,7 +221,7 @@ class SubmitShippingLabelsRequest implements \ArrayAccess, \JsonSerializable, Mo
     /**
      * Sets shipping_label_requests.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabelRequest[] $shipping_label_requests shipping_label_requests
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabelRequest[] $shipping_label_requests shipping_label_requests
      */
     public function setShippingLabelRequests(?array $shipping_label_requests) : self
     {

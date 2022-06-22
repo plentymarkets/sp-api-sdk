@@ -57,7 +57,7 @@ class SAFETReimbursementItem implements \ArrayAccess, \JsonSerializable, ModelIn
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'item_charge_list' => '\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[]',
+        'item_charge_list' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[]',
         'product_description' => 'string',
         'quantity' => 'string',
     ];
@@ -223,7 +223,7 @@ class SAFETReimbursementItem implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets item_charge_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[]
      */
     public function getItemChargeList() : ?array
     {
@@ -233,7 +233,7 @@ class SAFETReimbursementItem implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Sets item_charge_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[] $item_charge_list a list of charge information on the seller's account
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[] $item_charge_list a list of charge information on the seller's account
      */
     public function setItemChargeList(?array $item_charge_list) : self
     {

@@ -63,10 +63,10 @@ class ReturnItem implements \ArrayAccess, \JsonSerializable, ModelInterface
         'seller_return_reason_code' => 'string',
         'return_comment' => 'string',
         'amazon_return_reason_code' => 'string',
-        'status' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentReturnItemStatus',
+        'status' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentReturnItemStatus',
         'status_changed_date' => '\DateTime',
         'return_authorization_id' => 'string',
-        'return_received_condition' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReturnItemDisposition',
+        'return_received_condition' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReturnItemDisposition',
         'fulfillment_center_id' => 'string',
     ];
 
@@ -487,7 +487,7 @@ class ReturnItem implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets return_received_condition.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReturnItemDisposition $return_received_condition return_received_condition
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReturnItemDisposition $return_received_condition return_received_condition
      */
     public function setReturnReceivedCondition(?ReturnItemDisposition $return_received_condition) : self
     {

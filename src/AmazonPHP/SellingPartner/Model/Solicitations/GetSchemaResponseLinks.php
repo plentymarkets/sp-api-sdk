@@ -57,7 +57,7 @@ class GetSchemaResponseLinks implements \ArrayAccess, \JsonSerializable, ModelIn
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'self' => '\AmazonPHP\SellingPartner\Model\Solicitations\LinkObject',
+        'self' => '\Plenty\AmazonPHP\SellingPartner\Model\Solicitations\LinkObject',
     ];
 
     /**

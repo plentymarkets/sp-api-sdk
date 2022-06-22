@@ -58,7 +58,7 @@ class TaxWithheldComponent implements \ArrayAccess, \JsonSerializable, ModelInte
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'tax_collection_model' => 'string',
-        'taxes_withheld' => '\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[]',
+        'taxes_withheld' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[]',
     ];
 
     /**
@@ -237,7 +237,7 @@ class TaxWithheldComponent implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Gets taxes_withheld.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[]
      */
     public function getTaxesWithheld() : ?array
     {
@@ -247,7 +247,7 @@ class TaxWithheldComponent implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Sets taxes_withheld.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[] $taxes_withheld a list of charge information on the seller's account
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent[] $taxes_withheld a list of charge information on the seller's account
      */
     public function setTaxesWithheld(?array $taxes_withheld) : self
     {

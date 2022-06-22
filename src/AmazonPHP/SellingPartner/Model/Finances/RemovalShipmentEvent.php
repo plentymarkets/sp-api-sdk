@@ -61,7 +61,7 @@ class RemovalShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInte
         'merchant_order_id' => 'string',
         'order_id' => 'string',
         'transaction_type' => 'string',
-        'removal_shipment_item_list' => '\AmazonPHP\SellingPartner\Model\Finances\RemovalShipmentItem[]',
+        'removal_shipment_item_list' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\RemovalShipmentItem[]',
     ];
 
     /**
@@ -317,7 +317,7 @@ class RemovalShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Gets removal_shipment_item_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Finances\RemovalShipmentItem[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\RemovalShipmentItem[]
      */
     public function getRemovalShipmentItemList() : ?array
     {
@@ -327,7 +327,7 @@ class RemovalShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Sets removal_shipment_item_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\RemovalShipmentItem[] $removal_shipment_item_list a list of information about removal shipment items
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\RemovalShipmentItem[] $removal_shipment_item_list a list of information about removal shipment items
      */
     public function setRemovalShipmentItemList(?array $removal_shipment_item_list) : self
     {

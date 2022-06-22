@@ -57,10 +57,10 @@ class RegulatedOrderVerificationStatus implements \ArrayAccess, \JsonSerializabl
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'status' => '\AmazonPHP\SellingPartner\Model\Orders\VerificationStatus',
+        'status' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\VerificationStatus',
         'requires_merchant_action' => 'bool',
-        'valid_rejection_reasons' => '\AmazonPHP\SellingPartner\Model\Orders\RejectionReason[]',
-        'rejection_reason' => '\AmazonPHP\SellingPartner\Model\Orders\RejectionReason',
+        'valid_rejection_reasons' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\RejectionReason[]',
+        'rejection_reason' => '\Plenty\AmazonPHP\SellingPartner\Model\Orders\RejectionReason',
         'review_date' => 'string',
         'external_reviewer_id' => 'string',
     ];
@@ -325,7 +325,7 @@ class RegulatedOrderVerificationStatus implements \ArrayAccess, \JsonSerializabl
     /**
      * Sets rejection_reason.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Orders\RejectionReason $rejection_reason rejection_reason
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Orders\RejectionReason $rejection_reason rejection_reason
      */
     public function setRejectionReason(?RejectionReason $rejection_reason) : self
     {

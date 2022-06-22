@@ -64,7 +64,7 @@ class InboundShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInter
         'quantity_received' => 'int',
         'quantity_in_case' => 'int',
         'release_date' => '\DateTime',
-        'prep_details_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepDetails[]',
+        'prep_details_list' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepDetails[]',
     ];
 
     /**
@@ -405,7 +405,7 @@ class InboundShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Gets prep_details_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepDetails[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepDetails[]
      */
     public function getPrepDetailsList() : ?array
     {
@@ -415,7 +415,7 @@ class InboundShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets prep_details_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepDetails[] $prep_details_list a list of preparation instructions and who is responsible for that preparation
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepDetails[] $prep_details_list a list of preparation instructions and who is responsible for that preparation
      */
     public function setPrepDetailsList(?array $prep_details_list) : self
     {

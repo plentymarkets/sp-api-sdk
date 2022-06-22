@@ -58,10 +58,10 @@ class IncludedFeeDetail implements \ArrayAccess, \JsonSerializable, ModelInterfa
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'fee_type' => 'string',
-        'fee_amount' => '\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
-        'fee_promotion' => '\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
-        'tax_amount' => '\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
-        'final_fee' => '\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
+        'fee_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
+        'fee_promotion' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
+        'tax_amount' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
+        'final_fee' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
     ];
 
     /**
@@ -297,7 +297,7 @@ class IncludedFeeDetail implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Sets fee_promotion.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType $fee_promotion fee_promotion
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType $fee_promotion fee_promotion
      */
     public function setFeePromotion(?MoneyType $fee_promotion) : self
     {
@@ -317,7 +317,7 @@ class IncludedFeeDetail implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Sets tax_amount.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType $tax_amount tax_amount
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType $tax_amount tax_amount
      */
     public function setTaxAmount(?MoneyType $tax_amount) : self
     {

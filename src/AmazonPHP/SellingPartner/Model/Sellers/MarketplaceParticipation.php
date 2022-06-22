@@ -57,8 +57,8 @@ class MarketplaceParticipation implements \ArrayAccess, \JsonSerializable, Model
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'marketplace' => '\AmazonPHP\SellingPartner\Model\Sellers\Marketplace',
-        'participation' => '\AmazonPHP\SellingPartner\Model\Sellers\Participation',
+        'marketplace' => '\Plenty\AmazonPHP\SellingPartner\Model\Sellers\Marketplace',
+        'participation' => '\Plenty\AmazonPHP\SellingPartner\Model\Sellers\Participation',
     ];
 
     /**

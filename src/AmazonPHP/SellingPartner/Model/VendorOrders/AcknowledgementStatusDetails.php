@@ -58,8 +58,8 @@ class AcknowledgementStatusDetails implements \ArrayAccess, \JsonSerializable, M
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'acknowledgement_date' => '\DateTime',
-        'accepted_quantity' => '\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
-        'rejected_quantity' => '\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
+        'accepted_quantity' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
+        'rejected_quantity' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
     ];
 
     /**
@@ -253,7 +253,7 @@ class AcknowledgementStatusDetails implements \ArrayAccess, \JsonSerializable, M
     /**
      * Sets accepted_quantity.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity $accepted_quantity accepted_quantity
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity $accepted_quantity accepted_quantity
      */
     public function setAcceptedQuantity(?ItemQuantity $accepted_quantity) : self
     {
@@ -273,7 +273,7 @@ class AcknowledgementStatusDetails implements \ArrayAccess, \JsonSerializable, M
     /**
      * Sets rejected_quantity.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity $rejected_quantity rejected_quantity
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity $rejected_quantity rejected_quantity
      */
     public function setRejectedQuantity(?ItemQuantity $rejected_quantity) : self
     {

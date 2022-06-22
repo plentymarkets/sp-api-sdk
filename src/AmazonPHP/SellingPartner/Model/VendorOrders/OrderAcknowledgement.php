@@ -58,9 +58,9 @@ class OrderAcknowledgement implements \ArrayAccess, \JsonSerializable, ModelInte
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'purchase_order_number' => 'string',
-        'selling_party' => '\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification',
+        'selling_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\PartyIdentification',
         'acknowledgement_date' => '\DateTime',
-        'items' => '\AmazonPHP\SellingPartner\Model\VendorOrders\OrderAcknowledgementItem[]',
+        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderAcknowledgementItem[]',
     ];
 
     /**

@@ -57,7 +57,7 @@ class GetMyFeesEstimatesErrorList implements \ArrayAccess, \JsonSerializable, Mo
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'errors' => '\AmazonPHP\SellingPartner\Model\ProductFees\Error[]',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductFees\Error[]',
     ];
 
     /**

@@ -57,9 +57,9 @@ class ListContentDocumentAsinRelationsResponse implements \ArrayAccess, \JsonSer
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'warnings' => '\AmazonPHP\SellingPartner\Model\APlus\Error[]',
+        'warnings' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\Error[]',
         'next_page_token' => 'string',
-        'asin_metadata_set' => '\AmazonPHP\SellingPartner\Model\APlus\AsinMetadata[]',
+        'asin_metadata_set' => '\Plenty\AmazonPHP\SellingPartner\Model\APlus\AsinMetadata[]',
     ];
 
     /**
@@ -233,7 +233,7 @@ class ListContentDocumentAsinRelationsResponse implements \ArrayAccess, \JsonSer
     /**
      * Gets warnings.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\APlus\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\Error[]
      */
     public function getWarnings() : ?array
     {
@@ -243,7 +243,7 @@ class ListContentDocumentAsinRelationsResponse implements \ArrayAccess, \JsonSer
     /**
      * Sets warnings.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\APlus\Error[] $warnings a set of messages to the user, such as warnings or comments
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\APlus\Error[] $warnings a set of messages to the user, such as warnings or comments
      */
     public function setWarnings(?array $warnings) : self
     {

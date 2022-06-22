@@ -58,8 +58,8 @@ class TrackingEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'event_date' => '\DateTime',
-        'event_address' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\TrackingAddress',
-        'event_code' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\EventCode',
+        'event_address' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\TrackingAddress',
+        'event_code' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\EventCode',
         'event_description' => 'string',
     ];
 

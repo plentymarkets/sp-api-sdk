@@ -57,8 +57,8 @@ class CustomerInvoiceList implements \ArrayAccess, \JsonSerializable, ModelInter
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'pagination' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Pagination',
-        'customer_invoices' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\CustomerInvoice[]',
+        'pagination' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Pagination',
+        'customer_invoices' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\CustomerInvoice[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class CustomerInvoiceList implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets pagination.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Pagination $pagination pagination
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Pagination $pagination pagination
      */
     public function setPagination(?Pagination $pagination) : self
     {
@@ -237,7 +237,7 @@ class CustomerInvoiceList implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Gets customer_invoices.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\CustomerInvoice[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\CustomerInvoice[]
      */
     public function getCustomerInvoices() : ?array
     {
@@ -247,7 +247,7 @@ class CustomerInvoiceList implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Sets customer_invoices.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\CustomerInvoice[] $customer_invoices customer_invoices
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\CustomerInvoice[] $customer_invoices customer_invoices
      */
     public function setCustomerInvoices(?array $customer_invoices) : self
     {

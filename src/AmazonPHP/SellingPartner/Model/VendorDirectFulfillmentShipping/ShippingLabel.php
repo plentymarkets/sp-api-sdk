@@ -62,10 +62,10 @@ class ShippingLabel implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'purchase_order_number' => 'string',
-        'selling_party' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\PartyIdentification',
-        'ship_from_party' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\PartyIdentification',
+        'selling_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\PartyIdentification',
+        'ship_from_party' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\PartyIdentification',
         'label_format' => 'string',
-        'label_data' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\LabelData[]',
+        'label_data' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\LabelData[]',
     ];
 
     /**

@@ -61,8 +61,8 @@ class PayWithAmazonEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
         'transaction_posted_date' => '\DateTime',
         'business_object_type' => 'string',
         'sales_channel' => 'string',
-        'charge' => '\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent',
-        'fee_list' => '\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]',
+        'charge' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent',
+        'fee_list' => '\Plenty\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]',
         'payment_amount_type' => 'string',
         'amount_description' => 'string',
         'fulfillment_channel' => 'string',
@@ -355,7 +355,7 @@ class PayWithAmazonEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets charge.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent $charge charge
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\ChargeComponent $charge charge
      */
     public function setCharge(?ChargeComponent $charge) : self
     {
@@ -367,7 +367,7 @@ class PayWithAmazonEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Gets fee_list.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]
      */
     public function getFeeList() : ?array
     {
@@ -377,7 +377,7 @@ class PayWithAmazonEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Sets fee_list.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[] $fee_list a list of fee component information
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[] $fee_list a list of fee component information
      */
     public function setFeeList(?array $fee_list) : self
     {

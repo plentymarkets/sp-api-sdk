@@ -57,11 +57,11 @@ class CreateInboundShipmentPlanRequest implements \ArrayAccess, \JsonSerializabl
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'ship_from_address' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Address',
-        'label_prep_preference' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\LabelPrepPreference',
+        'ship_from_address' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Address',
+        'label_prep_preference' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\LabelPrepPreference',
         'ship_to_country_code' => 'string',
         'ship_to_country_subdivision_code' => 'string',
-        'inbound_shipment_plan_request_items' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentPlanRequestItem[]',
+        'inbound_shipment_plan_request_items' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentPlanRequestItem[]',
     ];
 
     /**

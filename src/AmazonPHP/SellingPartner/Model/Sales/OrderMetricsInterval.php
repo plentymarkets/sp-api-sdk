@@ -61,8 +61,8 @@ class OrderMetricsInterval implements \ArrayAccess, \JsonSerializable, ModelInte
         'unit_count' => 'int',
         'order_item_count' => 'int',
         'order_count' => 'int',
-        'average_unit_price' => '\AmazonPHP\SellingPartner\Model\Sales\Money',
-        'total_sales' => '\AmazonPHP\SellingPartner\Model\Sales\Money',
+        'average_unit_price' => '\Plenty\AmazonPHP\SellingPartner\Model\Sales\Money',
+        'total_sales' => '\Plenty\AmazonPHP\SellingPartner\Model\Sales\Money',
     ];
 
     /**

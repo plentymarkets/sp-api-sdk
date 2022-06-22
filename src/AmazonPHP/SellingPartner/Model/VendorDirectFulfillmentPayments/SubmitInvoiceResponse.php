@@ -57,8 +57,8 @@ class SubmitInvoiceResponse implements \ArrayAccess, \JsonSerializable, ModelInt
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'payload' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\TransactionReference',
-        'errors' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\Error[]',
+        'payload' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\TransactionReference',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\Error[]',
     ];
 
     /**
@@ -225,7 +225,7 @@ class SubmitInvoiceResponse implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets payload.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\TransactionReference $payload payload
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\TransactionReference $payload payload
      */
     public function setPayload(?TransactionReference $payload) : self
     {
@@ -237,7 +237,7 @@ class SubmitInvoiceResponse implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Gets errors.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\Error[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\Error[]
      */
     public function getErrors() : ?array
     {
@@ -247,7 +247,7 @@ class SubmitInvoiceResponse implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Sets errors.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\Error[] $errors a list of error responses returned when a request is unsuccessful
+     * @param null|\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\Error[] $errors a list of error responses returned when a request is unsuccessful
      */
     public function setErrors(?array $errors) : self
     {

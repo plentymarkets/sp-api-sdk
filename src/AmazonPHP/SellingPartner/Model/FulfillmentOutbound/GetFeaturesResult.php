@@ -57,7 +57,7 @@ class GetFeaturesResult implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'features' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Feature[]',
+        'features' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Feature[]',
     ];
 
     /**

@@ -57,7 +57,7 @@ class RescheduleAppointmentRequest implements \ArrayAccess, \JsonSerializable, M
      * @var string[]
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
-        'appointment_time' => '\AmazonPHP\SellingPartner\Model\Services\AppointmentTimeInput',
+        'appointment_time' => '\Plenty\AmazonPHP\SellingPartner\Model\Services\AppointmentTimeInput',
         'reschedule_reason_code' => 'string',
     ];
 
