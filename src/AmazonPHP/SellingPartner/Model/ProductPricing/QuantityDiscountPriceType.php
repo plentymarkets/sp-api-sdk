@@ -49,14 +49,14 @@ class QuantityDiscountPriceType implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'QuantityDiscountPriceType';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'QuantityDiscountPriceType';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'quantity_tier' => 'int',
         'quantity_discount_type' => '\AmazonPHP\SellingPartner\Model\ProductPricing\QuantityDiscountType',
         'listing_price' => '\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
@@ -69,7 +69,7 @@ class QuantityDiscountPriceType implements \ArrayAccess, \JsonSerializable, Mode
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'quantity_tier' => 'int32',
         'quantity_discount_type' => null,
         'listing_price' => null,
@@ -81,7 +81,7 @@ class QuantityDiscountPriceType implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'quantity_tier' => 'quantityTier',
         'quantity_discount_type' => 'quantityDiscountType',
         'listing_price' => 'listingPrice',
@@ -92,7 +92,7 @@ class QuantityDiscountPriceType implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'quantity_tier' => 'setQuantityTier',
         'quantity_discount_type' => 'setQuantityDiscountType',
         'listing_price' => 'setListingPrice',
@@ -103,7 +103,7 @@ class QuantityDiscountPriceType implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'quantity_tier' => 'getQuantityTier',
         'quantity_discount_type' => 'getQuantityDiscountType',
         'listing_price' => 'getListingPrice',
@@ -114,7 +114,7 @@ class QuantityDiscountPriceType implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

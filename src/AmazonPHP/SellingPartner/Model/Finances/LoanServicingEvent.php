@@ -49,14 +49,14 @@ class LoanServicingEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'LoanServicingEvent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'LoanServicingEvent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'loan_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
         'source_business_event_type' => 'string',
     ];
@@ -68,7 +68,7 @@ class LoanServicingEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'loan_amount' => null,
         'source_business_event_type' => null,
     ];
@@ -79,7 +79,7 @@ class LoanServicingEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'loan_amount' => 'LoanAmount',
         'source_business_event_type' => 'SourceBusinessEventType',
     ];
@@ -89,7 +89,7 @@ class LoanServicingEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'loan_amount' => 'setLoanAmount',
         'source_business_event_type' => 'setSourceBusinessEventType',
     ];
@@ -99,7 +99,7 @@ class LoanServicingEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'loan_amount' => 'getLoanAmount',
         'source_business_event_type' => 'getSourceBusinessEventType',
     ];
@@ -109,7 +109,7 @@ class LoanServicingEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

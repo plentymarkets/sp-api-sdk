@@ -49,14 +49,14 @@ class InventoryUpdate implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'InventoryUpdate';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'InventoryUpdate';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'selling_party' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\PartyIdentification',
         'is_full_update' => 'bool',
         'items' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\ItemDetails[]',
@@ -69,7 +69,7 @@ class InventoryUpdate implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'selling_party' => null,
         'is_full_update' => null,
         'items' => null,
@@ -81,7 +81,7 @@ class InventoryUpdate implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'selling_party' => 'sellingParty',
         'is_full_update' => 'isFullUpdate',
         'items' => 'items',
@@ -92,7 +92,7 @@ class InventoryUpdate implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'selling_party' => 'setSellingParty',
         'is_full_update' => 'setIsFullUpdate',
         'items' => 'setItems',
@@ -103,7 +103,7 @@ class InventoryUpdate implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'selling_party' => 'getSellingParty',
         'is_full_update' => 'getIsFullUpdate',
         'items' => 'getItems',
@@ -114,7 +114,7 @@ class InventoryUpdate implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

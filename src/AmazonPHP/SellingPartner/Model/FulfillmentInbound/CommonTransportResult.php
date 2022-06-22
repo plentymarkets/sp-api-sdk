@@ -49,14 +49,14 @@ class CommonTransportResult implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CommonTransportResult';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CommonTransportResult';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'transport_result' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportResult',
     ];
 
@@ -67,7 +67,7 @@ class CommonTransportResult implements \ArrayAccess, \JsonSerializable, ModelInt
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'transport_result' => null,
     ];
 
@@ -77,7 +77,7 @@ class CommonTransportResult implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'transport_result' => 'TransportResult',
     ];
 
@@ -86,7 +86,7 @@ class CommonTransportResult implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'transport_result' => 'setTransportResult',
     ];
 
@@ -95,7 +95,7 @@ class CommonTransportResult implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'transport_result' => 'getTransportResult',
     ];
 
@@ -104,7 +104,7 @@ class CommonTransportResult implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

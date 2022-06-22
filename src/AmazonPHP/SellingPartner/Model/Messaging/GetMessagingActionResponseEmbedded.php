@@ -49,14 +49,14 @@ class GetMessagingActionResponseEmbedded implements \ArrayAccess, \JsonSerializa
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetMessagingActionResponse__embedded';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetMessagingActionResponse__embedded';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'schema' => '\AmazonPHP\SellingPartner\Model\Messaging\GetSchemaResponse',
     ];
 
@@ -67,7 +67,7 @@ class GetMessagingActionResponseEmbedded implements \ArrayAccess, \JsonSerializa
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'schema' => null,
     ];
 
@@ -77,7 +77,7 @@ class GetMessagingActionResponseEmbedded implements \ArrayAccess, \JsonSerializa
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'schema' => 'schema',
     ];
 
@@ -86,7 +86,7 @@ class GetMessagingActionResponseEmbedded implements \ArrayAccess, \JsonSerializa
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'schema' => 'setSchema',
     ];
 
@@ -95,7 +95,7 @@ class GetMessagingActionResponseEmbedded implements \ArrayAccess, \JsonSerializa
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'schema' => 'getSchema',
     ];
 
@@ -104,7 +104,7 @@ class GetMessagingActionResponseEmbedded implements \ArrayAccess, \JsonSerializa
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

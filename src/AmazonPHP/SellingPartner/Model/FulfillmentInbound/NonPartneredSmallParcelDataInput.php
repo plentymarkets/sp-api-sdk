@@ -49,14 +49,14 @@ class NonPartneredSmallParcelDataInput implements \ArrayAccess, \JsonSerializabl
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'NonPartneredSmallParcelDataInput';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'NonPartneredSmallParcelDataInput';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'carrier_name' => 'string',
         'package_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\NonPartneredSmallParcelPackageInput[]',
     ];
@@ -68,7 +68,7 @@ class NonPartneredSmallParcelDataInput implements \ArrayAccess, \JsonSerializabl
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'carrier_name' => null,
         'package_list' => null,
     ];
@@ -79,7 +79,7 @@ class NonPartneredSmallParcelDataInput implements \ArrayAccess, \JsonSerializabl
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'carrier_name' => 'CarrierName',
         'package_list' => 'PackageList',
     ];
@@ -89,7 +89,7 @@ class NonPartneredSmallParcelDataInput implements \ArrayAccess, \JsonSerializabl
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'carrier_name' => 'setCarrierName',
         'package_list' => 'setPackageList',
     ];
@@ -99,7 +99,7 @@ class NonPartneredSmallParcelDataInput implements \ArrayAccess, \JsonSerializabl
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'carrier_name' => 'getCarrierName',
         'package_list' => 'getPackageList',
     ];
@@ -109,7 +109,7 @@ class NonPartneredSmallParcelDataInput implements \ArrayAccess, \JsonSerializabl
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

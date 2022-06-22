@@ -11,9 +11,9 @@ use PHPUnit\Framework\TestCase;
 
 class HttpSignatureHeadersTest extends TestCase
 {
-    private ?Configuration $configuration;
+    private /** [COMPAT] ?Configuration */ $configuration;
 
-    private ?AccessToken $accessToken;
+    private /** [COMPAT] ?AccessToken */ $accessToken;
 
     protected function setUp(): void
     {

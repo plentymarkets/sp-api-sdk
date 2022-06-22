@@ -49,14 +49,14 @@ class RemovalShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'RemovalShipmentEvent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'RemovalShipmentEvent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'posted_date' => '\DateTime',
         'merchant_order_id' => 'string',
         'order_id' => 'string',
@@ -71,7 +71,7 @@ class RemovalShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInte
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'posted_date' => 'date-time',
         'merchant_order_id' => null,
         'order_id' => null,
@@ -85,7 +85,7 @@ class RemovalShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'posted_date' => 'PostedDate',
         'merchant_order_id' => 'MerchantOrderId',
         'order_id' => 'OrderId',
@@ -98,7 +98,7 @@ class RemovalShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'posted_date' => 'setPostedDate',
         'merchant_order_id' => 'setMerchantOrderId',
         'order_id' => 'setOrderId',
@@ -111,7 +111,7 @@ class RemovalShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'posted_date' => 'getPostedDate',
         'merchant_order_id' => 'getMerchantOrderId',
         'order_id' => 'getOrderId',
@@ -124,7 +124,7 @@ class RemovalShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class GetContentDocumentResponseAllOf implements \ArrayAccess, \JsonSerializable
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetContentDocumentResponse_allOf';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetContentDocumentResponse_allOf';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'content_record' => '\AmazonPHP\SellingPartner\Model\APlus\ContentRecord',
     ];
 
@@ -67,7 +67,7 @@ class GetContentDocumentResponseAllOf implements \ArrayAccess, \JsonSerializable
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'content_record' => null,
     ];
 
@@ -77,7 +77,7 @@ class GetContentDocumentResponseAllOf implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'content_record' => 'contentRecord',
     ];
 
@@ -86,7 +86,7 @@ class GetContentDocumentResponseAllOf implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'content_record' => 'setContentRecord',
     ];
 
@@ -95,7 +95,7 @@ class GetContentDocumentResponseAllOf implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'content_record' => 'getContentRecord',
     ];
 
@@ -104,7 +104,7 @@ class GetContentDocumentResponseAllOf implements \ArrayAccess, \JsonSerializable
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

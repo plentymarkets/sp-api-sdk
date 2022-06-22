@@ -49,14 +49,14 @@ class InventorySummary implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'InventorySummary';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'InventorySummary';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'asin' => 'string',
         'fn_sku' => 'string',
         'seller_sku' => 'string',
@@ -74,7 +74,7 @@ class InventorySummary implements \ArrayAccess, \JsonSerializable, ModelInterfac
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'asin' => null,
         'fn_sku' => null,
         'seller_sku' => null,
@@ -91,7 +91,7 @@ class InventorySummary implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'asin' => 'asin',
         'fn_sku' => 'fnSku',
         'seller_sku' => 'sellerSku',
@@ -107,7 +107,7 @@ class InventorySummary implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'asin' => 'setAsin',
         'fn_sku' => 'setFnSku',
         'seller_sku' => 'setSellerSku',
@@ -123,7 +123,7 @@ class InventorySummary implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'asin' => 'getAsin',
         'fn_sku' => 'getFnSku',
         'seller_sku' => 'getSellerSku',
@@ -139,7 +139,7 @@ class InventorySummary implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

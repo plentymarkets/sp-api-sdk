@@ -44,7 +44,7 @@ class CarrierWillPickUpOption
 
     public const NO_PREFERENCE = 'NoPreference';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

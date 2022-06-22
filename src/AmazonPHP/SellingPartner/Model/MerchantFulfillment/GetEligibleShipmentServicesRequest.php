@@ -49,14 +49,14 @@ class GetEligibleShipmentServicesRequest implements \ArrayAccess, \JsonSerializa
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetEligibleShipmentServicesRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetEligibleShipmentServicesRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'shipment_request_details' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShipmentRequestDetails',
         'shipping_offering_filter' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShippingOfferingFilter',
     ];
@@ -68,7 +68,7 @@ class GetEligibleShipmentServicesRequest implements \ArrayAccess, \JsonSerializa
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'shipment_request_details' => null,
         'shipping_offering_filter' => null,
     ];
@@ -79,7 +79,7 @@ class GetEligibleShipmentServicesRequest implements \ArrayAccess, \JsonSerializa
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'shipment_request_details' => 'ShipmentRequestDetails',
         'shipping_offering_filter' => 'ShippingOfferingFilter',
     ];
@@ -89,7 +89,7 @@ class GetEligibleShipmentServicesRequest implements \ArrayAccess, \JsonSerializa
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'shipment_request_details' => 'setShipmentRequestDetails',
         'shipping_offering_filter' => 'setShippingOfferingFilter',
     ];
@@ -99,7 +99,7 @@ class GetEligibleShipmentServicesRequest implements \ArrayAccess, \JsonSerializa
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'shipment_request_details' => 'getShipmentRequestDetails',
         'shipping_offering_filter' => 'getShippingOfferingFilter',
     ];
@@ -109,7 +109,7 @@ class GetEligibleShipmentServicesRequest implements \ArrayAccess, \JsonSerializa
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

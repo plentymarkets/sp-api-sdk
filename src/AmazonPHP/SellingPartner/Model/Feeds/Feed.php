@@ -59,14 +59,14 @@ class Feed implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Feed';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Feed';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'feed_id' => 'string',
         'feed_type' => 'string',
         'marketplace_ids' => 'string[]',
@@ -84,7 +84,7 @@ class Feed implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'feed_id' => null,
         'feed_type' => null,
         'marketplace_ids' => null,
@@ -101,7 +101,7 @@ class Feed implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'feed_id' => 'feedId',
         'feed_type' => 'feedType',
         'marketplace_ids' => 'marketplaceIds',
@@ -117,7 +117,7 @@ class Feed implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'feed_id' => 'setFeedId',
         'feed_type' => 'setFeedType',
         'marketplace_ids' => 'setMarketplaceIds',
@@ -133,7 +133,7 @@ class Feed implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'feed_id' => 'getFeedId',
         'feed_type' => 'getFeedType',
         'marketplace_ids' => 'getMarketplaceIds',
@@ -149,7 +149,7 @@ class Feed implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

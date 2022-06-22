@@ -49,14 +49,14 @@ class FeeComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'FeeComponent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'FeeComponent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'fee_type' => 'string',
         'fee_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
     ];
@@ -68,7 +68,7 @@ class FeeComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'fee_type' => null,
         'fee_amount' => null,
     ];
@@ -79,7 +79,7 @@ class FeeComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'fee_type' => 'FeeType',
         'fee_amount' => 'FeeAmount',
     ];
@@ -89,7 +89,7 @@ class FeeComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'fee_type' => 'setFeeType',
         'fee_amount' => 'setFeeAmount',
     ];
@@ -99,7 +99,7 @@ class FeeComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'fee_type' => 'getFeeType',
         'fee_amount' => 'getFeeAmount',
     ];
@@ -109,7 +109,7 @@ class FeeComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

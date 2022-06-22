@@ -49,14 +49,14 @@ class PackageTrackingDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'PackageTrackingDetails';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'PackageTrackingDetails';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'package_number' => 'int',
         'tracking_number' => 'string',
         'customer_tracking_link' => 'string',
@@ -80,7 +80,7 @@ class PackageTrackingDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'package_number' => 'int32',
         'tracking_number' => null,
         'customer_tracking_link' => null,
@@ -103,7 +103,7 @@ class PackageTrackingDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'package_number' => 'packageNumber',
         'tracking_number' => 'trackingNumber',
         'customer_tracking_link' => 'customerTrackingLink',
@@ -125,7 +125,7 @@ class PackageTrackingDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'package_number' => 'setPackageNumber',
         'tracking_number' => 'setTrackingNumber',
         'customer_tracking_link' => 'setCustomerTrackingLink',
@@ -147,7 +147,7 @@ class PackageTrackingDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'package_number' => 'getPackageNumber',
         'tracking_number' => 'getTrackingNumber',
         'customer_tracking_link' => 'getCustomerTrackingLink',
@@ -169,7 +169,7 @@ class PackageTrackingDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

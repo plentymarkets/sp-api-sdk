@@ -49,14 +49,14 @@ class InboundShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'InboundShipmentRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'InboundShipmentRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'inbound_shipment_header' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentHeader',
         'inbound_shipment_items' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentItem[]',
         'marketplace_id' => 'string',
@@ -69,7 +69,7 @@ class InboundShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelIn
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'inbound_shipment_header' => null,
         'inbound_shipment_items' => null,
         'marketplace_id' => null,
@@ -81,7 +81,7 @@ class InboundShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'inbound_shipment_header' => 'InboundShipmentHeader',
         'inbound_shipment_items' => 'InboundShipmentItems',
         'marketplace_id' => 'MarketplaceId',
@@ -92,7 +92,7 @@ class InboundShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'inbound_shipment_header' => 'setInboundShipmentHeader',
         'inbound_shipment_items' => 'setInboundShipmentItems',
         'marketplace_id' => 'setMarketplaceId',
@@ -103,7 +103,7 @@ class InboundShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'inbound_shipment_header' => 'getInboundShipmentHeader',
         'inbound_shipment_items' => 'getInboundShipmentItems',
         'marketplace_id' => 'getMarketplaceId',
@@ -114,7 +114,7 @@ class InboundShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

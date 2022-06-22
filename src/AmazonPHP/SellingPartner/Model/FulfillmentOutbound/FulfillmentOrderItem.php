@@ -49,14 +49,14 @@ class FulfillmentOrderItem implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'FulfillmentOrderItem';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'FulfillmentOrderItem';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'seller_sku' => 'string',
         'seller_fulfillment_order_item_id' => 'string',
         'quantity' => 'int',
@@ -80,7 +80,7 @@ class FulfillmentOrderItem implements \ArrayAccess, \JsonSerializable, ModelInte
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'seller_sku' => null,
         'seller_fulfillment_order_item_id' => null,
         'quantity' => 'int32',
@@ -103,7 +103,7 @@ class FulfillmentOrderItem implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'seller_sku' => 'sellerSku',
         'seller_fulfillment_order_item_id' => 'sellerFulfillmentOrderItemId',
         'quantity' => 'quantity',
@@ -125,7 +125,7 @@ class FulfillmentOrderItem implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'seller_sku' => 'setSellerSku',
         'seller_fulfillment_order_item_id' => 'setSellerFulfillmentOrderItemId',
         'quantity' => 'setQuantity',
@@ -147,7 +147,7 @@ class FulfillmentOrderItem implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'seller_sku' => 'getSellerSku',
         'seller_fulfillment_order_item_id' => 'getSellerFulfillmentOrderItemId',
         'quantity' => 'getQuantity',
@@ -169,7 +169,7 @@ class FulfillmentOrderItem implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

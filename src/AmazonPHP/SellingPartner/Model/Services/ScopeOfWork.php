@@ -49,14 +49,14 @@ class ScopeOfWork implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ScopeOfWork';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ScopeOfWork';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'asin' => 'string',
         'title' => 'string',
         'quantity' => 'int',
@@ -70,7 +70,7 @@ class ScopeOfWork implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'asin' => null,
         'title' => null,
         'quantity' => null,
@@ -83,7 +83,7 @@ class ScopeOfWork implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'asin' => 'asin',
         'title' => 'title',
         'quantity' => 'quantity',
@@ -95,7 +95,7 @@ class ScopeOfWork implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'asin' => 'setAsin',
         'title' => 'setTitle',
         'quantity' => 'setQuantity',
@@ -107,7 +107,7 @@ class ScopeOfWork implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'asin' => 'getAsin',
         'title' => 'getTitle',
         'quantity' => 'getQuantity',
@@ -119,7 +119,7 @@ class ScopeOfWork implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class LabelDownloadURL implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'LabelDownloadURL';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'LabelDownloadURL';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'download_url' => 'string',
     ];
 
@@ -67,7 +67,7 @@ class LabelDownloadURL implements \ArrayAccess, \JsonSerializable, ModelInterfac
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'download_url' => null,
     ];
 
@@ -77,7 +77,7 @@ class LabelDownloadURL implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'download_url' => 'DownloadURL',
     ];
 
@@ -86,7 +86,7 @@ class LabelDownloadURL implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'download_url' => 'setDownloadUrl',
     ];
 
@@ -95,7 +95,7 @@ class LabelDownloadURL implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'download_url' => 'getDownloadUrl',
     ];
 
@@ -104,7 +104,7 @@ class LabelDownloadURL implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class ProcessingDirective implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ProcessingDirective';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ProcessingDirective';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'event_filter' => '\AmazonPHP\SellingPartner\Model\Notifications\EventFilter',
     ];
 
@@ -67,7 +67,7 @@ class ProcessingDirective implements \ArrayAccess, \JsonSerializable, ModelInter
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'event_filter' => null,
     ];
 
@@ -77,7 +77,7 @@ class ProcessingDirective implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'event_filter' => 'eventFilter',
     ];
 
@@ -86,7 +86,7 @@ class ProcessingDirective implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'event_filter' => 'setEventFilter',
     ];
 
@@ -95,7 +95,7 @@ class ProcessingDirective implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'event_filter' => 'getEventFilter',
     ];
 
@@ -104,7 +104,7 @@ class ProcessingDirective implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class PurchaseLabelsResult implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'PurchaseLabelsResult';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'PurchaseLabelsResult';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'shipment_id' => 'string',
         'client_reference_id' => 'string',
         'accepted_rate' => '\AmazonPHP\SellingPartner\Model\Shipping\AcceptedRate',
@@ -70,7 +70,7 @@ class PurchaseLabelsResult implements \ArrayAccess, \JsonSerializable, ModelInte
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'shipment_id' => null,
         'client_reference_id' => null,
         'accepted_rate' => null,
@@ -83,7 +83,7 @@ class PurchaseLabelsResult implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'shipment_id' => 'shipmentId',
         'client_reference_id' => 'clientReferenceId',
         'accepted_rate' => 'acceptedRate',
@@ -95,7 +95,7 @@ class PurchaseLabelsResult implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'shipment_id' => 'setShipmentId',
         'client_reference_id' => 'setClientReferenceId',
         'accepted_rate' => 'setAcceptedRate',
@@ -107,7 +107,7 @@ class PurchaseLabelsResult implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'shipment_id' => 'getShipmentId',
         'client_reference_id' => 'getClientReferenceId',
         'accepted_rate' => 'getAcceptedRate',
@@ -119,7 +119,7 @@ class PurchaseLabelsResult implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

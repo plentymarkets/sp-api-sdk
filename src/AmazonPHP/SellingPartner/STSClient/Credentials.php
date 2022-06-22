@@ -6,13 +6,13 @@ namespace Plenty\AmazonPHP\SellingPartner\STSClient;
 
 final class Credentials
 {
-    private string $accessKeyId;
+    private /** [COMPAT] string */ $accessKeyId;
 
-    private string $secretAccessKey;
+    private /** [COMPAT] string */ $secretAccessKey;
 
-    private string $sessionToken;
+    private /** [COMPAT] string */ $sessionToken;
 
-    private int $expiration;
+    private /** [COMPAT] int */ $expiration;
 
     public function __construct(string $accessKeyId, string $secretAccessKey, string $sessionToken, int $expiration)
     {

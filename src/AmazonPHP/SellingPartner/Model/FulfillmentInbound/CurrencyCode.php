@@ -42,7 +42,7 @@ class CurrencyCode
 
     public const GBP = 'GBP';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

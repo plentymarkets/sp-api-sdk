@@ -49,14 +49,14 @@ class Label implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Label';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Label';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'custom_text_for_label' => 'string',
         'dimensions' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelDimensions',
         'file_contents' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\FileContents',
@@ -71,7 +71,7 @@ class Label implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'custom_text_for_label' => null,
         'dimensions' => null,
         'file_contents' => null,
@@ -85,7 +85,7 @@ class Label implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'custom_text_for_label' => 'CustomTextForLabel',
         'dimensions' => 'Dimensions',
         'file_contents' => 'FileContents',
@@ -98,7 +98,7 @@ class Label implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'custom_text_for_label' => 'setCustomTextForLabel',
         'dimensions' => 'setDimensions',
         'file_contents' => 'setFileContents',
@@ -111,7 +111,7 @@ class Label implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'custom_text_for_label' => 'getCustomTextForLabel',
         'dimensions' => 'getDimensions',
         'file_contents' => 'getFileContents',
@@ -124,7 +124,7 @@ class Label implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

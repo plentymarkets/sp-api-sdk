@@ -49,14 +49,14 @@ class OrderMetricsInterval implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'OrderMetricsInterval';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'OrderMetricsInterval';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'interval' => 'string',
         'unit_count' => 'int',
         'order_item_count' => 'int',
@@ -72,7 +72,7 @@ class OrderMetricsInterval implements \ArrayAccess, \JsonSerializable, ModelInte
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'interval' => null,
         'unit_count' => null,
         'order_item_count' => null,
@@ -87,7 +87,7 @@ class OrderMetricsInterval implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'interval' => 'interval',
         'unit_count' => 'unitCount',
         'order_item_count' => 'orderItemCount',
@@ -101,7 +101,7 @@ class OrderMetricsInterval implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'interval' => 'setInterval',
         'unit_count' => 'setUnitCount',
         'order_item_count' => 'setOrderItemCount',
@@ -115,7 +115,7 @@ class OrderMetricsInterval implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'interval' => 'getInterval',
         'unit_count' => 'getUnitCount',
         'order_item_count' => 'getOrderItemCount',
@@ -129,7 +129,7 @@ class OrderMetricsInterval implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

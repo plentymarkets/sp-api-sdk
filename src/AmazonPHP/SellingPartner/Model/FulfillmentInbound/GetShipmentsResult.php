@@ -49,14 +49,14 @@ class GetShipmentsResult implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetShipmentsResult';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetShipmentsResult';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'shipment_data' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentInfo[]',
         'next_token' => 'string',
     ];
@@ -68,7 +68,7 @@ class GetShipmentsResult implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'shipment_data' => null,
         'next_token' => null,
     ];
@@ -79,7 +79,7 @@ class GetShipmentsResult implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'shipment_data' => 'ShipmentData',
         'next_token' => 'NextToken',
     ];
@@ -89,7 +89,7 @@ class GetShipmentsResult implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'shipment_data' => 'setShipmentData',
         'next_token' => 'setNextToken',
     ];
@@ -99,7 +99,7 @@ class GetShipmentsResult implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'shipment_data' => 'getShipmentData',
         'next_token' => 'getNextToken',
     ];
@@ -109,7 +109,7 @@ class GetShipmentsResult implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class RentalTransactionEvent implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'RentalTransactionEvent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'RentalTransactionEvent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'amazon_order_id' => 'string',
         'rental_event_type' => 'string',
         'extension_length' => 'int',
@@ -76,7 +76,7 @@ class RentalTransactionEvent implements \ArrayAccess, \JsonSerializable, ModelIn
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'amazon_order_id' => null,
         'rental_event_type' => null,
         'extension_length' => 'int32',
@@ -95,7 +95,7 @@ class RentalTransactionEvent implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'amazon_order_id' => 'AmazonOrderId',
         'rental_event_type' => 'RentalEventType',
         'extension_length' => 'ExtensionLength',
@@ -113,7 +113,7 @@ class RentalTransactionEvent implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'amazon_order_id' => 'setAmazonOrderId',
         'rental_event_type' => 'setRentalEventType',
         'extension_length' => 'setExtensionLength',
@@ -131,7 +131,7 @@ class RentalTransactionEvent implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'amazon_order_id' => 'getAmazonOrderId',
         'rental_event_type' => 'getRentalEventType',
         'extension_length' => 'getExtensionLength',
@@ -149,7 +149,7 @@ class RentalTransactionEvent implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

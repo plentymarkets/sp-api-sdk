@@ -49,14 +49,14 @@ class CreateFeedDocumentResponse implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CreateFeedDocumentResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CreateFeedDocumentResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'feed_document_id' => 'string',
         'url' => 'string',
     ];
@@ -68,7 +68,7 @@ class CreateFeedDocumentResponse implements \ArrayAccess, \JsonSerializable, Mod
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'feed_document_id' => null,
         'url' => null,
     ];
@@ -79,7 +79,7 @@ class CreateFeedDocumentResponse implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'feed_document_id' => 'feedDocumentId',
         'url' => 'url',
     ];
@@ -89,7 +89,7 @@ class CreateFeedDocumentResponse implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'feed_document_id' => 'setFeedDocumentId',
         'url' => 'setUrl',
     ];
@@ -99,7 +99,7 @@ class CreateFeedDocumentResponse implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'feed_document_id' => 'getFeedDocumentId',
         'url' => 'getUrl',
     ];
@@ -109,7 +109,7 @@ class CreateFeedDocumentResponse implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

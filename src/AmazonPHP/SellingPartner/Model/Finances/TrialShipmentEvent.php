@@ -49,14 +49,14 @@ class TrialShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'TrialShipmentEvent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'TrialShipmentEvent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'amazon_order_id' => 'string',
         'financial_event_group_id' => 'string',
         'posted_date' => '\DateTime',
@@ -71,7 +71,7 @@ class TrialShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'amazon_order_id' => null,
         'financial_event_group_id' => null,
         'posted_date' => 'date-time',
@@ -85,7 +85,7 @@ class TrialShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'amazon_order_id' => 'AmazonOrderId',
         'financial_event_group_id' => 'FinancialEventGroupId',
         'posted_date' => 'PostedDate',
@@ -98,7 +98,7 @@ class TrialShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'amazon_order_id' => 'setAmazonOrderId',
         'financial_event_group_id' => 'setFinancialEventGroupId',
         'posted_date' => 'setPostedDate',
@@ -111,7 +111,7 @@ class TrialShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'amazon_order_id' => 'getAmazonOrderId',
         'financial_event_group_id' => 'getFinancialEventGroupId',
         'posted_date' => 'getPostedDate',
@@ -124,7 +124,7 @@ class TrialShipmentEvent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

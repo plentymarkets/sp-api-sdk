@@ -49,14 +49,14 @@ class TimeRange implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'TimeRange';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'TimeRange';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'start' => '\DateTime',
         'end' => '\DateTime',
     ];
@@ -68,7 +68,7 @@ class TimeRange implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'start' => 'date-time',
         'end' => 'date-time',
     ];
@@ -79,7 +79,7 @@ class TimeRange implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'start' => 'start',
         'end' => 'end',
     ];
@@ -89,7 +89,7 @@ class TimeRange implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'start' => 'setStart',
         'end' => 'setEnd',
     ];
@@ -99,7 +99,7 @@ class TimeRange implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'start' => 'getStart',
         'end' => 'getEnd',
     ];
@@ -109,7 +109,7 @@ class TimeRange implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

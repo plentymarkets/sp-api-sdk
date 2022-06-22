@@ -49,14 +49,14 @@ class NonPartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'NonPartneredLtlDataOutput';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'NonPartneredLtlDataOutput';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'carrier_name' => 'string',
         'pro_number' => 'string',
     ];
@@ -68,7 +68,7 @@ class NonPartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, Mode
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'carrier_name' => null,
         'pro_number' => null,
     ];
@@ -79,7 +79,7 @@ class NonPartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'carrier_name' => 'CarrierName',
         'pro_number' => 'ProNumber',
     ];
@@ -89,7 +89,7 @@ class NonPartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'carrier_name' => 'setCarrierName',
         'pro_number' => 'setProNumber',
     ];
@@ -99,7 +99,7 @@ class NonPartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'carrier_name' => 'getCarrierName',
         'pro_number' => 'getProNumber',
     ];
@@ -109,7 +109,7 @@ class NonPartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

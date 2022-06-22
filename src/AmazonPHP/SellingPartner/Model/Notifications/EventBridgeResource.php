@@ -49,14 +49,14 @@ class EventBridgeResource implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'EventBridgeResource';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'EventBridgeResource';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'name' => 'string',
         'region' => 'string',
         'account_id' => 'string',
@@ -69,7 +69,7 @@ class EventBridgeResource implements \ArrayAccess, \JsonSerializable, ModelInter
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'name' => null,
         'region' => null,
         'account_id' => null,
@@ -81,7 +81,7 @@ class EventBridgeResource implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'name' => 'name',
         'region' => 'region',
         'account_id' => 'accountId',
@@ -92,7 +92,7 @@ class EventBridgeResource implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'name' => 'setName',
         'region' => 'setRegion',
         'account_id' => 'setAccountId',
@@ -103,7 +103,7 @@ class EventBridgeResource implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'name' => 'getName',
         'region' => 'getRegion',
         'account_id' => 'getAccountId',
@@ -114,7 +114,7 @@ class EventBridgeResource implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

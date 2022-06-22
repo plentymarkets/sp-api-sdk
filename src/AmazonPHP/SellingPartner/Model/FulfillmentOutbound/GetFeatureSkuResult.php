@@ -49,14 +49,14 @@ class GetFeatureSkuResult implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetFeatureSkuResult';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetFeatureSkuResult';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace_id' => 'string',
         'feature_name' => 'string',
         'is_eligible' => 'bool',
@@ -71,7 +71,7 @@ class GetFeatureSkuResult implements \ArrayAccess, \JsonSerializable, ModelInter
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'marketplace_id' => null,
         'feature_name' => null,
         'is_eligible' => null,
@@ -85,7 +85,7 @@ class GetFeatureSkuResult implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'marketplace_id' => 'marketplaceId',
         'feature_name' => 'featureName',
         'is_eligible' => 'isEligible',
@@ -98,7 +98,7 @@ class GetFeatureSkuResult implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'marketplace_id' => 'setMarketplaceId',
         'feature_name' => 'setFeatureName',
         'is_eligible' => 'setIsEligible',
@@ -111,7 +111,7 @@ class GetFeatureSkuResult implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'marketplace_id' => 'getMarketplaceId',
         'feature_name' => 'getFeatureName',
         'is_eligible' => 'getIsEligible',
@@ -124,7 +124,7 @@ class GetFeatureSkuResult implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

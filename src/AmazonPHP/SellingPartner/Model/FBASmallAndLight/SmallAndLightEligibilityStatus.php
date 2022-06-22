@@ -42,7 +42,7 @@ class SmallAndLightEligibilityStatus
 
     public const NOT_ELIGIBLE = 'NOT_ELIGIBLE';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

@@ -49,14 +49,14 @@ class OrderItemsBuyerInfoList implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'OrderItemsBuyerInfoList';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'OrderItemsBuyerInfoList';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'order_items' => '\AmazonPHP\SellingPartner\Model\Orders\OrderItemBuyerInfo[]',
         'next_token' => 'string',
         'amazon_order_id' => 'string',
@@ -69,7 +69,7 @@ class OrderItemsBuyerInfoList implements \ArrayAccess, \JsonSerializable, ModelI
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'order_items' => null,
         'next_token' => null,
         'amazon_order_id' => null,
@@ -81,7 +81,7 @@ class OrderItemsBuyerInfoList implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'order_items' => 'OrderItems',
         'next_token' => 'NextToken',
         'amazon_order_id' => 'AmazonOrderId',
@@ -92,7 +92,7 @@ class OrderItemsBuyerInfoList implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'order_items' => 'setOrderItems',
         'next_token' => 'setNextToken',
         'amazon_order_id' => 'setAmazonOrderId',
@@ -103,7 +103,7 @@ class OrderItemsBuyerInfoList implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'order_items' => 'getOrderItems',
         'next_token' => 'getNextToken',
         'amazon_order_id' => 'getAmazonOrderId',
@@ -114,7 +114,7 @@ class OrderItemsBuyerInfoList implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

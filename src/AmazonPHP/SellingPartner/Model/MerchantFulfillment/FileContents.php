@@ -49,14 +49,14 @@ class FileContents implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'FileContents';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'FileContents';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'contents' => 'string',
         'file_type' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\FileType',
         'checksum' => 'string',
@@ -69,7 +69,7 @@ class FileContents implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'contents' => null,
         'file_type' => null,
         'checksum' => null,
@@ -81,7 +81,7 @@ class FileContents implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'contents' => 'Contents',
         'file_type' => 'FileType',
         'checksum' => 'Checksum',
@@ -92,7 +92,7 @@ class FileContents implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'contents' => 'setContents',
         'file_type' => 'setFileType',
         'checksum' => 'setChecksum',
@@ -103,7 +103,7 @@ class FileContents implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'contents' => 'getContents',
         'file_type' => 'getFileType',
         'checksum' => 'getChecksum',
@@ -114,7 +114,7 @@ class FileContents implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

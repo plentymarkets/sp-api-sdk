@@ -49,14 +49,14 @@ class PackageDimensions implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'PackageDimensions';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'PackageDimensions';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'length' => 'double',
         'width' => 'double',
         'height' => 'double',
@@ -71,7 +71,7 @@ class PackageDimensions implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'length' => 'double',
         'width' => 'double',
         'height' => 'double',
@@ -85,7 +85,7 @@ class PackageDimensions implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'length' => 'Length',
         'width' => 'Width',
         'height' => 'Height',
@@ -98,7 +98,7 @@ class PackageDimensions implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'length' => 'setLength',
         'width' => 'setWidth',
         'height' => 'setHeight',
@@ -111,7 +111,7 @@ class PackageDimensions implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'length' => 'getLength',
         'width' => 'getWidth',
         'height' => 'getHeight',
@@ -124,7 +124,7 @@ class PackageDimensions implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -44,7 +44,7 @@ class BarcodeInstruction
 
     public const MUST_PROVIDE_SELLER_SKU = 'MustProvideSellerSKU';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

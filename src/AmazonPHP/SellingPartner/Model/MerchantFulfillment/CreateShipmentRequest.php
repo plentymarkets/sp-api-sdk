@@ -49,14 +49,14 @@ class CreateShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CreateShipmentRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CreateShipmentRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'shipment_request_details' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShipmentRequestDetails',
         'shipping_service_id' => 'string',
         'shipping_service_offer_id' => 'string',
@@ -72,7 +72,7 @@ class CreateShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'shipment_request_details' => null,
         'shipping_service_id' => null,
         'shipping_service_offer_id' => null,
@@ -87,7 +87,7 @@ class CreateShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'shipment_request_details' => 'ShipmentRequestDetails',
         'shipping_service_id' => 'ShippingServiceId',
         'shipping_service_offer_id' => 'ShippingServiceOfferId',
@@ -101,7 +101,7 @@ class CreateShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'shipment_request_details' => 'setShipmentRequestDetails',
         'shipping_service_id' => 'setShippingServiceId',
         'shipping_service_offer_id' => 'setShippingServiceOfferId',
@@ -115,7 +115,7 @@ class CreateShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'shipment_request_details' => 'getShipmentRequestDetails',
         'shipping_service_id' => 'getShippingServiceId',
         'shipping_service_offer_id' => 'getShippingServiceOfferId',
@@ -129,7 +129,7 @@ class CreateShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

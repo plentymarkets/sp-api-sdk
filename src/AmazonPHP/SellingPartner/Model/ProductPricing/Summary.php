@@ -49,14 +49,14 @@ class Summary implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Summary';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Summary';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'total_offer_count' => 'int',
         'number_of_offers' => '\AmazonPHP\SellingPartner\Model\ProductPricing\OfferCountType[]',
         'lowest_prices' => '\AmazonPHP\SellingPartner\Model\ProductPricing\LowestPriceType[]',
@@ -76,7 +76,7 @@ class Summary implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'total_offer_count' => 'int32',
         'number_of_offers' => null,
         'lowest_prices' => null,
@@ -95,7 +95,7 @@ class Summary implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'total_offer_count' => 'TotalOfferCount',
         'number_of_offers' => 'NumberOfOffers',
         'lowest_prices' => 'LowestPrices',
@@ -113,7 +113,7 @@ class Summary implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'total_offer_count' => 'setTotalOfferCount',
         'number_of_offers' => 'setNumberOfOffers',
         'lowest_prices' => 'setLowestPrices',
@@ -131,7 +131,7 @@ class Summary implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'total_offer_count' => 'getTotalOfferCount',
         'number_of_offers' => 'getNumberOfOffers',
         'lowest_prices' => 'getLowestPrices',
@@ -149,7 +149,7 @@ class Summary implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

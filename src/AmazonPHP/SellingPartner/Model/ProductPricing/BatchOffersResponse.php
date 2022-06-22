@@ -49,14 +49,14 @@ class BatchOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'BatchOffersResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'BatchOffersResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'headers' => '\AmazonPHP\SellingPartner\Model\ProductPricing\HttpResponseHeaders',
         'status' => '\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersHttpStatusLine',
         'body' => '\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse',
@@ -69,7 +69,7 @@ class BatchOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInter
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'headers' => null,
         'status' => null,
         'body' => null,
@@ -81,7 +81,7 @@ class BatchOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'headers' => 'headers',
         'status' => 'status',
         'body' => 'body',
@@ -92,7 +92,7 @@ class BatchOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'headers' => 'setHeaders',
         'status' => 'setStatus',
         'body' => 'setBody',
@@ -103,7 +103,7 @@ class BatchOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'headers' => 'getHeaders',
         'status' => 'getStatus',
         'body' => 'getBody',
@@ -114,7 +114,7 @@ class BatchOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

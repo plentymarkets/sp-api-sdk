@@ -61,14 +61,14 @@ class OrderItemAcknowledgement implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'OrderItemAcknowledgement';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'OrderItemAcknowledgement';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'acknowledgement_code' => 'string',
         'acknowledged_quantity' => '\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
         'scheduled_ship_date' => '\DateTime',
@@ -83,7 +83,7 @@ class OrderItemAcknowledgement implements \ArrayAccess, \JsonSerializable, Model
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'acknowledgement_code' => null,
         'acknowledged_quantity' => null,
         'scheduled_ship_date' => 'date-time',
@@ -97,7 +97,7 @@ class OrderItemAcknowledgement implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'acknowledgement_code' => 'acknowledgementCode',
         'acknowledged_quantity' => 'acknowledgedQuantity',
         'scheduled_ship_date' => 'scheduledShipDate',
@@ -110,7 +110,7 @@ class OrderItemAcknowledgement implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'acknowledgement_code' => 'setAcknowledgementCode',
         'acknowledged_quantity' => 'setAcknowledgedQuantity',
         'scheduled_ship_date' => 'setScheduledShipDate',
@@ -123,7 +123,7 @@ class OrderItemAcknowledgement implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'acknowledgement_code' => 'getAcknowledgementCode',
         'acknowledged_quantity' => 'getAcknowledgedQuantity',
         'scheduled_ship_date' => 'getScheduledShipDate',
@@ -136,7 +136,7 @@ class OrderItemAcknowledgement implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

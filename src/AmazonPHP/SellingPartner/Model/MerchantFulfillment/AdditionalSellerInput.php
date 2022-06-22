@@ -49,14 +49,14 @@ class AdditionalSellerInput implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'AdditionalSellerInput';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'AdditionalSellerInput';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'data_type' => 'string',
         'value_as_string' => 'string',
         'value_as_boolean' => 'bool',
@@ -75,7 +75,7 @@ class AdditionalSellerInput implements \ArrayAccess, \JsonSerializable, ModelInt
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'data_type' => null,
         'value_as_string' => null,
         'value_as_boolean' => null,
@@ -93,7 +93,7 @@ class AdditionalSellerInput implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'data_type' => 'DataType',
         'value_as_string' => 'ValueAsString',
         'value_as_boolean' => 'ValueAsBoolean',
@@ -110,7 +110,7 @@ class AdditionalSellerInput implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'data_type' => 'setDataType',
         'value_as_string' => 'setValueAsString',
         'value_as_boolean' => 'setValueAsBoolean',
@@ -127,7 +127,7 @@ class AdditionalSellerInput implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'data_type' => 'getDataType',
         'value_as_string' => 'getValueAsString',
         'value_as_boolean' => 'getValueAsBoolean',
@@ -144,7 +144,7 @@ class AdditionalSellerInput implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

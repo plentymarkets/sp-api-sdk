@@ -49,14 +49,14 @@ class GetOffersResult implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetOffersResult';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetOffersResult';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace_id' => 'string',
         'asin' => 'string',
         'sku' => 'string',
@@ -74,7 +74,7 @@ class GetOffersResult implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'marketplace_id' => null,
         'asin' => null,
         'sku' => null,
@@ -91,7 +91,7 @@ class GetOffersResult implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'marketplace_id' => 'MarketplaceID',
         'asin' => 'ASIN',
         'sku' => 'SKU',
@@ -107,7 +107,7 @@ class GetOffersResult implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'marketplace_id' => 'setMarketplaceId',
         'asin' => 'setAsin',
         'sku' => 'setSku',
@@ -123,7 +123,7 @@ class GetOffersResult implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'marketplace_id' => 'getMarketplaceId',
         'asin' => 'getAsin',
         'sku' => 'getSku',
@@ -139,7 +139,7 @@ class GetOffersResult implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class RegulatedInformation implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'RegulatedInformation';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'RegulatedInformation';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'fields' => '\AmazonPHP\SellingPartner\Model\Orders\RegulatedInformationField[]',
     ];
 
@@ -67,7 +67,7 @@ class RegulatedInformation implements \ArrayAccess, \JsonSerializable, ModelInte
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'fields' => null,
     ];
 
@@ -77,7 +77,7 @@ class RegulatedInformation implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'fields' => 'Fields',
     ];
 
@@ -86,7 +86,7 @@ class RegulatedInformation implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'fields' => 'setFields',
     ];
 
@@ -95,7 +95,7 @@ class RegulatedInformation implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'fields' => 'getFields',
     ];
 
@@ -104,7 +104,7 @@ class RegulatedInformation implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

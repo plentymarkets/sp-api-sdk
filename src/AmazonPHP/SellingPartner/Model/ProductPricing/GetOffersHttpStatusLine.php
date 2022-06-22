@@ -49,14 +49,14 @@ class GetOffersHttpStatusLine implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetOffersHttpStatusLine';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetOffersHttpStatusLine';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'status_code' => 'int',
         'reason_phrase' => 'string',
     ];
@@ -68,7 +68,7 @@ class GetOffersHttpStatusLine implements \ArrayAccess, \JsonSerializable, ModelI
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'status_code' => null,
         'reason_phrase' => null,
     ];
@@ -79,7 +79,7 @@ class GetOffersHttpStatusLine implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'status_code' => 'statusCode',
         'reason_phrase' => 'reasonPhrase',
     ];
@@ -89,7 +89,7 @@ class GetOffersHttpStatusLine implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'status_code' => 'setStatusCode',
         'reason_phrase' => 'setReasonPhrase',
     ];
@@ -99,7 +99,7 @@ class GetOffersHttpStatusLine implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'status_code' => 'getStatusCode',
         'reason_phrase' => 'getReasonPhrase',
     ];
@@ -109,7 +109,7 @@ class GetOffersHttpStatusLine implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

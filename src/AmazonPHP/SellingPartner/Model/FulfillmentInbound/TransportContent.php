@@ -49,14 +49,14 @@ class TransportContent implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'TransportContent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'TransportContent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'transport_header' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportHeader',
         'transport_details' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportDetailOutput',
         'transport_result' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportResult',
@@ -69,7 +69,7 @@ class TransportContent implements \ArrayAccess, \JsonSerializable, ModelInterfac
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'transport_header' => null,
         'transport_details' => null,
         'transport_result' => null,
@@ -81,7 +81,7 @@ class TransportContent implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'transport_header' => 'TransportHeader',
         'transport_details' => 'TransportDetails',
         'transport_result' => 'TransportResult',
@@ -92,7 +92,7 @@ class TransportContent implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'transport_header' => 'setTransportHeader',
         'transport_details' => 'setTransportDetails',
         'transport_result' => 'setTransportResult',
@@ -103,7 +103,7 @@ class TransportContent implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'transport_header' => 'getTransportHeader',
         'transport_details' => 'getTransportDetails',
         'transport_result' => 'getTransportResult',
@@ -114,7 +114,7 @@ class TransportContent implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

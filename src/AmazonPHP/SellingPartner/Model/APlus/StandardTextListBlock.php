@@ -49,14 +49,14 @@ class StandardTextListBlock implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'StandardTextListBlock';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'StandardTextListBlock';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'text_list' => '\AmazonPHP\SellingPartner\Model\APlus\TextItem[]',
     ];
 
@@ -67,7 +67,7 @@ class StandardTextListBlock implements \ArrayAccess, \JsonSerializable, ModelInt
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'text_list' => null,
     ];
 
@@ -77,7 +77,7 @@ class StandardTextListBlock implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'text_list' => 'textList',
     ];
 
@@ -86,7 +86,7 @@ class StandardTextListBlock implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'text_list' => 'setTextList',
     ];
 
@@ -95,7 +95,7 @@ class StandardTextListBlock implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'text_list' => 'getTextList',
     ];
 
@@ -104,7 +104,7 @@ class StandardTextListBlock implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

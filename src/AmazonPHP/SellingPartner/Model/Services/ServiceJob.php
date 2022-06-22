@@ -63,14 +63,14 @@ class ServiceJob implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ServiceJob';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ServiceJob';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'create_time' => '\DateTime',
         'service_job_id' => 'string',
         'service_job_status' => 'string',
@@ -93,7 +93,7 @@ class ServiceJob implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'create_time' => 'date-time',
         'service_job_id' => null,
         'service_job_status' => null,
@@ -115,7 +115,7 @@ class ServiceJob implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'create_time' => 'createTime',
         'service_job_id' => 'serviceJobId',
         'service_job_status' => 'serviceJobStatus',
@@ -136,7 +136,7 @@ class ServiceJob implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'create_time' => 'setCreateTime',
         'service_job_id' => 'setServiceJobId',
         'service_job_status' => 'setServiceJobStatus',
@@ -157,7 +157,7 @@ class ServiceJob implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'create_time' => 'getCreateTime',
         'service_job_id' => 'getServiceJobId',
         'service_job_status' => 'getServiceJobStatus',
@@ -178,7 +178,7 @@ class ServiceJob implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

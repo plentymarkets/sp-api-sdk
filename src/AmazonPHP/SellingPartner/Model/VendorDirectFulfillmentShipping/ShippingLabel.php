@@ -53,14 +53,14 @@ class ShippingLabel implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ShippingLabel';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ShippingLabel';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'purchase_order_number' => 'string',
         'selling_party' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\PartyIdentification',
         'ship_from_party' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\PartyIdentification',
@@ -75,7 +75,7 @@ class ShippingLabel implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'purchase_order_number' => null,
         'selling_party' => null,
         'ship_from_party' => null,
@@ -89,7 +89,7 @@ class ShippingLabel implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'purchase_order_number' => 'purchaseOrderNumber',
         'selling_party' => 'sellingParty',
         'ship_from_party' => 'shipFromParty',
@@ -102,7 +102,7 @@ class ShippingLabel implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'purchase_order_number' => 'setPurchaseOrderNumber',
         'selling_party' => 'setSellingParty',
         'ship_from_party' => 'setShipFromParty',
@@ -115,7 +115,7 @@ class ShippingLabel implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'purchase_order_number' => 'getPurchaseOrderNumber',
         'selling_party' => 'getSellingParty',
         'ship_from_party' => 'getShipFromParty',
@@ -128,7 +128,7 @@ class ShippingLabel implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class Carton implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Carton';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Carton';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'carton_identifiers' => '\AmazonPHP\SellingPartner\Model\VendorShipments\ContainerIdentification[]',
         'carton_sequence_number' => 'string',
         'dimensions' => '\AmazonPHP\SellingPartner\Model\VendorShipments\Dimensions',
@@ -72,7 +72,7 @@ class Carton implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'carton_identifiers' => null,
         'carton_sequence_number' => null,
         'dimensions' => null,
@@ -87,7 +87,7 @@ class Carton implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'carton_identifiers' => 'cartonIdentifiers',
         'carton_sequence_number' => 'cartonSequenceNumber',
         'dimensions' => 'dimensions',
@@ -101,7 +101,7 @@ class Carton implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'carton_identifiers' => 'setCartonIdentifiers',
         'carton_sequence_number' => 'setCartonSequenceNumber',
         'dimensions' => 'setDimensions',
@@ -115,7 +115,7 @@ class Carton implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'carton_identifiers' => 'getCartonIdentifiers',
         'carton_sequence_number' => 'getCartonSequenceNumber',
         'dimensions' => 'getDimensions',
@@ -129,7 +129,7 @@ class Carton implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

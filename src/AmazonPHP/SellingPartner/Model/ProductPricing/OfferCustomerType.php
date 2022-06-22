@@ -42,7 +42,7 @@ class OfferCustomerType
 
     public const B2_B = 'B2B';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

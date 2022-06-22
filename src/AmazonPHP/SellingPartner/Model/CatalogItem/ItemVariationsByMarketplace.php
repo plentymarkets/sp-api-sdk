@@ -53,14 +53,14 @@ class ItemVariationsByMarketplace implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ItemVariationsByMarketplace';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ItemVariationsByMarketplace';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace_id' => 'string',
         'asins' => 'string[]',
         'variation_type' => 'string',
@@ -73,7 +73,7 @@ class ItemVariationsByMarketplace implements \ArrayAccess, \JsonSerializable, Mo
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'marketplace_id' => null,
         'asins' => null,
         'variation_type' => null,
@@ -85,7 +85,7 @@ class ItemVariationsByMarketplace implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'marketplace_id' => 'marketplaceId',
         'asins' => 'asins',
         'variation_type' => 'variationType',
@@ -96,7 +96,7 @@ class ItemVariationsByMarketplace implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'marketplace_id' => 'setMarketplaceId',
         'asins' => 'setAsins',
         'variation_type' => 'setVariationType',
@@ -107,7 +107,7 @@ class ItemVariationsByMarketplace implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'marketplace_id' => 'getMarketplaceId',
         'asins' => 'getAsins',
         'variation_type' => 'getVariationType',
@@ -118,7 +118,7 @@ class ItemVariationsByMarketplace implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

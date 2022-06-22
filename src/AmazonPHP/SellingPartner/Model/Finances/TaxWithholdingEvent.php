@@ -49,14 +49,14 @@ class TaxWithholdingEvent implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'TaxWithholdingEvent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'TaxWithholdingEvent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'posted_date' => '\DateTime',
         'base_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
         'withheld_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
@@ -70,7 +70,7 @@ class TaxWithholdingEvent implements \ArrayAccess, \JsonSerializable, ModelInter
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'posted_date' => 'date-time',
         'base_amount' => null,
         'withheld_amount' => null,
@@ -83,7 +83,7 @@ class TaxWithholdingEvent implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'posted_date' => 'PostedDate',
         'base_amount' => 'BaseAmount',
         'withheld_amount' => 'WithheldAmount',
@@ -95,7 +95,7 @@ class TaxWithholdingEvent implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'posted_date' => 'setPostedDate',
         'base_amount' => 'setBaseAmount',
         'withheld_amount' => 'setWithheldAmount',
@@ -107,7 +107,7 @@ class TaxWithholdingEvent implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'posted_date' => 'getPostedDate',
         'base_amount' => 'getBaseAmount',
         'withheld_amount' => 'getWithheldAmount',
@@ -119,7 +119,7 @@ class TaxWithholdingEvent implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

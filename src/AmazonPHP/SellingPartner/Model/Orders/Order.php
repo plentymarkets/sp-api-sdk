@@ -89,14 +89,14 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Order';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Order';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'amazon_order_id' => 'string',
         'seller_order_id' => 'string',
         'purchase_date' => 'string',
@@ -152,7 +152,7 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'amazon_order_id' => null,
         'seller_order_id' => null,
         'purchase_date' => null,
@@ -207,7 +207,7 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'amazon_order_id' => 'AmazonOrderId',
         'seller_order_id' => 'SellerOrderId',
         'purchase_date' => 'PurchaseDate',
@@ -261,7 +261,7 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'amazon_order_id' => 'setAmazonOrderId',
         'seller_order_id' => 'setSellerOrderId',
         'purchase_date' => 'setPurchaseDate',
@@ -315,7 +315,7 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'amazon_order_id' => 'getAmazonOrderId',
         'seller_order_id' => 'getSellerOrderId',
         'purchase_date' => 'getPurchaseDate',
@@ -369,7 +369,7 @@ class Order implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

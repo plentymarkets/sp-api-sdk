@@ -49,14 +49,14 @@ class LabelCustomization implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'LabelCustomization';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'LabelCustomization';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'custom_text_for_label' => 'string',
         'standard_id_for_label' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\StandardIdForLabel',
     ];
@@ -68,7 +68,7 @@ class LabelCustomization implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'custom_text_for_label' => null,
         'standard_id_for_label' => null,
     ];
@@ -79,7 +79,7 @@ class LabelCustomization implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'custom_text_for_label' => 'CustomTextForLabel',
         'standard_id_for_label' => 'StandardIdForLabel',
     ];
@@ -89,7 +89,7 @@ class LabelCustomization implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'custom_text_for_label' => 'setCustomTextForLabel',
         'standard_id_for_label' => 'setStandardIdForLabel',
     ];
@@ -99,7 +99,7 @@ class LabelCustomization implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'custom_text_for_label' => 'getCustomTextForLabel',
         'standard_id_for_label' => 'getStandardIdForLabel',
     ];
@@ -109,7 +109,7 @@ class LabelCustomization implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

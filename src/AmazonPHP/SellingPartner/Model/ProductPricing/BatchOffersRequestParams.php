@@ -49,14 +49,14 @@ class BatchOffersRequestParams implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'BatchOffersRequestParams';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'BatchOffersRequestParams';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace_id' => 'string',
         'item_condition' => '\AmazonPHP\SellingPartner\Model\ProductPricing\ItemCondition',
         'customer_type' => '\AmazonPHP\SellingPartner\Model\ProductPricing\CustomerType',
@@ -69,7 +69,7 @@ class BatchOffersRequestParams implements \ArrayAccess, \JsonSerializable, Model
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'marketplace_id' => null,
         'item_condition' => null,
         'customer_type' => null,
@@ -81,7 +81,7 @@ class BatchOffersRequestParams implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'marketplace_id' => 'MarketplaceId',
         'item_condition' => 'ItemCondition',
         'customer_type' => 'CustomerType',
@@ -92,7 +92,7 @@ class BatchOffersRequestParams implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'marketplace_id' => 'setMarketplaceId',
         'item_condition' => 'setItemCondition',
         'customer_type' => 'setCustomerType',
@@ -103,7 +103,7 @@ class BatchOffersRequestParams implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'marketplace_id' => 'getMarketplaceId',
         'item_condition' => 'getItemCondition',
         'customer_type' => 'getCustomerType',
@@ -114,7 +114,7 @@ class BatchOffersRequestParams implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

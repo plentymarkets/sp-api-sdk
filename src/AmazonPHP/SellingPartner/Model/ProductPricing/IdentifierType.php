@@ -49,14 +49,14 @@ class IdentifierType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'IdentifierType';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'IdentifierType';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace_asin' => '\AmazonPHP\SellingPartner\Model\ProductPricing\ASINIdentifier',
         'sku_identifier' => '\AmazonPHP\SellingPartner\Model\ProductPricing\SellerSKUIdentifier',
     ];
@@ -68,7 +68,7 @@ class IdentifierType implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'marketplace_asin' => null,
         'sku_identifier' => null,
     ];
@@ -79,7 +79,7 @@ class IdentifierType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'marketplace_asin' => 'MarketplaceASIN',
         'sku_identifier' => 'SKUIdentifier',
     ];
@@ -89,7 +89,7 @@ class IdentifierType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'marketplace_asin' => 'setMarketplaceAsin',
         'sku_identifier' => 'setSkuIdentifier',
     ];
@@ -99,7 +99,7 @@ class IdentifierType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'marketplace_asin' => 'getMarketplaceAsin',
         'sku_identifier' => 'getSkuIdentifier',
     ];
@@ -109,7 +109,7 @@ class IdentifierType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class OrderAddress implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'OrderAddress';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'OrderAddress';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'amazon_order_id' => 'string',
         'shipping_address' => '\AmazonPHP\SellingPartner\Model\Orders\Address',
     ];
@@ -68,7 +68,7 @@ class OrderAddress implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'amazon_order_id' => null,
         'shipping_address' => null,
     ];
@@ -79,7 +79,7 @@ class OrderAddress implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'amazon_order_id' => 'AmazonOrderId',
         'shipping_address' => 'ShippingAddress',
     ];
@@ -89,7 +89,7 @@ class OrderAddress implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'amazon_order_id' => 'setAmazonOrderId',
         'shipping_address' => 'setShippingAddress',
     ];
@@ -99,7 +99,7 @@ class OrderAddress implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'amazon_order_id' => 'getAmazonOrderId',
         'shipping_address' => 'getShippingAddress',
     ];
@@ -109,7 +109,7 @@ class OrderAddress implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

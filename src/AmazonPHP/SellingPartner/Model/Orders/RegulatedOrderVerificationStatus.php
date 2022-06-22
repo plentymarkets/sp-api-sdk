@@ -49,14 +49,14 @@ class RegulatedOrderVerificationStatus implements \ArrayAccess, \JsonSerializabl
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'RegulatedOrderVerificationStatus';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'RegulatedOrderVerificationStatus';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'status' => '\AmazonPHP\SellingPartner\Model\Orders\VerificationStatus',
         'requires_merchant_action' => 'bool',
         'valid_rejection_reasons' => '\AmazonPHP\SellingPartner\Model\Orders\RejectionReason[]',
@@ -72,7 +72,7 @@ class RegulatedOrderVerificationStatus implements \ArrayAccess, \JsonSerializabl
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'status' => null,
         'requires_merchant_action' => null,
         'valid_rejection_reasons' => null,
@@ -87,7 +87,7 @@ class RegulatedOrderVerificationStatus implements \ArrayAccess, \JsonSerializabl
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'status' => 'Status',
         'requires_merchant_action' => 'RequiresMerchantAction',
         'valid_rejection_reasons' => 'ValidRejectionReasons',
@@ -101,7 +101,7 @@ class RegulatedOrderVerificationStatus implements \ArrayAccess, \JsonSerializabl
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'status' => 'setStatus',
         'requires_merchant_action' => 'setRequiresMerchantAction',
         'valid_rejection_reasons' => 'setValidRejectionReasons',
@@ -115,7 +115,7 @@ class RegulatedOrderVerificationStatus implements \ArrayAccess, \JsonSerializabl
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'status' => 'getStatus',
         'requires_merchant_action' => 'getRequiresMerchantAction',
         'valid_rejection_reasons' => 'getValidRejectionReasons',
@@ -129,7 +129,7 @@ class RegulatedOrderVerificationStatus implements \ArrayAccess, \JsonSerializabl
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

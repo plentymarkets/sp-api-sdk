@@ -49,14 +49,14 @@ class GetRatesRequest implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetRatesRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetRatesRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'ship_to' => '\AmazonPHP\SellingPartner\Model\Shipping\Address',
         'ship_from' => '\AmazonPHP\SellingPartner\Model\Shipping\Address',
         'service_types' => '\AmazonPHP\SellingPartner\Model\Shipping\ServiceType[]',
@@ -71,7 +71,7 @@ class GetRatesRequest implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'ship_to' => null,
         'ship_from' => null,
         'service_types' => null,
@@ -85,7 +85,7 @@ class GetRatesRequest implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'ship_to' => 'shipTo',
         'ship_from' => 'shipFrom',
         'service_types' => 'serviceTypes',
@@ -98,7 +98,7 @@ class GetRatesRequest implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'ship_to' => 'setShipTo',
         'ship_from' => 'setShipFrom',
         'service_types' => 'setServiceTypes',
@@ -111,7 +111,7 @@ class GetRatesRequest implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'ship_to' => 'getShipTo',
         'ship_from' => 'getShipFrom',
         'service_types' => 'getServiceTypes',
@@ -124,7 +124,7 @@ class GetRatesRequest implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

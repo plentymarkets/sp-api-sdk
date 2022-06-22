@@ -49,14 +49,14 @@ class NonPartneredSmallParcelDataOutput implements \ArrayAccess, \JsonSerializab
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'NonPartneredSmallParcelDataOutput';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'NonPartneredSmallParcelDataOutput';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'package_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\NonPartneredSmallParcelPackageOutput[]',
     ];
 
@@ -67,7 +67,7 @@ class NonPartneredSmallParcelDataOutput implements \ArrayAccess, \JsonSerializab
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'package_list' => null,
     ];
 
@@ -77,7 +77,7 @@ class NonPartneredSmallParcelDataOutput implements \ArrayAccess, \JsonSerializab
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'package_list' => 'PackageList',
     ];
 
@@ -86,7 +86,7 @@ class NonPartneredSmallParcelDataOutput implements \ArrayAccess, \JsonSerializab
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'package_list' => 'setPackageList',
     ];
 
@@ -95,7 +95,7 @@ class NonPartneredSmallParcelDataOutput implements \ArrayAccess, \JsonSerializab
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'package_list' => 'getPackageList',
     ];
 
@@ -104,7 +104,7 @@ class NonPartneredSmallParcelDataOutput implements \ArrayAccess, \JsonSerializab
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class Buyer implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Buyer';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Buyer';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'buyer_id' => 'string',
         'name' => 'string',
         'phone' => 'string',
@@ -70,7 +70,7 @@ class Buyer implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'buyer_id' => null,
         'name' => null,
         'phone' => null,
@@ -83,7 +83,7 @@ class Buyer implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'buyer_id' => 'buyerId',
         'name' => 'name',
         'phone' => 'phone',
@@ -95,7 +95,7 @@ class Buyer implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'buyer_id' => 'setBuyerId',
         'name' => 'setName',
         'phone' => 'setPhone',
@@ -107,7 +107,7 @@ class Buyer implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'buyer_id' => 'getBuyerId',
         'name' => 'getName',
         'phone' => 'getPhone',
@@ -119,7 +119,7 @@ class Buyer implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

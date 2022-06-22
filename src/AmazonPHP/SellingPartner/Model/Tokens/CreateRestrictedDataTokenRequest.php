@@ -49,14 +49,14 @@ class CreateRestrictedDataTokenRequest implements \ArrayAccess, \JsonSerializabl
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CreateRestrictedDataTokenRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CreateRestrictedDataTokenRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'target_application' => 'string',
         'restricted_resources' => '\AmazonPHP\SellingPartner\Model\Tokens\RestrictedResource[]',
     ];
@@ -68,7 +68,7 @@ class CreateRestrictedDataTokenRequest implements \ArrayAccess, \JsonSerializabl
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'target_application' => null,
         'restricted_resources' => null,
     ];
@@ -79,7 +79,7 @@ class CreateRestrictedDataTokenRequest implements \ArrayAccess, \JsonSerializabl
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'target_application' => 'targetApplication',
         'restricted_resources' => 'restrictedResources',
     ];
@@ -89,7 +89,7 @@ class CreateRestrictedDataTokenRequest implements \ArrayAccess, \JsonSerializabl
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'target_application' => 'setTargetApplication',
         'restricted_resources' => 'setRestrictedResources',
     ];
@@ -99,7 +99,7 @@ class CreateRestrictedDataTokenRequest implements \ArrayAccess, \JsonSerializabl
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'target_application' => 'getTargetApplication',
         'restricted_resources' => 'getRestrictedResources',
     ];
@@ -109,7 +109,7 @@ class CreateRestrictedDataTokenRequest implements \ArrayAccess, \JsonSerializabl
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

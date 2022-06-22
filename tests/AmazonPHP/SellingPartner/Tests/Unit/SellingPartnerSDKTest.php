@@ -47,17 +47,17 @@ use Psr\Log\LoggerInterface;
 
 final class SellingPartnerSDKTest extends TestCase
 {
-    private ?RequestFactoryInterface $requestFactory;
+    private /** [COMPAT] ?RequestFactoryInterface */ $requestFactory;
 
-    private ?StreamFactoryInterface $streamFactory;
+    private /** [COMPAT] ?StreamFactoryInterface */ $streamFactory;
 
-    private ?ClientInterface $httpClient;
+    private /** [COMPAT] ?ClientInterface */ $httpClient;
 
-    private ?Configuration $configuration;
+    private /** [COMPAT] ?Configuration */ $configuration;
 
-    private ?LoggerInterface $logger;
+    private /** [COMPAT] ?LoggerInterface */ $logger;
 
-    private array $sdkMap = [
+    private /** [COMPAT] array */ $sdkMap = [
         'oAuth'                   => OAuth::class,
         'aPlus'                   => APlusSDK::class,
         'authorization'           => AuthorizationSDK::class,

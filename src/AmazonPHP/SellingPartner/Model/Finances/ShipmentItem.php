@@ -49,14 +49,14 @@ class ShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ShipmentItem';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ShipmentItem';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'seller_sku' => 'string',
         'order_item_id' => 'string',
         'order_adjustment_item_id' => 'string',
@@ -79,7 +79,7 @@ class ShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'seller_sku' => null,
         'order_item_id' => null,
         'order_adjustment_item_id' => null,
@@ -101,7 +101,7 @@ class ShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'seller_sku' => 'SellerSKU',
         'order_item_id' => 'OrderItemId',
         'order_adjustment_item_id' => 'OrderAdjustmentItemId',
@@ -122,7 +122,7 @@ class ShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'seller_sku' => 'setSellerSku',
         'order_item_id' => 'setOrderItemId',
         'order_adjustment_item_id' => 'setOrderAdjustmentItemId',
@@ -143,7 +143,7 @@ class ShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'seller_sku' => 'getSellerSku',
         'order_item_id' => 'getOrderItemId',
         'order_adjustment_item_id' => 'getOrderAdjustmentItemId',
@@ -164,7 +164,7 @@ class ShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

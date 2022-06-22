@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
 
 final class MarketplaceTest extends TestCase
 {
-    private array $countries;
+    private /** [COMPAT] array */ $countries;
 
     protected function setUp() : void
     {

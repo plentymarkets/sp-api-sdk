@@ -49,14 +49,14 @@ class Location implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Location';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Location';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'state_or_region' => 'string',
         'city' => 'string',
         'country_code' => 'string',
@@ -70,7 +70,7 @@ class Location implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'state_or_region' => null,
         'city' => null,
         'country_code' => null,
@@ -83,7 +83,7 @@ class Location implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'state_or_region' => 'stateOrRegion',
         'city' => 'city',
         'country_code' => 'countryCode',
@@ -95,7 +95,7 @@ class Location implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'state_or_region' => 'setStateOrRegion',
         'city' => 'setCity',
         'country_code' => 'setCountryCode',
@@ -107,7 +107,7 @@ class Location implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'state_or_region' => 'getStateOrRegion',
         'city' => 'getCity',
         'country_code' => 'getCountryCode',
@@ -119,7 +119,7 @@ class Location implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

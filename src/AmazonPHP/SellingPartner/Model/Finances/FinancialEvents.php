@@ -49,14 +49,14 @@ class FinancialEvents implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'FinancialEvents';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'FinancialEvents';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'shipment_event_list' => '\AmazonPHP\SellingPartner\Model\Finances\ShipmentEvent[]',
         'refund_event_list' => '\AmazonPHP\SellingPartner\Model\Finances\ShipmentEvent[]',
         'guarantee_claim_event_list' => '\AmazonPHP\SellingPartner\Model\Finances\ShipmentEvent[]',
@@ -93,7 +93,7 @@ class FinancialEvents implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'shipment_event_list' => null,
         'refund_event_list' => null,
         'guarantee_claim_event_list' => null,
@@ -129,7 +129,7 @@ class FinancialEvents implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'shipment_event_list' => 'ShipmentEventList',
         'refund_event_list' => 'RefundEventList',
         'guarantee_claim_event_list' => 'GuaranteeClaimEventList',
@@ -164,7 +164,7 @@ class FinancialEvents implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'shipment_event_list' => 'setShipmentEventList',
         'refund_event_list' => 'setRefundEventList',
         'guarantee_claim_event_list' => 'setGuaranteeClaimEventList',
@@ -199,7 +199,7 @@ class FinancialEvents implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'shipment_event_list' => 'getShipmentEventList',
         'refund_event_list' => 'getRefundEventList',
         'guarantee_claim_event_list' => 'getGuaranteeClaimEventList',
@@ -234,7 +234,7 @@ class FinancialEvents implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

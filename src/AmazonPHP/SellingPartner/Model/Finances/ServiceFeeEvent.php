@@ -49,14 +49,14 @@ class ServiceFeeEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ServiceFeeEvent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ServiceFeeEvent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'amazon_order_id' => 'string',
         'fee_reason' => 'string',
         'fee_list' => '\AmazonPHP\SellingPartner\Model\Finances\FeeComponent[]',
@@ -73,7 +73,7 @@ class ServiceFeeEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'amazon_order_id' => null,
         'fee_reason' => null,
         'fee_list' => null,
@@ -89,7 +89,7 @@ class ServiceFeeEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'amazon_order_id' => 'AmazonOrderId',
         'fee_reason' => 'FeeReason',
         'fee_list' => 'FeeList',
@@ -104,7 +104,7 @@ class ServiceFeeEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'amazon_order_id' => 'setAmazonOrderId',
         'fee_reason' => 'setFeeReason',
         'fee_list' => 'setFeeList',
@@ -119,7 +119,7 @@ class ServiceFeeEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'amazon_order_id' => 'getAmazonOrderId',
         'fee_reason' => 'getFeeReason',
         'fee_list' => 'getFeeList',
@@ -134,7 +134,7 @@ class ServiceFeeEvent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

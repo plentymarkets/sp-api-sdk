@@ -49,14 +49,14 @@ class SAFETReimbursementEvent implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'SAFETReimbursementEvent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'SAFETReimbursementEvent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'posted_date' => '\DateTime',
         'safet_claim_id' => 'string',
         'reimbursed_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
@@ -71,7 +71,7 @@ class SAFETReimbursementEvent implements \ArrayAccess, \JsonSerializable, ModelI
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'posted_date' => 'date-time',
         'safet_claim_id' => null,
         'reimbursed_amount' => null,
@@ -85,7 +85,7 @@ class SAFETReimbursementEvent implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'posted_date' => 'PostedDate',
         'safet_claim_id' => 'SAFETClaimId',
         'reimbursed_amount' => 'ReimbursedAmount',
@@ -98,7 +98,7 @@ class SAFETReimbursementEvent implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'posted_date' => 'setPostedDate',
         'safet_claim_id' => 'setSafetClaimId',
         'reimbursed_amount' => 'setReimbursedAmount',
@@ -111,7 +111,7 @@ class SAFETReimbursementEvent implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'posted_date' => 'getPostedDate',
         'safet_claim_id' => 'getSafetClaimId',
         'reimbursed_amount' => 'getReimbursedAmount',
@@ -124,7 +124,7 @@ class SAFETReimbursementEvent implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

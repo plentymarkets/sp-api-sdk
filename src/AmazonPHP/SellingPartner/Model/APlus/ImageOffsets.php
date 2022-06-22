@@ -49,14 +49,14 @@ class ImageOffsets implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ImageOffsets';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ImageOffsets';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'x' => '\AmazonPHP\SellingPartner\Model\APlus\IntegerWithUnits',
         'y' => '\AmazonPHP\SellingPartner\Model\APlus\IntegerWithUnits',
     ];
@@ -68,7 +68,7 @@ class ImageOffsets implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'x' => null,
         'y' => null,
     ];
@@ -79,7 +79,7 @@ class ImageOffsets implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'x' => 'x',
         'y' => 'y',
     ];
@@ -89,7 +89,7 @@ class ImageOffsets implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'x' => 'setX',
         'y' => 'setY',
     ];
@@ -99,7 +99,7 @@ class ImageOffsets implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'x' => 'getX',
         'y' => 'getY',
     ];
@@ -109,7 +109,7 @@ class ImageOffsets implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

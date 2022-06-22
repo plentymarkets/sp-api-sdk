@@ -57,14 +57,14 @@ class FulfillmentShipment implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'FulfillmentShipment';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'FulfillmentShipment';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'amazon_shipment_id' => 'string',
         'fulfillment_center_id' => 'string',
         'fulfillment_shipment_status' => 'string',
@@ -82,7 +82,7 @@ class FulfillmentShipment implements \ArrayAccess, \JsonSerializable, ModelInter
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'amazon_shipment_id' => null,
         'fulfillment_center_id' => null,
         'fulfillment_shipment_status' => null,
@@ -99,7 +99,7 @@ class FulfillmentShipment implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'amazon_shipment_id' => 'amazonShipmentId',
         'fulfillment_center_id' => 'fulfillmentCenterId',
         'fulfillment_shipment_status' => 'fulfillmentShipmentStatus',
@@ -115,7 +115,7 @@ class FulfillmentShipment implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'amazon_shipment_id' => 'setAmazonShipmentId',
         'fulfillment_center_id' => 'setFulfillmentCenterId',
         'fulfillment_shipment_status' => 'setFulfillmentShipmentStatus',
@@ -131,7 +131,7 @@ class FulfillmentShipment implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'amazon_shipment_id' => 'getAmazonShipmentId',
         'fulfillment_center_id' => 'getFulfillmentCenterId',
         'fulfillment_shipment_status' => 'getFulfillmentShipmentStatus',
@@ -147,7 +147,7 @@ class FulfillmentShipment implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

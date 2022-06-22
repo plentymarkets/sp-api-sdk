@@ -48,7 +48,7 @@ class VerificationStatus
 
     public const CANCELLED = 'Cancelled';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

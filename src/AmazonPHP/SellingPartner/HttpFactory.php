@@ -11,9 +11,9 @@ use Psr\Http\Message\StreamInterface;
 
 final class HttpFactory
 {
-    private RequestFactoryInterface $requestFactory;
+    private /** [COMPAT] RequestFactoryInterface */ $requestFactory;
 
-    private StreamFactoryInterface $streamFactory;
+    private /** [COMPAT] StreamFactoryInterface */ $streamFactory;
 
     public function __construct(
         RequestFactoryInterface $requestFactory,

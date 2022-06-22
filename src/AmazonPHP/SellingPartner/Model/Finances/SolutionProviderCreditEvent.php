@@ -49,14 +49,14 @@ class SolutionProviderCreditEvent implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'SolutionProviderCreditEvent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'SolutionProviderCreditEvent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'provider_transaction_type' => 'string',
         'seller_order_id' => 'string',
         'marketplace_id' => 'string',
@@ -76,7 +76,7 @@ class SolutionProviderCreditEvent implements \ArrayAccess, \JsonSerializable, Mo
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'provider_transaction_type' => null,
         'seller_order_id' => null,
         'marketplace_id' => null,
@@ -95,7 +95,7 @@ class SolutionProviderCreditEvent implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'provider_transaction_type' => 'ProviderTransactionType',
         'seller_order_id' => 'SellerOrderId',
         'marketplace_id' => 'MarketplaceId',
@@ -113,7 +113,7 @@ class SolutionProviderCreditEvent implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'provider_transaction_type' => 'setProviderTransactionType',
         'seller_order_id' => 'setSellerOrderId',
         'marketplace_id' => 'setMarketplaceId',
@@ -131,7 +131,7 @@ class SolutionProviderCreditEvent implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'provider_transaction_type' => 'getProviderTransactionType',
         'seller_order_id' => 'getSellerOrderId',
         'marketplace_id' => 'getMarketplaceId',
@@ -149,7 +149,7 @@ class SolutionProviderCreditEvent implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class ContentMetadata implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ContentMetadata';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ContentMetadata';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'name' => 'string',
         'marketplace_id' => 'string',
         'status' => '\AmazonPHP\SellingPartner\Model\APlus\ContentStatus',
@@ -71,7 +71,7 @@ class ContentMetadata implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'name' => null,
         'marketplace_id' => null,
         'status' => null,
@@ -85,7 +85,7 @@ class ContentMetadata implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'name' => 'name',
         'marketplace_id' => 'marketplaceId',
         'status' => 'status',
@@ -98,7 +98,7 @@ class ContentMetadata implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'name' => 'setName',
         'marketplace_id' => 'setMarketplaceId',
         'status' => 'setStatus',
@@ -111,7 +111,7 @@ class ContentMetadata implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'name' => 'getName',
         'marketplace_id' => 'getMarketplaceId',
         'status' => 'getStatus',
@@ -124,7 +124,7 @@ class ContentMetadata implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

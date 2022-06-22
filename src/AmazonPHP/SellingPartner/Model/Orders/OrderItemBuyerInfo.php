@@ -49,14 +49,14 @@ class OrderItemBuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'OrderItemBuyerInfo';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'OrderItemBuyerInfo';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'order_item_id' => 'string',
         'buyer_customized_info' => '\AmazonPHP\SellingPartner\Model\Orders\BuyerCustomizedInfoDetail',
         'gift_wrap_price' => '\AmazonPHP\SellingPartner\Model\Orders\Money',
@@ -72,7 +72,7 @@ class OrderItemBuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'order_item_id' => null,
         'buyer_customized_info' => null,
         'gift_wrap_price' => null,
@@ -87,7 +87,7 @@ class OrderItemBuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'order_item_id' => 'OrderItemId',
         'buyer_customized_info' => 'BuyerCustomizedInfo',
         'gift_wrap_price' => 'GiftWrapPrice',
@@ -101,7 +101,7 @@ class OrderItemBuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'order_item_id' => 'setOrderItemId',
         'buyer_customized_info' => 'setBuyerCustomizedInfo',
         'gift_wrap_price' => 'setGiftWrapPrice',
@@ -115,7 +115,7 @@ class OrderItemBuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'order_item_id' => 'getOrderItemId',
         'buyer_customized_info' => 'getBuyerCustomizedInfo',
         'gift_wrap_price' => 'getGiftWrapPrice',
@@ -129,7 +129,7 @@ class OrderItemBuyerInfo implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

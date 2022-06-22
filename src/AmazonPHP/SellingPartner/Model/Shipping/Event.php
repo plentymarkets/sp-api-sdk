@@ -49,14 +49,14 @@ class Event implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Event';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Event';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'event_code' => 'string',
         'event_time' => '\DateTime',
         'location' => '\AmazonPHP\SellingPartner\Model\Shipping\Location',
@@ -69,7 +69,7 @@ class Event implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'event_code' => null,
         'event_time' => 'date-time',
         'location' => null,
@@ -81,7 +81,7 @@ class Event implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'event_code' => 'eventCode',
         'event_time' => 'eventTime',
         'location' => 'location',
@@ -92,7 +92,7 @@ class Event implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'event_code' => 'setEventCode',
         'event_time' => 'setEventTime',
         'location' => 'setLocation',
@@ -103,7 +103,7 @@ class Event implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'event_code' => 'getEventCode',
         'event_time' => 'getEventTime',
         'location' => 'getLocation',
@@ -114,7 +114,7 @@ class Event implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

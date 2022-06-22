@@ -65,14 +65,14 @@ class OrderDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'OrderDetails';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'OrderDetails';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'purchase_order_date' => '\DateTime',
         'purchase_order_changed_date' => '\DateTime',
         'purchase_order_state_changed_date' => '\DateTime',
@@ -96,7 +96,7 @@ class OrderDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'purchase_order_date' => 'date-time',
         'purchase_order_changed_date' => 'date-time',
         'purchase_order_state_changed_date' => 'date-time',
@@ -119,7 +119,7 @@ class OrderDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'purchase_order_date' => 'purchaseOrderDate',
         'purchase_order_changed_date' => 'purchaseOrderChangedDate',
         'purchase_order_state_changed_date' => 'purchaseOrderStateChangedDate',
@@ -141,7 +141,7 @@ class OrderDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'purchase_order_date' => 'setPurchaseOrderDate',
         'purchase_order_changed_date' => 'setPurchaseOrderChangedDate',
         'purchase_order_state_changed_date' => 'setPurchaseOrderStateChangedDate',
@@ -163,7 +163,7 @@ class OrderDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'purchase_order_date' => 'getPurchaseOrderDate',
         'purchase_order_changed_date' => 'getPurchaseOrderChangedDate',
         'purchase_order_state_changed_date' => 'getPurchaseOrderStateChangedDate',
@@ -185,7 +185,7 @@ class OrderDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

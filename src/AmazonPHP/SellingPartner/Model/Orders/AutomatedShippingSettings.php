@@ -49,14 +49,14 @@ class AutomatedShippingSettings implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'AutomatedShippingSettings';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'AutomatedShippingSettings';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'has_automated_shipping_settings' => 'bool',
         'automated_carrier' => 'string',
         'automated_ship_method' => 'string',
@@ -69,7 +69,7 @@ class AutomatedShippingSettings implements \ArrayAccess, \JsonSerializable, Mode
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'has_automated_shipping_settings' => null,
         'automated_carrier' => null,
         'automated_ship_method' => null,
@@ -81,7 +81,7 @@ class AutomatedShippingSettings implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'has_automated_shipping_settings' => 'HasAutomatedShippingSettings',
         'automated_carrier' => 'AutomatedCarrier',
         'automated_ship_method' => 'AutomatedShipMethod',
@@ -92,7 +92,7 @@ class AutomatedShippingSettings implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'has_automated_shipping_settings' => 'setHasAutomatedShippingSettings',
         'automated_carrier' => 'setAutomatedCarrier',
         'automated_ship_method' => 'setAutomatedShipMethod',
@@ -103,7 +103,7 @@ class AutomatedShippingSettings implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'has_automated_shipping_settings' => 'getHasAutomatedShippingSettings',
         'automated_carrier' => 'getAutomatedCarrier',
         'automated_ship_method' => 'getAutomatedShipMethod',
@@ -114,7 +114,7 @@ class AutomatedShippingSettings implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

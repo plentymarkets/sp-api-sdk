@@ -49,14 +49,14 @@ class Granularity implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Granularity';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Granularity';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'granularity_type' => 'string',
         'granularity_id' => 'string',
     ];
@@ -68,7 +68,7 @@ class Granularity implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'granularity_type' => null,
         'granularity_id' => null,
     ];
@@ -79,7 +79,7 @@ class Granularity implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'granularity_type' => 'granularityType',
         'granularity_id' => 'granularityId',
     ];
@@ -89,7 +89,7 @@ class Granularity implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'granularity_type' => 'setGranularityType',
         'granularity_id' => 'setGranularityId',
     ];
@@ -99,7 +99,7 @@ class Granularity implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'granularity_type' => 'getGranularityType',
         'granularity_id' => 'getGranularityId',
     ];
@@ -109,7 +109,7 @@ class Granularity implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

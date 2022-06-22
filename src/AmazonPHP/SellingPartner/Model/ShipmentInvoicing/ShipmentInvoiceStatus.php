@@ -46,7 +46,7 @@ class ShipmentInvoiceStatus
 
     public const NOT_FOUND = 'NotFound';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

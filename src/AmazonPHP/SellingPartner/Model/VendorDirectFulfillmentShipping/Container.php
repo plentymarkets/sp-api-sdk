@@ -53,14 +53,14 @@ class Container implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Container';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Container';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'container_type' => 'string',
         'container_identifier' => 'string',
         'tracking_number' => 'string',
@@ -82,7 +82,7 @@ class Container implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'container_type' => null,
         'container_identifier' => null,
         'tracking_number' => null,
@@ -103,7 +103,7 @@ class Container implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'container_type' => 'containerType',
         'container_identifier' => 'containerIdentifier',
         'tracking_number' => 'trackingNumber',
@@ -123,7 +123,7 @@ class Container implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'container_type' => 'setContainerType',
         'container_identifier' => 'setContainerIdentifier',
         'tracking_number' => 'setTrackingNumber',
@@ -143,7 +143,7 @@ class Container implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'container_type' => 'getContainerType',
         'container_identifier' => 'getContainerIdentifier',
         'tracking_number' => 'getTrackingNumber',
@@ -163,7 +163,7 @@ class Container implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class Pagination implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Pagination';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Pagination';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'next_token' => 'string',
         'previous_token' => 'string',
     ];
@@ -68,7 +68,7 @@ class Pagination implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'next_token' => null,
         'previous_token' => null,
     ];
@@ -79,7 +79,7 @@ class Pagination implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'next_token' => 'nextToken',
         'previous_token' => 'previousToken',
     ];
@@ -89,7 +89,7 @@ class Pagination implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'next_token' => 'setNextToken',
         'previous_token' => 'setPreviousToken',
     ];
@@ -99,7 +99,7 @@ class Pagination implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'next_token' => 'getNextToken',
         'previous_token' => 'getPreviousToken',
     ];
@@ -109,7 +109,7 @@ class Pagination implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

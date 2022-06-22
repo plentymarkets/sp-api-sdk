@@ -49,14 +49,14 @@ class ListingsItemPatchRequest implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ListingsItemPatchRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ListingsItemPatchRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'product_type' => 'string',
         'patches' => '\AmazonPHP\SellingPartner\Model\ListingsItems\PatchOperation[]',
     ];
@@ -68,7 +68,7 @@ class ListingsItemPatchRequest implements \ArrayAccess, \JsonSerializable, Model
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'product_type' => null,
         'patches' => null,
     ];
@@ -79,7 +79,7 @@ class ListingsItemPatchRequest implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'product_type' => 'productType',
         'patches' => 'patches',
     ];
@@ -89,7 +89,7 @@ class ListingsItemPatchRequest implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'product_type' => 'setProductType',
         'patches' => 'setPatches',
     ];
@@ -99,7 +99,7 @@ class ListingsItemPatchRequest implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'product_type' => 'getProductType',
         'patches' => 'getPatches',
     ];
@@ -109,7 +109,7 @@ class ListingsItemPatchRequest implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

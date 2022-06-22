@@ -49,14 +49,14 @@ class PartneredLtlDataInput implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'PartneredLtlDataInput';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'PartneredLtlDataInput';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'contact' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Contact',
         'box_count' => 'int',
         'seller_freight_class' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SellerFreightClass',
@@ -73,7 +73,7 @@ class PartneredLtlDataInput implements \ArrayAccess, \JsonSerializable, ModelInt
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'contact' => null,
         'box_count' => 'int64',
         'seller_freight_class' => null,
@@ -89,7 +89,7 @@ class PartneredLtlDataInput implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'contact' => 'Contact',
         'box_count' => 'BoxCount',
         'seller_freight_class' => 'SellerFreightClass',
@@ -104,7 +104,7 @@ class PartneredLtlDataInput implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'contact' => 'setContact',
         'box_count' => 'setBoxCount',
         'seller_freight_class' => 'setSellerFreightClass',
@@ -119,7 +119,7 @@ class PartneredLtlDataInput implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'contact' => 'getContact',
         'box_count' => 'getBoxCount',
         'seller_freight_class' => 'getSellerFreightClass',
@@ -134,7 +134,7 @@ class PartneredLtlDataInput implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class BrandRefinement implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'BrandRefinement';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'BrandRefinement';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'number_of_results' => 'int',
         'brand_name' => 'string',
     ];
@@ -68,7 +68,7 @@ class BrandRefinement implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'number_of_results' => null,
         'brand_name' => null,
     ];
@@ -79,7 +79,7 @@ class BrandRefinement implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'number_of_results' => 'numberOfResults',
         'brand_name' => 'brandName',
     ];
@@ -89,7 +89,7 @@ class BrandRefinement implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'number_of_results' => 'setNumberOfResults',
         'brand_name' => 'setBrandName',
     ];
@@ -99,7 +99,7 @@ class BrandRefinement implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'number_of_results' => 'getNumberOfResults',
         'brand_name' => 'getBrandName',
     ];
@@ -109,7 +109,7 @@ class BrandRefinement implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class SearchContentPublishRecordsResponse implements \ArrayAccess, \JsonSerializ
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'SearchContentPublishRecordsResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'SearchContentPublishRecordsResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'warnings' => '\AmazonPHP\SellingPartner\Model\APlus\Error[]',
         'next_page_token' => 'string',
         'publish_record_list' => '\AmazonPHP\SellingPartner\Model\APlus\PublishRecord[]',
@@ -69,7 +69,7 @@ class SearchContentPublishRecordsResponse implements \ArrayAccess, \JsonSerializ
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'warnings' => null,
         'next_page_token' => null,
         'publish_record_list' => null,
@@ -81,7 +81,7 @@ class SearchContentPublishRecordsResponse implements \ArrayAccess, \JsonSerializ
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'warnings' => 'warnings',
         'next_page_token' => 'nextPageToken',
         'publish_record_list' => 'publishRecordList',
@@ -92,7 +92,7 @@ class SearchContentPublishRecordsResponse implements \ArrayAccess, \JsonSerializ
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'warnings' => 'setWarnings',
         'next_page_token' => 'setNextPageToken',
         'publish_record_list' => 'setPublishRecordList',
@@ -103,7 +103,7 @@ class SearchContentPublishRecordsResponse implements \ArrayAccess, \JsonSerializ
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'warnings' => 'getWarnings',
         'next_page_token' => 'getNextPageToken',
         'publish_record_list' => 'getPublishRecordList',
@@ -114,7 +114,7 @@ class SearchContentPublishRecordsResponse implements \ArrayAccess, \JsonSerializ
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

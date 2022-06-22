@@ -49,14 +49,14 @@ class CompetitivePriceType implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CompetitivePriceType';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CompetitivePriceType';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'competitive_price_id' => 'string',
         'price' => '\AmazonPHP\SellingPartner\Model\ProductPricing\PriceType',
         'condition' => 'string',
@@ -75,7 +75,7 @@ class CompetitivePriceType implements \ArrayAccess, \JsonSerializable, ModelInte
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'competitive_price_id' => null,
         'price' => null,
         'condition' => null,
@@ -93,7 +93,7 @@ class CompetitivePriceType implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'competitive_price_id' => 'CompetitivePriceId',
         'price' => 'Price',
         'condition' => 'condition',
@@ -110,7 +110,7 @@ class CompetitivePriceType implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'competitive_price_id' => 'setCompetitivePriceId',
         'price' => 'setPrice',
         'condition' => 'setCondition',
@@ -127,7 +127,7 @@ class CompetitivePriceType implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'competitive_price_id' => 'getCompetitivePriceId',
         'price' => 'getPrice',
         'condition' => 'getCondition',
@@ -144,7 +144,7 @@ class CompetitivePriceType implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

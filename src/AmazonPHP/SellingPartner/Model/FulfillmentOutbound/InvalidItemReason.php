@@ -49,14 +49,14 @@ class InvalidItemReason implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'InvalidItemReason';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'InvalidItemReason';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'invalid_item_reason_code' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\InvalidItemReasonCode',
         'description' => 'string',
     ];
@@ -68,7 +68,7 @@ class InvalidItemReason implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'invalid_item_reason_code' => null,
         'description' => null,
     ];
@@ -79,7 +79,7 @@ class InvalidItemReason implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'invalid_item_reason_code' => 'invalidItemReasonCode',
         'description' => 'description',
     ];
@@ -89,7 +89,7 @@ class InvalidItemReason implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'invalid_item_reason_code' => 'setInvalidItemReasonCode',
         'description' => 'setDescription',
     ];
@@ -99,7 +99,7 @@ class InvalidItemReason implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'invalid_item_reason_code' => 'getInvalidItemReasonCode',
         'description' => 'getDescription',
     ];
@@ -109,7 +109,7 @@ class InvalidItemReason implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

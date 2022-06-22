@@ -49,14 +49,14 @@ class ItemSearchResults implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ItemSearchResults';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ItemSearchResults';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'number_of_results' => 'int',
         'pagination' => '\AmazonPHP\SellingPartner\Model\CatalogItem\Pagination',
         'refinements' => '\AmazonPHP\SellingPartner\Model\CatalogItem\Refinements',
@@ -70,7 +70,7 @@ class ItemSearchResults implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'number_of_results' => null,
         'pagination' => null,
         'refinements' => null,
@@ -83,7 +83,7 @@ class ItemSearchResults implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'number_of_results' => 'numberOfResults',
         'pagination' => 'pagination',
         'refinements' => 'refinements',
@@ -95,7 +95,7 @@ class ItemSearchResults implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'number_of_results' => 'setNumberOfResults',
         'pagination' => 'setPagination',
         'refinements' => 'setRefinements',
@@ -107,7 +107,7 @@ class ItemSearchResults implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'number_of_results' => 'getNumberOfResults',
         'pagination' => 'getPagination',
         'refinements' => 'getRefinements',
@@ -119,7 +119,7 @@ class ItemSearchResults implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

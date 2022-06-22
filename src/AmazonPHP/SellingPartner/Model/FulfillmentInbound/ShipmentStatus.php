@@ -58,7 +58,7 @@ class ShipmentStatus
 
     public const CHECKED_IN = 'CHECKED_IN';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

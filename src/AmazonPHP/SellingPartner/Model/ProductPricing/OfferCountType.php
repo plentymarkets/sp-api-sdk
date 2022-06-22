@@ -49,14 +49,14 @@ class OfferCountType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'OfferCountType';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'OfferCountType';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'condition' => 'string',
         'fulfillment_channel' => '\AmazonPHP\SellingPartner\Model\ProductPricing\FulfillmentChannelType',
         'offer_count' => 'int',
@@ -69,7 +69,7 @@ class OfferCountType implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'condition' => null,
         'fulfillment_channel' => null,
         'offer_count' => 'int32',
@@ -81,7 +81,7 @@ class OfferCountType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'condition' => 'condition',
         'fulfillment_channel' => 'fulfillmentChannel',
         'offer_count' => 'OfferCount',
@@ -92,7 +92,7 @@ class OfferCountType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'condition' => 'setCondition',
         'fulfillment_channel' => 'setFulfillmentChannel',
         'offer_count' => 'setOfferCount',
@@ -103,7 +103,7 @@ class OfferCountType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'condition' => 'getCondition',
         'fulfillment_channel' => 'getFulfillmentChannel',
         'offer_count' => 'getOfferCount',
@@ -114,7 +114,7 @@ class OfferCountType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

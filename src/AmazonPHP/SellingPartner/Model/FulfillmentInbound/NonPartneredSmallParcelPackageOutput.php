@@ -49,14 +49,14 @@ class NonPartneredSmallParcelPackageOutput implements \ArrayAccess, \JsonSeriali
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'NonPartneredSmallParcelPackageOutput';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'NonPartneredSmallParcelPackageOutput';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'carrier_name' => 'string',
         'tracking_id' => 'string',
         'package_status' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PackageStatus',
@@ -69,7 +69,7 @@ class NonPartneredSmallParcelPackageOutput implements \ArrayAccess, \JsonSeriali
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'carrier_name' => null,
         'tracking_id' => null,
         'package_status' => null,
@@ -81,7 +81,7 @@ class NonPartneredSmallParcelPackageOutput implements \ArrayAccess, \JsonSeriali
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'carrier_name' => 'CarrierName',
         'tracking_id' => 'TrackingId',
         'package_status' => 'PackageStatus',
@@ -92,7 +92,7 @@ class NonPartneredSmallParcelPackageOutput implements \ArrayAccess, \JsonSeriali
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'carrier_name' => 'setCarrierName',
         'tracking_id' => 'setTrackingId',
         'package_status' => 'setPackageStatus',
@@ -103,7 +103,7 @@ class NonPartneredSmallParcelPackageOutput implements \ArrayAccess, \JsonSeriali
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'carrier_name' => 'getCarrierName',
         'tracking_id' => 'getTrackingId',
         'package_status' => 'getPackageStatus',
@@ -114,7 +114,7 @@ class NonPartneredSmallParcelPackageOutput implements \ArrayAccess, \JsonSeriali
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

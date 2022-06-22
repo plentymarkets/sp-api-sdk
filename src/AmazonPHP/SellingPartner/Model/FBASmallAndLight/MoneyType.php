@@ -49,14 +49,14 @@ class MoneyType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'MoneyType';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'MoneyType';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'currency_code' => 'string',
         'amount' => 'float',
     ];
@@ -68,7 +68,7 @@ class MoneyType implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'currency_code' => null,
         'amount' => null,
     ];
@@ -79,7 +79,7 @@ class MoneyType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'currency_code' => 'currencyCode',
         'amount' => 'amount',
     ];
@@ -89,7 +89,7 @@ class MoneyType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'currency_code' => 'setCurrencyCode',
         'amount' => 'setAmount',
     ];
@@ -99,7 +99,7 @@ class MoneyType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'currency_code' => 'getCurrencyCode',
         'amount' => 'getAmount',
     ];
@@ -109,7 +109,7 @@ class MoneyType implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

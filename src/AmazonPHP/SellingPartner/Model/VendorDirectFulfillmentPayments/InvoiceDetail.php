@@ -49,14 +49,14 @@ class InvoiceDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'InvoiceDetail';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'InvoiceDetail';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'invoice_number' => 'string',
         'invoice_date' => '\DateTime',
         'reference_number' => 'string',
@@ -79,7 +79,7 @@ class InvoiceDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'invoice_number' => null,
         'invoice_date' => 'date-time',
         'reference_number' => null,
@@ -101,7 +101,7 @@ class InvoiceDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'invoice_number' => 'invoiceNumber',
         'invoice_date' => 'invoiceDate',
         'reference_number' => 'referenceNumber',
@@ -122,7 +122,7 @@ class InvoiceDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'invoice_number' => 'setInvoiceNumber',
         'invoice_date' => 'setInvoiceDate',
         'reference_number' => 'setReferenceNumber',
@@ -143,7 +143,7 @@ class InvoiceDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'invoice_number' => 'getInvoiceNumber',
         'invoice_date' => 'getInvoiceDate',
         'reference_number' => 'getReferenceNumber',
@@ -164,7 +164,7 @@ class InvoiceDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

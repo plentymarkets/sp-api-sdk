@@ -49,14 +49,14 @@ class ListFinancialEventsPayload implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ListFinancialEventsPayload';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ListFinancialEventsPayload';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'next_token' => 'string',
         'financial_events' => '\AmazonPHP\SellingPartner\Model\Finances\FinancialEvents',
     ];
@@ -68,7 +68,7 @@ class ListFinancialEventsPayload implements \ArrayAccess, \JsonSerializable, Mod
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'next_token' => null,
         'financial_events' => null,
     ];
@@ -79,7 +79,7 @@ class ListFinancialEventsPayload implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'next_token' => 'NextToken',
         'financial_events' => 'FinancialEvents',
     ];
@@ -89,7 +89,7 @@ class ListFinancialEventsPayload implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'next_token' => 'setNextToken',
         'financial_events' => 'setFinancialEvents',
     ];
@@ -99,7 +99,7 @@ class ListFinancialEventsPayload implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'next_token' => 'getNextToken',
         'financial_events' => 'getFinancialEvents',
     ];
@@ -109,7 +109,7 @@ class ListFinancialEventsPayload implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

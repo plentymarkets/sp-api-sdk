@@ -49,14 +49,14 @@ class GetAttributesResponse implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetAttributesResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetAttributesResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'buyer' => '\AmazonPHP\SellingPartner\Model\Messaging\GetAttributesResponseBuyer',
         'errors' => '\AmazonPHP\SellingPartner\Model\Messaging\Error[]',
     ];
@@ -68,7 +68,7 @@ class GetAttributesResponse implements \ArrayAccess, \JsonSerializable, ModelInt
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'buyer' => null,
         'errors' => null,
     ];
@@ -79,7 +79,7 @@ class GetAttributesResponse implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'buyer' => 'buyer',
         'errors' => 'errors',
     ];
@@ -89,7 +89,7 @@ class GetAttributesResponse implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'buyer' => 'setBuyer',
         'errors' => 'setErrors',
     ];
@@ -99,7 +99,7 @@ class GetAttributesResponse implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'buyer' => 'getBuyer',
         'errors' => 'getErrors',
     ];
@@ -109,7 +109,7 @@ class GetAttributesResponse implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

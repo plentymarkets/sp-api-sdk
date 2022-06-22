@@ -49,14 +49,14 @@ class EventFilter implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'EventFilter';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'EventFilter';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'aggregation_settings' => '\AmazonPHP\SellingPartner\Model\Notifications\AggregationSettings',
         'marketplace_ids' => 'string[]',
         'event_filter_type' => 'string',
@@ -69,7 +69,7 @@ class EventFilter implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'aggregation_settings' => null,
         'marketplace_ids' => null,
         'event_filter_type' => null,
@@ -81,7 +81,7 @@ class EventFilter implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'aggregation_settings' => 'aggregationSettings',
         'marketplace_ids' => 'marketplaceIds',
         'event_filter_type' => 'eventFilterType',
@@ -92,7 +92,7 @@ class EventFilter implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'aggregation_settings' => 'setAggregationSettings',
         'marketplace_ids' => 'setMarketplaceIds',
         'event_filter_type' => 'setEventFilterType',
@@ -103,7 +103,7 @@ class EventFilter implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'aggregation_settings' => 'getAggregationSettings',
         'marketplace_ids' => 'getMarketplaceIds',
         'event_filter_type' => 'getEventFilterType',
@@ -114,7 +114,7 @@ class EventFilter implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

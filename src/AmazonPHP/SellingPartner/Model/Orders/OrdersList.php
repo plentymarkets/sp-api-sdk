@@ -49,14 +49,14 @@ class OrdersList implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'OrdersList';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'OrdersList';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'orders' => '\AmazonPHP\SellingPartner\Model\Orders\Order[]',
         'next_token' => 'string',
         'last_updated_before' => 'string',
@@ -70,7 +70,7 @@ class OrdersList implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'orders' => null,
         'next_token' => null,
         'last_updated_before' => null,
@@ -83,7 +83,7 @@ class OrdersList implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'orders' => 'Orders',
         'next_token' => 'NextToken',
         'last_updated_before' => 'LastUpdatedBefore',
@@ -95,7 +95,7 @@ class OrdersList implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'orders' => 'setOrders',
         'next_token' => 'setNextToken',
         'last_updated_before' => 'setLastUpdatedBefore',
@@ -107,7 +107,7 @@ class OrdersList implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'orders' => 'getOrders',
         'next_token' => 'getNextToken',
         'last_updated_before' => 'getLastUpdatedBefore',
@@ -119,7 +119,7 @@ class OrdersList implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

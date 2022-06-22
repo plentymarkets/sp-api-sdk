@@ -49,14 +49,14 @@ class GetItemOffersBatchRequest implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetItemOffersBatchRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetItemOffersBatchRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'requests' => '\AmazonPHP\SellingPartner\Model\ProductPricing\ItemOffersRequest[]',
     ];
 
@@ -67,7 +67,7 @@ class GetItemOffersBatchRequest implements \ArrayAccess, \JsonSerializable, Mode
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'requests' => null,
     ];
 
@@ -77,7 +77,7 @@ class GetItemOffersBatchRequest implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'requests' => 'requests',
     ];
 
@@ -86,7 +86,7 @@ class GetItemOffersBatchRequest implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'requests' => 'setRequests',
     ];
 
@@ -95,7 +95,7 @@ class GetItemOffersBatchRequest implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'requests' => 'getRequests',
     ];
 
@@ -104,7 +104,7 @@ class GetItemOffersBatchRequest implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class ResearchingQuantity implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ResearchingQuantity';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ResearchingQuantity';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'total_researching_quantity' => 'int',
         'researching_quantity_breakdown' => '\AmazonPHP\SellingPartner\Model\FBAInventory\ResearchingQuantityEntry[]',
     ];
@@ -68,7 +68,7 @@ class ResearchingQuantity implements \ArrayAccess, \JsonSerializable, ModelInter
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'total_researching_quantity' => null,
         'researching_quantity_breakdown' => null,
     ];
@@ -79,7 +79,7 @@ class ResearchingQuantity implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'total_researching_quantity' => 'totalResearchingQuantity',
         'researching_quantity_breakdown' => 'researchingQuantityBreakdown',
     ];
@@ -89,7 +89,7 @@ class ResearchingQuantity implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'total_researching_quantity' => 'setTotalResearchingQuantity',
         'researching_quantity_breakdown' => 'setResearchingQuantityBreakdown',
     ];
@@ -99,7 +99,7 @@ class ResearchingQuantity implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'total_researching_quantity' => 'getTotalResearchingQuantity',
         'researching_quantity_breakdown' => 'getResearchingQuantityBreakdown',
     ];
@@ -109,7 +109,7 @@ class ResearchingQuantity implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

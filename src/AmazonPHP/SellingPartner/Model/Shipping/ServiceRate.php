@@ -49,14 +49,14 @@ class ServiceRate implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ServiceRate';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ServiceRate';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'total_charge' => '\AmazonPHP\SellingPartner\Model\Shipping\Currency',
         'billable_weight' => '\AmazonPHP\SellingPartner\Model\Shipping\Weight',
         'service_type' => '\AmazonPHP\SellingPartner\Model\Shipping\ServiceType',
@@ -70,7 +70,7 @@ class ServiceRate implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'total_charge' => null,
         'billable_weight' => null,
         'service_type' => null,
@@ -83,7 +83,7 @@ class ServiceRate implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'total_charge' => 'totalCharge',
         'billable_weight' => 'billableWeight',
         'service_type' => 'serviceType',
@@ -95,7 +95,7 @@ class ServiceRate implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'total_charge' => 'setTotalCharge',
         'billable_weight' => 'setBillableWeight',
         'service_type' => 'setServiceType',
@@ -107,7 +107,7 @@ class ServiceRate implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'total_charge' => 'getTotalCharge',
         'billable_weight' => 'getBillableWeight',
         'service_type' => 'getServiceType',
@@ -119,7 +119,7 @@ class ServiceRate implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

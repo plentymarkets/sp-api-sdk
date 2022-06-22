@@ -49,14 +49,14 @@ class ServiceJobProvider implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ServiceJobProvider';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ServiceJobProvider';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'service_job_provider_id' => 'string',
     ];
 
@@ -67,7 +67,7 @@ class ServiceJobProvider implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'service_job_provider_id' => null,
     ];
 
@@ -77,7 +77,7 @@ class ServiceJobProvider implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'service_job_provider_id' => 'serviceJobProviderId',
     ];
 
@@ -86,7 +86,7 @@ class ServiceJobProvider implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'service_job_provider_id' => 'setServiceJobProviderId',
     ];
 
@@ -95,7 +95,7 @@ class ServiceJobProvider implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'service_job_provider_id' => 'getServiceJobProviderId',
     ];
 
@@ -104,7 +104,7 @@ class ServiceJobProvider implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class RemovalShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'RemovalShipmentItem';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'RemovalShipmentItem';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'removal_shipment_item_id' => 'string',
         'tax_collection_model' => 'string',
         'fulfillment_network_sku' => 'string',
@@ -74,7 +74,7 @@ class RemovalShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInter
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'removal_shipment_item_id' => null,
         'tax_collection_model' => null,
         'fulfillment_network_sku' => null,
@@ -91,7 +91,7 @@ class RemovalShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'removal_shipment_item_id' => 'RemovalShipmentItemId',
         'tax_collection_model' => 'TaxCollectionModel',
         'fulfillment_network_sku' => 'FulfillmentNetworkSKU',
@@ -107,7 +107,7 @@ class RemovalShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'removal_shipment_item_id' => 'setRemovalShipmentItemId',
         'tax_collection_model' => 'setTaxCollectionModel',
         'fulfillment_network_sku' => 'setFulfillmentNetworkSku',
@@ -123,7 +123,7 @@ class RemovalShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'removal_shipment_item_id' => 'getRemovalShipmentItemId',
         'tax_collection_model' => 'getTaxCollectionModel',
         'fulfillment_network_sku' => 'getFulfillmentNetworkSku',
@@ -139,7 +139,7 @@ class RemovalShipmentItem implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class ReasonCodeDetails implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ReasonCodeDetails';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ReasonCodeDetails';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'return_reason_code' => 'string',
         'description' => 'string',
         'translated_description' => 'string',
@@ -69,7 +69,7 @@ class ReasonCodeDetails implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'return_reason_code' => null,
         'description' => null,
         'translated_description' => null,
@@ -81,7 +81,7 @@ class ReasonCodeDetails implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'return_reason_code' => 'returnReasonCode',
         'description' => 'description',
         'translated_description' => 'translatedDescription',
@@ -92,7 +92,7 @@ class ReasonCodeDetails implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'return_reason_code' => 'setReturnReasonCode',
         'description' => 'setDescription',
         'translated_description' => 'setTranslatedDescription',
@@ -103,7 +103,7 @@ class ReasonCodeDetails implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'return_reason_code' => 'getReturnReasonCode',
         'description' => 'getDescription',
         'translated_description' => 'getTranslatedDescription',
@@ -114,7 +114,7 @@ class ReasonCodeDetails implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class LabelResult implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'LabelResult';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'LabelResult';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'container_reference_id' => 'string',
         'tracking_id' => 'string',
         'label' => '\AmazonPHP\SellingPartner\Model\Shipping\Label',
@@ -69,7 +69,7 @@ class LabelResult implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'container_reference_id' => null,
         'tracking_id' => null,
         'label' => null,
@@ -81,7 +81,7 @@ class LabelResult implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'container_reference_id' => 'containerReferenceId',
         'tracking_id' => 'trackingId',
         'label' => 'label',
@@ -92,7 +92,7 @@ class LabelResult implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'container_reference_id' => 'setContainerReferenceId',
         'tracking_id' => 'setTrackingId',
         'label' => 'setLabel',
@@ -103,7 +103,7 @@ class LabelResult implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'container_reference_id' => 'getContainerReferenceId',
         'tracking_id' => 'getTrackingId',
         'label' => 'getLabel',
@@ -114,7 +114,7 @@ class LabelResult implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

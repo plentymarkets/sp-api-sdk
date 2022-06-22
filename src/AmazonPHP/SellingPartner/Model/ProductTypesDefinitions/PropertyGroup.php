@@ -49,14 +49,14 @@ class PropertyGroup implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'PropertyGroup';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'PropertyGroup';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'title' => 'string',
         'description' => 'string',
         'property_names' => 'string[]',
@@ -69,7 +69,7 @@ class PropertyGroup implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'title' => null,
         'description' => null,
         'property_names' => null,
@@ -81,7 +81,7 @@ class PropertyGroup implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'title' => 'title',
         'description' => 'description',
         'property_names' => 'propertyNames',
@@ -92,7 +92,7 @@ class PropertyGroup implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'title' => 'setTitle',
         'description' => 'setDescription',
         'property_names' => 'setPropertyNames',
@@ -103,7 +103,7 @@ class PropertyGroup implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'title' => 'getTitle',
         'description' => 'getDescription',
         'property_names' => 'getPropertyNames',
@@ -114,7 +114,7 @@ class PropertyGroup implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

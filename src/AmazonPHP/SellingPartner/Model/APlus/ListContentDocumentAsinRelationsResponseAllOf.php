@@ -49,14 +49,14 @@ class ListContentDocumentAsinRelationsResponseAllOf implements \ArrayAccess, \Js
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ListContentDocumentAsinRelationsResponse_allOf';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ListContentDocumentAsinRelationsResponse_allOf';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'asin_metadata_set' => '\AmazonPHP\SellingPartner\Model\APlus\AsinMetadata[]',
     ];
 
@@ -67,7 +67,7 @@ class ListContentDocumentAsinRelationsResponseAllOf implements \ArrayAccess, \Js
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'asin_metadata_set' => null,
     ];
 
@@ -77,7 +77,7 @@ class ListContentDocumentAsinRelationsResponseAllOf implements \ArrayAccess, \Js
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'asin_metadata_set' => 'asinMetadataSet',
     ];
 
@@ -86,7 +86,7 @@ class ListContentDocumentAsinRelationsResponseAllOf implements \ArrayAccess, \Js
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'asin_metadata_set' => 'setAsinMetadataSet',
     ];
 
@@ -95,7 +95,7 @@ class ListContentDocumentAsinRelationsResponseAllOf implements \ArrayAccess, \Js
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'asin_metadata_set' => 'getAsinMetadataSet',
     ];
 
@@ -104,7 +104,7 @@ class ListContentDocumentAsinRelationsResponseAllOf implements \ArrayAccess, \Js
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

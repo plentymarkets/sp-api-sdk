@@ -49,14 +49,14 @@ class AggregationSettings implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'AggregationSettings';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'AggregationSettings';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'aggregation_time_period' => '\AmazonPHP\SellingPartner\Model\Notifications\AggregationTimePeriod',
     ];
 
@@ -67,7 +67,7 @@ class AggregationSettings implements \ArrayAccess, \JsonSerializable, ModelInter
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'aggregation_time_period' => null,
     ];
 
@@ -77,7 +77,7 @@ class AggregationSettings implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'aggregation_time_period' => 'aggregationTimePeriod',
     ];
 
@@ -86,7 +86,7 @@ class AggregationSettings implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'aggregation_time_period' => 'setAggregationTimePeriod',
     ];
 
@@ -95,7 +95,7 @@ class AggregationSettings implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'aggregation_time_period' => 'getAggregationTimePeriod',
     ];
 
@@ -104,7 +104,7 @@ class AggregationSettings implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class PostContentDocumentSuspendSubmissionResponse implements \ArrayAccess, \Jso
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'PostContentDocumentSuspendSubmissionResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'PostContentDocumentSuspendSubmissionResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'warnings' => '\AmazonPHP\SellingPartner\Model\APlus\Error[]',
     ];
 
@@ -67,7 +67,7 @@ class PostContentDocumentSuspendSubmissionResponse implements \ArrayAccess, \Jso
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'warnings' => null,
     ];
 
@@ -77,7 +77,7 @@ class PostContentDocumentSuspendSubmissionResponse implements \ArrayAccess, \Jso
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'warnings' => 'warnings',
     ];
 
@@ -86,7 +86,7 @@ class PostContentDocumentSuspendSubmissionResponse implements \ArrayAccess, \Jso
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'warnings' => 'setWarnings',
     ];
 
@@ -95,7 +95,7 @@ class PostContentDocumentSuspendSubmissionResponse implements \ArrayAccess, \Jso
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'warnings' => 'getWarnings',
     ];
 
@@ -104,7 +104,7 @@ class PostContentDocumentSuspendSubmissionResponse implements \ArrayAccess, \Jso
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

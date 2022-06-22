@@ -49,14 +49,14 @@ class Product implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Product';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Product';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'identifiers' => '\AmazonPHP\SellingPartner\Model\ProductPricing\IdentifierType',
         'attribute_sets' => 'object[]',
         'relationships' => 'object[]',
@@ -72,7 +72,7 @@ class Product implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'identifiers' => null,
         'attribute_sets' => null,
         'relationships' => null,
@@ -87,7 +87,7 @@ class Product implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'identifiers' => 'Identifiers',
         'attribute_sets' => 'AttributeSets',
         'relationships' => 'Relationships',
@@ -101,7 +101,7 @@ class Product implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'identifiers' => 'setIdentifiers',
         'attribute_sets' => 'setAttributeSets',
         'relationships' => 'setRelationships',
@@ -115,7 +115,7 @@ class Product implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'identifiers' => 'getIdentifiers',
         'attribute_sets' => 'getAttributeSets',
         'relationships' => 'getRelationships',
@@ -129,7 +129,7 @@ class Product implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

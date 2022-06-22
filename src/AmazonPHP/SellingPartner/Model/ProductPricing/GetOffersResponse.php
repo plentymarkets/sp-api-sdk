@@ -49,14 +49,14 @@ class GetOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetOffersResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetOffersResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'payload' => '\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResult',
         'errors' => '\AmazonPHP\SellingPartner\Model\ProductPricing\Error[]',
     ];
@@ -68,7 +68,7 @@ class GetOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'payload' => null,
         'errors' => null,
     ];
@@ -79,7 +79,7 @@ class GetOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'payload' => 'payload',
         'errors' => 'errors',
     ];
@@ -89,7 +89,7 @@ class GetOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'payload' => 'setPayload',
         'errors' => 'setErrors',
     ];
@@ -99,7 +99,7 @@ class GetOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'payload' => 'getPayload',
         'errors' => 'getErrors',
     ];
@@ -109,7 +109,7 @@ class GetOffersResponse implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class CreateFulfillmentReturnResult implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CreateFulfillmentReturnResult';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CreateFulfillmentReturnResult';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'return_items' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReturnItem[]',
         'invalid_return_items' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\InvalidReturnItem[]',
         'return_authorizations' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReturnAuthorization[]',
@@ -69,7 +69,7 @@ class CreateFulfillmentReturnResult implements \ArrayAccess, \JsonSerializable, 
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'return_items' => null,
         'invalid_return_items' => null,
         'return_authorizations' => null,
@@ -81,7 +81,7 @@ class CreateFulfillmentReturnResult implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'return_items' => 'returnItems',
         'invalid_return_items' => 'invalidReturnItems',
         'return_authorizations' => 'returnAuthorizations',
@@ -92,7 +92,7 @@ class CreateFulfillmentReturnResult implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'return_items' => 'setReturnItems',
         'invalid_return_items' => 'setInvalidReturnItems',
         'return_authorizations' => 'setReturnAuthorizations',
@@ -103,7 +103,7 @@ class CreateFulfillmentReturnResult implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'return_items' => 'getReturnItems',
         'invalid_return_items' => 'getInvalidReturnItems',
         'return_authorizations' => 'getReturnAuthorizations',
@@ -114,7 +114,7 @@ class CreateFulfillmentReturnResult implements \ArrayAccess, \JsonSerializable, 
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

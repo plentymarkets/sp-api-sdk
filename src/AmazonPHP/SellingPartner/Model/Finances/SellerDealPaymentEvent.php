@@ -49,14 +49,14 @@ class SellerDealPaymentEvent implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'SellerDealPaymentEvent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'SellerDealPaymentEvent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'posted_date' => '\DateTime',
         'deal_id' => 'string',
         'deal_description' => 'string',
@@ -74,7 +74,7 @@ class SellerDealPaymentEvent implements \ArrayAccess, \JsonSerializable, ModelIn
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'posted_date' => 'date-time',
         'deal_id' => null,
         'deal_description' => null,
@@ -91,7 +91,7 @@ class SellerDealPaymentEvent implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'posted_date' => 'postedDate',
         'deal_id' => 'dealId',
         'deal_description' => 'dealDescription',
@@ -107,7 +107,7 @@ class SellerDealPaymentEvent implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'posted_date' => 'setPostedDate',
         'deal_id' => 'setDealId',
         'deal_description' => 'setDealDescription',
@@ -123,7 +123,7 @@ class SellerDealPaymentEvent implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'posted_date' => 'getPostedDate',
         'deal_id' => 'getDealId',
         'deal_description' => 'getDealDescription',
@@ -139,7 +139,7 @@ class SellerDealPaymentEvent implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

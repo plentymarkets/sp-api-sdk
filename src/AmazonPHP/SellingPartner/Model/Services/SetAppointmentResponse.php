@@ -49,14 +49,14 @@ class SetAppointmentResponse implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'SetAppointmentResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'SetAppointmentResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'appointment_id' => 'string',
         'warnings' => '\AmazonPHP\SellingPartner\Model\Services\Warning[]',
         'errors' => '\AmazonPHP\SellingPartner\Model\Services\Error[]',
@@ -69,7 +69,7 @@ class SetAppointmentResponse implements \ArrayAccess, \JsonSerializable, ModelIn
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'appointment_id' => null,
         'warnings' => null,
         'errors' => null,
@@ -81,7 +81,7 @@ class SetAppointmentResponse implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'appointment_id' => 'appointmentId',
         'warnings' => 'warnings',
         'errors' => 'errors',
@@ -92,7 +92,7 @@ class SetAppointmentResponse implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'appointment_id' => 'setAppointmentId',
         'warnings' => 'setWarnings',
         'errors' => 'setErrors',
@@ -103,7 +103,7 @@ class SetAppointmentResponse implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'appointment_id' => 'getAppointmentId',
         'warnings' => 'getWarnings',
         'errors' => 'getErrors',
@@ -114,7 +114,7 @@ class SetAppointmentResponse implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

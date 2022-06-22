@@ -49,14 +49,14 @@ class PurchaseLabelsRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'PurchaseLabelsRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'PurchaseLabelsRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'rate_id' => 'string',
         'label_specification' => '\AmazonPHP\SellingPartner\Model\Shipping\LabelSpecification',
     ];
@@ -68,7 +68,7 @@ class PurchaseLabelsRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'rate_id' => null,
         'label_specification' => null,
     ];
@@ -79,7 +79,7 @@ class PurchaseLabelsRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'rate_id' => 'rateId',
         'label_specification' => 'labelSpecification',
     ];
@@ -89,7 +89,7 @@ class PurchaseLabelsRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'rate_id' => 'setRateId',
         'label_specification' => 'setLabelSpecification',
     ];
@@ -99,7 +99,7 @@ class PurchaseLabelsRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'rate_id' => 'getRateId',
         'label_specification' => 'getLabelSpecification',
     ];
@@ -109,7 +109,7 @@ class PurchaseLabelsRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

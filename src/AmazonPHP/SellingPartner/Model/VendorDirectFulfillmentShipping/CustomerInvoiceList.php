@@ -49,14 +49,14 @@ class CustomerInvoiceList implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CustomerInvoiceList';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CustomerInvoiceList';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'pagination' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Pagination',
         'customer_invoices' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\CustomerInvoice[]',
     ];
@@ -68,7 +68,7 @@ class CustomerInvoiceList implements \ArrayAccess, \JsonSerializable, ModelInter
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'pagination' => null,
         'customer_invoices' => null,
     ];
@@ -79,7 +79,7 @@ class CustomerInvoiceList implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'pagination' => 'pagination',
         'customer_invoices' => 'customerInvoices',
     ];
@@ -89,7 +89,7 @@ class CustomerInvoiceList implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'pagination' => 'setPagination',
         'customer_invoices' => 'setCustomerInvoices',
     ];
@@ -99,7 +99,7 @@ class CustomerInvoiceList implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'pagination' => 'getPagination',
         'customer_invoices' => 'getCustomerInvoices',
     ];
@@ -109,7 +109,7 @@ class CustomerInvoiceList implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

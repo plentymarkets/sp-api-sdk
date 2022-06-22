@@ -49,14 +49,14 @@ class TransactionStatus implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'TransactionStatus';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'TransactionStatus';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'transaction_status' => '\AmazonPHP\SellingPartner\Model\VendorTransactionStatus\Transaction',
     ];
 
@@ -67,7 +67,7 @@ class TransactionStatus implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'transaction_status' => null,
     ];
 
@@ -77,7 +77,7 @@ class TransactionStatus implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'transaction_status' => 'transactionStatus',
     ];
 
@@ -86,7 +86,7 @@ class TransactionStatus implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'transaction_status' => 'setTransactionStatus',
     ];
 
@@ -95,7 +95,7 @@ class TransactionStatus implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'transaction_status' => 'getTransactionStatus',
     ];
 
@@ -104,7 +104,7 @@ class TransactionStatus implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

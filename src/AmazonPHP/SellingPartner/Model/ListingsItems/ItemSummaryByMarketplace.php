@@ -79,14 +79,14 @@ class ItemSummaryByMarketplace implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ItemSummaryByMarketplace';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ItemSummaryByMarketplace';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace_id' => 'string',
         'asin' => 'string',
         'product_type' => 'string',
@@ -106,7 +106,7 @@ class ItemSummaryByMarketplace implements \ArrayAccess, \JsonSerializable, Model
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'marketplace_id' => null,
         'asin' => null,
         'product_type' => null,
@@ -125,7 +125,7 @@ class ItemSummaryByMarketplace implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'marketplace_id' => 'marketplaceId',
         'asin' => 'asin',
         'product_type' => 'productType',
@@ -143,7 +143,7 @@ class ItemSummaryByMarketplace implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'marketplace_id' => 'setMarketplaceId',
         'asin' => 'setAsin',
         'product_type' => 'setProductType',
@@ -161,7 +161,7 @@ class ItemSummaryByMarketplace implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'marketplace_id' => 'getMarketplaceId',
         'asin' => 'getAsin',
         'product_type' => 'getProductType',
@@ -179,7 +179,7 @@ class ItemSummaryByMarketplace implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

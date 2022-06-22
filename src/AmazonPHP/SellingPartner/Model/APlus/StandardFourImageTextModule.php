@@ -49,14 +49,14 @@ class StandardFourImageTextModule implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'StandardFourImageTextModule';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'StandardFourImageTextModule';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'headline' => '\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
         'block1' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
         'block2' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
@@ -71,7 +71,7 @@ class StandardFourImageTextModule implements \ArrayAccess, \JsonSerializable, Mo
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'headline' => null,
         'block1' => null,
         'block2' => null,
@@ -85,7 +85,7 @@ class StandardFourImageTextModule implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'headline' => 'headline',
         'block1' => 'block1',
         'block2' => 'block2',
@@ -98,7 +98,7 @@ class StandardFourImageTextModule implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'headline' => 'setHeadline',
         'block1' => 'setBlock1',
         'block2' => 'setBlock2',
@@ -111,7 +111,7 @@ class StandardFourImageTextModule implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'headline' => 'getHeadline',
         'block1' => 'getBlock1',
         'block2' => 'getBlock2',
@@ -124,7 +124,7 @@ class StandardFourImageTextModule implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

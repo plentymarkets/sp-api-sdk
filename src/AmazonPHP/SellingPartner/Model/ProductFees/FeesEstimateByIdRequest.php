@@ -49,14 +49,14 @@ class FeesEstimateByIdRequest implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'FeesEstimateByIdRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'FeesEstimateByIdRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'fees_estimate_request' => '\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimateRequest',
         'id_type' => '\AmazonPHP\SellingPartner\Model\ProductFees\IdType',
         'id_value' => 'string',
@@ -69,7 +69,7 @@ class FeesEstimateByIdRequest implements \ArrayAccess, \JsonSerializable, ModelI
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'fees_estimate_request' => null,
         'id_type' => null,
         'id_value' => null,
@@ -81,7 +81,7 @@ class FeesEstimateByIdRequest implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'fees_estimate_request' => 'FeesEstimateRequest',
         'id_type' => 'IdType',
         'id_value' => 'IdValue',
@@ -92,7 +92,7 @@ class FeesEstimateByIdRequest implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'fees_estimate_request' => 'setFeesEstimateRequest',
         'id_type' => 'setIdType',
         'id_value' => 'setIdValue',
@@ -103,7 +103,7 @@ class FeesEstimateByIdRequest implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'fees_estimate_request' => 'getFeesEstimateRequest',
         'id_type' => 'getIdType',
         'id_value' => 'getIdValue',
@@ -114,7 +114,7 @@ class FeesEstimateByIdRequest implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

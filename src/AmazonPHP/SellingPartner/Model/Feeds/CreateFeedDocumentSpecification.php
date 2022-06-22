@@ -49,14 +49,14 @@ class CreateFeedDocumentSpecification implements \ArrayAccess, \JsonSerializable
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CreateFeedDocumentSpecification';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CreateFeedDocumentSpecification';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'content_type' => 'string',
     ];
 
@@ -67,7 +67,7 @@ class CreateFeedDocumentSpecification implements \ArrayAccess, \JsonSerializable
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'content_type' => null,
     ];
 
@@ -77,7 +77,7 @@ class CreateFeedDocumentSpecification implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'content_type' => 'contentType',
     ];
 
@@ -86,7 +86,7 @@ class CreateFeedDocumentSpecification implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'content_type' => 'setContentType',
     ];
 
@@ -95,7 +95,7 @@ class CreateFeedDocumentSpecification implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'content_type' => 'getContentType',
     ];
 
@@ -104,7 +104,7 @@ class CreateFeedDocumentSpecification implements \ArrayAccess, \JsonSerializable
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

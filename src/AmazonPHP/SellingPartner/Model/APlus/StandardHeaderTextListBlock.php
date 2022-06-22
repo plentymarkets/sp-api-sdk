@@ -49,14 +49,14 @@ class StandardHeaderTextListBlock implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'StandardHeaderTextListBlock';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'StandardHeaderTextListBlock';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'headline' => '\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
         'block' => '\AmazonPHP\SellingPartner\Model\APlus\StandardTextListBlock',
     ];
@@ -68,7 +68,7 @@ class StandardHeaderTextListBlock implements \ArrayAccess, \JsonSerializable, Mo
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'headline' => null,
         'block' => null,
     ];
@@ -79,7 +79,7 @@ class StandardHeaderTextListBlock implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'headline' => 'headline',
         'block' => 'block',
     ];
@@ -89,7 +89,7 @@ class StandardHeaderTextListBlock implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'headline' => 'setHeadline',
         'block' => 'setBlock',
     ];
@@ -99,7 +99,7 @@ class StandardHeaderTextListBlock implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'headline' => 'getHeadline',
         'block' => 'getBlock',
     ];
@@ -109,7 +109,7 @@ class StandardHeaderTextListBlock implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

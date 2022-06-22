@@ -49,14 +49,14 @@ class FulfillmentShipmentPackage implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'FulfillmentShipmentPackage';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'FulfillmentShipmentPackage';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'package_number' => 'int',
         'carrier_code' => 'string',
         'tracking_number' => 'string',
@@ -70,7 +70,7 @@ class FulfillmentShipmentPackage implements \ArrayAccess, \JsonSerializable, Mod
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'package_number' => 'int32',
         'carrier_code' => null,
         'tracking_number' => null,
@@ -83,7 +83,7 @@ class FulfillmentShipmentPackage implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'package_number' => 'packageNumber',
         'carrier_code' => 'carrierCode',
         'tracking_number' => 'trackingNumber',
@@ -95,7 +95,7 @@ class FulfillmentShipmentPackage implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'package_number' => 'setPackageNumber',
         'carrier_code' => 'setCarrierCode',
         'tracking_number' => 'setTrackingNumber',
@@ -107,7 +107,7 @@ class FulfillmentShipmentPackage implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'package_number' => 'getPackageNumber',
         'carrier_code' => 'getCarrierCode',
         'tracking_number' => 'getTrackingNumber',
@@ -119,7 +119,7 @@ class FulfillmentShipmentPackage implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

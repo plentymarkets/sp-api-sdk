@@ -49,14 +49,14 @@ class ContainerItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ContainerItem';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ContainerItem';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'item_reference' => 'string',
         'shipped_quantity' => '\AmazonPHP\SellingPartner\Model\VendorShipments\ItemQuantity',
         'item_details' => '\AmazonPHP\SellingPartner\Model\VendorShipments\ItemDetails',
@@ -69,7 +69,7 @@ class ContainerItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'item_reference' => null,
         'shipped_quantity' => null,
         'item_details' => null,
@@ -81,7 +81,7 @@ class ContainerItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'item_reference' => 'itemReference',
         'shipped_quantity' => 'shippedQuantity',
         'item_details' => 'itemDetails',
@@ -92,7 +92,7 @@ class ContainerItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'item_reference' => 'setItemReference',
         'shipped_quantity' => 'setShippedQuantity',
         'item_details' => 'setItemDetails',
@@ -103,7 +103,7 @@ class ContainerItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'item_reference' => 'getItemReference',
         'shipped_quantity' => 'getShippedQuantity',
         'item_details' => 'getItemDetails',
@@ -114,7 +114,7 @@ class ContainerItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

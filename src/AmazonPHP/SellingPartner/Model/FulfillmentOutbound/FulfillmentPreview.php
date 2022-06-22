@@ -49,14 +49,14 @@ class FulfillmentPreview implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'FulfillmentPreview';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'FulfillmentPreview';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'shipping_speed_category' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ShippingSpeedCategory',
         'scheduled_delivery_info' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ScheduledDeliveryInfo',
         'is_fulfillable' => 'bool',
@@ -77,7 +77,7 @@ class FulfillmentPreview implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'shipping_speed_category' => null,
         'scheduled_delivery_info' => null,
         'is_fulfillable' => null,
@@ -97,7 +97,7 @@ class FulfillmentPreview implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'shipping_speed_category' => 'shippingSpeedCategory',
         'scheduled_delivery_info' => 'scheduledDeliveryInfo',
         'is_fulfillable' => 'isFulfillable',
@@ -116,7 +116,7 @@ class FulfillmentPreview implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'shipping_speed_category' => 'setShippingSpeedCategory',
         'scheduled_delivery_info' => 'setScheduledDeliveryInfo',
         'is_fulfillable' => 'setIsFulfillable',
@@ -135,7 +135,7 @@ class FulfillmentPreview implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'shipping_speed_category' => 'getShippingSpeedCategory',
         'scheduled_delivery_info' => 'getScheduledDeliveryInfo',
         'is_fulfillable' => 'getIsFulfillable',
@@ -154,7 +154,7 @@ class FulfillmentPreview implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

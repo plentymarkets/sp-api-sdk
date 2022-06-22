@@ -49,14 +49,14 @@ class AplusPaginatedResponse implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'AplusPaginatedResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'AplusPaginatedResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'warnings' => '\AmazonPHP\SellingPartner\Model\APlus\Error[]',
         'next_page_token' => 'string',
     ];
@@ -68,7 +68,7 @@ class AplusPaginatedResponse implements \ArrayAccess, \JsonSerializable, ModelIn
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'warnings' => null,
         'next_page_token' => null,
     ];
@@ -79,7 +79,7 @@ class AplusPaginatedResponse implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'warnings' => 'warnings',
         'next_page_token' => 'nextPageToken',
     ];
@@ -89,7 +89,7 @@ class AplusPaginatedResponse implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'warnings' => 'setWarnings',
         'next_page_token' => 'setNextPageToken',
     ];
@@ -99,7 +99,7 @@ class AplusPaginatedResponse implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'warnings' => 'getWarnings',
         'next_page_token' => 'getNextPageToken',
     ];
@@ -109,7 +109,7 @@ class AplusPaginatedResponse implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

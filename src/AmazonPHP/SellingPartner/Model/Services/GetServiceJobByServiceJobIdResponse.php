@@ -49,14 +49,14 @@ class GetServiceJobByServiceJobIdResponse implements \ArrayAccess, \JsonSerializ
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetServiceJobByServiceJobIdResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetServiceJobByServiceJobIdResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'payload' => '\AmazonPHP\SellingPartner\Model\Services\ServiceJob',
         'errors' => '\AmazonPHP\SellingPartner\Model\Services\Error[]',
     ];
@@ -68,7 +68,7 @@ class GetServiceJobByServiceJobIdResponse implements \ArrayAccess, \JsonSerializ
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'payload' => null,
         'errors' => null,
     ];
@@ -79,7 +79,7 @@ class GetServiceJobByServiceJobIdResponse implements \ArrayAccess, \JsonSerializ
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'payload' => 'payload',
         'errors' => 'errors',
     ];
@@ -89,7 +89,7 @@ class GetServiceJobByServiceJobIdResponse implements \ArrayAccess, \JsonSerializ
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'payload' => 'setPayload',
         'errors' => 'setErrors',
     ];
@@ -99,7 +99,7 @@ class GetServiceJobByServiceJobIdResponse implements \ArrayAccess, \JsonSerializ
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'payload' => 'getPayload',
         'errors' => 'getErrors',
     ];
@@ -109,7 +109,7 @@ class GetServiceJobByServiceJobIdResponse implements \ArrayAccess, \JsonSerializ
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

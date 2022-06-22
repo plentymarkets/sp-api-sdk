@@ -55,14 +55,14 @@ class Appointment implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Appointment';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Appointment';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'appointment_id' => 'string',
         'appointment_status' => 'string',
         'appointment_time' => '\AmazonPHP\SellingPartner\Model\Services\AppointmentTime',
@@ -78,7 +78,7 @@ class Appointment implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'appointment_id' => null,
         'appointment_status' => null,
         'appointment_time' => null,
@@ -93,7 +93,7 @@ class Appointment implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'appointment_id' => 'appointmentId',
         'appointment_status' => 'appointmentStatus',
         'appointment_time' => 'appointmentTime',
@@ -107,7 +107,7 @@ class Appointment implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'appointment_id' => 'setAppointmentId',
         'appointment_status' => 'setAppointmentStatus',
         'appointment_time' => 'setAppointmentTime',
@@ -121,7 +121,7 @@ class Appointment implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'appointment_id' => 'getAppointmentId',
         'appointment_status' => 'getAppointmentStatus',
         'appointment_time' => 'getAppointmentTime',
@@ -135,7 +135,7 @@ class Appointment implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

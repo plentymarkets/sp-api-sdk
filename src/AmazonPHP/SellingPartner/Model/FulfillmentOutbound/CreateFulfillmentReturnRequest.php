@@ -49,14 +49,14 @@ class CreateFulfillmentReturnRequest implements \ArrayAccess, \JsonSerializable,
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CreateFulfillmentReturnRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CreateFulfillmentReturnRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'items' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\CreateReturnItem[]',
     ];
 
@@ -67,7 +67,7 @@ class CreateFulfillmentReturnRequest implements \ArrayAccess, \JsonSerializable,
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'items' => null,
     ];
 
@@ -77,7 +77,7 @@ class CreateFulfillmentReturnRequest implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'items' => 'items',
     ];
 
@@ -86,7 +86,7 @@ class CreateFulfillmentReturnRequest implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'items' => 'setItems',
     ];
 
@@ -95,7 +95,7 @@ class CreateFulfillmentReturnRequest implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'items' => 'getItems',
     ];
 
@@ -104,7 +104,7 @@ class CreateFulfillmentReturnRequest implements \ArrayAccess, \JsonSerializable,
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

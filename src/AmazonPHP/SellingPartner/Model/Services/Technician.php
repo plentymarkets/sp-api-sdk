@@ -49,14 +49,14 @@ class Technician implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Technician';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Technician';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'technician_id' => 'string',
         'name' => 'string',
     ];
@@ -68,7 +68,7 @@ class Technician implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'technician_id' => null,
         'name' => null,
     ];
@@ -79,7 +79,7 @@ class Technician implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'technician_id' => 'technicianId',
         'name' => 'name',
     ];
@@ -89,7 +89,7 @@ class Technician implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'technician_id' => 'setTechnicianId',
         'name' => 'setName',
     ];
@@ -99,7 +99,7 @@ class Technician implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'technician_id' => 'getTechnicianId',
         'name' => 'getName',
     ];
@@ -109,7 +109,7 @@ class Technician implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

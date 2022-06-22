@@ -49,14 +49,14 @@ class CreateAmazonMotorsRequest implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CreateAmazonMotorsRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CreateAmazonMotorsRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'attachments' => '\AmazonPHP\SellingPartner\Model\Messaging\Attachment[]',
     ];
 
@@ -67,7 +67,7 @@ class CreateAmazonMotorsRequest implements \ArrayAccess, \JsonSerializable, Mode
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'attachments' => null,
     ];
 
@@ -77,7 +77,7 @@ class CreateAmazonMotorsRequest implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'attachments' => 'attachments',
     ];
 
@@ -86,7 +86,7 @@ class CreateAmazonMotorsRequest implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'attachments' => 'setAttachments',
     ];
 
@@ -95,7 +95,7 @@ class CreateAmazonMotorsRequest implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'attachments' => 'getAttachments',
     ];
 
@@ -104,7 +104,7 @@ class CreateAmazonMotorsRequest implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

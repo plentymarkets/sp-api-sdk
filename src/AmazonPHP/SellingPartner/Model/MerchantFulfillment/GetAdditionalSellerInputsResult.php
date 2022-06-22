@@ -49,14 +49,14 @@ class GetAdditionalSellerInputsResult implements \ArrayAccess, \JsonSerializable
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetAdditionalSellerInputsResult';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetAdditionalSellerInputsResult';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'shipment_level_fields' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AdditionalInputs[]',
         'item_level_fields_list' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ItemLevelFields[]',
     ];
@@ -68,7 +68,7 @@ class GetAdditionalSellerInputsResult implements \ArrayAccess, \JsonSerializable
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'shipment_level_fields' => null,
         'item_level_fields_list' => null,
     ];
@@ -79,7 +79,7 @@ class GetAdditionalSellerInputsResult implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'shipment_level_fields' => 'ShipmentLevelFields',
         'item_level_fields_list' => 'ItemLevelFieldsList',
     ];
@@ -89,7 +89,7 @@ class GetAdditionalSellerInputsResult implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'shipment_level_fields' => 'setShipmentLevelFields',
         'item_level_fields_list' => 'setItemLevelFieldsList',
     ];
@@ -99,7 +99,7 @@ class GetAdditionalSellerInputsResult implements \ArrayAccess, \JsonSerializable
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'shipment_level_fields' => 'getShipmentLevelFields',
         'item_level_fields_list' => 'getItemLevelFieldsList',
     ];
@@ -109,7 +109,7 @@ class GetAdditionalSellerInputsResult implements \ArrayAccess, \JsonSerializable
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

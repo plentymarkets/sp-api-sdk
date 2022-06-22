@@ -49,14 +49,14 @@ class DeliveryWindow implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'DeliveryWindow';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'DeliveryWindow';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'start_date' => '\DateTime',
         'end_date' => '\DateTime',
     ];
@@ -68,7 +68,7 @@ class DeliveryWindow implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'start_date' => 'date-time',
         'end_date' => 'date-time',
     ];
@@ -79,7 +79,7 @@ class DeliveryWindow implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'start_date' => 'startDate',
         'end_date' => 'endDate',
     ];
@@ -89,7 +89,7 @@ class DeliveryWindow implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'start_date' => 'setStartDate',
         'end_date' => 'setEndDate',
     ];
@@ -99,7 +99,7 @@ class DeliveryWindow implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'start_date' => 'getStartDate',
         'end_date' => 'getEndDate',
     ];
@@ -109,7 +109,7 @@ class DeliveryWindow implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

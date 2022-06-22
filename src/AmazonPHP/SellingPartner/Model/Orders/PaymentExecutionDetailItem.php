@@ -49,14 +49,14 @@ class PaymentExecutionDetailItem implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'PaymentExecutionDetailItem';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'PaymentExecutionDetailItem';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'payment' => '\AmazonPHP\SellingPartner\Model\Orders\Money',
         'payment_method' => 'string',
     ];
@@ -68,7 +68,7 @@ class PaymentExecutionDetailItem implements \ArrayAccess, \JsonSerializable, Mod
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'payment' => null,
         'payment_method' => null,
     ];
@@ -79,7 +79,7 @@ class PaymentExecutionDetailItem implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'payment' => 'Payment',
         'payment_method' => 'PaymentMethod',
     ];
@@ -89,7 +89,7 @@ class PaymentExecutionDetailItem implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'payment' => 'setPayment',
         'payment_method' => 'setPaymentMethod',
     ];
@@ -99,7 +99,7 @@ class PaymentExecutionDetailItem implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'payment' => 'getPayment',
         'payment_method' => 'getPaymentMethod',
     ];
@@ -109,7 +109,7 @@ class PaymentExecutionDetailItem implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

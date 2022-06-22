@@ -59,14 +59,14 @@ class ProductTypeDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ProductTypeDefinition';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ProductTypeDefinition';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'meta_schema' => '\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\SchemaLink',
         'schema' => '\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\SchemaLink',
         'requirements' => 'string',
@@ -85,7 +85,7 @@ class ProductTypeDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'meta_schema' => null,
         'schema' => null,
         'requirements' => null,
@@ -103,7 +103,7 @@ class ProductTypeDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'meta_schema' => 'metaSchema',
         'schema' => 'schema',
         'requirements' => 'requirements',
@@ -120,7 +120,7 @@ class ProductTypeDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'meta_schema' => 'setMetaSchema',
         'schema' => 'setSchema',
         'requirements' => 'setRequirements',
@@ -137,7 +137,7 @@ class ProductTypeDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'meta_schema' => 'getMetaSchema',
         'schema' => 'getSchema',
         'requirements' => 'getRequirements',
@@ -154,7 +154,7 @@ class ProductTypeDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

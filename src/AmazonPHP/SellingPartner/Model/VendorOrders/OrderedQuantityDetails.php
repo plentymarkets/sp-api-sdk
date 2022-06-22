@@ -49,14 +49,14 @@ class OrderedQuantityDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'OrderedQuantityDetails';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'OrderedQuantityDetails';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'updated_date' => '\DateTime',
         'ordered_quantity' => '\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
         'cancelled_quantity' => '\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
@@ -69,7 +69,7 @@ class OrderedQuantityDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'updated_date' => 'date-time',
         'ordered_quantity' => null,
         'cancelled_quantity' => null,
@@ -81,7 +81,7 @@ class OrderedQuantityDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'updated_date' => 'updatedDate',
         'ordered_quantity' => 'orderedQuantity',
         'cancelled_quantity' => 'cancelledQuantity',
@@ -92,7 +92,7 @@ class OrderedQuantityDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'updated_date' => 'setUpdatedDate',
         'ordered_quantity' => 'setOrderedQuantity',
         'cancelled_quantity' => 'setCancelledQuantity',
@@ -103,7 +103,7 @@ class OrderedQuantityDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'updated_date' => 'getUpdatedDate',
         'ordered_quantity' => 'getOrderedQuantity',
         'cancelled_quantity' => 'getCancelledQuantity',
@@ -114,7 +114,7 @@ class OrderedQuantityDetails implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class ScheduledDeliveryShipment implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ScheduledDeliveryShipment';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ScheduledDeliveryShipment';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'scheduled_delivery_service_type' => 'string',
         'earliest_nominated_delivery_date' => '\DateTime',
         'latest_nominated_delivery_date' => '\DateTime',
@@ -69,7 +69,7 @@ class ScheduledDeliveryShipment implements \ArrayAccess, \JsonSerializable, Mode
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'scheduled_delivery_service_type' => null,
         'earliest_nominated_delivery_date' => 'date-time',
         'latest_nominated_delivery_date' => 'date-time',
@@ -81,7 +81,7 @@ class ScheduledDeliveryShipment implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'scheduled_delivery_service_type' => 'scheduledDeliveryServiceType',
         'earliest_nominated_delivery_date' => 'earliestNominatedDeliveryDate',
         'latest_nominated_delivery_date' => 'latestNominatedDeliveryDate',
@@ -92,7 +92,7 @@ class ScheduledDeliveryShipment implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'scheduled_delivery_service_type' => 'setScheduledDeliveryServiceType',
         'earliest_nominated_delivery_date' => 'setEarliestNominatedDeliveryDate',
         'latest_nominated_delivery_date' => 'setLatestNominatedDeliveryDate',
@@ -103,7 +103,7 @@ class ScheduledDeliveryShipment implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'scheduled_delivery_service_type' => 'getScheduledDeliveryServiceType',
         'earliest_nominated_delivery_date' => 'getEarliestNominatedDeliveryDate',
         'latest_nominated_delivery_date' => 'getLatestNominatedDeliveryDate',
@@ -114,7 +114,7 @@ class ScheduledDeliveryShipment implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

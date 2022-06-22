@@ -49,14 +49,14 @@ class DebtRecoveryEvent implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'DebtRecoveryEvent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'DebtRecoveryEvent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'debt_recovery_type' => 'string',
         'recovery_amount' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
         'over_payment_credit' => '\AmazonPHP\SellingPartner\Model\Finances\Currency',
@@ -71,7 +71,7 @@ class DebtRecoveryEvent implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'debt_recovery_type' => null,
         'recovery_amount' => null,
         'over_payment_credit' => null,
@@ -85,7 +85,7 @@ class DebtRecoveryEvent implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'debt_recovery_type' => 'DebtRecoveryType',
         'recovery_amount' => 'RecoveryAmount',
         'over_payment_credit' => 'OverPaymentCredit',
@@ -98,7 +98,7 @@ class DebtRecoveryEvent implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'debt_recovery_type' => 'setDebtRecoveryType',
         'recovery_amount' => 'setRecoveryAmount',
         'over_payment_credit' => 'setOverPaymentCredit',
@@ -111,7 +111,7 @@ class DebtRecoveryEvent implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'debt_recovery_type' => 'getDebtRecoveryType',
         'recovery_amount' => 'getRecoveryAmount',
         'over_payment_credit' => 'getOverPaymentCredit',
@@ -124,7 +124,7 @@ class DebtRecoveryEvent implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

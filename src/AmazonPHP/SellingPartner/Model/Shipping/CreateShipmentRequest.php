@@ -49,14 +49,14 @@ class CreateShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CreateShipmentRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CreateShipmentRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'client_reference_id' => 'string',
         'ship_to' => '\AmazonPHP\SellingPartner\Model\Shipping\Address',
         'ship_from' => '\AmazonPHP\SellingPartner\Model\Shipping\Address',
@@ -70,7 +70,7 @@ class CreateShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'client_reference_id' => null,
         'ship_to' => null,
         'ship_from' => null,
@@ -83,7 +83,7 @@ class CreateShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'client_reference_id' => 'clientReferenceId',
         'ship_to' => 'shipTo',
         'ship_from' => 'shipFrom',
@@ -95,7 +95,7 @@ class CreateShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'client_reference_id' => 'setClientReferenceId',
         'ship_to' => 'setShipTo',
         'ship_from' => 'setShipFrom',
@@ -107,7 +107,7 @@ class CreateShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'client_reference_id' => 'getClientReferenceId',
         'ship_to' => 'getShipTo',
         'ship_from' => 'getShipFrom',
@@ -119,7 +119,7 @@ class CreateShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

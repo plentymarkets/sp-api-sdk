@@ -46,7 +46,7 @@ class InvalidItemReasonCode
 
     public const NO_RETURNABLE_QUANTITY = 'NoReturnableQuantity';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

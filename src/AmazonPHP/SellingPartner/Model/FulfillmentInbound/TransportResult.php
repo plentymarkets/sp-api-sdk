@@ -49,14 +49,14 @@ class TransportResult implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'TransportResult';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'TransportResult';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'transport_status' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportStatus',
         'error_code' => 'string',
         'error_description' => 'string',
@@ -69,7 +69,7 @@ class TransportResult implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'transport_status' => null,
         'error_code' => null,
         'error_description' => null,
@@ -81,7 +81,7 @@ class TransportResult implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'transport_status' => 'TransportStatus',
         'error_code' => 'ErrorCode',
         'error_description' => 'ErrorDescription',
@@ -92,7 +92,7 @@ class TransportResult implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'transport_status' => 'setTransportStatus',
         'error_code' => 'setErrorCode',
         'error_description' => 'setErrorDescription',
@@ -103,7 +103,7 @@ class TransportResult implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'transport_status' => 'getTransportStatus',
         'error_code' => 'getErrorCode',
         'error_description' => 'getErrorDescription',
@@ -114,7 +114,7 @@ class TransportResult implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

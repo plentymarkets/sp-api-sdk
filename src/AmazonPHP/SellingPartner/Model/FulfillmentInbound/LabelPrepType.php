@@ -44,7 +44,7 @@ class LabelPrepType
 
     public const AMAZON_LABEL = 'AMAZON_LABEL';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

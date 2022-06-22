@@ -57,14 +57,14 @@ class Fee implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Fee';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Fee';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'name' => 'string',
         'amount' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\Money',
     ];
@@ -76,7 +76,7 @@ class Fee implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'name' => null,
         'amount' => null,
     ];
@@ -87,7 +87,7 @@ class Fee implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'name' => 'name',
         'amount' => 'amount',
     ];
@@ -97,7 +97,7 @@ class Fee implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'name' => 'setName',
         'amount' => 'setAmount',
     ];
@@ -107,7 +107,7 @@ class Fee implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'name' => 'getName',
         'amount' => 'getAmount',
     ];
@@ -117,7 +117,7 @@ class Fee implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

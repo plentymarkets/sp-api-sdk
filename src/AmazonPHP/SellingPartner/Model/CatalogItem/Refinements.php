@@ -49,14 +49,14 @@ class Refinements implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Refinements';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Refinements';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'brands' => '\AmazonPHP\SellingPartner\Model\CatalogItem\BrandRefinement[]',
         'classifications' => '\AmazonPHP\SellingPartner\Model\CatalogItem\ClassificationRefinement[]',
     ];
@@ -68,7 +68,7 @@ class Refinements implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'brands' => null,
         'classifications' => null,
     ];
@@ -79,7 +79,7 @@ class Refinements implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'brands' => 'brands',
         'classifications' => 'classifications',
     ];
@@ -89,7 +89,7 @@ class Refinements implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'brands' => 'setBrands',
         'classifications' => 'setClassifications',
     ];
@@ -99,7 +99,7 @@ class Refinements implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'brands' => 'getBrands',
         'classifications' => 'getClassifications',
     ];
@@ -109,7 +109,7 @@ class Refinements implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

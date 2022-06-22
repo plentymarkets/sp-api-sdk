@@ -49,14 +49,14 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ContentModule';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ContentModule';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'content_module_type' => '\AmazonPHP\SellingPartner\Model\APlus\ContentModuleType',
         'standard_company_logo' => '\AmazonPHP\SellingPartner\Model\APlus\StandardCompanyLogoModule',
         'standard_comparison_table' => '\AmazonPHP\SellingPartner\Model\APlus\StandardComparisonTableModule',
@@ -82,7 +82,7 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'content_module_type' => null,
         'standard_company_logo' => null,
         'standard_comparison_table' => null,
@@ -107,7 +107,7 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'content_module_type' => 'contentModuleType',
         'standard_company_logo' => 'standardCompanyLogo',
         'standard_comparison_table' => 'standardComparisonTable',
@@ -131,7 +131,7 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'content_module_type' => 'setContentModuleType',
         'standard_company_logo' => 'setStandardCompanyLogo',
         'standard_comparison_table' => 'setStandardComparisonTable',
@@ -155,7 +155,7 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'content_module_type' => 'getContentModuleType',
         'standard_company_logo' => 'getStandardCompanyLogo',
         'standard_comparison_table' => 'getStandardComparisonTable',
@@ -179,7 +179,7 @@ class ContentModule implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

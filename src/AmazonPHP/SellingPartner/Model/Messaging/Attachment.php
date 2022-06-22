@@ -49,14 +49,14 @@ class Attachment implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Attachment';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Attachment';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'upload_destination_id' => 'string',
         'file_name' => 'string',
     ];
@@ -68,7 +68,7 @@ class Attachment implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'upload_destination_id' => null,
         'file_name' => null,
     ];
@@ -79,7 +79,7 @@ class Attachment implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'upload_destination_id' => 'uploadDestinationId',
         'file_name' => 'fileName',
     ];
@@ -89,7 +89,7 @@ class Attachment implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'upload_destination_id' => 'setUploadDestinationId',
         'file_name' => 'setFileName',
     ];
@@ -99,7 +99,7 @@ class Attachment implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'upload_destination_id' => 'getUploadDestinationId',
         'file_name' => 'getFileName',
     ];
@@ -109,7 +109,7 @@ class Attachment implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

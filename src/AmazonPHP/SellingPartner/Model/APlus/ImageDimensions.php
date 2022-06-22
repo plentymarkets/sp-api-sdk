@@ -49,14 +49,14 @@ class ImageDimensions implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ImageDimensions';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ImageDimensions';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'width' => '\AmazonPHP\SellingPartner\Model\APlus\IntegerWithUnits',
         'height' => '\AmazonPHP\SellingPartner\Model\APlus\IntegerWithUnits',
     ];
@@ -68,7 +68,7 @@ class ImageDimensions implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'width' => null,
         'height' => null,
     ];
@@ -79,7 +79,7 @@ class ImageDimensions implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'width' => 'width',
         'height' => 'height',
     ];
@@ -89,7 +89,7 @@ class ImageDimensions implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'width' => 'setWidth',
         'height' => 'setHeight',
     ];
@@ -99,7 +99,7 @@ class ImageDimensions implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'width' => 'getWidth',
         'height' => 'getHeight',
     ];
@@ -109,7 +109,7 @@ class ImageDimensions implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

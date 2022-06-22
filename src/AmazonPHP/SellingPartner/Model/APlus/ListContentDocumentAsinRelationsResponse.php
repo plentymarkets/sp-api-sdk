@@ -49,14 +49,14 @@ class ListContentDocumentAsinRelationsResponse implements \ArrayAccess, \JsonSer
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ListContentDocumentAsinRelationsResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ListContentDocumentAsinRelationsResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'warnings' => '\AmazonPHP\SellingPartner\Model\APlus\Error[]',
         'next_page_token' => 'string',
         'asin_metadata_set' => '\AmazonPHP\SellingPartner\Model\APlus\AsinMetadata[]',
@@ -69,7 +69,7 @@ class ListContentDocumentAsinRelationsResponse implements \ArrayAccess, \JsonSer
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'warnings' => null,
         'next_page_token' => null,
         'asin_metadata_set' => null,
@@ -81,7 +81,7 @@ class ListContentDocumentAsinRelationsResponse implements \ArrayAccess, \JsonSer
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'warnings' => 'warnings',
         'next_page_token' => 'nextPageToken',
         'asin_metadata_set' => 'asinMetadataSet',
@@ -92,7 +92,7 @@ class ListContentDocumentAsinRelationsResponse implements \ArrayAccess, \JsonSer
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'warnings' => 'setWarnings',
         'next_page_token' => 'setNextPageToken',
         'asin_metadata_set' => 'setAsinMetadataSet',
@@ -103,7 +103,7 @@ class ListContentDocumentAsinRelationsResponse implements \ArrayAccess, \JsonSer
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'warnings' => 'getWarnings',
         'next_page_token' => 'getNextPageToken',
         'asin_metadata_set' => 'getAsinMetadataSet',
@@ -114,7 +114,7 @@ class ListContentDocumentAsinRelationsResponse implements \ArrayAccess, \JsonSer
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

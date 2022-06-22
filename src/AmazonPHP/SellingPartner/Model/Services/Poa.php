@@ -57,14 +57,14 @@ class Poa implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Poa';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Poa';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'appointment_time' => '\AmazonPHP\SellingPartner\Model\Services\AppointmentTime',
         'technicians' => '\AmazonPHP\SellingPartner\Model\Services\Technician[]',
         'uploading_technician' => 'string',
@@ -79,7 +79,7 @@ class Poa implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'appointment_time' => null,
         'technicians' => null,
         'uploading_technician' => null,
@@ -93,7 +93,7 @@ class Poa implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'appointment_time' => 'appointmentTime',
         'technicians' => 'technicians',
         'uploading_technician' => 'uploadingTechnician',
@@ -106,7 +106,7 @@ class Poa implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'appointment_time' => 'setAppointmentTime',
         'technicians' => 'setTechnicians',
         'uploading_technician' => 'setUploadingTechnician',
@@ -119,7 +119,7 @@ class Poa implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'appointment_time' => 'getAppointmentTime',
         'technicians' => 'getTechnicians',
         'uploading_technician' => 'getUploadingTechnician',
@@ -132,7 +132,7 @@ class Poa implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

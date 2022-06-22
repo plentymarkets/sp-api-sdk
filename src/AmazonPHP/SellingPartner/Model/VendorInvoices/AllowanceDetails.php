@@ -61,14 +61,14 @@ class AllowanceDetails implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'AllowanceDetails';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'AllowanceDetails';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'type' => 'string',
         'description' => 'string',
         'allowance_amount' => '\AmazonPHP\SellingPartner\Model\VendorInvoices\Money',
@@ -82,7 +82,7 @@ class AllowanceDetails implements \ArrayAccess, \JsonSerializable, ModelInterfac
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'type' => null,
         'description' => null,
         'allowance_amount' => null,
@@ -95,7 +95,7 @@ class AllowanceDetails implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'type' => 'type',
         'description' => 'description',
         'allowance_amount' => 'allowanceAmount',
@@ -107,7 +107,7 @@ class AllowanceDetails implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'type' => 'setType',
         'description' => 'setDescription',
         'allowance_amount' => 'setAllowanceAmount',
@@ -119,7 +119,7 @@ class AllowanceDetails implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'type' => 'getType',
         'description' => 'getDescription',
         'allowance_amount' => 'getAllowanceAmount',
@@ -131,7 +131,7 @@ class AllowanceDetails implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

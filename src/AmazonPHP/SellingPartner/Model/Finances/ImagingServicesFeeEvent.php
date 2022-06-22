@@ -49,14 +49,14 @@ class ImagingServicesFeeEvent implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ImagingServicesFeeEvent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ImagingServicesFeeEvent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'imaging_request_billing_item_id' => 'string',
         'asin' => 'string',
         'posted_date' => '\DateTime',
@@ -70,7 +70,7 @@ class ImagingServicesFeeEvent implements \ArrayAccess, \JsonSerializable, ModelI
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'imaging_request_billing_item_id' => null,
         'asin' => null,
         'posted_date' => 'date-time',
@@ -83,7 +83,7 @@ class ImagingServicesFeeEvent implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'imaging_request_billing_item_id' => 'ImagingRequestBillingItemID',
         'asin' => 'ASIN',
         'posted_date' => 'PostedDate',
@@ -95,7 +95,7 @@ class ImagingServicesFeeEvent implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'imaging_request_billing_item_id' => 'setImagingRequestBillingItemId',
         'asin' => 'setAsin',
         'posted_date' => 'setPostedDate',
@@ -107,7 +107,7 @@ class ImagingServicesFeeEvent implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'imaging_request_billing_item_id' => 'getImagingRequestBillingItemId',
         'asin' => 'getAsin',
         'posted_date' => 'getPostedDate',
@@ -119,7 +119,7 @@ class ImagingServicesFeeEvent implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

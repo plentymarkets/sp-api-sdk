@@ -49,14 +49,14 @@ class ShipmentDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ShipmentDetails';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ShipmentDetails';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'is_priority_shipment' => 'bool',
         'is_scheduled_delivery_shipment' => 'bool',
         'is_pslip_required' => 'bool',
@@ -73,7 +73,7 @@ class ShipmentDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'is_priority_shipment' => null,
         'is_scheduled_delivery_shipment' => null,
         'is_pslip_required' => null,
@@ -89,7 +89,7 @@ class ShipmentDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'is_priority_shipment' => 'isPriorityShipment',
         'is_scheduled_delivery_shipment' => 'isScheduledDeliveryShipment',
         'is_pslip_required' => 'isPslipRequired',
@@ -104,7 +104,7 @@ class ShipmentDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'is_priority_shipment' => 'setIsPriorityShipment',
         'is_scheduled_delivery_shipment' => 'setIsScheduledDeliveryShipment',
         'is_pslip_required' => 'setIsPslipRequired',
@@ -119,7 +119,7 @@ class ShipmentDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'is_priority_shipment' => 'getIsPriorityShipment',
         'is_scheduled_delivery_shipment' => 'getIsScheduledDeliveryShipment',
         'is_pslip_required' => 'getIsPslipRequired',
@@ -134,7 +134,7 @@ class ShipmentDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

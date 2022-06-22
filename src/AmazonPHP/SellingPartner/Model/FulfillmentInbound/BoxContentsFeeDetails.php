@@ -49,14 +49,14 @@ class BoxContentsFeeDetails implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'BoxContentsFeeDetails';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'BoxContentsFeeDetails';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'total_units' => 'int',
         'fee_per_unit' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount',
         'total_fee' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount',
@@ -69,7 +69,7 @@ class BoxContentsFeeDetails implements \ArrayAccess, \JsonSerializable, ModelInt
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'total_units' => 'int32',
         'fee_per_unit' => null,
         'total_fee' => null,
@@ -81,7 +81,7 @@ class BoxContentsFeeDetails implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'total_units' => 'TotalUnits',
         'fee_per_unit' => 'FeePerUnit',
         'total_fee' => 'TotalFee',
@@ -92,7 +92,7 @@ class BoxContentsFeeDetails implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'total_units' => 'setTotalUnits',
         'fee_per_unit' => 'setFeePerUnit',
         'total_fee' => 'setTotalFee',
@@ -103,7 +103,7 @@ class BoxContentsFeeDetails implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'total_units' => 'getTotalUnits',
         'fee_per_unit' => 'getFeePerUnit',
         'total_fee' => 'getTotalFee',
@@ -114,7 +114,7 @@ class BoxContentsFeeDetails implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class PostContentDocumentResponse implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'PostContentDocumentResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'PostContentDocumentResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'warnings' => '\AmazonPHP\SellingPartner\Model\APlus\Error[]',
         'content_reference_key' => 'string',
     ];
@@ -68,7 +68,7 @@ class PostContentDocumentResponse implements \ArrayAccess, \JsonSerializable, Mo
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'warnings' => null,
         'content_reference_key' => null,
     ];
@@ -79,7 +79,7 @@ class PostContentDocumentResponse implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'warnings' => 'warnings',
         'content_reference_key' => 'contentReferenceKey',
     ];
@@ -89,7 +89,7 @@ class PostContentDocumentResponse implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'warnings' => 'setWarnings',
         'content_reference_key' => 'setContentReferenceKey',
     ];
@@ -99,7 +99,7 @@ class PostContentDocumentResponse implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'warnings' => 'getWarnings',
         'content_reference_key' => 'getContentReferenceKey',
     ];
@@ -109,7 +109,7 @@ class PostContentDocumentResponse implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

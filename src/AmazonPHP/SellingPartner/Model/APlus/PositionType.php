@@ -42,7 +42,7 @@ class PositionType
 
     public const RIGHT = 'RIGHT';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

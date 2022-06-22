@@ -49,14 +49,14 @@ class ProductTypeList implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ProductTypeList';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ProductTypeList';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'product_types' => '\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\ProductType[]',
     ];
 
@@ -67,7 +67,7 @@ class ProductTypeList implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'product_types' => null,
     ];
 
@@ -77,7 +77,7 @@ class ProductTypeList implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'product_types' => 'productTypes',
     ];
 
@@ -86,7 +86,7 @@ class ProductTypeList implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'product_types' => 'setProductTypes',
     ];
 
@@ -95,7 +95,7 @@ class ProductTypeList implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'product_types' => 'getProductTypes',
     ];
 
@@ -104,7 +104,7 @@ class ProductTypeList implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

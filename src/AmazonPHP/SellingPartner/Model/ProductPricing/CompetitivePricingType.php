@@ -49,14 +49,14 @@ class CompetitivePricingType implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CompetitivePricingType';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CompetitivePricingType';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'competitive_prices' => '\AmazonPHP\SellingPartner\Model\ProductPricing\CompetitivePriceType[]',
         'number_of_offer_listings' => '\AmazonPHP\SellingPartner\Model\ProductPricing\OfferListingCountType[]',
         'trade_in_value' => '\AmazonPHP\SellingPartner\Model\ProductPricing\MoneyType',
@@ -69,7 +69,7 @@ class CompetitivePricingType implements \ArrayAccess, \JsonSerializable, ModelIn
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'competitive_prices' => null,
         'number_of_offer_listings' => null,
         'trade_in_value' => null,
@@ -81,7 +81,7 @@ class CompetitivePricingType implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'competitive_prices' => 'CompetitivePrices',
         'number_of_offer_listings' => 'NumberOfOfferListings',
         'trade_in_value' => 'TradeInValue',
@@ -92,7 +92,7 @@ class CompetitivePricingType implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'competitive_prices' => 'setCompetitivePrices',
         'number_of_offer_listings' => 'setNumberOfOfferListings',
         'trade_in_value' => 'setTradeInValue',
@@ -103,7 +103,7 @@ class CompetitivePricingType implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'competitive_prices' => 'getCompetitivePrices',
         'number_of_offer_listings' => 'getNumberOfOfferListings',
         'trade_in_value' => 'getTradeInValue',
@@ -114,7 +114,7 @@ class CompetitivePricingType implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class TransportDetailOutput implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'TransportDetailOutput';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'TransportDetailOutput';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'partnered_small_parcel_data' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredSmallParcelDataOutput',
         'non_partnered_small_parcel_data' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\NonPartneredSmallParcelDataOutput',
         'partnered_ltl_data' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredLtlDataOutput',
@@ -70,7 +70,7 @@ class TransportDetailOutput implements \ArrayAccess, \JsonSerializable, ModelInt
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'partnered_small_parcel_data' => null,
         'non_partnered_small_parcel_data' => null,
         'partnered_ltl_data' => null,
@@ -83,7 +83,7 @@ class TransportDetailOutput implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'partnered_small_parcel_data' => 'PartneredSmallParcelData',
         'non_partnered_small_parcel_data' => 'NonPartneredSmallParcelData',
         'partnered_ltl_data' => 'PartneredLtlData',
@@ -95,7 +95,7 @@ class TransportDetailOutput implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'partnered_small_parcel_data' => 'setPartneredSmallParcelData',
         'non_partnered_small_parcel_data' => 'setNonPartneredSmallParcelData',
         'partnered_ltl_data' => 'setPartneredLtlData',
@@ -107,7 +107,7 @@ class TransportDetailOutput implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'partnered_small_parcel_data' => 'getPartneredSmallParcelData',
         'non_partnered_small_parcel_data' => 'getNonPartneredSmallParcelData',
         'partnered_ltl_data' => 'getPartneredLtlData',
@@ -119,7 +119,7 @@ class TransportDetailOutput implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

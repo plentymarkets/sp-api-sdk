@@ -49,14 +49,14 @@ class GetMessagingActionsForOrderResponse implements \ArrayAccess, \JsonSerializ
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetMessagingActionsForOrderResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetMessagingActionsForOrderResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         '_links' => '\AmazonPHP\SellingPartner\Model\Messaging\GetMessagingActionsForOrderResponseLinks',
         '_embedded' => '\AmazonPHP\SellingPartner\Model\Messaging\GetMessagingActionsForOrderResponseEmbedded',
         'errors' => '\AmazonPHP\SellingPartner\Model\Messaging\Error[]',
@@ -69,7 +69,7 @@ class GetMessagingActionsForOrderResponse implements \ArrayAccess, \JsonSerializ
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         '_links' => null,
         '_embedded' => null,
         'errors' => null,
@@ -81,7 +81,7 @@ class GetMessagingActionsForOrderResponse implements \ArrayAccess, \JsonSerializ
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         '_links' => '_links',
         '_embedded' => '_embedded',
         'errors' => 'errors',
@@ -92,7 +92,7 @@ class GetMessagingActionsForOrderResponse implements \ArrayAccess, \JsonSerializ
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         '_links' => 'setLinks',
         '_embedded' => 'setEmbedded',
         'errors' => 'setErrors',
@@ -103,7 +103,7 @@ class GetMessagingActionsForOrderResponse implements \ArrayAccess, \JsonSerializ
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         '_links' => 'getLinks',
         '_embedded' => 'getEmbedded',
         'errors' => 'getErrors',
@@ -114,7 +114,7 @@ class GetMessagingActionsForOrderResponse implements \ArrayAccess, \JsonSerializ
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -42,7 +42,7 @@ class InboundGuidance
 
     public const INBOUND_OK = 'InboundOK';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

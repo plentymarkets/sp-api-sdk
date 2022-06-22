@@ -49,14 +49,14 @@ class GetInboundGuidanceResult implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetInboundGuidanceResult';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetInboundGuidanceResult';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'sku_inbound_guidance_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SKUInboundGuidance[]',
         'invalid_sku_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InvalidSKU[]',
         'asin_inbound_guidance_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ASINInboundGuidance[]',
@@ -70,7 +70,7 @@ class GetInboundGuidanceResult implements \ArrayAccess, \JsonSerializable, Model
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'sku_inbound_guidance_list' => null,
         'invalid_sku_list' => null,
         'asin_inbound_guidance_list' => null,
@@ -83,7 +83,7 @@ class GetInboundGuidanceResult implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'sku_inbound_guidance_list' => 'SKUInboundGuidanceList',
         'invalid_sku_list' => 'InvalidSKUList',
         'asin_inbound_guidance_list' => 'ASINInboundGuidanceList',
@@ -95,7 +95,7 @@ class GetInboundGuidanceResult implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'sku_inbound_guidance_list' => 'setSkuInboundGuidanceList',
         'invalid_sku_list' => 'setInvalidSkuList',
         'asin_inbound_guidance_list' => 'setAsinInboundGuidanceList',
@@ -107,7 +107,7 @@ class GetInboundGuidanceResult implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'sku_inbound_guidance_list' => 'getSkuInboundGuidanceList',
         'invalid_sku_list' => 'getInvalidSkuList',
         'asin_inbound_guidance_list' => 'getAsinInboundGuidanceList',
@@ -119,7 +119,7 @@ class GetInboundGuidanceResult implements \ArrayAccess, \JsonSerializable, Model
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

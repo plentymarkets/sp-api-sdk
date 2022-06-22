@@ -49,14 +49,14 @@ class ShippingService implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ShippingService';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ShippingService';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'shipping_service_name' => 'string',
         'carrier_name' => 'string',
         'shipping_service_id' => 'string',
@@ -79,7 +79,7 @@ class ShippingService implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'shipping_service_name' => null,
         'carrier_name' => null,
         'shipping_service_id' => null,
@@ -101,7 +101,7 @@ class ShippingService implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'shipping_service_name' => 'ShippingServiceName',
         'carrier_name' => 'CarrierName',
         'shipping_service_id' => 'ShippingServiceId',
@@ -122,7 +122,7 @@ class ShippingService implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'shipping_service_name' => 'setShippingServiceName',
         'carrier_name' => 'setCarrierName',
         'shipping_service_id' => 'setShippingServiceId',
@@ -143,7 +143,7 @@ class ShippingService implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'shipping_service_name' => 'getShippingServiceName',
         'carrier_name' => 'getCarrierName',
         'shipping_service_id' => 'getShippingServiceId',
@@ -164,7 +164,7 @@ class ShippingService implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

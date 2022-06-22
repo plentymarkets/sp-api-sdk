@@ -49,14 +49,14 @@ class InventoryDetails implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'InventoryDetails';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'InventoryDetails';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'fulfillable_quantity' => 'int',
         'inbound_working_quantity' => 'int',
         'inbound_shipped_quantity' => 'int',
@@ -73,7 +73,7 @@ class InventoryDetails implements \ArrayAccess, \JsonSerializable, ModelInterfac
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'fulfillable_quantity' => null,
         'inbound_working_quantity' => null,
         'inbound_shipped_quantity' => null,
@@ -89,7 +89,7 @@ class InventoryDetails implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'fulfillable_quantity' => 'fulfillableQuantity',
         'inbound_working_quantity' => 'inboundWorkingQuantity',
         'inbound_shipped_quantity' => 'inboundShippedQuantity',
@@ -104,7 +104,7 @@ class InventoryDetails implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'fulfillable_quantity' => 'setFulfillableQuantity',
         'inbound_working_quantity' => 'setInboundWorkingQuantity',
         'inbound_shipped_quantity' => 'setInboundShippedQuantity',
@@ -119,7 +119,7 @@ class InventoryDetails implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'fulfillable_quantity' => 'getFulfillableQuantity',
         'inbound_working_quantity' => 'getInboundWorkingQuantity',
         'inbound_shipped_quantity' => 'getInboundShippedQuantity',
@@ -134,7 +134,7 @@ class InventoryDetails implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

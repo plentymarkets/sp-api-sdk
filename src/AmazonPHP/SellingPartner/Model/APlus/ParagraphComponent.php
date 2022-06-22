@@ -49,14 +49,14 @@ class ParagraphComponent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ParagraphComponent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ParagraphComponent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'text_list' => '\AmazonPHP\SellingPartner\Model\APlus\TextComponent[]',
     ];
 
@@ -67,7 +67,7 @@ class ParagraphComponent implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'text_list' => null,
     ];
 
@@ -77,7 +77,7 @@ class ParagraphComponent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'text_list' => 'textList',
     ];
 
@@ -86,7 +86,7 @@ class ParagraphComponent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'text_list' => 'setTextList',
     ];
 
@@ -95,7 +95,7 @@ class ParagraphComponent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'text_list' => 'getTextList',
     ];
 
@@ -104,7 +104,7 @@ class ParagraphComponent implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

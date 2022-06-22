@@ -74,7 +74,7 @@ class CurrentStatus
 
     public const RETURN_RECEIVED_IN_FC = 'RETURN_RECEIVED_IN_FC';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

@@ -49,14 +49,14 @@ class UnfulfillableQuantity implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'UnfulfillableQuantity';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'UnfulfillableQuantity';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'total_unfulfillable_quantity' => 'int',
         'customer_damaged_quantity' => 'int',
         'warehouse_damaged_quantity' => 'int',
@@ -73,7 +73,7 @@ class UnfulfillableQuantity implements \ArrayAccess, \JsonSerializable, ModelInt
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'total_unfulfillable_quantity' => null,
         'customer_damaged_quantity' => null,
         'warehouse_damaged_quantity' => null,
@@ -89,7 +89,7 @@ class UnfulfillableQuantity implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'total_unfulfillable_quantity' => 'totalUnfulfillableQuantity',
         'customer_damaged_quantity' => 'customerDamagedQuantity',
         'warehouse_damaged_quantity' => 'warehouseDamagedQuantity',
@@ -104,7 +104,7 @@ class UnfulfillableQuantity implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'total_unfulfillable_quantity' => 'setTotalUnfulfillableQuantity',
         'customer_damaged_quantity' => 'setCustomerDamagedQuantity',
         'warehouse_damaged_quantity' => 'setWarehouseDamagedQuantity',
@@ -119,7 +119,7 @@ class UnfulfillableQuantity implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'total_unfulfillable_quantity' => 'getTotalUnfulfillableQuantity',
         'customer_damaged_quantity' => 'getCustomerDamagedQuantity',
         'warehouse_damaged_quantity' => 'getWarehouseDamagedQuantity',
@@ -134,7 +134,7 @@ class UnfulfillableQuantity implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

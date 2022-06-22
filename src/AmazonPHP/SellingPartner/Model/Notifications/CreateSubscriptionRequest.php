@@ -49,14 +49,14 @@ class CreateSubscriptionRequest implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CreateSubscriptionRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CreateSubscriptionRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'payload_version' => 'string',
         'destination_id' => 'string',
         'processing_directive' => '\AmazonPHP\SellingPartner\Model\Notifications\ProcessingDirective',
@@ -69,7 +69,7 @@ class CreateSubscriptionRequest implements \ArrayAccess, \JsonSerializable, Mode
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'payload_version' => null,
         'destination_id' => null,
         'processing_directive' => null,
@@ -81,7 +81,7 @@ class CreateSubscriptionRequest implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'payload_version' => 'payloadVersion',
         'destination_id' => 'destinationId',
         'processing_directive' => 'processingDirective',
@@ -92,7 +92,7 @@ class CreateSubscriptionRequest implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'payload_version' => 'setPayloadVersion',
         'destination_id' => 'setDestinationId',
         'processing_directive' => 'setProcessingDirective',
@@ -103,7 +103,7 @@ class CreateSubscriptionRequest implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'payload_version' => 'getPayloadVersion',
         'destination_id' => 'getDestinationId',
         'processing_directive' => 'getProcessingDirective',
@@ -114,7 +114,7 @@ class CreateSubscriptionRequest implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

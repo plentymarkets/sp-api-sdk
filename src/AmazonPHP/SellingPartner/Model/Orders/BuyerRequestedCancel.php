@@ -49,14 +49,14 @@ class BuyerRequestedCancel implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'BuyerRequestedCancel';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'BuyerRequestedCancel';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'is_buyer_requested_cancel' => 'bool',
         'buyer_cancel_reason' => 'string',
     ];
@@ -68,7 +68,7 @@ class BuyerRequestedCancel implements \ArrayAccess, \JsonSerializable, ModelInte
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'is_buyer_requested_cancel' => null,
         'buyer_cancel_reason' => null,
     ];
@@ -79,7 +79,7 @@ class BuyerRequestedCancel implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'is_buyer_requested_cancel' => 'IsBuyerRequestedCancel',
         'buyer_cancel_reason' => 'BuyerCancelReason',
     ];
@@ -89,7 +89,7 @@ class BuyerRequestedCancel implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'is_buyer_requested_cancel' => 'setIsBuyerRequestedCancel',
         'buyer_cancel_reason' => 'setBuyerCancelReason',
     ];
@@ -99,7 +99,7 @@ class BuyerRequestedCancel implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'is_buyer_requested_cancel' => 'getIsBuyerRequestedCancel',
         'buyer_cancel_reason' => 'getBuyerCancelReason',
     ];
@@ -109,7 +109,7 @@ class BuyerRequestedCancel implements \ArrayAccess, \JsonSerializable, ModelInte
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

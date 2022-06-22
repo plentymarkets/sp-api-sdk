@@ -49,14 +49,14 @@ class StandardSingleSideImageModule implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'StandardSingleSideImageModule';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'StandardSingleSideImageModule';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'image_position_type' => '\AmazonPHP\SellingPartner\Model\APlus\PositionType',
         'block' => '\AmazonPHP\SellingPartner\Model\APlus\StandardImageTextBlock',
     ];
@@ -68,7 +68,7 @@ class StandardSingleSideImageModule implements \ArrayAccess, \JsonSerializable, 
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'image_position_type' => null,
         'block' => null,
     ];
@@ -79,7 +79,7 @@ class StandardSingleSideImageModule implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'image_position_type' => 'imagePositionType',
         'block' => 'block',
     ];
@@ -89,7 +89,7 @@ class StandardSingleSideImageModule implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'image_position_type' => 'setImagePositionType',
         'block' => 'setBlock',
     ];
@@ -99,7 +99,7 @@ class StandardSingleSideImageModule implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'image_position_type' => 'getImagePositionType',
         'block' => 'getBlock',
     ];
@@ -109,7 +109,7 @@ class StandardSingleSideImageModule implements \ArrayAccess, \JsonSerializable, 
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

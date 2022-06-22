@@ -49,14 +49,14 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Item';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Item';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'order_item_id' => 'string',
         'quantity' => 'int',
         'item_weight' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Weight',
@@ -72,7 +72,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'order_item_id' => null,
         'quantity' => 'int32',
         'item_weight' => null,
@@ -87,7 +87,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'order_item_id' => 'OrderItemId',
         'quantity' => 'Quantity',
         'item_weight' => 'ItemWeight',
@@ -101,7 +101,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'order_item_id' => 'setOrderItemId',
         'quantity' => 'setQuantity',
         'item_weight' => 'setItemWeight',
@@ -115,7 +115,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'order_item_id' => 'getOrderItemId',
         'quantity' => 'getQuantity',
         'item_weight' => 'getItemWeight',
@@ -129,7 +129,7 @@ class Item implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

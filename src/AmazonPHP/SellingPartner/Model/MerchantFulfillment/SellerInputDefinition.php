@@ -49,14 +49,14 @@ class SellerInputDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'SellerInputDefinition';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'SellerInputDefinition';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'is_required' => 'bool',
         'data_type' => 'string',
         'constraints' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Constraint[]',
@@ -73,7 +73,7 @@ class SellerInputDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'is_required' => null,
         'data_type' => null,
         'constraints' => null,
@@ -89,7 +89,7 @@ class SellerInputDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'is_required' => 'IsRequired',
         'data_type' => 'DataType',
         'constraints' => 'Constraints',
@@ -104,7 +104,7 @@ class SellerInputDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'is_required' => 'setIsRequired',
         'data_type' => 'setDataType',
         'constraints' => 'setConstraints',
@@ -119,7 +119,7 @@ class SellerInputDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'is_required' => 'getIsRequired',
         'data_type' => 'getDataType',
         'constraints' => 'getConstraints',
@@ -134,7 +134,7 @@ class SellerInputDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class SKUInboundGuidance implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'SKUInboundGuidance';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'SKUInboundGuidance';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'seller_sku' => 'string',
         'asin' => 'string',
         'inbound_guidance' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundGuidance',
@@ -70,7 +70,7 @@ class SKUInboundGuidance implements \ArrayAccess, \JsonSerializable, ModelInterf
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'seller_sku' => null,
         'asin' => null,
         'inbound_guidance' => null,
@@ -83,7 +83,7 @@ class SKUInboundGuidance implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'seller_sku' => 'SellerSKU',
         'asin' => 'ASIN',
         'inbound_guidance' => 'InboundGuidance',
@@ -95,7 +95,7 @@ class SKUInboundGuidance implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'seller_sku' => 'setSellerSku',
         'asin' => 'setAsin',
         'inbound_guidance' => 'setInboundGuidance',
@@ -107,7 +107,7 @@ class SKUInboundGuidance implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'seller_sku' => 'getSellerSku',
         'asin' => 'getAsin',
         'inbound_guidance' => 'getInboundGuidance',
@@ -119,7 +119,7 @@ class SKUInboundGuidance implements \ArrayAccess, \JsonSerializable, ModelInterf
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class TextComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'TextComponent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'TextComponent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'value' => 'string',
         'decorator_set' => '\AmazonPHP\SellingPartner\Model\APlus\Decorator[]',
     ];
@@ -68,7 +68,7 @@ class TextComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'value' => null,
         'decorator_set' => null,
     ];
@@ -79,7 +79,7 @@ class TextComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'value' => 'value',
         'decorator_set' => 'decoratorSet',
     ];
@@ -89,7 +89,7 @@ class TextComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'value' => 'setValue',
         'decorator_set' => 'setDecoratorSet',
     ];
@@ -99,7 +99,7 @@ class TextComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'value' => 'getValue',
         'decorator_set' => 'getDecoratorSet',
     ];
@@ -109,7 +109,7 @@ class TextComponent implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

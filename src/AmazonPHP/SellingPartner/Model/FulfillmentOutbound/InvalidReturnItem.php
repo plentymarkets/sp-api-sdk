@@ -49,14 +49,14 @@ class InvalidReturnItem implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'InvalidReturnItem';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'InvalidReturnItem';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'seller_return_item_id' => 'string',
         'seller_fulfillment_order_item_id' => 'string',
         'invalid_item_reason' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\InvalidItemReason',
@@ -69,7 +69,7 @@ class InvalidReturnItem implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'seller_return_item_id' => null,
         'seller_fulfillment_order_item_id' => null,
         'invalid_item_reason' => null,
@@ -81,7 +81,7 @@ class InvalidReturnItem implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'seller_return_item_id' => 'sellerReturnItemId',
         'seller_fulfillment_order_item_id' => 'sellerFulfillmentOrderItemId',
         'invalid_item_reason' => 'invalidItemReason',
@@ -92,7 +92,7 @@ class InvalidReturnItem implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'seller_return_item_id' => 'setSellerReturnItemId',
         'seller_fulfillment_order_item_id' => 'setSellerFulfillmentOrderItemId',
         'invalid_item_reason' => 'setInvalidItemReason',
@@ -103,7 +103,7 @@ class InvalidReturnItem implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'seller_return_item_id' => 'getSellerReturnItemId',
         'seller_fulfillment_order_item_id' => 'getSellerFulfillmentOrderItemId',
         'invalid_item_reason' => 'getInvalidItemReason',
@@ -114,7 +114,7 @@ class InvalidReturnItem implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

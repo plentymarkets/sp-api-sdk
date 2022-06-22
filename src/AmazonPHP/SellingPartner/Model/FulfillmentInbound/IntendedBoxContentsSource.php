@@ -44,7 +44,7 @@ class IntendedBoxContentsSource
 
     public const _2_D_BARCODE = '2D_BARCODE';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

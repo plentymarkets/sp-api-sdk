@@ -59,14 +59,14 @@ class Report implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Report';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Report';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'marketplace_ids' => 'string[]',
         'report_id' => 'string',
         'report_type' => 'string',
@@ -87,7 +87,7 @@ class Report implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'marketplace_ids' => null,
         'report_id' => null,
         'report_type' => null,
@@ -107,7 +107,7 @@ class Report implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'marketplace_ids' => 'marketplaceIds',
         'report_id' => 'reportId',
         'report_type' => 'reportType',
@@ -126,7 +126,7 @@ class Report implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'marketplace_ids' => 'setMarketplaceIds',
         'report_id' => 'setReportId',
         'report_type' => 'setReportType',
@@ -145,7 +145,7 @@ class Report implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'marketplace_ids' => 'getMarketplaceIds',
         'report_id' => 'getReportId',
         'report_type' => 'getReportType',
@@ -164,7 +164,7 @@ class Report implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

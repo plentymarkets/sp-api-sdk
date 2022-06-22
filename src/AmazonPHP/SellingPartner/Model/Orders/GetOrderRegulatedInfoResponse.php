@@ -49,14 +49,14 @@ class GetOrderRegulatedInfoResponse implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetOrderRegulatedInfoResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetOrderRegulatedInfoResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'payload' => '\AmazonPHP\SellingPartner\Model\Orders\OrderRegulatedInfo',
         'errors' => '\AmazonPHP\SellingPartner\Model\Orders\Error[]',
     ];
@@ -68,7 +68,7 @@ class GetOrderRegulatedInfoResponse implements \ArrayAccess, \JsonSerializable, 
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'payload' => null,
         'errors' => null,
     ];
@@ -79,7 +79,7 @@ class GetOrderRegulatedInfoResponse implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'payload' => 'payload',
         'errors' => 'errors',
     ];
@@ -89,7 +89,7 @@ class GetOrderRegulatedInfoResponse implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'payload' => 'setPayload',
         'errors' => 'setErrors',
     ];
@@ -99,7 +99,7 @@ class GetOrderRegulatedInfoResponse implements \ArrayAccess, \JsonSerializable, 
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'payload' => 'getPayload',
         'errors' => 'getErrors',
     ];
@@ -109,7 +109,7 @@ class GetOrderRegulatedInfoResponse implements \ArrayAccess, \JsonSerializable, 
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

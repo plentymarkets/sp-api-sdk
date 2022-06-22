@@ -49,14 +49,14 @@ class StandardTechSpecsModule implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'StandardTechSpecsModule';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'StandardTechSpecsModule';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'headline' => '\AmazonPHP\SellingPartner\Model\APlus\TextComponent',
         'specification_list' => '\AmazonPHP\SellingPartner\Model\APlus\StandardTextPairBlock[]',
         'table_count' => 'int',
@@ -69,7 +69,7 @@ class StandardTechSpecsModule implements \ArrayAccess, \JsonSerializable, ModelI
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'headline' => null,
         'specification_list' => null,
         'table_count' => null,
@@ -81,7 +81,7 @@ class StandardTechSpecsModule implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'headline' => 'headline',
         'specification_list' => 'specificationList',
         'table_count' => 'tableCount',
@@ -92,7 +92,7 @@ class StandardTechSpecsModule implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'headline' => 'setHeadline',
         'specification_list' => 'setSpecificationList',
         'table_count' => 'setTableCount',
@@ -103,7 +103,7 @@ class StandardTechSpecsModule implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'headline' => 'getHeadline',
         'specification_list' => 'getSpecificationList',
         'table_count' => 'getTableCount',
@@ -114,7 +114,7 @@ class StandardTechSpecsModule implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

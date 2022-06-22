@@ -49,14 +49,14 @@ class InboundShipmentPlanItem implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'InboundShipmentPlanItem';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'InboundShipmentPlanItem';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'seller_sku' => 'string',
         'fulfillment_network_sku' => 'string',
         'quantity' => 'int',
@@ -70,7 +70,7 @@ class InboundShipmentPlanItem implements \ArrayAccess, \JsonSerializable, ModelI
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'seller_sku' => null,
         'fulfillment_network_sku' => null,
         'quantity' => 'int32',
@@ -83,7 +83,7 @@ class InboundShipmentPlanItem implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'seller_sku' => 'SellerSKU',
         'fulfillment_network_sku' => 'FulfillmentNetworkSKU',
         'quantity' => 'Quantity',
@@ -95,7 +95,7 @@ class InboundShipmentPlanItem implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'seller_sku' => 'setSellerSku',
         'fulfillment_network_sku' => 'setFulfillmentNetworkSku',
         'quantity' => 'setQuantity',
@@ -107,7 +107,7 @@ class InboundShipmentPlanItem implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'seller_sku' => 'getSellerSku',
         'fulfillment_network_sku' => 'getFulfillmentNetworkSku',
         'quantity' => 'getQuantity',
@@ -119,7 +119,7 @@ class InboundShipmentPlanItem implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

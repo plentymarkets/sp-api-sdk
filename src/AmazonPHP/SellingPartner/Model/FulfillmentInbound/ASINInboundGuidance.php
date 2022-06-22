@@ -49,14 +49,14 @@ class ASINInboundGuidance implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ASINInboundGuidance';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ASINInboundGuidance';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'asin' => 'string',
         'inbound_guidance' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundGuidance',
         'guidance_reason_list' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GuidanceReason[]',
@@ -69,7 +69,7 @@ class ASINInboundGuidance implements \ArrayAccess, \JsonSerializable, ModelInter
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'asin' => null,
         'inbound_guidance' => null,
         'guidance_reason_list' => null,
@@ -81,7 +81,7 @@ class ASINInboundGuidance implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'asin' => 'ASIN',
         'inbound_guidance' => 'InboundGuidance',
         'guidance_reason_list' => 'GuidanceReasonList',
@@ -92,7 +92,7 @@ class ASINInboundGuidance implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'asin' => 'setAsin',
         'inbound_guidance' => 'setInboundGuidance',
         'guidance_reason_list' => 'setGuidanceReasonList',
@@ -103,7 +103,7 @@ class ASINInboundGuidance implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'asin' => 'getAsin',
         'inbound_guidance' => 'getInboundGuidance',
         'guidance_reason_list' => 'getGuidanceReasonList',
@@ -114,7 +114,7 @@ class ASINInboundGuidance implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

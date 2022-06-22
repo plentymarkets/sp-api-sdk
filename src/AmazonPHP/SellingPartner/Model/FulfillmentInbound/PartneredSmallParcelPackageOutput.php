@@ -49,14 +49,14 @@ class PartneredSmallParcelPackageOutput implements \ArrayAccess, \JsonSerializab
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'PartneredSmallParcelPackageOutput';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'PartneredSmallParcelPackageOutput';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'dimensions' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions',
         'weight' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight',
         'carrier_name' => 'string',
@@ -71,7 +71,7 @@ class PartneredSmallParcelPackageOutput implements \ArrayAccess, \JsonSerializab
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'dimensions' => null,
         'weight' => null,
         'carrier_name' => null,
@@ -85,7 +85,7 @@ class PartneredSmallParcelPackageOutput implements \ArrayAccess, \JsonSerializab
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'dimensions' => 'Dimensions',
         'weight' => 'Weight',
         'carrier_name' => 'CarrierName',
@@ -98,7 +98,7 @@ class PartneredSmallParcelPackageOutput implements \ArrayAccess, \JsonSerializab
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'dimensions' => 'setDimensions',
         'weight' => 'setWeight',
         'carrier_name' => 'setCarrierName',
@@ -111,7 +111,7 @@ class PartneredSmallParcelPackageOutput implements \ArrayAccess, \JsonSerializab
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'dimensions' => 'getDimensions',
         'weight' => 'getWeight',
         'carrier_name' => 'getCarrierName',
@@ -124,7 +124,7 @@ class PartneredSmallParcelPackageOutput implements \ArrayAccess, \JsonSerializab
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

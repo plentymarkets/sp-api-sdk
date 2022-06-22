@@ -49,14 +49,14 @@ class GetInventorySummariesResult implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetInventorySummariesResult';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetInventorySummariesResult';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'granularity' => '\AmazonPHP\SellingPartner\Model\FBAInventory\Granularity',
         'inventory_summaries' => '\AmazonPHP\SellingPartner\Model\FBAInventory\InventorySummary[]',
     ];
@@ -68,7 +68,7 @@ class GetInventorySummariesResult implements \ArrayAccess, \JsonSerializable, Mo
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'granularity' => null,
         'inventory_summaries' => null,
     ];
@@ -79,7 +79,7 @@ class GetInventorySummariesResult implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'granularity' => 'granularity',
         'inventory_summaries' => 'inventorySummaries',
     ];
@@ -89,7 +89,7 @@ class GetInventorySummariesResult implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'granularity' => 'setGranularity',
         'inventory_summaries' => 'setInventorySummaries',
     ];
@@ -99,7 +99,7 @@ class GetInventorySummariesResult implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'granularity' => 'getGranularity',
         'inventory_summaries' => 'getInventorySummaries',
     ];
@@ -109,7 +109,7 @@ class GetInventorySummariesResult implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

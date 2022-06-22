@@ -49,14 +49,14 @@ class ScheduledDeliveryInfo implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ScheduledDeliveryInfo';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ScheduledDeliveryInfo';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'delivery_time_zone' => 'string',
         'delivery_windows' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\DeliveryWindow[]',
     ];
@@ -68,7 +68,7 @@ class ScheduledDeliveryInfo implements \ArrayAccess, \JsonSerializable, ModelInt
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'delivery_time_zone' => null,
         'delivery_windows' => null,
     ];
@@ -79,7 +79,7 @@ class ScheduledDeliveryInfo implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'delivery_time_zone' => 'deliveryTimeZone',
         'delivery_windows' => 'deliveryWindows',
     ];
@@ -89,7 +89,7 @@ class ScheduledDeliveryInfo implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'delivery_time_zone' => 'setDeliveryTimeZone',
         'delivery_windows' => 'setDeliveryWindows',
     ];
@@ -99,7 +99,7 @@ class ScheduledDeliveryInfo implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'delivery_time_zone' => 'getDeliveryTimeZone',
         'delivery_windows' => 'getDeliveryWindows',
     ];
@@ -109,7 +109,7 @@ class ScheduledDeliveryInfo implements \ArrayAccess, \JsonSerializable, ModelInt
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

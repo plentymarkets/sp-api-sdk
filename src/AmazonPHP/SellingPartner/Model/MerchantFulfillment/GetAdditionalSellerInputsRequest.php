@@ -49,14 +49,14 @@ class GetAdditionalSellerInputsRequest implements \ArrayAccess, \JsonSerializabl
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetAdditionalSellerInputsRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetAdditionalSellerInputsRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'shipping_service_id' => 'string',
         'ship_from_address' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Address',
         'order_id' => 'string',
@@ -69,7 +69,7 @@ class GetAdditionalSellerInputsRequest implements \ArrayAccess, \JsonSerializabl
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'shipping_service_id' => null,
         'ship_from_address' => null,
         'order_id' => null,
@@ -81,7 +81,7 @@ class GetAdditionalSellerInputsRequest implements \ArrayAccess, \JsonSerializabl
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'shipping_service_id' => 'ShippingServiceId',
         'ship_from_address' => 'ShipFromAddress',
         'order_id' => 'OrderId',
@@ -92,7 +92,7 @@ class GetAdditionalSellerInputsRequest implements \ArrayAccess, \JsonSerializabl
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'shipping_service_id' => 'setShippingServiceId',
         'ship_from_address' => 'setShipFromAddress',
         'order_id' => 'setOrderId',
@@ -103,7 +103,7 @@ class GetAdditionalSellerInputsRequest implements \ArrayAccess, \JsonSerializabl
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'shipping_service_id' => 'getShippingServiceId',
         'ship_from_address' => 'getShipFromAddress',
         'order_id' => 'getOrderId',
@@ -114,7 +114,7 @@ class GetAdditionalSellerInputsRequest implements \ArrayAccess, \JsonSerializabl
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

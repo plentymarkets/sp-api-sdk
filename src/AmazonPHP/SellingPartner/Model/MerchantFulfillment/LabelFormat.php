@@ -48,7 +48,7 @@ class LabelFormat
 
     public const SHIPPING_SERVICE_DEFAULT = 'ShippingServiceDefault';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

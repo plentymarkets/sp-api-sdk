@@ -57,14 +57,14 @@ class ItemDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ItemDetails';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ItemDetails';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'purchase_order_number' => 'string',
         'lot_number' => 'string',
         'expiry' => '\AmazonPHP\SellingPartner\Model\VendorShipments\Expiry',
@@ -79,7 +79,7 @@ class ItemDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'purchase_order_number' => null,
         'lot_number' => null,
         'expiry' => null,
@@ -93,7 +93,7 @@ class ItemDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'purchase_order_number' => 'purchaseOrderNumber',
         'lot_number' => 'lotNumber',
         'expiry' => 'expiry',
@@ -106,7 +106,7 @@ class ItemDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'purchase_order_number' => 'setPurchaseOrderNumber',
         'lot_number' => 'setLotNumber',
         'expiry' => 'setExpiry',
@@ -119,7 +119,7 @@ class ItemDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'purchase_order_number' => 'getPurchaseOrderNumber',
         'lot_number' => 'getLotNumber',
         'expiry' => 'getExpiry',
@@ -132,7 +132,7 @@ class ItemDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

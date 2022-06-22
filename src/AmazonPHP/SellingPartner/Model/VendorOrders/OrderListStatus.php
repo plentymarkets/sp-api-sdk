@@ -49,14 +49,14 @@ class OrderListStatus implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'OrderListStatus';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'OrderListStatus';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'pagination' => '\AmazonPHP\SellingPartner\Model\VendorOrders\Pagination',
         'orders_status' => '\AmazonPHP\SellingPartner\Model\VendorOrders\OrderStatus[]',
     ];
@@ -68,7 +68,7 @@ class OrderListStatus implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'pagination' => null,
         'orders_status' => null,
     ];
@@ -79,7 +79,7 @@ class OrderListStatus implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'pagination' => 'pagination',
         'orders_status' => 'ordersStatus',
     ];
@@ -89,7 +89,7 @@ class OrderListStatus implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'pagination' => 'setPagination',
         'orders_status' => 'setOrdersStatus',
     ];
@@ -99,7 +99,7 @@ class OrderListStatus implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'pagination' => 'getPagination',
         'orders_status' => 'getOrdersStatus',
     ];
@@ -109,7 +109,7 @@ class OrderListStatus implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

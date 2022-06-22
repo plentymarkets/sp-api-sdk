@@ -49,14 +49,14 @@ class PartneredEstimate implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'PartneredEstimate';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'PartneredEstimate';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'amount' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Amount',
         'confirm_deadline' => '\DateTime',
         'void_deadline' => '\DateTime',
@@ -69,7 +69,7 @@ class PartneredEstimate implements \ArrayAccess, \JsonSerializable, ModelInterfa
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'amount' => null,
         'confirm_deadline' => 'date-time',
         'void_deadline' => 'date-time',
@@ -81,7 +81,7 @@ class PartneredEstimate implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'amount' => 'Amount',
         'confirm_deadline' => 'ConfirmDeadline',
         'void_deadline' => 'VoidDeadline',
@@ -92,7 +92,7 @@ class PartneredEstimate implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'amount' => 'setAmount',
         'confirm_deadline' => 'setConfirmDeadline',
         'void_deadline' => 'setVoidDeadline',
@@ -103,7 +103,7 @@ class PartneredEstimate implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'amount' => 'getAmount',
         'confirm_deadline' => 'getConfirmDeadline',
         'void_deadline' => 'getVoidDeadline',
@@ -114,7 +114,7 @@ class PartneredEstimate implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

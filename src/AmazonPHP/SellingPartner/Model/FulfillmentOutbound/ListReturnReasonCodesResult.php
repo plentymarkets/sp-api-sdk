@@ -49,14 +49,14 @@ class ListReturnReasonCodesResult implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ListReturnReasonCodesResult';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ListReturnReasonCodesResult';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'reason_code_details' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReasonCodeDetails[]',
     ];
 
@@ -67,7 +67,7 @@ class ListReturnReasonCodesResult implements \ArrayAccess, \JsonSerializable, Mo
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'reason_code_details' => null,
     ];
 
@@ -77,7 +77,7 @@ class ListReturnReasonCodesResult implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'reason_code_details' => 'reasonCodeDetails',
     ];
 
@@ -86,7 +86,7 @@ class ListReturnReasonCodesResult implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'reason_code_details' => 'setReasonCodeDetails',
     ];
 
@@ -95,7 +95,7 @@ class ListReturnReasonCodesResult implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'reason_code_details' => 'getReasonCodeDetails',
     ];
 
@@ -104,7 +104,7 @@ class ListReturnReasonCodesResult implements \ArrayAccess, \JsonSerializable, Mo
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

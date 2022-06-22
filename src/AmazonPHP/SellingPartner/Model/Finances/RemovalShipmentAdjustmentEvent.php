@@ -49,14 +49,14 @@ class RemovalShipmentAdjustmentEvent implements \ArrayAccess, \JsonSerializable,
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'RemovalShipmentAdjustmentEvent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'RemovalShipmentAdjustmentEvent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'posted_date' => '\DateTime',
         'adjustment_event_id' => 'string',
         'merchant_order_id' => 'string',
@@ -72,7 +72,7 @@ class RemovalShipmentAdjustmentEvent implements \ArrayAccess, \JsonSerializable,
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'posted_date' => 'date-time',
         'adjustment_event_id' => null,
         'merchant_order_id' => null,
@@ -87,7 +87,7 @@ class RemovalShipmentAdjustmentEvent implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'posted_date' => 'PostedDate',
         'adjustment_event_id' => 'AdjustmentEventId',
         'merchant_order_id' => 'MerchantOrderId',
@@ -101,7 +101,7 @@ class RemovalShipmentAdjustmentEvent implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'posted_date' => 'setPostedDate',
         'adjustment_event_id' => 'setAdjustmentEventId',
         'merchant_order_id' => 'setMerchantOrderId',
@@ -115,7 +115,7 @@ class RemovalShipmentAdjustmentEvent implements \ArrayAccess, \JsonSerializable,
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'posted_date' => 'getPostedDate',
         'adjustment_event_id' => 'getAdjustmentEventId',
         'merchant_order_id' => 'getMerchantOrderId',
@@ -129,7 +129,7 @@ class RemovalShipmentAdjustmentEvent implements \ArrayAccess, \JsonSerializable,
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

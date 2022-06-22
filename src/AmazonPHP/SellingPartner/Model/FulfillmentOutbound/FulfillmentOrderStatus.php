@@ -56,7 +56,7 @@ class FulfillmentOrderStatus
 
     public const INVALID = 'Invalid';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

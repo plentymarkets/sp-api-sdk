@@ -49,14 +49,14 @@ class NetworkComminglingTransactionEvent implements \ArrayAccess, \JsonSerializa
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'NetworkComminglingTransactionEvent';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'NetworkComminglingTransactionEvent';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'transaction_type' => 'string',
         'posted_date' => '\DateTime',
         'net_co_transaction_id' => 'string',
@@ -74,7 +74,7 @@ class NetworkComminglingTransactionEvent implements \ArrayAccess, \JsonSerializa
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'transaction_type' => null,
         'posted_date' => 'date-time',
         'net_co_transaction_id' => null,
@@ -91,7 +91,7 @@ class NetworkComminglingTransactionEvent implements \ArrayAccess, \JsonSerializa
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'transaction_type' => 'TransactionType',
         'posted_date' => 'PostedDate',
         'net_co_transaction_id' => 'NetCoTransactionID',
@@ -107,7 +107,7 @@ class NetworkComminglingTransactionEvent implements \ArrayAccess, \JsonSerializa
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'transaction_type' => 'setTransactionType',
         'posted_date' => 'setPostedDate',
         'net_co_transaction_id' => 'setNetCoTransactionId',
@@ -123,7 +123,7 @@ class NetworkComminglingTransactionEvent implements \ArrayAccess, \JsonSerializa
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'transaction_type' => 'getTransactionType',
         'posted_date' => 'getPostedDate',
         'net_co_transaction_id' => 'getNetCoTransactionId',
@@ -139,7 +139,7 @@ class NetworkComminglingTransactionEvent implements \ArrayAccess, \JsonSerializa
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

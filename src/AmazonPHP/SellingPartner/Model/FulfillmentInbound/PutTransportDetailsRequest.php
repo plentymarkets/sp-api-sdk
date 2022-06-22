@@ -49,14 +49,14 @@ class PutTransportDetailsRequest implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'PutTransportDetailsRequest';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'PutTransportDetailsRequest';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'is_partnered' => 'bool',
         'shipment_type' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentType',
         'transport_details' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportDetailInput',
@@ -69,7 +69,7 @@ class PutTransportDetailsRequest implements \ArrayAccess, \JsonSerializable, Mod
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'is_partnered' => null,
         'shipment_type' => null,
         'transport_details' => null,
@@ -81,7 +81,7 @@ class PutTransportDetailsRequest implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'is_partnered' => 'IsPartnered',
         'shipment_type' => 'ShipmentType',
         'transport_details' => 'TransportDetails',
@@ -92,7 +92,7 @@ class PutTransportDetailsRequest implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'is_partnered' => 'setIsPartnered',
         'shipment_type' => 'setShipmentType',
         'transport_details' => 'setTransportDetails',
@@ -103,7 +103,7 @@ class PutTransportDetailsRequest implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'is_partnered' => 'getIsPartnered',
         'shipment_type' => 'getShipmentType',
         'transport_details' => 'getTransportDetails',
@@ -114,7 +114,7 @@ class PutTransportDetailsRequest implements \ArrayAccess, \JsonSerializable, Mod
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -63,14 +63,14 @@ class TaxDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'TaxDetails';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'TaxDetails';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'tax_rate' => 'string',
         'tax_amount' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Money',
         'taxable_amount' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Money',
@@ -84,7 +84,7 @@ class TaxDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'tax_rate' => null,
         'tax_amount' => null,
         'taxable_amount' => null,
@@ -97,7 +97,7 @@ class TaxDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'tax_rate' => 'taxRate',
         'tax_amount' => 'taxAmount',
         'taxable_amount' => 'taxableAmount',
@@ -109,7 +109,7 @@ class TaxDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'tax_rate' => 'setTaxRate',
         'tax_amount' => 'setTaxAmount',
         'taxable_amount' => 'setTaxableAmount',
@@ -121,7 +121,7 @@ class TaxDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'tax_rate' => 'getTaxRate',
         'tax_amount' => 'getTaxAmount',
         'taxable_amount' => 'getTaxableAmount',
@@ -133,7 +133,7 @@ class TaxDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

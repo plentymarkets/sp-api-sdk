@@ -49,14 +49,14 @@ class CreateReportScheduleResponse implements \ArrayAccess, \JsonSerializable, M
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CreateReportScheduleResponse';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CreateReportScheduleResponse';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'report_schedule_id' => 'string',
     ];
 
@@ -67,7 +67,7 @@ class CreateReportScheduleResponse implements \ArrayAccess, \JsonSerializable, M
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'report_schedule_id' => null,
     ];
 
@@ -77,7 +77,7 @@ class CreateReportScheduleResponse implements \ArrayAccess, \JsonSerializable, M
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'report_schedule_id' => 'reportScheduleId',
     ];
 
@@ -86,7 +86,7 @@ class CreateReportScheduleResponse implements \ArrayAccess, \JsonSerializable, M
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'report_schedule_id' => 'setReportScheduleId',
     ];
 
@@ -95,7 +95,7 @@ class CreateReportScheduleResponse implements \ArrayAccess, \JsonSerializable, M
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'report_schedule_id' => 'getReportScheduleId',
     ];
 
@@ -104,7 +104,7 @@ class CreateReportScheduleResponse implements \ArrayAccess, \JsonSerializable, M
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

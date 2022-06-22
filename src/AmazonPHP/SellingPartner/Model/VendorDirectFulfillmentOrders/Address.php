@@ -49,14 +49,14 @@ class Address implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'Address';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'Address';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'name' => 'string',
         'attention' => 'string',
         'address_line1' => 'string',
@@ -78,7 +78,7 @@ class Address implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'name' => null,
         'attention' => null,
         'address_line1' => null,
@@ -99,7 +99,7 @@ class Address implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'name' => 'name',
         'attention' => 'attention',
         'address_line1' => 'addressLine1',
@@ -119,7 +119,7 @@ class Address implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'name' => 'setName',
         'attention' => 'setAttention',
         'address_line1' => 'setAddressLine1',
@@ -139,7 +139,7 @@ class Address implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'name' => 'getName',
         'attention' => 'getAttention',
         'address_line1' => 'getAddressLine1',
@@ -159,7 +159,7 @@ class Address implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

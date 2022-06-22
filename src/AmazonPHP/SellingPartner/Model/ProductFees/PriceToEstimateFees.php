@@ -49,14 +49,14 @@ class PriceToEstimateFees implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'PriceToEstimateFees';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'PriceToEstimateFees';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'listing_price' => '\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
         'shipping' => '\AmazonPHP\SellingPartner\Model\ProductFees\MoneyType',
         'points' => '\AmazonPHP\SellingPartner\Model\ProductFees\Points',
@@ -69,7 +69,7 @@ class PriceToEstimateFees implements \ArrayAccess, \JsonSerializable, ModelInter
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'listing_price' => null,
         'shipping' => null,
         'points' => null,
@@ -81,7 +81,7 @@ class PriceToEstimateFees implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'listing_price' => 'ListingPrice',
         'shipping' => 'Shipping',
         'points' => 'Points',
@@ -92,7 +92,7 @@ class PriceToEstimateFees implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'listing_price' => 'setListingPrice',
         'shipping' => 'setShipping',
         'points' => 'setPoints',
@@ -103,7 +103,7 @@ class PriceToEstimateFees implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'listing_price' => 'getListingPrice',
         'shipping' => 'getShipping',
         'points' => 'getPoints',
@@ -114,7 +114,7 @@ class PriceToEstimateFees implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -49,14 +49,14 @@ class CreateFeedSpecification implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'CreateFeedSpecification';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'CreateFeedSpecification';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'feed_type' => 'string',
         'marketplace_ids' => 'string[]',
         'input_feed_document_id' => 'string',
@@ -70,7 +70,7 @@ class CreateFeedSpecification implements \ArrayAccess, \JsonSerializable, ModelI
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'feed_type' => null,
         'marketplace_ids' => null,
         'input_feed_document_id' => null,
@@ -83,7 +83,7 @@ class CreateFeedSpecification implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'feed_type' => 'feedType',
         'marketplace_ids' => 'marketplaceIds',
         'input_feed_document_id' => 'inputFeedDocumentId',
@@ -95,7 +95,7 @@ class CreateFeedSpecification implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'feed_type' => 'setFeedType',
         'marketplace_ids' => 'setMarketplaceIds',
         'input_feed_document_id' => 'setInputFeedDocumentId',
@@ -107,7 +107,7 @@ class CreateFeedSpecification implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'feed_type' => 'getFeedType',
         'marketplace_ids' => 'getMarketplaceIds',
         'input_feed_document_id' => 'getInputFeedDocumentId',
@@ -119,7 +119,7 @@ class CreateFeedSpecification implements \ArrayAccess, \JsonSerializable, ModelI
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

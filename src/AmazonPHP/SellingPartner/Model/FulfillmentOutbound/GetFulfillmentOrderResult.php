@@ -49,14 +49,14 @@ class GetFulfillmentOrderResult implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetFulfillmentOrderResult';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetFulfillmentOrderResult';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'fulfillment_order' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentOrder',
         'fulfillment_order_items' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentOrderItem[]',
         'fulfillment_shipments' => '\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentShipment[]',
@@ -71,7 +71,7 @@ class GetFulfillmentOrderResult implements \ArrayAccess, \JsonSerializable, Mode
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'fulfillment_order' => null,
         'fulfillment_order_items' => null,
         'fulfillment_shipments' => null,
@@ -85,7 +85,7 @@ class GetFulfillmentOrderResult implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'fulfillment_order' => 'fulfillmentOrder',
         'fulfillment_order_items' => 'fulfillmentOrderItems',
         'fulfillment_shipments' => 'fulfillmentShipments',
@@ -98,7 +98,7 @@ class GetFulfillmentOrderResult implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'fulfillment_order' => 'setFulfillmentOrder',
         'fulfillment_order_items' => 'setFulfillmentOrderItems',
         'fulfillment_shipments' => 'setFulfillmentShipments',
@@ -111,7 +111,7 @@ class GetFulfillmentOrderResult implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'fulfillment_order' => 'getFulfillmentOrder',
         'fulfillment_order_items' => 'getFulfillmentOrderItems',
         'fulfillment_shipments' => 'getFulfillmentShipments',
@@ -124,7 +124,7 @@ class GetFulfillmentOrderResult implements \ArrayAccess, \JsonSerializable, Mode
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

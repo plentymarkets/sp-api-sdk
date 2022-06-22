@@ -49,14 +49,14 @@ class ShippingOfferingFilter implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ShippingOfferingFilter';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ShippingOfferingFilter';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'include_packing_slip_with_label' => 'bool',
         'include_complex_shipping_options' => 'bool',
         'carrier_will_pick_up' => '\AmazonPHP\SellingPartner\Model\MerchantFulfillment\CarrierWillPickUpOption',
@@ -70,7 +70,7 @@ class ShippingOfferingFilter implements \ArrayAccess, \JsonSerializable, ModelIn
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'include_packing_slip_with_label' => null,
         'include_complex_shipping_options' => null,
         'carrier_will_pick_up' => null,
@@ -83,7 +83,7 @@ class ShippingOfferingFilter implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'include_packing_slip_with_label' => 'IncludePackingSlipWithLabel',
         'include_complex_shipping_options' => 'IncludeComplexShippingOptions',
         'carrier_will_pick_up' => 'CarrierWillPickUp',
@@ -95,7 +95,7 @@ class ShippingOfferingFilter implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'include_packing_slip_with_label' => 'setIncludePackingSlipWithLabel',
         'include_complex_shipping_options' => 'setIncludeComplexShippingOptions',
         'carrier_will_pick_up' => 'setCarrierWillPickUp',
@@ -107,7 +107,7 @@ class ShippingOfferingFilter implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'include_packing_slip_with_label' => 'getIncludePackingSlipWithLabel',
         'include_complex_shipping_options' => 'getIncludeComplexShippingOptions',
         'carrier_will_pick_up' => 'getCarrierWillPickUp',
@@ -119,7 +119,7 @@ class ShippingOfferingFilter implements \ArrayAccess, \JsonSerializable, ModelIn
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

@@ -44,7 +44,7 @@ class LabelPrepPreference
 
     public const AMAZON_LABEL_PREFERRED = 'AMAZON_LABEL_PREFERRED';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

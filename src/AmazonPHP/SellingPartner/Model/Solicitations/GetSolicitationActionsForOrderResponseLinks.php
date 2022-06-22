@@ -49,14 +49,14 @@ class GetSolicitationActionsForOrderResponseLinks implements \ArrayAccess, \Json
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'GetSolicitationActionsForOrderResponse__links';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'GetSolicitationActionsForOrderResponse__links';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'self' => '\AmazonPHP\SellingPartner\Model\Solicitations\LinkObject',
         'actions' => '\AmazonPHP\SellingPartner\Model\Solicitations\LinkObject[]',
     ];
@@ -68,7 +68,7 @@ class GetSolicitationActionsForOrderResponseLinks implements \ArrayAccess, \Json
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'self' => null,
         'actions' => null,
     ];
@@ -79,7 +79,7 @@ class GetSolicitationActionsForOrderResponseLinks implements \ArrayAccess, \Json
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'self' => 'self',
         'actions' => 'actions',
     ];
@@ -89,7 +89,7 @@ class GetSolicitationActionsForOrderResponseLinks implements \ArrayAccess, \Json
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'self' => 'setSelf',
         'actions' => 'setActions',
     ];
@@ -99,7 +99,7 @@ class GetSolicitationActionsForOrderResponseLinks implements \ArrayAccess, \Json
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'self' => 'getSelf',
         'actions' => 'getActions',
     ];
@@ -109,7 +109,7 @@ class GetSolicitationActionsForOrderResponseLinks implements \ArrayAccess, \Json
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

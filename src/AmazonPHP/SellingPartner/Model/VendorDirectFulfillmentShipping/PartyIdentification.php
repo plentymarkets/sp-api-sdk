@@ -49,14 +49,14 @@ class PartyIdentification implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'PartyIdentification';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'PartyIdentification';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'party_id' => 'string',
         'address' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\Address',
         'tax_registration_details' => '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\TaxRegistrationDetails[]',
@@ -69,7 +69,7 @@ class PartyIdentification implements \ArrayAccess, \JsonSerializable, ModelInter
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'party_id' => null,
         'address' => null,
         'tax_registration_details' => null,
@@ -81,7 +81,7 @@ class PartyIdentification implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'party_id' => 'partyId',
         'address' => 'address',
         'tax_registration_details' => 'taxRegistrationDetails',
@@ -92,7 +92,7 @@ class PartyIdentification implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'party_id' => 'setPartyId',
         'address' => 'setAddress',
         'tax_registration_details' => 'setTaxRegistrationDetails',
@@ -103,7 +103,7 @@ class PartyIdentification implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'party_id' => 'getPartyId',
         'address' => 'getAddress',
         'tax_registration_details' => 'getTaxRegistrationDetails',
@@ -114,7 +114,7 @@ class PartyIdentification implements \ArrayAccess, \JsonSerializable, ModelInter
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

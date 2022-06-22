@@ -83,14 +83,14 @@ class ImportDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'ImportDetails';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'ImportDetails';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'method_of_payment' => 'string',
         'international_commercial_terms' => 'string',
         'port_of_delivery' => 'string',
@@ -105,7 +105,7 @@ class ImportDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'method_of_payment' => null,
         'international_commercial_terms' => null,
         'port_of_delivery' => null,
@@ -119,7 +119,7 @@ class ImportDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'method_of_payment' => 'methodOfPayment',
         'international_commercial_terms' => 'internationalCommercialTerms',
         'port_of_delivery' => 'portOfDelivery',
@@ -132,7 +132,7 @@ class ImportDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'method_of_payment' => 'setMethodOfPayment',
         'international_commercial_terms' => 'setInternationalCommercialTerms',
         'port_of_delivery' => 'setPortOfDelivery',
@@ -145,7 +145,7 @@ class ImportDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'method_of_payment' => 'getMethodOfPayment',
         'international_commercial_terms' => 'getInternationalCommercialTerms',
         'port_of_delivery' => 'getPortOfDelivery',
@@ -158,7 +158,7 @@ class ImportDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.

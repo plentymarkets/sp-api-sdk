@@ -57,14 +57,14 @@ class OrderItemStatusAcknowledgementStatus implements \ArrayAccess, \JsonSeriali
      *
      * @var string
      */
-    protected static string $openAPIModelName = 'OrderItemStatus_acknowledgementStatus';
+    protected static /** [COMPAT] string */ $openAPIModelName = 'OrderItemStatus_acknowledgementStatus';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
      *
      * @var string[]
      */
-    protected static array $openAPITypes = [
+    protected static /** [COMPAT] array */ $openAPITypes = [
         'confirmation_status' => 'string',
         'accepted_quantity' => '\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
         'rejected_quantity' => '\AmazonPHP\SellingPartner\Model\VendorOrders\ItemQuantity',
@@ -78,7 +78,7 @@ class OrderItemStatusAcknowledgementStatus implements \ArrayAccess, \JsonSeriali
      * @phpstan-var array<string, string|null>
      * @psalm-var array<string, string|null>
      */
-    protected static array $openAPIFormats = [
+    protected static /** [COMPAT] array */ $openAPIFormats = [
         'confirmation_status' => null,
         'accepted_quantity' => null,
         'rejected_quantity' => null,
@@ -91,7 +91,7 @@ class OrderItemStatusAcknowledgementStatus implements \ArrayAccess, \JsonSeriali
      *
      * @var string[]
      */
-    protected static array $attributeMap = [
+    protected static /** [COMPAT] array */ $attributeMap = [
         'confirmation_status' => 'confirmationStatus',
         'accepted_quantity' => 'acceptedQuantity',
         'rejected_quantity' => 'rejectedQuantity',
@@ -103,7 +103,7 @@ class OrderItemStatusAcknowledgementStatus implements \ArrayAccess, \JsonSeriali
      *
      * @var string[]
      */
-    protected static array $setters = [
+    protected static /** [COMPAT] array */ $setters = [
         'confirmation_status' => 'setConfirmationStatus',
         'accepted_quantity' => 'setAcceptedQuantity',
         'rejected_quantity' => 'setRejectedQuantity',
@@ -115,7 +115,7 @@ class OrderItemStatusAcknowledgementStatus implements \ArrayAccess, \JsonSeriali
      *
      * @var string[]
      */
-    protected static array $getters = [
+    protected static /** [COMPAT] array */ $getters = [
         'confirmation_status' => 'getConfirmationStatus',
         'accepted_quantity' => 'getAcceptedQuantity',
         'rejected_quantity' => 'getRejectedQuantity',
@@ -127,7 +127,7 @@ class OrderItemStatusAcknowledgementStatus implements \ArrayAccess, \JsonSeriali
      *
      * @var mixed[]
      */
-    protected array $container = [];
+    protected /** [COMPAT] array */ $container = [];
 
     /**
      * Constructor.
