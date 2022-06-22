@@ -247,7 +247,7 @@ class ItemImagesByMarketplace implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Gets images.
      *
-     * @return \AmazonPHP\SellingPartner\Model\CatalogItem\ItemImage[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\CatalogItem\ItemImage[]
      */
     public function getImages() : array
     {

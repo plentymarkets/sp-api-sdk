@@ -309,7 +309,7 @@ class SellerInputDefinition implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Gets constraints.
      *
-     * @return \AmazonPHP\SellingPartner\Model\MerchantFulfillment\Constraint[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Constraint[]
      */
     public function getConstraints() : array
     {

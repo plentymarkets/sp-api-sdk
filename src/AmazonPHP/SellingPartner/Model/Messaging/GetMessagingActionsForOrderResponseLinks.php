@@ -247,7 +247,7 @@ class GetMessagingActionsForOrderResponseLinks implements \ArrayAccess, \JsonSer
     /**
      * Gets actions.
      *
-     * @return \AmazonPHP\SellingPartner\Model\Messaging\LinkObject[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\Messaging\LinkObject[]
      */
     public function getActions() : array
     {

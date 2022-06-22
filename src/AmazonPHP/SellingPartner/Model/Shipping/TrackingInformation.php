@@ -325,7 +325,7 @@ class TrackingInformation implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Gets event_history.
      *
-     * @return \AmazonPHP\SellingPartner\Model\Shipping\Event[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\Shipping\Event[]
      */
     public function getEventHistory() : array
     {

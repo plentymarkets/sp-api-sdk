@@ -251,7 +251,7 @@ class ListingsItemPatchRequest implements \ArrayAccess, \JsonSerializable, Model
     /**
      * Gets patches.
      *
-     * @return \AmazonPHP\SellingPartner\Model\ListingsItems\PatchOperation[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\ListingsItems\PatchOperation[]
      */
     public function getPatches() : array
     {

@@ -397,7 +397,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets containers.
      *
-     * @return \AmazonPHP\SellingPartner\Model\Shipping\Container[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\Shipping\Container[]
      */
     public function getContainers() : array
     {

@@ -217,7 +217,7 @@ class NonPartneredSmallParcelDataOutput implements \ArrayAccess, \JsonSerializab
     /**
      * Gets package_list.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\NonPartneredSmallParcelPackageOutput[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\NonPartneredSmallParcelPackageOutput[]
      */
     public function getPackageList() : array
     {

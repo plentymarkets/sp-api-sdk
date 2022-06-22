@@ -307,7 +307,7 @@ class ItemSearchResults implements \ArrayAccess, \JsonSerializable, ModelInterfa
     /**
      * Gets items.
      *
-     * @return \AmazonPHP\SellingPartner\Model\CatalogItem\Item[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\CatalogItem\Item[]
      */
     public function getItems() : array
     {

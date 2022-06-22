@@ -277,7 +277,7 @@ class PurchaseShipmentResult implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets label_results.
      *
-     * @return \AmazonPHP\SellingPartner\Model\Shipping\LabelResult[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\Shipping\LabelResult[]
      */
     public function getLabelResults() : array
     {

@@ -227,7 +227,7 @@ class AvailableShippingServiceOptions implements \ArrayAccess, \JsonSerializable
     /**
      * Gets available_carrier_will_pick_up_options.
      *
-     * @return \AmazonPHP\SellingPartner\Model\MerchantFulfillment\AvailableCarrierWillPickUpOption[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AvailableCarrierWillPickUpOption[]
      */
     public function getAvailableCarrierWillPickUpOptions() : array
     {
@@ -249,7 +249,7 @@ class AvailableShippingServiceOptions implements \ArrayAccess, \JsonSerializable
     /**
      * Gets available_delivery_experience_options.
      *
-     * @return \AmazonPHP\SellingPartner\Model\MerchantFulfillment\AvailableDeliveryExperienceOption[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\AvailableDeliveryExperienceOption[]
      */
     public function getAvailableDeliveryExperienceOptions() : array
     {

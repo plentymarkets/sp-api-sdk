@@ -217,7 +217,7 @@ class SearchContentPublishRecordsResponseAllOf implements \ArrayAccess, \JsonSer
     /**
      * Gets publish_record_list.
      *
-     * @return \AmazonPHP\SellingPartner\Model\APlus\PublishRecord[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\APlus\PublishRecord[]
      */
     public function getPublishRecordList() : array
     {

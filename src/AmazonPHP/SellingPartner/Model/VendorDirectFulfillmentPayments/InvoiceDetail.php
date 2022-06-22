@@ -557,7 +557,7 @@ class InvoiceDetail implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets items.
      *
-     * @return \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\InvoiceItem[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentPayments\InvoiceItem[]
      */
     public function getItems() : array
     {

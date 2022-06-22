@@ -754,7 +754,7 @@ class ShipmentConfirmation implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Gets shipped_items.
      *
-     * @return \AmazonPHP\SellingPartner\Model\VendorShipments\Item[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Item[]
      */
     public function getShippedItems() : array
     {

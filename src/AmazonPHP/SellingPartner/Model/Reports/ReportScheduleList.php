@@ -217,7 +217,7 @@ class ReportScheduleList implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Gets report_schedules.
      *
-     * @return \AmazonPHP\SellingPartner\Model\Reports\ReportSchedule[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\Reports\ReportSchedule[]
      */
     public function getReportSchedules() : array
     {

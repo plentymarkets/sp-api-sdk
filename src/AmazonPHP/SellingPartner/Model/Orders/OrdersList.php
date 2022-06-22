@@ -235,7 +235,7 @@ class OrdersList implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets orders.
      *
-     * @return \AmazonPHP\SellingPartner\Model\Orders\Order[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\Orders\Order[]
      */
     public function getOrders() : array
     {

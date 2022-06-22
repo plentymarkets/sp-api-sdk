@@ -357,7 +357,7 @@ class FulfillmentPreviewShipment implements \ArrayAccess, \JsonSerializable, Mod
     /**
      * Gets fulfillment_preview_items.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPreviewItem[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentPreviewItem[]
      */
     public function getFulfillmentPreviewItems() : array
     {

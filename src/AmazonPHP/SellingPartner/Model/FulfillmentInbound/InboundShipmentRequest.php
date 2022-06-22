@@ -257,7 +257,7 @@ class InboundShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets inbound_shipment_items.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentItem[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentItem[]
      */
     public function getInboundShipmentItems() : array
     {

@@ -277,7 +277,7 @@ class InventoryUpdate implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets items.
      *
-     * @return \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\ItemDetails[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentInventory\ItemDetails[]
      */
     public function getItems() : array
     {

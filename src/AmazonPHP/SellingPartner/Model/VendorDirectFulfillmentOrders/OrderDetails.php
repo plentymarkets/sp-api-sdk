@@ -524,7 +524,7 @@ class OrderDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets items.
      *
-     * @return \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\OrderItem[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\OrderItem[]
      */
     public function getItems() : array
     {

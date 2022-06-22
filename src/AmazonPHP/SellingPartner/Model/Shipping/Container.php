@@ -386,7 +386,7 @@ class Container implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets items.
      *
-     * @return \AmazonPHP\SellingPartner\Model\Shipping\ContainerItem[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\Shipping\ContainerItem[]
      */
     public function getItems() : array
     {

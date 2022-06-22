@@ -217,7 +217,7 @@ class Errors implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets errors.
      *
-     * @return \AmazonPHP\SellingPartner\Model\ProductPricing\Error[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\Error[]
      */
     public function getErrors() : array
     {

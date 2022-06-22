@@ -353,7 +353,7 @@ class Carton implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets items.
      *
-     * @return \AmazonPHP\SellingPartner\Model\VendorShipments\ContainerItem[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\ContainerItem[]
      */
     public function getItems() : array
     {

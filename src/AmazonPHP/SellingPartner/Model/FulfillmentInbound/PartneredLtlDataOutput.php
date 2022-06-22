@@ -423,7 +423,7 @@ class PartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets pallet_list.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pallet[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pallet[]
      */
     public function getPalletList() : array
     {

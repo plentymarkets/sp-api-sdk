@@ -399,7 +399,7 @@ class OrderAcknowledgementItem implements \ArrayAccess, \JsonSerializable, Model
     /**
      * Gets item_acknowledgements.
      *
-     * @return \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\OrderItemAcknowledgement[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\OrderItemAcknowledgement[]
      */
     public function getItemAcknowledgements() : array
     {

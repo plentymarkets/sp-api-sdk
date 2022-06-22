@@ -247,7 +247,7 @@ class ItemSalesRanksByMarketplace implements \ArrayAccess, \JsonSerializable, Mo
     /**
      * Gets ranks.
      *
-     * @return \AmazonPHP\SellingPartner\Model\CatalogItem\ItemSalesRank[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\CatalogItem\ItemSalesRank[]
      */
     public function getRanks() : array
     {

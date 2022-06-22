@@ -217,7 +217,7 @@ class ErrorList implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets errors.
      *
-     * @return \AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\Error[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\Error[]
      */
     public function getErrors() : array
     {

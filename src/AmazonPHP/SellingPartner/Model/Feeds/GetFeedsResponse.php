@@ -223,7 +223,7 @@ class GetFeedsResponse implements \ArrayAccess, \JsonSerializable, ModelInterfac
     /**
      * Gets feeds.
      *
-     * @return \AmazonPHP\SellingPartner\Model\Feeds\Feed[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\Feeds\Feed[]
      */
     public function getFeeds() : array
     {

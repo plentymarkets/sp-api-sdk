@@ -217,7 +217,7 @@ class CreateFulfillmentReturnRequest implements \ArrayAccess, \JsonSerializable,
     /**
      * Gets items.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\CreateReturnItem[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\CreateReturnItem[]
      */
     public function getItems() : array
     {

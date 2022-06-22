@@ -245,7 +245,7 @@ class ValidateContentDocumentAsinRelationsResponse implements \ArrayAccess, \Jso
     /**
      * Gets errors.
      *
-     * @return \AmazonPHP\SellingPartner\Model\APlus\Error[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\APlus\Error[]
      */
     public function getErrors() : array
     {

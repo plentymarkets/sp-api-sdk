@@ -315,7 +315,7 @@ class CreateShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Gets containers.
      *
-     * @return \AmazonPHP\SellingPartner\Model\Shipping\Container[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\Shipping\Container[]
      */
     public function getContainers() : array
     {

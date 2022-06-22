@@ -467,7 +467,7 @@ final class ProductFeesSDK
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      *
-     * @return \AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimateResult[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\ProductFees\FeesEstimateResult[]
      */
     public function getMyFeesEstimates(AccessToken $accessToken, string $region, array $body) : array
     {

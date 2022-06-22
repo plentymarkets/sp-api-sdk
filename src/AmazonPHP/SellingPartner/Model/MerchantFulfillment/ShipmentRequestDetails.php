@@ -339,7 +339,7 @@ class ShipmentRequestDetails implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets item_list.
      *
-     * @return \AmazonPHP\SellingPartner\Model\MerchantFulfillment\Item[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Item[]
      */
     public function getItemList() : array
     {

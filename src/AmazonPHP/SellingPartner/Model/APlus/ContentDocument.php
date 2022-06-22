@@ -373,7 +373,7 @@ class ContentDocument implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets content_module_list.
      *
-     * @return \AmazonPHP\SellingPartner\Model\APlus\ContentModule[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentModule[]
      */
     public function getContentModuleList() : array
     {

@@ -423,7 +423,7 @@ class GetOffersResult implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets offers.
      *
-     * @return \AmazonPHP\SellingPartner\Model\ProductPricing\OfferDetail[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\OfferDetail[]
      */
     public function getOffers() : array
     {

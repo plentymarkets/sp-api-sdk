@@ -343,7 +343,7 @@ class InboundShipmentPlan implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Gets items.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentPlanItem[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentPlanItem[]
      */
     public function getItems() : array
     {

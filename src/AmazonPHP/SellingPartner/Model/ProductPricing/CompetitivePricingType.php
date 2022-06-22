@@ -233,7 +233,7 @@ class CompetitivePricingType implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets competitive_prices.
      *
-     * @return \AmazonPHP\SellingPartner\Model\ProductPricing\CompetitivePriceType[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\CompetitivePriceType[]
      */
     public function getCompetitivePrices() : array
     {
@@ -255,7 +255,7 @@ class CompetitivePricingType implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets number_of_offer_listings.
      *
-     * @return \AmazonPHP\SellingPartner\Model\ProductPricing\OfferListingCountType[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\OfferListingCountType[]
      */
     public function getNumberOfOfferListings() : array
     {

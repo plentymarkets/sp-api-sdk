@@ -293,7 +293,7 @@ class GetRatesRequest implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets service_types.
      *
-     * @return \AmazonPHP\SellingPartner\Model\Shipping\ServiceType[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\Shipping\ServiceType[]
      */
     public function getServiceTypes() : array
     {
@@ -337,7 +337,7 @@ class GetRatesRequest implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets container_specifications.
      *
-     * @return \AmazonPHP\SellingPartner\Model\Shipping\ContainerSpecification[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\Shipping\ContainerSpecification[]
      */
     public function getContainerSpecifications() : array
     {

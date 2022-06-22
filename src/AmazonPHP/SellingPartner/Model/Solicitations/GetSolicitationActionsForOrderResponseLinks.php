@@ -247,7 +247,7 @@ class GetSolicitationActionsForOrderResponseLinks implements \ArrayAccess, \Json
     /**
      * Gets actions.
      *
-     * @return \AmazonPHP\SellingPartner\Model\Solicitations\LinkObject[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\Solicitations\LinkObject[]
      */
     public function getActions() : array
     {

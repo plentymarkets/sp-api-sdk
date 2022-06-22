@@ -247,7 +247,7 @@ class CreateShipmentResult implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Gets eligible_rates.
      *
-     * @return \AmazonPHP\SellingPartner\Model\Shipping\Rate[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\Shipping\Rate[]
      */
     public function getEligibleRates() : array
     {

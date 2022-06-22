@@ -383,7 +383,7 @@ class PurchaseShipmentRequest implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Gets containers.
      *
-     * @return \AmazonPHP\SellingPartner\Model\Shipping\Container[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\Shipping\Container[]
      */
     public function getContainers() : array
     {

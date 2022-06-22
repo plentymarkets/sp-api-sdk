@@ -329,7 +329,7 @@ class CreateInboundShipmentPlanRequest implements \ArrayAccess, \JsonSerializabl
     /**
      * Gets inbound_shipment_plan_request_items.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentPlanRequestItem[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentPlanRequestItem[]
      */
     public function getInboundShipmentPlanRequestItems() : array
     {

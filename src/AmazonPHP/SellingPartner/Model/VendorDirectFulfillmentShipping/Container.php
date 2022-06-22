@@ -548,7 +548,7 @@ class Container implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets packed_items.
      *
-     * @return \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\PackedItem[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\PackedItem[]
      */
     public function getPackedItems() : array
     {

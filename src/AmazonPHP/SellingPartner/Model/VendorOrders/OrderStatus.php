@@ -434,7 +434,7 @@ class OrderStatus implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets item_status.
      *
-     * @return \AmazonPHP\SellingPartner\Model\VendorOrders\OrderItemStatus[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\VendorOrders\OrderItemStatus[]
      */
     public function getItemStatus() : array
     {

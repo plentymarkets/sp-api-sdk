@@ -217,7 +217,7 @@ class RegulatedInformation implements \ArrayAccess, \JsonSerializable, ModelInte
     /**
      * Gets fields.
      *
-     * @return \AmazonPHP\SellingPartner\Model\Orders\RegulatedInformationField[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\Orders\RegulatedInformationField[]
      */
     public function getFields() : array
     {

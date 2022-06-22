@@ -225,7 +225,7 @@ class StandardTextListBlock implements \ArrayAccess, \JsonSerializable, ModelInt
     /**
      * Gets text_list.
      *
-     * @return \AmazonPHP\SellingPartner\Model\APlus\TextItem[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\APlus\TextItem[]
      */
     public function getTextList() : array
     {

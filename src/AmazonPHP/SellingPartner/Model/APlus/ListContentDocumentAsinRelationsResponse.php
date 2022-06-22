@@ -279,7 +279,7 @@ class ListContentDocumentAsinRelationsResponse implements \ArrayAccess, \JsonSer
     /**
      * Gets asin_metadata_set.
      *
-     * @return \AmazonPHP\SellingPartner\Model\APlus\AsinMetadata[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\APlus\AsinMetadata[]
      */
     public function getAsinMetadataSet() : array
     {

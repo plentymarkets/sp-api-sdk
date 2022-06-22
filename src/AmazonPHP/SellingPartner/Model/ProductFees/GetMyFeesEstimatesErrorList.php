@@ -217,7 +217,7 @@ class GetMyFeesEstimatesErrorList implements \ArrayAccess, \JsonSerializable, Mo
     /**
      * Gets errors.
      *
-     * @return \AmazonPHP\SellingPartner\Model\ProductFees\Error[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\ProductFees\Error[]
      */
     public function getErrors() : array
     {

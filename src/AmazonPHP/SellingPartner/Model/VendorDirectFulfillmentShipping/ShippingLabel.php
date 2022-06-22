@@ -382,7 +382,7 @@ class ShippingLabel implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets label_data.
      *
-     * @return \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\LabelData[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\LabelData[]
      */
     public function getLabelData() : array
     {

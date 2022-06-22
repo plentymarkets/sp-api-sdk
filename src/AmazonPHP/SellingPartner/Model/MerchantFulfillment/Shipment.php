@@ -413,7 +413,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets item_list.
      *
-     * @return \AmazonPHP\SellingPartner\Model\MerchantFulfillment\Item[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\Item[]
      */
     public function getItemList() : array
     {

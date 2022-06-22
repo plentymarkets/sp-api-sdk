@@ -295,7 +295,7 @@ class RegulatedOrderVerificationStatus implements \ArrayAccess, \JsonSerializabl
     /**
      * Gets valid_rejection_reasons.
      *
-     * @return \AmazonPHP\SellingPartner\Model\Orders\RejectionReason[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\Orders\RejectionReason[]
      */
     public function getValidRejectionReasons() : array
     {

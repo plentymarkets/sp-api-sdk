@@ -440,7 +440,7 @@ class FulfillmentShipment implements \ArrayAccess, \JsonSerializable, ModelInter
     /**
      * Gets fulfillment_shipment_item.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentShipmentItem[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentShipmentItem[]
      */
     public function getFulfillmentShipmentItem() : array
     {

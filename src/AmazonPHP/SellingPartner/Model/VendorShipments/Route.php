@@ -217,7 +217,7 @@ class Route implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets stops.
      *
-     * @return \AmazonPHP\SellingPartner\Model\VendorShipments\Stop[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\Stop[]
      */
     public function getStops() : array
     {

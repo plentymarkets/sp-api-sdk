@@ -341,7 +341,7 @@ class ContentMetadata implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets badge_set.
      *
-     * @return \AmazonPHP\SellingPartner\Model\APlus\ContentBadge[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\APlus\ContentBadge[]
      */
     public function getBadgeSet() : array
     {

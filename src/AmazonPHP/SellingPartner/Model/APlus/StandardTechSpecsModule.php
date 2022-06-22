@@ -265,7 +265,7 @@ class StandardTechSpecsModule implements \ArrayAccess, \JsonSerializable, ModelI
     /**
      * Gets specification_list.
      *
-     * @return \AmazonPHP\SellingPartner\Model\APlus\StandardTextPairBlock[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\APlus\StandardTextPairBlock[]
      */
     public function getSpecificationList() : array
     {

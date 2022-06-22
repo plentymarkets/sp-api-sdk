@@ -223,7 +223,7 @@ class GetReportsResponse implements \ArrayAccess, \JsonSerializable, ModelInterf
     /**
      * Gets reports.
      *
-     * @return \AmazonPHP\SellingPartner\Model\Reports\Report[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\Reports\Report[]
      */
     public function getReports() : array
     {

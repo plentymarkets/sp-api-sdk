@@ -251,7 +251,7 @@ class SmallAndLightFeePreviewRequest implements \ArrayAccess, \JsonSerializable,
     /**
      * Gets items.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FBASmallAndLight\Item[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\FBASmallAndLight\Item[]
      */
     public function getItems() : array
     {

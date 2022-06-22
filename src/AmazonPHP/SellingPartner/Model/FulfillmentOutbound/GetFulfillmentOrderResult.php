@@ -273,7 +273,7 @@ class GetFulfillmentOrderResult implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Gets fulfillment_order_items.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentOrderItem[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\FulfillmentOrderItem[]
      */
     public function getFulfillmentOrderItems() : array
     {
@@ -317,7 +317,7 @@ class GetFulfillmentOrderResult implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Gets return_items.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReturnItem[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReturnItem[]
      */
     public function getReturnItems() : array
     {
@@ -339,7 +339,7 @@ class GetFulfillmentOrderResult implements \ArrayAccess, \JsonSerializable, Mode
     /**
      * Gets return_authorizations.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReturnAuthorization[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ReturnAuthorization[]
      */
     public function getReturnAuthorizations() : array
     {

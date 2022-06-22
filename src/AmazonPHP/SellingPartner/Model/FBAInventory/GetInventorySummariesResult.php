@@ -247,7 +247,7 @@ class GetInventorySummariesResult implements \ArrayAccess, \JsonSerializable, Mo
     /**
      * Gets inventory_summaries.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FBAInventory\InventorySummary[]
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\FBAInventory\InventorySummary[]
      */
     public function getInventorySummaries() : array
     {
