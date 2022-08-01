@@ -41,6 +41,8 @@ class LabelFormat
     public const PDF = 'PDF';
 
     public const PNG = 'PNG';
+    
+    public const ZPL = 'ZPL';
 
     public const ZPL203 = 'ZPL203';
 
@@ -65,6 +67,7 @@ class LabelFormat
         return [
             self::PDF,
             self::PNG,
+            self::ZPL,
             self::ZPL203,
             self::ZPL300,
             self::SHIPPING_SERVICE_DEFAULT,
