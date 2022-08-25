@@ -473,7 +473,7 @@ class OrderAcknowledgementItem implements \ArrayAccess, \JsonSerializable, Model
      * @return mixed returns data which can be serialized by json_encode(), which is a value
      *               of any type other than a resource
      */
-    public function jsonSerialize() : string
+    public function jsonSerialize() : mixed
     {
         return \json_encode(ObjectSerializer::sanitizeForSerialization($this), JSON_THROW_ON_ERROR);
     }
