@@ -42,6 +42,8 @@ class UnitOfMeasurement
 
     public const CENTIMETERS = 'centimeters';
 
+    public const CENTIMETERS_SI_SYMBOL = 'CM';
+
     private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
@@ -59,6 +61,7 @@ class UnitOfMeasurement
         return [
             self::INCHES,
             self::CENTIMETERS,
+            self::CENTIMETERS_SI_SYMBOL,
         ];
     }
 

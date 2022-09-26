@@ -42,6 +42,8 @@ class CurrencyCode
 
     public const GBP = 'GBP';
 
+    public const EUR = 'EUR';
+
     private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
@@ -59,6 +61,7 @@ class CurrencyCode
         return [
             self::USD,
             self::GBP,
+            self::EUR,
         ];
     }
 
