@@ -44,7 +44,7 @@ class UnitOfMeasurement
 
     public const CENTIMETERS_SI_SYMBOL = 'CM';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

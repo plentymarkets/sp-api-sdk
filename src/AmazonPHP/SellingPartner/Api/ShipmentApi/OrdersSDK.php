@@ -2,13 +2,13 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Api\ShipmentApi;
 
-use AmazonPHP\SellingPartner\AccessToken;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\Exception\ApiException;
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
-use AmazonPHP\SellingPartner\HttpFactory;
-use AmazonPHP\SellingPartner\HttpSignatureHeaders;
-use AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\AccessToken;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\HttpFactory;
+use Plenty\AmazonPHP\SellingPartner\HttpSignatureHeaders;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
@@ -26,13 +26,13 @@ final class OrdersSDK
 
     public const OPERATION_UPDATESHIPMENTSTATUS_PATH = '/orders/v0/orders/{orderId}/shipment';
 
-    private ClientInterface $client;
+    private /** [COMPAT] ClientInterface */ $client;
 
-    private HttpFactory $httpFactory;
+    private /** [COMPAT] HttpFactory */ $httpFactory;
 
-    private Configuration $configuration;
+    private /** [COMPAT] Configuration */ $configuration;
 
-    private LoggerInterface $logger;
+    private /** [COMPAT] LoggerInterface */ $logger;
 
     public function __construct(ClientInterface $client, HttpFactory $requestFactory, Configuration $configuration, LoggerInterface $logger)
     {
@@ -47,12 +47,12 @@ final class OrdersSDK
      *
      * @param AccessToken $accessToken
      * @param string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
-     * @param \AmazonPHP\SellingPartner\Model\Orders\UpdateShipmentStatusRequest $payload Request to update the shipment status. (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Orders\UpdateShipmentStatusRequest $payload Request to update the shipment status. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function updateShipmentStatus(AccessToken $accessToken, string $region, string $order_id, \AmazonPHP\SellingPartner\Model\Orders\UpdateShipmentStatusRequest $payload)
+    public function updateShipmentStatus(AccessToken $accessToken, string $region, string $order_id, \Plenty\AmazonPHP\SellingPartner\Model\Orders\UpdateShipmentStatusRequest $payload)
     {
         $request = $this->updateShipmentStatusRequest($accessToken, $region, $order_id, $payload);
 
@@ -139,11 +139,11 @@ final class OrdersSDK
      *
      * @param AccessToken $accessToken
      * @param string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
-     * @param \AmazonPHP\SellingPartner\Model\Orders\UpdateShipmentStatusRequest $payload Request to update the shipment status. (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Orders\UpdateShipmentStatusRequest $payload Request to update the shipment status. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function updateShipmentStatusRequest(AccessToken $accessToken, string $region, string $order_id, \AmazonPHP\SellingPartner\Model\Orders\UpdateShipmentStatusRequest $payload) : RequestInterface
+    public function updateShipmentStatusRequest(AccessToken $accessToken, string $region, string $order_id, \Plenty\AmazonPHP\SellingPartner\Model\Orders\UpdateShipmentStatusRequest $payload) : RequestInterface
     {
         // verify the required parameter 'order_id' is set
         if ($order_id === null || (\is_array($order_id) && \count($order_id) === 0)) {

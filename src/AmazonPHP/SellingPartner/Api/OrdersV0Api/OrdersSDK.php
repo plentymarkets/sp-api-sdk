@@ -2,13 +2,13 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Api\OrdersV0Api;
 
-use AmazonPHP\SellingPartner\AccessToken;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\Exception\ApiException;
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
-use AmazonPHP\SellingPartner\HttpFactory;
-use AmazonPHP\SellingPartner\HttpSignatureHeaders;
-use AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\AccessToken;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\HttpFactory;
+use Plenty\AmazonPHP\SellingPartner\HttpSignatureHeaders;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
@@ -54,13 +54,13 @@ final class OrdersSDK
 
     public const OPERATION_UPDATEVERIFICATIONSTATUS_PATH = '/orders/v0/orders/{orderId}/regulatedInfo';
 
-    private ClientInterface $client;
+    private /** [COMPAT] ClientInterface */ $client;
 
-    private HttpFactory $httpFactory;
+    private /** [COMPAT] HttpFactory */ $httpFactory;
 
-    private Configuration $configuration;
+    private /** [COMPAT] Configuration */ $configuration;
 
-    private LoggerInterface $logger;
+    private /** [COMPAT] LoggerInterface */ $logger;
 
     public function __construct(ClientInterface $client, HttpFactory $requestFactory, Configuration $configuration, LoggerInterface $logger)
     {
@@ -76,10 +76,10 @@ final class OrdersSDK
      * @param AccessToken $accessToken
      * @param string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getOrder(AccessToken $accessToken, string $region, string $order_id) : \AmazonPHP\SellingPartner\Model\Orders\GetOrderResponse
+    public function getOrder(AccessToken $accessToken, string $region, string $order_id) : \Plenty\AmazonPHP\SellingPartner\Model\Orders\GetOrderResponse
     {
         $request = $this->getOrderRequest($accessToken, $region, $order_id);
 
@@ -161,7 +161,7 @@ final class OrdersSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Orders\GetOrderResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Orders\GetOrderResponse',
             []
         );
     }
@@ -172,7 +172,7 @@ final class OrdersSDK
      * @param AccessToken $accessToken
      * @param string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getOrderRequest(AccessToken $accessToken, string $region, string $order_id) : RequestInterface
     {
@@ -264,10 +264,10 @@ final class OrdersSDK
      * @param AccessToken $accessToken
      * @param string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getOrderAddress(AccessToken $accessToken, string $region, string $order_id) : \AmazonPHP\SellingPartner\Model\Orders\GetOrderAddressResponse
+    public function getOrderAddress(AccessToken $accessToken, string $region, string $order_id) : \Plenty\AmazonPHP\SellingPartner\Model\Orders\GetOrderAddressResponse
     {
         $request = $this->getOrderAddressRequest($accessToken, $region, $order_id);
 
@@ -349,7 +349,7 @@ final class OrdersSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Orders\GetOrderAddressResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Orders\GetOrderAddressResponse',
             []
         );
     }
@@ -360,7 +360,7 @@ final class OrdersSDK
      * @param AccessToken $accessToken
      * @param string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getOrderAddressRequest(AccessToken $accessToken, string $region, string $order_id) : RequestInterface
     {
@@ -452,10 +452,10 @@ final class OrdersSDK
      * @param AccessToken $accessToken
      * @param string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getOrderBuyerInfo(AccessToken $accessToken, string $region, string $order_id) : \AmazonPHP\SellingPartner\Model\Orders\GetOrderBuyerInfoResponse
+    public function getOrderBuyerInfo(AccessToken $accessToken, string $region, string $order_id) : \Plenty\AmazonPHP\SellingPartner\Model\Orders\GetOrderBuyerInfoResponse
     {
         $request = $this->getOrderBuyerInfoRequest($accessToken, $region, $order_id);
 
@@ -537,7 +537,7 @@ final class OrdersSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Orders\GetOrderBuyerInfoResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Orders\GetOrderBuyerInfoResponse',
             []
         );
     }
@@ -548,7 +548,7 @@ final class OrdersSDK
      * @param AccessToken $accessToken
      * @param string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getOrderBuyerInfoRequest(AccessToken $accessToken, string $region, string $order_id) : RequestInterface
     {
@@ -641,10 +641,10 @@ final class OrdersSDK
      * @param string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
      * @param string $next_token A string token returned in the response of your previous request. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getOrderItems(AccessToken $accessToken, string $region, string $order_id, string $next_token = null) : \AmazonPHP\SellingPartner\Model\Orders\GetOrderItemsResponse
+    public function getOrderItems(AccessToken $accessToken, string $region, string $order_id, string $next_token = null) : \Plenty\AmazonPHP\SellingPartner\Model\Orders\GetOrderItemsResponse
     {
         $request = $this->getOrderItemsRequest($accessToken, $region, $order_id, $next_token);
 
@@ -726,7 +726,7 @@ final class OrdersSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Orders\GetOrderItemsResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Orders\GetOrderItemsResponse',
             []
         );
     }
@@ -738,7 +738,7 @@ final class OrdersSDK
      * @param string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
      * @param string $next_token A string token returned in the response of your previous request. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getOrderItemsRequest(AccessToken $accessToken, string $region, string $order_id, string $next_token = null) : RequestInterface
     {
@@ -840,10 +840,10 @@ final class OrdersSDK
      * @param string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
      * @param string $next_token A string token returned in the response of your previous request. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getOrderItemsBuyerInfo(AccessToken $accessToken, string $region, string $order_id, string $next_token = null) : \AmazonPHP\SellingPartner\Model\Orders\GetOrderItemsBuyerInfoResponse
+    public function getOrderItemsBuyerInfo(AccessToken $accessToken, string $region, string $order_id, string $next_token = null) : \Plenty\AmazonPHP\SellingPartner\Model\Orders\GetOrderItemsBuyerInfoResponse
     {
         $request = $this->getOrderItemsBuyerInfoRequest($accessToken, $region, $order_id, $next_token);
 
@@ -925,7 +925,7 @@ final class OrdersSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Orders\GetOrderItemsBuyerInfoResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Orders\GetOrderItemsBuyerInfoResponse',
             []
         );
     }
@@ -937,7 +937,7 @@ final class OrdersSDK
      * @param string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
      * @param string $next_token A string token returned in the response of your previous request. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getOrderItemsBuyerInfoRequest(AccessToken $accessToken, string $region, string $order_id, string $next_token = null) : RequestInterface
     {
@@ -1038,10 +1038,10 @@ final class OrdersSDK
      * @param AccessToken $accessToken
      * @param string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getOrderRegulatedInfo(AccessToken $accessToken, string $region, string $order_id) : \AmazonPHP\SellingPartner\Model\Orders\GetOrderRegulatedInfoResponse
+    public function getOrderRegulatedInfo(AccessToken $accessToken, string $region, string $order_id) : \Plenty\AmazonPHP\SellingPartner\Model\Orders\GetOrderRegulatedInfoResponse
     {
         $request = $this->getOrderRegulatedInfoRequest($accessToken, $region, $order_id);
 
@@ -1123,7 +1123,7 @@ final class OrdersSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Orders\GetOrderRegulatedInfoResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Orders\GetOrderRegulatedInfoResponse',
             []
         );
     }
@@ -1134,7 +1134,7 @@ final class OrdersSDK
      * @param AccessToken $accessToken
      * @param string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getOrderRegulatedInfoRequest(AccessToken $accessToken, string $region, string $order_id) : RequestInterface
     {
@@ -1242,10 +1242,10 @@ final class OrdersSDK
      * @param bool $is_ispu When true, this order is marked to be picked up from a store rather than delivered. (optional)
      * @param string $store_chain_store_id The store chain store identifier. Linked to a specific store in a store chain. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getOrders(AccessToken $accessToken, string $region, array $marketplace_ids, string $created_after = null, string $created_before = null, string $last_updated_after = null, string $last_updated_before = null, array $order_statuses = null, array $fulfillment_channels = null, array $payment_methods = null, string $buyer_email = null, string $seller_order_id = null, int $max_results_per_page = null, array $easy_ship_shipment_statuses = null, string $next_token = null, array $amazon_order_ids = null, string $actual_fulfillment_supply_source_id = null, bool $is_ispu = null, string $store_chain_store_id = null) : \AmazonPHP\SellingPartner\Model\Orders\GetOrdersResponse
+    public function getOrders(AccessToken $accessToken, string $region, array $marketplace_ids, string $created_after = null, string $created_before = null, string $last_updated_after = null, string $last_updated_before = null, array $order_statuses = null, array $fulfillment_channels = null, array $payment_methods = null, string $buyer_email = null, string $seller_order_id = null, int $max_results_per_page = null, array $easy_ship_shipment_statuses = null, string $next_token = null, array $amazon_order_ids = null, string $actual_fulfillment_supply_source_id = null, bool $is_ispu = null, string $store_chain_store_id = null) : \Plenty\AmazonPHP\SellingPartner\Model\Orders\GetOrdersResponse
     {
         $request = $this->getOrdersRequest($accessToken, $region, $marketplace_ids, $created_after, $created_before, $last_updated_after, $last_updated_before, $order_statuses, $fulfillment_channels, $payment_methods, $buyer_email, $seller_order_id, $max_results_per_page, $easy_ship_shipment_statuses, $next_token, $amazon_order_ids, $actual_fulfillment_supply_source_id, $is_ispu, $store_chain_store_id);
 
@@ -1327,7 +1327,7 @@ final class OrdersSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Orders\GetOrdersResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Orders\GetOrdersResponse',
             []
         );
     }
@@ -1354,7 +1354,7 @@ final class OrdersSDK
      * @param bool $is_ispu When true, this order is marked to be picked up from a store rather than delivered. (optional)
      * @param string $store_chain_store_id The store chain store identifier. Linked to a specific store in a store chain. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getOrdersRequest(AccessToken $accessToken, string $region, array $marketplace_ids, string $created_after = null, string $created_before = null, string $last_updated_after = null, string $last_updated_before = null, array $order_statuses = null, array $fulfillment_channels = null, array $payment_methods = null, string $buyer_email = null, string $seller_order_id = null, int $max_results_per_page = null, array $easy_ship_shipment_statuses = null, string $next_token = null, array $amazon_order_ids = null, string $actual_fulfillment_supply_source_id = null, bool $is_ispu = null, string $store_chain_store_id = null) : RequestInterface
     {
@@ -1581,12 +1581,12 @@ final class OrdersSDK
      *
      * @param AccessToken $accessToken
      * @param string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
-     * @param \AmazonPHP\SellingPartner\Model\Orders\UpdateVerificationStatusRequest $payload Request to update the verification status of an order containing regulated products. (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Orders\UpdateVerificationStatusRequest $payload Request to update the verification status of an order containing regulated products. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function updateVerificationStatus(AccessToken $accessToken, string $region, string $order_id, \AmazonPHP\SellingPartner\Model\Orders\UpdateVerificationStatusRequest $payload)
+    public function updateVerificationStatus(AccessToken $accessToken, string $region, string $order_id, \Plenty\AmazonPHP\SellingPartner\Model\Orders\UpdateVerificationStatusRequest $payload)
     {
         $request = $this->updateVerificationStatusRequest($accessToken, $region, $order_id, $payload);
 
@@ -1673,11 +1673,11 @@ final class OrdersSDK
      *
      * @param AccessToken $accessToken
      * @param string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
-     * @param \AmazonPHP\SellingPartner\Model\Orders\UpdateVerificationStatusRequest $payload Request to update the verification status of an order containing regulated products. (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Orders\UpdateVerificationStatusRequest $payload Request to update the verification status of an order containing regulated products. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function updateVerificationStatusRequest(AccessToken $accessToken, string $region, string $order_id, \AmazonPHP\SellingPartner\Model\Orders\UpdateVerificationStatusRequest $payload) : RequestInterface
+    public function updateVerificationStatusRequest(AccessToken $accessToken, string $region, string $order_id, \Plenty\AmazonPHP\SellingPartner\Model\Orders\UpdateVerificationStatusRequest $payload) : RequestInterface
     {
         // verify the required parameter 'order_id' is set
         if ($order_id === null || (\is_array($order_id) && \count($order_id) === 0)) {

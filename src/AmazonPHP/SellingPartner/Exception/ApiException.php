@@ -16,7 +16,7 @@ final class ApiException extends Exception
      *
      * @var null|string[]
      */
-    protected ?array $responseHeaders;
+    protected /** [COMPAT] ?array */ $responseHeaders;
 
     /**
      * The deserialized response object.

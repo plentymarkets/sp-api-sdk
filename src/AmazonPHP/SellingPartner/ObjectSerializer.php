@@ -2,11 +2,11 @@
 
 namespace Plenty\AmazonPHP\SellingPartner;
 
-use AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat;
+use Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\LabelFormat;
 
 final class ObjectSerializer
 {
-    private static string $dateTimeFormat = \DateTimeInterface::ATOM;
+    private static /** [COMPAT] string */ $dateTimeFormat = \DateTimeInterface::ATOM;
 
     /**
      * Change the date format.
@@ -360,7 +360,7 @@ final class ObjectSerializer
         $discriminator = $class::DISCRIMINATOR;
 
         if (!empty($discriminator) && isset($data->{$discriminator}) && \is_string($data->{$discriminator})) {
-            $subclass = '\AmazonPHP\SellingPartner\Model\\' . $data->{$discriminator};
+            $subclass = '\Plenty\AmazonPHP\SellingPartner\Model\\' . $data->{$discriminator};
 
             if (\is_subclass_of($subclass, $class)) {
                 $class = $subclass;

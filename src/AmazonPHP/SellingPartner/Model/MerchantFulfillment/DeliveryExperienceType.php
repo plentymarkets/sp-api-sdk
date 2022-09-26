@@ -46,7 +46,7 @@ class DeliveryExperienceType
 
     public const NO_TRACKING = 'NoTracking';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

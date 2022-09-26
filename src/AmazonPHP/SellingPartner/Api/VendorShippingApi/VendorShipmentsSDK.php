@@ -2,13 +2,13 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Api\VendorShippingApi;
 
-use AmazonPHP\SellingPartner\AccessToken;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\Exception\ApiException;
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
-use AmazonPHP\SellingPartner\HttpFactory;
-use AmazonPHP\SellingPartner\HttpSignatureHeaders;
-use AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\AccessToken;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\HttpFactory;
+use Plenty\AmazonPHP\SellingPartner\HttpSignatureHeaders;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
@@ -26,13 +26,13 @@ final class VendorShipmentsSDK
 
     public const OPERATION_SUBMITSHIPMENTCONFIRMATIONS_PATH = '/vendor/shipping/v1/shipmentConfirmations';
 
-    private ClientInterface $client;
+    private /** [COMPAT] ClientInterface */ $client;
 
-    private HttpFactory $httpFactory;
+    private /** [COMPAT] HttpFactory */ $httpFactory;
 
-    private Configuration $configuration;
+    private /** [COMPAT] Configuration */ $configuration;
 
-    private LoggerInterface $logger;
+    private /** [COMPAT] LoggerInterface */ $logger;
 
     public function __construct(ClientInterface $client, HttpFactory $requestFactory, Configuration $configuration, LoggerInterface $logger)
     {
@@ -46,12 +46,12 @@ final class VendorShipmentsSDK
      * Operation submitShipmentConfirmations.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\VendorShipments\SubmitShipmentConfirmationsRequest $body body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\SubmitShipmentConfirmationsRequest $body body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function submitShipmentConfirmations(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\VendorShipments\SubmitShipmentConfirmationsRequest $body) : \AmazonPHP\SellingPartner\Model\VendorShipments\SubmitShipmentConfirmationsResponse
+    public function submitShipmentConfirmations(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\SubmitShipmentConfirmationsRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\SubmitShipmentConfirmationsResponse
     {
         $request = $this->submitShipmentConfirmationsRequest($accessToken, $region, $body);
 
@@ -133,7 +133,7 @@ final class VendorShipmentsSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\VendorShipments\SubmitShipmentConfirmationsResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\SubmitShipmentConfirmationsResponse',
             []
         );
     }
@@ -142,11 +142,11 @@ final class VendorShipmentsSDK
      * Create request for operation 'submitShipmentConfirmations'.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\VendorShipments\SubmitShipmentConfirmationsRequest $body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\SubmitShipmentConfirmationsRequest $body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function submitShipmentConfirmationsRequest(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\VendorShipments\SubmitShipmentConfirmationsRequest $body) : RequestInterface
+    public function submitShipmentConfirmationsRequest(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\VendorShipments\SubmitShipmentConfirmationsRequest $body) : RequestInterface
     {
         // verify the required parameter 'body' is set
         if ($body === null || (\is_array($body) && \count($body) === 0)) {

@@ -2,13 +2,13 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Api\ServiceApi;
 
-use AmazonPHP\SellingPartner\AccessToken;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\Exception\ApiException;
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
-use AmazonPHP\SellingPartner\HttpFactory;
-use AmazonPHP\SellingPartner\HttpSignatureHeaders;
-use AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\AccessToken;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\HttpFactory;
+use Plenty\AmazonPHP\SellingPartner\HttpSignatureHeaders;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
@@ -46,13 +46,13 @@ final class ServicesSDK
 
     public const OPERATION_RESCHEDULEAPPOINTMENTFORSERVICEJOBBYSERVICEJOBID_PATH = '/service/v1/serviceJobs/{serviceJobId}/appointments/{appointmentId}';
 
-    private ClientInterface $client;
+    private /** [COMPAT] ClientInterface */ $client;
 
-    private HttpFactory $httpFactory;
+    private /** [COMPAT] HttpFactory */ $httpFactory;
 
-    private Configuration $configuration;
+    private /** [COMPAT] Configuration */ $configuration;
 
-    private LoggerInterface $logger;
+    private /** [COMPAT] LoggerInterface */ $logger;
 
     public function __construct(ClientInterface $client, HttpFactory $requestFactory, Configuration $configuration, LoggerInterface $logger)
     {
@@ -67,12 +67,12 @@ final class ServicesSDK
      *
      * @param AccessToken $accessToken
      * @param string $service_job_id An Amazon defined service job identifier. (required)
-     * @param \AmazonPHP\SellingPartner\Model\Services\AddAppointmentRequest $body Add appointment operation input details. (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Services\AddAppointmentRequest $body Add appointment operation input details. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function addAppointmentForServiceJobByServiceJobId(AccessToken $accessToken, string $region, string $service_job_id, \AmazonPHP\SellingPartner\Model\Services\AddAppointmentRequest $body) : \AmazonPHP\SellingPartner\Model\Services\SetAppointmentResponse
+    public function addAppointmentForServiceJobByServiceJobId(AccessToken $accessToken, string $region, string $service_job_id, \Plenty\AmazonPHP\SellingPartner\Model\Services\AddAppointmentRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\Services\SetAppointmentResponse
     {
         $request = $this->addAppointmentForServiceJobByServiceJobIdRequest($accessToken, $region, $service_job_id, $body);
 
@@ -154,7 +154,7 @@ final class ServicesSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Services\SetAppointmentResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Services\SetAppointmentResponse',
             []
         );
     }
@@ -164,11 +164,11 @@ final class ServicesSDK
      *
      * @param AccessToken $accessToken
      * @param string $service_job_id An Amazon defined service job identifier. (required)
-     * @param \AmazonPHP\SellingPartner\Model\Services\AddAppointmentRequest $body Add appointment operation input details. (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Services\AddAppointmentRequest $body Add appointment operation input details. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function addAppointmentForServiceJobByServiceJobIdRequest(AccessToken $accessToken, string $region, string $service_job_id, \AmazonPHP\SellingPartner\Model\Services\AddAppointmentRequest $body) : RequestInterface
+    public function addAppointmentForServiceJobByServiceJobIdRequest(AccessToken $accessToken, string $region, string $service_job_id, \Plenty\AmazonPHP\SellingPartner\Model\Services\AddAppointmentRequest $body) : RequestInterface
     {
         // verify the required parameter 'service_job_id' is set
         if ($service_job_id === null || (\is_array($service_job_id) && \count($service_job_id) === 0)) {
@@ -282,10 +282,10 @@ final class ServicesSDK
      * @param string $service_job_id An Amazon defined service job identifier. (required)
      * @param string $cancellation_reason_code A cancel reason code that specifies the reason for cancelling a service job. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function cancelServiceJobByServiceJobId(AccessToken $accessToken, string $region, string $service_job_id, string $cancellation_reason_code) : \AmazonPHP\SellingPartner\Model\Services\CancelServiceJobByServiceJobIdResponse
+    public function cancelServiceJobByServiceJobId(AccessToken $accessToken, string $region, string $service_job_id, string $cancellation_reason_code) : \Plenty\AmazonPHP\SellingPartner\Model\Services\CancelServiceJobByServiceJobIdResponse
     {
         $request = $this->cancelServiceJobByServiceJobIdRequest($accessToken, $region, $service_job_id, $cancellation_reason_code);
 
@@ -367,7 +367,7 @@ final class ServicesSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Services\CancelServiceJobByServiceJobIdResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Services\CancelServiceJobByServiceJobIdResponse',
             []
         );
     }
@@ -379,7 +379,7 @@ final class ServicesSDK
      * @param string $service_job_id An Amazon defined service job identifier. (required)
      * @param string $cancellation_reason_code A cancel reason code that specifies the reason for cancelling a service job. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function cancelServiceJobByServiceJobIdRequest(AccessToken $accessToken, string $region, string $service_job_id, string $cancellation_reason_code) : RequestInterface
     {
@@ -507,10 +507,10 @@ final class ServicesSDK
      * @param AccessToken $accessToken
      * @param string $service_job_id An Amazon defined service job identifier. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function completeServiceJobByServiceJobId(AccessToken $accessToken, string $region, string $service_job_id) : \AmazonPHP\SellingPartner\Model\Services\CompleteServiceJobByServiceJobIdResponse
+    public function completeServiceJobByServiceJobId(AccessToken $accessToken, string $region, string $service_job_id) : \Plenty\AmazonPHP\SellingPartner\Model\Services\CompleteServiceJobByServiceJobIdResponse
     {
         $request = $this->completeServiceJobByServiceJobIdRequest($accessToken, $region, $service_job_id);
 
@@ -592,7 +592,7 @@ final class ServicesSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Services\CompleteServiceJobByServiceJobIdResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Services\CompleteServiceJobByServiceJobIdResponse',
             []
         );
     }
@@ -603,7 +603,7 @@ final class ServicesSDK
      * @param AccessToken $accessToken
      * @param string $service_job_id An Amazon defined service job identifier. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function completeServiceJobByServiceJobIdRequest(AccessToken $accessToken, string $region, string $service_job_id) : RequestInterface
     {
@@ -703,10 +703,10 @@ final class ServicesSDK
      * @param AccessToken $accessToken
      * @param string $service_job_id A service job identifier. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getServiceJobByServiceJobId(AccessToken $accessToken, string $region, string $service_job_id) : \AmazonPHP\SellingPartner\Model\Services\GetServiceJobByServiceJobIdResponse
+    public function getServiceJobByServiceJobId(AccessToken $accessToken, string $region, string $service_job_id) : \Plenty\AmazonPHP\SellingPartner\Model\Services\GetServiceJobByServiceJobIdResponse
     {
         $request = $this->getServiceJobByServiceJobIdRequest($accessToken, $region, $service_job_id);
 
@@ -788,7 +788,7 @@ final class ServicesSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Services\GetServiceJobByServiceJobIdResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Services\GetServiceJobByServiceJobIdResponse',
             []
         );
     }
@@ -799,7 +799,7 @@ final class ServicesSDK
      * @param AccessToken $accessToken
      * @param string $service_job_id A service job identifier. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getServiceJobByServiceJobIdRequest(AccessToken $accessToken, string $region, string $service_job_id) : RequestInterface
     {
@@ -911,10 +911,10 @@ final class ServicesSDK
      * @param string $schedule_start_date A date used for filtering jobs schedule after (or at) a specified time must be in ISO 8601 format. schedule end date should not be earlier than schedule start date. (optional)
      * @param string $schedule_end_date A date used for filtering jobs schedule before (or at) a specified time must be in ISO 8601 format. schedule end date should not be earlier than schedule start date. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getServiceJobs(AccessToken $accessToken, string $region, array $marketplace_ids, array $service_order_ids = null, array $service_job_status = null, string $page_token = null, int $page_size = 20, string $sort_field = null, string $sort_order = null, string $created_after = null, string $created_before = null, string $last_updated_after = null, string $last_updated_before = null, string $schedule_start_date = null, string $schedule_end_date = null) : \AmazonPHP\SellingPartner\Model\Services\GetServiceJobsResponse
+    public function getServiceJobs(AccessToken $accessToken, string $region, array $marketplace_ids, array $service_order_ids = null, array $service_job_status = null, string $page_token = null, int $page_size = 20, string $sort_field = null, string $sort_order = null, string $created_after = null, string $created_before = null, string $last_updated_after = null, string $last_updated_before = null, string $schedule_start_date = null, string $schedule_end_date = null) : \Plenty\AmazonPHP\SellingPartner\Model\Services\GetServiceJobsResponse
     {
         $request = $this->getServiceJobsRequest($accessToken, $region, $marketplace_ids, $service_order_ids, $service_job_status, $page_token, $page_size, $sort_field, $sort_order, $created_after, $created_before, $last_updated_after, $last_updated_before, $schedule_start_date, $schedule_end_date);
 
@@ -996,7 +996,7 @@ final class ServicesSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Services\GetServiceJobsResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Services\GetServiceJobsResponse',
             []
         );
     }
@@ -1019,7 +1019,7 @@ final class ServicesSDK
      * @param string $schedule_start_date A date used for filtering jobs schedule after (or at) a specified time must be in ISO 8601 format. schedule end date should not be earlier than schedule start date. (optional)
      * @param string $schedule_end_date A date used for filtering jobs schedule before (or at) a specified time must be in ISO 8601 format. schedule end date should not be earlier than schedule start date. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getServiceJobsRequest(AccessToken $accessToken, string $region, array $marketplace_ids, array $service_order_ids = null, array $service_job_status = null, string $page_token = null, int $page_size = 20, string $sort_field = null, string $sort_order = null, string $created_after = null, string $created_before = null, string $last_updated_after = null, string $last_updated_before = null, string $schedule_start_date = null, string $schedule_end_date = null) : RequestInterface
     {
@@ -1227,12 +1227,12 @@ final class ServicesSDK
      * @param AccessToken $accessToken
      * @param string $service_job_id An Amazon defined service job identifier. (required)
      * @param string $appointment_id An existing appointment identifier for the Service Job. (required)
-     * @param \AmazonPHP\SellingPartner\Model\Services\RescheduleAppointmentRequest $body Reschedule appointment operation input details. (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Services\RescheduleAppointmentRequest $body Reschedule appointment operation input details. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function rescheduleAppointmentForServiceJobByServiceJobId(AccessToken $accessToken, string $region, string $service_job_id, string $appointment_id, \AmazonPHP\SellingPartner\Model\Services\RescheduleAppointmentRequest $body) : \AmazonPHP\SellingPartner\Model\Services\SetAppointmentResponse
+    public function rescheduleAppointmentForServiceJobByServiceJobId(AccessToken $accessToken, string $region, string $service_job_id, string $appointment_id, \Plenty\AmazonPHP\SellingPartner\Model\Services\RescheduleAppointmentRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\Services\SetAppointmentResponse
     {
         $request = $this->rescheduleAppointmentForServiceJobByServiceJobIdRequest($accessToken, $region, $service_job_id, $appointment_id, $body);
 
@@ -1314,7 +1314,7 @@ final class ServicesSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Services\SetAppointmentResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Services\SetAppointmentResponse',
             []
         );
     }
@@ -1325,11 +1325,11 @@ final class ServicesSDK
      * @param AccessToken $accessToken
      * @param string $service_job_id An Amazon defined service job identifier. (required)
      * @param string $appointment_id An existing appointment identifier for the Service Job. (required)
-     * @param \AmazonPHP\SellingPartner\Model\Services\RescheduleAppointmentRequest $body Reschedule appointment operation input details. (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\Services\RescheduleAppointmentRequest $body Reschedule appointment operation input details. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function rescheduleAppointmentForServiceJobByServiceJobIdRequest(AccessToken $accessToken, string $region, string $service_job_id, string $appointment_id, \AmazonPHP\SellingPartner\Model\Services\RescheduleAppointmentRequest $body) : RequestInterface
+    public function rescheduleAppointmentForServiceJobByServiceJobIdRequest(AccessToken $accessToken, string $region, string $service_job_id, string $appointment_id, \Plenty\AmazonPHP\SellingPartner\Model\Services\RescheduleAppointmentRequest $body) : RequestInterface
     {
         // verify the required parameter 'service_job_id' is set
         if ($service_job_id === null || (\is_array($service_job_id) && \count($service_job_id) === 0)) {

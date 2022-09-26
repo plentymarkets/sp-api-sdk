@@ -46,7 +46,7 @@ class ShippingSpeedCategory
 
     public const SCHEDULED_DELIVERY = 'ScheduledDelivery';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

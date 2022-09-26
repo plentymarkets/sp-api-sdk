@@ -4,18 +4,18 @@ declare(strict_types=1);
 
 namespace Plenty\AmazonPHP\Test\AmazonPHP\SellingPartner\Tests\Unit;
 
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions;
-use AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredSmallParcelDataInput;
-use AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredSmallParcelPackageInput;
-use AmazonPHP\SellingPartner\Model\FulfillmentInbound\PutTransportDetailsRequest;
-use AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentType;
-use AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportDetailInput;
-use AmazonPHP\SellingPartner\Model\FulfillmentInbound\UnitOfMeasurement;
-use AmazonPHP\SellingPartner\Model\FulfillmentInbound\UnitOfWeight;
-use AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight;
-use AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShippingServiceOptions;
-use AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions;
+use Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredSmallParcelDataInput;
+use Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PartneredSmallParcelPackageInput;
+use Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PutTransportDetailsRequest;
+use Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentType;
+use Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportDetailInput;
+use Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\UnitOfMeasurement;
+use Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\UnitOfWeight;
+use Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight;
+use Plenty\AmazonPHP\SellingPartner\Model\MerchantFulfillment\ShippingServiceOptions;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
 final class ObjectSerializerTest extends TestCase

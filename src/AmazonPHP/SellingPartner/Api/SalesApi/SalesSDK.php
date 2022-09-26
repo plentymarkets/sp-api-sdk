@@ -2,13 +2,13 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Api\SalesApi;
 
-use AmazonPHP\SellingPartner\AccessToken;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\Exception\ApiException;
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
-use AmazonPHP\SellingPartner\HttpFactory;
-use AmazonPHP\SellingPartner\HttpSignatureHeaders;
-use AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\AccessToken;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\HttpFactory;
+use Plenty\AmazonPHP\SellingPartner\HttpSignatureHeaders;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
@@ -26,13 +26,13 @@ final class SalesSDK
 
     public const OPERATION_GETORDERMETRICS_PATH = '/sales/v1/orderMetrics';
 
-    private ClientInterface $client;
+    private /** [COMPAT] ClientInterface */ $client;
 
-    private HttpFactory $httpFactory;
+    private /** [COMPAT] HttpFactory */ $httpFactory;
 
-    private Configuration $configuration;
+    private /** [COMPAT] Configuration */ $configuration;
 
-    private LoggerInterface $logger;
+    private /** [COMPAT] LoggerInterface */ $logger;
 
     public function __construct(ClientInterface $client, HttpFactory $requestFactory, Configuration $configuration, LoggerInterface $logger)
     {
@@ -56,10 +56,10 @@ final class SalesSDK
      * @param string $asin Filters the results by the ASIN that you specify. Specifying both ASIN and SKU returns an error. Do not include this filter if you want the response to include order metrics for all ASINs. Example: B0792R1RSN, if you want the response to include order metrics for only ASIN B0792R1RSN. (optional)
      * @param string $sku Filters the results by the SKU that you specify. Specifying both ASIN and SKU returns an error. Do not include this filter if you want the response to include order metrics for all SKUs. Example: TestSKU, if you want the response to include order metrics for only SKU TestSKU. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getOrderMetrics(AccessToken $accessToken, string $region, array $marketplace_ids, string $interval, string $granularity, string $granularity_time_zone = null, string $buyer_type = 'All', string $fulfillment_network = null, string $first_day_of_week = 'Monday', string $asin = null, string $sku = null) : \AmazonPHP\SellingPartner\Model\Sales\GetOrderMetricsResponse
+    public function getOrderMetrics(AccessToken $accessToken, string $region, array $marketplace_ids, string $interval, string $granularity, string $granularity_time_zone = null, string $buyer_type = 'All', string $fulfillment_network = null, string $first_day_of_week = 'Monday', string $asin = null, string $sku = null) : \Plenty\AmazonPHP\SellingPartner\Model\Sales\GetOrderMetricsResponse
     {
         $request = $this->getOrderMetricsRequest($accessToken, $region, $marketplace_ids, $interval, $granularity, $granularity_time_zone, $buyer_type, $fulfillment_network, $first_day_of_week, $asin, $sku);
 
@@ -141,7 +141,7 @@ final class SalesSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Sales\GetOrderMetricsResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Sales\GetOrderMetricsResponse',
             []
         );
     }
@@ -160,7 +160,7 @@ final class SalesSDK
      * @param string $asin Filters the results by the ASIN that you specify. Specifying both ASIN and SKU returns an error. Do not include this filter if you want the response to include order metrics for all ASINs. Example: B0792R1RSN, if you want the response to include order metrics for only ASIN B0792R1RSN. (optional)
      * @param string $sku Filters the results by the SKU that you specify. Specifying both ASIN and SKU returns an error. Do not include this filter if you want the response to include order metrics for all SKUs. Example: TestSKU, if you want the response to include order metrics for only SKU TestSKU. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getOrderMetricsRequest(AccessToken $accessToken, string $region, array $marketplace_ids, string $interval, string $granularity, string $granularity_time_zone = null, string $buyer_type = 'All', string $fulfillment_network = null, string $first_day_of_week = 'Monday', string $asin = null, string $sku = null) : RequestInterface
     {

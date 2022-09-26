@@ -40,7 +40,7 @@ class QuantityDiscountType
      */
     public const QUANTITY_DISCOUNT = 'QUANTITY_DISCOUNT';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

@@ -42,7 +42,7 @@ class PrepOwner
 
     public const SELLER = 'SELLER';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

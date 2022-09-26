@@ -2,13 +2,13 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Api\ShipmentInvoiceApi;
 
-use AmazonPHP\SellingPartner\AccessToken;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\Exception\ApiException;
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
-use AmazonPHP\SellingPartner\HttpFactory;
-use AmazonPHP\SellingPartner\HttpSignatureHeaders;
-use AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\AccessToken;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\HttpFactory;
+use Plenty\AmazonPHP\SellingPartner\HttpSignatureHeaders;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
@@ -34,13 +34,13 @@ final class ShipmentInvoicingSDK
 
     public const OPERATION_SUBMITINVOICE_PATH = '/fba/outbound/brazil/v0/shipments/{shipmentId}/invoice';
 
-    private ClientInterface $client;
+    private /** [COMPAT] ClientInterface */ $client;
 
-    private HttpFactory $httpFactory;
+    private /** [COMPAT] HttpFactory */ $httpFactory;
 
-    private Configuration $configuration;
+    private /** [COMPAT] Configuration */ $configuration;
 
-    private LoggerInterface $logger;
+    private /** [COMPAT] LoggerInterface */ $logger;
 
     public function __construct(ClientInterface $client, HttpFactory $requestFactory, Configuration $configuration, LoggerInterface $logger)
     {
@@ -56,10 +56,10 @@ final class ShipmentInvoicingSDK
      * @param AccessToken $accessToken
      * @param string $shipment_id The shipment identifier for the shipment. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getInvoiceStatus(AccessToken $accessToken, string $region, string $shipment_id) : \AmazonPHP\SellingPartner\Model\ShipmentInvoicing\GetInvoiceStatusResponse
+    public function getInvoiceStatus(AccessToken $accessToken, string $region, string $shipment_id) : \Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\GetInvoiceStatusResponse
     {
         $request = $this->getInvoiceStatusRequest($accessToken, $region, $shipment_id);
 
@@ -141,7 +141,7 @@ final class ShipmentInvoicingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\GetInvoiceStatusResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\GetInvoiceStatusResponse',
             []
         );
     }
@@ -152,7 +152,7 @@ final class ShipmentInvoicingSDK
      * @param AccessToken $accessToken
      * @param string $shipment_id The shipment identifier for the shipment. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getInvoiceStatusRequest(AccessToken $accessToken, string $region, string $shipment_id) : RequestInterface
     {
@@ -244,10 +244,10 @@ final class ShipmentInvoicingSDK
      * @param AccessToken $accessToken
      * @param string $shipment_id The identifier for the shipment. Get this value from the FBAOutboundShipmentStatus notification. For information about subscribing to notifications, see the [Notifications API Use Case Guide](doc:notifications-api-v1-use-case-guide). (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getShipmentDetails(AccessToken $accessToken, string $region, string $shipment_id) : \AmazonPHP\SellingPartner\Model\ShipmentInvoicing\GetShipmentDetailsResponse
+    public function getShipmentDetails(AccessToken $accessToken, string $region, string $shipment_id) : \Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\GetShipmentDetailsResponse
     {
         $request = $this->getShipmentDetailsRequest($accessToken, $region, $shipment_id);
 
@@ -329,7 +329,7 @@ final class ShipmentInvoicingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\GetShipmentDetailsResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\GetShipmentDetailsResponse',
             []
         );
     }
@@ -340,7 +340,7 @@ final class ShipmentInvoicingSDK
      * @param AccessToken $accessToken
      * @param string $shipment_id The identifier for the shipment. Get this value from the FBAOutboundShipmentStatus notification. For information about subscribing to notifications, see the [Notifications API Use Case Guide](doc:notifications-api-v1-use-case-guide). (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getShipmentDetailsRequest(AccessToken $accessToken, string $region, string $shipment_id) : RequestInterface
     {
@@ -431,12 +431,12 @@ final class ShipmentInvoicingSDK
      *
      * @param AccessToken $accessToken
      * @param string $shipment_id The identifier for the shipment. (required)
-     * @param \AmazonPHP\SellingPartner\Model\ShipmentInvoicing\SubmitInvoiceRequest $body body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\SubmitInvoiceRequest $body body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function submitInvoice(AccessToken $accessToken, string $region, string $shipment_id, \AmazonPHP\SellingPartner\Model\ShipmentInvoicing\SubmitInvoiceRequest $body) : \AmazonPHP\SellingPartner\Model\ShipmentInvoicing\SubmitInvoiceResponse
+    public function submitInvoice(AccessToken $accessToken, string $region, string $shipment_id, \Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\SubmitInvoiceRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\SubmitInvoiceResponse
     {
         $request = $this->submitInvoiceRequest($accessToken, $region, $shipment_id, $body);
 
@@ -518,7 +518,7 @@ final class ShipmentInvoicingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\SubmitInvoiceResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\SubmitInvoiceResponse',
             []
         );
     }
@@ -528,11 +528,11 @@ final class ShipmentInvoicingSDK
      *
      * @param AccessToken $accessToken
      * @param string $shipment_id The identifier for the shipment. (required)
-     * @param \AmazonPHP\SellingPartner\Model\ShipmentInvoicing\SubmitInvoiceRequest $body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\SubmitInvoiceRequest $body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function submitInvoiceRequest(AccessToken $accessToken, string $region, string $shipment_id, \AmazonPHP\SellingPartner\Model\ShipmentInvoicing\SubmitInvoiceRequest $body) : RequestInterface
+    public function submitInvoiceRequest(AccessToken $accessToken, string $region, string $shipment_id, \Plenty\AmazonPHP\SellingPartner\Model\ShipmentInvoicing\SubmitInvoiceRequest $body) : RequestInterface
     {
         // verify the required parameter 'shipment_id' is set
         if ($shipment_id === null || (\is_array($shipment_id) && \count($shipment_id) === 0)) {

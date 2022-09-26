@@ -2,13 +2,13 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Api\VendorTransactionApi;
 
-use AmazonPHP\SellingPartner\AccessToken;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\Exception\ApiException;
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
-use AmazonPHP\SellingPartner\HttpFactory;
-use AmazonPHP\SellingPartner\HttpSignatureHeaders;
-use AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\AccessToken;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\HttpFactory;
+use Plenty\AmazonPHP\SellingPartner\HttpSignatureHeaders;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
@@ -26,13 +26,13 @@ final class VendorDirectFulfillmentTransactionsSDK
 
     public const OPERATION_GETTRANSACTIONSTATUS_PATH = '/vendor/directFulfillment/transactions/2021-12-28/transactions/{transactionId}';
 
-    private ClientInterface $client;
+    private /** [COMPAT] ClientInterface */ $client;
 
-    private HttpFactory $httpFactory;
+    private /** [COMPAT] HttpFactory */ $httpFactory;
 
-    private Configuration $configuration;
+    private /** [COMPAT] Configuration */ $configuration;
 
-    private LoggerInterface $logger;
+    private /** [COMPAT] LoggerInterface */ $logger;
 
     public function __construct(ClientInterface $client, HttpFactory $requestFactory, Configuration $configuration, LoggerInterface $logger)
     {
@@ -48,10 +48,10 @@ final class VendorDirectFulfillmentTransactionsSDK
      * @param AccessToken $accessToken
      * @param string $transaction_id Previously returned in the response to the POST request of a specific transaction. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getTransactionStatus(AccessToken $accessToken, string $region, string $transaction_id) : \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentTransactions\TransactionStatus
+    public function getTransactionStatus(AccessToken $accessToken, string $region, string $transaction_id) : \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentTransactions\TransactionStatus
     {
         $request = $this->getTransactionStatusRequest($accessToken, $region, $transaction_id);
 
@@ -133,7 +133,7 @@ final class VendorDirectFulfillmentTransactionsSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentTransactions\TransactionStatus',
+            '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentTransactions\TransactionStatus',
             []
         );
     }
@@ -144,7 +144,7 @@ final class VendorDirectFulfillmentTransactionsSDK
      * @param AccessToken $accessToken
      * @param string $transaction_id Previously returned in the response to the POST request of a specific transaction. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getTransactionStatusRequest(AccessToken $accessToken, string $region, string $transaction_id) : RequestInterface
     {

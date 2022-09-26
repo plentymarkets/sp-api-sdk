@@ -2,13 +2,13 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Api\UploadsApi;
 
-use AmazonPHP\SellingPartner\AccessToken;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\Exception\ApiException;
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
-use AmazonPHP\SellingPartner\HttpFactory;
-use AmazonPHP\SellingPartner\HttpSignatureHeaders;
-use AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\AccessToken;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\HttpFactory;
+use Plenty\AmazonPHP\SellingPartner\HttpSignatureHeaders;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
@@ -26,13 +26,13 @@ final class UploadsSDK
 
     public const OPERATION_CREATEUPLOADDESTINATIONFORRESOURCE_PATH = '/uploads/2020-11-01/uploadDestinations/{resource}';
 
-    private ClientInterface $client;
+    private /** [COMPAT] ClientInterface */ $client;
 
-    private HttpFactory $httpFactory;
+    private /** [COMPAT] HttpFactory */ $httpFactory;
 
-    private Configuration $configuration;
+    private /** [COMPAT] Configuration */ $configuration;
 
-    private LoggerInterface $logger;
+    private /** [COMPAT] LoggerInterface */ $logger;
 
     public function __construct(ClientInterface $client, HttpFactory $requestFactory, Configuration $configuration, LoggerInterface $logger)
     {
@@ -51,10 +51,10 @@ final class UploadsSDK
      * @param string $resource The resource for the upload destination that you are creating. For example, if you are creating an upload destination for the createLegalDisclosure operation of the Messaging API, the {resource} would be /messaging/v1/orders/{amazonOrderId}/messages/legalDisclosure, and the entire path would be /uploads/2020-11-01/uploadDestinations/messaging/v1/orders/{amazonOrderId}/messages/legalDisclosure. (required)
      * @param string $content_type The content type of the file to be uploaded. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createUploadDestinationForResource(AccessToken $accessToken, string $region, array $marketplace_ids, string $content_md5, string $resource, string $content_type = null) : \AmazonPHP\SellingPartner\Model\Uploads\CreateUploadDestinationResponse
+    public function createUploadDestinationForResource(AccessToken $accessToken, string $region, array $marketplace_ids, string $content_md5, string $resource, string $content_type = null) : \Plenty\AmazonPHP\SellingPartner\Model\Uploads\CreateUploadDestinationResponse
     {
         $request = $this->createUploadDestinationForResourceRequest($accessToken, $region, $marketplace_ids, $content_md5, $resource, $content_type);
 
@@ -136,7 +136,7 @@ final class UploadsSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Uploads\CreateUploadDestinationResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Uploads\CreateUploadDestinationResponse',
             []
         );
     }
@@ -150,7 +150,7 @@ final class UploadsSDK
      * @param string $resource The resource for the upload destination that you are creating. For example, if you are creating an upload destination for the createLegalDisclosure operation of the Messaging API, the {resource} would be /messaging/v1/orders/{amazonOrderId}/messages/legalDisclosure, and the entire path would be /uploads/2020-11-01/uploadDestinations/messaging/v1/orders/{amazonOrderId}/messages/legalDisclosure. (required)
      * @param string $content_type The content type of the file to be uploaded. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function createUploadDestinationForResourceRequest(AccessToken $accessToken, string $region, array $marketplace_ids, string $content_md5, string $resource, string $content_type = null) : RequestInterface
     {

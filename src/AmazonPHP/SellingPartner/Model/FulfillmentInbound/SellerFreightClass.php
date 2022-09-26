@@ -74,7 +74,7 @@ class SellerFreightClass
 
     public const _500 = '500';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

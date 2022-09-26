@@ -2,13 +2,13 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Api\FbaInboundApi;
 
-use AmazonPHP\SellingPartner\AccessToken;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\Exception\ApiException;
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
-use AmazonPHP\SellingPartner\HttpFactory;
-use AmazonPHP\SellingPartner\HttpSignatureHeaders;
-use AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\AccessToken;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\HttpFactory;
+use Plenty\AmazonPHP\SellingPartner\HttpSignatureHeaders;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
@@ -26,13 +26,13 @@ final class FBAInboundSDK
 
     public const OPERATION_GETITEMELIGIBILITYPREVIEW_PATH = '/fba/inbound/v1/eligibility/itemPreview';
 
-    private ClientInterface $client;
+    private /** [COMPAT] ClientInterface */ $client;
 
-    private HttpFactory $httpFactory;
+    private /** [COMPAT] HttpFactory */ $httpFactory;
 
-    private Configuration $configuration;
+    private /** [COMPAT] Configuration */ $configuration;
 
-    private LoggerInterface $logger;
+    private /** [COMPAT] LoggerInterface */ $logger;
 
     public function __construct(ClientInterface $client, HttpFactory $requestFactory, Configuration $configuration, LoggerInterface $logger)
     {
@@ -50,10 +50,10 @@ final class FBAInboundSDK
      * @param string $program The program that you want to check eligibility against. (required)
      * @param string[] $marketplace_ids The identifier for the marketplace in which you want to determine eligibility. Required only when program&#x3D;INBOUND. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getItemEligibilityPreview(AccessToken $accessToken, string $region, string $asin, string $program, array $marketplace_ids = null) : \AmazonPHP\SellingPartner\Model\FBAInbound\GetItemEligibilityPreviewResponse
+    public function getItemEligibilityPreview(AccessToken $accessToken, string $region, string $asin, string $program, array $marketplace_ids = null) : \Plenty\AmazonPHP\SellingPartner\Model\FBAInbound\GetItemEligibilityPreviewResponse
     {
         $request = $this->getItemEligibilityPreviewRequest($accessToken, $region, $asin, $program, $marketplace_ids);
 
@@ -135,7 +135,7 @@ final class FBAInboundSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\FBAInbound\GetItemEligibilityPreviewResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\FBAInbound\GetItemEligibilityPreviewResponse',
             []
         );
     }
@@ -148,7 +148,7 @@ final class FBAInboundSDK
      * @param string $program The program that you want to check eligibility against. (required)
      * @param string[] $marketplace_ids The identifier for the marketplace in which you want to determine eligibility. Required only when program&#x3D;INBOUND. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getItemEligibilityPreviewRequest(AccessToken $accessToken, string $region, string $asin, string $program, array $marketplace_ids = null) : RequestInterface
     {

@@ -42,7 +42,7 @@ class HazmatType
 
     public const LQ_HAZMAT = 'LQHazmat';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

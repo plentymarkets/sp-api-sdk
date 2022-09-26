@@ -46,7 +46,7 @@ class AsinBadge
 
     public const CONTENT_PUBLISHED = 'CONTENT_PUBLISHED';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

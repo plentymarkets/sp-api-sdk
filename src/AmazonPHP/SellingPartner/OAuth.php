@@ -4,19 +4,19 @@ declare(strict_types=1);
 
 namespace Plenty\AmazonPHP\SellingPartner;
 
-use AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
 use Psr\Http\Client\ClientInterface;
 use Psr\Log\LoggerInterface;
 
 final class OAuth
 {
-    private ClientInterface $client;
+    private /** [COMPAT] ClientInterface */ $client;
 
-    private HttpFactory $requestFactory;
+    private /** [COMPAT] HttpFactory */ $requestFactory;
 
-    private Configuration $configuration;
+    private /** [COMPAT] Configuration */ $configuration;
 
-    private LoggerInterface $logger;
+    private /** [COMPAT] LoggerInterface */ $logger;
 
     public function __construct(
         ClientInterface $client,

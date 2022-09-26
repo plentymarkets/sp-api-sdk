@@ -2,13 +2,13 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Api\VendorPaymentsApi;
 
-use AmazonPHP\SellingPartner\AccessToken;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\Exception\ApiException;
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
-use AmazonPHP\SellingPartner\HttpFactory;
-use AmazonPHP\SellingPartner\HttpSignatureHeaders;
-use AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\AccessToken;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\HttpFactory;
+use Plenty\AmazonPHP\SellingPartner\HttpSignatureHeaders;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
@@ -26,13 +26,13 @@ final class VendorInvoicesSDK
 
     public const OPERATION_SUBMITINVOICES_PATH = '/vendor/payments/v1/invoices';
 
-    private ClientInterface $client;
+    private /** [COMPAT] ClientInterface */ $client;
 
-    private HttpFactory $httpFactory;
+    private /** [COMPAT] HttpFactory */ $httpFactory;
 
-    private Configuration $configuration;
+    private /** [COMPAT] Configuration */ $configuration;
 
-    private LoggerInterface $logger;
+    private /** [COMPAT] LoggerInterface */ $logger;
 
     public function __construct(ClientInterface $client, HttpFactory $requestFactory, Configuration $configuration, LoggerInterface $logger)
     {
@@ -46,12 +46,12 @@ final class VendorInvoicesSDK
      * Operation submitInvoices.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\VendorInvoices\SubmitInvoicesRequest $body body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\SubmitInvoicesRequest $body body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function submitInvoices(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\VendorInvoices\SubmitInvoicesRequest $body) : \AmazonPHP\SellingPartner\Model\VendorInvoices\SubmitInvoicesResponse
+    public function submitInvoices(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\SubmitInvoicesRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\SubmitInvoicesResponse
     {
         $request = $this->submitInvoicesRequest($accessToken, $region, $body);
 
@@ -133,7 +133,7 @@ final class VendorInvoicesSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\VendorInvoices\SubmitInvoicesResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\SubmitInvoicesResponse',
             []
         );
     }
@@ -142,11 +142,11 @@ final class VendorInvoicesSDK
      * Create request for operation 'submitInvoices'.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\VendorInvoices\SubmitInvoicesRequest $body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\SubmitInvoicesRequest $body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function submitInvoicesRequest(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\VendorInvoices\SubmitInvoicesRequest $body) : RequestInterface
+    public function submitInvoicesRequest(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\VendorInvoices\SubmitInvoicesRequest $body) : RequestInterface
     {
         // verify the required parameter 'body' is set
         if ($body === null || (\is_array($body) && \count($body) === 0)) {

@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace Plenty\AmazonPHP\Test\AmazonPHP\SellingPartner\Tests\Unit;
 
-use AmazonPHP\SellingPartner\Configuration\LoggerConfiguration;
+use Plenty\AmazonPHP\SellingPartner\Configuration\LoggerConfiguration;
 use PHPUnit\Framework\TestCase;
 
 final class LoggerConfigurationTest extends TestCase
 {
-    private array $headers;
+    private /** [COMPAT] array */ $headers;
 
-    private array $apis;
+    private /** [COMPAT] array */ $apis;
 
-    private ?LoggerConfiguration $loggerConfiguration;
+    private /** [COMPAT] ?LoggerConfiguration */ $loggerConfiguration;
 
     protected function setUp() : void
     {

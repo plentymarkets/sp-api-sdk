@@ -60,7 +60,7 @@ class TransportStatus
 
     public const ERROR = 'ERROR';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

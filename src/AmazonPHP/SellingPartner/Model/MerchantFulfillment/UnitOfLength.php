@@ -42,7 +42,7 @@ class UnitOfLength
 
     public const CENTIMETERS = 'centimeters';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

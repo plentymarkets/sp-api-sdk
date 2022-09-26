@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-use AmazonPHP\SellingPartner\Api\VendorOrdersApi\VendorDirectFulfillmentOrdersSDK;
-use AmazonPHP\SellingPartner\Model\CatalogItem\Item;
-use AmazonPHP\SellingPartner\Model\Messaging\GetSchemaResponse;
-use AmazonPHP\SellingPartner\Model\Orders\Address;
-use AmazonPHP\SellingPartner\Model\Uploads\UploadDestination;
+use Plenty\AmazonPHP\SellingPartner\Api\VendorOrdersApi\VendorDirectFulfillmentOrdersSDK;
+use Plenty\AmazonPHP\SellingPartner\Model\CatalogItem\Item;
+use Plenty\AmazonPHP\SellingPartner\Model\Messaging\GetSchemaResponse;
+use Plenty\AmazonPHP\SellingPartner\Model\Orders\Address;
+use Plenty\AmazonPHP\SellingPartner\Model\Uploads\UploadDestination;
 use PHPStan\Type\ArrayType;
 use PHPStan\Type\BooleanType;
 use PHPStan\Type\MixedType;

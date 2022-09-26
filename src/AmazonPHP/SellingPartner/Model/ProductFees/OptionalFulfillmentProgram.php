@@ -44,7 +44,7 @@ class OptionalFulfillmentProgram
 
     public const EFN = 'FBA_EFN';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

@@ -42,7 +42,7 @@ class GuidanceReason
 
     public const NO_APPLICABLE_GUIDANCE = 'NoApplicableGuidance';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

@@ -2,13 +2,13 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Api\FbaInboundApi;
 
-use AmazonPHP\SellingPartner\AccessToken;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\Exception\ApiException;
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
-use AmazonPHP\SellingPartner\HttpFactory;
-use AmazonPHP\SellingPartner\HttpSignatureHeaders;
-use AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\AccessToken;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\HttpFactory;
+use Plenty\AmazonPHP\SellingPartner\HttpSignatureHeaders;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
@@ -90,13 +90,13 @@ final class FulfillmentInboundSDK
 
     public const OPERATION_VOIDTRANSPORT_PATH = '/fba/inbound/v0/shipments/{shipmentId}/transport/void';
 
-    private ClientInterface $client;
+    private /** [COMPAT] ClientInterface */ $client;
 
-    private HttpFactory $httpFactory;
+    private /** [COMPAT] HttpFactory */ $httpFactory;
 
-    private Configuration $configuration;
+    private /** [COMPAT] Configuration */ $configuration;
 
-    private LoggerInterface $logger;
+    private /** [COMPAT] LoggerInterface */ $logger;
 
     public function __construct(ClientInterface $client, HttpFactory $requestFactory, Configuration $configuration, LoggerInterface $logger)
     {
@@ -114,10 +114,10 @@ final class FulfillmentInboundSDK
      * @param \DateTime $need_by_date Date that the shipment must arrive at the Amazon fulfillment center to avoid delivery promise breaks for pre-ordered items. Must be in YYYY-MM-DD format. The response to the getPreorderInfo operation returns this value. (required)
      * @param string $marketplace_id A marketplace identifier. Specifies the marketplace the shipment is tied to. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function confirmPreorder(AccessToken $accessToken, string $region, string $shipment_id, \DateTimeInterface $need_by_date, string $marketplace_id) : \AmazonPHP\SellingPartner\Model\FulfillmentInbound\ConfirmPreorderResponse
+    public function confirmPreorder(AccessToken $accessToken, string $region, string $shipment_id, \DateTimeInterface $need_by_date, string $marketplace_id) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ConfirmPreorderResponse
     {
         $request = $this->confirmPreorderRequest($accessToken, $region, $shipment_id, $need_by_date, $marketplace_id);
 
@@ -199,7 +199,7 @@ final class FulfillmentInboundSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ConfirmPreorderResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ConfirmPreorderResponse',
             []
         );
     }
@@ -212,7 +212,7 @@ final class FulfillmentInboundSDK
      * @param \DateTime $need_by_date Date that the shipment must arrive at the Amazon fulfillment center to avoid delivery promise breaks for pre-ordered items. Must be in YYYY-MM-DD format. The response to the getPreorderInfo operation returns this value. (required)
      * @param string $marketplace_id A marketplace identifier. Specifies the marketplace the shipment is tied to. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function confirmPreorderRequest(AccessToken $accessToken, string $region, string $shipment_id, \DateTimeInterface $need_by_date, string $marketplace_id) : RequestInterface
     {
@@ -333,10 +333,10 @@ final class FulfillmentInboundSDK
      * @param AccessToken $accessToken
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function confirmTransport(AccessToken $accessToken, string $region, string $shipment_id) : \AmazonPHP\SellingPartner\Model\FulfillmentInbound\ConfirmTransportResponse
+    public function confirmTransport(AccessToken $accessToken, string $region, string $shipment_id) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ConfirmTransportResponse
     {
         $request = $this->confirmTransportRequest($accessToken, $region, $shipment_id);
 
@@ -418,7 +418,7 @@ final class FulfillmentInboundSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ConfirmTransportResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ConfirmTransportResponse',
             []
         );
     }
@@ -429,7 +429,7 @@ final class FulfillmentInboundSDK
      * @param AccessToken $accessToken
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function confirmTransportRequest(AccessToken $accessToken, string $region, string $shipment_id) : RequestInterface
     {
@@ -520,12 +520,12 @@ final class FulfillmentInboundSDK
      *
      * @param AccessToken $accessToken
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentRequest $body body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentRequest $body body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createInboundShipment(AccessToken $accessToken, string $region, string $shipment_id, \AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentRequest $body) : \AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentResponse
+    public function createInboundShipment(AccessToken $accessToken, string $region, string $shipment_id, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentResponse
     {
         $request = $this->createInboundShipmentRequest($accessToken, $region, $shipment_id, $body);
 
@@ -607,7 +607,7 @@ final class FulfillmentInboundSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentResponse',
             []
         );
     }
@@ -617,11 +617,11 @@ final class FulfillmentInboundSDK
      *
      * @param AccessToken $accessToken
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentRequest $body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentRequest $body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createInboundShipmentRequest(AccessToken $accessToken, string $region, string $shipment_id, \AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentRequest $body) : RequestInterface
+    public function createInboundShipmentRequest(AccessToken $accessToken, string $region, string $shipment_id, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentRequest $body) : RequestInterface
     {
         // verify the required parameter 'shipment_id' is set
         if ($shipment_id === null || (\is_array($shipment_id) && \count($shipment_id) === 0)) {
@@ -723,12 +723,12 @@ final class FulfillmentInboundSDK
      * Operation createInboundShipmentPlan.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\CreateInboundShipmentPlanRequest $body body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\CreateInboundShipmentPlanRequest $body body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createInboundShipmentPlan(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\FulfillmentInbound\CreateInboundShipmentPlanRequest $body) : \AmazonPHP\SellingPartner\Model\FulfillmentInbound\CreateInboundShipmentPlanResponse
+    public function createInboundShipmentPlan(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\CreateInboundShipmentPlanRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\CreateInboundShipmentPlanResponse
     {
         $request = $this->createInboundShipmentPlanRequest($accessToken, $region, $body);
 
@@ -810,7 +810,7 @@ final class FulfillmentInboundSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\CreateInboundShipmentPlanResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\CreateInboundShipmentPlanResponse',
             []
         );
     }
@@ -819,11 +819,11 @@ final class FulfillmentInboundSDK
      * Create request for operation 'createInboundShipmentPlan'.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\CreateInboundShipmentPlanRequest $body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\CreateInboundShipmentPlanRequest $body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createInboundShipmentPlanRequest(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\FulfillmentInbound\CreateInboundShipmentPlanRequest $body) : RequestInterface
+    public function createInboundShipmentPlanRequest(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\CreateInboundShipmentPlanRequest $body) : RequestInterface
     {
         // verify the required parameter 'body' is set
         if ($body === null || (\is_array($body) && \count($body) === 0)) {
@@ -912,10 +912,10 @@ final class FulfillmentInboundSDK
      * @param AccessToken $accessToken
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function estimateTransport(AccessToken $accessToken, string $region, string $shipment_id) : \AmazonPHP\SellingPartner\Model\FulfillmentInbound\EstimateTransportResponse
+    public function estimateTransport(AccessToken $accessToken, string $region, string $shipment_id) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\EstimateTransportResponse
     {
         $request = $this->estimateTransportRequest($accessToken, $region, $shipment_id);
 
@@ -997,7 +997,7 @@ final class FulfillmentInboundSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\EstimateTransportResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\EstimateTransportResponse',
             []
         );
     }
@@ -1008,7 +1008,7 @@ final class FulfillmentInboundSDK
      * @param AccessToken $accessToken
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function estimateTransportRequest(AccessToken $accessToken, string $region, string $shipment_id) : RequestInterface
     {
@@ -1100,10 +1100,10 @@ final class FulfillmentInboundSDK
      * @param AccessToken $accessToken
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getBillOfLading(AccessToken $accessToken, string $region, string $shipment_id) : \AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetBillOfLadingResponse
+    public function getBillOfLading(AccessToken $accessToken, string $region, string $shipment_id) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetBillOfLadingResponse
     {
         $request = $this->getBillOfLadingRequest($accessToken, $region, $shipment_id);
 
@@ -1185,7 +1185,7 @@ final class FulfillmentInboundSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetBillOfLadingResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetBillOfLadingResponse',
             []
         );
     }
@@ -1196,7 +1196,7 @@ final class FulfillmentInboundSDK
      * @param AccessToken $accessToken
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getBillOfLadingRequest(AccessToken $accessToken, string $region, string $shipment_id) : RequestInterface
     {
@@ -1290,10 +1290,10 @@ final class FulfillmentInboundSDK
      * @param string[] $seller_sku_list A list of SellerSKU values. Used to identify items for which you want inbound guidance for shipment to Amazon&#39;s fulfillment network. Note: SellerSKU is qualified by the SellerId, which is included with every Selling Partner API operation that you submit. If you specify a SellerSKU that identifies a variation parent ASIN, this operation returns an error. A variation parent ASIN represents a generic product that cannot be sold. Variation child ASINs represent products that have specific characteristics (such as size and color) and can be sold. (optional)
      * @param string[] $asin_list A list of ASIN values. Used to identify items for which you want inbound guidance for shipment to Amazon&#39;s fulfillment network. Note: If you specify a ASIN that identifies a variation parent ASIN, this operation returns an error. A variation parent ASIN represents a generic product that cannot be sold. Variation child ASINs represent products that have specific characteristics (such as size and color) and can be sold. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getInboundGuidance(AccessToken $accessToken, string $region, string $marketplace_id, array $seller_sku_list = null, array $asin_list = null) : \AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetInboundGuidanceResponse
+    public function getInboundGuidance(AccessToken $accessToken, string $region, string $marketplace_id, array $seller_sku_list = null, array $asin_list = null) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetInboundGuidanceResponse
     {
         $request = $this->getInboundGuidanceRequest($accessToken, $region, $marketplace_id, $seller_sku_list, $asin_list);
 
@@ -1375,7 +1375,7 @@ final class FulfillmentInboundSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetInboundGuidanceResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetInboundGuidanceResponse',
             []
         );
     }
@@ -1388,7 +1388,7 @@ final class FulfillmentInboundSDK
      * @param string[] $seller_sku_list A list of SellerSKU values. Used to identify items for which you want inbound guidance for shipment to Amazon&#39;s fulfillment network. Note: SellerSKU is qualified by the SellerId, which is included with every Selling Partner API operation that you submit. If you specify a SellerSKU that identifies a variation parent ASIN, this operation returns an error. A variation parent ASIN represents a generic product that cannot be sold. Variation child ASINs represent products that have specific characteristics (such as size and color) and can be sold. (optional)
      * @param string[] $asin_list A list of ASIN values. Used to identify items for which you want inbound guidance for shipment to Amazon&#39;s fulfillment network. Note: If you specify a ASIN that identifies a variation parent ASIN, this operation returns an error. A variation parent ASIN represents a generic product that cannot be sold. Variation child ASINs represent products that have specific characteristics (such as size and color) and can be sold. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getInboundGuidanceRequest(AccessToken $accessToken, string $region, string $marketplace_id, array $seller_sku_list = null, array $asin_list = null) : RequestInterface
     {
@@ -1511,10 +1511,10 @@ final class FulfillmentInboundSDK
      * @param int $page_size The page size for paginating through the total packages&#39; labels. This is a required parameter for Non-Partnered LTL Shipments. Max value:1000. (optional)
      * @param int $page_start_index The page start index for paginating through the total packages&#39; labels. This is a required parameter for Non-Partnered LTL Shipments. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getLabels(AccessToken $accessToken, string $region, string $shipment_id, string $page_type, string $label_type, int $number_of_packages = null, array $package_labels_to_print = null, int $number_of_pallets = null, int $page_size = null, int $page_start_index = null) : \AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetLabelsResponse
+    public function getLabels(AccessToken $accessToken, string $region, string $shipment_id, string $page_type, string $label_type, int $number_of_packages = null, array $package_labels_to_print = null, int $number_of_pallets = null, int $page_size = null, int $page_start_index = null) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetLabelsResponse
     {
         $request = $this->getLabelsRequest($accessToken, $region, $shipment_id, $page_type, $label_type, $number_of_packages, $package_labels_to_print, $number_of_pallets, $page_size, $page_start_index);
 
@@ -1596,7 +1596,7 @@ final class FulfillmentInboundSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetLabelsResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetLabelsResponse',
             []
         );
     }
@@ -1614,7 +1614,7 @@ final class FulfillmentInboundSDK
      * @param int $page_size The page size for paginating through the total packages&#39; labels. This is a required parameter for Non-Partnered LTL Shipments. Max value:1000. (optional)
      * @param int $page_start_index The page start index for paginating through the total packages&#39; labels. This is a required parameter for Non-Partnered LTL Shipments. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getLabelsRequest(AccessToken $accessToken, string $region, string $shipment_id, string $page_type, string $label_type, int $number_of_packages = null, array $package_labels_to_print = null, int $number_of_pallets = null, int $page_size = null, int $page_start_index = null) : RequestInterface
     {
@@ -1780,10 +1780,10 @@ final class FulfillmentInboundSDK
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      * @param string $marketplace_id A marketplace identifier. Specifies the marketplace the shipment is tied to. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getPreorderInfo(AccessToken $accessToken, string $region, string $shipment_id, string $marketplace_id) : \AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetPreorderInfoResponse
+    public function getPreorderInfo(AccessToken $accessToken, string $region, string $shipment_id, string $marketplace_id) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetPreorderInfoResponse
     {
         $request = $this->getPreorderInfoRequest($accessToken, $region, $shipment_id, $marketplace_id);
 
@@ -1865,7 +1865,7 @@ final class FulfillmentInboundSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetPreorderInfoResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetPreorderInfoResponse',
             []
         );
     }
@@ -1877,7 +1877,7 @@ final class FulfillmentInboundSDK
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      * @param string $marketplace_id A marketplace identifier. Specifies the marketplace the shipment is tied to. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getPreorderInfoRequest(AccessToken $accessToken, string $region, string $shipment_id, string $marketplace_id) : RequestInterface
     {
@@ -1986,10 +1986,10 @@ final class FulfillmentInboundSDK
      * @param string[] $seller_sku_list A list of SellerSKU values. Used to identify items for which you want labeling requirements and item preparation instructions for shipment to Amazon&#39;s fulfillment network. The SellerSKU is qualified by the Seller ID, which is included with every call to the Seller Partner API.  Note: Include seller SKUs that you have used to list items on Amazon&#39;s retail website. If you include a seller SKU that you have never used to list an item on Amazon&#39;s retail website, the seller SKU is returned in the InvalidSKUList property in the response. (optional)
      * @param string[] $asin_list A list of ASIN values. Used to identify items for which you want item preparation instructions to help with item sourcing decisions.  Note: ASINs must be included in the product catalog for at least one of the marketplaces that the seller  participates in. Any ASIN that is not included in the product catalog for at least one of the marketplaces that the seller participates in is returned in the InvalidASINList property in the response. You can find out which marketplaces a seller participates in by calling the getMarketplaceParticipations operation in the Selling Partner API for Sellers. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getPrepInstructions(AccessToken $accessToken, string $region, string $ship_to_country_code, array $seller_sku_list = null, array $asin_list = null) : \AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetPrepInstructionsResponse
+    public function getPrepInstructions(AccessToken $accessToken, string $region, string $ship_to_country_code, array $seller_sku_list = null, array $asin_list = null) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetPrepInstructionsResponse
     {
         $request = $this->getPrepInstructionsRequest($accessToken, $region, $ship_to_country_code, $seller_sku_list, $asin_list);
 
@@ -2071,7 +2071,7 @@ final class FulfillmentInboundSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetPrepInstructionsResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetPrepInstructionsResponse',
             []
         );
     }
@@ -2084,7 +2084,7 @@ final class FulfillmentInboundSDK
      * @param string[] $seller_sku_list A list of SellerSKU values. Used to identify items for which you want labeling requirements and item preparation instructions for shipment to Amazon&#39;s fulfillment network. The SellerSKU is qualified by the Seller ID, which is included with every call to the Seller Partner API.  Note: Include seller SKUs that you have used to list items on Amazon&#39;s retail website. If you include a seller SKU that you have never used to list an item on Amazon&#39;s retail website, the seller SKU is returned in the InvalidSKUList property in the response. (optional)
      * @param string[] $asin_list A list of ASIN values. Used to identify items for which you want item preparation instructions to help with item sourcing decisions.  Note: ASINs must be included in the product catalog for at least one of the marketplaces that the seller  participates in. Any ASIN that is not included in the product catalog for at least one of the marketplaces that the seller participates in is returned in the InvalidASINList property in the response. You can find out which marketplaces a seller participates in by calling the getMarketplaceParticipations operation in the Selling Partner API for Sellers. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getPrepInstructionsRequest(AccessToken $accessToken, string $region, string $ship_to_country_code, array $seller_sku_list = null, array $asin_list = null) : RequestInterface
     {
@@ -2204,10 +2204,10 @@ final class FulfillmentInboundSDK
      * @param \DateTime $last_updated_before A date used for selecting inbound shipment items that were last updated before (or at) a specified time. The selection includes updates made by Amazon and by the seller. (optional)
      * @param string $next_token A string token returned in the response to your previous request. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getShipmentItems(AccessToken $accessToken, string $region, string $query_type, string $marketplace_id, \DateTimeInterface $last_updated_after = null, \DateTimeInterface $last_updated_before = null, string $next_token = null) : \AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetShipmentItemsResponse
+    public function getShipmentItems(AccessToken $accessToken, string $region, string $query_type, string $marketplace_id, \DateTimeInterface $last_updated_after = null, \DateTimeInterface $last_updated_before = null, string $next_token = null) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetShipmentItemsResponse
     {
         $request = $this->getShipmentItemsRequest($accessToken, $region, $query_type, $marketplace_id, $last_updated_after, $last_updated_before, $next_token);
 
@@ -2289,7 +2289,7 @@ final class FulfillmentInboundSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetShipmentItemsResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetShipmentItemsResponse',
             []
         );
     }
@@ -2304,7 +2304,7 @@ final class FulfillmentInboundSDK
      * @param \DateTime $last_updated_before A date used for selecting inbound shipment items that were last updated before (or at) a specified time. The selection includes updates made by Amazon and by the seller. (optional)
      * @param string $next_token A string token returned in the response to your previous request. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getShipmentItemsRequest(AccessToken $accessToken, string $region, string $query_type, string $marketplace_id, \DateTimeInterface $last_updated_after = null, \DateTimeInterface $last_updated_before = null, string $next_token = null) : RequestInterface
     {
@@ -2435,10 +2435,10 @@ final class FulfillmentInboundSDK
      * @param string $shipment_id A shipment identifier used for selecting items in a specific inbound shipment. (required)
      * @param string $marketplace_id A marketplace identifier. Specifies the marketplace where the product would be stored. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getShipmentItemsByShipmentId(AccessToken $accessToken, string $region, string $shipment_id, string $marketplace_id) : \AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetShipmentItemsResponse
+    public function getShipmentItemsByShipmentId(AccessToken $accessToken, string $region, string $shipment_id, string $marketplace_id) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetShipmentItemsResponse
     {
         $request = $this->getShipmentItemsByShipmentIdRequest($accessToken, $region, $shipment_id, $marketplace_id);
 
@@ -2520,7 +2520,7 @@ final class FulfillmentInboundSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetShipmentItemsResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetShipmentItemsResponse',
             []
         );
     }
@@ -2532,7 +2532,7 @@ final class FulfillmentInboundSDK
      * @param string $shipment_id A shipment identifier used for selecting items in a specific inbound shipment. (required)
      * @param string $marketplace_id A marketplace identifier. Specifies the marketplace where the product would be stored. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getShipmentItemsByShipmentIdRequest(AccessToken $accessToken, string $region, string $shipment_id, string $marketplace_id) : RequestInterface
     {
@@ -2645,10 +2645,10 @@ final class FulfillmentInboundSDK
      * @param \DateTime $last_updated_before A date used for selecting inbound shipments that were last updated before (or at) a specified time. The selection includes updates made by Amazon and by the seller. (optional)
      * @param string $next_token A string token returned in the response to your previous request. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getShipments(AccessToken $accessToken, string $region, string $query_type, string $marketplace_id, array $shipment_status_list = null, array $shipment_id_list = null, \DateTimeInterface $last_updated_after = null, \DateTimeInterface $last_updated_before = null, string $next_token = null) : \AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetShipmentsResponse
+    public function getShipments(AccessToken $accessToken, string $region, string $query_type, string $marketplace_id, array $shipment_status_list = null, array $shipment_id_list = null, \DateTimeInterface $last_updated_after = null, \DateTimeInterface $last_updated_before = null, string $next_token = null) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetShipmentsResponse
     {
         $request = $this->getShipmentsRequest($accessToken, $region, $query_type, $marketplace_id, $shipment_status_list, $shipment_id_list, $last_updated_after, $last_updated_before, $next_token);
 
@@ -2730,7 +2730,7 @@ final class FulfillmentInboundSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetShipmentsResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetShipmentsResponse',
             []
         );
     }
@@ -2747,7 +2747,7 @@ final class FulfillmentInboundSDK
      * @param \DateTime $last_updated_before A date used for selecting inbound shipments that were last updated before (or at) a specified time. The selection includes updates made by Amazon and by the seller. (optional)
      * @param string $next_token A string token returned in the response to your previous request. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getShipmentsRequest(AccessToken $accessToken, string $region, string $query_type, string $marketplace_id, array $shipment_status_list = null, array $shipment_id_list = null, \DateTimeInterface $last_updated_after = null, \DateTimeInterface $last_updated_before = null, string $next_token = null) : RequestInterface
     {
@@ -2893,10 +2893,10 @@ final class FulfillmentInboundSDK
      * @param AccessToken $accessToken
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getTransportDetails(AccessToken $accessToken, string $region, string $shipment_id) : \AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetTransportDetailsResponse
+    public function getTransportDetails(AccessToken $accessToken, string $region, string $shipment_id) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetTransportDetailsResponse
     {
         $request = $this->getTransportDetailsRequest($accessToken, $region, $shipment_id);
 
@@ -2978,7 +2978,7 @@ final class FulfillmentInboundSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetTransportDetailsResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\GetTransportDetailsResponse',
             []
         );
     }
@@ -2989,7 +2989,7 @@ final class FulfillmentInboundSDK
      * @param AccessToken $accessToken
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getTransportDetailsRequest(AccessToken $accessToken, string $region, string $shipment_id) : RequestInterface
     {
@@ -3080,12 +3080,12 @@ final class FulfillmentInboundSDK
      *
      * @param AccessToken $accessToken
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PutTransportDetailsRequest $body body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PutTransportDetailsRequest $body body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function putTransportDetails(AccessToken $accessToken, string $region, string $shipment_id, \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PutTransportDetailsRequest $body) : \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PutTransportDetailsResponse
+    public function putTransportDetails(AccessToken $accessToken, string $region, string $shipment_id, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PutTransportDetailsRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PutTransportDetailsResponse
     {
         $request = $this->putTransportDetailsRequest($accessToken, $region, $shipment_id, $body);
 
@@ -3167,7 +3167,7 @@ final class FulfillmentInboundSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PutTransportDetailsResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PutTransportDetailsResponse',
             []
         );
     }
@@ -3177,11 +3177,11 @@ final class FulfillmentInboundSDK
      *
      * @param AccessToken $accessToken
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PutTransportDetailsRequest $body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PutTransportDetailsRequest $body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function putTransportDetailsRequest(AccessToken $accessToken, string $region, string $shipment_id, \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PutTransportDetailsRequest $body) : RequestInterface
+    public function putTransportDetailsRequest(AccessToken $accessToken, string $region, string $shipment_id, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PutTransportDetailsRequest $body) : RequestInterface
     {
         // verify the required parameter 'shipment_id' is set
         if ($shipment_id === null || (\is_array($shipment_id) && \count($shipment_id) === 0)) {
@@ -3284,12 +3284,12 @@ final class FulfillmentInboundSDK
      *
      * @param AccessToken $accessToken
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentRequest $body body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentRequest $body body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function updateInboundShipment(AccessToken $accessToken, string $region, string $shipment_id, \AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentRequest $body) : \AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentResponse
+    public function updateInboundShipment(AccessToken $accessToken, string $region, string $shipment_id, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentResponse
     {
         $request = $this->updateInboundShipmentRequest($accessToken, $region, $shipment_id, $body);
 
@@ -3371,7 +3371,7 @@ final class FulfillmentInboundSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentResponse',
             []
         );
     }
@@ -3381,11 +3381,11 @@ final class FulfillmentInboundSDK
      *
      * @param AccessToken $accessToken
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentRequest $body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentRequest $body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function updateInboundShipmentRequest(AccessToken $accessToken, string $region, string $shipment_id, \AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentRequest $body) : RequestInterface
+    public function updateInboundShipmentRequest(AccessToken $accessToken, string $region, string $shipment_id, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundShipmentRequest $body) : RequestInterface
     {
         // verify the required parameter 'shipment_id' is set
         if ($shipment_id === null || (\is_array($shipment_id) && \count($shipment_id) === 0)) {
@@ -3489,10 +3489,10 @@ final class FulfillmentInboundSDK
      * @param AccessToken $accessToken
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function voidTransport(AccessToken $accessToken, string $region, string $shipment_id) : \AmazonPHP\SellingPartner\Model\FulfillmentInbound\VoidTransportResponse
+    public function voidTransport(AccessToken $accessToken, string $region, string $shipment_id) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\VoidTransportResponse
     {
         $request = $this->voidTransportRequest($accessToken, $region, $shipment_id);
 
@@ -3574,7 +3574,7 @@ final class FulfillmentInboundSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\VoidTransportResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\VoidTransportResponse',
             []
         );
     }
@@ -3585,7 +3585,7 @@ final class FulfillmentInboundSDK
      * @param AccessToken $accessToken
      * @param string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function voidTransportRequest(AccessToken $accessToken, string $region, string $shipment_id) : RequestInterface
     {

@@ -42,7 +42,7 @@ class InputTargetType
 
     public const ITEM_LEVEL = 'ITEM_LEVEL';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

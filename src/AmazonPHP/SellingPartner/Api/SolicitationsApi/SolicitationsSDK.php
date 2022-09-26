@@ -2,13 +2,13 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Api\SolicitationsApi;
 
-use AmazonPHP\SellingPartner\AccessToken;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\Exception\ApiException;
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
-use AmazonPHP\SellingPartner\HttpFactory;
-use AmazonPHP\SellingPartner\HttpSignatureHeaders;
-use AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\AccessToken;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\HttpFactory;
+use Plenty\AmazonPHP\SellingPartner\HttpSignatureHeaders;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
@@ -30,13 +30,13 @@ final class SolicitationsSDK
 
     public const OPERATION_GETSOLICITATIONACTIONSFORORDER_PATH = '/solicitations/v1/orders/{amazonOrderId}';
 
-    private ClientInterface $client;
+    private /** [COMPAT] ClientInterface */ $client;
 
-    private HttpFactory $httpFactory;
+    private /** [COMPAT] HttpFactory */ $httpFactory;
 
-    private Configuration $configuration;
+    private /** [COMPAT] Configuration */ $configuration;
 
-    private LoggerInterface $logger;
+    private /** [COMPAT] LoggerInterface */ $logger;
 
     public function __construct(ClientInterface $client, HttpFactory $requestFactory, Configuration $configuration, LoggerInterface $logger)
     {
@@ -53,10 +53,10 @@ final class SolicitationsSDK
      * @param string $amazon_order_id An Amazon order identifier. This specifies the order for which a solicitation is sent. (required)
      * @param string[] $marketplace_ids A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function createProductReviewAndSellerFeedbackSolicitation(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids) : \AmazonPHP\SellingPartner\Model\Solicitations\CreateProductReviewAndSellerFeedbackSolicitationResponse
+    public function createProductReviewAndSellerFeedbackSolicitation(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids) : \Plenty\AmazonPHP\SellingPartner\Model\Solicitations\CreateProductReviewAndSellerFeedbackSolicitationResponse
     {
         $request = $this->createProductReviewAndSellerFeedbackSolicitationRequest($accessToken, $region, $amazon_order_id, $marketplace_ids);
 
@@ -138,7 +138,7 @@ final class SolicitationsSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Solicitations\CreateProductReviewAndSellerFeedbackSolicitationResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Solicitations\CreateProductReviewAndSellerFeedbackSolicitationResponse',
             []
         );
     }
@@ -150,7 +150,7 @@ final class SolicitationsSDK
      * @param string $amazon_order_id An Amazon order identifier. This specifies the order for which a solicitation is sent. (required)
      * @param string[] $marketplace_ids A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function createProductReviewAndSellerFeedbackSolicitationRequest(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids) : RequestInterface
     {
@@ -262,10 +262,10 @@ final class SolicitationsSDK
      * @param string $amazon_order_id An Amazon order identifier. This specifies the order for which you want a list of available solicitation types. (required)
      * @param string[] $marketplace_ids A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getSolicitationActionsForOrder(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids) : \AmazonPHP\SellingPartner\Model\Solicitations\GetSolicitationActionsForOrderResponse
+    public function getSolicitationActionsForOrder(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids) : \Plenty\AmazonPHP\SellingPartner\Model\Solicitations\GetSolicitationActionsForOrderResponse
     {
         $request = $this->getSolicitationActionsForOrderRequest($accessToken, $region, $amazon_order_id, $marketplace_ids);
 
@@ -347,7 +347,7 @@ final class SolicitationsSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Solicitations\GetSolicitationActionsForOrderResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Solicitations\GetSolicitationActionsForOrderResponse',
             []
         );
     }
@@ -359,7 +359,7 @@ final class SolicitationsSDK
      * @param string $amazon_order_id An Amazon order identifier. This specifies the order for which you want a list of available solicitation types. (required)
      * @param string[] $marketplace_ids A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getSolicitationActionsForOrderRequest(AccessToken $accessToken, string $region, string $amazon_order_id, array $marketplace_ids) : RequestInterface
     {

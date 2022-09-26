@@ -2,13 +2,13 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Api\VendorShippingLabelsApi;
 
-use AmazonPHP\SellingPartner\AccessToken;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\Exception\ApiException;
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
-use AmazonPHP\SellingPartner\HttpFactory;
-use AmazonPHP\SellingPartner\HttpSignatureHeaders;
-use AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\AccessToken;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\HttpFactory;
+use Plenty\AmazonPHP\SellingPartner\HttpSignatureHeaders;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
@@ -34,13 +34,13 @@ final class VendorDirectFulfillmentShippingSDK
 
     public const OPERATION_SUBMITSHIPPINGLABELREQUEST_PATH = '/vendor/directFulfillment/shipping/2021-12-28/shippingLabels';
 
-    private ClientInterface $client;
+    private /** [COMPAT] ClientInterface */ $client;
 
-    private HttpFactory $httpFactory;
+    private /** [COMPAT] HttpFactory */ $httpFactory;
 
-    private Configuration $configuration;
+    private /** [COMPAT] Configuration */ $configuration;
 
-    private LoggerInterface $logger;
+    private /** [COMPAT] LoggerInterface */ $logger;
 
     public function __construct(ClientInterface $client, HttpFactory $requestFactory, Configuration $configuration, LoggerInterface $logger)
     {
@@ -56,10 +56,10 @@ final class VendorDirectFulfillmentShippingSDK
      * @param AccessToken $accessToken
      * @param string $purchase_order_number The purchase order number for which you want to return the shipping label. It should be the same purchaseOrderNumber as received in the order. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getShippingLabel(AccessToken $accessToken, string $region, string $purchase_order_number) : \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabel
+    public function getShippingLabel(AccessToken $accessToken, string $region, string $purchase_order_number) : \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabel
     {
         $request = $this->getShippingLabelRequest($accessToken, $region, $purchase_order_number);
 
@@ -141,7 +141,7 @@ final class VendorDirectFulfillmentShippingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabel',
+            '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabel',
             []
         );
     }
@@ -152,7 +152,7 @@ final class VendorDirectFulfillmentShippingSDK
      * @param AccessToken $accessToken
      * @param string $purchase_order_number The purchase order number for which you want to return the shipping label. It should be the same purchaseOrderNumber as received in the order. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getShippingLabelRequest(AccessToken $accessToken, string $region, string $purchase_order_number) : RequestInterface
     {
@@ -253,10 +253,10 @@ final class VendorDirectFulfillmentShippingSDK
      * @param string $sort_order Sort ASC or DESC by order creation date. (optional, default to 'ASC')
      * @param string $next_token Used for pagination when there are more ship labels than the specified result size limit. The token value is returned in the previous API call. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getShippingLabels(AccessToken $accessToken, string $region, \DateTimeInterface $created_after, \DateTimeInterface $created_before, string $ship_from_party_id = null, int $limit = null, string $sort_order = 'ASC', string $next_token = null) : \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabelList
+    public function getShippingLabels(AccessToken $accessToken, string $region, \DateTimeInterface $created_after, \DateTimeInterface $created_before, string $ship_from_party_id = null, int $limit = null, string $sort_order = 'ASC', string $next_token = null) : \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabelList
     {
         $request = $this->getShippingLabelsRequest($accessToken, $region, $created_after, $created_before, $ship_from_party_id, $limit, $sort_order, $next_token);
 
@@ -338,7 +338,7 @@ final class VendorDirectFulfillmentShippingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabelList',
+            '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\ShippingLabelList',
             []
         );
     }
@@ -354,7 +354,7 @@ final class VendorDirectFulfillmentShippingSDK
      * @param string $sort_order Sort ASC or DESC by order creation date. (optional, default to 'ASC')
      * @param string $next_token Used for pagination when there are more ship labels than the specified result size limit. The token value is returned in the previous API call. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getShippingLabelsRequest(AccessToken $accessToken, string $region, \DateTimeInterface $created_after, \DateTimeInterface $created_before, string $ship_from_party_id = null, int $limit = null, string $sort_order = 'ASC', string $next_token = null) : RequestInterface
     {
@@ -498,12 +498,12 @@ final class VendorDirectFulfillmentShippingSDK
      * Operation submitShippingLabelRequest.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\SubmitShippingLabelsRequest $body body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\SubmitShippingLabelsRequest $body body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function submitShippingLabelRequest(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\SubmitShippingLabelsRequest $body) : \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\TransactionReference
+    public function submitShippingLabelRequest(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\SubmitShippingLabelsRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\TransactionReference
     {
         $request = $this->submitShippingLabelRequestRequest($accessToken, $region, $body);
 
@@ -585,7 +585,7 @@ final class VendorDirectFulfillmentShippingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\TransactionReference',
+            '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\TransactionReference',
             []
         );
     }
@@ -594,11 +594,11 @@ final class VendorDirectFulfillmentShippingSDK
      * Create request for operation 'submitShippingLabelRequest'.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\SubmitShippingLabelsRequest $body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\SubmitShippingLabelsRequest $body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function submitShippingLabelRequestRequest(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\SubmitShippingLabelsRequest $body) : RequestInterface
+    public function submitShippingLabelRequestRequest(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentShipping\SubmitShippingLabelsRequest $body) : RequestInterface
     {
         // verify the required parameter 'body' is set
         if ($body === null || (\is_array($body) && \count($body) === 0)) {

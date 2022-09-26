@@ -4,29 +4,29 @@ declare(strict_types=1);
 
 namespace Plenty\AmazonPHP\SellingPartner;
 
-use AmazonPHP\SellingPartner\Configuration\LoggerConfiguration;
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
-use AmazonPHP\SellingPartner\STSClient\Credentials;
+use Plenty\AmazonPHP\SellingPartner\Configuration\LoggerConfiguration;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\STSClient\Credentials;
 
 final class Configuration
 {
-    private string $lwaClientID;
+    private /** [COMPAT] string */ $lwaClientID;
 
-    private string $lwaClientSecret;
+    private /** [COMPAT] string */ $lwaClientSecret;
 
-    private string $accessKey;
+    private /** [COMPAT] string */ $accessKey;
 
-    private string $secretKey;
+    private /** [COMPAT] string */ $secretKey;
 
-    private string $userAgent;
+    private /** [COMPAT] string */ $userAgent;
 
-    private ?string $securityToken;
+    private /** [COMPAT] ?string */ $securityToken;
 
-    private string $tmpFolderPath;
+    private /** [COMPAT] string */ $tmpFolderPath;
 
-    private LoggerConfiguration $loggerConfiguration;
+    private /** [COMPAT] LoggerConfiguration */ $loggerConfiguration;
 
-    private Extensions $extensions;
+    private /** [COMPAT] Extensions */ $extensions;
 
     public function __construct(
         string $lwaClientID,

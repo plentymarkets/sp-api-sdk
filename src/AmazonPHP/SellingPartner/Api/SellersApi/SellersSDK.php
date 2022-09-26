@@ -2,12 +2,12 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Api\SellersApi;
 
-use AmazonPHP\SellingPartner\AccessToken;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\Exception\ApiException;
-use AmazonPHP\SellingPartner\HttpFactory;
-use AmazonPHP\SellingPartner\HttpSignatureHeaders;
-use AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\AccessToken;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\HttpFactory;
+use Plenty\AmazonPHP\SellingPartner\HttpSignatureHeaders;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
@@ -25,13 +25,13 @@ final class SellersSDK
 
     public const OPERATION_GETMARKETPLACEPARTICIPATIONS_PATH = '/sellers/v1/marketplaceParticipations';
 
-    private ClientInterface $client;
+    private /** [COMPAT] ClientInterface */ $client;
 
-    private HttpFactory $httpFactory;
+    private /** [COMPAT] HttpFactory */ $httpFactory;
 
-    private Configuration $configuration;
+    private /** [COMPAT] Configuration */ $configuration;
 
-    private LoggerInterface $logger;
+    private /** [COMPAT] LoggerInterface */ $logger;
 
     public function __construct(ClientInterface $client, HttpFactory $requestFactory, Configuration $configuration, LoggerInterface $logger)
     {
@@ -46,10 +46,10 @@ final class SellersSDK
      *
      * @param AccessToken $accessToken
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getMarketplaceParticipations(AccessToken $accessToken, string $region) : \AmazonPHP\SellingPartner\Model\Sellers\GetMarketplaceParticipationsResponse
+    public function getMarketplaceParticipations(AccessToken $accessToken, string $region) : \Plenty\AmazonPHP\SellingPartner\Model\Sellers\GetMarketplaceParticipationsResponse
     {
         $request = $this->getMarketplaceParticipationsRequest($accessToken, $region);
 
@@ -131,7 +131,7 @@ final class SellersSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\Sellers\GetMarketplaceParticipationsResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\Sellers\GetMarketplaceParticipationsResponse',
             []
         );
     }
@@ -141,7 +141,7 @@ final class SellersSDK
      *
      * @param AccessToken $accessToken
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getMarketplaceParticipationsRequest(AccessToken $accessToken, string $region) : RequestInterface
     {

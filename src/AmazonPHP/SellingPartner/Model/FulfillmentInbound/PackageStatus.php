@@ -52,7 +52,7 @@ class PackageStatus
 
     public const DELETED = 'DELETED';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

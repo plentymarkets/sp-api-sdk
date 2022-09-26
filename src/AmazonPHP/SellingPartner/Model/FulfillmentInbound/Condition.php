@@ -74,7 +74,7 @@ class Condition
 
     public const CLUB = 'Club';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

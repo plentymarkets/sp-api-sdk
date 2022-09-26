@@ -2,13 +2,13 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Api\CatalogApi;
 
-use AmazonPHP\SellingPartner\AccessToken;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\Exception\ApiException;
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
-use AmazonPHP\SellingPartner\HttpFactory;
-use AmazonPHP\SellingPartner\HttpSignatureHeaders;
-use AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\AccessToken;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\HttpFactory;
+use Plenty\AmazonPHP\SellingPartner\HttpSignatureHeaders;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
@@ -30,13 +30,13 @@ final class CatalogItemSDK
 
     public const OPERATION_SEARCHCATALOGITEMS_PATH = '/catalog/2020-12-01/items';
 
-    private ClientInterface $client;
+    private /** [COMPAT] ClientInterface */ $client;
 
-    private HttpFactory $httpFactory;
+    private /** [COMPAT] HttpFactory */ $httpFactory;
 
-    private Configuration $configuration;
+    private /** [COMPAT] Configuration */ $configuration;
 
-    private LoggerInterface $logger;
+    private /** [COMPAT] LoggerInterface */ $logger;
 
     public function __construct(ClientInterface $client, HttpFactory $requestFactory, Configuration $configuration, LoggerInterface $logger)
     {
@@ -55,10 +55,10 @@ final class CatalogItemSDK
      * @param string[] $included_data A comma-delimited list of data sets to include in the response. Default: summaries. (optional)
      * @param string $locale Locale for retrieving localized summaries. Defaults to the primary locale of the marketplace. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getCatalogItem(AccessToken $accessToken, string $region, string $asin, array $marketplace_ids, array $included_data = null, string $locale = null) : \AmazonPHP\SellingPartner\Model\CatalogItem\Item
+    public function getCatalogItem(AccessToken $accessToken, string $region, string $asin, array $marketplace_ids, array $included_data = null, string $locale = null) : \Plenty\AmazonPHP\SellingPartner\Model\CatalogItem\Item
     {
         $request = $this->getCatalogItemRequest($accessToken, $region, $asin, $marketplace_ids, $included_data, $locale);
 
@@ -140,7 +140,7 @@ final class CatalogItemSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\CatalogItem\Item',
+            '\Plenty\AmazonPHP\SellingPartner\Model\CatalogItem\Item',
             []
         );
     }
@@ -154,7 +154,7 @@ final class CatalogItemSDK
      * @param string[] $included_data A comma-delimited list of data sets to include in the response. Default: summaries. (optional)
      * @param string $locale Locale for retrieving localized summaries. Defaults to the primary locale of the marketplace. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getCatalogItemRequest(AccessToken $accessToken, string $region, string $asin, array $marketplace_ids, array $included_data = null, string $locale = null) : RequestInterface
     {
@@ -285,10 +285,10 @@ final class CatalogItemSDK
      * @param string $keywords_locale The language the keywords are provided in. Defaults to the primary locale of the marketplace. (optional)
      * @param string $locale Locale for retrieving localized summaries. Defaults to the primary locale of the marketplace. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function searchCatalogItems(AccessToken $accessToken, string $region, array $keywords, array $marketplace_ids, array $included_data = null, array $brand_names = null, array $classification_ids = null, int $page_size = 10, string $page_token = null, string $keywords_locale = null, string $locale = null) : \AmazonPHP\SellingPartner\Model\CatalogItem\ItemSearchResults
+    public function searchCatalogItems(AccessToken $accessToken, string $region, array $keywords, array $marketplace_ids, array $included_data = null, array $brand_names = null, array $classification_ids = null, int $page_size = 10, string $page_token = null, string $keywords_locale = null, string $locale = null) : \Plenty\AmazonPHP\SellingPartner\Model\CatalogItem\ItemSearchResults
     {
         $request = $this->searchCatalogItemsRequest($accessToken, $region, $keywords, $marketplace_ids, $included_data, $brand_names, $classification_ids, $page_size, $page_token, $keywords_locale, $locale);
 
@@ -370,7 +370,7 @@ final class CatalogItemSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\CatalogItem\ItemSearchResults',
+            '\Plenty\AmazonPHP\SellingPartner\Model\CatalogItem\ItemSearchResults',
             []
         );
     }
@@ -389,7 +389,7 @@ final class CatalogItemSDK
      * @param string $keywords_locale The language the keywords are provided in. Defaults to the primary locale of the marketplace. (optional)
      * @param string $locale Locale for retrieving localized summaries. Defaults to the primary locale of the marketplace. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function searchCatalogItemsRequest(AccessToken $accessToken, string $region, array $keywords, array $marketplace_ids, array $included_data = null, array $brand_names = null, array $classification_ids = null, int $page_size = 10, string $page_token = null, string $keywords_locale = null, string $locale = null) : RequestInterface
     {

@@ -2,13 +2,13 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Api\VendorOrdersApi;
 
-use AmazonPHP\SellingPartner\AccessToken;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\Exception\ApiException;
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
-use AmazonPHP\SellingPartner\HttpFactory;
-use AmazonPHP\SellingPartner\HttpSignatureHeaders;
-use AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\AccessToken;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\HttpFactory;
+use Plenty\AmazonPHP\SellingPartner\HttpSignatureHeaders;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
@@ -34,13 +34,13 @@ final class VendorDirectFulfillmentOrdersSDK
 
     public const OPERATION_SUBMITACKNOWLEDGEMENT_PATH = '/vendor/directFulfillment/orders/2021-12-28/acknowledgements';
 
-    private ClientInterface $client;
+    private /** [COMPAT] ClientInterface */ $client;
 
-    private HttpFactory $httpFactory;
+    private /** [COMPAT] HttpFactory */ $httpFactory;
 
-    private Configuration $configuration;
+    private /** [COMPAT] Configuration */ $configuration;
 
-    private LoggerInterface $logger;
+    private /** [COMPAT] LoggerInterface */ $logger;
 
     public function __construct(ClientInterface $client, HttpFactory $requestFactory, Configuration $configuration, LoggerInterface $logger)
     {
@@ -56,10 +56,10 @@ final class VendorDirectFulfillmentOrdersSDK
      * @param AccessToken $accessToken
      * @param string $purchase_order_number The order identifier for the purchase order that you want. Formatting Notes: alpha-numeric code. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getOrder(AccessToken $accessToken, string $region, string $purchase_order_number) : \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Order
+    public function getOrder(AccessToken $accessToken, string $region, string $purchase_order_number) : \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Order
     {
         $request = $this->getOrderRequest($accessToken, $region, $purchase_order_number);
 
@@ -141,7 +141,7 @@ final class VendorDirectFulfillmentOrdersSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Order',
+            '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\Order',
             []
         );
     }
@@ -152,7 +152,7 @@ final class VendorDirectFulfillmentOrdersSDK
      * @param AccessToken $accessToken
      * @param string $purchase_order_number The order identifier for the purchase order that you want. Formatting Notes: alpha-numeric code. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getOrderRequest(AccessToken $accessToken, string $region, string $purchase_order_number) : RequestInterface
     {
@@ -251,10 +251,10 @@ final class VendorDirectFulfillmentOrdersSDK
      * @param string $next_token Used for pagination when there are more orders than the specified result size limit. The token value is returned in the previous API call. (optional)
      * @param bool $include_details When true, returns the complete purchase order details. Otherwise, only purchase order numbers are returned. (optional, default to 'true')
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getOrders(AccessToken $accessToken, string $region, \DateTimeInterface $created_after, \DateTimeInterface $created_before, string $ship_from_party_id = null, string $status = null, int $limit = null, string $sort_order = null, string $next_token = null, bool $include_details = true) : \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\OrderList
+    public function getOrders(AccessToken $accessToken, string $region, \DateTimeInterface $created_after, \DateTimeInterface $created_before, string $ship_from_party_id = null, string $status = null, int $limit = null, string $sort_order = null, string $next_token = null, bool $include_details = true) : \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\OrderList
     {
         $request = $this->getOrdersRequest($accessToken, $region, $created_after, $created_before, $ship_from_party_id, $status, $limit, $sort_order, $next_token, $include_details);
 
@@ -336,7 +336,7 @@ final class VendorDirectFulfillmentOrdersSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\OrderList',
+            '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\OrderList',
             []
         );
     }
@@ -354,7 +354,7 @@ final class VendorDirectFulfillmentOrdersSDK
      * @param string $next_token Used for pagination when there are more orders than the specified result size limit. The token value is returned in the previous API call. (optional)
      * @param bool $include_details When true, returns the complete purchase order details. Otherwise, only purchase order numbers are returned. (optional, default to 'true')
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getOrdersRequest(AccessToken $accessToken, string $region, \DateTimeInterface $created_after, \DateTimeInterface $created_before, string $ship_from_party_id = null, string $status = null, int $limit = null, string $sort_order = null, string $next_token = null, bool $include_details = true) : RequestInterface
     {
@@ -514,12 +514,12 @@ final class VendorDirectFulfillmentOrdersSDK
      * Operation submitAcknowledgement.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\SubmitAcknowledgementRequest $body body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\SubmitAcknowledgementRequest $body body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function submitAcknowledgement(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\SubmitAcknowledgementRequest $body) : \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TransactionId
+    public function submitAcknowledgement(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\SubmitAcknowledgementRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TransactionId
     {
         $request = $this->submitAcknowledgementRequest($accessToken, $region, $body);
 
@@ -601,7 +601,7 @@ final class VendorDirectFulfillmentOrdersSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TransactionId',
+            '\Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\TransactionId',
             []
         );
     }
@@ -610,11 +610,11 @@ final class VendorDirectFulfillmentOrdersSDK
      * Create request for operation 'submitAcknowledgement'.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\SubmitAcknowledgementRequest $body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\SubmitAcknowledgementRequest $body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function submitAcknowledgementRequest(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\SubmitAcknowledgementRequest $body) : RequestInterface
+    public function submitAcknowledgementRequest(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\VendorDirectFulfillmentOrders\SubmitAcknowledgementRequest $body) : RequestInterface
     {
         // verify the required parameter 'body' is set
         if ($body === null || (\is_array($body) && \count($body) === 0)) {

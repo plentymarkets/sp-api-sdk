@@ -46,7 +46,7 @@ class BoxContentsSource
 
     public const INTERACTIVE = 'INTERACTIVE';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

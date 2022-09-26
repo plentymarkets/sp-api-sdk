@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Plenty\AmazonPHP\SellingPartner;
 
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
 
 /**
  * @method static CA()
@@ -29,7 +29,7 @@ use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
  */
 final class Marketplace
 {
-    private static array $countryMap = [
+    private static /** [COMPAT] array */ $countryMap = [
         'CA' => [
             'name'   => 'Canada',
             'id'     => 'A2EUQ1WTGCTBG2',
@@ -146,15 +146,15 @@ final class Marketplace
         ],
     ];
 
-    private string $name;
+    private /** [COMPAT] string */ $name;
 
-    private string $id;
+    private /** [COMPAT] string */ $id;
 
-    private string $countryCode;
+    private /** [COMPAT] string */ $countryCode;
 
-    private string $region;
+    private /** [COMPAT] string */ $region;
 
-    private string $sellerCentralUrl;
+    private /** [COMPAT] string */ $sellerCentralUrl;
 
     private function __construct(string $name, string $id, string $countryCode, string $region, string $sellerCentralUrl)
     {

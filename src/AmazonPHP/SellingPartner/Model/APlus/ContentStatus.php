@@ -46,7 +46,7 @@ class ContentStatus
 
     public const SUBMITTED = 'SUBMITTED';
 
-    private string $value;
+    private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
     {

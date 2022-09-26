@@ -2,13 +2,13 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Api\ProductPricingApi;
 
-use AmazonPHP\SellingPartner\AccessToken;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\Exception\ApiException;
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
-use AmazonPHP\SellingPartner\HttpFactory;
-use AmazonPHP\SellingPartner\HttpSignatureHeaders;
-use AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\AccessToken;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\HttpFactory;
+use Plenty\AmazonPHP\SellingPartner\HttpSignatureHeaders;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
@@ -46,13 +46,13 @@ final class ProductPricingSDK
 
     public const OPERATION_GETPRICING_PATH = '/products/pricing/v0/price';
 
-    private ClientInterface $client;
+    private /** [COMPAT] ClientInterface */ $client;
 
-    private HttpFactory $httpFactory;
+    private /** [COMPAT] HttpFactory */ $httpFactory;
 
-    private Configuration $configuration;
+    private /** [COMPAT] Configuration */ $configuration;
 
-    private LoggerInterface $logger;
+    private /** [COMPAT] LoggerInterface */ $logger;
 
     public function __construct(ClientInterface $client, HttpFactory $requestFactory, Configuration $configuration, LoggerInterface $logger)
     {
@@ -72,10 +72,10 @@ final class ProductPricingSDK
      * @param string[] $skus A list of up to twenty seller SKU values used to identify items in the given marketplace. (optional)
      * @param string $customer_type Indicates whether to request pricing information from the point of view of Consumer or Business buyers. Default is Consumer. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getCompetitivePricing(AccessToken $accessToken, string $region, string $marketplace_id, string $item_type, array $asins = null, array $skus = null, string $customer_type = null) : \AmazonPHP\SellingPartner\Model\ProductPricing\GetPricingResponse
+    public function getCompetitivePricing(AccessToken $accessToken, string $region, string $marketplace_id, string $item_type, array $asins = null, array $skus = null, string $customer_type = null) : \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetPricingResponse
     {
         $request = $this->getCompetitivePricingRequest($accessToken, $region, $marketplace_id, $item_type, $asins, $skus, $customer_type);
 
@@ -157,7 +157,7 @@ final class ProductPricingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\ProductPricing\GetPricingResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetPricingResponse',
             []
         );
     }
@@ -172,7 +172,7 @@ final class ProductPricingSDK
      * @param string[] $skus A list of up to twenty seller SKU values used to identify items in the given marketplace. (optional)
      * @param string $customer_type Indicates whether to request pricing information from the point of view of Consumer or Business buyers. Default is Consumer. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getCompetitivePricingRequest(AccessToken $accessToken, string $region, string $marketplace_id, string $item_type, array $asins = null, array $skus = null, string $customer_type = null) : RequestInterface
     {
@@ -313,10 +313,10 @@ final class ProductPricingSDK
      * @param string $asin The Amazon Standard Identification Number (ASIN) of the item. (required)
      * @param string $customer_type Indicates whether to request Consumer or Business offers. Default is Consumer. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getItemOffers(AccessToken $accessToken, string $region, string $marketplace_id, string $item_condition, string $asin, string $customer_type = null) : \AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse
+    public function getItemOffers(AccessToken $accessToken, string $region, string $marketplace_id, string $item_condition, string $asin, string $customer_type = null) : \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse
     {
         $request = $this->getItemOffersRequest($accessToken, $region, $marketplace_id, $item_condition, $asin, $customer_type);
 
@@ -398,7 +398,7 @@ final class ProductPricingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse',
             []
         );
     }
@@ -412,7 +412,7 @@ final class ProductPricingSDK
      * @param string $asin The Amazon Standard Identification Number (ASIN) of the item. (required)
      * @param string $customer_type Indicates whether to request Consumer or Business offers. Default is Consumer. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getItemOffersRequest(AccessToken $accessToken, string $region, string $marketplace_id, string $item_condition, string $asin, string $customer_type = null) : RequestInterface
     {
@@ -539,12 +539,12 @@ final class ProductPricingSDK
      * Operation getItemOffersBatch.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\GetItemOffersBatchRequest $get_item_offers_batch_request_body get_item_offers_batch_request_body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetItemOffersBatchRequest $get_item_offers_batch_request_body get_item_offers_batch_request_body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getItemOffersBatch(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\ProductPricing\GetItemOffersBatchRequest $get_item_offers_batch_request_body) : \AmazonPHP\SellingPartner\Model\ProductPricing\GetItemOffersBatchResponse
+    public function getItemOffersBatch(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetItemOffersBatchRequest $get_item_offers_batch_request_body) : \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetItemOffersBatchResponse
     {
         $request = $this->getItemOffersBatchRequest($accessToken, $region, $get_item_offers_batch_request_body);
 
@@ -626,7 +626,7 @@ final class ProductPricingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\ProductPricing\GetItemOffersBatchResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetItemOffersBatchResponse',
             []
         );
     }
@@ -635,11 +635,11 @@ final class ProductPricingSDK
      * Create request for operation 'getItemOffersBatch'.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\GetItemOffersBatchRequest $get_item_offers_batch_request_body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetItemOffersBatchRequest $get_item_offers_batch_request_body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getItemOffersBatchRequest(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\ProductPricing\GetItemOffersBatchRequest $get_item_offers_batch_request_body) : RequestInterface
+    public function getItemOffersBatchRequest(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetItemOffersBatchRequest $get_item_offers_batch_request_body) : RequestInterface
     {
         // verify the required parameter 'get_item_offers_batch_request_body' is set
         if ($get_item_offers_batch_request_body === null || (\is_array($get_item_offers_batch_request_body) && \count($get_item_offers_batch_request_body) === 0)) {
@@ -731,10 +731,10 @@ final class ProductPricingSDK
      * @param string $seller_sku Identifies an item in the given marketplace. SellerSKU is qualified by the seller&#39;s SellerId, which is included with every operation that you submit. (required)
      * @param string $customer_type Indicates whether to request Consumer or Business offers. Default is Consumer. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getListingOffers(AccessToken $accessToken, string $region, string $marketplace_id, string $item_condition, string $seller_sku, string $customer_type = null) : \AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse
+    public function getListingOffers(AccessToken $accessToken, string $region, string $marketplace_id, string $item_condition, string $seller_sku, string $customer_type = null) : \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse
     {
         $request = $this->getListingOffersRequest($accessToken, $region, $marketplace_id, $item_condition, $seller_sku, $customer_type);
 
@@ -816,7 +816,7 @@ final class ProductPricingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetOffersResponse',
             []
         );
     }
@@ -830,7 +830,7 @@ final class ProductPricingSDK
      * @param string $seller_sku Identifies an item in the given marketplace. SellerSKU is qualified by the seller&#39;s SellerId, which is included with every operation that you submit. (required)
      * @param string $customer_type Indicates whether to request Consumer or Business offers. Default is Consumer. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getListingOffersRequest(AccessToken $accessToken, string $region, string $marketplace_id, string $item_condition, string $seller_sku, string $customer_type = null) : RequestInterface
     {
@@ -957,12 +957,12 @@ final class ProductPricingSDK
      * Operation getListingOffersBatch.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\GetListingOffersBatchRequest $get_listing_offers_batch_request_body get_listing_offers_batch_request_body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetListingOffersBatchRequest $get_listing_offers_batch_request_body get_listing_offers_batch_request_body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getListingOffersBatch(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\ProductPricing\GetListingOffersBatchRequest $get_listing_offers_batch_request_body) : \AmazonPHP\SellingPartner\Model\ProductPricing\GetListingOffersBatchResponse
+    public function getListingOffersBatch(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetListingOffersBatchRequest $get_listing_offers_batch_request_body) : \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetListingOffersBatchResponse
     {
         $request = $this->getListingOffersBatchRequest($accessToken, $region, $get_listing_offers_batch_request_body);
 
@@ -1044,7 +1044,7 @@ final class ProductPricingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\ProductPricing\GetListingOffersBatchResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetListingOffersBatchResponse',
             []
         );
     }
@@ -1053,11 +1053,11 @@ final class ProductPricingSDK
      * Create request for operation 'getListingOffersBatch'.
      *
      * @param AccessToken $accessToken
-     * @param \AmazonPHP\SellingPartner\Model\ProductPricing\GetListingOffersBatchRequest $get_listing_offers_batch_request_body (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetListingOffersBatchRequest $get_listing_offers_batch_request_body (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getListingOffersBatchRequest(AccessToken $accessToken, string $region, \AmazonPHP\SellingPartner\Model\ProductPricing\GetListingOffersBatchRequest $get_listing_offers_batch_request_body) : RequestInterface
+    public function getListingOffersBatchRequest(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetListingOffersBatchRequest $get_listing_offers_batch_request_body) : RequestInterface
     {
         // verify the required parameter 'get_listing_offers_batch_request_body' is set
         if ($get_listing_offers_batch_request_body === null || (\is_array($get_listing_offers_batch_request_body) && \count($get_listing_offers_batch_request_body) === 0)) {
@@ -1151,10 +1151,10 @@ final class ProductPricingSDK
      * @param string $item_condition Filters the offer listings based on item condition. Possible values: New, Used, Collectible, Refurbished, Club. (optional)
      * @param string $offer_type Indicates whether to request pricing information for the seller&#39;s B2C or B2B offers. Default is B2C. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getPricing(AccessToken $accessToken, string $region, string $marketplace_id, string $item_type, array $asins = null, array $skus = null, string $item_condition = null, string $offer_type = null) : \AmazonPHP\SellingPartner\Model\ProductPricing\GetPricingResponse
+    public function getPricing(AccessToken $accessToken, string $region, string $marketplace_id, string $item_type, array $asins = null, array $skus = null, string $item_condition = null, string $offer_type = null) : \Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetPricingResponse
     {
         $request = $this->getPricingRequest($accessToken, $region, $marketplace_id, $item_type, $asins, $skus, $item_condition, $offer_type);
 
@@ -1236,7 +1236,7 @@ final class ProductPricingSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\ProductPricing\GetPricingResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\ProductPricing\GetPricingResponse',
             []
         );
     }
@@ -1252,7 +1252,7 @@ final class ProductPricingSDK
      * @param string $item_condition Filters the offer listings based on item condition. Possible values: New, Used, Collectible, Refurbished, Club. (optional)
      * @param string $offer_type Indicates whether to request pricing information for the seller&#39;s B2C or B2B offers. Default is B2C. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getPricingRequest(AccessToken $accessToken, string $region, string $marketplace_id, string $item_type, array $asins = null, array $skus = null, string $item_condition = null, string $offer_type = null) : RequestInterface
     {

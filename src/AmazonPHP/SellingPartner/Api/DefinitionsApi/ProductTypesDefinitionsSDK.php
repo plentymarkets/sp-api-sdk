@@ -2,13 +2,13 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Api\DefinitionsApi;
 
-use AmazonPHP\SellingPartner\AccessToken;
-use AmazonPHP\SellingPartner\Configuration;
-use AmazonPHP\SellingPartner\Exception\ApiException;
-use AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
-use AmazonPHP\SellingPartner\HttpFactory;
-use AmazonPHP\SellingPartner\HttpSignatureHeaders;
-use AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\AccessToken;
+use Plenty\AmazonPHP\SellingPartner\Configuration;
+use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
+use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
+use Plenty\AmazonPHP\SellingPartner\HttpFactory;
+use Plenty\AmazonPHP\SellingPartner\HttpSignatureHeaders;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
@@ -30,13 +30,13 @@ final class ProductTypesDefinitionsSDK
 
     public const OPERATION_SEARCHDEFINITIONSPRODUCTTYPES_PATH = '/definitions/2020-09-01/productTypes';
 
-    private ClientInterface $client;
+    private /** [COMPAT] ClientInterface */ $client;
 
-    private HttpFactory $httpFactory;
+    private /** [COMPAT] HttpFactory */ $httpFactory;
 
-    private Configuration $configuration;
+    private /** [COMPAT] Configuration */ $configuration;
 
-    private LoggerInterface $logger;
+    private /** [COMPAT] LoggerInterface */ $logger;
 
     public function __construct(ClientInterface $client, HttpFactory $requestFactory, Configuration $configuration, LoggerInterface $logger)
     {
@@ -58,10 +58,10 @@ final class ProductTypesDefinitionsSDK
      * @param string $requirements_enforced Identifies if the required attributes for a requirements set are enforced by the product type definition schema. Non-enforced requirements enable structural validation of individual attributes without all the required attributes being present (such as for partial updates). (optional, default to 'ENFORCED')
      * @param string $locale Locale for retrieving display labels and other presentation details. Defaults to the default language of the first marketplace in the request. (optional, default to 'DEFAULT')
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function getDefinitionsProductType(AccessToken $accessToken, string $region, string $product_type, array $marketplace_ids, string $seller_id = null, string $product_type_version = 'LATEST', string $requirements = 'LISTING', string $requirements_enforced = 'ENFORCED', string $locale = 'DEFAULT') : \AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\ProductTypeDefinition
+    public function getDefinitionsProductType(AccessToken $accessToken, string $region, string $product_type, array $marketplace_ids, string $seller_id = null, string $product_type_version = 'LATEST', string $requirements = 'LISTING', string $requirements_enforced = 'ENFORCED', string $locale = 'DEFAULT') : \Plenty\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\ProductTypeDefinition
     {
         $request = $this->getDefinitionsProductTypeRequest($accessToken, $region, $product_type, $marketplace_ids, $seller_id, $product_type_version, $requirements, $requirements_enforced, $locale);
 
@@ -143,7 +143,7 @@ final class ProductTypesDefinitionsSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\ProductTypeDefinition',
+            '\Plenty\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\ProductTypeDefinition',
             []
         );
     }
@@ -160,7 +160,7 @@ final class ProductTypesDefinitionsSDK
      * @param string $requirements_enforced Identifies if the required attributes for a requirements set are enforced by the product type definition schema. Non-enforced requirements enable structural validation of individual attributes without all the required attributes being present (such as for partial updates). (optional, default to 'ENFORCED')
      * @param string $locale Locale for retrieving display labels and other presentation details. Defaults to the default language of the first marketplace in the request. (optional, default to 'DEFAULT')
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function getDefinitionsProductTypeRequest(AccessToken $accessToken, string $region, string $product_type, array $marketplace_ids, string $seller_id = null, string $product_type_version = 'LATEST', string $requirements = 'LISTING', string $requirements_enforced = 'ENFORCED', string $locale = 'DEFAULT') : RequestInterface
     {
@@ -308,10 +308,10 @@ final class ProductTypesDefinitionsSDK
      * @param string[] $marketplace_ids A comma-delimited list of Amazon marketplace identifiers for the request. (required)
      * @param string[] $keywords A comma-delimited list of keywords to search product types by. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
-    public function searchDefinitionsProductTypes(AccessToken $accessToken, string $region, array $marketplace_ids, array $keywords = null) : \AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\ProductTypeList
+    public function searchDefinitionsProductTypes(AccessToken $accessToken, string $region, array $marketplace_ids, array $keywords = null) : \Plenty\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\ProductTypeList
     {
         $request = $this->searchDefinitionsProductTypesRequest($accessToken, $region, $marketplace_ids, $keywords);
 
@@ -393,7 +393,7 @@ final class ProductTypesDefinitionsSDK
         return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\ProductTypeList',
+            '\Plenty\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\ProductTypeList',
             []
         );
     }
@@ -405,7 +405,7 @@ final class ProductTypesDefinitionsSDK
      * @param string[] $marketplace_ids A comma-delimited list of Amazon marketplace identifiers for the request. (required)
      * @param string[] $keywords A comma-delimited list of keywords to search product types by. (optional)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      */
     public function searchDefinitionsProductTypesRequest(AccessToken $accessToken, string $region, array $marketplace_ids, array $keywords = null) : RequestInterface
     {
