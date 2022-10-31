@@ -227,7 +227,7 @@ class PrepDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets prep_instruction.
      */
-    public function getPrepInstruction() : PrepInstruction
+    public function getPrepInstruction() : ?PrepInstruction
     {
         return $this->container['prep_instruction'];
     }
@@ -235,9 +235,9 @@ class PrepDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets prep_instruction.
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction $prep_instruction prep_instruction
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction|null $prep_instruction prep_instruction
      */
-    public function setPrepInstruction(PrepInstruction $prep_instruction) : self
+    public function setPrepInstruction(?PrepInstruction $prep_instruction) : self
     {
         $this->container['prep_instruction'] = $prep_instruction;
 
@@ -247,7 +247,7 @@ class PrepDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets prep_owner.
      */
-    public function getPrepOwner() : PrepOwner
+    public function getPrepOwner() : ?PrepOwner
     {
         return $this->container['prep_owner'];
     }
@@ -255,9 +255,9 @@ class PrepDetails implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Sets prep_owner.
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepOwner $prep_owner prep_owner
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepOwner|null $prep_owner prep_owner
      */
-    public function setPrepOwner(PrepOwner $prep_owner) : self
+    public function setPrepOwner(?PrepOwner $prep_owner) : self
     {
         $this->container['prep_owner'] = $prep_owner;
 
