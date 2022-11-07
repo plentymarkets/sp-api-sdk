@@ -423,9 +423,9 @@ class PartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets pallet_list.
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pallet[]
+     * @return null|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pallet[]
      */
-    public function getPalletList() : array
+    public function getPalletList() : ?array
     {
         return $this->container['pallet_list'];
     }
@@ -445,7 +445,7 @@ class PartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets total_weight.
      */
-    public function getTotalWeight() : Weight
+    public function getTotalWeight() : ?Weight
     {
         return $this->container['total_weight'];
     }
@@ -505,9 +505,9 @@ class PartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets preview_pickup_date.
      *
-     * @return \DateTime|\DateTimeImmutable
+     * @return null|\DateTime|\DateTimeImmutable
      */
-    public function getPreviewPickupDate() : \DateTimeInterface
+    public function getPreviewPickupDate() : ?\DateTimeInterface
     {
         return $this->container['preview_pickup_date'];
     }
@@ -527,9 +527,9 @@ class PartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets preview_delivery_date.
      *
-     * @return \DateTime|\DateTimeImmutable
+     * @return null|\DateTime|\DateTimeImmutable
      */
-    public function getPreviewDeliveryDate() : \DateTimeInterface
+    public function getPreviewDeliveryDate() : ?\DateTimeInterface
     {
         return $this->container['preview_delivery_date'];
     }
@@ -549,7 +549,7 @@ class PartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets preview_freight_class.
      */
-    public function getPreviewFreightClass() : SellerFreightClass
+    public function getPreviewFreightClass() : ?SellerFreightClass
     {
         return $this->container['preview_freight_class'];
     }
@@ -589,7 +589,7 @@ class PartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets is_bill_of_lading_available.
      */
-    public function getIsBillOfLadingAvailable() : bool
+    public function getIsBillOfLadingAvailable() : ?bool
     {
         return $this->container['is_bill_of_lading_available'];
     }
@@ -629,7 +629,7 @@ class PartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets carrier_name.
      */
-    public function getCarrierName() : string
+    public function getCarrierName() : ?string
     {
         return $this->container['carrier_name'];
     }
