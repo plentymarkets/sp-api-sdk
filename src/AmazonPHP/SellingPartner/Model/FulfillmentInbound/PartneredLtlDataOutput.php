@@ -401,9 +401,9 @@ class PartneredLtlDataOutput implements \ArrayAccess, \JsonSerializable, ModelIn
     /**
      * Gets freight_ready_date.
      *
-     * @return \DateTime|\DateTimeImmutable
+     * @return null|\DateTime|\DateTimeImmutable
      */
-    public function getFreightReadyDate() : \DateTimeInterface
+    public function getFreightReadyDate() : ?\DateTimeInterface
     {
         return $this->container['freight_ready_date'];
     }
