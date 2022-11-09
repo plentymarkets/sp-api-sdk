@@ -277,7 +277,7 @@ class PartneredSmallParcelPackageOutput implements \ArrayAccess, \JsonSerializab
     /**
      * Gets weight.
      */
-    public function getWeight() : Weight
+    public function getWeight() : ?Weight
     {
         return $this->container['weight'];
     }
