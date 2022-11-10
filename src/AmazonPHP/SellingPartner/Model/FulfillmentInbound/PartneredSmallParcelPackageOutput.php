@@ -257,7 +257,7 @@ class PartneredSmallParcelPackageOutput implements \ArrayAccess, \JsonSerializab
     /**
      * Gets dimensions.
      */
-    public function getDimensions() : Dimensions
+    public function getDimensions() : ?Dimensions
     {
         return $this->container['dimensions'];
     }
