@@ -58,6 +58,8 @@ class ShipmentStatus
 
     public const CHECKED_IN = 'CHECKED_IN';
 
+    public const READY_TO_SHIP = 'READY_TO_SHIP';
+
     private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
@@ -83,6 +85,7 @@ class ShipmentStatus
             self::IN_TRANSIT,
             self::DELIVERED,
             self::CHECKED_IN,
+            self::READY_TO_SHIP,
         ];
     }
 
