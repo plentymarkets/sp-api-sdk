@@ -2,6 +2,7 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Api\MerchantFulfillmentApi;
 
+use GuzzleHttp\Exception\ClientException;
 use Plenty\AmazonPHP\SellingPartner\AccessToken;
 use Plenty\AmazonPHP\SellingPartner\Configuration;
 use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
@@ -517,6 +518,8 @@ final class MerchantFulfillmentSDK
                     ]
                 );
             }
+        } catch(ClientException $e) {
+            throw $e;
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
                 "[{$e->getCode()}] {$e->getMessage()}",
@@ -1452,6 +1455,8 @@ final class MerchantFulfillmentSDK
                     ]
                 );
             }
+        } catch(ClientException $e) {
+            throw $e;
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
                 "[{$e->getCode()}] {$e->getMessage()}",
