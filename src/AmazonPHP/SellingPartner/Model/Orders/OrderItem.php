@@ -48,6 +48,10 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
 
     public const DEEMED_RESELLER_CATEGORY_UOSS = 'UOSS';
 
+    public const DEEMED_RESELLER_CATEGORY_CA_MPF = 'CA_MPF';
+
+    public const DEEMED_RESELLER_CATEGORY_GB_VOEC = 'GB_VOEC';
+
     /**
      * The original name of the model.
      *
@@ -399,6 +403,8 @@ class OrderItem implements \ArrayAccess, \JsonSerializable, ModelInterface
         return [
             self::DEEMED_RESELLER_CATEGORY_IOSS,
             self::DEEMED_RESELLER_CATEGORY_UOSS,
+            self::DEEMED_RESELLER_CATEGORY_CA_MPF,
+            self::DEEMED_RESELLER_CATEGORY_GB_VOEC,
         ];
     }
 
