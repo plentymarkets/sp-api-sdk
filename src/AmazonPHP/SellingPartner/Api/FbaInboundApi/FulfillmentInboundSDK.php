@@ -582,8 +582,9 @@ final class FulfillmentInboundSDK
             }
         } catch (ClientException $cEx) {
             $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? '';
             throw new ApiException(
-                str_replace(  "Reason: ", 'API error encountered: ', $message?->errors[0]?->message),
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
                 (int) $cEx->getCode(),
                 null,
                 null,
