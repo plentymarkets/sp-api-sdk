@@ -2,6 +2,7 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Api\FbaInboundApi;
 
+use GuzzleHttp\Exception\ClientException;
 use Plenty\AmazonPHP\SellingPartner\AccessToken;
 use Plenty\AmazonPHP\SellingPartner\Configuration;
 use Plenty\AmazonPHP\SellingPartner\Exception\ApiException;
@@ -579,6 +580,16 @@ final class FulfillmentInboundSDK
                     ]
                 );
             }
+        } catch (ClientException $cEx) {
+            $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? 'Unknown error encountered';
+            throw new ApiException(
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
+                (int) $cEx->getCode(),
+                null,
+                null,
+                $cEx
+            );
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
                 "[{$e->getCode()}] {$e->getMessage()}",
