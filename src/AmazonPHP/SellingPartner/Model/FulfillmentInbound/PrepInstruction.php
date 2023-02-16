@@ -50,6 +50,8 @@ class PrepInstruction
 
     public const HANG_GARMENT = 'HangGarment';
 
+    public const BOXING = 'Boxing';
+
     private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
@@ -71,6 +73,7 @@ class PrepInstruction
             self::BLACK_SHRINK_WRAPPING,
             self::LABELING,
             self::HANG_GARMENT,
+            self::BOXING,
         ];
     }
 
