@@ -11,8 +11,11 @@ class CredentialsHandler {
     /** @var Credentials  */
     private Credentials $credentials;
 
-    /** @var array  */
-    private array $secrets;
+    /** @var string  */
+    private string $accessKeyId;
+
+    /** @var string  */
+    private string $secretAccessKey;
 
     /** @var STSClient  */
     private STSClient $sts;
@@ -20,10 +23,17 @@ class CredentialsHandler {
     /** @var string  */
     private string $roleArn;
 
-    public function __construct(STSClient $sts, array $secrets, string $roleArn)
+    /**
+     * @param STSClient $sts
+     * @param string $accessKeyId
+     * @param string $secretAccessKey
+     * @param string $roleArn
+     */
+    public function __construct(STSClient $sts, string $accessKeyId, string $secretAccessKey, string $roleArn)
     {
         $this->sts = $sts;
-        $this->secrets = $secrets;
+        $this->accessKeyId = $accessKeyId;
+        $this->secretAccessKey = $secretAccessKey;
         $this->roleArn = $roleArn;
     }
 
@@ -37,16 +47,6 @@ class CredentialsHandler {
     }
 
     /**
-     * @param string $accessKey
-     * @return CredentialsHandler
-     */
-    public function setAccessKey(string $accessKey): CredentialsHandler
-    {
-        $this->accessKey = $accessKey;
-        return $this;
-    }
-
-    /**
      * @return string
      */
     public function getSecretKey(): string
@@ -56,32 +56,12 @@ class CredentialsHandler {
     }
 
     /**
-     * @param string $secretKey
-     * @return CredentialsHandler
-     */
-    public function setSecretKey(string $secretKey): CredentialsHandler
-    {
-        $this->secretKey = $secretKey;
-        return $this;
-    }
-
-    /**
      * @return string
      */
     public function getSecurityToken(): string
     {
         $this->refreshCredentials();
         return $this->credentials->sessionToken();
-    }
-
-    /**
-     * @param string $securityToken
-     * @return CredentialsHandler
-     */
-    public function setSecurityToken(string $securityToken): CredentialsHandler
-    {
-        $this->securityToken = $securityToken;
-        return $this;
     }
 
     /**
@@ -96,8 +76,8 @@ class CredentialsHandler {
         }
 
         $this->credentials = $this->sts->assumeRole(
-            $this->secrets['accessKeyID'],
-            $this->secrets['secretAccessKey'],
+            $this->accessKeyId,
+            $this->secretAccessKey,
             $this->roleArn
         );
     }

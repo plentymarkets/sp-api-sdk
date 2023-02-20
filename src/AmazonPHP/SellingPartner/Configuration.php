@@ -39,7 +39,7 @@ class Configuration
 
     public static function forIAMRole(array $secrets, STSClient $stsClient, string $roleArn) : self
     {
-        $credentialsHandler = new CredentialsHandler($stsClient, $secrets, $roleArn);
+        $credentialsHandler = new CredentialsHandler($stsClient, $secrets['accessKeyID'], $secrets['secretAccessKey'], $roleArn);
         return new self($secrets['clientId'], $secrets['clientSecret'], $credentialsHandler);
     }
 
