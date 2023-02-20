@@ -91,7 +91,7 @@ class CredentialsHandler {
      * @throws \Psr\Http\Client\ClientExceptionInterface
      */
     private function refreshCredentials(): void {
-        if($this->validCredentials()) {
+        if($this->areCredentialsValid()) {
             return;
         }
 
@@ -102,7 +102,7 @@ class CredentialsHandler {
         );
     }
 
-    private function validCredentials(): bool {
+    private function areCredentialsValid(): bool {
         if(empty($this->credentials)) {
             return false;
         }
