@@ -8,45 +8,28 @@ use Plenty\AmazonPHP\SellingPartner\Configuration\LoggerConfiguration;
 use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
 use Plenty\AmazonPHP\SellingPartner\STSClient\Credentials;
 
-final class Configuration
+class Configuration
 {
-    private /** [COMPAT] string */ $lwaClientID;
-
-    private /** [COMPAT] string */ $lwaClientSecret;
-
-    private /** [COMPAT] string */ $accessKey;
-
-    private /** [COMPAT] string */ $secretKey;
-
-    private /** [COMPAT] string */ $userAgent;
-
-    private /** [COMPAT] ?string */ $securityToken;
-
-    private /** [COMPAT] string */ $tmpFolderPath;
-
-    private /** [COMPAT] LoggerConfiguration */ $loggerConfiguration;
-
-    private /** [COMPAT] Extensions */ $extensions;
+    /** @var CredentialsHandler  */
+    private CredentialsHandler $credentialsHandler;
 
     public function __construct(
         string $lwaClientID,
         string $lwaClientSecret,
-        string $accessKey,
-        string $secretKey,
-        string $securityToken = null,
+        CredentialsHandler $credentialsHandler,
         Extensions $extensions = null,
         LoggerConfiguration $loggerConfiguration = null
     ) {
+        $this->credentialsHandler = $credentialsHandler;
+
         $this->lwaClientID = $lwaClientID;
         $this->lwaClientSecret = $lwaClientSecret;
-        $this->accessKey = $accessKey;
-        $this->secretKey = $secretKey;
+
         // https://github.com/amzn/selling-partner-api-docs/blob/main/guides/en-US/developer-guide/SellingPartnerApiDeveloperGuide.md#include-a-user-agent-header-in-all-requests
         $this->userAgent = 'Library amazon-php/sp-api-php (language=PHP ' . \phpversion() . '; Platform=' . \php_uname('s') . ' ' . \php_uname('r') . ' ' . \php_uname('m') . ')';
         $this->tmpFolderPath = \sys_get_temp_dir();
         $this->loggerConfiguration = $loggerConfiguration ? $loggerConfiguration : new LoggerConfiguration();
         $this->extensions = $extensions ? $extensions : new Extensions();
-        $this->securityToken = $securityToken;
     }
 
     public static function forIAMUser(string $clientId, string $clientSecret, string $accessKey, string $secretKey) : self
@@ -54,9 +37,10 @@ final class Configuration
         return new self($clientId, $clientSecret, $accessKey, $secretKey, null);
     }
 
-    public static function forIAMRole(string $clientId, string $clientSecret, Credentials $credentials) : self
+    public static function forIAMRole(array $secrets, STSClient $stsClient, string $roleArn) : self
     {
-        return new self($clientId, $clientSecret, $credentials->accessKeyId(), $credentials->secretAccessKey(), $credentials->sessionToken());
+        $credentialsHandler = new CredentialsHandler($stsClient, $secrets['accessKeyID'], $secrets['secretAccessKey'], $roleArn);
+        return new self($secrets['clientId'], $secrets['clientSecret'], $credentialsHandler);
     }
 
     public function updateIAMRoleCredentials(Credentials $credentials) : self
@@ -80,7 +64,7 @@ final class Configuration
 
     public function securityToken() : ?string
     {
-        return $this->securityToken;
+        return $this->credentialsHandler->getSecurityToken();
     }
 
     public function apiURL(string $awsRegion) : string
@@ -123,12 +107,12 @@ final class Configuration
 
     public function accessKey() : string
     {
-        return $this->accessKey;
+        return $this->credentialsHandler->getAccessKey();
     }
 
     public function secretKey() : string
     {
-        return $this->secretKey;
+        return $this->credentialsHandler->getSecretKey();
     }
 
     public function userAgent() : string
