@@ -403,7 +403,7 @@ class Address implements \ArrayAccess, \JsonSerializable, ModelInterface
     /**
      * Gets state_or_region.
      */
-    public function getStateOrRegion() : string
+    public function getStateOrRegion() : ?string
     {
         return $this->container['state_or_region'];
     }
@@ -413,7 +413,7 @@ class Address implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @param string $state_or_region the state or region where the person, business or institution is located
      */
-    public function setStateOrRegion(string $state_or_region) : self
+    public function setStateOrRegion(?string $state_or_region) : self
     {
         $this->container['state_or_region'] = $state_or_region;
 

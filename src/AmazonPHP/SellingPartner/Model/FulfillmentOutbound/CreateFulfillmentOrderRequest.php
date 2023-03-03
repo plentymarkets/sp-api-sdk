@@ -60,7 +60,7 @@ class CreateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
         'marketplace_id' => 'string',
         'seller_fulfillment_order_id' => 'string',
         'displayable_order_id' => 'string',
-        'displayable_order_date' => '\DateTime',
+        'displayable_order_date' => 'string',
         'displayable_order_comment' => 'string',
         'shipping_speed_category' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\ShippingSpeedCategory',
         'delivery_window' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentOutbound\DeliveryWindow',
@@ -85,7 +85,7 @@ class CreateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
         'marketplace_id' => null,
         'seller_fulfillment_order_id' => null,
         'displayable_order_id' => null,
-        'displayable_order_date' => 'date-time',
+        'displayable_order_date' => null,
         'displayable_order_comment' => null,
         'shipping_speed_category' => null,
         'delivery_window' => null,
@@ -405,9 +405,9 @@ class CreateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
     /**
      * Gets displayable_order_date.
      *
-     * @return \DateTime|\DateTimeImmutable
+     * @return string
      */
-    public function getDisplayableOrderDate() : \DateTimeInterface
+    public function getDisplayableOrderDate() : string
     {
         return $this->container['displayable_order_date'];
     }
@@ -415,9 +415,9 @@ class CreateFulfillmentOrderRequest implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets displayable_order_date.
      *
-     * @param \DateTime $displayable_order_date displayable_order_date
+     * @param string $displayable_order_date displayable_order_date
      */
-    public function setDisplayableOrderDate(\DateTimeInterface $displayable_order_date) : self
+    public function setDisplayableOrderDate(string $displayable_order_date) : self
     {
         $this->container['displayable_order_date'] = $displayable_order_date;
 
