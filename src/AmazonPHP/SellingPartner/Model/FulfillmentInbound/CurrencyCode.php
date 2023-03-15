@@ -44,6 +44,10 @@ class CurrencyCode
 
     public const EUR = 'EUR';
 
+    public const PLN = 'PLN';
+
+    public const SEK = 'SEK';
+
     private /** [COMPAT] string */ $value;
 
     public function __construct(string $value)
@@ -62,6 +66,8 @@ class CurrencyCode
             self::USD,
             self::GBP,
             self::EUR,
+            self::PLN,
+            self::SEK,
         ];
     }
 
