@@ -251,7 +251,7 @@ class RetrieveShippingLabelRequest implements \ArrayAccess, \JsonSerializable, M
      *
      * @return null|mixed
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }

@@ -297,7 +297,7 @@ class ChargeInstrument implements \ArrayAccess, \JsonSerializable, ModelInterfac
      *
      * @return null|mixed
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }

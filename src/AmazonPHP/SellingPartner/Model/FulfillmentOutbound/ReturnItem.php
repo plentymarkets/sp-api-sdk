@@ -533,7 +533,7 @@ class ReturnItem implements \ArrayAccess, \JsonSerializable, ModelInterface
      *
      * @return null|mixed
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
