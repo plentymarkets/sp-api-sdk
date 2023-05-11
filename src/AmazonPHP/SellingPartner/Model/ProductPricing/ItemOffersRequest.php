@@ -395,7 +395,7 @@ class ItemOffersRequest implements \ArrayAccess, \JsonSerializable, ModelInterfa
      *
      * @return null|mixed
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }

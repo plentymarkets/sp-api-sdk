@@ -291,7 +291,7 @@ class CreateConfirmCustomizationDetailsRequest implements \ArrayAccess, \JsonSer
      *
      * @return null|mixed
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
