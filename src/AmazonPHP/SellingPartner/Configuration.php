@@ -12,7 +12,13 @@ class Configuration
 {
     /** @var CredentialsHandler  */
     private CredentialsHandler $credentialsHandler;
-
+    private string $userAgent;
+    private string $tmpFolderPath;
+    private LoggerConfiguration $loggerConfiguration;
+    private Extensions $extensions;
+    private string $lwaClientSecret;
+    private string $lwaClientID;
+    
     public function __construct(
         string $lwaClientID,
         string $lwaClientSecret,
