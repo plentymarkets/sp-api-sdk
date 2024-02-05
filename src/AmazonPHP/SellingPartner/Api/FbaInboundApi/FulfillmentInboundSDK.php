@@ -183,8 +183,12 @@ final class FulfillmentInboundSDK
                 $cEx
             );
         } catch (ClientExceptionInterface $e) {
+            $message = $e->getMessage();
+            if (method_exists($e, 'getResponse'))  {
+                $message = $e->getResponse()->getBody()->getContents();
+            }
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] ". $message,
                 (int) $e->getCode(),
                 null,
                 null,
@@ -412,8 +416,12 @@ final class FulfillmentInboundSDK
                 $cEx
             );
         } catch (ClientExceptionInterface $e) {
+            $message = $e->getMessage();
+            if (method_exists($e, 'getResponse'))  {
+                $message = $e->getResponse()->getBody()->getContents();
+            }
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] ". $message,
                 (int) $e->getCode(),
                 null,
                 null,
@@ -828,8 +836,12 @@ final class FulfillmentInboundSDK
                 $cEx
             );
         } catch (ClientExceptionInterface $e) {
+            $message = $e->getMessage();
+            if (method_exists($e, 'getResponse'))  {
+                $message = $e->getResponse()->getBody()->getContents();
+            }
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] ". $message,
                 (int) $e->getCode(),
                 null,
                 null,
@@ -1025,8 +1037,12 @@ final class FulfillmentInboundSDK
                 $cEx
             );
         } catch (ClientExceptionInterface $e) {
+            $message = $e->getMessage();
+            if (method_exists($e, 'getResponse'))  {
+                $message = $e->getResponse()->getBody()->getContents();
+            }
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] ". $message,
                 (int) $e->getCode(),
                 null,
                 null,
@@ -1223,8 +1239,12 @@ final class FulfillmentInboundSDK
                 $cEx
             );
         } catch (ClientExceptionInterface $e) {
+            $message = $e->getMessage();
+            if (method_exists($e, 'getResponse'))  {
+                $message = $e->getResponse()->getBody()->getContents();
+            }
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] ". $message,
                 (int) $e->getCode(),
                 null,
                 null,
@@ -1423,8 +1443,12 @@ final class FulfillmentInboundSDK
                 $cEx
             );
         } catch (ClientExceptionInterface $e) {
+            $message = $e->getMessage();
+            if (method_exists($e, 'getResponse'))  {
+                $message = $e->getResponse()->getBody()->getContents();
+            }
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] ". $message,
                 (int) $e->getCode(),
                 null,
                 null,
@@ -1654,8 +1678,12 @@ final class FulfillmentInboundSDK
                 $cEx
             );
         } catch (ClientExceptionInterface $e) {
+            $message = $e->getMessage();
+            if (method_exists($e, 'getResponse'))  {
+                $message = $e->getResponse()->getBody()->getContents();
+            }
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] ". $message,
                 (int) $e->getCode(),
                 null,
                 null,
@@ -1933,8 +1961,12 @@ final class FulfillmentInboundSDK
                 $cEx
             );
         } catch (ClientExceptionInterface $e) {
+            $message = $e->getMessage();
+            if (method_exists($e, 'getResponse'))  {
+                $message = $e->getResponse()->getBody()->getContents();
+            }
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] ". $message,
                 (int) $e->getCode(),
                 null,
                 null,
@@ -2149,8 +2181,12 @@ final class FulfillmentInboundSDK
                 $cEx
             );
         } catch (ClientExceptionInterface $e) {
+            $message = $e->getMessage();
+            if (method_exists($e, 'getResponse'))  {
+                $message = $e->getResponse()->getBody()->getContents();
+            }
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] ". $message,
                 (int) $e->getCode(),
                 null,
                 null,
@@ -2377,8 +2413,12 @@ final class FulfillmentInboundSDK
                 $cEx
             );
         } catch (ClientExceptionInterface $e) {
+            $message = $e->getMessage();
+            if (method_exists($e, 'getResponse'))  {
+                $message = $e->getResponse()->getBody()->getContents();
+            }
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] ". $message,
                 (int) $e->getCode(),
                 null,
                 null,
@@ -2618,8 +2658,12 @@ final class FulfillmentInboundSDK
                 $cEx
             );
         } catch (ClientExceptionInterface $e) {
+            $message = $e->getMessage();
+            if (method_exists($e, 'getResponse'))  {
+                $message = $e->getResponse()->getBody()->getContents();
+            }
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] ". $message,
                 (int) $e->getCode(),
                 null,
                 null,
@@ -2838,8 +2882,12 @@ final class FulfillmentInboundSDK
                 $cEx
             );
         } catch (ClientExceptionInterface $e) {
+            $message = $e->getMessage();
+            if (method_exists($e, 'getResponse'))  {
+                $message = $e->getResponse()->getBody()->getContents();
+            }
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] ". $message,
                 (int) $e->getCode(),
                 null,
                 null,
@@ -3096,8 +3144,12 @@ final class FulfillmentInboundSDK
                 $cEx
             );
         } catch (ClientExceptionInterface $e) {
+            $message = $e->getMessage();
+            if (method_exists($e, 'getResponse'))  {
+                $message = $e->getResponse()->getBody()->getContents();
+            }
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] ". $message,
                 (int) $e->getCode(),
                 null,
                 null,
@@ -3295,8 +3347,12 @@ final class FulfillmentInboundSDK
                 $cEx
             );
         } catch (ClientExceptionInterface $e) {
+            $message = $e->getMessage();
+            if (method_exists($e, 'getResponse'))  {
+                $message = $e->getResponse()->getBody()->getContents();
+            }
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] ". $message,
                 (int) $e->getCode(),
                 null,
                 null,
@@ -3509,8 +3565,12 @@ final class FulfillmentInboundSDK
                 $cEx
             );
         } catch (ClientExceptionInterface $e) {
+            $message = $e->getMessage();
+            if (method_exists($e, 'getResponse'))  {
+                $message = $e->getResponse()->getBody()->getContents();
+            }
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] ". $message,
                 (int) $e->getCode(),
                 null,
                 null,
@@ -3722,8 +3782,12 @@ final class FulfillmentInboundSDK
                 $cEx
             );
         } catch (ClientExceptionInterface $e) {
+            $message = $e->getMessage();
+            if (method_exists($e, 'getResponse'))  {
+                $message = $e->getResponse()->getBody()->getContents();
+            }
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] ". $message,
                 (int) $e->getCode(),
                 null,
                 null,
