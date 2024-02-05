@@ -172,6 +172,16 @@ final class FulfillmentInboundSDK
                     ]
                 );
             }
+        } catch (ClientException $cEx) {
+            $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? 'Unknown error encountered';
+            throw new ApiException(
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
+                (int) $cEx->getCode(),
+                null,
+                null,
+                $cEx
+            );
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
                 "[{$e->getCode()}] {$e->getMessage()}",
@@ -391,6 +401,16 @@ final class FulfillmentInboundSDK
                     ]
                 );
             }
+        } catch (ClientException $cEx) {
+            $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? 'Unknown error encountered';
+            throw new ApiException(
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
+                (int) $cEx->getCode(),
+                null,
+                null,
+                $cEx
+            );
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
                 "[{$e->getCode()}] {$e->getMessage()}",
@@ -797,6 +817,16 @@ final class FulfillmentInboundSDK
                     ]
                 );
             }
+        }  catch (ClientException $cEx) {
+            $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? 'Unknown error encountered';
+            throw new ApiException(
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
+                (int) $cEx->getCode(),
+                null,
+                null,
+                $cEx
+            );
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
                 "[{$e->getCode()}] {$e->getMessage()}",
@@ -984,6 +1014,16 @@ final class FulfillmentInboundSDK
                     ]
                 );
             }
+        }  catch (ClientException $cEx) {
+            $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? 'Unknown error encountered';
+            throw new ApiException(
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
+                (int) $cEx->getCode(),
+                null,
+                null,
+                $cEx
+            );
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
                 "[{$e->getCode()}] {$e->getMessage()}",
@@ -1172,6 +1212,16 @@ final class FulfillmentInboundSDK
                     ]
                 );
             }
+        } catch (ClientException $cEx) {
+            $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? 'Unknown error encountered';
+            throw new ApiException(
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
+                (int) $cEx->getCode(),
+                null,
+                null,
+                $cEx
+            );
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
                 "[{$e->getCode()}] {$e->getMessage()}",
@@ -1362,6 +1412,16 @@ final class FulfillmentInboundSDK
                     ]
                 );
             }
+        } catch (ClientException $cEx) {
+            $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? 'Unknown error encountered';
+            throw new ApiException(
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
+                (int) $cEx->getCode(),
+                null,
+                null,
+                $cEx
+            );
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
                 "[{$e->getCode()}] {$e->getMessage()}",
@@ -1583,6 +1643,16 @@ final class FulfillmentInboundSDK
                     ]
                 );
             }
+        } catch (ClientException $cEx) {
+            $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? 'Unknown error encountered';
+            throw new ApiException(
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
+                (int) $cEx->getCode(),
+                null,
+                null,
+                $cEx
+            );
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
                 "[{$e->getCode()}] {$e->getMessage()}",
@@ -1852,6 +1922,16 @@ final class FulfillmentInboundSDK
                     ]
                 );
             }
+        } catch (ClientException $cEx) {
+            $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? 'Unknown error encountered';
+            throw new ApiException(
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
+                (int) $cEx->getCode(),
+                null,
+                null,
+                $cEx
+            );
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
                 "[{$e->getCode()}] {$e->getMessage()}",
@@ -2058,6 +2138,16 @@ final class FulfillmentInboundSDK
                     ]
                 );
             }
+        } catch (ClientException $cEx) {
+            $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? 'Unknown error encountered';
+            throw new ApiException(
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
+                (int) $cEx->getCode(),
+                null,
+                null,
+                $cEx
+            );
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
                 "[{$e->getCode()}] {$e->getMessage()}",
@@ -2276,6 +2366,16 @@ final class FulfillmentInboundSDK
                     ]
                 );
             }
+        } catch (ClientException $cEx) {
+            $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? 'Unknown error encountered';
+            throw new ApiException(
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
+                (int) $cEx->getCode(),
+                null,
+                null,
+                $cEx
+            );
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
                 "[{$e->getCode()}] {$e->getMessage()}",
@@ -2507,6 +2607,16 @@ final class FulfillmentInboundSDK
                     ]
                 );
             }
+        } catch (ClientException $cEx) {
+            $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? 'Unknown error encountered';
+            throw new ApiException(
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
+                (int) $cEx->getCode(),
+                null,
+                null,
+                $cEx
+            );
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
                 "[{$e->getCode()}] {$e->getMessage()}",
@@ -2717,6 +2827,16 @@ final class FulfillmentInboundSDK
                     ]
                 );
             }
+        } catch (ClientException $cEx) {
+            $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? 'Unknown error encountered';
+            throw new ApiException(
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
+                (int) $cEx->getCode(),
+                null,
+                null,
+                $cEx
+            );
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
                 "[{$e->getCode()}] {$e->getMessage()}",
@@ -2965,6 +3085,16 @@ final class FulfillmentInboundSDK
                     ]
                 );
             }
+        } catch (ClientException $cEx) {
+            $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? 'Unknown error encountered';
+            throw new ApiException(
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
+                (int) $cEx->getCode(),
+                null,
+                null,
+                $cEx
+            );
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
                 "[{$e->getCode()}] {$e->getMessage()}",
@@ -3154,6 +3284,16 @@ final class FulfillmentInboundSDK
                     ]
                 );
             }
+        } catch (ClientException $cEx) {
+            $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? 'Unknown error encountered';
+            throw new ApiException(
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
+                (int) $cEx->getCode(),
+                null,
+                null,
+                $cEx
+            );
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
                 "[{$e->getCode()}] {$e->getMessage()}",
@@ -3358,6 +3498,16 @@ final class FulfillmentInboundSDK
                     ]
                 );
             }
+        } catch (ClientException $cEx) {
+            $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? 'Unknown error encountered';
+            throw new ApiException(
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
+                (int) $cEx->getCode(),
+                null,
+                null,
+                $cEx
+            );
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
                 "[{$e->getCode()}] {$e->getMessage()}",
@@ -3561,6 +3711,16 @@ final class FulfillmentInboundSDK
                     ]
                 );
             }
+        } catch (ClientException $cEx) {
+            $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? 'Unknown error encountered';
+            throw new ApiException(
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
+                (int) $cEx->getCode(),
+                null,
+                null,
+                $cEx
+            );
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
                 "[{$e->getCode()}] {$e->getMessage()}",
