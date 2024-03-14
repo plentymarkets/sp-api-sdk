@@ -134,9 +134,23 @@ final class MerchantFulfillmentSDK
                     ]
                 );
             }
-        } catch (ClientExceptionInterface $e) {
+        } catch (ClientException $cEx) {
+            $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? 'Unknown error encountered';
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
+                (int) $cEx->getCode(),
+                null,
+                null,
+                $cEx
+            );
+        } catch (ClientExceptionInterface $e) {
+            $message = $e->getMessage();
+            if (method_exists($e, 'getResponse'))  {
+                $message = $e->getResponse()->getBody()->getContents();
+            }
+            throw new ApiException(
+                "[{$e->getCode()}] ". $message,
                 (int) $e->getCode(),
                 null,
                 null,
@@ -518,11 +532,23 @@ final class MerchantFulfillmentSDK
                     ]
                 );
             }
-        } catch(ClientException $e) {
-            throw $e;
-        } catch (ClientExceptionInterface $e) {
+        } catch (ClientException $cEx) {
+            $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? 'Unknown error encountered';
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
+                (int) $cEx->getCode(),
+                null,
+                null,
+                $cEx
+            );
+        } catch (ClientExceptionInterface $e) {
+            $message = $e->getMessage();
+            if (method_exists($e, 'getResponse'))  {
+                $message = $e->getResponse()->getBody()->getContents();
+            }
+            throw new ApiException(
+                "[{$e->getCode()}] ". $message,
                 (int) $e->getCode(),
                 null,
                 null,
@@ -707,9 +733,23 @@ final class MerchantFulfillmentSDK
                     ]
                 );
             }
-        } catch (ClientExceptionInterface $e) {
+        } catch (ClientException $cEx) {
+            $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? 'Unknown error encountered';
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
+                (int) $cEx->getCode(),
+                null,
+                null,
+                $cEx
+            );
+        } catch (ClientExceptionInterface $e) {
+            $message = $e->getMessage();
+            if (method_exists($e, 'getResponse'))  {
+                $message = $e->getResponse()->getBody()->getContents();
+            }
+            throw new ApiException(
+                "[{$e->getCode()}] ". $message,
                 (int) $e->getCode(),
                 null,
                 null,
@@ -1081,9 +1121,23 @@ final class MerchantFulfillmentSDK
                     ]
                 );
             }
-        } catch (ClientExceptionInterface $e) {
+        } catch (ClientException $cEx) {
+            $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? 'Unknown error encountered';
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
+                (int) $cEx->getCode(),
+                null,
+                null,
+                $cEx
+            );
+        } catch (ClientExceptionInterface $e) {
+            $message = $e->getMessage();
+            if (method_exists($e, 'getResponse'))  {
+                $message = $e->getResponse()->getBody()->getContents();
+            }
+            throw new ApiException(
+                "[{$e->getCode()}] ". $message,
                 (int) $e->getCode(),
                 null,
                 null,
@@ -1455,11 +1509,23 @@ final class MerchantFulfillmentSDK
                     ]
                 );
             }
-        } catch(ClientException $e) {
-            throw $e;
-        } catch (ClientExceptionInterface $e) {
+        } catch (ClientException $cEx) {
+            $message = json_decode($cEx->getResponse()->getBody()->getContents());
+            $message = $message?->errors[0]?->message ?? 'Unknown error encountered';
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                str_replace(  "Reason: ", 'API error encountered: ', $message),
+                (int) $cEx->getCode(),
+                null,
+                null,
+                $cEx
+            );
+        } catch (ClientExceptionInterface $e) {
+            $message = $e->getMessage();
+            if (method_exists($e, 'getResponse'))  {
+                $message = $e->getResponse()->getBody()->getContents();
+            }
+            throw new ApiException(
+                "[{$e->getCode()}] ". $message,
                 (int) $e->getCode(),
                 null,
                 null,
