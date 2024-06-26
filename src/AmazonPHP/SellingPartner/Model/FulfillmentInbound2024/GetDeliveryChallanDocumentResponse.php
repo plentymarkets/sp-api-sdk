@@ -29,7 +29,7 @@
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use \ArrayAccess;
-use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer2024;
 
 /**
  * GetDeliveryChallanDocumentResponse Class Doc Comment
@@ -212,7 +212,7 @@ class GetDeliveryChallanDocumentResponse implements ModelInterface, ArrayAccess,
     /**
      * Gets document_download
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\DocumentDownload
+     * @return DocumentDownload
      */
     public function getDocumentDownload()
     {
@@ -222,7 +222,7 @@ class GetDeliveryChallanDocumentResponse implements ModelInterface, ArrayAccess,
     /**
      * Sets document_download
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\DocumentDownload $document_download document_download
+     * @param DocumentDownload $document_download document_download
      *
      * @return self
      */
@@ -295,7 +295,7 @@ class GetDeliveryChallanDocumentResponse implements ModelInterface, ArrayAccess,
      */
     public function jsonSerialize()
     {
-        return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer2024::sanitizeForSerialization($this);
     }
 
     /**
@@ -306,7 +306,7 @@ class GetDeliveryChallanDocumentResponse implements ModelInterface, ArrayAccess,
     public function __toString()
     {
         return json_encode(
-            ObjectSerializer::sanitizeForSerialization($this),
+            ObjectSerializer2024::sanitizeForSerialization($this),
             JSON_PRETTY_PRINT
         );
     }
@@ -318,7 +318,7 @@ class GetDeliveryChallanDocumentResponse implements ModelInterface, ArrayAccess,
      */
     public function toHeaderValue()
     {
-        return json_encode(ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }
 }
 

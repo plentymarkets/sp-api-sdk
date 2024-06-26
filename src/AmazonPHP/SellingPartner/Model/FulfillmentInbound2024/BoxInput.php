@@ -28,8 +28,8 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
-use \ArrayAccess;
-use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
+use ArrayAccess;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer2024;
 
 /**
  * BoxInput Class Doc Comment
@@ -253,7 +253,7 @@ class BoxInput implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets content_information_source
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxContentInformationSource
+     * @return BoxContentInformationSource
      */
     public function getContentInformationSource()
     {
@@ -263,7 +263,7 @@ class BoxInput implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets content_information_source
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxContentInformationSource $content_information_source content_information_source
+     * @param BoxContentInformationSource $content_information_source content_information_source
      *
      * @return self
      */
@@ -277,7 +277,7 @@ class BoxInput implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets dimensions
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Dimensions
+     * @return Dimensions
      */
     public function getDimensions()
     {
@@ -287,7 +287,7 @@ class BoxInput implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets dimensions
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Dimensions $dimensions dimensions
+     * @param Dimensions $dimensions dimensions
      *
      * @return self
      */
@@ -301,7 +301,7 @@ class BoxInput implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets items
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[]|null
+     * @return ItemInput[]|null
      */
     public function getItems()
     {
@@ -311,7 +311,7 @@ class BoxInput implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets items
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[]|null $items The items and their quantity in the box. This must be empty if the box `contentInformationSource` is `BARCODE_2D` or `MANUAL_PROCESS`.
+     * @param ItemInput[]|null $items The items and their quantity in the box. This must be empty if the box `contentInformationSource` is `BARCODE_2D` or `MANUAL_PROCESS`.
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class BoxInput implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets weight
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Weight
+     * @return Weight
      */
     public function getWeight()
     {
@@ -370,7 +370,7 @@ class BoxInput implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets weight
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Weight $weight weight
+     * @param Weight $weight weight
      *
      * @return self
      */
@@ -443,7 +443,7 @@ class BoxInput implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function jsonSerialize()
     {
-        return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer2024::sanitizeForSerialization($this);
     }
 
     /**
@@ -454,7 +454,7 @@ class BoxInput implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __toString()
     {
         return json_encode(
-            ObjectSerializer::sanitizeForSerialization($this),
+            ObjectSerializer2024::sanitizeForSerialization($this),
             JSON_PRETTY_PRINT
         );
     }
@@ -466,7 +466,7 @@ class BoxInput implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function toHeaderValue()
     {
-        return json_encode(ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }
 }
 

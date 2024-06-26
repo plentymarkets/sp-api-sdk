@@ -28,8 +28,8 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
-use \ArrayAccess;
-use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
+use ArrayAccess;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer2024;
 
 /**
  * ListItemComplianceDetailsResponse Class Doc Comment
@@ -209,7 +209,7 @@ class ListItemComplianceDetailsResponse implements ModelInterface, ArrayAccess, 
     /**
      * Gets compliance_details
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ComplianceDetail[]|null
+     * @return  ComplianceDetail[]|null
      */
     public function getComplianceDetails()
     {
@@ -219,7 +219,7 @@ class ListItemComplianceDetailsResponse implements ModelInterface, ArrayAccess, 
     /**
      * Sets compliance_details
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ComplianceDetail[]|null $compliance_details List of compliance details.
+     * @param ComplianceDetail[]|null $compliance_details List of compliance details.
      *
      * @return self
      */
@@ -292,7 +292,7 @@ class ListItemComplianceDetailsResponse implements ModelInterface, ArrayAccess, 
      */
     public function jsonSerialize()
     {
-        return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer2024::sanitizeForSerialization($this);
     }
 
     /**
@@ -303,7 +303,7 @@ class ListItemComplianceDetailsResponse implements ModelInterface, ArrayAccess, 
     public function __toString()
     {
         return json_encode(
-            ObjectSerializer::sanitizeForSerialization($this),
+            ObjectSerializer2024::sanitizeForSerialization($this),
             JSON_PRETTY_PRINT
         );
     }
@@ -315,7 +315,7 @@ class ListItemComplianceDetailsResponse implements ModelInterface, ArrayAccess, 
      */
     public function toHeaderValue()
     {
-        return json_encode(ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }
 }
 

@@ -28,8 +28,8 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
-use \ArrayAccess;
-use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
+use ArrayAccess;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer2024;
 
 /**
  * GeneratePlacementOptionsRequest Class Doc Comment
@@ -209,7 +209,7 @@ class GeneratePlacementOptionsRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Gets custom_placement
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CustomPlacementInput[]|null
+     * @return CustomPlacementInput[]|null
      */
     public function getCustomPlacement()
     {
@@ -219,7 +219,7 @@ class GeneratePlacementOptionsRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Sets custom_placement
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CustomPlacementInput[]|null $custom_placement Custom placement options to be added to the plan.
+     * @param CustomPlacementInput[]|null $custom_placement Custom placement options to be added to the plan.
      *
      * @return self
      */
@@ -292,7 +292,7 @@ class GeneratePlacementOptionsRequest implements ModelInterface, ArrayAccess, \J
      */
     public function jsonSerialize()
     {
-        return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer2024::sanitizeForSerialization($this);
     }
 
     /**
@@ -303,7 +303,7 @@ class GeneratePlacementOptionsRequest implements ModelInterface, ArrayAccess, \J
     public function __toString()
     {
         return json_encode(
-            ObjectSerializer::sanitizeForSerialization($this),
+            ObjectSerializer2024::sanitizeForSerialization($this),
             JSON_PRETTY_PRINT
         );
     }
@@ -315,7 +315,7 @@ class GeneratePlacementOptionsRequest implements ModelInterface, ArrayAccess, \J
      */
     public function toHeaderValue()
     {
-        return json_encode(ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }
 }
 

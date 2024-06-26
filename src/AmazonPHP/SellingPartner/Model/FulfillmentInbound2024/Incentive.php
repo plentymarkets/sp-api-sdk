@@ -28,8 +28,8 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
-use \ArrayAccess;
-use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
+use ArrayAccess;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer2024;
 
 /**
  * Incentive Class Doc Comment
@@ -368,7 +368,7 @@ class Incentive implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets value
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Currency
+     * @return  Currency
      */
     public function getValue()
     {
@@ -378,7 +378,7 @@ class Incentive implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets value
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Currency $value value
+     * @param Currency $value value
      *
      * @return self
      */
@@ -451,7 +451,7 @@ class Incentive implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function jsonSerialize()
     {
-        return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer2024::sanitizeForSerialization($this);
     }
 
     /**
@@ -462,7 +462,7 @@ class Incentive implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __toString()
     {
         return json_encode(
-            ObjectSerializer::sanitizeForSerialization($this),
+            ObjectSerializer2024::sanitizeForSerialization($this),
             JSON_PRETTY_PRINT
         );
     }
@@ -474,7 +474,7 @@ class Incentive implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function toHeaderValue()
     {
-        return json_encode(ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }
 }
 

@@ -28,8 +28,8 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
-use \ArrayAccess;
-use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
+use ArrayAccess;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer2024;
 
 /**
  * InboundPlan Class Doc Comment
@@ -440,7 +440,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets packing_options
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PackingOptionSummary[]|null
+     * @return  PackingOptionSummary[]|null
      */
     public function getPackingOptions()
     {
@@ -450,7 +450,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets packing_options
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PackingOptionSummary[]|null $packing_options Packing options for the inbound plan. This property will be populated when it has been generated via the corresponding operation. If there is a chosen placement option, only packing options for that placement option will be returned. If there are confirmed shipments, only packing options for those shipments will be returned. Query the packing option for more details.
+     * @param PackingOptionSummary[]|null $packing_options Packing options for the inbound plan. This property will be populated when it has been generated via the corresponding operation. If there is a chosen placement option, only packing options for that placement option will be returned. If there are confirmed shipments, only packing options for those shipments will be returned. Query the packing option for more details.
      *
      * @return self
      */
@@ -464,7 +464,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets placement_options
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PlacementOptionSummary[]|null
+     * @return  PlacementOptionSummary[]|null
      */
     public function getPlacementOptions()
     {
@@ -474,7 +474,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets placement_options
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PlacementOptionSummary[]|null $placement_options Placement options for the inbound plan. This property will be populated when it has been generated via the corresponding operation. If there is a chosen placement option, that will be the only returned option. Query the placement option for more details.
+     * @param PlacementOptionSummary[]|null $placement_options Placement options for the inbound plan. This property will be populated when it has been generated via the corresponding operation. If there is a chosen placement option, that will be the only returned option. Query the placement option for more details.
      *
      * @return self
      */
@@ -488,7 +488,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shipments
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShipmentSummary[]|null
+     * @return  ShipmentSummary[]|null
      */
     public function getShipments()
     {
@@ -498,7 +498,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shipments
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShipmentSummary[]|null $shipments Shipment IDs for the inbound plan. This property will be populated when it has been generated via the corresponding operation. If there is a chosen placement option, only shipments for that option will be returned. If there are confirmed shipments, only those shipments will be returned. Query the shipment for more details.
+     * @param ShipmentSummary[]|null $shipments Shipment IDs for the inbound plan. This property will be populated when it has been generated via the corresponding operation. If there is a chosen placement option, only shipments for that option will be returned. If there are confirmed shipments, only those shipments will be returned. Query the shipment for more details.
      *
      * @return self
      */
@@ -512,7 +512,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets source_address
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Address
+     * @return  Address
      */
     public function getSourceAddress()
     {
@@ -522,7 +522,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets source_address
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Address $source_address source_address
+     * @param Address $source_address source_address
      *
      * @return self
      */
@@ -630,7 +630,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function jsonSerialize()
     {
-        return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer2024::sanitizeForSerialization($this);
     }
 
     /**
@@ -641,7 +641,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __toString()
     {
         return json_encode(
-            ObjectSerializer::sanitizeForSerialization($this),
+            ObjectSerializer2024::sanitizeForSerialization($this),
             JSON_PRETTY_PRINT
         );
     }
@@ -653,7 +653,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function toHeaderValue()
     {
-        return json_encode(ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }
 }
 

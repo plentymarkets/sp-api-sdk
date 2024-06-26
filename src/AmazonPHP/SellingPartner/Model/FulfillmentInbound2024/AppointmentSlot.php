@@ -28,8 +28,8 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
-use \ArrayAccess;
-use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
+use ArrayAccess;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer2024;
 
 /**
  * AppointmentSlot Class Doc Comment
@@ -273,7 +273,7 @@ class AppointmentSlot implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets slot_time
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\AppointmentSlotTime
+     * @return AppointmentSlotTime
      */
     public function getSlotTime()
     {
@@ -283,7 +283,7 @@ class AppointmentSlot implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets slot_time
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\AppointmentSlotTime $slot_time slot_time
+     * @param AppointmentSlotTime $slot_time slot_time
      *
      * @return self
      */
@@ -356,7 +356,7 @@ class AppointmentSlot implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function jsonSerialize()
     {
-        return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer2024::sanitizeForSerialization($this);
     }
 
     /**
@@ -367,7 +367,7 @@ class AppointmentSlot implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __toString()
     {
         return json_encode(
-            ObjectSerializer::sanitizeForSerialization($this),
+            ObjectSerializer2024::sanitizeForSerialization($this),
             JSON_PRETTY_PRINT
         );
     }
@@ -379,7 +379,7 @@ class AppointmentSlot implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function toHeaderValue()
     {
-        return json_encode(ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }
 }
 

@@ -28,8 +28,8 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
-use \ArrayAccess;
-use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
+use ArrayAccess;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer2024;
 
 /**
  * InboundOperationStatus Class Doc Comment
@@ -334,7 +334,7 @@ class InboundOperationStatus implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets operation_problems
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\OperationProblem[]
+     * @return  OperationProblem[]
      */
     public function getOperationProblems()
     {
@@ -344,7 +344,7 @@ class InboundOperationStatus implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets operation_problems
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\OperationProblem[] $operation_problems The problems in the processing of the asynchronous operation.
+     * @param OperationProblem[] $operation_problems The problems in the processing of the asynchronous operation.
      *
      * @return self
      */
@@ -358,7 +358,7 @@ class InboundOperationStatus implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets operation_status
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\OperationStatus
+     * @return  OperationStatus
      */
     public function getOperationStatus()
     {
@@ -368,7 +368,7 @@ class InboundOperationStatus implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets operation_status
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\OperationStatus $operation_status operation_status
+     * @param OperationStatus $operation_status operation_status
      *
      * @return self
      */
@@ -441,7 +441,7 @@ class InboundOperationStatus implements ModelInterface, ArrayAccess, \JsonSerial
      */
     public function jsonSerialize()
     {
-        return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer2024::sanitizeForSerialization($this);
     }
 
     /**
@@ -452,7 +452,7 @@ class InboundOperationStatus implements ModelInterface, ArrayAccess, \JsonSerial
     public function __toString()
     {
         return json_encode(
-            ObjectSerializer::sanitizeForSerialization($this),
+            ObjectSerializer2024::sanitizeForSerialization($this),
             JSON_PRETTY_PRINT
         );
     }
@@ -464,7 +464,7 @@ class InboundOperationStatus implements ModelInterface, ArrayAccess, \JsonSerial
      */
     public function toHeaderValue()
     {
-        return json_encode(ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }
 }
 

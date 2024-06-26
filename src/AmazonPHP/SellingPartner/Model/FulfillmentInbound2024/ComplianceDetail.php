@@ -28,8 +28,8 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
-use \ArrayAccess;
-use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
+use ArrayAccess;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer2024;
 
 /**
  * ComplianceDetail Class Doc Comment
@@ -356,7 +356,7 @@ class ComplianceDetail implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets tax_details
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TaxDetails|null
+     * @return TaxDetails|null
      */
     public function getTaxDetails()
     {
@@ -366,7 +366,7 @@ class ComplianceDetail implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tax_details
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TaxDetails|null $tax_details tax_details
+     * @param TaxDetails|null $tax_details tax_details
      *
      * @return self
      */
@@ -439,7 +439,7 @@ class ComplianceDetail implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function jsonSerialize()
     {
-        return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer2024::sanitizeForSerialization($this);
     }
 
     /**
@@ -450,7 +450,7 @@ class ComplianceDetail implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __toString()
     {
         return json_encode(
-            ObjectSerializer::sanitizeForSerialization($this),
+            ObjectSerializer2024::sanitizeForSerialization($this),
             JSON_PRETTY_PRINT
         );
     }
@@ -462,7 +462,7 @@ class ComplianceDetail implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function toHeaderValue()
     {
-        return json_encode(ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }
 }
 

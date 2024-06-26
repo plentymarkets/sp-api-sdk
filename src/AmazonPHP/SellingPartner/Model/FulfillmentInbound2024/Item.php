@@ -28,8 +28,8 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
-use \ArrayAccess;
-use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
+use ArrayAccess;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer2024;
 
 /**
  * Item Class Doc Comment
@@ -536,7 +536,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets prep_instructions
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PrepInstruction[]
+     * @return  PrepInstruction[]
      */
     public function getPrepInstructions()
     {
@@ -546,7 +546,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets prep_instructions
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PrepInstruction[] $prep_instructions Special preparations that are required for an item.
+     * @param PrepInstruction[] $prep_instructions Special preparations that are required for an item.
      *
      * @return self
      */
@@ -654,7 +654,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function jsonSerialize()
     {
-        return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer2024::sanitizeForSerialization($this);
     }
 
     /**
@@ -665,7 +665,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __toString()
     {
         return json_encode(
-            ObjectSerializer::sanitizeForSerialization($this),
+            ObjectSerializer2024::sanitizeForSerialization($this),
             JSON_PRETTY_PRINT
         );
     }
@@ -677,7 +677,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function toHeaderValue()
     {
-        return json_encode(ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }
 }
 

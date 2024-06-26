@@ -28,8 +28,6 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
-use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
-
 /**
  * ItemLabelPageType Class Doc Comment
  *

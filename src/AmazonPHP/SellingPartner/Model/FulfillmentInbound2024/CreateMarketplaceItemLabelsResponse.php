@@ -29,7 +29,7 @@
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use \ArrayAccess;
-use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer2024;
 
 /**
  * CreateMarketplaceItemLabelsResponse Class Doc Comment
@@ -212,7 +212,7 @@ class CreateMarketplaceItemLabelsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets document_downloads
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\DocumentDownload[]
+     * @return DocumentDownload[]
      */
     public function getDocumentDownloads()
     {
@@ -222,7 +222,7 @@ class CreateMarketplaceItemLabelsResponse implements ModelInterface, ArrayAccess
     /**
      * Sets document_downloads
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\DocumentDownload[] $document_downloads Resources to download the requested document.
+     * @param DocumentDownload[] $document_downloads Resources to download the requested document.
      *
      * @return self
      */
@@ -295,7 +295,7 @@ class CreateMarketplaceItemLabelsResponse implements ModelInterface, ArrayAccess
      */
     public function jsonSerialize()
     {
-        return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer2024::sanitizeForSerialization($this);
     }
 
     /**
@@ -306,7 +306,7 @@ class CreateMarketplaceItemLabelsResponse implements ModelInterface, ArrayAccess
     public function __toString()
     {
         return json_encode(
-            ObjectSerializer::sanitizeForSerialization($this),
+            ObjectSerializer2024::sanitizeForSerialization($this),
             JSON_PRETTY_PRINT
         );
     }
@@ -318,7 +318,7 @@ class CreateMarketplaceItemLabelsResponse implements ModelInterface, ArrayAccess
      */
     public function toHeaderValue()
     {
-        return json_encode(ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }
 }
 

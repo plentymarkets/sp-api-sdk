@@ -29,7 +29,7 @@
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use \ArrayAccess;
-use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer2024;
 
 /**
  * GenerateShipmentContentUpdatePreviewsRequest Class Doc Comment
@@ -237,7 +237,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
     /**
      * Gets boxes
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxUpdateInput[]
+     * @return  BoxUpdateInput[]
      */
     public function getBoxes()
     {
@@ -247,7 +247,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
     /**
      * Sets boxes
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxUpdateInput[] $boxes A list of boxes that will be present in the shipment after the update.
+     * @param BoxUpdateInput[] $boxes A list of boxes that will be present in the shipment after the update.
      *
      * @return self
      */
@@ -271,7 +271,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
     /**
      * Gets items
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[]
+     * @return  ItemInput[]
      */
     public function getItems()
     {
@@ -281,7 +281,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
     /**
      * Sets items
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[] $items A list of all items that will be present in the shipment after the update.
+     * @param ItemInput[] $items A list of all items that will be present in the shipment after the update.
      *
      * @return self
      */
@@ -364,7 +364,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
      */
     public function jsonSerialize()
     {
-        return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer2024::sanitizeForSerialization($this);
     }
 
     /**
@@ -375,7 +375,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
     public function __toString()
     {
         return json_encode(
-            ObjectSerializer::sanitizeForSerialization($this),
+            ObjectSerializer2024::sanitizeForSerialization($this),
             JSON_PRETTY_PRINT
         );
     }
@@ -387,7 +387,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
      */
     public function toHeaderValue()
     {
-        return json_encode(ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }
 }
 

@@ -29,7 +29,7 @@
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use \ArrayAccess;
-use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer2024;
 
 /**
  * CreateMarketplaceItemLabelsRequest Class Doc Comment
@@ -451,7 +451,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
     /**
      * Gets page_type
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemLabelPageType|null
+     * @return ItemLabelPageType|null
      */
     public function getPageType()
     {
@@ -461,7 +461,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
     /**
      * Sets page_type
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemLabelPageType|null $page_type page_type
+     * @param ItemLabelPageType|null $page_type page_type
      *
      * @return self
      */
@@ -569,7 +569,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      */
     public function jsonSerialize()
     {
-        return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer2024::sanitizeForSerialization($this);
     }
 
     /**
@@ -580,7 +580,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
     public function __toString()
     {
         return json_encode(
-            ObjectSerializer::sanitizeForSerialization($this),
+            ObjectSerializer2024::sanitizeForSerialization($this),
             JSON_PRETTY_PRINT
         );
     }
@@ -592,7 +592,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      */
     public function toHeaderValue()
     {
-        return json_encode(ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }
 }
 

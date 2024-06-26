@@ -29,7 +29,7 @@
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use \ArrayAccess;
-use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer2024;
 
 /**
  * GetSelfShipAppointmentSlotsResponse Class Doc Comment
@@ -218,7 +218,7 @@ class GetSelfShipAppointmentSlotsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets pagination
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination|null
+     * @return  Pagination|null
      */
     public function getPagination()
     {
@@ -325,7 +325,7 @@ class GetSelfShipAppointmentSlotsResponse implements ModelInterface, ArrayAccess
      */
     public function jsonSerialize()
     {
-        return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer2024::sanitizeForSerialization($this);
     }
 
     /**
@@ -336,7 +336,7 @@ class GetSelfShipAppointmentSlotsResponse implements ModelInterface, ArrayAccess
     public function __toString()
     {
         return json_encode(
-            ObjectSerializer::sanitizeForSerialization($this),
+            ObjectSerializer2024::sanitizeForSerialization($this),
             JSON_PRETTY_PRINT
         );
     }
@@ -348,7 +348,7 @@ class GetSelfShipAppointmentSlotsResponse implements ModelInterface, ArrayAccess
      */
     public function toHeaderValue()
     {
-        return json_encode(ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }
 }
 

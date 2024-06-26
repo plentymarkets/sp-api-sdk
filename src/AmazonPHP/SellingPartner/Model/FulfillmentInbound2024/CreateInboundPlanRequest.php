@@ -28,8 +28,8 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
-use \ArrayAccess;
-use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
+use ArrayAccess;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer2024;
 
 /**
  * CreateInboundPlanRequest Class Doc Comment
@@ -294,7 +294,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets items
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[]
+     * @return ItemInput[]
      */
     public function getItems()
     {
@@ -304,7 +304,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets items
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[] $items Items included in this plan.
+     * @param ItemInput[] $items Items included in this plan.
      *
      * @return self
      */
@@ -363,7 +363,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets source_address
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\AddressInput
+     * @return AddressInput
      */
     public function getSourceAddress()
     {
@@ -373,7 +373,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets source_address
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\AddressInput $source_address source_address
+     * @param AddressInput $source_address source_address
      *
      * @return self
      */
@@ -446,7 +446,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      */
     public function jsonSerialize()
     {
-        return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer2024::sanitizeForSerialization($this);
     }
 
     /**
@@ -457,7 +457,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
     public function __toString()
     {
         return json_encode(
-            ObjectSerializer::sanitizeForSerialization($this),
+            ObjectSerializer2024::sanitizeForSerialization($this),
             JSON_PRETTY_PRINT
         );
     }
@@ -469,7 +469,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      */
     public function toHeaderValue()
     {
-        return json_encode(ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }
 }
 

@@ -29,7 +29,7 @@
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use \ArrayAccess;
-use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer2024;
 
 /**
  * ConfirmTransportationOptionsRequest Class Doc Comment
@@ -216,7 +216,7 @@ class ConfirmTransportationOptionsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets transportation_selections
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TransportationSelection[]
+     * @return TransportationSelection[]
      */
     public function getTransportationSelections()
     {
@@ -226,7 +226,7 @@ class ConfirmTransportationOptionsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets transportation_selections
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TransportationSelection[] $transportation_selections Information needed to confirm one of the available transportation options.
+     * @param TransportationSelection[] $transportation_selections Information needed to confirm one of the available transportation options.
      *
      * @return self
      */
@@ -304,7 +304,7 @@ class ConfirmTransportationOptionsRequest implements ModelInterface, ArrayAccess
      */
     public function jsonSerialize()
     {
-        return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer2024::sanitizeForSerialization($this);
     }
 
     /**
@@ -315,7 +315,7 @@ class ConfirmTransportationOptionsRequest implements ModelInterface, ArrayAccess
     public function __toString()
     {
         return json_encode(
-            ObjectSerializer::sanitizeForSerialization($this),
+            ObjectSerializer2024::sanitizeForSerialization($this),
             JSON_PRETTY_PRINT
         );
     }
@@ -327,7 +327,7 @@ class ConfirmTransportationOptionsRequest implements ModelInterface, ArrayAccess
      */
     public function toHeaderValue()
     {
-        return json_encode(ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }
 }
 

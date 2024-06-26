@@ -28,8 +28,8 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
-use \ArrayAccess;
-use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
+use ArrayAccess;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer2024;
 
 /**
  * Box Class Doc Comment
@@ -331,7 +331,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets content_information_source
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxContentInformationSource|null
+     * @return BoxContentInformationSource|null
      */
     public function getContentInformationSource()
     {
@@ -341,7 +341,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets content_information_source
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxContentInformationSource|null $content_information_source content_information_source
+     * @param BoxContentInformationSource|null $content_information_source content_information_source
      *
      * @return self
      */
@@ -355,7 +355,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets destination_region
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Region|null
+     * @return Region|null
      */
     public function getDestinationRegion()
     {
@@ -365,7 +365,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets destination_region
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Region|null $destination_region destination_region
+     * @param Region|null $destination_region destination_region
      *
      * @return self
      */
@@ -379,7 +379,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets dimensions
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Dimensions|null
+     * @return Dimensions|null
      */
     public function getDimensions()
     {
@@ -389,7 +389,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets dimensions
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Dimensions|null $dimensions dimensions
+     * @param Dimensions|null $dimensions dimensions
      *
      * @return self
      */
@@ -403,7 +403,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets items
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Item[]|null
+     * @return Item[]|null
      */
     public function getItems()
     {
@@ -413,7 +413,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets items
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Item[]|null $items Items contained within the box.
+     * @param Item[]|null $items Items contained within the box.
      *
      * @return self
      */
@@ -537,7 +537,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets weight
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Weight|null
+     * @return Weight|null
      */
     public function getWeight()
     {
@@ -547,7 +547,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets weight
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Weight|null $weight weight
+     * @param Weight|null $weight weight
      *
      * @return self
      */
@@ -620,7 +620,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function jsonSerialize()
     {
-        return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer2024::sanitizeForSerialization($this);
     }
 
     /**
@@ -631,7 +631,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __toString()
     {
         return json_encode(
-            ObjectSerializer::sanitizeForSerialization($this),
+            ObjectSerializer2024::sanitizeForSerialization($this),
             JSON_PRETTY_PRINT
         );
     }
@@ -643,7 +643,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function toHeaderValue()
     {
-        return json_encode(ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }
 }
 

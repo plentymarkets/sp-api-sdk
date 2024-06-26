@@ -28,8 +28,8 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
-use \ArrayAccess;
-use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
+use ArrayAccess;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer2024;
 
 /**
  * CustomPlacementInput Class Doc Comment
@@ -237,7 +237,7 @@ class CustomPlacementInput implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets items
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[]
+     * @return ItemInput[]
      */
     public function getItems()
     {
@@ -247,7 +247,7 @@ class CustomPlacementInput implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets items
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[] $items Items included while creating Inbound Plan.
+     * @param ItemInput[] $items Items included while creating Inbound Plan.
      *
      * @return self
      */
@@ -365,7 +365,7 @@ class CustomPlacementInput implements ModelInterface, ArrayAccess, \JsonSerializ
      */
     public function jsonSerialize()
     {
-        return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer2024::sanitizeForSerialization($this);
     }
 
     /**
@@ -376,7 +376,7 @@ class CustomPlacementInput implements ModelInterface, ArrayAccess, \JsonSerializ
     public function __toString()
     {
         return json_encode(
-            ObjectSerializer::sanitizeForSerialization($this),
+            ObjectSerializer2024::sanitizeForSerialization($this),
             JSON_PRETTY_PRINT
         );
     }
@@ -388,7 +388,7 @@ class CustomPlacementInput implements ModelInterface, ArrayAccess, \JsonSerializ
      */
     public function toHeaderValue()
     {
-        return json_encode(ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }
 }
 

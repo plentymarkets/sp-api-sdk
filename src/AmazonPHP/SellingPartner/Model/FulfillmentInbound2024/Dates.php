@@ -28,8 +28,8 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
-use \ArrayAccess;
-use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
+use ArrayAccess;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer2024;
 
 /**
  * Dates Class Doc Comment
@@ -209,7 +209,7 @@ class Dates implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets ready_to_ship_window
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Window|null
+     * @return Window|null
      */
     public function getReadyToShipWindow()
     {
@@ -219,7 +219,7 @@ class Dates implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets ready_to_ship_window
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Window|null $ready_to_ship_window ready_to_ship_window
+     * @param Window|null $ready_to_ship_window ready_to_ship_window
      *
      * @return self
      */
@@ -292,7 +292,7 @@ class Dates implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function jsonSerialize()
     {
-        return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer2024::sanitizeForSerialization($this);
     }
 
     /**
@@ -303,7 +303,7 @@ class Dates implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __toString()
     {
         return json_encode(
-            ObjectSerializer::sanitizeForSerialization($this),
+            ObjectSerializer2024::sanitizeForSerialization($this),
             JSON_PRETTY_PRINT
         );
     }
@@ -315,7 +315,7 @@ class Dates implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function toHeaderValue()
     {
-        return json_encode(ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }
 }
 

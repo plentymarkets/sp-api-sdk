@@ -28,8 +28,8 @@
 
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
-use \ArrayAccess;
-use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
+use ArrayAccess;
+use Plenty\AmazonPHP\SellingPartner\ObjectSerializer2024;
 
 /**
  * ListInboundPlanItemsResponse Class Doc Comment
@@ -218,7 +218,7 @@ class ListInboundPlanItemsResponse implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets items
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Item[]
+     * @return  Item[]
      */
     public function getItems()
     {
@@ -228,7 +228,7 @@ class ListInboundPlanItemsResponse implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets items
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Item[] $items The items in an inbound plan.
+     * @param Item[] $items The items in an inbound plan.
      *
      * @return self
      */
@@ -242,7 +242,7 @@ class ListInboundPlanItemsResponse implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets pagination
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination|null
+     * @return  Pagination|null
      */
     public function getPagination()
     {
@@ -252,7 +252,7 @@ class ListInboundPlanItemsResponse implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets pagination
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination|null $pagination pagination
+     * @param Pagination|null $pagination pagination
      *
      * @return self
      */
@@ -325,7 +325,7 @@ class ListInboundPlanItemsResponse implements ModelInterface, ArrayAccess, \Json
      */
     public function jsonSerialize()
     {
-        return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer2024::sanitizeForSerialization($this);
     }
 
     /**
@@ -336,7 +336,7 @@ class ListInboundPlanItemsResponse implements ModelInterface, ArrayAccess, \Json
     public function __toString()
     {
         return json_encode(
-            ObjectSerializer::sanitizeForSerialization($this),
+            ObjectSerializer2024::sanitizeForSerialization($this),
             JSON_PRETTY_PRINT
         );
     }
@@ -348,7 +348,7 @@ class ListInboundPlanItemsResponse implements ModelInterface, ArrayAccess, \Json
      */
     public function toHeaderValue()
     {
-        return json_encode(ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }
 }
 
