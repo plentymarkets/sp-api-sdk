@@ -237,7 +237,7 @@ class PrepInstruction implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets fee
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Currency|null
+     * @return Currency|null
      */
     public function getFee()
     {
@@ -247,7 +247,7 @@ class PrepInstruction implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets fee
      *
-     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Currency|null $fee fee
+     * @param Currency|null $fee fee
      *
      * @return self
      */

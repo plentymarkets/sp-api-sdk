@@ -3924,7 +3924,7 @@ class FulfillmentInboundSDK2024
      * @param string $inbound_plan_id Identifier of an inbound plan. (required)
      * @param GeneratePlacementOptionsRequest $body The body of the request to &#x60;generatePlacementOptions&#x60;. (required)
      *
-     * @return array of \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GeneratePlacementOptionsResponse|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ErrorList|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ErrorList|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ErrorList|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ErrorList|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ErrorList|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ErrorList|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ErrorList|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ErrorList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of GeneratePlacementOptionsResponse|ErrorList, HTTP status code, HTTP response headers (array of strings)
      * @throws InvalidArgumentException
      * @throws ApiException on non-2xx response
      */
@@ -6703,7 +6703,7 @@ class FulfillmentInboundSDK2024
      * @param string $inbound_plan_id Identifier of an inbound plan. (required)
      * @param string $shipment_id Identifier of a shipment. A shipment contains the boxes and units being inbounded. (required)
      *
-     * @return array of \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Shipment|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ErrorList|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ErrorList|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ErrorList|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ErrorList|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ErrorList|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ErrorList|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ErrorList|\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ErrorList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of Shipment|ErrorList|, HTTP status code, HTTP response headers (array of strings)
      * @throws InvalidArgumentException
      * @throws ApiException on non-2xx response
      */
