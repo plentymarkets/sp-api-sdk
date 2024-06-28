@@ -11,6 +11,7 @@ use Plenty\AmazonPHP\SellingPartner\Api\DefaultApi\FinancesSDK;
 use Plenty\AmazonPHP\SellingPartner\Api\DefinitionsApi\ProductTypesDefinitionsSDK;
 use Plenty\AmazonPHP\SellingPartner\Api\FbaInboundApi\FBAInboundSDK;
 use Plenty\AmazonPHP\SellingPartner\Api\FbaInboundApi\FulfillmentInboundSDK;
+use Plenty\AmazonPHP\SellingPartner\Api\FbaInboundApi\FulfillmentInboundSDK2024;
 use Plenty\AmazonPHP\SellingPartner\Api\FbaInventoryApi\FBAInventorySDK;
 use Plenty\AmazonPHP\SellingPartner\Api\FbaOutboundApi\FulfillmentOutboundSDK;
 use Plenty\AmazonPHP\SellingPartner\Api\FeedsApi\FeedsSDK;
@@ -67,6 +68,7 @@ final class SellingPartnerSDKTest extends TestCase
         'fbaSmallAndLight'        => FBASmallAndLightSDK::class,
         'feeds'                   => FeedsSDK::class,
         'finances'                => FinancesSDK::class,
+        'fulfillmentInbound2024'      => FulfillmentInboundSDK2024::class,
         'fulfillmentInbound'      => FulfillmentInboundSDK::class,
         'fulfillmentOutbound'     => FulfillmentOutboundSDK::class,
         'listingsItems'           => ListingsItemsSDK::class,
