@@ -68,7 +68,7 @@ final class SellingPartnerSDKTest extends TestCase
         'fbaSmallAndLight'        => FBASmallAndLightSDK::class,
         'feeds'                   => FeedsSDK::class,
         'finances'                => FinancesSDK::class,
-        'fulfillmentInbound2024'      => FulfillmentInboundSDK2024::class,
+        'fulfillmentInbound2024'  => FulfillmentInboundSDK2024::class,
         'fulfillmentInbound'      => FulfillmentInboundSDK::class,
         'fulfillmentOutbound'     => FulfillmentOutboundSDK::class,
         'listingsItems'           => ListingsItemsSDK::class,
