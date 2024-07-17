@@ -87,7 +87,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -97,7 +97,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -148,7 +148,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -158,7 +158,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -168,7 +168,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -178,7 +178,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -211,7 +211,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -242,7 +242,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -253,7 +253,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ContactInformation|null
      */
-    public function getContactInformation()
+    public function getContactInformation(): ?ContactInformation
     {
         return $this->container['contact_information'];
     }
@@ -265,7 +265,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setContactInformation($contact_information)
+    public function setContactInformation($contact_information): static
     {
         $this->container['contact_information'] = $contact_information;
 
@@ -277,7 +277,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\FreightInformation|null
      */
-    public function getFreightInformation()
+    public function getFreightInformation(): ?FreightInformation
     {
         return $this->container['freight_information'];
     }
@@ -289,7 +289,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setFreightInformation($freight_information)
+    public function setFreightInformation($freight_information): static
     {
         $this->container['freight_information'] = $freight_information;
 
@@ -301,7 +301,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PalletInput[]|null
      */
-    public function getPallets()
+    public function getPallets(): ?array
     {
         return $this->container['pallets'];
     }
@@ -313,7 +313,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setPallets($pallets)
+    public function setPallets($pallets): static
     {
         $this->container['pallets'] = $pallets;
 
@@ -325,7 +325,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\WindowInput
      */
-    public function getReadyToShipWindow()
+    public function getReadyToShipWindow(): WindowInput
     {
         return $this->container['ready_to_ship_window'];
     }
@@ -337,7 +337,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setReadyToShipWindow($ready_to_ship_window)
+    public function setReadyToShipWindow($ready_to_ship_window): static
     {
         $this->container['ready_to_ship_window'] = $ready_to_ship_window;
 
@@ -349,7 +349,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return string
      */
-    public function getShipmentId()
+    public function getShipmentId(): string
     {
         return $this->container['shipment_id'];
     }
@@ -361,7 +361,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setShipmentId($shipment_id)
+    public function setShipmentId($shipment_id): static
     {
         if ((mb_strlen($shipment_id) > 38)) {
             throw new \InvalidArgumentException(
@@ -391,7 +391,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -403,7 +403,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -416,7 +416,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -432,7 +432,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -444,7 +444,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -467,7 +467,7 @@ class ShipmentTransportationConfiguration implements ModelInterface, ArrayAccess
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }

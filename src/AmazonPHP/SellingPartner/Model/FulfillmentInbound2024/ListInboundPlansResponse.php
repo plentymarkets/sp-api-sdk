@@ -81,7 +81,7 @@ class ListInboundPlansResponse implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -91,7 +91,7 @@ class ListInboundPlansResponse implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -133,7 +133,7 @@ class ListInboundPlansResponse implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -143,7 +143,7 @@ class ListInboundPlansResponse implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -153,7 +153,7 @@ class ListInboundPlansResponse implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -163,7 +163,7 @@ class ListInboundPlansResponse implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -193,7 +193,7 @@ class ListInboundPlansResponse implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -206,7 +206,7 @@ class ListInboundPlansResponse implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -217,7 +217,7 @@ class ListInboundPlansResponse implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return  InboundPlanSummary[]|null
      */
-    public function getInboundPlans()
+    public function getInboundPlans(): ?array
     {
         return $this->container['inbound_plans'];
     }
@@ -229,7 +229,7 @@ class ListInboundPlansResponse implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return self
      */
-    public function setInboundPlans($inbound_plans)
+    public function setInboundPlans($inbound_plans): static
     {
         $this->container['inbound_plans'] = $inbound_plans;
 
@@ -241,7 +241,7 @@ class ListInboundPlansResponse implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination|null
      */
-    public function getPagination()
+    public function getPagination(): ?Pagination
     {
         return $this->container['pagination'];
     }
@@ -253,7 +253,7 @@ class ListInboundPlansResponse implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return self
      */
-    public function setPagination($pagination)
+    public function setPagination($pagination): static
     {
         $this->container['pagination'] = $pagination;
 
@@ -267,7 +267,7 @@ class ListInboundPlansResponse implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -279,7 +279,7 @@ class ListInboundPlansResponse implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -292,7 +292,7 @@ class ListInboundPlansResponse implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -308,7 +308,7 @@ class ListInboundPlansResponse implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -320,7 +320,7 @@ class ListInboundPlansResponse implements ModelInterface, ArrayAccess, \JsonSeri
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -343,7 +343,7 @@ class ListInboundPlansResponse implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }

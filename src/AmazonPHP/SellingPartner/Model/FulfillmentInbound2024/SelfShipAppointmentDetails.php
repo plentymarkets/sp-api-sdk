@@ -83,7 +83,7 @@ class SelfShipAppointmentDetails implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -93,7 +93,7 @@ class SelfShipAppointmentDetails implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -138,7 +138,7 @@ class SelfShipAppointmentDetails implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -148,7 +148,7 @@ class SelfShipAppointmentDetails implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -158,7 +158,7 @@ class SelfShipAppointmentDetails implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -168,7 +168,7 @@ class SelfShipAppointmentDetails implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -199,7 +199,7 @@ class SelfShipAppointmentDetails implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -224,7 +224,7 @@ class SelfShipAppointmentDetails implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -235,7 +235,7 @@ class SelfShipAppointmentDetails implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return float|null
      */
-    public function getAppointmentId()
+    public function getAppointmentId(): ?float
     {
         return $this->container['appointment_id'];
     }
@@ -247,7 +247,7 @@ class SelfShipAppointmentDetails implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setAppointmentId($appointment_id)
+    public function setAppointmentId($appointment_id): static
     {
         $this->container['appointment_id'] = $appointment_id;
 
@@ -259,7 +259,7 @@ class SelfShipAppointmentDetails implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\AppointmentSlotTime|null
      */
-    public function getAppointmentSlotTime()
+    public function getAppointmentSlotTime(): ?AppointmentSlotTime
     {
         return $this->container['appointment_slot_time'];
     }
@@ -271,7 +271,7 @@ class SelfShipAppointmentDetails implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setAppointmentSlotTime($appointment_slot_time)
+    public function setAppointmentSlotTime($appointment_slot_time): static
     {
         $this->container['appointment_slot_time'] = $appointment_slot_time;
 
@@ -283,7 +283,7 @@ class SelfShipAppointmentDetails implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return string|null
      */
-    public function getAppointmentStatus()
+    public function getAppointmentStatus(): ?string
     {
         return $this->container['appointment_status'];
     }
@@ -295,7 +295,7 @@ class SelfShipAppointmentDetails implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setAppointmentStatus($appointment_status)
+    public function setAppointmentStatus($appointment_status): static
     {
         if (!is_null($appointment_status) && (mb_strlen($appointment_status) > 1024)) {
             throw new \InvalidArgumentException(
@@ -320,7 +320,7 @@ class SelfShipAppointmentDetails implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -332,7 +332,7 @@ class SelfShipAppointmentDetails implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -345,7 +345,7 @@ class SelfShipAppointmentDetails implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -361,7 +361,7 @@ class SelfShipAppointmentDetails implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -373,7 +373,7 @@ class SelfShipAppointmentDetails implements ModelInterface, ArrayAccess, \JsonSe
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -396,7 +396,7 @@ class SelfShipAppointmentDetails implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }

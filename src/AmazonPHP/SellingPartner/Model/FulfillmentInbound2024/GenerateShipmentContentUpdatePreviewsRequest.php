@@ -81,7 +81,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -91,7 +91,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -133,7 +133,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -143,7 +143,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -153,7 +153,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -163,7 +163,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -193,7 +193,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -228,7 +228,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -239,7 +239,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
      *
      * @return  BoxUpdateInput[]
      */
-    public function getBoxes()
+    public function getBoxes(): array
     {
         return $this->container['boxes'];
     }
@@ -251,7 +251,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setBoxes($boxes)
+    public function setBoxes($boxes): static
     {
         if ((count($boxes) > 5000)) {
             throw new \InvalidArgumentException(
@@ -273,7 +273,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
      *
      * @return  ItemInput[]
      */
-    public function getItems()
+    public function getItems(): array
     {
         return $this->container['items'];
     }
@@ -285,7 +285,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setItems($items)
+    public function setItems($items): static
     {
         if ((count($items) > 2000)) {
             throw new \InvalidArgumentException(
@@ -309,7 +309,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -321,7 +321,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -334,7 +334,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -350,7 +350,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -362,7 +362,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -385,7 +385,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }

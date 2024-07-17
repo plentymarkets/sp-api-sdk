@@ -81,7 +81,7 @@ class ShippingConfiguration implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -91,7 +91,7 @@ class ShippingConfiguration implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -133,7 +133,7 @@ class ShippingConfiguration implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -143,7 +143,7 @@ class ShippingConfiguration implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -153,7 +153,7 @@ class ShippingConfiguration implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -163,7 +163,7 @@ class ShippingConfiguration implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -193,7 +193,7 @@ class ShippingConfiguration implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -224,7 +224,7 @@ class ShippingConfiguration implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -235,7 +235,7 @@ class ShippingConfiguration implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return string|null
      */
-    public function getShippingMode()
+    public function getShippingMode(): ?string
     {
         return $this->container['shipping_mode'];
     }
@@ -247,7 +247,7 @@ class ShippingConfiguration implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return self
      */
-    public function setShippingMode($shipping_mode)
+    public function setShippingMode($shipping_mode): static
     {
         if (!is_null($shipping_mode) && (mb_strlen($shipping_mode) > 1024)) {
             throw new \InvalidArgumentException(
@@ -270,7 +270,7 @@ class ShippingConfiguration implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return string|null
      */
-    public function getShippingSolution()
+    public function getShippingSolution(): ?string
     {
         return $this->container['shipping_solution'];
     }
@@ -282,7 +282,7 @@ class ShippingConfiguration implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return self
      */
-    public function setShippingSolution($shipping_solution)
+    public function setShippingSolution($shipping_solution): static
     {
         if (!is_null($shipping_solution) && (mb_strlen($shipping_solution) > 1024)) {
             throw new \InvalidArgumentException(
@@ -307,7 +307,7 @@ class ShippingConfiguration implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -319,7 +319,7 @@ class ShippingConfiguration implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -332,7 +332,7 @@ class ShippingConfiguration implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -348,7 +348,7 @@ class ShippingConfiguration implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -360,7 +360,7 @@ class ShippingConfiguration implements ModelInterface, ArrayAccess, \JsonSeriali
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -383,7 +383,7 @@ class ShippingConfiguration implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }

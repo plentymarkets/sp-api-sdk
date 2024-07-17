@@ -81,7 +81,7 @@ class LtlTrackingDetail implements ModelInterface, ArrayAccess, \JsonSerializabl
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -91,7 +91,7 @@ class LtlTrackingDetail implements ModelInterface, ArrayAccess, \JsonSerializabl
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -133,7 +133,7 @@ class LtlTrackingDetail implements ModelInterface, ArrayAccess, \JsonSerializabl
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -143,7 +143,7 @@ class LtlTrackingDetail implements ModelInterface, ArrayAccess, \JsonSerializabl
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -153,7 +153,7 @@ class LtlTrackingDetail implements ModelInterface, ArrayAccess, \JsonSerializabl
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -163,7 +163,7 @@ class LtlTrackingDetail implements ModelInterface, ArrayAccess, \JsonSerializabl
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -193,7 +193,7 @@ class LtlTrackingDetail implements ModelInterface, ArrayAccess, \JsonSerializabl
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -218,7 +218,7 @@ class LtlTrackingDetail implements ModelInterface, ArrayAccess, \JsonSerializabl
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -229,7 +229,7 @@ class LtlTrackingDetail implements ModelInterface, ArrayAccess, \JsonSerializabl
      *
      * @return string|null
      */
-    public function getBillOfLadingNumber()
+    public function getBillOfLadingNumber(): ?string
     {
         return $this->container['bill_of_lading_number'];
     }
@@ -241,7 +241,7 @@ class LtlTrackingDetail implements ModelInterface, ArrayAccess, \JsonSerializabl
      *
      * @return self
      */
-    public function setBillOfLadingNumber($bill_of_lading_number)
+    public function setBillOfLadingNumber($bill_of_lading_number): static
     {
         if (!is_null($bill_of_lading_number) && (mb_strlen($bill_of_lading_number) > 1024)) {
             throw new \InvalidArgumentException(
@@ -264,7 +264,7 @@ class LtlTrackingDetail implements ModelInterface, ArrayAccess, \JsonSerializabl
      *
      * @return string[]|null
      */
-    public function getFreightBillNumber()
+    public function getFreightBillNumber(): ?array
     {
         return $this->container['freight_bill_number'];
     }
@@ -276,7 +276,7 @@ class LtlTrackingDetail implements ModelInterface, ArrayAccess, \JsonSerializabl
      *
      * @return self
      */
-    public function setFreightBillNumber($freight_bill_number)
+    public function setFreightBillNumber($freight_bill_number): static
     {
         $this->container['freight_bill_number'] = $freight_bill_number;
 
@@ -290,7 +290,7 @@ class LtlTrackingDetail implements ModelInterface, ArrayAccess, \JsonSerializabl
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -302,7 +302,7 @@ class LtlTrackingDetail implements ModelInterface, ArrayAccess, \JsonSerializabl
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -315,7 +315,7 @@ class LtlTrackingDetail implements ModelInterface, ArrayAccess, \JsonSerializabl
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -331,7 +331,7 @@ class LtlTrackingDetail implements ModelInterface, ArrayAccess, \JsonSerializabl
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -343,7 +343,7 @@ class LtlTrackingDetail implements ModelInterface, ArrayAccess, \JsonSerializabl
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -366,7 +366,7 @@ class LtlTrackingDetail implements ModelInterface, ArrayAccess, \JsonSerializabl
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }

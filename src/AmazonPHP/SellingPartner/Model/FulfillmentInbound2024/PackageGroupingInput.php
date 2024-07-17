@@ -83,7 +83,7 @@ class PackageGroupingInput implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -93,7 +93,7 @@ class PackageGroupingInput implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -138,7 +138,7 @@ class PackageGroupingInput implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -148,7 +148,7 @@ class PackageGroupingInput implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -158,7 +158,7 @@ class PackageGroupingInput implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -168,7 +168,7 @@ class PackageGroupingInput implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -199,7 +199,7 @@ class PackageGroupingInput implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -253,7 +253,7 @@ class PackageGroupingInput implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -264,7 +264,7 @@ class PackageGroupingInput implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxInput[]
      */
-    public function getBoxes()
+    public function getBoxes(): array
     {
         return $this->container['boxes'];
     }
@@ -276,7 +276,7 @@ class PackageGroupingInput implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return self
      */
-    public function setBoxes($boxes)
+    public function setBoxes($boxes): static
     {
         if ((count($boxes) > 5000)) {
             throw new \InvalidArgumentException(
@@ -298,7 +298,7 @@ class PackageGroupingInput implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return string|null
      */
-    public function getPackingGroupId()
+    public function getPackingGroupId(): ?string
     {
         return $this->container['packing_group_id'];
     }
@@ -310,7 +310,7 @@ class PackageGroupingInput implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return self
      */
-    public function setPackingGroupId($packing_group_id)
+    public function setPackingGroupId($packing_group_id): static
     {
         if (!is_null($packing_group_id) && (mb_strlen($packing_group_id) > 38)) {
             throw new \InvalidArgumentException(
@@ -338,7 +338,7 @@ class PackageGroupingInput implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return string|null
      */
-    public function getShipmentId()
+    public function getShipmentId(): ?string
     {
         return $this->container['shipment_id'];
     }
@@ -350,7 +350,7 @@ class PackageGroupingInput implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return self
      */
-    public function setShipmentId($shipment_id)
+    public function setShipmentId($shipment_id): static
     {
         if (!is_null($shipment_id) && (mb_strlen($shipment_id) > 38)) {
             throw new \InvalidArgumentException(
@@ -380,7 +380,7 @@ class PackageGroupingInput implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -392,7 +392,7 @@ class PackageGroupingInput implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -405,7 +405,7 @@ class PackageGroupingInput implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -421,7 +421,7 @@ class PackageGroupingInput implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -433,7 +433,7 @@ class PackageGroupingInput implements ModelInterface, ArrayAccess, \JsonSerializ
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -456,7 +456,7 @@ class PackageGroupingInput implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }

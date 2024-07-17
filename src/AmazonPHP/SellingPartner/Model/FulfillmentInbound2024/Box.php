@@ -95,7 +95,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -105,7 +105,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -168,7 +168,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -178,7 +178,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -188,7 +188,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -198,7 +198,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -235,7 +235,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -287,7 +287,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -298,7 +298,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string|null
      */
-    public function getBoxId()
+    public function getBoxId(): ?string
     {
         return $this->container['box_id'];
     }
@@ -310,7 +310,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setBoxId($box_id)
+    public function setBoxId($box_id): static
     {
         if (!is_null($box_id) && (mb_strlen($box_id) > 1024)) {
             throw new \InvalidArgumentException(
@@ -333,7 +333,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return BoxContentInformationSource|null
      */
-    public function getContentInformationSource()
+    public function getContentInformationSource(): ?BoxContentInformationSource
     {
         return $this->container['content_information_source'];
     }
@@ -345,7 +345,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setContentInformationSource($content_information_source)
+    public function setContentInformationSource($content_information_source): static
     {
         $this->container['content_information_source'] = $content_information_source;
 
@@ -357,7 +357,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return Region|null
      */
-    public function getDestinationRegion()
+    public function getDestinationRegion(): ?Region
     {
         return $this->container['destination_region'];
     }
@@ -369,7 +369,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setDestinationRegion($destination_region)
+    public function setDestinationRegion($destination_region): static
     {
         $this->container['destination_region'] = $destination_region;
 
@@ -381,7 +381,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return Dimensions|null
      */
-    public function getDimensions()
+    public function getDimensions(): ?Dimensions
     {
         return $this->container['dimensions'];
     }
@@ -393,7 +393,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setDimensions($dimensions)
+    public function setDimensions($dimensions): static
     {
         $this->container['dimensions'] = $dimensions;
 
@@ -405,7 +405,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return Item[]|null
      */
-    public function getItems()
+    public function getItems(): ?array
     {
         return $this->container['items'];
     }
@@ -417,7 +417,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setItems($items)
+    public function setItems($items): static
     {
         $this->container['items'] = $items;
 
@@ -429,7 +429,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function getPackageId()
+    public function getPackageId(): string
     {
         return $this->container['package_id'];
     }
@@ -441,7 +441,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setPackageId($package_id)
+    public function setPackageId($package_id): static
     {
         if ((mb_strlen($package_id) > 38)) {
             throw new \InvalidArgumentException(
@@ -469,7 +469,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return int|null
      */
-    public function getQuantity()
+    public function getQuantity(): ?int
     {
         return $this->container['quantity'];
     }
@@ -481,7 +481,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setQuantity($quantity)
+    public function setQuantity($quantity): static
     {
         if (!is_null($quantity) && ($quantity > 10000)) {
             throw new \InvalidArgumentException(
@@ -504,7 +504,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string|null
      */
-    public function getTemplateName()
+    public function getTemplateName(): ?string
     {
         return $this->container['template_name'];
     }
@@ -516,7 +516,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setTemplateName($template_name)
+    public function setTemplateName($template_name): static
     {
         if (!is_null($template_name) && (mb_strlen($template_name) > 1024)) {
             throw new \InvalidArgumentException(
@@ -539,7 +539,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return Weight|null
      */
-    public function getWeight()
+    public function getWeight(): ?Weight
     {
         return $this->container['weight'];
     }
@@ -551,7 +551,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setWeight($weight)
+    public function setWeight($weight): static
     {
         $this->container['weight'] = $weight;
 
@@ -565,7 +565,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -577,7 +577,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -590,7 +590,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -606,7 +606,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -618,7 +618,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -641,7 +641,7 @@ class Box implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }

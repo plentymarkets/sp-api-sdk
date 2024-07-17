@@ -87,7 +87,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -97,7 +97,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -148,7 +148,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -158,7 +158,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -168,7 +168,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -178,7 +178,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -211,7 +211,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -248,7 +248,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -259,7 +259,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return string
      */
-    public function getAvailabilityType()
+    public function getAvailabilityType(): string
     {
         return $this->container['availability_type'];
     }
@@ -271,7 +271,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return self
      */
-    public function setAvailabilityType($availability_type)
+    public function setAvailabilityType($availability_type): static
     {
         $this->container['availability_type'] = $availability_type;
 
@@ -283,7 +283,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return string
      */
-    public function getDeliveryWindowOptionId()
+    public function getDeliveryWindowOptionId(): string
     {
         return $this->container['delivery_window_option_id'];
     }
@@ -295,7 +295,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return self
      */
-    public function setDeliveryWindowOptionId($delivery_window_option_id)
+    public function setDeliveryWindowOptionId($delivery_window_option_id): static
     {
         if ((mb_strlen($delivery_window_option_id) > 38)) {
             throw new \InvalidArgumentException(
@@ -323,7 +323,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return \DateTime|null
      */
-    public function getEditableUntil()
+    public function getEditableUntil(): ?\DateTime
     {
         return $this->container['editable_until'];
     }
@@ -335,7 +335,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return self
      */
-    public function setEditableUntil($editable_until)
+    public function setEditableUntil($editable_until): static
     {
         $this->container['editable_until'] = $editable_until;
 
@@ -347,7 +347,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return \DateTime
      */
-    public function getEndDate()
+    public function getEndDate(): \DateTime
     {
         return $this->container['end_date'];
     }
@@ -359,7 +359,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return self
      */
-    public function setEndDate($end_date)
+    public function setEndDate($end_date): static
     {
         $this->container['end_date'] = $end_date;
 
@@ -371,7 +371,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return \DateTime
      */
-    public function getStartDate()
+    public function getStartDate(): \DateTime
     {
         return $this->container['start_date'];
     }
@@ -383,7 +383,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return self
      */
-    public function setStartDate($start_date)
+    public function setStartDate($start_date): static
     {
         $this->container['start_date'] = $start_date;
 
@@ -397,7 +397,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -409,7 +409,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -422,7 +422,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -438,7 +438,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -450,7 +450,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -473,7 +473,7 @@ class SelectedDeliveryWindow implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }

@@ -91,7 +91,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -101,7 +101,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -158,7 +158,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -168,7 +168,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -178,7 +178,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -188,7 +188,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -223,7 +223,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -274,7 +274,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -285,7 +285,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Incentive[]
      */
-    public function getDiscounts()
+    public function getDiscounts(): array
     {
         return $this->container['discounts'];
     }
@@ -297,7 +297,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setDiscounts($discounts)
+    public function setDiscounts($discounts): static
     {
         $this->container['discounts'] = $discounts;
 
@@ -309,7 +309,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return \DateTime|null
      */
-    public function getExpiration()
+    public function getExpiration(): ?\DateTime
     {
         return $this->container['expiration'];
     }
@@ -321,7 +321,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setExpiration($expiration)
+    public function setExpiration($expiration): static
     {
         $this->container['expiration'] = $expiration;
 
@@ -333,7 +333,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Incentive[]
      */
-    public function getFees()
+    public function getFees(): array
     {
         return $this->container['fees'];
     }
@@ -345,7 +345,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setFees($fees)
+    public function setFees($fees): static
     {
         $this->container['fees'] = $fees;
 
@@ -357,7 +357,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string[]
      */
-    public function getPackingGroups()
+    public function getPackingGroups(): array
     {
         return $this->container['packing_groups'];
     }
@@ -369,7 +369,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setPackingGroups($packing_groups)
+    public function setPackingGroups($packing_groups): static
     {
         $this->container['packing_groups'] = $packing_groups;
 
@@ -381,7 +381,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function getPackingOptionId()
+    public function getPackingOptionId(): string
     {
         return $this->container['packing_option_id'];
     }
@@ -393,7 +393,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setPackingOptionId($packing_option_id)
+    public function setPackingOptionId($packing_option_id): static
     {
         if ((mb_strlen($packing_option_id) > 38)) {
             throw new \InvalidArgumentException(
@@ -421,7 +421,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function getStatus()
+    public function getStatus(): string
     {
         return $this->container['status'];
     }
@@ -433,7 +433,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setStatus($status)
+    public function setStatus($status): static
     {
         if ((mb_strlen($status) > 1024)) {
             throw new \InvalidArgumentException(
@@ -456,7 +456,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShippingConfiguration[]
      */
-    public function getSupportedShippingConfigurations()
+    public function getSupportedShippingConfigurations(): array
     {
         return $this->container['supported_shipping_configurations'];
     }
@@ -468,7 +468,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setSupportedShippingConfigurations($supported_shipping_configurations)
+    public function setSupportedShippingConfigurations($supported_shipping_configurations): static
     {
         $this->container['supported_shipping_configurations'] = $supported_shipping_configurations;
 
@@ -482,7 +482,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -494,7 +494,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -507,7 +507,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -523,7 +523,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -535,7 +535,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -558,7 +558,7 @@ class PackingOption implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }

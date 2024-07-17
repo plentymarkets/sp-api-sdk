@@ -85,7 +85,7 @@ class PalletInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -95,7 +95,7 @@ class PalletInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -143,7 +143,7 @@ class PalletInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -153,7 +153,7 @@ class PalletInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -163,7 +163,7 @@ class PalletInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -173,7 +173,7 @@ class PalletInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -205,7 +205,7 @@ class PalletInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -229,7 +229,7 @@ class PalletInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -240,7 +240,7 @@ class PalletInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Dimensions|null
      */
-    public function getDimensions()
+    public function getDimensions(): ?Dimensions
     {
         return $this->container['dimensions'];
     }
@@ -252,7 +252,7 @@ class PalletInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setDimensions($dimensions)
+    public function setDimensions($dimensions): static
     {
         $this->container['dimensions'] = $dimensions;
 
@@ -264,7 +264,7 @@ class PalletInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return int
      */
-    public function getQuantity()
+    public function getQuantity(): int
     {
         return $this->container['quantity'];
     }
@@ -276,7 +276,7 @@ class PalletInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setQuantity($quantity)
+    public function setQuantity($quantity): static
     {
         if (($quantity > 10000)) {
             throw new \InvalidArgumentException(
@@ -299,7 +299,7 @@ class PalletInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Stackability|null
      */
-    public function getStackability()
+    public function getStackability(): ?Stackability
     {
         return $this->container['stackability'];
     }
@@ -311,7 +311,7 @@ class PalletInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setStackability($stackability)
+    public function setStackability($stackability): static
     {
         $this->container['stackability'] = $stackability;
 
@@ -323,7 +323,7 @@ class PalletInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Weight|null
      */
-    public function getWeight()
+    public function getWeight(): ?Weight
     {
         return $this->container['weight'];
     }
@@ -335,7 +335,7 @@ class PalletInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setWeight($weight)
+    public function setWeight($weight): static
     {
         $this->container['weight'] = $weight;
 
@@ -349,7 +349,7 @@ class PalletInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -361,7 +361,7 @@ class PalletInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -374,7 +374,7 @@ class PalletInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -390,7 +390,7 @@ class PalletInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -402,7 +402,7 @@ class PalletInput implements ModelInterface, ArrayAccess, \JsonSerializable
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -425,7 +425,7 @@ class PalletInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }

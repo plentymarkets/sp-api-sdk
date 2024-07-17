@@ -83,7 +83,7 @@ class SpdTrackingItem implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -93,7 +93,7 @@ class SpdTrackingItem implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -138,7 +138,7 @@ class SpdTrackingItem implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -148,7 +148,7 @@ class SpdTrackingItem implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -158,7 +158,7 @@ class SpdTrackingItem implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -168,7 +168,7 @@ class SpdTrackingItem implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -199,7 +199,7 @@ class SpdTrackingItem implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -240,7 +240,7 @@ class SpdTrackingItem implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -251,7 +251,7 @@ class SpdTrackingItem implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string|null
      */
-    public function getBoxId()
+    public function getBoxId(): ?string
     {
         return $this->container['box_id'];
     }
@@ -263,7 +263,7 @@ class SpdTrackingItem implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setBoxId($box_id)
+    public function setBoxId($box_id): static
     {
         if (!is_null($box_id) && (mb_strlen($box_id) > 1024)) {
             throw new \InvalidArgumentException(
@@ -286,7 +286,7 @@ class SpdTrackingItem implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string|null
      */
-    public function getTrackingId()
+    public function getTrackingId(): ?string
     {
         return $this->container['tracking_id'];
     }
@@ -298,7 +298,7 @@ class SpdTrackingItem implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setTrackingId($tracking_id)
+    public function setTrackingId($tracking_id): static
     {
         if (!is_null($tracking_id) && (mb_strlen($tracking_id) > 1024)) {
             throw new \InvalidArgumentException(
@@ -321,7 +321,7 @@ class SpdTrackingItem implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string|null
      */
-    public function getTrackingNumberValidationStatus()
+    public function getTrackingNumberValidationStatus(): ?string
     {
         return $this->container['tracking_number_validation_status'];
     }
@@ -333,7 +333,7 @@ class SpdTrackingItem implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setTrackingNumberValidationStatus($tracking_number_validation_status)
+    public function setTrackingNumberValidationStatus($tracking_number_validation_status): static
     {
         if (!is_null($tracking_number_validation_status) && (mb_strlen($tracking_number_validation_status) > 1024)) {
             throw new \InvalidArgumentException(
@@ -358,7 +358,7 @@ class SpdTrackingItem implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -370,7 +370,7 @@ class SpdTrackingItem implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -383,7 +383,7 @@ class SpdTrackingItem implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -399,7 +399,7 @@ class SpdTrackingItem implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -411,7 +411,7 @@ class SpdTrackingItem implements ModelInterface, ArrayAccess, \JsonSerializable
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -434,7 +434,7 @@ class SpdTrackingItem implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }

@@ -83,7 +83,7 @@ class TransportationSelection implements ModelInterface, ArrayAccess, \JsonSeria
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -93,7 +93,7 @@ class TransportationSelection implements ModelInterface, ArrayAccess, \JsonSeria
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -138,7 +138,7 @@ class TransportationSelection implements ModelInterface, ArrayAccess, \JsonSeria
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -148,7 +148,7 @@ class TransportationSelection implements ModelInterface, ArrayAccess, \JsonSeria
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -158,7 +158,7 @@ class TransportationSelection implements ModelInterface, ArrayAccess, \JsonSeria
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -168,7 +168,7 @@ class TransportationSelection implements ModelInterface, ArrayAccess, \JsonSeria
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -199,7 +199,7 @@ class TransportationSelection implements ModelInterface, ArrayAccess, \JsonSeria
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -242,7 +242,7 @@ class TransportationSelection implements ModelInterface, ArrayAccess, \JsonSeria
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -253,7 +253,7 @@ class TransportationSelection implements ModelInterface, ArrayAccess, \JsonSeria
      *
      * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ContactInformation|null
      */
-    public function getContactInformation()
+    public function getContactInformation(): ?ContactInformation
     {
         return $this->container['contact_information'];
     }
@@ -265,7 +265,7 @@ class TransportationSelection implements ModelInterface, ArrayAccess, \JsonSeria
      *
      * @return self
      */
-    public function setContactInformation($contact_information)
+    public function setContactInformation($contact_information): static
     {
         $this->container['contact_information'] = $contact_information;
 
@@ -277,7 +277,7 @@ class TransportationSelection implements ModelInterface, ArrayAccess, \JsonSeria
      *
      * @return string
      */
-    public function getShipmentId()
+    public function getShipmentId(): string
     {
         return $this->container['shipment_id'];
     }
@@ -289,7 +289,7 @@ class TransportationSelection implements ModelInterface, ArrayAccess, \JsonSeria
      *
      * @return self
      */
-    public function setShipmentId($shipment_id)
+    public function setShipmentId($shipment_id): static
     {
         if ((mb_strlen($shipment_id) > 38)) {
             throw new \InvalidArgumentException(
@@ -317,7 +317,7 @@ class TransportationSelection implements ModelInterface, ArrayAccess, \JsonSeria
      *
      * @return string
      */
-    public function getTransportationOptionId()
+    public function getTransportationOptionId(): string
     {
         return $this->container['transportation_option_id'];
     }
@@ -329,7 +329,7 @@ class TransportationSelection implements ModelInterface, ArrayAccess, \JsonSeria
      *
      * @return self
      */
-    public function setTransportationOptionId($transportation_option_id)
+    public function setTransportationOptionId($transportation_option_id): static
     {
         if ((mb_strlen($transportation_option_id) > 38)) {
             throw new \InvalidArgumentException(
@@ -359,7 +359,7 @@ class TransportationSelection implements ModelInterface, ArrayAccess, \JsonSeria
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -371,7 +371,7 @@ class TransportationSelection implements ModelInterface, ArrayAccess, \JsonSeria
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -384,7 +384,7 @@ class TransportationSelection implements ModelInterface, ArrayAccess, \JsonSeria
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -400,7 +400,7 @@ class TransportationSelection implements ModelInterface, ArrayAccess, \JsonSeria
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -412,7 +412,7 @@ class TransportationSelection implements ModelInterface, ArrayAccess, \JsonSeria
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -435,7 +435,7 @@ class TransportationSelection implements ModelInterface, ArrayAccess, \JsonSeria
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }

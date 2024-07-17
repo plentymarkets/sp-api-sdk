@@ -85,7 +85,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -95,7 +95,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -143,7 +143,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -153,7 +153,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -163,7 +163,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -173,7 +173,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -205,7 +205,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -251,7 +251,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -262,7 +262,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return string[]
      */
-    public function getDestinationMarketplaces()
+    public function getDestinationMarketplaces(): array
     {
         return $this->container['destination_marketplaces'];
     }
@@ -274,7 +274,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return self
      */
-    public function setDestinationMarketplaces($destination_marketplaces)
+    public function setDestinationMarketplaces($destination_marketplaces): static
     {
         if ((count($destination_marketplaces) > 1)) {
             throw new \InvalidArgumentException(
@@ -296,7 +296,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return ItemInput[]
      */
-    public function getItems()
+    public function getItems(): array
     {
         return $this->container['items'];
     }
@@ -308,7 +308,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return self
      */
-    public function setItems($items)
+    public function setItems($items): static
     {
         if ((count($items) > 2000)) {
             throw new \InvalidArgumentException(
@@ -330,7 +330,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return string|null
      */
-    public function getName()
+    public function getName(): ?string
     {
         return $this->container['name'];
     }
@@ -342,7 +342,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return self
      */
-    public function setName($name)
+    public function setName($name): static
     {
         if (!is_null($name) && (mb_strlen($name) > 40)) {
             throw new \InvalidArgumentException(
@@ -365,7 +365,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return AddressInput
      */
-    public function getSourceAddress()
+    public function getSourceAddress(): AddressInput
     {
         return $this->container['source_address'];
     }
@@ -377,7 +377,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return self
      */
-    public function setSourceAddress($source_address)
+    public function setSourceAddress($source_address): static
     {
         $this->container['source_address'] = $source_address;
 
@@ -391,7 +391,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -403,7 +403,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -416,7 +416,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -432,7 +432,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -444,7 +444,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -467,7 +467,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }

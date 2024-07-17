@@ -83,7 +83,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -93,7 +93,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -138,7 +138,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -148,7 +148,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -158,7 +158,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -168,7 +168,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -199,7 +199,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -220,7 +220,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -231,7 +231,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return float|null
      */
-    public function getCessRate()
+    public function getCessRate(): ?float
     {
         return $this->container['cess_rate'];
     }
@@ -243,7 +243,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setCessRate($cess_rate)
+    public function setCessRate($cess_rate): static
     {
         $this->container['cess_rate'] = $cess_rate;
 
@@ -255,7 +255,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return float|null
      */
-    public function getGstRate()
+    public function getGstRate(): ?float
     {
         return $this->container['gst_rate'];
     }
@@ -267,7 +267,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setGstRate($gst_rate)
+    public function setGstRate($gst_rate): static
     {
         $this->container['gst_rate'] = $gst_rate;
 
@@ -279,7 +279,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string|null
      */
-    public function getTaxType()
+    public function getTaxType(): ?string
     {
         return $this->container['tax_type'];
     }
@@ -291,7 +291,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setTaxType($tax_type)
+    public function setTaxType($tax_type): static
     {
         if (!is_null($tax_type) && (mb_strlen($tax_type) > 1024)) {
             throw new \InvalidArgumentException(
@@ -316,7 +316,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -328,7 +328,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -341,7 +341,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -357,7 +357,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -369,7 +369,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -392,7 +392,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }

@@ -93,7 +93,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -103,7 +103,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -163,7 +163,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -173,7 +173,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -183,7 +183,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -193,7 +193,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -229,7 +229,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -300,7 +300,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -311,7 +311,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Carrier
      */
-    public function getCarrier()
+    public function getCarrier(): Carrier
     {
         return $this->container['carrier'];
     }
@@ -323,7 +323,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return self
      */
-    public function setCarrier($carrier)
+    public function setCarrier($carrier): static
     {
         $this->container['carrier'] = $carrier;
 
@@ -335,7 +335,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CarrierAppointment|null
      */
-    public function getCarrierAppointment()
+    public function getCarrierAppointment(): ?CarrierAppointment
     {
         return $this->container['carrier_appointment'];
     }
@@ -347,7 +347,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return self
      */
-    public function setCarrierAppointment($carrier_appointment)
+    public function setCarrierAppointment($carrier_appointment): static
     {
         $this->container['carrier_appointment'] = $carrier_appointment;
 
@@ -359,7 +359,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return string[]
      */
-    public function getPreconditions()
+    public function getPreconditions(): array
     {
         return $this->container['preconditions'];
     }
@@ -371,7 +371,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return self
      */
-    public function setPreconditions($preconditions)
+    public function setPreconditions($preconditions): static
     {
         $this->container['preconditions'] = $preconditions;
 
@@ -383,7 +383,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Quote|null
      */
-    public function getQuote()
+    public function getQuote(): ?Quote
     {
         return $this->container['quote'];
     }
@@ -395,7 +395,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return self
      */
-    public function setQuote($quote)
+    public function setQuote($quote): static
     {
         $this->container['quote'] = $quote;
 
@@ -407,7 +407,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return string
      */
-    public function getShipmentId()
+    public function getShipmentId(): string
     {
         return $this->container['shipment_id'];
     }
@@ -419,7 +419,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return self
      */
-    public function setShipmentId($shipment_id)
+    public function setShipmentId($shipment_id): static
     {
         if ((mb_strlen($shipment_id) > 38)) {
             throw new \InvalidArgumentException(
@@ -447,7 +447,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return string
      */
-    public function getShippingMode()
+    public function getShippingMode(): string
     {
         return $this->container['shipping_mode'];
     }
@@ -459,7 +459,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return self
      */
-    public function setShippingMode($shipping_mode)
+    public function setShippingMode($shipping_mode): static
     {
         if ((mb_strlen($shipping_mode) > 1024)) {
             throw new \InvalidArgumentException(
@@ -482,7 +482,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return string
      */
-    public function getShippingSolution()
+    public function getShippingSolution(): string
     {
         return $this->container['shipping_solution'];
     }
@@ -494,7 +494,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return self
      */
-    public function setShippingSolution($shipping_solution)
+    public function setShippingSolution($shipping_solution): static
     {
         if ((mb_strlen($shipping_solution) > 1024)) {
             throw new \InvalidArgumentException(
@@ -517,7 +517,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return string
      */
-    public function getTransportationOptionId()
+    public function getTransportationOptionId(): string
     {
         return $this->container['transportation_option_id'];
     }
@@ -529,7 +529,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return self
      */
-    public function setTransportationOptionId($transportation_option_id)
+    public function setTransportationOptionId($transportation_option_id): static
     {
         if ((mb_strlen($transportation_option_id) > 38)) {
             throw new \InvalidArgumentException(
@@ -559,7 +559,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -571,7 +571,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -584,7 +584,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -600,7 +600,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -612,7 +612,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -635,7 +635,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }

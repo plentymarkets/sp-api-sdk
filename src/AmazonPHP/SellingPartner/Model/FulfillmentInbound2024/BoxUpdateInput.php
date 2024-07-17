@@ -89,7 +89,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -99,7 +99,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -153,7 +153,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -163,7 +163,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -173,7 +173,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -183,7 +183,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -217,7 +217,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -265,7 +265,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -276,7 +276,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return BoxContentInformationSource
      */
-    public function getContentInformationSource()
+    public function getContentInformationSource(): BoxContentInformationSource
     {
         return $this->container['content_information_source'];
     }
@@ -288,7 +288,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setContentInformationSource($content_information_source)
+    public function setContentInformationSource($content_information_source): static
     {
         $this->container['content_information_source'] = $content_information_source;
 
@@ -300,7 +300,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return Dimensions
      */
-    public function getDimensions()
+    public function getDimensions(): Dimensions
     {
         return $this->container['dimensions'];
     }
@@ -312,7 +312,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setDimensions($dimensions)
+    public function setDimensions($dimensions): static
     {
         $this->container['dimensions'] = $dimensions;
 
@@ -324,7 +324,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return ItemInput[]|null
      */
-    public function getItems()
+    public function getItems(): ?array
     {
         return $this->container['items'];
     }
@@ -336,7 +336,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setItems($items)
+    public function setItems($items): static
     {
         $this->container['items'] = $items;
 
@@ -348,7 +348,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string|null
      */
-    public function getPackageId()
+    public function getPackageId(): ?string
     {
         return $this->container['package_id'];
     }
@@ -360,7 +360,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setPackageId($package_id)
+    public function setPackageId($package_id): static
     {
         if (!is_null($package_id) && (mb_strlen($package_id) > 38)) {
             throw new \InvalidArgumentException(
@@ -388,7 +388,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return int
      */
-    public function getQuantity()
+    public function getQuantity(): int
     {
         return $this->container['quantity'];
     }
@@ -400,7 +400,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setQuantity($quantity)
+    public function setQuantity($quantity): static
     {
         if (($quantity > 10000)) {
             throw new \InvalidArgumentException(
@@ -423,7 +423,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return Weight
      */
-    public function getWeight()
+    public function getWeight(): Weight
     {
         return $this->container['weight'];
     }
@@ -435,7 +435,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setWeight($weight)
+    public function setWeight($weight): static
     {
         $this->container['weight'] = $weight;
 
@@ -449,7 +449,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -461,7 +461,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -474,7 +474,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -490,7 +490,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -502,7 +502,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -525,7 +525,7 @@ class BoxUpdateInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }

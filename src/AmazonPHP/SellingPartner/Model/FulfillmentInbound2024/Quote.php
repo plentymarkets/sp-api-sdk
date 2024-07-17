@@ -83,7 +83,7 @@ class Quote implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -93,7 +93,7 @@ class Quote implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -138,7 +138,7 @@ class Quote implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -148,7 +148,7 @@ class Quote implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -158,7 +158,7 @@ class Quote implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -168,7 +168,7 @@ class Quote implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -199,7 +199,7 @@ class Quote implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -215,7 +215,7 @@ class Quote implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -226,7 +226,7 @@ class Quote implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Currency
      */
-    public function getCost()
+    public function getCost(): Currency
     {
         return $this->container['cost'];
     }
@@ -238,7 +238,7 @@ class Quote implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setCost($cost)
+    public function setCost($cost): static
     {
         $this->container['cost'] = $cost;
 
@@ -250,7 +250,7 @@ class Quote implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return \DateTime|null
      */
-    public function getExpiration()
+    public function getExpiration(): ?\DateTime
     {
         return $this->container['expiration'];
     }
@@ -262,7 +262,7 @@ class Quote implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setExpiration($expiration)
+    public function setExpiration($expiration): static
     {
         $this->container['expiration'] = $expiration;
 
@@ -274,7 +274,7 @@ class Quote implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return \DateTime|null
      */
-    public function getVoidableUntil()
+    public function getVoidableUntil(): ?\DateTime
     {
         return $this->container['voidable_until'];
     }
@@ -286,7 +286,7 @@ class Quote implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setVoidableUntil($voidable_until)
+    public function setVoidableUntil($voidable_until): static
     {
         $this->container['voidable_until'] = $voidable_until;
 
@@ -300,7 +300,7 @@ class Quote implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -312,7 +312,7 @@ class Quote implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -325,7 +325,7 @@ class Quote implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -341,7 +341,7 @@ class Quote implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -353,7 +353,7 @@ class Quote implements ModelInterface, ArrayAccess, \JsonSerializable
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -376,7 +376,7 @@ class Quote implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }

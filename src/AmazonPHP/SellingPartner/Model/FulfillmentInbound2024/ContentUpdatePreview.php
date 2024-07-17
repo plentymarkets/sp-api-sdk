@@ -85,7 +85,7 @@ class ContentUpdatePreview implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -95,7 +95,7 @@ class ContentUpdatePreview implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -143,7 +143,7 @@ class ContentUpdatePreview implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -153,7 +153,7 @@ class ContentUpdatePreview implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -163,7 +163,7 @@ class ContentUpdatePreview implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -173,7 +173,7 @@ class ContentUpdatePreview implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -205,7 +205,7 @@ class ContentUpdatePreview implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -246,7 +246,7 @@ class ContentUpdatePreview implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -257,7 +257,7 @@ class ContentUpdatePreview implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return string
      */
-    public function getContentUpdatePreviewId()
+    public function getContentUpdatePreviewId(): string
     {
         return $this->container['content_update_preview_id'];
     }
@@ -269,7 +269,7 @@ class ContentUpdatePreview implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return self
      */
-    public function setContentUpdatePreviewId($content_update_preview_id)
+    public function setContentUpdatePreviewId($content_update_preview_id): static
     {
         if ((mb_strlen($content_update_preview_id) > 38)) {
             throw new \InvalidArgumentException(
@@ -297,7 +297,7 @@ class ContentUpdatePreview implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return string
      */
-    public function getExpiration()
+    public function getExpiration(): string
     {
         return $this->container['expiration'];
     }
@@ -309,7 +309,7 @@ class ContentUpdatePreview implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return self
      */
-    public function setExpiration($expiration)
+    public function setExpiration($expiration): static
     {
         if ((!preg_match("/^([0-9]{4})-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/", $expiration))) {
             throw new \InvalidArgumentException(
@@ -327,7 +327,7 @@ class ContentUpdatePreview implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return RequestedUpdates
      */
-    public function getRequestedUpdates()
+    public function getRequestedUpdates(): RequestedUpdates
     {
         return $this->container['requested_updates'];
     }
@@ -339,7 +339,7 @@ class ContentUpdatePreview implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return self
      */
-    public function setRequestedUpdates($requested_updates)
+    public function setRequestedUpdates($requested_updates): static
     {
         $this->container['requested_updates'] = $requested_updates;
 
@@ -351,7 +351,7 @@ class ContentUpdatePreview implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return TransportationOption
      */
-    public function getTransportationOption()
+    public function getTransportationOption(): TransportationOption
     {
         return $this->container['transportation_option'];
     }
@@ -363,7 +363,7 @@ class ContentUpdatePreview implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return self
      */
-    public function setTransportationOption($transportation_option)
+    public function setTransportationOption($transportation_option): static
     {
         $this->container['transportation_option'] = $transportation_option;
 
@@ -377,7 +377,7 @@ class ContentUpdatePreview implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -389,7 +389,7 @@ class ContentUpdatePreview implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -402,7 +402,7 @@ class ContentUpdatePreview implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -418,7 +418,7 @@ class ContentUpdatePreview implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -430,7 +430,7 @@ class ContentUpdatePreview implements ModelInterface, ArrayAccess, \JsonSerializ
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -453,7 +453,7 @@ class ContentUpdatePreview implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }

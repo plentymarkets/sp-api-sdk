@@ -97,7 +97,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -107,7 +107,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -173,7 +173,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -183,7 +183,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -193,7 +193,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -203,7 +203,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -241,7 +241,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -295,7 +295,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -306,7 +306,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return \DateTime
      */
-    public function getCreatedAt()
+    public function getCreatedAt(): \DateTime
     {
         return $this->container['created_at'];
     }
@@ -318,7 +318,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setCreatedAt($created_at)
+    public function setCreatedAt($created_at): static
     {
         $this->container['created_at'] = $created_at;
 
@@ -330,7 +330,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function getInboundPlanId()
+    public function getInboundPlanId(): string
     {
         return $this->container['inbound_plan_id'];
     }
@@ -342,7 +342,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setInboundPlanId($inbound_plan_id)
+    public function setInboundPlanId($inbound_plan_id): static
     {
         if ((mb_strlen($inbound_plan_id) > 38)) {
             throw new \InvalidArgumentException(
@@ -370,7 +370,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return \DateTime
      */
-    public function getLastUpdatedAt()
+    public function getLastUpdatedAt(): \DateTime
     {
         return $this->container['last_updated_at'];
     }
@@ -382,7 +382,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setLastUpdatedAt($last_updated_at)
+    public function setLastUpdatedAt($last_updated_at): static
     {
         $this->container['last_updated_at'] = $last_updated_at;
 
@@ -394,7 +394,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string[]
      */
-    public function getMarketplaceIds()
+    public function getMarketplaceIds(): array
     {
         return $this->container['marketplace_ids'];
     }
@@ -406,7 +406,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setMarketplaceIds($marketplace_ids)
+    public function setMarketplaceIds($marketplace_ids): static
     {
         $this->container['marketplace_ids'] = $marketplace_ids;
 
@@ -418,7 +418,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function getName()
+    public function getName(): string
     {
         return $this->container['name'];
     }
@@ -430,7 +430,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setName($name)
+    public function setName($name): static
     {
         $this->container['name'] = $name;
 
@@ -442,7 +442,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return  PackingOptionSummary[]|null
      */
-    public function getPackingOptions()
+    public function getPackingOptions(): ?array
     {
         return $this->container['packing_options'];
     }
@@ -454,7 +454,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setPackingOptions($packing_options)
+    public function setPackingOptions($packing_options): static
     {
         $this->container['packing_options'] = $packing_options;
 
@@ -466,7 +466,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return  PlacementOptionSummary[]|null
      */
-    public function getPlacementOptions()
+    public function getPlacementOptions(): ?array
     {
         return $this->container['placement_options'];
     }
@@ -478,7 +478,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setPlacementOptions($placement_options)
+    public function setPlacementOptions($placement_options): static
     {
         $this->container['placement_options'] = $placement_options;
 
@@ -490,7 +490,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return  ShipmentSummary[]|null
      */
-    public function getShipments()
+    public function getShipments(): ?array
     {
         return $this->container['shipments'];
     }
@@ -502,7 +502,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setShipments($shipments)
+    public function setShipments($shipments): static
     {
         $this->container['shipments'] = $shipments;
 
@@ -514,7 +514,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return  Address
      */
-    public function getSourceAddress()
+    public function getSourceAddress(): Address
     {
         return $this->container['source_address'];
     }
@@ -526,7 +526,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setSourceAddress($source_address)
+    public function setSourceAddress($source_address): static
     {
         $this->container['source_address'] = $source_address;
 
@@ -538,7 +538,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function getStatus()
+    public function getStatus(): string
     {
         return $this->container['status'];
     }
@@ -550,7 +550,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setStatus($status)
+    public function setStatus($status): static
     {
         if ((mb_strlen($status) > 1024)) {
             throw new \InvalidArgumentException(
@@ -575,7 +575,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -587,7 +587,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -600,7 +600,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -616,7 +616,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -628,7 +628,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -651,7 +651,7 @@ class InboundPlan implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }

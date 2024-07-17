@@ -97,7 +97,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -107,7 +107,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -173,7 +173,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -183,7 +183,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -193,7 +193,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -203,7 +203,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -241,7 +241,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -360,7 +360,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -371,7 +371,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function getAddressLine1()
+    public function getAddressLine1(): string
     {
         return $this->container['address_line1'];
     }
@@ -383,7 +383,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setAddressLine1($address_line1)
+    public function setAddressLine1($address_line1): static
     {
         if ((mb_strlen($address_line1) > 180)) {
             throw new \InvalidArgumentException(
@@ -406,7 +406,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string|null
      */
-    public function getAddressLine2()
+    public function getAddressLine2(): ?string
     {
         return $this->container['address_line2'];
     }
@@ -418,7 +418,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setAddressLine2($address_line2)
+    public function setAddressLine2($address_line2): static
     {
         if (!is_null($address_line2) && (mb_strlen($address_line2) > 60)) {
             throw new \InvalidArgumentException(
@@ -441,7 +441,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function getCity()
+    public function getCity(): string
     {
         return $this->container['city'];
     }
@@ -453,7 +453,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setCity($city)
+    public function setCity($city): static
     {
         if ((mb_strlen($city) > 30)) {
             throw new \InvalidArgumentException(
@@ -476,7 +476,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string|null
      */
-    public function getCompanyName()
+    public function getCompanyName(): ?string
     {
         return $this->container['company_name'];
     }
@@ -488,7 +488,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setCompanyName($company_name)
+    public function setCompanyName($company_name): static
     {
         if (!is_null($company_name) && (mb_strlen($company_name) > 50)) {
             throw new \InvalidArgumentException(
@@ -511,7 +511,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function getCountryCode()
+    public function getCountryCode(): string
     {
         return $this->container['country_code'];
     }
@@ -523,7 +523,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setCountryCode($country_code)
+    public function setCountryCode($country_code): static
     {
         if ((mb_strlen($country_code) > 2)) {
             throw new \InvalidArgumentException(
@@ -551,7 +551,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string|null
      */
-    public function getEmail()
+    public function getEmail(): ?string
     {
         return $this->container['email'];
     }
@@ -563,7 +563,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setEmail($email)
+    public function setEmail($email): static
     {
         if (!is_null($email) && (mb_strlen($email) > 1024)) {
             throw new \InvalidArgumentException(
@@ -586,7 +586,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function getName()
+    public function getName(): string
     {
         return $this->container['name'];
     }
@@ -598,7 +598,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setName($name)
+    public function setName($name): static
     {
         if ((mb_strlen($name) > 50)) {
             throw new \InvalidArgumentException(
@@ -621,7 +621,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function getPhoneNumber()
+    public function getPhoneNumber(): string
     {
         return $this->container['phone_number'];
     }
@@ -633,7 +633,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setPhoneNumber($phone_number)
+    public function setPhoneNumber($phone_number): static
     {
         if ((mb_strlen($phone_number) > 20)) {
             throw new \InvalidArgumentException(
@@ -656,7 +656,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function getPostalCode()
+    public function getPostalCode(): string
     {
         return $this->container['postal_code'];
     }
@@ -668,7 +668,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setPostalCode($postal_code)
+    public function setPostalCode($postal_code): static
     {
         if ((mb_strlen($postal_code) > 32)) {
             throw new \InvalidArgumentException(
@@ -691,7 +691,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string|null
      */
-    public function getStateOrProvinceCode()
+    public function getStateOrProvinceCode(): ?string
     {
         return $this->container['state_or_province_code'];
     }
@@ -703,7 +703,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return self
      */
-    public function setStateOrProvinceCode($state_or_province_code)
+    public function setStateOrProvinceCode($state_or_province_code): static
     {
         if (!is_null($state_or_province_code) && (mb_strlen($state_or_province_code) > 64)) {
             throw new \InvalidArgumentException(
@@ -728,7 +728,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -740,7 +740,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -753,7 +753,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -769,7 +769,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -781,7 +781,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -804,7 +804,7 @@ class AddressInput implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }

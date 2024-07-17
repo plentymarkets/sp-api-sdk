@@ -91,7 +91,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -101,7 +101,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -158,7 +158,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -168,7 +168,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -178,7 +178,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -188,7 +188,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -223,7 +223,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -284,7 +284,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -295,7 +295,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return float|null
      */
-    public function getHeight()
+    public function getHeight(): ?float
     {
         return $this->container['height'];
     }
@@ -307,7 +307,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setHeight($height)
+    public function setHeight($height): static
     {
         if (!is_null($height) && ($height > 1E+2)) {
             throw new \InvalidArgumentException(
@@ -330,7 +330,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return LabelPrintType
      */
-    public function getLabelType()
+    public function getLabelType(): LabelPrintType
     {
         return $this->container['label_type'];
     }
@@ -342,7 +342,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setLabelType($label_type)
+    public function setLabelType($label_type): static
     {
         $this->container['label_type'] = $label_type;
 
@@ -354,7 +354,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return string|null
      */
-    public function getLocaleCode()
+    public function getLocaleCode(): ?string
     {
         return $this->container['locale_code'];
     }
@@ -366,7 +366,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setLocaleCode($locale_code)
+    public function setLocaleCode($locale_code): static
     {
         if (!is_null($locale_code) && (!preg_match("/^[a-z]{2}_[A-Z]{2}$/", $locale_code))) {
             throw new \InvalidArgumentException(
@@ -384,7 +384,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return string
      */
-    public function getMarketplaceId()
+    public function getMarketplaceId(): string
     {
         return $this->container['marketplace_id'];
     }
@@ -396,7 +396,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setMarketplaceId($marketplace_id)
+    public function setMarketplaceId($marketplace_id): static
     {
         if ((mb_strlen($marketplace_id) > 256)) {
             throw new \InvalidArgumentException(
@@ -419,7 +419,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return MskuQuantity[]
      */
-    public function getMskuQuantities()
+    public function getMskuQuantities(): array
     {
         return $this->container['msku_quantities'];
     }
@@ -431,7 +431,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setMskuQuantities($msku_quantities)
+    public function setMskuQuantities($msku_quantities): static
     {
         if ((count($msku_quantities) > 100)) {
             throw new \InvalidArgumentException(
@@ -453,7 +453,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return ItemLabelPageType|null
      */
-    public function getPageType()
+    public function getPageType(): ?ItemLabelPageType
     {
         return $this->container['page_type'];
     }
@@ -465,7 +465,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setPageType($page_type)
+    public function setPageType($page_type): static
     {
         $this->container['page_type'] = $page_type;
 
@@ -477,7 +477,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return float|null
      */
-    public function getWidth()
+    public function getWidth(): ?float
     {
         return $this->container['width'];
     }
@@ -489,7 +489,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setWidth($width)
+    public function setWidth($width): static
     {
         if (!is_null($width) && ($width > 1E+2)) {
             throw new \InvalidArgumentException(
@@ -514,7 +514,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -526,7 +526,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -539,7 +539,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -555,7 +555,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -567,7 +567,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -590,7 +590,7 @@ class CreateMarketplaceItemLabelsRequest implements ModelInterface, ArrayAccess,
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }

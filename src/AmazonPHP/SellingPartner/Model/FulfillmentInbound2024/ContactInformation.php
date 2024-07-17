@@ -83,7 +83,7 @@ class ContactInformation implements ModelInterface, ArrayAccess, \JsonSerializab
      *
      * @return array
      */
-    public static function openAPITypes()
+    public static function openAPITypes(): array
     {
         return self::$openAPITypes;
     }
@@ -93,7 +93,7 @@ class ContactInformation implements ModelInterface, ArrayAccess, \JsonSerializab
      *
      * @return array
      */
-    public static function openAPIFormats()
+    public static function openAPIFormats(): array
     {
         return self::$openAPIFormats;
     }
@@ -138,7 +138,7 @@ class ContactInformation implements ModelInterface, ArrayAccess, \JsonSerializab
      *
      * @return array
      */
-    public static function attributeMap()
+    public static function attributeMap(): array
     {
         return self::$attributeMap;
     }
@@ -148,7 +148,7 @@ class ContactInformation implements ModelInterface, ArrayAccess, \JsonSerializab
      *
      * @return array
      */
-    public static function setters()
+    public static function setters(): array
     {
         return self::$setters;
     }
@@ -158,7 +158,7 @@ class ContactInformation implements ModelInterface, ArrayAccess, \JsonSerializab
      *
      * @return array
      */
-    public static function getters()
+    public static function getters(): array
     {
         return self::$getters;
     }
@@ -168,7 +168,7 @@ class ContactInformation implements ModelInterface, ArrayAccess, \JsonSerializab
      *
      * @return string
      */
-    public function getModelName()
+    public function getModelName(): string
     {
         return self::$openAPIModelName;
     }
@@ -199,7 +199,7 @@ class ContactInformation implements ModelInterface, ArrayAccess, \JsonSerializab
      *
      * @return array invalid properties with reasons
      */
-    public function listInvalidProperties()
+    public function listInvalidProperties(): array
     {
         $invalidProperties = [];
 
@@ -242,7 +242,7 @@ class ContactInformation implements ModelInterface, ArrayAccess, \JsonSerializab
      *
      * @return bool True if all properties are valid
      */
-    public function valid()
+    public function valid(): bool
     {
         return count($this->listInvalidProperties()) === 0;
     }
@@ -253,7 +253,7 @@ class ContactInformation implements ModelInterface, ArrayAccess, \JsonSerializab
      *
      * @return string|null
      */
-    public function getEmail()
+    public function getEmail(): ?string
     {
         return $this->container['email'];
     }
@@ -265,7 +265,7 @@ class ContactInformation implements ModelInterface, ArrayAccess, \JsonSerializab
      *
      * @return self
      */
-    public function setEmail($email)
+    public function setEmail($email): static
     {
         if (!is_null($email) && (mb_strlen($email) > 1024)) {
             throw new \InvalidArgumentException(
@@ -288,7 +288,7 @@ class ContactInformation implements ModelInterface, ArrayAccess, \JsonSerializab
      *
      * @return string
      */
-    public function getName()
+    public function getName(): string
     {
         return $this->container['name'];
     }
@@ -300,7 +300,7 @@ class ContactInformation implements ModelInterface, ArrayAccess, \JsonSerializab
      *
      * @return self
      */
-    public function setName($name)
+    public function setName($name): static
     {
         if ((mb_strlen($name) > 50)) {
             throw new \InvalidArgumentException(
@@ -323,7 +323,7 @@ class ContactInformation implements ModelInterface, ArrayAccess, \JsonSerializab
      *
      * @return string
      */
-    public function getPhoneNumber()
+    public function getPhoneNumber(): string
     {
         return $this->container['phone_number'];
     }
@@ -335,7 +335,7 @@ class ContactInformation implements ModelInterface, ArrayAccess, \JsonSerializab
      *
      * @return self
      */
-    public function setPhoneNumber($phone_number)
+    public function setPhoneNumber($phone_number): static
     {
         if ((mb_strlen($phone_number) > 20)) {
             throw new \InvalidArgumentException(
@@ -360,7 +360,7 @@ class ContactInformation implements ModelInterface, ArrayAccess, \JsonSerializab
      *
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -372,7 +372,7 @@ class ContactInformation implements ModelInterface, ArrayAccess, \JsonSerializab
      *
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->container[$offset] ?? null;
     }
@@ -385,7 +385,7 @@ class ContactInformation implements ModelInterface, ArrayAccess, \JsonSerializab
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -401,7 +401,7 @@ class ContactInformation implements ModelInterface, ArrayAccess, \JsonSerializab
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
@@ -413,7 +413,7 @@ class ContactInformation implements ModelInterface, ArrayAccess, \JsonSerializab
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
      * of any type other than a resource.
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ObjectSerializer2024::sanitizeForSerialization($this);
     }
@@ -436,7 +436,7 @@ class ContactInformation implements ModelInterface, ArrayAccess, \JsonSerializab
      *
      * @return string
      */
-    public function toHeaderValue()
+    public function toHeaderValue(): string
     {
         return json_encode(ObjectSerializer2024::sanitizeForSerialization($this));
     }
