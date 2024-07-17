@@ -389,7 +389,7 @@ class CreateInboundPlanRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @param integer $offset Offset
      *
-     * @return boolean
+     * @return bool
      */
     public function offsetExists($offset)
     {

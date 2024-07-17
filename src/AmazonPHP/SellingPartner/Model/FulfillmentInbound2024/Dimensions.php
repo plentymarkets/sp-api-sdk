@@ -394,7 +394,7 @@ class Dimensions implements ModelInterface, ArrayAccess, \JsonSerializable
      *
      * @param integer $offset Offset
      *
-     * @return boolean
+     * @return bool
      */
     public function offsetExists($offset)
     {

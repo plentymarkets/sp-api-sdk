@@ -266,7 +266,7 @@ class ConfirmShipmentContentUpdatePreviewResponse implements ModelInterface, Arr
      *
      * @param integer $offset Offset
      *
-     * @return boolean
+     * @return bool
      */
     public function offsetExists($offset)
     {

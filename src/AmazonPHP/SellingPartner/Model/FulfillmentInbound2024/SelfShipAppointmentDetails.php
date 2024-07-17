@@ -318,7 +318,7 @@ class SelfShipAppointmentDetails implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @param integer $offset Offset
      *
-     * @return boolean
+     * @return bool
      */
     public function offsetExists($offset)
     {

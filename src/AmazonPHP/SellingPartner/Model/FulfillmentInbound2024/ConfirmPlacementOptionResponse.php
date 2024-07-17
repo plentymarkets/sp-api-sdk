@@ -266,7 +266,7 @@ class ConfirmPlacementOptionResponse implements ModelInterface, ArrayAccess, \Js
      *
      * @param integer $offset Offset
      *
-     * @return boolean
+     * @return bool
      */
     public function offsetExists($offset)
     {

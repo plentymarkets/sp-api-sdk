@@ -268,7 +268,7 @@ class ListShipmentContentUpdatePreviewsResponse implements ModelInterface, Array
      *
      * @param integer $offset Offset
      *
-     * @return boolean
+     * @return bool
      */
     public function offsetExists($offset)
     {

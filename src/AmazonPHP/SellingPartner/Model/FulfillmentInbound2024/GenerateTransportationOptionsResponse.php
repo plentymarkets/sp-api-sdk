@@ -266,7 +266,7 @@ class GenerateTransportationOptionsResponse implements ModelInterface, ArrayAcce
      *
      * @param integer $offset Offset
      *
-     * @return boolean
+     * @return bool
      */
     public function offsetExists($offset)
     {

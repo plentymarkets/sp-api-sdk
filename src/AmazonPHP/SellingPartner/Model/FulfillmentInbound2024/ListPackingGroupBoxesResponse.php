@@ -268,7 +268,7 @@ class ListPackingGroupBoxesResponse implements ModelInterface, ArrayAccess, \Jso
      *
      * @param integer $offset Offset
      *
-     * @return boolean
+     * @return bool
      */
     public function offsetExists($offset)
     {

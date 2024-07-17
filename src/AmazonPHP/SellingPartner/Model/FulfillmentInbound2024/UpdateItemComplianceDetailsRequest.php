@@ -290,7 +290,7 @@ class UpdateItemComplianceDetailsRequest implements ModelInterface, ArrayAccess,
      *
      * @param integer $offset Offset
      *
-     * @return boolean
+     * @return bool
      */
     public function offsetExists($offset)
     {

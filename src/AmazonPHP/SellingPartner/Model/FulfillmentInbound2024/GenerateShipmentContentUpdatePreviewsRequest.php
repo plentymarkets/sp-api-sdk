@@ -307,7 +307,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements ModelInterface, Ar
      *
      * @param integer $offset Offset
      *
-     * @return boolean
+     * @return bool
      */
     public function offsetExists($offset)
     {

@@ -247,7 +247,7 @@ class SetPackingInformationRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @param integer $offset Offset
      *
-     * @return boolean
+     * @return bool
      */
     public function offsetExists($offset)
     {

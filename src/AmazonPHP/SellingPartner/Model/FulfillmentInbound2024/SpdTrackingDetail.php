@@ -235,7 +235,7 @@ class SpdTrackingDetail implements ModelInterface, ArrayAccess, \JsonSerializabl
      *
      * @param integer $offset Offset
      *
-     * @return boolean
+     * @return bool
      */
     public function offsetExists($offset)
     {

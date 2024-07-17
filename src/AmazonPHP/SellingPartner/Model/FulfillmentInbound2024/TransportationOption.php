@@ -557,7 +557,7 @@ class TransportationOption implements ModelInterface, ArrayAccess, \JsonSerializ
      *
      * @param integer $offset Offset
      *
-     * @return boolean
+     * @return bool
      */
     public function offsetExists($offset)
     {
