@@ -34,7 +34,7 @@ final class OAuth
      * @throws \Psr\Http\Client\ClientExceptionInterface
      * @throws ApiException
      */
-    public function exchangeRefreshToken(string $refreshToken) : AccessToken
+    public function exchangeRefreshToken(string $refreshToken): AccessToken
     {
         $request = $this->requestFactory->createRequest('POST', 'https://api.amazon.com/auth/o2/token')
             ->withBody(
@@ -103,7 +103,7 @@ final class OAuth
      * @throws \Psr\Http\Client\ClientExceptionInterface
      * @throws ApiException
      */
-    public function exchangeLwaCode(string $lwaCode) : AccessToken
+    public function exchangeLwaCode(string $lwaCode): AccessToken
     {
         $request = $this->requestFactory->createRequest('POST', 'https://api.amazon.com/auth/o2/token')
             ->withBody(
@@ -172,7 +172,7 @@ final class OAuth
      * @throws \Psr\Http\Client\ClientExceptionInterface
      * @throws ApiException
      */
-    public function clientCredentials(string $scope) : AccessToken
+    public function clientCredentials(string $scope): AccessToken
     {
         $request = $this->requestFactory->createRequest('POST', 'https://api.amazon.com/auth/o2/token')
             ->withBody(

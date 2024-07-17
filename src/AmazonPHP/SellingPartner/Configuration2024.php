@@ -119,6 +119,7 @@ class Configuration2024
     public function __construct()
     {
         $this->tempFolderPath = sys_get_temp_dir();
+        $this->userAgent = 'Library amazon-php/sp-api-php (language=PHP ' . \phpversion() . '; Platform=' . \php_uname('s') . ' ' . \php_uname('r') . ' ' . \php_uname('m') . ')';
     }
 
     /**

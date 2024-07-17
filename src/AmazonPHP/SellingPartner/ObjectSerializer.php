@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Plenty\AmazonPHP\SellingPartner;
 
@@ -13,7 +15,7 @@ final class ObjectSerializer
      *
      * @param string $format the new date format to use
      */
-    public static function setDateTimeFormat(string $format) : void
+    public static function setDateTimeFormat(string $format): void
     {
         self::$dateTimeFormat = $format;
     }
@@ -113,7 +115,7 @@ final class ObjectSerializer
      *
      * @return string the serialized object
      */
-    public static function toPathValue(string $value) : string
+    public static function toPathValue(string $value): string
     {
         return \rawurlencode(self::toString($value));
     }
@@ -128,7 +130,7 @@ final class ObjectSerializer
      *
      * @return string the serialized object
      */
-    public static function toQueryValue($object) : string
+    public static function toQueryValue($object): string
     {
         if (\is_array($object)) {
             return \implode(',', $object);
@@ -185,7 +187,7 @@ final class ObjectSerializer
      *
      * @return string the header string
      */
-    public static function toString($value) : string
+    public static function toString($value): string
     {
         if ($value instanceof \DateTimeInterface) { // datetime in ISO8601 format
             return $value->format(self::$dateTimeFormat);
@@ -324,8 +326,10 @@ final class ObjectSerializer
 
         if ($class === '\SplFileObject') {
             // determine file name
-            if (\array_key_exists('Content-Disposition', $httpHeaders) &&
-                \preg_match('/inline; filename=[\'"]?([^\'"\s]+)[\'"]?$/i', $httpHeaders['Content-Disposition'], $match)) {
+            if (
+                \array_key_exists('Content-Disposition', $httpHeaders) &&
+                \preg_match('/inline; filename=[\'"]?([^\'"\s]+)[\'"]?$/i', $httpHeaders['Content-Disposition'], $match)
+            ) {
                 $filename = $configuration->tmpFolderPath() . DIRECTORY_SEPARATOR . self::sanitizeFilename($match[1]);
             } else {
                 $filename = \tempnam($configuration->tmpFolderPath(), '');
