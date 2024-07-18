@@ -9291,7 +9291,7 @@ class FulfillmentInboundSDK2024
                 $httpBody = \GuzzleHttp\json_encode($formParams);
             } else {
                 // for HTTP post (form)
-                $httpBody = build_query($formParams);
+                $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
             }
         }
 
