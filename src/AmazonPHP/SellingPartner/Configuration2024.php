@@ -90,7 +90,7 @@ class Configuration2024
      *
      * @var string
      */
-    protected $userAgent = 'OpenAPI-Generator/1.0.0/PHP';
+    protected $userAgent = '';
 
     /**
      * Debug switch (default set to false)
