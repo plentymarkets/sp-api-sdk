@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Plenty\AmazonPHP\SellingPartner;
 
+use Plenty\AmazonPHP\SellingPartner\IdGenerator;
+use Plenty\AmazonPHP\SellingPartner\IdGenerator\UniqidGenerator;
 use Plenty\AmazonPHP\SellingPartner\Configuration\LoggerConfiguration;
 use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
 use Plenty\AmazonPHP\SellingPartner\STSClient\Credentials;
@@ -36,6 +38,7 @@ class Configuration
         $this->tmpFolderPath = \sys_get_temp_dir();
         $this->loggerConfiguration = $loggerConfiguration ? $loggerConfiguration : new LoggerConfiguration();
         $this->extensions = $extensions ? $extensions : new Extensions();
+        $this->idGenerator = new UniqidGenerator();
     }
 
     public static function forIAMUser(string $clientId, string $clientSecret, string $accessKey, string $secretKey) : self
@@ -228,5 +231,10 @@ class Configuration
     public function extensions() : Extensions
     {
         return $this->extensions;
+    }
+
+    public function idGenerator() : IdGenerator
+    {
+        return $this->idGenerator;
     }
 }
