@@ -58,6 +58,7 @@ class ProductTypeList implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPITypes = [
         'product_types' => '\Plenty\AmazonPHP\SellingPartner\Model\ProductTypesDefinitions\ProductType[]',
+        'product_type_version' => 'string',
     ];
 
     /**
@@ -69,6 +70,7 @@ class ProductTypeList implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $openAPIFormats = [
         'product_types' => null,
+        'product_type_version' => null,
     ];
 
     /**
@@ -79,6 +81,7 @@ class ProductTypeList implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $attributeMap = [
         'product_types' => 'productTypes',
+        'product_type_version' => 'productTypeVersion',
     ];
 
     /**
@@ -88,6 +91,7 @@ class ProductTypeList implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $setters = [
         'product_types' => 'setProductTypes',
+        'product_type_version' => 'setProductTypeVersion',
     ];
 
     /**
@@ -97,6 +101,7 @@ class ProductTypeList implements \ArrayAccess, \JsonSerializable, ModelInterface
      */
     protected static /** [COMPAT] array */ $getters = [
         'product_types' => 'getProductTypes',
+        'product_type_version' => 'getProductTypeVersion',
     ];
 
     /**
@@ -115,6 +120,7 @@ class ProductTypeList implements \ArrayAccess, \JsonSerializable, ModelInterface
     public function __construct(array $data = null)
     {
         $this->container['product_types'] = $data['product_types'] ?? null;
+        $this->container['product_type_version'] = $data['product_type_version'] ?? null;
     }
 
     /**
@@ -200,6 +206,10 @@ class ProductTypeList implements \ArrayAccess, \JsonSerializable, ModelInterface
             $invalidProperties[] = "'product_types' can't be null";
         }
 
+        if ($this->container['product_type_version'] === null) {
+            $invalidProperties[] = "'product_type_version' can't be null";
+        }
+
         return $invalidProperties;
     }
 
@@ -232,6 +242,26 @@ class ProductTypeList implements \ArrayAccess, \JsonSerializable, ModelInterface
     public function setProductTypes(array $product_types) : self
     {
         $this->container['product_types'] = $product_types;
+
+        return $this;
+    }
+
+    /**
+     * Gets product_type_version.
+     */
+    public function getProductTypeVersion() : string
+    {
+        return $this->container['product_type_version'];
+    }
+
+    /**
+     * Sets product_type_version.
+     *
+     * @param string $product_type_version amazon product type version identifier
+     */
+    public function setProductTypeVersion(string $product_type_version) : self
+    {
+        $this->container['product_type_version'] = $product_type_version;
 
         return $this;
     }
