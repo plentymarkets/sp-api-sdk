@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\ModelInterface;
+use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,7 +23,7 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class SpdTrackingDetail implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
+class SpdTrackingDetail implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
 {
     final public const DISCRIMINATOR = null;
 
