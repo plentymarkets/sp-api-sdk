@@ -38,8 +38,8 @@ class TrackingDetailsInput implements \ArrayAccess, \JsonSerializable, \Stringab
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'ltl_tracking_detail' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\LtlTrackingDetailInput',
-        'spd_tracking_detail' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SpdTrackingDetailInput',
+        'ltl_tracking_detail' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\LtlTrackingDetailInput',
+        'spd_tracking_detail' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SpdTrackingDetailInput',
     ];
 
     /**
@@ -193,7 +193,7 @@ class TrackingDetailsInput implements \ArrayAccess, \JsonSerializable, \Stringab
     /**
      * Sets ltl_tracking_detail.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\LtlTrackingDetailInput $ltl_tracking_detail ltl_tracking_detail
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\LtlTrackingDetailInput $ltl_tracking_detail ltl_tracking_detail
      */
     public function setLtlTrackingDetail(?LtlTrackingDetailInput $ltl_tracking_detail) : self
     {
@@ -213,7 +213,7 @@ class TrackingDetailsInput implements \ArrayAccess, \JsonSerializable, \Stringab
     /**
      * Sets spd_tracking_detail.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SpdTrackingDetailInput $spd_tracking_detail spd_tracking_detail
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SpdTrackingDetailInput $spd_tracking_detail spd_tracking_detail
      */
     public function setSpdTrackingDetail(?SpdTrackingDetailInput $spd_tracking_detail) : self
     {

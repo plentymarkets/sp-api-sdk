@@ -44,7 +44,7 @@ class Item implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentI
         'label_owner' => 'string',
         'manufacturing_lot_code' => 'string',
         'msku' => 'string',
-        'prep_instructions' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction[]',
+        'prep_instructions' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PrepInstruction[]',
         'quantity' => 'int',
     ];
 
@@ -409,7 +409,7 @@ class Item implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentI
     /**
      * Gets prep_instructions.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction[]
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PrepInstruction[]
      */
     public function getPrepInstructions() : array
     {
@@ -419,7 +419,7 @@ class Item implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentI
     /**
      * Sets prep_instructions.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepInstruction[] $prep_instructions special preparations that are required for an item
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PrepInstruction[] $prep_instructions special preparations that are required for an item
      */
     public function setPrepInstructions(array $prep_instructions) : self
     {

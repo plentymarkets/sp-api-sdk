@@ -38,7 +38,7 @@ class CustomPlacementInput implements \ArrayAccess, \JsonSerializable, \Stringab
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'items' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ItemInput[]',
+        'items' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[]',
         'warehouse_id' => 'string',
     ];
 
@@ -201,7 +201,7 @@ class CustomPlacementInput implements \ArrayAccess, \JsonSerializable, \Stringab
     /**
      * Gets items.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\ItemInput[]
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[]
      */
     public function getItems() : array
     {
@@ -211,7 +211,7 @@ class CustomPlacementInput implements \ArrayAccess, \JsonSerializable, \Stringab
     /**
      * Sets items.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\ItemInput[] $items items included while creating Inbound Plan
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[] $items items included while creating Inbound Plan
      */
     public function setItems(array $items) : self
     {

@@ -38,11 +38,11 @@ class BoxInput implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillm
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'content_information_source' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BoxContentInformationSource',
-        'dimensions' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions',
-        'items' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ItemInput[]',
+        'content_information_source' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxContentInformationSource',
+        'dimensions' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Dimensions',
+        'items' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[]',
         'quantity' => 'int',
-        'weight' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight',
+        'weight' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Weight',
     ];
 
     /**
@@ -231,7 +231,7 @@ class BoxInput implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillm
     /**
      * Sets content_information_source.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\BoxContentInformationSource $content_information_source content_information_source
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxContentInformationSource $content_information_source content_information_source
      */
     public function setContentInformationSource(BoxContentInformationSource $content_information_source) : self
     {
@@ -251,7 +251,7 @@ class BoxInput implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillm
     /**
      * Sets dimensions.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions $dimensions dimensions
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Dimensions $dimensions dimensions
      */
     public function setDimensions(Dimensions $dimensions) : self
     {
@@ -263,7 +263,7 @@ class BoxInput implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillm
     /**
      * Gets items.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ItemInput[]
+     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[]
      */
     public function getItems() : ?array
     {
@@ -273,7 +273,7 @@ class BoxInput implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillm
     /**
      * Sets items.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ItemInput[] $items The items and their quantity in the box. This must be empty if the box `contentInformationSource` is `BARCODE_2D` or `MANUAL_PROCESS`.
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[] $items The items and their quantity in the box. This must be empty if the box `contentInformationSource` is `BARCODE_2D` or `MANUAL_PROCESS`.
      */
     public function setItems(?array $items) : self
     {
@@ -313,7 +313,7 @@ class BoxInput implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillm
     /**
      * Sets weight.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight $weight weight
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Weight $weight weight
      */
     public function setWeight(Weight $weight) : self
     {

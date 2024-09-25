@@ -39,7 +39,7 @@ class SelfShipAppointmentDetails implements \ArrayAccess, \JsonSerializable, \St
      */
     protected static array $openAPITypes = [
         'appointment_id' => 'float',
-        'appointment_slot_time' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\AppointmentSlotTime',
+        'appointment_slot_time' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\AppointmentSlotTime',
         'appointment_status' => 'string',
     ];
 
@@ -223,7 +223,7 @@ class SelfShipAppointmentDetails implements \ArrayAccess, \JsonSerializable, \St
     /**
      * Sets appointment_slot_time.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\AppointmentSlotTime $appointment_slot_time appointment_slot_time
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\AppointmentSlotTime $appointment_slot_time appointment_slot_time
      */
     public function setAppointmentSlotTime(?AppointmentSlotTime $appointment_slot_time) : self
     {

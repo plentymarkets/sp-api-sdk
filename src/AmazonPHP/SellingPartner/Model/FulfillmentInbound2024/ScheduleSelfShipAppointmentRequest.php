@@ -38,7 +38,7 @@ class ScheduleSelfShipAppointmentRequest implements \ArrayAccess, \JsonSerializa
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'reason_comment' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ReasonComment',
+        'reason_comment' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ReasonComment',
     ];
 
     /**
@@ -180,7 +180,7 @@ class ScheduleSelfShipAppointmentRequest implements \ArrayAccess, \JsonSerializa
     /**
      * Sets reason_comment.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ReasonComment $reason_comment reason_comment
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ReasonComment $reason_comment reason_comment
      */
     public function setReasonComment(?ReasonComment $reason_comment) : self
     {

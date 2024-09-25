@@ -39,7 +39,7 @@ class AppointmentSlot implements \ArrayAccess, \JsonSerializable, \Stringable, F
      */
     protected static array $openAPITypes = [
         'slot_id' => 'string',
-        'slot_time' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\AppointmentSlotTime',
+        'slot_time' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\AppointmentSlotTime',
     ];
 
     /**
@@ -227,7 +227,7 @@ class AppointmentSlot implements \ArrayAccess, \JsonSerializable, \Stringable, F
     /**
      * Sets slot_time.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\AppointmentSlotTime $slot_time slot_time
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\AppointmentSlotTime $slot_time slot_time
      */
     public function setSlotTime(AppointmentSlotTime $slot_time) : self
     {

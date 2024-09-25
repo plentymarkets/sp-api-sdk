@@ -38,7 +38,7 @@ class FreightInformation implements \ArrayAccess, \JsonSerializable, \Stringable
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'declared_value' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Currency',
+        'declared_value' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Currency',
         'freight_class' => 'string',
     ];
 
@@ -197,7 +197,7 @@ class FreightInformation implements \ArrayAccess, \JsonSerializable, \Stringable
     /**
      * Sets declared_value.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Currency $declared_value declared_value
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Currency $declared_value declared_value
      */
     public function setDeclaredValue(?Currency $declared_value) : self
     {

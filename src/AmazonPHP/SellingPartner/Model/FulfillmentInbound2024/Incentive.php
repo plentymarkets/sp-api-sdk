@@ -41,7 +41,7 @@ class Incentive implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfill
         'description' => 'string',
         'target' => 'string',
         'type' => 'string',
-        'value' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Currency',
+        'value' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Currency',
     ];
 
     /**
@@ -299,7 +299,7 @@ class Incentive implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfill
     /**
      * Sets value.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Currency $value value
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Currency $value value
      */
     public function setValue(Currency $value) : self
     {

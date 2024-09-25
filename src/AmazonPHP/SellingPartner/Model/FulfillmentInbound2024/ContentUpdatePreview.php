@@ -40,8 +40,8 @@ class ContentUpdatePreview implements \ArrayAccess, \JsonSerializable, \Stringab
     protected static array $openAPITypes = [
         'content_update_preview_id' => 'string',
         'expiration' => 'string',
-        'requested_updates' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\RequestedUpdates',
-        'transportation_option' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportationOption',
+        'requested_updates' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\RequestedUpdates',
+        'transportation_option' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TransportationOption',
     ];
 
     /**
@@ -273,7 +273,7 @@ class ContentUpdatePreview implements \ArrayAccess, \JsonSerializable, \Stringab
     /**
      * Sets requested_updates.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\RequestedUpdates $requested_updates requested_updates
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\RequestedUpdates $requested_updates requested_updates
      */
     public function setRequestedUpdates(RequestedUpdates $requested_updates) : self
     {
@@ -293,7 +293,7 @@ class ContentUpdatePreview implements \ArrayAccess, \JsonSerializable, \Stringab
     /**
      * Sets transportation_option.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportationOption $transportation_option transportation_option
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TransportationOption $transportation_option transportation_option
      */
     public function setTransportationOption(TransportationOption $transportation_option) : self
     {

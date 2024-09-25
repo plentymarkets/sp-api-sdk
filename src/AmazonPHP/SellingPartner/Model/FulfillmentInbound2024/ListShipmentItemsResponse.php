@@ -38,8 +38,8 @@ class ListShipmentItemsResponse implements \ArrayAccess, \JsonSerializable, \Str
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'items' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Item[]',
-        'pagination' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pagination',
+        'items' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Item[]',
+        'pagination' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination',
     ];
 
     /**
@@ -185,7 +185,7 @@ class ListShipmentItemsResponse implements \ArrayAccess, \JsonSerializable, \Str
     /**
      * Gets items.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Item[]
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Item[]
      */
     public function getItems() : array
     {
@@ -195,7 +195,7 @@ class ListShipmentItemsResponse implements \ArrayAccess, \JsonSerializable, \Str
     /**
      * Sets items.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Item[] $items the items in a shipment
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Item[] $items the items in a shipment
      */
     public function setItems(array $items) : self
     {
@@ -215,7 +215,7 @@ class ListShipmentItemsResponse implements \ArrayAccess, \JsonSerializable, \Str
     /**
      * Sets pagination.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pagination $pagination pagination
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination $pagination pagination
      */
     public function setPagination(?Pagination $pagination) : self
     {

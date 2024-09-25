@@ -38,8 +38,8 @@ class ListPlacementOptionsResponse implements \ArrayAccess, \JsonSerializable, \
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'pagination' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pagination',
-        'placement_options' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PlacementOption[]',
+        'pagination' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination',
+        'placement_options' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PlacementOption[]',
     ];
 
     /**
@@ -193,7 +193,7 @@ class ListPlacementOptionsResponse implements \ArrayAccess, \JsonSerializable, \
     /**
      * Sets pagination.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pagination $pagination pagination
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination $pagination pagination
      */
     public function setPagination(?Pagination $pagination) : self
     {
@@ -205,7 +205,7 @@ class ListPlacementOptionsResponse implements \ArrayAccess, \JsonSerializable, \
     /**
      * Gets placement_options.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PlacementOption[]
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PlacementOption[]
      */
     public function getPlacementOptions() : array
     {
@@ -215,7 +215,7 @@ class ListPlacementOptionsResponse implements \ArrayAccess, \JsonSerializable, \
     /**
      * Sets placement_options.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PlacementOption[] $placement_options placement options generated for the inbound plan
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PlacementOption[] $placement_options placement options generated for the inbound plan
      */
     public function setPlacementOptions(array $placement_options) : self
     {

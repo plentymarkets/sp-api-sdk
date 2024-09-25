@@ -38,7 +38,7 @@ class CreateMarketplaceItemLabelsResponse implements \ArrayAccess, \JsonSerializ
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'document_downloads' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\DocumentDownload[]',
+        'document_downloads' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\DocumentDownload[]',
     ];
 
     /**
@@ -175,7 +175,7 @@ class CreateMarketplaceItemLabelsResponse implements \ArrayAccess, \JsonSerializ
     /**
      * Gets document_downloads.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\DocumentDownload[]
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\DocumentDownload[]
      */
     public function getDocumentDownloads() : array
     {
@@ -185,7 +185,7 @@ class CreateMarketplaceItemLabelsResponse implements \ArrayAccess, \JsonSerializ
     /**
      * Sets document_downloads.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\DocumentDownload[] $document_downloads resources to download the requested document
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\DocumentDownload[] $document_downloads resources to download the requested document
      */
     public function setDocumentDownloads(array $document_downloads) : self
     {

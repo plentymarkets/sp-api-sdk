@@ -38,8 +38,8 @@ class ListTransportationOptionsResponse implements \ArrayAccess, \JsonSerializab
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'pagination' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pagination',
-        'transportation_options' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportationOption[]',
+        'pagination' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination',
+        'transportation_options' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TransportationOption[]',
     ];
 
     /**
@@ -193,7 +193,7 @@ class ListTransportationOptionsResponse implements \ArrayAccess, \JsonSerializab
     /**
      * Sets pagination.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pagination $pagination pagination
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination $pagination pagination
      */
     public function setPagination(?Pagination $pagination) : self
     {
@@ -205,7 +205,7 @@ class ListTransportationOptionsResponse implements \ArrayAccess, \JsonSerializab
     /**
      * Gets transportation_options.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportationOption[]
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TransportationOption[]
      */
     public function getTransportationOptions() : array
     {
@@ -215,7 +215,7 @@ class ListTransportationOptionsResponse implements \ArrayAccess, \JsonSerializab
     /**
      * Sets transportation_options.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportationOption[] $transportation_options transportation options generated for the placement option
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TransportationOption[] $transportation_options transportation options generated for the placement option
      */
     public function setTransportationOptions(array $transportation_options) : self
     {

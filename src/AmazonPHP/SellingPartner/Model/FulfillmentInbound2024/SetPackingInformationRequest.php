@@ -38,7 +38,7 @@ class SetPackingInformationRequest implements \ArrayAccess, \JsonSerializable, \
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'package_groupings' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PackageGroupingInput[]',
+        'package_groupings' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PackageGroupingInput[]',
     ];
 
     /**
@@ -179,7 +179,7 @@ class SetPackingInformationRequest implements \ArrayAccess, \JsonSerializable, \
     /**
      * Gets package_groupings.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PackageGroupingInput[]
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PackageGroupingInput[]
      */
     public function getPackageGroupings() : array
     {
@@ -189,7 +189,7 @@ class SetPackingInformationRequest implements \ArrayAccess, \JsonSerializable, \
     /**
      * Sets package_groupings.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PackageGroupingInput[] $package_groupings list of packing information for the inbound plan
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PackageGroupingInput[] $package_groupings list of packing information for the inbound plan
      */
     public function setPackageGroupings(array $package_groupings) : self
     {

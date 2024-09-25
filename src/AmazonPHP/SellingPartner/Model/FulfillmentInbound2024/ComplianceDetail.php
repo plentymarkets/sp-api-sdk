@@ -41,7 +41,7 @@ class ComplianceDetail implements \ArrayAccess, \JsonSerializable, \Stringable, 
         'asin' => 'string',
         'fnsku' => 'string',
         'msku' => 'string',
-        'tax_details' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TaxDetails',
+        'tax_details' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TaxDetails',
     ];
 
     /**
@@ -285,7 +285,7 @@ class ComplianceDetail implements \ArrayAccess, \JsonSerializable, \Stringable, 
     /**
      * Sets tax_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TaxDetails $tax_details tax_details
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TaxDetails $tax_details tax_details
      */
     public function setTaxDetails(?TaxDetails $tax_details) : self
     {

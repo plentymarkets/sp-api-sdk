@@ -39,7 +39,7 @@ class GenerateTransportationOptionsRequest implements \ArrayAccess, \JsonSeriali
      */
     protected static array $openAPITypes = [
         'placement_option_id' => 'string',
-        'shipment_transportation_configurations' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentTransportationConfiguration[]',
+        'shipment_transportation_configurations' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShipmentTransportationConfiguration[]',
     ];
 
     /**
@@ -221,7 +221,7 @@ class GenerateTransportationOptionsRequest implements \ArrayAccess, \JsonSeriali
     /**
      * Gets shipment_transportation_configurations.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentTransportationConfiguration[]
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShipmentTransportationConfiguration[]
      */
     public function getShipmentTransportationConfigurations() : array
     {
@@ -231,7 +231,7 @@ class GenerateTransportationOptionsRequest implements \ArrayAccess, \JsonSeriali
     /**
      * Sets shipment_transportation_configurations.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentTransportationConfiguration[] $shipment_transportation_configurations list of shipment transportation configurations
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShipmentTransportationConfiguration[] $shipment_transportation_configurations list of shipment transportation configurations
      */
     public function setShipmentTransportationConfigurations(array $shipment_transportation_configurations) : self
     {

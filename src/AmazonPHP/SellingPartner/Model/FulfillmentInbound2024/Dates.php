@@ -38,7 +38,7 @@ class Dates implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillment
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'ready_to_ship_window' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Window',
+        'ready_to_ship_window' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Window',
     ];
 
     /**
@@ -183,7 +183,7 @@ class Dates implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillment
     /**
      * Sets ready_to_ship_window.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Window $ready_to_ship_window ready_to_ship_window
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Window $ready_to_ship_window ready_to_ship_window
      */
     public function setReadyToShipWindow(?Window $ready_to_ship_window) : self
     {

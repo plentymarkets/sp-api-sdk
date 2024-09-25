@@ -38,7 +38,7 @@ class PrepInstruction implements \ArrayAccess, \JsonSerializable, \Stringable, F
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'fee' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Currency',
+        'fee' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Currency',
         'prep_owner' => 'string',
         'prep_type' => 'string',
     ];
@@ -211,7 +211,7 @@ class PrepInstruction implements \ArrayAccess, \JsonSerializable, \Stringable, F
     /**
      * Sets fee.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Currency $fee fee
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Currency $fee fee
      */
     public function setFee(?Currency $fee) : self
     {

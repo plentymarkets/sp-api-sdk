@@ -39,9 +39,9 @@ class CreateInboundPlanRequest implements \ArrayAccess, \JsonSerializable, \Stri
      */
     protected static array $openAPITypes = [
         'destination_marketplaces' => 'string[]',
-        'items' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ItemInput[]',
+        'items' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[]',
         'name' => 'string',
-        'source_address' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\AddressInput',
+        'source_address' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\AddressInput',
     ];
 
     /**
@@ -249,7 +249,7 @@ class CreateInboundPlanRequest implements \ArrayAccess, \JsonSerializable, \Stri
     /**
      * Gets items.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\ItemInput[]
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[]
      */
     public function getItems() : array
     {
@@ -259,7 +259,7 @@ class CreateInboundPlanRequest implements \ArrayAccess, \JsonSerializable, \Stri
     /**
      * Sets items.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\ItemInput[] $items items included in this plan
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[] $items items included in this plan
      */
     public function setItems(array $items) : self
     {
@@ -299,7 +299,7 @@ class CreateInboundPlanRequest implements \ArrayAccess, \JsonSerializable, \Stri
     /**
      * Sets source_address.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\AddressInput $source_address source_address
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\AddressInput $source_address source_address
      */
     public function setSourceAddress(AddressInput $source_address) : self
     {

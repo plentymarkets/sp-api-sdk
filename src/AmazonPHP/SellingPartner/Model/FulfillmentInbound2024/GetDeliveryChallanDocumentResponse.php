@@ -38,7 +38,7 @@ class GetDeliveryChallanDocumentResponse implements \ArrayAccess, \JsonSerializa
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'document_download' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\DocumentDownload',
+        'document_download' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\DocumentDownload',
     ];
 
     /**
@@ -185,7 +185,7 @@ class GetDeliveryChallanDocumentResponse implements \ArrayAccess, \JsonSerializa
     /**
      * Sets document_download.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\DocumentDownload $document_download document_download
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\DocumentDownload $document_download document_download
      */
     public function setDocumentDownload(DocumentDownload $document_download) : self
     {

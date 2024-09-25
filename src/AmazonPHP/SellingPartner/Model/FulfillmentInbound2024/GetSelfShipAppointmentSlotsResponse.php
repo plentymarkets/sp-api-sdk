@@ -38,8 +38,8 @@ class GetSelfShipAppointmentSlotsResponse implements \ArrayAccess, \JsonSerializ
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'pagination' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pagination',
-        'self_ship_appointment_slots_availability' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SelfShipAppointmentSlotsAvailability',
+        'pagination' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination',
+        'self_ship_appointment_slots_availability' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SelfShipAppointmentSlotsAvailability',
     ];
 
     /**
@@ -195,7 +195,7 @@ class GetSelfShipAppointmentSlotsResponse implements \ArrayAccess, \JsonSerializ
     /**
      * Sets pagination.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pagination $pagination pagination
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination $pagination pagination
      */
     public function setPagination(?Pagination $pagination) : self
     {
@@ -215,7 +215,7 @@ class GetSelfShipAppointmentSlotsResponse implements \ArrayAccess, \JsonSerializ
     /**
      * Sets self_ship_appointment_slots_availability.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\SelfShipAppointmentSlotsAvailability $self_ship_appointment_slots_availability self_ship_appointment_slots_availability
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SelfShipAppointmentSlotsAvailability $self_ship_appointment_slots_availability self_ship_appointment_slots_availability
      */
     public function setSelfShipAppointmentSlotsAvailability(SelfShipAppointmentSlotsAvailability $self_ship_appointment_slots_availability) : self
     {

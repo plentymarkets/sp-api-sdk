@@ -43,7 +43,7 @@ class InboundPlanSummary implements \ArrayAccess, \JsonSerializable, \Stringable
         'last_updated_at' => '\DateTimeInterface',
         'marketplace_ids' => 'string[]',
         'name' => 'string',
-        'source_address' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Address',
+        'source_address' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Address',
         'status' => 'string',
     ];
 
@@ -367,7 +367,7 @@ class InboundPlanSummary implements \ArrayAccess, \JsonSerializable, \Stringable
     /**
      * Sets source_address.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Address $source_address source_address
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Address $source_address source_address
      */
     public function setSourceAddress(Address $source_address) : self
     {

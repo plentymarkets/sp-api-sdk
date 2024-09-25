@@ -38,7 +38,7 @@ class UpdateShipmentSourceAddressRequest implements \ArrayAccess, \JsonSerializa
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'address' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\AddressInput',
+        'address' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\AddressInput',
     ];
 
     /**
@@ -185,7 +185,7 @@ class UpdateShipmentSourceAddressRequest implements \ArrayAccess, \JsonSerializa
     /**
      * Sets address.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\AddressInput $address address
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\AddressInput $address address
      */
     public function setAddress(AddressInput $address) : self
     {

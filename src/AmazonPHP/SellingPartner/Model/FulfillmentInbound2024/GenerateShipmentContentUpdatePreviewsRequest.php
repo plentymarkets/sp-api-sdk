@@ -38,8 +38,8 @@ class GenerateShipmentContentUpdatePreviewsRequest implements \ArrayAccess, \Jso
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'boxes' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BoxUpdateInput[]',
-        'items' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ItemInput[]',
+        'boxes' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxUpdateInput[]',
+        'items' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[]',
     ];
 
     /**
@@ -201,7 +201,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements \ArrayAccess, \Jso
     /**
      * Gets boxes.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\BoxUpdateInput[]
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxUpdateInput[]
      */
     public function getBoxes() : array
     {
@@ -211,7 +211,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements \ArrayAccess, \Jso
     /**
      * Sets boxes.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\BoxUpdateInput[] $boxes a list of boxes that will be present in the shipment after the update
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxUpdateInput[] $boxes a list of boxes that will be present in the shipment after the update
      */
     public function setBoxes(array $boxes) : self
     {
@@ -223,7 +223,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements \ArrayAccess, \Jso
     /**
      * Gets items.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\ItemInput[]
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[]
      */
     public function getItems() : array
     {
@@ -233,7 +233,7 @@ class GenerateShipmentContentUpdatePreviewsRequest implements \ArrayAccess, \Jso
     /**
      * Sets items.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\ItemInput[] $items a list of all items that will be present in the shipment after the update
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[] $items a list of all items that will be present in the shipment after the update
      */
     public function setItems(array $items) : self
     {

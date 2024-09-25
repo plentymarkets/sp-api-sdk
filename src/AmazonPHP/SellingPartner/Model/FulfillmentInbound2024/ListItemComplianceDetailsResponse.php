@@ -38,7 +38,7 @@ class ListItemComplianceDetailsResponse implements \ArrayAccess, \JsonSerializab
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'compliance_details' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ComplianceDetail[]',
+        'compliance_details' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ComplianceDetail[]',
     ];
 
     /**
@@ -172,7 +172,7 @@ class ListItemComplianceDetailsResponse implements \ArrayAccess, \JsonSerializab
     /**
      * Gets compliance_details.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ComplianceDetail[]
+     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ComplianceDetail[]
      */
     public function getComplianceDetails() : ?array
     {
@@ -182,7 +182,7 @@ class ListItemComplianceDetailsResponse implements \ArrayAccess, \JsonSerializab
     /**
      * Sets compliance_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ComplianceDetail[] $compliance_details list of compliance details
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ComplianceDetail[] $compliance_details list of compliance details
      */
     public function setComplianceDetails(?array $compliance_details) : self
     {

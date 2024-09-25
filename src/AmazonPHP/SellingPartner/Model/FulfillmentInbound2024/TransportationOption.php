@@ -38,10 +38,10 @@ class TransportationOption implements \ArrayAccess, \JsonSerializable, \Stringab
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'carrier' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Carrier',
-        'carrier_appointment' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\CarrierAppointment',
+        'carrier' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Carrier',
+        'carrier_appointment' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CarrierAppointment',
         'preconditions' => 'string[]',
-        'quote' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Quote',
+        'quote' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Quote',
         'shipment_id' => 'string',
         'shipping_mode' => 'string',
         'shipping_solution' => 'string',
@@ -295,7 +295,7 @@ class TransportationOption implements \ArrayAccess, \JsonSerializable, \Stringab
     /**
      * Sets carrier.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Carrier $carrier carrier
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Carrier $carrier carrier
      */
     public function setCarrier(Carrier $carrier) : self
     {
@@ -315,7 +315,7 @@ class TransportationOption implements \ArrayAccess, \JsonSerializable, \Stringab
     /**
      * Sets carrier_appointment.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\CarrierAppointment $carrier_appointment carrier_appointment
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CarrierAppointment $carrier_appointment carrier_appointment
      */
     public function setCarrierAppointment(?CarrierAppointment $carrier_appointment) : self
     {
@@ -357,7 +357,7 @@ class TransportationOption implements \ArrayAccess, \JsonSerializable, \Stringab
     /**
      * Sets quote.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Quote $quote quote
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Quote $quote quote
      */
     public function setQuote(?Quote $quote) : self
     {

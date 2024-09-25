@@ -38,8 +38,8 @@ class ListDeliveryWindowOptionsResponse implements \ArrayAccess, \JsonSerializab
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'delivery_window_options' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\DeliveryWindowOption[]',
-        'pagination' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pagination',
+        'delivery_window_options' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\DeliveryWindowOption[]',
+        'pagination' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination',
     ];
 
     /**
@@ -185,7 +185,7 @@ class ListDeliveryWindowOptionsResponse implements \ArrayAccess, \JsonSerializab
     /**
      * Gets delivery_window_options.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\DeliveryWindowOption[]
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\DeliveryWindowOption[]
      */
     public function getDeliveryWindowOptions() : array
     {
@@ -195,7 +195,7 @@ class ListDeliveryWindowOptionsResponse implements \ArrayAccess, \JsonSerializab
     /**
      * Sets delivery_window_options.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\DeliveryWindowOption[] $delivery_window_options delivery window options generated for the placement option
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\DeliveryWindowOption[] $delivery_window_options delivery window options generated for the placement option
      */
     public function setDeliveryWindowOptions(array $delivery_window_options) : self
     {
@@ -215,7 +215,7 @@ class ListDeliveryWindowOptionsResponse implements \ArrayAccess, \JsonSerializab
     /**
      * Sets pagination.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pagination $pagination pagination
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination $pagination pagination
      */
     public function setPagination(?Pagination $pagination) : self
     {

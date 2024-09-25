@@ -38,8 +38,8 @@ class ListShipmentPalletsResponse implements \ArrayAccess, \JsonSerializable, \S
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'pagination' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pagination',
-        'pallets' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pallet[]',
+        'pagination' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination',
+        'pallets' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pallet[]',
     ];
 
     /**
@@ -193,7 +193,7 @@ class ListShipmentPalletsResponse implements \ArrayAccess, \JsonSerializable, \S
     /**
      * Sets pagination.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pagination $pagination pagination
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination $pagination pagination
      */
     public function setPagination(?Pagination $pagination) : self
     {
@@ -205,7 +205,7 @@ class ListShipmentPalletsResponse implements \ArrayAccess, \JsonSerializable, \S
     /**
      * Gets pallets.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pallet[]
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pallet[]
      */
     public function getPallets() : array
     {
@@ -215,7 +215,7 @@ class ListShipmentPalletsResponse implements \ArrayAccess, \JsonSerializable, \S
     /**
      * Sets pallets.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pallet[] $pallets the pallets in a shipment
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pallet[] $pallets the pallets in a shipment
      */
     public function setPallets(array $pallets) : self
     {

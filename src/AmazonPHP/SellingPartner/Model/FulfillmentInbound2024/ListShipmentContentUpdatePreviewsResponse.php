@@ -38,8 +38,8 @@ class ListShipmentContentUpdatePreviewsResponse implements \ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'content_update_previews' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ContentUpdatePreview[]',
-        'pagination' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pagination',
+        'content_update_previews' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ContentUpdatePreview[]',
+        'pagination' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination',
     ];
 
     /**
@@ -185,7 +185,7 @@ class ListShipmentContentUpdatePreviewsResponse implements \ArrayAccess, \JsonSe
     /**
      * Gets content_update_previews.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\ContentUpdatePreview[]
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ContentUpdatePreview[]
      */
     public function getContentUpdatePreviews() : array
     {
@@ -195,7 +195,7 @@ class ListShipmentContentUpdatePreviewsResponse implements \ArrayAccess, \JsonSe
     /**
      * Sets content_update_previews.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\ContentUpdatePreview[] $content_update_previews a list of content update previews in a shipment
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ContentUpdatePreview[] $content_update_previews a list of content update previews in a shipment
      */
     public function setContentUpdatePreviews(array $content_update_previews) : self
     {
@@ -215,7 +215,7 @@ class ListShipmentContentUpdatePreviewsResponse implements \ArrayAccess, \JsonSe
     /**
      * Sets pagination.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pagination $pagination pagination
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination $pagination pagination
      */
     public function setPagination(?Pagination $pagination) : self
     {

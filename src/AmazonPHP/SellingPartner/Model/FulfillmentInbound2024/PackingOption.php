@@ -38,13 +38,13 @@ class PackingOption implements \ArrayAccess, \JsonSerializable, \Stringable, Ful
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'discounts' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Incentive[]',
+        'discounts' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Incentive[]',
         'expiration' => '\DateTimeInterface',
-        'fees' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Incentive[]',
+        'fees' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Incentive[]',
         'packing_groups' => 'string[]',
         'packing_option_id' => 'string',
         'status' => 'string',
-        'supported_shipping_configurations' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShippingConfiguration[]',
+        'supported_shipping_configurations' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShippingConfiguration[]',
     ];
 
     /**
@@ -251,7 +251,7 @@ class PackingOption implements \ArrayAccess, \JsonSerializable, \Stringable, Ful
     /**
      * Gets discounts.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Incentive[]
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Incentive[]
      */
     public function getDiscounts() : array
     {
@@ -261,7 +261,7 @@ class PackingOption implements \ArrayAccess, \JsonSerializable, \Stringable, Ful
     /**
      * Sets discounts.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Incentive[] $discounts discount for the offered option
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Incentive[] $discounts discount for the offered option
      */
     public function setDiscounts(array $discounts) : self
     {
@@ -293,7 +293,7 @@ class PackingOption implements \ArrayAccess, \JsonSerializable, \Stringable, Ful
     /**
      * Gets fees.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Incentive[]
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Incentive[]
      */
     public function getFees() : array
     {
@@ -303,7 +303,7 @@ class PackingOption implements \ArrayAccess, \JsonSerializable, \Stringable, Ful
     /**
      * Sets fees.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Incentive[] $fees fee for the offered option
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Incentive[] $fees fee for the offered option
      */
     public function setFees(array $fees) : self
     {
@@ -377,7 +377,7 @@ class PackingOption implements \ArrayAccess, \JsonSerializable, \Stringable, Ful
     /**
      * Gets supported_shipping_configurations.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShippingConfiguration[]
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShippingConfiguration[]
      */
     public function getSupportedShippingConfigurations() : array
     {
@@ -387,7 +387,7 @@ class PackingOption implements \ArrayAccess, \JsonSerializable, \Stringable, Ful
     /**
      * Sets supported_shipping_configurations.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShippingConfiguration[] $supported_shipping_configurations list of supported shipping modes
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShippingConfiguration[] $supported_shipping_configurations list of supported shipping modes
      */
     public function setSupportedShippingConfigurations(array $supported_shipping_configurations) : self
     {

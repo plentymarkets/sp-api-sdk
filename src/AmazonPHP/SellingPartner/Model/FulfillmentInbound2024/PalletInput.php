@@ -38,10 +38,10 @@ class PalletInput implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfi
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'dimensions' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions',
+        'dimensions' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Dimensions',
         'quantity' => 'int',
-        'stackability' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Stackability',
-        'weight' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight',
+        'stackability' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Stackability',
+        'weight' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Weight',
     ];
 
     /**
@@ -217,7 +217,7 @@ class PalletInput implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfi
     /**
      * Sets dimensions.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions $dimensions dimensions
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Dimensions $dimensions dimensions
      */
     public function setDimensions(?Dimensions $dimensions) : self
     {
@@ -257,7 +257,7 @@ class PalletInput implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfi
     /**
      * Sets stackability.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Stackability $stackability stackability
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Stackability $stackability stackability
      */
     public function setStackability(?Stackability $stackability) : self
     {
@@ -277,7 +277,7 @@ class PalletInput implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfi
     /**
      * Sets weight.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight $weight weight
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Weight $weight weight
      */
     public function setWeight(?Weight $weight) : self
     {

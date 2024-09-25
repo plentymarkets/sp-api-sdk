@@ -38,7 +38,7 @@ class UpdateShipmentTrackingDetailsRequest implements \ArrayAccess, \JsonSeriali
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'tracking_details' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TrackingDetailsInput',
+        'tracking_details' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TrackingDetailsInput',
     ];
 
     /**
@@ -185,7 +185,7 @@ class UpdateShipmentTrackingDetailsRequest implements \ArrayAccess, \JsonSeriali
     /**
      * Sets tracking_details.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\TrackingDetailsInput $tracking_details tracking_details
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TrackingDetailsInput $tracking_details tracking_details
      */
     public function setTrackingDetails(TrackingDetailsInput $tracking_details) : self
     {

@@ -38,7 +38,7 @@ class ConfirmTransportationOptionsRequest implements \ArrayAccess, \JsonSerializ
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'transportation_selections' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportationSelection[]',
+        'transportation_selections' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TransportationSelection[]',
     ];
 
     /**
@@ -179,7 +179,7 @@ class ConfirmTransportationOptionsRequest implements \ArrayAccess, \JsonSerializ
     /**
      * Gets transportation_selections.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportationSelection[]
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TransportationSelection[]
      */
     public function getTransportationSelections() : array
     {
@@ -189,7 +189,7 @@ class ConfirmTransportationOptionsRequest implements \ArrayAccess, \JsonSerializ
     /**
      * Sets transportation_selections.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\TransportationSelection[] $transportation_selections information needed to confirm one of the available transportation options
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TransportationSelection[] $transportation_selections information needed to confirm one of the available transportation options
      */
     public function setTransportationSelections(array $transportation_selections) : self
     {

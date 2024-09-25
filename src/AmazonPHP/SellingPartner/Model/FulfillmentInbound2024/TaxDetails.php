@@ -38,9 +38,9 @@ class TaxDetails implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfil
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'declared_value' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Currency',
+        'declared_value' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Currency',
         'hsn_code' => 'string',
-        'tax_rates' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TaxRate[]',
+        'tax_rates' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TaxRate[]',
     ];
 
     /**
@@ -203,7 +203,7 @@ class TaxDetails implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfil
     /**
      * Sets declared_value.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Currency $declared_value declared_value
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Currency $declared_value declared_value
      */
     public function setDeclaredValue(?Currency $declared_value) : self
     {
@@ -235,7 +235,7 @@ class TaxDetails implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfil
     /**
      * Gets tax_rates.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TaxRate[]
+     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TaxRate[]
      */
     public function getTaxRates() : ?array
     {
@@ -245,7 +245,7 @@ class TaxDetails implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfil
     /**
      * Sets tax_rates.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\TaxRate[] $tax_rates list of tax rates
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TaxRate[] $tax_rates list of tax rates
      */
     public function setTaxRates(?array $tax_rates) : self
     {

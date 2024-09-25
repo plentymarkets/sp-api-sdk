@@ -38,8 +38,8 @@ class ListInboundPlansResponse implements \ArrayAccess, \JsonSerializable, \Stri
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'inbound_plans' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundPlanSummary[]',
-        'pagination' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pagination',
+        'inbound_plans' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\InboundPlanSummary[]',
+        'pagination' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination',
     ];
 
     /**
@@ -181,7 +181,7 @@ class ListInboundPlansResponse implements \ArrayAccess, \JsonSerializable, \Stri
     /**
      * Gets inbound_plans.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundPlanSummary[]
+     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\InboundPlanSummary[]
      */
     public function getInboundPlans() : ?array
     {
@@ -191,7 +191,7 @@ class ListInboundPlansResponse implements \ArrayAccess, \JsonSerializable, \Stri
     /**
      * Sets inbound_plans.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\InboundPlanSummary[] $inbound_plans a list of inbound plans with minimal information
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\InboundPlanSummary[] $inbound_plans a list of inbound plans with minimal information
      */
     public function setInboundPlans(?array $inbound_plans) : self
     {
@@ -211,7 +211,7 @@ class ListInboundPlansResponse implements \ArrayAccess, \JsonSerializable, \Stri
     /**
      * Sets pagination.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pagination $pagination pagination
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination $pagination pagination
      */
     public function setPagination(?Pagination $pagination) : self
     {

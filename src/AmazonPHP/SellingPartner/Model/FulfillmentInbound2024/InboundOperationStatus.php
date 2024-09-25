@@ -40,8 +40,8 @@ class InboundOperationStatus implements \ArrayAccess, \JsonSerializable, \String
     protected static array $openAPITypes = [
         'operation' => 'string',
         'operation_id' => 'string',
-        'operation_problems' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\OperationProblem[]',
-        'operation_status' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\OperationStatus',
+        'operation_problems' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\OperationProblem[]',
+        'operation_status' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\OperationStatus',
     ];
 
     /**
@@ -265,7 +265,7 @@ class InboundOperationStatus implements \ArrayAccess, \JsonSerializable, \String
     /**
      * Gets operation_problems.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\OperationProblem[]
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\OperationProblem[]
      */
     public function getOperationProblems() : array
     {
@@ -275,7 +275,7 @@ class InboundOperationStatus implements \ArrayAccess, \JsonSerializable, \String
     /**
      * Sets operation_problems.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\OperationProblem[] $operation_problems the problems in the processing of the asynchronous operation
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\OperationProblem[] $operation_problems the problems in the processing of the asynchronous operation
      */
     public function setOperationProblems(array $operation_problems) : self
     {
@@ -295,7 +295,7 @@ class InboundOperationStatus implements \ArrayAccess, \JsonSerializable, \String
     /**
      * Sets operation_status.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\OperationStatus $operation_status operation_status
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\OperationStatus $operation_status operation_status
      */
     public function setOperationStatus(OperationStatus $operation_status) : self
     {

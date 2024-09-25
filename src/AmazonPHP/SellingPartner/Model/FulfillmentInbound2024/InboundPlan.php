@@ -43,10 +43,10 @@ class InboundPlan implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfi
         'last_updated_at' => '\DateTimeInterface',
         'marketplace_ids' => 'string[]',
         'name' => 'string',
-        'packing_options' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PackingOptionSummary[]',
-        'placement_options' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PlacementOptionSummary[]',
-        'shipments' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentSummary[]',
-        'source_address' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Address',
+        'packing_options' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PackingOptionSummary[]',
+        'placement_options' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PlacementOptionSummary[]',
+        'shipments' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShipmentSummary[]',
+        'source_address' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Address',
         'status' => 'string',
     ];
 
@@ -377,7 +377,7 @@ class InboundPlan implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfi
     /**
      * Gets packing_options.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PackingOptionSummary[]
+     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PackingOptionSummary[]
      */
     public function getPackingOptions() : ?array
     {
@@ -387,7 +387,7 @@ class InboundPlan implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfi
     /**
      * Sets packing_options.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PackingOptionSummary[] $packing_options Packing options for the inbound plan. This property will be populated when it has been generated via the corresponding operation. If there is a chosen placement option, only packing options for that placement option will be returned. If there are confirmed shipments, only packing options for those shipments will be returned. Query the packing option for more details.
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PackingOptionSummary[] $packing_options Packing options for the inbound plan. This property will be populated when it has been generated via the corresponding operation. If there is a chosen placement option, only packing options for that placement option will be returned. If there are confirmed shipments, only packing options for those shipments will be returned. Query the packing option for more details.
      */
     public function setPackingOptions(?array $packing_options) : self
     {
@@ -399,7 +399,7 @@ class InboundPlan implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfi
     /**
      * Gets placement_options.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PlacementOptionSummary[]
+     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PlacementOptionSummary[]
      */
     public function getPlacementOptions() : ?array
     {
@@ -409,7 +409,7 @@ class InboundPlan implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfi
     /**
      * Sets placement_options.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PlacementOptionSummary[] $placement_options Placement options for the inbound plan. This property will be populated when it has been generated via the corresponding operation. If there is a chosen placement option, that will be the only returned option. Query the placement option for more details.
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PlacementOptionSummary[] $placement_options Placement options for the inbound plan. This property will be populated when it has been generated via the corresponding operation. If there is a chosen placement option, that will be the only returned option. Query the placement option for more details.
      */
     public function setPlacementOptions(?array $placement_options) : self
     {
@@ -421,7 +421,7 @@ class InboundPlan implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfi
     /**
      * Gets shipments.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentSummary[]
+     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShipmentSummary[]
      */
     public function getShipments() : ?array
     {
@@ -431,7 +431,7 @@ class InboundPlan implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfi
     /**
      * Sets shipments.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ShipmentSummary[] $shipments Shipment IDs for the inbound plan. This property will be populated when it has been generated via the corresponding operation. If there is a chosen placement option, only shipments for that option will be returned. If there are confirmed shipments, only those shipments will be returned. Query the shipment for more details.
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShipmentSummary[] $shipments Shipment IDs for the inbound plan. This property will be populated when it has been generated via the corresponding operation. If there is a chosen placement option, only shipments for that option will be returned. If there are confirmed shipments, only those shipments will be returned. Query the shipment for more details.
      */
     public function setShipments(?array $shipments) : self
     {
@@ -451,7 +451,7 @@ class InboundPlan implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfi
     /**
      * Sets source_address.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Address $source_address source_address
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Address $source_address source_address
      */
     public function setSourceAddress(Address $source_address) : self
     {

@@ -38,8 +38,8 @@ class ListPackingOptionsResponse implements \ArrayAccess, \JsonSerializable, \St
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'packing_options' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PackingOption[]',
-        'pagination' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pagination',
+        'packing_options' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PackingOption[]',
+        'pagination' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination',
     ];
 
     /**
@@ -185,7 +185,7 @@ class ListPackingOptionsResponse implements \ArrayAccess, \JsonSerializable, \St
     /**
      * Gets packing_options.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PackingOption[]
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PackingOption[]
      */
     public function getPackingOptions() : array
     {
@@ -195,7 +195,7 @@ class ListPackingOptionsResponse implements \ArrayAccess, \JsonSerializable, \St
     /**
      * Sets packing_options.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PackingOption[] $packing_options list of packing options
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PackingOption[] $packing_options list of packing options
      */
     public function setPackingOptions(array $packing_options) : self
     {
@@ -215,7 +215,7 @@ class ListPackingOptionsResponse implements \ArrayAccess, \JsonSerializable, \St
     /**
      * Sets pagination.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Pagination $pagination pagination
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination $pagination pagination
      */
     public function setPagination(?Pagination $pagination) : self
     {

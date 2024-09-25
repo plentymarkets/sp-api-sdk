@@ -39,14 +39,14 @@ class Box implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentIn
      */
     protected static array $openAPITypes = [
         'box_id' => 'string',
-        'content_information_source' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BoxContentInformationSource',
-        'destination_region' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Region',
-        'dimensions' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions',
-        'items' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Item[]',
+        'content_information_source' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxContentInformationSource',
+        'destination_region' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Region',
+        'dimensions' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Dimensions',
+        'items' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Item[]',
         'package_id' => 'string',
         'quantity' => 'int',
         'template_name' => 'string',
-        'weight' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight',
+        'weight' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Weight',
     ];
 
     /**
@@ -299,7 +299,7 @@ class Box implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentIn
     /**
      * Sets content_information_source.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\BoxContentInformationSource $content_information_source content_information_source
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxContentInformationSource $content_information_source content_information_source
      */
     public function setContentInformationSource(?BoxContentInformationSource $content_information_source) : self
     {
@@ -319,7 +319,7 @@ class Box implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentIn
     /**
      * Sets destination_region.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Region $destination_region destination_region
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Region $destination_region destination_region
      */
     public function setDestinationRegion(?Region $destination_region) : self
     {
@@ -339,7 +339,7 @@ class Box implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentIn
     /**
      * Sets dimensions.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Dimensions $dimensions dimensions
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Dimensions $dimensions dimensions
      */
     public function setDimensions(?Dimensions $dimensions) : self
     {
@@ -351,7 +351,7 @@ class Box implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentIn
     /**
      * Gets items.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Item[]
+     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Item[]
      */
     public function getItems() : ?array
     {
@@ -361,7 +361,7 @@ class Box implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentIn
     /**
      * Sets items.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Item[] $items items contained within the box
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Item[] $items items contained within the box
      */
     public function setItems(?array $items) : self
     {
@@ -441,7 +441,7 @@ class Box implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentIn
     /**
      * Sets weight.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Weight $weight weight
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Weight $weight weight
      */
     public function setWeight(?Weight $weight) : self
     {

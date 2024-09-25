@@ -38,7 +38,7 @@ class SpdTrackingDetail implements \ArrayAccess, \JsonSerializable, \Stringable,
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'spd_tracking_items' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SpdTrackingItem[]',
+        'spd_tracking_items' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SpdTrackingItem[]',
     ];
 
     /**
@@ -172,7 +172,7 @@ class SpdTrackingDetail implements \ArrayAccess, \JsonSerializable, \Stringable,
     /**
      * Gets spd_tracking_items.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SpdTrackingItem[]
+     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SpdTrackingItem[]
      */
     public function getSpdTrackingItems() : ?array
     {
@@ -182,7 +182,7 @@ class SpdTrackingDetail implements \ArrayAccess, \JsonSerializable, \Stringable,
     /**
      * Sets spd_tracking_items.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\SpdTrackingItem[] $spd_tracking_items list of Small Parcel Delivery (SPD) tracking items
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SpdTrackingItem[] $spd_tracking_items list of Small Parcel Delivery (SPD) tracking items
      */
     public function setSpdTrackingItems(?array $spd_tracking_items) : self
     {

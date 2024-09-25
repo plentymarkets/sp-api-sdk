@@ -38,9 +38,9 @@ class PlacementOption implements \ArrayAccess, \JsonSerializable, \Stringable, F
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'discounts' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Incentive[]',
+        'discounts' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Incentive[]',
         'expiration' => '\DateTimeInterface',
-        'fees' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\Incentive[]',
+        'fees' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Incentive[]',
         'placement_option_id' => 'string',
         'shipment_ids' => 'string[]',
         'status' => 'string',
@@ -241,7 +241,7 @@ class PlacementOption implements \ArrayAccess, \JsonSerializable, \Stringable, F
     /**
      * Gets discounts.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Incentive[]
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Incentive[]
      */
     public function getDiscounts() : array
     {
@@ -251,7 +251,7 @@ class PlacementOption implements \ArrayAccess, \JsonSerializable, \Stringable, F
     /**
      * Sets discounts.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Incentive[] $discounts discount for the offered option
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Incentive[] $discounts discount for the offered option
      */
     public function setDiscounts(array $discounts) : self
     {
@@ -283,7 +283,7 @@ class PlacementOption implements \ArrayAccess, \JsonSerializable, \Stringable, F
     /**
      * Gets fees.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Incentive[]
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Incentive[]
      */
     public function getFees() : array
     {
@@ -293,7 +293,7 @@ class PlacementOption implements \ArrayAccess, \JsonSerializable, \Stringable, F
     /**
      * Sets fees.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\Incentive[] $fees fee for the offered option
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Incentive[] $fees fee for the offered option
      */
     public function setFees(array $fees) : self
     {

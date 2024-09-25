@@ -38,7 +38,7 @@ class TransportationSelection implements \ArrayAccess, \JsonSerializable, \Strin
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'contact_information' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ContactInformation',
+        'contact_information' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ContactInformation',
         'shipment_id' => 'string',
         'transportation_option_id' => 'string',
     ];
@@ -227,7 +227,7 @@ class TransportationSelection implements \ArrayAccess, \JsonSerializable, \Strin
     /**
      * Sets contact_information.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ContactInformation $contact_information contact_information
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ContactInformation $contact_information contact_information
      */
     public function setContactInformation(?ContactInformation $contact_information) : self
     {

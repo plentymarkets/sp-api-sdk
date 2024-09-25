@@ -39,10 +39,10 @@ class ItemInput implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfill
      */
     protected static array $openAPITypes = [
         'expiration' => 'string',
-        'label_owner' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\LabelOwner',
+        'label_owner' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\LabelOwner',
         'manufacturing_lot_code' => 'string',
         'msku' => 'string',
-        'prep_owner' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepOwner',
+        'prep_owner' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PrepOwner',
         'quantity' => 'int',
     ];
 
@@ -273,7 +273,7 @@ class ItemInput implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfill
     /**
      * Sets label_owner.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\LabelOwner $label_owner label_owner
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\LabelOwner $label_owner label_owner
      */
     public function setLabelOwner(LabelOwner $label_owner) : self
     {
@@ -333,7 +333,7 @@ class ItemInput implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfill
     /**
      * Sets prep_owner.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepOwner $prep_owner prep_owner
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PrepOwner $prep_owner prep_owner
      */
     public function setPrepOwner(PrepOwner $prep_owner) : self
     {

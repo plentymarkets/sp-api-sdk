@@ -38,10 +38,10 @@ class ShipmentTransportationConfiguration implements \ArrayAccess, \JsonSerializ
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'contact_information' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ContactInformation',
-        'freight_information' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\FreightInformation',
-        'pallets' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PalletInput[]',
-        'ready_to_ship_window' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\WindowInput',
+        'contact_information' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ContactInformation',
+        'freight_information' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\FreightInformation',
+        'pallets' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PalletInput[]',
+        'ready_to_ship_window' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\WindowInput',
         'shipment_id' => 'string',
     ];
 
@@ -233,7 +233,7 @@ class ShipmentTransportationConfiguration implements \ArrayAccess, \JsonSerializ
     /**
      * Sets contact_information.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ContactInformation $contact_information contact_information
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ContactInformation $contact_information contact_information
      */
     public function setContactInformation(?ContactInformation $contact_information) : self
     {
@@ -253,7 +253,7 @@ class ShipmentTransportationConfiguration implements \ArrayAccess, \JsonSerializ
     /**
      * Sets freight_information.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\FreightInformation $freight_information freight_information
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\FreightInformation $freight_information freight_information
      */
     public function setFreightInformation(?FreightInformation $freight_information) : self
     {
@@ -265,7 +265,7 @@ class ShipmentTransportationConfiguration implements \ArrayAccess, \JsonSerializ
     /**
      * Gets pallets.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PalletInput[]
+     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PalletInput[]
      */
     public function getPallets() : ?array
     {
@@ -275,7 +275,7 @@ class ShipmentTransportationConfiguration implements \ArrayAccess, \JsonSerializ
     /**
      * Sets pallets.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PalletInput[] $pallets list of pallet configuration inputs
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PalletInput[] $pallets list of pallet configuration inputs
      */
     public function setPallets(?array $pallets) : self
     {
@@ -295,7 +295,7 @@ class ShipmentTransportationConfiguration implements \ArrayAccess, \JsonSerializ
     /**
      * Sets ready_to_ship_window.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\WindowInput $ready_to_ship_window ready_to_ship_window
+     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\WindowInput $ready_to_ship_window ready_to_ship_window
      */
     public function setReadyToShipWindow(WindowInput $ready_to_ship_window) : self
     {

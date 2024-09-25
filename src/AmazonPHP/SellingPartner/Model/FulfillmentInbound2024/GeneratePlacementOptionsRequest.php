@@ -38,7 +38,7 @@ class GeneratePlacementOptionsRequest implements \ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'custom_placement' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\CustomPlacementInput[]',
+        'custom_placement' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CustomPlacementInput[]',
     ];
 
     /**
@@ -172,7 +172,7 @@ class GeneratePlacementOptionsRequest implements \ArrayAccess, \JsonSerializable
     /**
      * Gets custom_placement.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\CustomPlacementInput[]
+     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CustomPlacementInput[]
      */
     public function getCustomPlacement() : ?array
     {
@@ -182,7 +182,7 @@ class GeneratePlacementOptionsRequest implements \ArrayAccess, \JsonSerializable
     /**
      * Sets custom_placement.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound\CustomPlacementInput[] $custom_placement custom placement options to be added to the plan
+     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CustomPlacementInput[] $custom_placement custom placement options to be added to the plan
      */
     public function setCustomPlacement(?array $custom_placement) : self
     {
