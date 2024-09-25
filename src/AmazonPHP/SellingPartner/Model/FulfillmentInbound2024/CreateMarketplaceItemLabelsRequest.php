@@ -39,11 +39,11 @@ class CreateMarketplaceItemLabelsRequest implements \ArrayAccess, \JsonSerializa
      */
     protected static array $openAPITypes = [
         'height' => 'float',
-        'label_type' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\LabelPrintType',
+        'label_type' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\LabelPrintType',
         'locale_code' => 'string',
         'marketplace_id' => 'string',
-        'msku_quantities' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\MskuQuantity[]',
-        'page_type' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\ItemLabelPageType',
+        'msku_quantities' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\MskuQuantity[]',
+        'page_type' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemLabelPageType',
         'width' => 'float',
     ];
 

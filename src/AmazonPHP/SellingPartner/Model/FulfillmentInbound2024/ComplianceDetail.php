@@ -41,7 +41,7 @@ class ComplianceDetail implements \ArrayAccess, \JsonSerializable, \Stringable, 
         'asin' => 'string',
         'fnsku' => 'string',
         'msku' => 'string',
-        'tax_details' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\TaxDetails',
+        'tax_details' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TaxDetails',
     ];
 
     /**

@@ -38,7 +38,7 @@ class UpdateShipmentSourceAddressRequest implements \ArrayAccess, \JsonSerializa
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'address' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\AddressInput',
+        'address' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\AddressInput',
     ];
 
     /**

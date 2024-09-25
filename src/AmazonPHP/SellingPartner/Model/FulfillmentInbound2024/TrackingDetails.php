@@ -38,8 +38,8 @@ class TrackingDetails implements \ArrayAccess, \JsonSerializable, \Stringable, F
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'ltl_tracking_detail' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\LtlTrackingDetail',
-        'spd_tracking_detail' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\SpdTrackingDetail',
+        'ltl_tracking_detail' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\LtlTrackingDetail',
+        'spd_tracking_detail' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SpdTrackingDetail',
     ];
 
     /**

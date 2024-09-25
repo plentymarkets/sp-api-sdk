@@ -38,7 +38,7 @@ class ScheduleSelfShipAppointmentResponse implements \ArrayAccess, \JsonSerializ
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'self_ship_appointment_details' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\SelfShipAppointmentDetails',
+        'self_ship_appointment_details' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SelfShipAppointmentDetails',
     ];
 
     /**

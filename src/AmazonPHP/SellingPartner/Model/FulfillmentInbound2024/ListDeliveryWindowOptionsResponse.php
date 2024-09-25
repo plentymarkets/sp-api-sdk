@@ -38,8 +38,8 @@ class ListDeliveryWindowOptionsResponse implements \ArrayAccess, \JsonSerializab
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'delivery_window_options' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\DeliveryWindowOption[]',
-        'pagination' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Pagination',
+        'delivery_window_options' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\DeliveryWindowOption[]',
+        'pagination' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination',
     ];
 
     /**

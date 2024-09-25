@@ -38,8 +38,8 @@ class ListTransportationOptionsResponse implements \ArrayAccess, \JsonSerializab
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'pagination' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Pagination',
-        'transportation_options' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\TransportationOption[]',
+        'pagination' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination',
+        'transportation_options' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TransportationOption[]',
     ];
 
     /**

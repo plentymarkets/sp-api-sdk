@@ -38,12 +38,12 @@ class BoxUpdateInput implements \ArrayAccess, \JsonSerializable, \Stringable, Fu
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'content_information_source' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\BoxContentInformationSource',
-        'dimensions' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Dimensions',
-        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\ItemInput[]',
+        'content_information_source' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxContentInformationSource',
+        'dimensions' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Dimensions',
+        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[]',
         'package_id' => 'string',
         'quantity' => 'int',
-        'weight' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Weight',
+        'weight' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Weight',
     ];
 
     /**

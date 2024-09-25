@@ -38,7 +38,7 @@ class ListItemComplianceDetailsResponse implements \ArrayAccess, \JsonSerializab
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'compliance_details' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\ComplianceDetail[]',
+        'compliance_details' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ComplianceDetail[]',
     ];
 
     /**

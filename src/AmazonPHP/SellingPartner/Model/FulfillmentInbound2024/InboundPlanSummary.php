@@ -43,7 +43,7 @@ class InboundPlanSummary implements \ArrayAccess, \JsonSerializable, \Stringable
         'last_updated_at' => '\DateTimeInterface',
         'marketplace_ids' => 'string[]',
         'name' => 'string',
-        'source_address' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Address',
+        'source_address' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Address',
         'status' => 'string',
     ];
 

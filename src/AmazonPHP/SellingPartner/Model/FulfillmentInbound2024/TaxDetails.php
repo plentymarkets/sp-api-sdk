@@ -38,9 +38,9 @@ class TaxDetails implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfil
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'declared_value' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Currency',
+        'declared_value' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Currency',
         'hsn_code' => 'string',
-        'tax_rates' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\TaxRate[]',
+        'tax_rates' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TaxRate[]',
     ];
 
     /**

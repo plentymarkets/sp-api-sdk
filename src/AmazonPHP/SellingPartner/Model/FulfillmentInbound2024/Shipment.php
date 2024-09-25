@@ -39,20 +39,20 @@ class Shipment implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillm
      */
     protected static array $openAPITypes = [
         'amazon_reference_id' => 'string',
-        'contact_information' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\ContactInformation',
-        'dates' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Dates',
-        'destination' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\ShipmentDestination',
-        'freight_information' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\FreightInformation',
+        'contact_information' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ContactInformation',
+        'dates' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Dates',
+        'destination' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShipmentDestination',
+        'freight_information' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\FreightInformation',
         'name' => 'string',
         'placement_option_id' => 'string',
-        'selected_delivery_window' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\SelectedDeliveryWindow',
+        'selected_delivery_window' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SelectedDeliveryWindow',
         'selected_transportation_option_id' => 'string',
-        'self_ship_appointment_details' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\SelfShipAppointmentDetails[]',
+        'self_ship_appointment_details' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SelfShipAppointmentDetails[]',
         'shipment_confirmation_id' => 'string',
         'shipment_id' => 'string',
-        'source' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\ShipmentSource',
+        'source' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShipmentSource',
         'status' => 'string',
-        'tracking_details' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\TrackingDetails',
+        'tracking_details' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TrackingDetails',
     ];
 
     /**

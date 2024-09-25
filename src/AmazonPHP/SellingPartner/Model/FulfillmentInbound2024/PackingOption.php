@@ -38,13 +38,13 @@ class PackingOption implements \ArrayAccess, \JsonSerializable, \Stringable, Ful
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'discounts' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Incentive[]',
+        'discounts' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Incentive[]',
         'expiration' => '\DateTimeInterface',
-        'fees' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Incentive[]',
+        'fees' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Incentive[]',
         'packing_groups' => 'string[]',
         'packing_option_id' => 'string',
         'status' => 'string',
-        'supported_shipping_configurations' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\ShippingConfiguration[]',
+        'supported_shipping_configurations' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShippingConfiguration[]',
     ];
 
     /**

@@ -38,7 +38,7 @@ class ErrorList implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfill
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Error[]',
+        'errors' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Error[]',
     ];
 
     /**

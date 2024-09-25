@@ -40,8 +40,8 @@ class InboundOperationStatus implements \ArrayAccess, \JsonSerializable, \String
     protected static array $openAPITypes = [
         'operation' => 'string',
         'operation_id' => 'string',
-        'operation_problems' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\OperationProblem[]',
-        'operation_status' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\OperationStatus',
+        'operation_problems' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\OperationProblem[]',
+        'operation_status' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\OperationStatus',
     ];
 
     /**

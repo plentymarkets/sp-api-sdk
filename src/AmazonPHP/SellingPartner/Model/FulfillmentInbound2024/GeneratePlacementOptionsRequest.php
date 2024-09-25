@@ -38,7 +38,7 @@ class GeneratePlacementOptionsRequest implements \ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'custom_placement' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\CustomPlacementInput[]',
+        'custom_placement' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CustomPlacementInput[]',
     ];
 
     /**

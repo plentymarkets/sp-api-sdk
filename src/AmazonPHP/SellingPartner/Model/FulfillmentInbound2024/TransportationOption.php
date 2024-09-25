@@ -38,10 +38,10 @@ class TransportationOption implements \ArrayAccess, \JsonSerializable, \Stringab
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'carrier' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Carrier',
-        'carrier_appointment' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\CarrierAppointment',
+        'carrier' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Carrier',
+        'carrier_appointment' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CarrierAppointment',
         'preconditions' => 'string[]',
-        'quote' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Quote',
+        'quote' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Quote',
         'shipment_id' => 'string',
         'shipping_mode' => 'string',
         'shipping_solution' => 'string',

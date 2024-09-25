@@ -41,7 +41,7 @@ class Incentive implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfill
         'description' => 'string',
         'target' => 'string',
         'type' => 'string',
-        'value' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Currency',
+        'value' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Currency',
     ];
 
     /**

@@ -38,7 +38,7 @@ class UpdateShipmentTrackingDetailsRequest implements \ArrayAccess, \JsonSeriali
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'tracking_details' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\TrackingDetailsInput',
+        'tracking_details' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TrackingDetailsInput',
     ];
 
     /**

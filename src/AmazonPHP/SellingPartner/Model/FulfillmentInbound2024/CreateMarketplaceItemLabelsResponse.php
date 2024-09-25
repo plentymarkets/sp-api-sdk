@@ -38,7 +38,7 @@ class CreateMarketplaceItemLabelsResponse implements \ArrayAccess, \JsonSerializ
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'document_downloads' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\DocumentDownload[]',
+        'document_downloads' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\DocumentDownload[]',
     ];
 
     /**

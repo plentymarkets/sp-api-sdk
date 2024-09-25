@@ -38,7 +38,7 @@ class Dates implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillment
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'ready_to_ship_window' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Window',
+        'ready_to_ship_window' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Window',
     ];
 
     /**

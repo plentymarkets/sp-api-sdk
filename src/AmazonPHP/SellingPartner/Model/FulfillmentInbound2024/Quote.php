@@ -38,7 +38,7 @@ class Quote implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillment
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'cost' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Currency',
+        'cost' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Currency',
         'expiration' => '\DateTimeInterface',
         'voidable_until' => '\DateTimeInterface',
     ];

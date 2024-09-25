@@ -43,10 +43,10 @@ class InboundPlan implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfi
         'last_updated_at' => '\DateTimeInterface',
         'marketplace_ids' => 'string[]',
         'name' => 'string',
-        'packing_options' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\PackingOptionSummary[]',
-        'placement_options' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\PlacementOptionSummary[]',
-        'shipments' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\ShipmentSummary[]',
-        'source_address' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Address',
+        'packing_options' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PackingOptionSummary[]',
+        'placement_options' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PlacementOptionSummary[]',
+        'shipments' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShipmentSummary[]',
+        'source_address' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Address',
         'status' => 'string',
     ];
 

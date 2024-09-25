@@ -38,8 +38,8 @@ class ListInboundPlansResponse implements \ArrayAccess, \JsonSerializable, \Stri
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'inbound_plans' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\InboundPlanSummary[]',
-        'pagination' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Pagination',
+        'inbound_plans' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\InboundPlanSummary[]',
+        'pagination' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination',
     ];
 
     /**

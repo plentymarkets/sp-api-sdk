@@ -38,7 +38,7 @@ class ShipmentDestination implements \ArrayAccess, \JsonSerializable, \Stringabl
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'address' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Address',
+        'address' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Address',
         'destination_type' => 'string',
         'warehouse_id' => 'string',
     ];

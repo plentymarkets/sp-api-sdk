@@ -38,10 +38,10 @@ class ShipmentTransportationConfiguration implements \ArrayAccess, \JsonSerializ
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'contact_information' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\ContactInformation',
-        'freight_information' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\FreightInformation',
-        'pallets' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\PalletInput[]',
-        'ready_to_ship_window' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\WindowInput',
+        'contact_information' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ContactInformation',
+        'freight_information' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\FreightInformation',
+        'pallets' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PalletInput[]',
+        'ready_to_ship_window' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\WindowInput',
         'shipment_id' => 'string',
     ];
 

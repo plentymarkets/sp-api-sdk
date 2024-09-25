@@ -40,8 +40,8 @@ class ContentUpdatePreview implements \ArrayAccess, \JsonSerializable, \Stringab
     protected static array $openAPITypes = [
         'content_update_preview_id' => 'string',
         'expiration' => 'string',
-        'requested_updates' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\RequestedUpdates',
-        'transportation_option' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\TransportationOption',
+        'requested_updates' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\RequestedUpdates',
+        'transportation_option' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TransportationOption',
     ];
 
     /**

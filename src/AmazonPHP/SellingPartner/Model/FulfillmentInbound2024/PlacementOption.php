@@ -38,9 +38,9 @@ class PlacementOption implements \ArrayAccess, \JsonSerializable, \Stringable, F
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'discounts' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Incentive[]',
+        'discounts' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Incentive[]',
         'expiration' => '\DateTimeInterface',
-        'fees' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Incentive[]',
+        'fees' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Incentive[]',
         'placement_option_id' => 'string',
         'shipment_ids' => 'string[]',
         'status' => 'string',

@@ -38,7 +38,7 @@ class SpdTrackingDetailInput implements \ArrayAccess, \JsonSerializable, \String
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'spd_tracking_items' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\SpdTrackingItemInput[]',
+        'spd_tracking_items' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SpdTrackingItemInput[]',
     ];
 
     /**

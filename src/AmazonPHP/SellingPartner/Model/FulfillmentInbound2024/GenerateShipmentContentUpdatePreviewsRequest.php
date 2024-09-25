@@ -38,8 +38,8 @@ class GenerateShipmentContentUpdatePreviewsRequest implements \ArrayAccess, \Jso
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'boxes' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\BoxUpdateInput[]',
-        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\ItemInput[]',
+        'boxes' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxUpdateInput[]',
+        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[]',
     ];
 
     /**
