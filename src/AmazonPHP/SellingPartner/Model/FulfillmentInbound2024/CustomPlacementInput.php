@@ -38,7 +38,7 @@ class CustomPlacementInput implements \ArrayAccess, \JsonSerializable, \Stringab
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'items' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[]',
+        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\ItemInput[]',
         'warehouse_id' => 'string',
     ];
 

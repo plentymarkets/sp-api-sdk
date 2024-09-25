@@ -39,7 +39,7 @@ class UpdateItemComplianceDetailsRequest implements \ArrayAccess, \JsonSerializa
      */
     protected static array $openAPITypes = [
         'msku' => 'string',
-        'tax_details' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TaxDetails',
+        'tax_details' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\TaxDetails',
     ];
 
     /**

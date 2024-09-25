@@ -39,9 +39,9 @@ class CreateInboundPlanRequest implements \ArrayAccess, \JsonSerializable, \Stri
      */
     protected static array $openAPITypes = [
         'destination_marketplaces' => 'string[]',
-        'items' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[]',
+        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\ItemInput[]',
         'name' => 'string',
-        'source_address' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\AddressInput',
+        'source_address' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\AddressInput',
     ];
 
     /**

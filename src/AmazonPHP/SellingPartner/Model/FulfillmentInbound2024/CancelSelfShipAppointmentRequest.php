@@ -38,7 +38,7 @@ class CancelSelfShipAppointmentRequest implements \ArrayAccess, \JsonSerializabl
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'reason_comment' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ReasonComment',
+        'reason_comment' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\ReasonComment',
     ];
 
     /**

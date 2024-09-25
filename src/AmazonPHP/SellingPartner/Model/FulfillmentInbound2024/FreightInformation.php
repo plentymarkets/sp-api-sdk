@@ -38,7 +38,7 @@ class FreightInformation implements \ArrayAccess, \JsonSerializable, \Stringable
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'declared_value' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Currency',
+        'declared_value' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Currency',
         'freight_class' => 'string',
     ];
 

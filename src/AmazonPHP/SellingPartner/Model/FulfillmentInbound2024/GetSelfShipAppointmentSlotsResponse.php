@@ -38,8 +38,8 @@ class GetSelfShipAppointmentSlotsResponse implements \ArrayAccess, \JsonSerializ
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'pagination' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination',
-        'self_ship_appointment_slots_availability' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SelfShipAppointmentSlotsAvailability',
+        'pagination' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Pagination',
+        'self_ship_appointment_slots_availability' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\SelfShipAppointmentSlotsAvailability',
     ];
 
     /**

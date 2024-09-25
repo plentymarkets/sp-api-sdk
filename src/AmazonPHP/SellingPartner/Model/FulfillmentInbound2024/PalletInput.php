@@ -38,10 +38,10 @@ class PalletInput implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfi
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'dimensions' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Dimensions',
+        'dimensions' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Dimensions',
         'quantity' => 'int',
-        'stackability' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Stackability',
-        'weight' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Weight',
+        'stackability' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Stackability',
+        'weight' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Weight',
     ];
 
     /**

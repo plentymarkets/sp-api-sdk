@@ -39,14 +39,14 @@ class Box implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentIn
      */
     protected static array $openAPITypes = [
         'box_id' => 'string',
-        'content_information_source' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxContentInformationSource',
-        'destination_region' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Region',
-        'dimensions' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Dimensions',
-        'items' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Item[]',
+        'content_information_source' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\BoxContentInformationSource',
+        'destination_region' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Region',
+        'dimensions' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Dimensions',
+        'items' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Item[]',
         'package_id' => 'string',
         'quantity' => 'int',
         'template_name' => 'string',
-        'weight' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Weight',
+        'weight' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Weight',
     ];
 
     /**

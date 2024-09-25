@@ -38,7 +38,7 @@ class PackageGroupingInput implements \ArrayAccess, \JsonSerializable, \Stringab
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'boxes' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxInput[]',
+        'boxes' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\BoxInput[]',
         'packing_group_id' => 'string',
         'shipment_id' => 'string',
     ];

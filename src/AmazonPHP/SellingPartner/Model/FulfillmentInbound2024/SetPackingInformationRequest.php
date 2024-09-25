@@ -38,7 +38,7 @@ class SetPackingInformationRequest implements \ArrayAccess, \JsonSerializable, \
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'package_groupings' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PackageGroupingInput[]',
+        'package_groupings' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\PackageGroupingInput[]',
     ];
 
     /**

@@ -38,8 +38,8 @@ class ListPackingOptionsResponse implements \ArrayAccess, \JsonSerializable, \St
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'packing_options' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PackingOption[]',
-        'pagination' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination',
+        'packing_options' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\PackingOption[]',
+        'pagination' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\Pagination',
     ];
 
     /**

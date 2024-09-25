@@ -39,7 +39,7 @@ class SelfShipAppointmentSlotsAvailability implements \ArrayAccess, \JsonSeriali
      */
     protected static array $openAPITypes = [
         'expires_at' => '\DateTimeInterface',
-        'slots' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\AppointmentSlot[]',
+        'slots' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\AppointmentSlot[]',
     ];
 
     /**

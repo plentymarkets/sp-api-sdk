@@ -38,7 +38,7 @@ class ConfirmTransportationOptionsRequest implements \ArrayAccess, \JsonSerializ
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'transportation_selections' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TransportationSelection[]',
+        'transportation_selections' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\TransportationSelection[]',
     ];
 
     /**

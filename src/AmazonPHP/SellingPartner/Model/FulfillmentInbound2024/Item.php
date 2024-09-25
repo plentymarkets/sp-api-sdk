@@ -44,7 +44,7 @@ class Item implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentI
         'label_owner' => 'string',
         'manufacturing_lot_code' => 'string',
         'msku' => 'string',
-        'prep_instructions' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PrepInstruction[]',
+        'prep_instructions' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\PrepInstruction[]',
         'quantity' => 'int',
     ];
 

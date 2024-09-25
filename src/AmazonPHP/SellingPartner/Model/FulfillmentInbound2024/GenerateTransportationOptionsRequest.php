@@ -39,7 +39,7 @@ class GenerateTransportationOptionsRequest implements \ArrayAccess, \JsonSeriali
      */
     protected static array $openAPITypes = [
         'placement_option_id' => 'string',
-        'shipment_transportation_configurations' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShipmentTransportationConfiguration[]',
+        'shipment_transportation_configurations' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\\ShipmentTransportationConfiguration[]',
     ];
 
     /**
