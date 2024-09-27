@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class ListShipmentContentUpdatePreviewsResponse implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class ListShipmentContentUpdatePreviewsResponse implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -171,21 +171,36 @@ class ListShipmentContentUpdatePreviewsResponse implements \ArrayAccess, \JsonSe
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+
         if ($this->container['content_update_previews'] === null) {
-            throw new AssertionException("'content_update_previews' can't be null");
+            $invalidProperties[] = "'content_update_previews' can't be null";
         }
 
         if ($this->container['pagination'] !== null) {
-            $this->container['pagination']->validate();
+            $this->container['pagination']->listInvalidProperties();
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
      * Gets content_update_previews.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ContentUpdatePreview[]
+     * @return ContentUpdatePreview[]
      */
     public function getContentUpdatePreviews() : array
     {
@@ -195,7 +210,7 @@ class ListShipmentContentUpdatePreviewsResponse implements \ArrayAccess, \JsonSe
     /**
      * Sets content_update_previews.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ContentUpdatePreview[] $content_update_previews a list of content update previews in a shipment
+     * @param ContentUpdatePreview[] $content_update_previews a list of content update previews in a shipment
      */
     public function setContentUpdatePreviews(array $content_update_previews) : self
     {
@@ -215,7 +230,7 @@ class ListShipmentContentUpdatePreviewsResponse implements \ArrayAccess, \JsonSe
     /**
      * Sets pagination.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination $pagination pagination
+     * @param null|Pagination $pagination pagination
      */
     public function setPagination(?Pagination $pagination) : self
     {

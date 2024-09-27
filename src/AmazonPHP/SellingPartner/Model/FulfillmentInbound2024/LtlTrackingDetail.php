@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class LtlTrackingDetail implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class LtlTrackingDetail implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -171,15 +171,30 @@ class LtlTrackingDetail implements \ArrayAccess, \JsonSerializable, \Stringable,
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if (null !== $this->container['bill_of_lading_number'] && (\mb_strlen((string) $this->container['bill_of_lading_number']) > 1024)) {
-            throw new AssertionException("invalid value for 'bill_of_lading_number', the character length must be smaller than or equal to 1024.");
+            $invalidProperties[] = "invalid value for 'bill_of_lading_number', the character length must be smaller than or equal to 1024.";
         }
 
         if (null !== $this->container['bill_of_lading_number'] && (\mb_strlen((string) $this->container['bill_of_lading_number']) < 1)) {
-            throw new AssertionException("invalid value for 'bill_of_lading_number', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'bill_of_lading_number', the character length must be bigger than or equal to 1.";
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**

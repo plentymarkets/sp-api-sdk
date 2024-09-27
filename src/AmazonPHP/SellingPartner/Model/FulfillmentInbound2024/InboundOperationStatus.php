@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class InboundOperationStatus implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class InboundOperationStatus implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -183,43 +183,58 @@ class InboundOperationStatus implements \ArrayAccess, \JsonSerializable, \String
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+
         if ($this->container['operation'] === null) {
-            throw new AssertionException("'operation' can't be null");
+            $invalidProperties[] = "'operation' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['operation']) > 1024)) {
-            throw new AssertionException("invalid value for 'operation', the character length must be smaller than or equal to 1024.");
+            $invalidProperties[] = "invalid value for 'operation', the character length must be smaller than or equal to 1024.";
         }
 
         if ((\mb_strlen((string) $this->container['operation']) < 1)) {
-            throw new AssertionException("invalid value for 'operation', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'operation', the character length must be bigger than or equal to 1.";
         }
 
         if ($this->container['operation_id'] === null) {
-            throw new AssertionException("'operation_id' can't be null");
+            $invalidProperties[] = "'operation_id' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['operation_id']) > 38)) {
-            throw new AssertionException("invalid value for 'operation_id', the character length must be smaller than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'operation_id', the character length must be smaller than or equal to 38.";
         }
 
         if ((\mb_strlen((string) $this->container['operation_id']) < 36)) {
-            throw new AssertionException("invalid value for 'operation_id', the character length must be bigger than or equal to 36.");
+            $invalidProperties[] = "invalid value for 'operation_id', the character length must be bigger than or equal to 36.";
         }
 
         if (!\preg_match('/^[a-zA-Z0-9-]*$/', (string) $this->container['operation_id'])) {
-            throw new AssertionException("invalid value for 'operation_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.");
+            $invalidProperties[] = "invalid value for 'operation_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.";
         }
 
         if ($this->container['operation_problems'] === null) {
-            throw new AssertionException("'operation_problems' can't be null");
+            $invalidProperties[] = "'operation_problems' can't be null";
         }
 
         if ($this->container['operation_status'] === null) {
-            throw new AssertionException("'operation_status' can't be null");
+            $invalidProperties[] = "'operation_status' can't be null";
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -265,7 +280,7 @@ class InboundOperationStatus implements \ArrayAccess, \JsonSerializable, \String
     /**
      * Gets operation_problems.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\OperationProblem[]
+     * @return OperationProblem[]
      */
     public function getOperationProblems() : array
     {
@@ -275,7 +290,7 @@ class InboundOperationStatus implements \ArrayAccess, \JsonSerializable, \String
     /**
      * Sets operation_problems.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\OperationProblem[] $operation_problems the problems in the processing of the asynchronous operation
+     * @param OperationProblem[] $operation_problems the problems in the processing of the asynchronous operation
      */
     public function setOperationProblems(array $operation_problems) : self
     {
@@ -295,7 +310,7 @@ class InboundOperationStatus implements \ArrayAccess, \JsonSerializable, \String
     /**
      * Sets operation_status.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\OperationStatus $operation_status operation_status
+     * @param OperationStatus $operation_status operation_status
      */
     public function setOperationStatus(OperationStatus $operation_status) : self
     {

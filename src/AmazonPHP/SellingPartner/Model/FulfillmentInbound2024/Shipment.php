@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class Shipment implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class Shipment implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -249,107 +249,122 @@ class Shipment implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillm
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+
         if (null !== $this->container['amazon_reference_id'] && (\mb_strlen((string) $this->container['amazon_reference_id']) > 1024)) {
-            throw new AssertionException("invalid value for 'amazon_reference_id', the character length must be smaller than or equal to 1024.");
+            $invalidProperties[] = "invalid value for 'amazon_reference_id', the character length must be smaller than or equal to 1024.";
         }
 
         if (null !== $this->container['amazon_reference_id'] && (\mb_strlen((string) $this->container['amazon_reference_id']) < 1)) {
-            throw new AssertionException("invalid value for 'amazon_reference_id', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'amazon_reference_id', the character length must be bigger than or equal to 1.";
         }
 
         if ($this->container['contact_information'] !== null) {
-            $this->container['contact_information']->validate();
+            $this->container['contact_information']->listInvalidProperties();
         }
 
         if ($this->container['dates'] !== null) {
-            $this->container['dates']->validate();
+            $this->container['dates']->listInvalidProperties();
         }
 
         if ($this->container['destination'] === null) {
-            throw new AssertionException("'destination' can't be null");
+            $invalidProperties[] = "'destination' can't be null";
         }
 
-        $this->container['destination']->validate();
+        $this->container['destination']->listInvalidProperties();
 
         if ($this->container['freight_information'] !== null) {
-            $this->container['freight_information']->validate();
+            $this->container['freight_information']->listInvalidProperties();
         }
 
         if ($this->container['placement_option_id'] === null) {
-            throw new AssertionException("'placement_option_id' can't be null");
+            $invalidProperties[] = "'placement_option_id' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['placement_option_id']) > 38)) {
-            throw new AssertionException("invalid value for 'placement_option_id', the character length must be smaller than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'placement_option_id', the character length must be smaller than or equal to 38.";
         }
 
         if ((\mb_strlen((string) $this->container['placement_option_id']) < 38)) {
-            throw new AssertionException("invalid value for 'placement_option_id', the character length must be bigger than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'placement_option_id', the character length must be bigger than or equal to 38.";
         }
 
         if (!\preg_match('/^[a-zA-Z0-9-]*$/', (string) $this->container['placement_option_id'])) {
-            throw new AssertionException("invalid value for 'placement_option_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.");
+            $invalidProperties[] = "invalid value for 'placement_option_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.";
         }
 
         if ($this->container['selected_delivery_window'] !== null) {
-            $this->container['selected_delivery_window']->validate();
+            $this->container['selected_delivery_window']->listInvalidProperties();
         }
 
         if (null !== $this->container['selected_transportation_option_id'] && (\mb_strlen((string) $this->container['selected_transportation_option_id']) > 38)) {
-            throw new AssertionException("invalid value for 'selected_transportation_option_id', the character length must be smaller than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'selected_transportation_option_id', the character length must be smaller than or equal to 38.";
         }
 
         if (null !== $this->container['selected_transportation_option_id'] && (\mb_strlen((string) $this->container['selected_transportation_option_id']) < 38)) {
-            throw new AssertionException("invalid value for 'selected_transportation_option_id', the character length must be bigger than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'selected_transportation_option_id', the character length must be bigger than or equal to 38.";
         }
 
         if (null !== $this->container['selected_transportation_option_id'] && !\preg_match('/^[a-zA-Z0-9-]*$/', (string) $this->container['selected_transportation_option_id'])) {
-            throw new AssertionException("invalid value for 'selected_transportation_option_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.");
+            $invalidProperties[] = "invalid value for 'selected_transportation_option_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.";
         }
 
         if (null !== $this->container['shipment_confirmation_id'] && (\mb_strlen((string) $this->container['shipment_confirmation_id']) > 1024)) {
-            throw new AssertionException("invalid value for 'shipment_confirmation_id', the character length must be smaller than or equal to 1024.");
+            $invalidProperties[] = "invalid value for 'shipment_confirmation_id', the character length must be smaller than or equal to 1024.";
         }
 
         if (null !== $this->container['shipment_confirmation_id'] && (\mb_strlen((string) $this->container['shipment_confirmation_id']) < 1)) {
-            throw new AssertionException("invalid value for 'shipment_confirmation_id', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'shipment_confirmation_id', the character length must be bigger than or equal to 1.";
         }
 
         if ($this->container['shipment_id'] === null) {
-            throw new AssertionException("'shipment_id' can't be null");
+            $invalidProperties[] = "'shipment_id' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['shipment_id']) > 38)) {
-            throw new AssertionException("invalid value for 'shipment_id', the character length must be smaller than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'shipment_id', the character length must be smaller than or equal to 38.";
         }
 
         if ((\mb_strlen((string) $this->container['shipment_id']) < 38)) {
-            throw new AssertionException("invalid value for 'shipment_id', the character length must be bigger than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'shipment_id', the character length must be bigger than or equal to 38.";
         }
 
         if (!\preg_match('/^[a-zA-Z0-9-]*$/', (string) $this->container['shipment_id'])) {
-            throw new AssertionException("invalid value for 'shipment_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.");
+            $invalidProperties[] = "invalid value for 'shipment_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.";
         }
 
         if ($this->container['source'] === null) {
-            throw new AssertionException("'source' can't be null");
+            $invalidProperties[] = "'source' can't be null";
         }
 
-        $this->container['source']->validate();
+        $this->container['source']->listInvalidProperties();
 
         if (null !== $this->container['status'] && (\mb_strlen((string) $this->container['status']) > 1024)) {
-            throw new AssertionException("invalid value for 'status', the character length must be smaller than or equal to 1024.");
+            $invalidProperties[] = "invalid value for 'status', the character length must be smaller than or equal to 1024.";
         }
 
         if (null !== $this->container['status'] && (\mb_strlen((string) $this->container['status']) < 1)) {
-            throw new AssertionException("invalid value for 'status', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'status', the character length must be bigger than or equal to 1.";
         }
 
         if ($this->container['tracking_details'] !== null) {
-            $this->container['tracking_details']->validate();
+            $this->container['tracking_details']->listInvalidProperties();
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -383,7 +398,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillm
     /**
      * Sets contact_information.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ContactInformation $contact_information contact_information
+     * @param null|ContactInformation $contact_information contact_information
      */
     public function setContactInformation(?ContactInformation $contact_information) : self
     {
@@ -403,7 +418,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillm
     /**
      * Sets dates.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Dates $dates dates
+     * @param null|Dates $dates dates
      */
     public function setDates(?Dates $dates) : self
     {
@@ -423,7 +438,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillm
     /**
      * Sets destination.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShipmentDestination $destination destination
+     * @param ShipmentDestination $destination destination
      */
     public function setDestination(ShipmentDestination $destination) : self
     {
@@ -443,7 +458,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillm
     /**
      * Sets freight_information.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\FreightInformation $freight_information freight_information
+     * @param null|FreightInformation $freight_information freight_information
      */
     public function setFreightInformation(?FreightInformation $freight_information) : self
     {
@@ -503,7 +518,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillm
     /**
      * Sets selected_delivery_window.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SelectedDeliveryWindow $selected_delivery_window selected_delivery_window
+     * @param null|SelectedDeliveryWindow $selected_delivery_window selected_delivery_window
      */
     public function setSelectedDeliveryWindow(?SelectedDeliveryWindow $selected_delivery_window) : self
     {
@@ -535,7 +550,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillm
     /**
      * Gets self_ship_appointment_details.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SelfShipAppointmentDetails[]
+     * @return null|SelfShipAppointmentDetails[]
      */
     public function getSelfShipAppointmentDetails() : ?array
     {
@@ -545,7 +560,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillm
     /**
      * Sets self_ship_appointment_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SelfShipAppointmentDetails[] $self_ship_appointment_details list of self ship appointment details
+     * @param null|SelfShipAppointmentDetails[] $self_ship_appointment_details list of self ship appointment details
      */
     public function setSelfShipAppointmentDetails(?array $self_ship_appointment_details) : self
     {
@@ -605,7 +620,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillm
     /**
      * Sets source.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShipmentSource $source source
+     * @param ShipmentSource $source source
      */
     public function setSource(ShipmentSource $source) : self
     {
@@ -645,7 +660,7 @@ class Shipment implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillm
     /**
      * Sets tracking_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TrackingDetails $tracking_details tracking_details
+     * @param null|TrackingDetails $tracking_details tracking_details
      */
     public function setTrackingDetails(?TrackingDetails $tracking_details) : self
     {

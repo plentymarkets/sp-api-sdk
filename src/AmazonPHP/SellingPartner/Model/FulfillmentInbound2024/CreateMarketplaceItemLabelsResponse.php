@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class CreateMarketplaceItemLabelsResponse implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class CreateMarketplaceItemLabelsResponse implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -165,17 +165,32 @@ class CreateMarketplaceItemLabelsResponse implements \ArrayAccess, \JsonSerializ
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['document_downloads'] === null) {
-            throw new AssertionException("'document_downloads' can't be null");
+            $invalidProperties[] = "'document_downloads' can't be null";
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
      * Gets document_downloads.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\DocumentDownload[]
+     * @return DocumentDownload[]
      */
     public function getDocumentDownloads() : array
     {
@@ -185,7 +200,7 @@ class CreateMarketplaceItemLabelsResponse implements \ArrayAccess, \JsonSerializ
     /**
      * Sets document_downloads.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\DocumentDownload[] $document_downloads resources to download the requested document
+     * @param DocumentDownload[] $document_downloads resources to download the requested document
      */
     public function setDocumentDownloads(array $document_downloads) : self
     {

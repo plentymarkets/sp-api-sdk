@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class GenerateTransportationOptionsRequest implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class GenerateTransportationOptionsRequest implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -171,31 +171,46 @@ class GenerateTransportationOptionsRequest implements \ArrayAccess, \JsonSeriali
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['placement_option_id'] === null) {
-            throw new AssertionException("'placement_option_id' can't be null");
+            $invalidProperties[] = "'placement_option_id' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['placement_option_id']) > 38)) {
-            throw new AssertionException("invalid value for 'placement_option_id', the character length must be smaller than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'placement_option_id', the character length must be smaller than or equal to 38.";
         }
 
         if ((\mb_strlen((string) $this->container['placement_option_id']) < 38)) {
-            throw new AssertionException("invalid value for 'placement_option_id', the character length must be bigger than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'placement_option_id', the character length must be bigger than or equal to 38.";
         }
 
         if (!\preg_match('/^[a-zA-Z0-9-]*$/', (string) $this->container['placement_option_id'])) {
-            throw new AssertionException("invalid value for 'placement_option_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.");
+            $invalidProperties[] = "invalid value for 'placement_option_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.";
         }
 
         if ($this->container['shipment_transportation_configurations'] === null) {
-            throw new AssertionException("'shipment_transportation_configurations' can't be null");
+            $invalidProperties[] = "'shipment_transportation_configurations' can't be null";
         }
 
         if ((\count($this->container['shipment_transportation_configurations']) < 1)) {
-            throw new AssertionException("invalid value for 'shipment_transportation_configurations', number of items must be greater than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'shipment_transportation_configurations', number of items must be greater than or equal to 1.";
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -221,7 +236,7 @@ class GenerateTransportationOptionsRequest implements \ArrayAccess, \JsonSeriali
     /**
      * Gets shipment_transportation_configurations.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShipmentTransportationConfiguration[]
+     * @return ShipmentTransportationConfiguration[]
      */
     public function getShipmentTransportationConfigurations() : array
     {
@@ -231,7 +246,7 @@ class GenerateTransportationOptionsRequest implements \ArrayAccess, \JsonSeriali
     /**
      * Sets shipment_transportation_configurations.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShipmentTransportationConfiguration[] $shipment_transportation_configurations list of shipment transportation configurations
+     * @param ShipmentTransportationConfiguration[] $shipment_transportation_configurations list of shipment transportation configurations
      */
     public function setShipmentTransportationConfigurations(array $shipment_transportation_configurations) : self
     {

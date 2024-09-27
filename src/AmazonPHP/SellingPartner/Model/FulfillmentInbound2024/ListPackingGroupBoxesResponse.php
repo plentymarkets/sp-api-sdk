@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class ListPackingGroupBoxesResponse implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class ListPackingGroupBoxesResponse implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -171,21 +171,36 @@ class ListPackingGroupBoxesResponse implements \ArrayAccess, \JsonSerializable, 
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['boxes'] === null) {
-            throw new AssertionException("'boxes' can't be null");
+            $invalidProperties[] = "'boxes' can't be null";
         }
 
         if ($this->container['pagination'] !== null) {
-            $this->container['pagination']->validate();
+            $this->container['pagination']->listInvalidProperties();
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
      * Gets boxes.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Box[]
+     * @return Box[]
      */
     public function getBoxes() : array
     {
@@ -195,7 +210,7 @@ class ListPackingGroupBoxesResponse implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets boxes.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Box[] $boxes provides the information about the list of boxes in the packing group
+     * @param Box[] $boxes provides the information about the list of boxes in the packing group
      */
     public function setBoxes(array $boxes) : self
     {
@@ -215,7 +230,7 @@ class ListPackingGroupBoxesResponse implements \ArrayAccess, \JsonSerializable, 
     /**
      * Sets pagination.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination $pagination pagination
+     * @param null|Pagination $pagination pagination
      */
     public function setPagination(?Pagination $pagination) : self
     {

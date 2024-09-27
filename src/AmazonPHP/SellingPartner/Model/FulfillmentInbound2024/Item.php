@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class Item implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class Item implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -207,83 +207,98 @@ class Item implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentI
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['asin'] === null) {
-            throw new AssertionException("'asin' can't be null");
+            $invalidProperties[] = "'asin' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['asin']) > 10)) {
-            throw new AssertionException("invalid value for 'asin', the character length must be smaller than or equal to 10.");
+            $invalidProperties[] = "invalid value for 'asin', the character length must be smaller than or equal to 10.";
         }
 
         if ((\mb_strlen((string) $this->container['asin']) < 1)) {
-            throw new AssertionException("invalid value for 'asin', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'asin', the character length must be bigger than or equal to 1.";
         }
 
         if (null !== $this->container['expiration'] && !\preg_match('/^([0-9]{4})-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/', (string) $this->container['expiration'])) {
-            throw new AssertionException("invalid value for 'expiration', must be conform to the pattern /^([0-9]{4})-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/.");
+            $invalidProperties[] = "invalid value for 'expiration', must be conform to the pattern /^([0-9]{4})-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/.";
         }
 
         if ($this->container['fnsku'] === null) {
-            throw new AssertionException("'fnsku' can't be null");
+            $invalidProperties[] = "'fnsku' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['fnsku']) > 10)) {
-            throw new AssertionException("invalid value for 'fnsku', the character length must be smaller than or equal to 10.");
+            $invalidProperties[] = "invalid value for 'fnsku', the character length must be smaller than or equal to 10.";
         }
 
         if ((\mb_strlen((string) $this->container['fnsku']) < 1)) {
-            throw new AssertionException("invalid value for 'fnsku', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'fnsku', the character length must be bigger than or equal to 1.";
         }
 
         if ($this->container['label_owner'] === null) {
-            throw new AssertionException("'label_owner' can't be null");
+            $invalidProperties[] = "'label_owner' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['label_owner']) > 1024)) {
-            throw new AssertionException("invalid value for 'label_owner', the character length must be smaller than or equal to 1024.");
+            $invalidProperties[] = "invalid value for 'label_owner', the character length must be smaller than or equal to 1024.";
         }
 
         if ((\mb_strlen((string) $this->container['label_owner']) < 1)) {
-            throw new AssertionException("invalid value for 'label_owner', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'label_owner', the character length must be bigger than or equal to 1.";
         }
 
         if (null !== $this->container['manufacturing_lot_code'] && (\mb_strlen((string) $this->container['manufacturing_lot_code']) > 256)) {
-            throw new AssertionException("invalid value for 'manufacturing_lot_code', the character length must be smaller than or equal to 256.");
+            $invalidProperties[] = "invalid value for 'manufacturing_lot_code', the character length must be smaller than or equal to 256.";
         }
 
         if (null !== $this->container['manufacturing_lot_code'] && (\mb_strlen((string) $this->container['manufacturing_lot_code']) < 1)) {
-            throw new AssertionException("invalid value for 'manufacturing_lot_code', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'manufacturing_lot_code', the character length must be bigger than or equal to 1.";
         }
 
         if ($this->container['msku'] === null) {
-            throw new AssertionException("'msku' can't be null");
+            $invalidProperties[] = "'msku' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['msku']) > 40)) {
-            throw new AssertionException("invalid value for 'msku', the character length must be smaller than or equal to 40.");
+            $invalidProperties[] = "invalid value for 'msku', the character length must be smaller than or equal to 40.";
         }
 
         if ((\mb_strlen((string) $this->container['msku']) < 1)) {
-            throw new AssertionException("invalid value for 'msku', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'msku', the character length must be bigger than or equal to 1.";
         }
 
         if ($this->container['prep_instructions'] === null) {
-            throw new AssertionException("'prep_instructions' can't be null");
+            $invalidProperties[] = "'prep_instructions' can't be null";
         }
 
         if ($this->container['quantity'] === null) {
-            throw new AssertionException("'quantity' can't be null");
+            $invalidProperties[] = "'quantity' can't be null";
         }
 
         if (($this->container['quantity'] > 10000)) {
-            throw new AssertionException("invalid value for 'quantity', must be smaller than or equal to 10000.");
+            $invalidProperties[] = "invalid value for 'quantity', must be smaller than or equal to 10000.";
         }
 
         if (($this->container['quantity'] < 1)) {
-            throw new AssertionException("invalid value for 'quantity', must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'quantity', must be bigger than or equal to 1.";
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -409,7 +424,7 @@ class Item implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentI
     /**
      * Gets prep_instructions.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PrepInstruction[]
+     * @return PrepInstruction[]
      */
     public function getPrepInstructions() : array
     {
@@ -419,7 +434,7 @@ class Item implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentI
     /**
      * Sets prep_instructions.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PrepInstruction[] $prep_instructions special preparations that are required for an item
+     * @param PrepInstruction[] $prep_instructions special preparations that are required for an item
      */
     public function setPrepInstructions(array $prep_instructions) : self
     {

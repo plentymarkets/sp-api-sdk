@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class ErrorList implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class ErrorList implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -165,17 +165,32 @@ class ErrorList implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfill
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+
         if ($this->container['errors'] === null) {
-            throw new AssertionException("'errors' can't be null");
+            $invalidProperties[] = "'errors' can't be null";
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
      * Gets errors.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Error[]
+     * @return Error[]
      */
     public function getErrors() : array
     {
@@ -185,7 +200,7 @@ class ErrorList implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfill
     /**
      * Sets errors.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Error[] $errors list of errors
+     * @param Error[] $errors list of errors
      */
     public function setErrors(array $errors) : self
     {

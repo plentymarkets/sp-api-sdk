@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class InboundPlan implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class InboundPlan implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -219,57 +219,72 @@ class InboundPlan implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfi
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['created_at'] === null) {
-            throw new AssertionException("'created_at' can't be null");
+            $invalidProperties[] = "'created_at' can't be null";
         }
 
         if ($this->container['inbound_plan_id'] === null) {
-            throw new AssertionException("'inbound_plan_id' can't be null");
+            $invalidProperties[] = "'inbound_plan_id' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['inbound_plan_id']) > 38)) {
-            throw new AssertionException("invalid value for 'inbound_plan_id', the character length must be smaller than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'inbound_plan_id', the character length must be smaller than or equal to 38.";
         }
 
         if ((\mb_strlen((string) $this->container['inbound_plan_id']) < 38)) {
-            throw new AssertionException("invalid value for 'inbound_plan_id', the character length must be bigger than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'inbound_plan_id', the character length must be bigger than or equal to 38.";
         }
 
         if (!\preg_match('/^[a-zA-Z0-9-]*$/', (string) $this->container['inbound_plan_id'])) {
-            throw new AssertionException("invalid value for 'inbound_plan_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.");
+            $invalidProperties[] = "invalid value for 'inbound_plan_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.";
         }
 
         if ($this->container['last_updated_at'] === null) {
-            throw new AssertionException("'last_updated_at' can't be null");
+            $invalidProperties[] = "'last_updated_at' can't be null";
         }
 
         if ($this->container['marketplace_ids'] === null) {
-            throw new AssertionException("'marketplace_ids' can't be null");
+            $invalidProperties[] = "'marketplace_ids' can't be null";
         }
 
         if ($this->container['name'] === null) {
-            throw new AssertionException("'name' can't be null");
+            $invalidProperties[] = "'name' can't be null";
         }
 
         if ($this->container['source_address'] === null) {
-            throw new AssertionException("'source_address' can't be null");
+            $invalidProperties[] = "'source_address' can't be null";
         }
 
-        $this->container['source_address']->validate();
+        $this->container['source_address']->listInvalidProperties();
 
         if ($this->container['status'] === null) {
-            throw new AssertionException("'status' can't be null");
+            $invalidProperties[] = "'status' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['status']) > 1024)) {
-            throw new AssertionException("invalid value for 'status', the character length must be smaller than or equal to 1024.");
+            $invalidProperties[] = "invalid value for 'status', the character length must be smaller than or equal to 1024.";
         }
 
         if ((\mb_strlen((string) $this->container['status']) < 1)) {
-            throw new AssertionException("invalid value for 'status', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'status', the character length must be bigger than or equal to 1.";
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -377,7 +392,7 @@ class InboundPlan implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfi
     /**
      * Gets packing_options.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PackingOptionSummary[]
+     * @return null|PackingOptionSummary[]
      */
     public function getPackingOptions() : ?array
     {
@@ -387,7 +402,7 @@ class InboundPlan implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfi
     /**
      * Sets packing_options.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PackingOptionSummary[] $packing_options Packing options for the inbound plan. This property will be populated when it has been generated via the corresponding operation. If there is a chosen placement option, only packing options for that placement option will be returned. If there are confirmed shipments, only packing options for those shipments will be returned. Query the packing option for more details.
+     * @param null|PackingOptionSummary[] $packing_options Packing options for the inbound plan. This property will be populated when it has been generated via the corresponding operation. If there is a chosen placement option, only packing options for that placement option will be returned. If there are confirmed shipments, only packing options for those shipments will be returned. Query the packing option for more details.
      */
     public function setPackingOptions(?array $packing_options) : self
     {
@@ -399,7 +414,7 @@ class InboundPlan implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfi
     /**
      * Gets placement_options.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PlacementOptionSummary[]
+     * @return null|PlacementOptionSummary[]
      */
     public function getPlacementOptions() : ?array
     {
@@ -409,7 +424,7 @@ class InboundPlan implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfi
     /**
      * Sets placement_options.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PlacementOptionSummary[] $placement_options Placement options for the inbound plan. This property will be populated when it has been generated via the corresponding operation. If there is a chosen placement option, that will be the only returned option. Query the placement option for more details.
+     * @param null|PlacementOptionSummary[] $placement_options Placement options for the inbound plan. This property will be populated when it has been generated via the corresponding operation. If there is a chosen placement option, that will be the only returned option. Query the placement option for more details.
      */
     public function setPlacementOptions(?array $placement_options) : self
     {
@@ -421,7 +436,7 @@ class InboundPlan implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfi
     /**
      * Gets shipments.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShipmentSummary[]
+     * @return null|ShipmentSummary[]
      */
     public function getShipments() : ?array
     {
@@ -431,7 +446,7 @@ class InboundPlan implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfi
     /**
      * Sets shipments.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ShipmentSummary[] $shipments Shipment IDs for the inbound plan. This property will be populated when it has been generated via the corresponding operation. If there is a chosen placement option, only shipments for that option will be returned. If there are confirmed shipments, only those shipments will be returned. Query the shipment for more details.
+     * @param null|ShipmentSummary[] $shipments Shipment IDs for the inbound plan. This property will be populated when it has been generated via the corresponding operation. If there is a chosen placement option, only shipments for that option will be returned. If there are confirmed shipments, only those shipments will be returned. Query the shipment for more details.
      */
     public function setShipments(?array $shipments) : self
     {
@@ -451,7 +466,7 @@ class InboundPlan implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfi
     /**
      * Sets source_address.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Address $source_address source_address
+     * @param Address $source_address source_address
      */
     public function setSourceAddress(Address $source_address) : self
     {

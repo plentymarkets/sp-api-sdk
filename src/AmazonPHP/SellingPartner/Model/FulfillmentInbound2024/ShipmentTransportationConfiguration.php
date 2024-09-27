@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class ShipmentTransportationConfiguration implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class ShipmentTransportationConfiguration implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -189,37 +189,52 @@ class ShipmentTransportationConfiguration implements \ArrayAccess, \JsonSerializ
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['contact_information'] !== null) {
-            $this->container['contact_information']->validate();
+            $this->container['contact_information']->listInvalidProperties();
         }
 
         if ($this->container['freight_information'] !== null) {
-            $this->container['freight_information']->validate();
+            $this->container['freight_information']->listInvalidProperties();
         }
 
         if ($this->container['ready_to_ship_window'] === null) {
-            throw new AssertionException("'ready_to_ship_window' can't be null");
+            $invalidProperties[] = "'ready_to_ship_window' can't be null";
         }
 
-        $this->container['ready_to_ship_window']->validate();
+        $this->container['ready_to_ship_window']->listInvalidProperties();
 
         if ($this->container['shipment_id'] === null) {
-            throw new AssertionException("'shipment_id' can't be null");
+            $invalidProperties[] = "'shipment_id' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['shipment_id']) > 38)) {
-            throw new AssertionException("invalid value for 'shipment_id', the character length must be smaller than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'shipment_id', the character length must be smaller than or equal to 38.";
         }
 
         if ((\mb_strlen((string) $this->container['shipment_id']) < 38)) {
-            throw new AssertionException("invalid value for 'shipment_id', the character length must be bigger than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'shipment_id', the character length must be bigger than or equal to 38.";
         }
 
         if (!\preg_match('/^[a-zA-Z0-9-]*$/', (string) $this->container['shipment_id'])) {
-            throw new AssertionException("invalid value for 'shipment_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.");
+            $invalidProperties[] = "invalid value for 'shipment_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.";
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -233,7 +248,7 @@ class ShipmentTransportationConfiguration implements \ArrayAccess, \JsonSerializ
     /**
      * Sets contact_information.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ContactInformation $contact_information contact_information
+     * @param null|ContactInformation $contact_information contact_information
      */
     public function setContactInformation(?ContactInformation $contact_information) : self
     {
@@ -253,7 +268,7 @@ class ShipmentTransportationConfiguration implements \ArrayAccess, \JsonSerializ
     /**
      * Sets freight_information.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\FreightInformation $freight_information freight_information
+     * @param null|FreightInformation $freight_information freight_information
      */
     public function setFreightInformation(?FreightInformation $freight_information) : self
     {
@@ -265,7 +280,7 @@ class ShipmentTransportationConfiguration implements \ArrayAccess, \JsonSerializ
     /**
      * Gets pallets.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PalletInput[]
+     * @return null|PalletInput[]
      */
     public function getPallets() : ?array
     {
@@ -275,7 +290,7 @@ class ShipmentTransportationConfiguration implements \ArrayAccess, \JsonSerializ
     /**
      * Sets pallets.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PalletInput[] $pallets list of pallet configuration inputs
+     * @param null|PalletInput[] $pallets list of pallet configuration inputs
      */
     public function setPallets(?array $pallets) : self
     {
@@ -295,7 +310,7 @@ class ShipmentTransportationConfiguration implements \ArrayAccess, \JsonSerializ
     /**
      * Sets ready_to_ship_window.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\WindowInput $ready_to_ship_window ready_to_ship_window
+     * @param WindowInput $ready_to_ship_window ready_to_ship_window
      */
     public function setReadyToShipWindow(WindowInput $ready_to_ship_window) : self
     {

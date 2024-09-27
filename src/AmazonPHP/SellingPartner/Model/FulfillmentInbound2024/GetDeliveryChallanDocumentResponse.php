@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class GetDeliveryChallanDocumentResponse implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class GetDeliveryChallanDocumentResponse implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -165,13 +165,28 @@ class GetDeliveryChallanDocumentResponse implements \ArrayAccess, \JsonSerializa
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['document_download'] === null) {
-            throw new AssertionException("'document_download' can't be null");
+            $invalidProperties[] = "'document_download' can't be null";
         }
 
-        $this->container['document_download']->validate();
+        $this->container['document_download']->listInvalidProperties();
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -185,7 +200,7 @@ class GetDeliveryChallanDocumentResponse implements \ArrayAccess, \JsonSerializa
     /**
      * Sets document_download.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\DocumentDownload $document_download document_download
+     * @param DocumentDownload $document_download document_download
      */
     public function setDocumentDownload(DocumentDownload $document_download) : self
     {

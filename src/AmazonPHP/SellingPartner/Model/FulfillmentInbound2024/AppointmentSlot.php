@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class AppointmentSlot implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class AppointmentSlot implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -171,29 +171,44 @@ class AppointmentSlot implements \ArrayAccess, \JsonSerializable, \Stringable, F
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['slot_id'] === null) {
-            throw new AssertionException("'slot_id' can't be null");
+            $invalidProperties[] = "'slot_id' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['slot_id']) > 38)) {
-            throw new AssertionException("invalid value for 'slot_id', the character length must be smaller than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'slot_id', the character length must be smaller than or equal to 38.";
         }
 
         if ((\mb_strlen((string) $this->container['slot_id']) < 38)) {
-            throw new AssertionException("invalid value for 'slot_id', the character length must be bigger than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'slot_id', the character length must be bigger than or equal to 38.";
         }
 
         if (!\preg_match('/^[a-zA-Z0-9-]*$/', (string) $this->container['slot_id'])) {
-            throw new AssertionException("invalid value for 'slot_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.");
+            $invalidProperties[] = "invalid value for 'slot_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.";
         }
 
         if ($this->container['slot_time'] === null) {
-            throw new AssertionException("'slot_time' can't be null");
+            $invalidProperties[] = "'slot_time' can't be null";
         }
 
-        $this->container['slot_time']->validate();
+        $this->container['slot_time']->listInvalidProperties();
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -227,7 +242,7 @@ class AppointmentSlot implements \ArrayAccess, \JsonSerializable, \Stringable, F
     /**
      * Sets slot_time.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\AppointmentSlotTime $slot_time slot_time
+     * @param AppointmentSlotTime $slot_time slot_time
      */
     public function setSlotTime(AppointmentSlotTime $slot_time) : self
     {

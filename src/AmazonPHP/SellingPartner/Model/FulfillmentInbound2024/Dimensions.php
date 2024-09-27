@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class Dimensions implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class Dimensions implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -183,47 +183,62 @@ class Dimensions implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfil
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['height'] === null) {
-            throw new AssertionException("'height' can't be null");
+            $invalidProperties[] = "'height' can't be null";
         }
 
         if (($this->container['height'] > 1E+5)) {
-            throw new AssertionException("invalid value for 'height', must be smaller than or equal to 1E+5.");
+            $invalidProperties[] = "invalid value for 'height', must be smaller than or equal to 1E+5.";
         }
 
         if (($this->container['height'] < 0)) {
-            throw new AssertionException("invalid value for 'height', must be bigger than or equal to 0.");
+            $invalidProperties[] = "invalid value for 'height', must be bigger than or equal to 0.";
         }
 
         if ($this->container['length'] === null) {
-            throw new AssertionException("'length' can't be null");
+            $invalidProperties[] = "'length' can't be null";
         }
 
         if (($this->container['length'] > 1E+5)) {
-            throw new AssertionException("invalid value for 'length', must be smaller than or equal to 1E+5.");
+            $invalidProperties[] = "invalid value for 'length', must be smaller than or equal to 1E+5.";
         }
 
         if (($this->container['length'] < 0)) {
-            throw new AssertionException("invalid value for 'length', must be bigger than or equal to 0.");
+            $invalidProperties[] = "invalid value for 'length', must be bigger than or equal to 0.";
         }
 
         if ($this->container['unit_of_measurement'] === null) {
-            throw new AssertionException("'unit_of_measurement' can't be null");
+            $invalidProperties[] = "'unit_of_measurement' can't be null";
         }
 
         if ($this->container['width'] === null) {
-            throw new AssertionException("'width' can't be null");
+            $invalidProperties[] = "'width' can't be null";
         }
 
         if (($this->container['width'] > 1E+5)) {
-            throw new AssertionException("invalid value for 'width', must be smaller than or equal to 1E+5.");
+            $invalidProperties[] = "invalid value for 'width', must be smaller than or equal to 1E+5.";
         }
 
         if (($this->container['width'] < 0)) {
-            throw new AssertionException("invalid value for 'width', must be bigger than or equal to 0.");
+            $invalidProperties[] = "invalid value for 'width', must be bigger than or equal to 0.";
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -277,7 +292,7 @@ class Dimensions implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfil
     /**
      * Sets unit_of_measurement.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UnitOfMeasurement $unit_of_measurement unit_of_measurement
+     * @param UnitOfMeasurement $unit_of_measurement unit_of_measurement
      */
     public function setUnitOfMeasurement(UnitOfMeasurement $unit_of_measurement) : self
     {

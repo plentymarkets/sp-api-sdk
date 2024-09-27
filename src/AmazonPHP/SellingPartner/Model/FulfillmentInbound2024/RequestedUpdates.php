@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class RequestedUpdates implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class RequestedUpdates implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -171,14 +171,26 @@ class RequestedUpdates implements \ArrayAccess, \JsonSerializable, \Stringable, 
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        return [];
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
      * Gets boxes.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxUpdateInput[]
+     * @return null|BoxUpdateInput[]
      */
     public function getBoxes() : ?array
     {
@@ -188,7 +200,7 @@ class RequestedUpdates implements \ArrayAccess, \JsonSerializable, \Stringable, 
     /**
      * Sets boxes.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxUpdateInput[] $boxes a list of boxes that will be present in the shipment after the update
+     * @param null|BoxUpdateInput[] $boxes a list of boxes that will be present in the shipment after the update
      */
     public function setBoxes(?array $boxes) : self
     {
@@ -200,7 +212,7 @@ class RequestedUpdates implements \ArrayAccess, \JsonSerializable, \Stringable, 
     /**
      * Gets items.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[]
+     * @return null|ItemInput[]
      */
     public function getItems() : ?array
     {
@@ -210,7 +222,7 @@ class RequestedUpdates implements \ArrayAccess, \JsonSerializable, \Stringable, 
     /**
      * Sets items.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[] $items a list of all items that will be present in the shipment after the update
+     * @param null|ItemInput[] $items a list of all items that will be present in the shipment after the update
      */
     public function setItems(?array $items) : self
     {

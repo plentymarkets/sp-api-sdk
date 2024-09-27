@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class GeneratePlacementOptionsRequest implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class GeneratePlacementOptionsRequest implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -165,14 +165,26 @@ class GeneratePlacementOptionsRequest implements \ArrayAccess, \JsonSerializable
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        return [];
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
      * Gets custom_placement.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CustomPlacementInput[]
+     * @return null|CustomPlacementInput[]
      */
     public function getCustomPlacement() : ?array
     {
@@ -182,7 +194,7 @@ class GeneratePlacementOptionsRequest implements \ArrayAccess, \JsonSerializable
     /**
      * Sets custom_placement.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CustomPlacementInput[] $custom_placement custom placement options to be added to the plan
+     * @param null|CustomPlacementInput[] $custom_placement custom placement options to be added to the plan
      */
     public function setCustomPlacement(?array $custom_placement) : self
     {

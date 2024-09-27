@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class PrepInstruction implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class PrepInstruction implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -177,27 +177,42 @@ class PrepInstruction implements \ArrayAccess, \JsonSerializable, \Stringable, F
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['fee'] !== null) {
-            $this->container['fee']->validate();
+            $this->container['fee']->listInvalidProperties();
         }
 
         if (null !== $this->container['prep_owner'] && (\mb_strlen((string) $this->container['prep_owner']) > 1024)) {
-            throw new AssertionException("invalid value for 'prep_owner', the character length must be smaller than or equal to 1024.");
+            $invalidProperties[] = "invalid value for 'prep_owner', the character length must be smaller than or equal to 1024.";
         }
 
         if (null !== $this->container['prep_owner'] && (\mb_strlen((string) $this->container['prep_owner']) < 1)) {
-            throw new AssertionException("invalid value for 'prep_owner', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'prep_owner', the character length must be bigger than or equal to 1.";
         }
 
         if (null !== $this->container['prep_type'] && (\mb_strlen((string) $this->container['prep_type']) > 1024)) {
-            throw new AssertionException("invalid value for 'prep_type', the character length must be smaller than or equal to 1024.");
+            $invalidProperties[] = "invalid value for 'prep_type', the character length must be smaller than or equal to 1024.";
         }
 
         if (null !== $this->container['prep_type'] && (\mb_strlen((string) $this->container['prep_type']) < 1)) {
-            throw new AssertionException("invalid value for 'prep_type', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'prep_type', the character length must be bigger than or equal to 1.";
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -211,7 +226,7 @@ class PrepInstruction implements \ArrayAccess, \JsonSerializable, \Stringable, F
     /**
      * Sets fee.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Currency $fee fee
+     * @param null|Currency $fee fee
      */
     public function setFee(?Currency $fee) : self
     {

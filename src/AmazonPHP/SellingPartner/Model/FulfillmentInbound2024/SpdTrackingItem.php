@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class SpdTrackingItem implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class SpdTrackingItem implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -177,31 +177,46 @@ class SpdTrackingItem implements \ArrayAccess, \JsonSerializable, \Stringable, F
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if (null !== $this->container['box_id'] && (\mb_strlen((string) $this->container['box_id']) > 1024)) {
-            throw new AssertionException("invalid value for 'box_id', the character length must be smaller than or equal to 1024.");
+            $invalidProperties[] = "invalid value for 'box_id', the character length must be smaller than or equal to 1024.";
         }
 
         if (null !== $this->container['box_id'] && (\mb_strlen((string) $this->container['box_id']) < 1)) {
-            throw new AssertionException("invalid value for 'box_id', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'box_id', the character length must be bigger than or equal to 1.";
         }
 
         if (null !== $this->container['tracking_id'] && (\mb_strlen((string) $this->container['tracking_id']) > 1024)) {
-            throw new AssertionException("invalid value for 'tracking_id', the character length must be smaller than or equal to 1024.");
+            $invalidProperties[] = "invalid value for 'tracking_id', the character length must be smaller than or equal to 1024.";
         }
 
         if (null !== $this->container['tracking_id'] && (\mb_strlen((string) $this->container['tracking_id']) < 1)) {
-            throw new AssertionException("invalid value for 'tracking_id', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'tracking_id', the character length must be bigger than or equal to 1.";
         }
 
         if (null !== $this->container['tracking_number_validation_status'] && (\mb_strlen((string) $this->container['tracking_number_validation_status']) > 1024)) {
-            throw new AssertionException("invalid value for 'tracking_number_validation_status', the character length must be smaller than or equal to 1024.");
+            $invalidProperties[] = "invalid value for 'tracking_number_validation_status', the character length must be smaller than or equal to 1024.";
         }
 
         if (null !== $this->container['tracking_number_validation_status'] && (\mb_strlen((string) $this->container['tracking_number_validation_status']) < 1)) {
-            throw new AssertionException("invalid value for 'tracking_number_validation_status', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'tracking_number_validation_status', the character length must be bigger than or equal to 1.";
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**

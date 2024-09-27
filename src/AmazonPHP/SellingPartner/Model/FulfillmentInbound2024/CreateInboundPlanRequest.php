@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class CreateInboundPlanRequest implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class CreateInboundPlanRequest implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -183,45 +183,60 @@ class CreateInboundPlanRequest implements \ArrayAccess, \JsonSerializable, \Stri
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['destination_marketplaces'] === null) {
-            throw new AssertionException("'destination_marketplaces' can't be null");
+            $invalidProperties[] = "'destination_marketplaces' can't be null";
         }
 
         if ((\count($this->container['destination_marketplaces']) > 1)) {
-            throw new AssertionException("invalid value for 'destination_marketplaces', number of items must be less than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'destination_marketplaces', number of items must be less than or equal to 1.";
         }
 
         if ((\count($this->container['destination_marketplaces']) < 1)) {
-            throw new AssertionException("invalid value for 'destination_marketplaces', number of items must be greater than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'destination_marketplaces', number of items must be greater than or equal to 1.";
         }
 
         if ($this->container['items'] === null) {
-            throw new AssertionException("'items' can't be null");
+            $invalidProperties[] = "'items' can't be null";
         }
 
         if ((\count($this->container['items']) > 2000)) {
-            throw new AssertionException("invalid value for 'items', number of items must be less than or equal to 2000.");
+            $invalidProperties[] = "invalid value for 'items', number of items must be less than or equal to 2000.";
         }
 
         if ((\count($this->container['items']) < 1)) {
-            throw new AssertionException("invalid value for 'items', number of items must be greater than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'items', number of items must be greater than or equal to 1.";
         }
 
         if (null !== $this->container['name'] && (\mb_strlen((string) $this->container['name']) > 40)) {
-            throw new AssertionException("invalid value for 'name', the character length must be smaller than or equal to 40.");
+            $invalidProperties[] = "invalid value for 'name', the character length must be smaller than or equal to 40.";
         }
 
         if (null !== $this->container['name'] && (\mb_strlen((string) $this->container['name']) < 1)) {
-            throw new AssertionException("invalid value for 'name', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'name', the character length must be bigger than or equal to 1.";
         }
 
         if ($this->container['source_address'] === null) {
-            throw new AssertionException("'source_address' can't be null");
+            $invalidProperties[] = "'source_address' can't be null";
         }
 
-        $this->container['source_address']->validate();
+        $this->container['source_address']->listInvalidProperties();
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -249,7 +264,7 @@ class CreateInboundPlanRequest implements \ArrayAccess, \JsonSerializable, \Stri
     /**
      * Gets items.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[]
+     * @return ItemInput[]
      */
     public function getItems() : array
     {
@@ -259,7 +274,7 @@ class CreateInboundPlanRequest implements \ArrayAccess, \JsonSerializable, \Stri
     /**
      * Sets items.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemInput[] $items items included in this plan
+     * @param ItemInput[] $items items included in this plan
      */
     public function setItems(array $items) : self
     {
@@ -299,7 +314,7 @@ class CreateInboundPlanRequest implements \ArrayAccess, \JsonSerializable, \Stri
     /**
      * Sets source_address.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\AddressInput $source_address source_address
+     * @param AddressInput $source_address source_address
      */
     public function setSourceAddress(AddressInput $source_address) : self
     {

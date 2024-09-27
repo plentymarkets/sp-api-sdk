@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class Incentive implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class Incentive implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -183,49 +183,64 @@ class Incentive implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfill
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['description'] === null) {
-            throw new AssertionException("'description' can't be null");
+            $invalidProperties[] = "'description' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['description']) > 1024)) {
-            throw new AssertionException("invalid value for 'description', the character length must be smaller than or equal to 1024.");
+            $invalidProperties[] = "invalid value for 'description', the character length must be smaller than or equal to 1024.";
         }
 
         if ((\mb_strlen((string) $this->container['description']) < 1)) {
-            throw new AssertionException("invalid value for 'description', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'description', the character length must be bigger than or equal to 1.";
         }
 
         if ($this->container['target'] === null) {
-            throw new AssertionException("'target' can't be null");
+            $invalidProperties[] = "'target' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['target']) > 1024)) {
-            throw new AssertionException("invalid value for 'target', the character length must be smaller than or equal to 1024.");
+            $invalidProperties[] = "invalid value for 'target', the character length must be smaller than or equal to 1024.";
         }
 
         if ((\mb_strlen((string) $this->container['target']) < 1)) {
-            throw new AssertionException("invalid value for 'target', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'target', the character length must be bigger than or equal to 1.";
         }
 
         if ($this->container['type'] === null) {
-            throw new AssertionException("'type' can't be null");
+            $invalidProperties[] = "'type' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['type']) > 1024)) {
-            throw new AssertionException("invalid value for 'type', the character length must be smaller than or equal to 1024.");
+            $invalidProperties[] = "invalid value for 'type', the character length must be smaller than or equal to 1024.";
         }
 
         if ((\mb_strlen((string) $this->container['type']) < 1)) {
-            throw new AssertionException("invalid value for 'type', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'type', the character length must be bigger than or equal to 1.";
         }
 
         if ($this->container['value'] === null) {
-            throw new AssertionException("'value' can't be null");
+            $invalidProperties[] = "'value' can't be null";
         }
 
-        $this->container['value']->validate();
+        $this->container['value']->listInvalidProperties();
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -299,7 +314,7 @@ class Incentive implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfill
     /**
      * Sets value.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Currency $value value
+     * @param Currency $value value
      */
     public function setValue(Currency $value) : self
     {

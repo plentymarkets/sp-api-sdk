@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class ListShipmentPalletsResponse implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class ListShipmentPalletsResponse implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -171,15 +171,30 @@ class ListShipmentPalletsResponse implements \ArrayAccess, \JsonSerializable, \S
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['pagination'] !== null) {
-            $this->container['pagination']->validate();
+            $this->container['pagination']->listInvalidProperties();
         }
 
         if ($this->container['pallets'] === null) {
-            throw new AssertionException("'pallets' can't be null");
+            $invalidProperties[] = "'pallets' can't be null";
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -193,7 +208,7 @@ class ListShipmentPalletsResponse implements \ArrayAccess, \JsonSerializable, \S
     /**
      * Sets pagination.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination $pagination pagination
+     * @param null|Pagination $pagination pagination
      */
     public function setPagination(?Pagination $pagination) : self
     {
@@ -205,7 +220,7 @@ class ListShipmentPalletsResponse implements \ArrayAccess, \JsonSerializable, \S
     /**
      * Gets pallets.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pallet[]
+     * @return Pallet[]
      */
     public function getPallets() : array
     {
@@ -215,7 +230,7 @@ class ListShipmentPalletsResponse implements \ArrayAccess, \JsonSerializable, \S
     /**
      * Sets pallets.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pallet[] $pallets the pallets in a shipment
+     * @param Pallet[] $pallets the pallets in a shipment
      */
     public function setPallets(array $pallets) : self
     {

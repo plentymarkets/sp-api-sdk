@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class SetPackingInformationRequest implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class SetPackingInformationRequest implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -165,21 +165,36 @@ class SetPackingInformationRequest implements \ArrayAccess, \JsonSerializable, \
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['package_groupings'] === null) {
-            throw new AssertionException("'package_groupings' can't be null");
+            $invalidProperties[] = "'package_groupings' can't be null";
         }
 
         if ((\count($this->container['package_groupings']) < 1)) {
-            throw new AssertionException("invalid value for 'package_groupings', number of items must be greater than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'package_groupings', number of items must be greater than or equal to 1.";
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
      * Gets package_groupings.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PackageGroupingInput[]
+     * @return PackageGroupingInput[]
      */
     public function getPackageGroupings() : array
     {
@@ -189,7 +204,7 @@ class SetPackingInformationRequest implements \ArrayAccess, \JsonSerializable, \
     /**
      * Sets package_groupings.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PackageGroupingInput[] $package_groupings list of packing information for the inbound plan
+     * @param PackageGroupingInput[] $package_groupings list of packing information for the inbound plan
      */
     public function setPackageGroupings(array $package_groupings) : self
     {

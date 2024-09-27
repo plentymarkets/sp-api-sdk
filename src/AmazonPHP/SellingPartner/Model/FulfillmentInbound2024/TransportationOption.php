@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class TransportationOption implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class TransportationOption implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -207,81 +207,96 @@ class TransportationOption implements \ArrayAccess, \JsonSerializable, \Stringab
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['carrier'] === null) {
-            throw new AssertionException("'carrier' can't be null");
+            $invalidProperties[] = "'carrier' can't be null";
         }
 
-        $this->container['carrier']->validate();
+        $this->container['carrier']->listInvalidProperties();
 
         if ($this->container['carrier_appointment'] !== null) {
-            $this->container['carrier_appointment']->validate();
+            $this->container['carrier_appointment']->listInvalidProperties();
         }
 
         if ($this->container['preconditions'] === null) {
-            throw new AssertionException("'preconditions' can't be null");
+            $invalidProperties[] = "'preconditions' can't be null";
         }
 
         if ($this->container['quote'] !== null) {
-            $this->container['quote']->validate();
+            $this->container['quote']->listInvalidProperties();
         }
 
         if ($this->container['shipment_id'] === null) {
-            throw new AssertionException("'shipment_id' can't be null");
+            $invalidProperties[] = "'shipment_id' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['shipment_id']) > 38)) {
-            throw new AssertionException("invalid value for 'shipment_id', the character length must be smaller than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'shipment_id', the character length must be smaller than or equal to 38.";
         }
 
         if ((\mb_strlen((string) $this->container['shipment_id']) < 38)) {
-            throw new AssertionException("invalid value for 'shipment_id', the character length must be bigger than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'shipment_id', the character length must be bigger than or equal to 38.";
         }
 
         if (!\preg_match('/^[a-zA-Z0-9-]*$/', (string) $this->container['shipment_id'])) {
-            throw new AssertionException("invalid value for 'shipment_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.");
+            $invalidProperties[] = "invalid value for 'shipment_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.";
         }
 
         if ($this->container['shipping_mode'] === null) {
-            throw new AssertionException("'shipping_mode' can't be null");
+            $invalidProperties[] = "'shipping_mode' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['shipping_mode']) > 1024)) {
-            throw new AssertionException("invalid value for 'shipping_mode', the character length must be smaller than or equal to 1024.");
+            $invalidProperties[] = "invalid value for 'shipping_mode', the character length must be smaller than or equal to 1024.";
         }
 
         if ((\mb_strlen((string) $this->container['shipping_mode']) < 1)) {
-            throw new AssertionException("invalid value for 'shipping_mode', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'shipping_mode', the character length must be bigger than or equal to 1.";
         }
 
         if ($this->container['shipping_solution'] === null) {
-            throw new AssertionException("'shipping_solution' can't be null");
+            $invalidProperties[] = "'shipping_solution' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['shipping_solution']) > 1024)) {
-            throw new AssertionException("invalid value for 'shipping_solution', the character length must be smaller than or equal to 1024.");
+            $invalidProperties[] = "invalid value for 'shipping_solution', the character length must be smaller than or equal to 1024.";
         }
 
         if ((\mb_strlen((string) $this->container['shipping_solution']) < 1)) {
-            throw new AssertionException("invalid value for 'shipping_solution', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'shipping_solution', the character length must be bigger than or equal to 1.";
         }
 
         if ($this->container['transportation_option_id'] === null) {
-            throw new AssertionException("'transportation_option_id' can't be null");
+            $invalidProperties[] = "'transportation_option_id' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['transportation_option_id']) > 38)) {
-            throw new AssertionException("invalid value for 'transportation_option_id', the character length must be smaller than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'transportation_option_id', the character length must be smaller than or equal to 38.";
         }
 
         if ((\mb_strlen((string) $this->container['transportation_option_id']) < 38)) {
-            throw new AssertionException("invalid value for 'transportation_option_id', the character length must be bigger than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'transportation_option_id', the character length must be bigger than or equal to 38.";
         }
 
         if (!\preg_match('/^[a-zA-Z0-9-]*$/', (string) $this->container['transportation_option_id'])) {
-            throw new AssertionException("invalid value for 'transportation_option_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.");
+            $invalidProperties[] = "invalid value for 'transportation_option_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.";
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -295,7 +310,7 @@ class TransportationOption implements \ArrayAccess, \JsonSerializable, \Stringab
     /**
      * Sets carrier.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Carrier $carrier carrier
+     * @param Carrier $carrier carrier
      */
     public function setCarrier(Carrier $carrier) : self
     {
@@ -315,7 +330,7 @@ class TransportationOption implements \ArrayAccess, \JsonSerializable, \Stringab
     /**
      * Sets carrier_appointment.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CarrierAppointment $carrier_appointment carrier_appointment
+     * @param null|CarrierAppointment $carrier_appointment carrier_appointment
      */
     public function setCarrierAppointment(?CarrierAppointment $carrier_appointment) : self
     {
@@ -357,7 +372,7 @@ class TransportationOption implements \ArrayAccess, \JsonSerializable, \Stringab
     /**
      * Sets quote.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Quote $quote quote
+     * @param null|Quote $quote quote
      */
     public function setQuote(?Quote $quote) : self
     {

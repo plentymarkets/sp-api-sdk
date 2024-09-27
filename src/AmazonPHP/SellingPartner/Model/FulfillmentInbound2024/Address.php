@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class Address implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class Address implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -219,111 +219,126 @@ class Address implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillme
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['address_line1'] === null) {
-            throw new AssertionException("'address_line1' can't be null");
+            $invalidProperties[] = "'address_line1' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['address_line1']) > 180)) {
-            throw new AssertionException("invalid value for 'address_line1', the character length must be smaller than or equal to 180.");
+            $invalidProperties[] = "invalid value for 'address_line1', the character length must be smaller than or equal to 180.";
         }
 
         if ((\mb_strlen((string) $this->container['address_line1']) < 1)) {
-            throw new AssertionException("invalid value for 'address_line1', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'address_line1', the character length must be bigger than or equal to 1.";
         }
 
         if (null !== $this->container['address_line2'] && (\mb_strlen((string) $this->container['address_line2']) > 60)) {
-            throw new AssertionException("invalid value for 'address_line2', the character length must be smaller than or equal to 60.");
+            $invalidProperties[] = "invalid value for 'address_line2', the character length must be smaller than or equal to 60.";
         }
 
         if (null !== $this->container['address_line2'] && (\mb_strlen((string) $this->container['address_line2']) < 1)) {
-            throw new AssertionException("invalid value for 'address_line2', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'address_line2', the character length must be bigger than or equal to 1.";
         }
 
         if ($this->container['city'] === null) {
-            throw new AssertionException("'city' can't be null");
+            $invalidProperties[] = "'city' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['city']) > 30)) {
-            throw new AssertionException("invalid value for 'city', the character length must be smaller than or equal to 30.");
+            $invalidProperties[] = "invalid value for 'city', the character length must be smaller than or equal to 30.";
         }
 
         if ((\mb_strlen((string) $this->container['city']) < 1)) {
-            throw new AssertionException("invalid value for 'city', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'city', the character length must be bigger than or equal to 1.";
         }
 
         if (null !== $this->container['company_name'] && (\mb_strlen((string) $this->container['company_name']) > 50)) {
-            throw new AssertionException("invalid value for 'company_name', the character length must be smaller than or equal to 50.");
+            $invalidProperties[] = "invalid value for 'company_name', the character length must be smaller than or equal to 50.";
         }
 
         if (null !== $this->container['company_name'] && (\mb_strlen((string) $this->container['company_name']) < 1)) {
-            throw new AssertionException("invalid value for 'company_name', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'company_name', the character length must be bigger than or equal to 1.";
         }
 
         if ($this->container['country_code'] === null) {
-            throw new AssertionException("'country_code' can't be null");
+            $invalidProperties[] = "'country_code' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['country_code']) > 2)) {
-            throw new AssertionException("invalid value for 'country_code', the character length must be smaller than or equal to 2.");
+            $invalidProperties[] = "invalid value for 'country_code', the character length must be smaller than or equal to 2.";
         }
 
         if ((\mb_strlen((string) $this->container['country_code']) < 2)) {
-            throw new AssertionException("invalid value for 'country_code', the character length must be bigger than or equal to 2.");
+            $invalidProperties[] = "invalid value for 'country_code', the character length must be bigger than or equal to 2.";
         }
 
         if (!\preg_match('/^[A-Z]{2}$/', (string) $this->container['country_code'])) {
-            throw new AssertionException("invalid value for 'country_code', must be conform to the pattern /^[A-Z]{2}$/.");
+            $invalidProperties[] = "invalid value for 'country_code', must be conform to the pattern /^[A-Z]{2}$/.";
         }
 
         if (null !== $this->container['email'] && (\mb_strlen((string) $this->container['email']) > 1024)) {
-            throw new AssertionException("invalid value for 'email', the character length must be smaller than or equal to 1024.");
+            $invalidProperties[] = "invalid value for 'email', the character length must be smaller than or equal to 1024.";
         }
 
         if (null !== $this->container['email'] && (\mb_strlen((string) $this->container['email']) < 1)) {
-            throw new AssertionException("invalid value for 'email', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'email', the character length must be bigger than or equal to 1.";
         }
 
         if ($this->container['name'] === null) {
-            throw new AssertionException("'name' can't be null");
+            $invalidProperties[] = "'name' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['name']) > 50)) {
-            throw new AssertionException("invalid value for 'name', the character length must be smaller than or equal to 50.");
+            $invalidProperties[] = "invalid value for 'name', the character length must be smaller than or equal to 50.";
         }
 
         if ((\mb_strlen((string) $this->container['name']) < 1)) {
-            throw new AssertionException("invalid value for 'name', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'name', the character length must be bigger than or equal to 1.";
         }
 
         if (null !== $this->container['phone_number'] && (\mb_strlen((string) $this->container['phone_number']) > 20)) {
-            throw new AssertionException("invalid value for 'phone_number', the character length must be smaller than or equal to 20.");
+            $invalidProperties[] = "invalid value for 'phone_number', the character length must be smaller than or equal to 20.";
         }
 
         if (null !== $this->container['phone_number'] && (\mb_strlen((string) $this->container['phone_number']) < 1)) {
-            throw new AssertionException("invalid value for 'phone_number', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'phone_number', the character length must be bigger than or equal to 1.";
         }
 
         if ($this->container['postal_code'] === null) {
-            throw new AssertionException("'postal_code' can't be null");
+            $invalidProperties[] = "'postal_code' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['postal_code']) > 32)) {
-            throw new AssertionException("invalid value for 'postal_code', the character length must be smaller than or equal to 32.");
+            $invalidProperties[] = "invalid value for 'postal_code', the character length must be smaller than or equal to 32.";
         }
 
         if ((\mb_strlen((string) $this->container['postal_code']) < 1)) {
-            throw new AssertionException("invalid value for 'postal_code', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'postal_code', the character length must be bigger than or equal to 1.";
         }
 
         if (null !== $this->container['state_or_province_code'] && (\mb_strlen((string) $this->container['state_or_province_code']) > 64)) {
-            throw new AssertionException("invalid value for 'state_or_province_code', the character length must be smaller than or equal to 64.");
+            $invalidProperties[] = "invalid value for 'state_or_province_code', the character length must be smaller than or equal to 64.";
         }
 
         if (null !== $this->container['state_or_province_code'] && (\mb_strlen((string) $this->container['state_or_province_code']) < 1)) {
-            throw new AssertionException("invalid value for 'state_or_province_code', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'state_or_province_code', the character length must be bigger than or equal to 1.";
         }
+        
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**

@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class ContentUpdatePreview implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class ContentUpdatePreview implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -183,43 +183,58 @@ class ContentUpdatePreview implements \ArrayAccess, \JsonSerializable, \Stringab
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['content_update_preview_id'] === null) {
-            throw new AssertionException("'content_update_preview_id' can't be null");
+            $invalidProperties[] = "'content_update_preview_id' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['content_update_preview_id']) > 38)) {
-            throw new AssertionException("invalid value for 'content_update_preview_id', the character length must be smaller than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'content_update_preview_id', the character length must be smaller than or equal to 38.";
         }
 
         if ((\mb_strlen((string) $this->container['content_update_preview_id']) < 38)) {
-            throw new AssertionException("invalid value for 'content_update_preview_id', the character length must be bigger than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'content_update_preview_id', the character length must be bigger than or equal to 38.";
         }
 
         if (!\preg_match('/^[a-zA-Z0-9-]*$/', (string) $this->container['content_update_preview_id'])) {
-            throw new AssertionException("invalid value for 'content_update_preview_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.");
+            $invalidProperties[] = "invalid value for 'content_update_preview_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.";
         }
 
         if ($this->container['expiration'] === null) {
-            throw new AssertionException("'expiration' can't be null");
+            $invalidProperties[] = "'expiration' can't be null";
         }
 
         if (!\preg_match('/^([0-9]{4})-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/', (string) $this->container['expiration'])) {
-            throw new AssertionException("invalid value for 'expiration', must be conform to the pattern /^([0-9]{4})-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/.");
+            $invalidProperties[] = "invalid value for 'expiration', must be conform to the pattern /^([0-9]{4})-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/.";
         }
 
         if ($this->container['requested_updates'] === null) {
-            throw new AssertionException("'requested_updates' can't be null");
+            $invalidProperties[] = "'requested_updates' can't be null";
         }
 
-        $this->container['requested_updates']->validate();
+        $this->container['requested_updates']->listInvalidProperties();
 
         if ($this->container['transportation_option'] === null) {
-            throw new AssertionException("'transportation_option' can't be null");
+            $invalidProperties[] = "'transportation_option' can't be null";
         }
 
-        $this->container['transportation_option']->validate();
+        $this->container['transportation_option']->listInvalidProperties();
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -273,7 +288,7 @@ class ContentUpdatePreview implements \ArrayAccess, \JsonSerializable, \Stringab
     /**
      * Sets requested_updates.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\RequestedUpdates $requested_updates requested_updates
+     * @param RequestedUpdates $requested_updates requested_updates
      */
     public function setRequestedUpdates(RequestedUpdates $requested_updates) : self
     {
@@ -293,7 +308,7 @@ class ContentUpdatePreview implements \ArrayAccess, \JsonSerializable, \Stringab
     /**
      * Sets transportation_option.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TransportationOption $transportation_option transportation_option
+     * @param TransportationOption $transportation_option transportation_option
      */
     public function setTransportationOption(TransportationOption $transportation_option) : self
     {

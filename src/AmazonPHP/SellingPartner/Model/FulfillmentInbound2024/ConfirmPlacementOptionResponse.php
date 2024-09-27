@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class ConfirmPlacementOptionResponse implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class ConfirmPlacementOptionResponse implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -165,23 +165,38 @@ class ConfirmPlacementOptionResponse implements \ArrayAccess, \JsonSerializable,
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['operation_id'] === null) {
-            throw new AssertionException("'operation_id' can't be null");
+            $invalidProperties[] = "'operation_id' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['operation_id']) > 38)) {
-            throw new AssertionException("invalid value for 'operation_id', the character length must be smaller than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'operation_id', the character length must be smaller than or equal to 38.";
         }
 
         if ((\mb_strlen((string) $this->container['operation_id']) < 36)) {
-            throw new AssertionException("invalid value for 'operation_id', the character length must be bigger than or equal to 36.");
+            $invalidProperties[] = "invalid value for 'operation_id', the character length must be bigger than or equal to 36.";
         }
 
         if (!\preg_match('/^[a-zA-Z0-9-]*$/', (string) $this->container['operation_id'])) {
-            throw new AssertionException("invalid value for 'operation_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.");
+            $invalidProperties[] = "invalid value for 'operation_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.";
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**

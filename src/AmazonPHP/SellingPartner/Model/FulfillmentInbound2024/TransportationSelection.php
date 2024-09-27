@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class TransportationSelection implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class TransportationSelection implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -177,43 +177,58 @@ class TransportationSelection implements \ArrayAccess, \JsonSerializable, \Strin
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['contact_information'] !== null) {
-            $this->container['contact_information']->validate();
+            $this->container['contact_information']->listInvalidProperties();
         }
 
         if ($this->container['shipment_id'] === null) {
-            throw new AssertionException("'shipment_id' can't be null");
+            $invalidProperties[] = "'shipment_id' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['shipment_id']) > 38)) {
-            throw new AssertionException("invalid value for 'shipment_id', the character length must be smaller than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'shipment_id', the character length must be smaller than or equal to 38.";
         }
 
         if ((\mb_strlen((string) $this->container['shipment_id']) < 38)) {
-            throw new AssertionException("invalid value for 'shipment_id', the character length must be bigger than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'shipment_id', the character length must be bigger than or equal to 38.";
         }
 
         if (!\preg_match('/^[a-zA-Z0-9-]*$/', (string) $this->container['shipment_id'])) {
-            throw new AssertionException("invalid value for 'shipment_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.");
+            $invalidProperties[] = "invalid value for 'shipment_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.";
         }
 
         if ($this->container['transportation_option_id'] === null) {
-            throw new AssertionException("'transportation_option_id' can't be null");
+            $invalidProperties[] = "'transportation_option_id' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['transportation_option_id']) > 38)) {
-            throw new AssertionException("invalid value for 'transportation_option_id', the character length must be smaller than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'transportation_option_id', the character length must be smaller than or equal to 38.";
         }
 
         if ((\mb_strlen((string) $this->container['transportation_option_id']) < 38)) {
-            throw new AssertionException("invalid value for 'transportation_option_id', the character length must be bigger than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'transportation_option_id', the character length must be bigger than or equal to 38.";
         }
 
         if (!\preg_match('/^[a-zA-Z0-9-]*$/', (string) $this->container['transportation_option_id'])) {
-            throw new AssertionException("invalid value for 'transportation_option_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.");
+            $invalidProperties[] = "invalid value for 'transportation_option_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.";
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -227,7 +242,7 @@ class TransportationSelection implements \ArrayAccess, \JsonSerializable, \Strin
     /**
      * Sets contact_information.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ContactInformation $contact_information contact_information
+     * @param null|ContactInformation $contact_information contact_information
      */
     public function setContactInformation(?ContactInformation $contact_information) : self
     {

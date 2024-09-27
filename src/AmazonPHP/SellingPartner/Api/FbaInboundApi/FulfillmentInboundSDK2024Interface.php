@@ -200,19 +200,19 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function cancelInboundPlan(AccessToken $accessToken, string $region, string $inbound_plan_id) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CancelInboundPlanResponse;
+    public function cancelInboundPlan(AccessToken $accessToken, string $region, string $inbound_plan_id) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CancelInboundPlanResponse;
 
     /**
      * Operation cancelSelfShipAppointment.
      *
      * @param string $inbound_plan_id Identifier of an inbound plan. (required)
      * @param string $shipment_id Identifier of a shipment. A shipment contains the boxes and units being inbounded. (required)
-     * @param Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CancelSelfShipAppointmentRequest $body The body of the request to &#x60;cancelSelfShipAppointment&#x60;. (required)
+     * @param \\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CancelSelfShipAppointmentRequest $body The body of the request to &#x60;cancelSelfShipAppointment&#x60;. (required)
      *
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function cancelSelfShipAppointment(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CancelSelfShipAppointmentRequest $body) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CancelSelfShipAppointmentResponse;
+    public function cancelSelfShipAppointment(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CancelSelfShipAppointmentRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CancelSelfShipAppointmentResponse;
 
     /**
      * Operation confirmDeliveryWindowOptions.
@@ -224,7 +224,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function confirmDeliveryWindowOptions(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, string $delivery_window_option_id) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ConfirmDeliveryWindowOptionsResponse;
+    public function confirmDeliveryWindowOptions(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, string $delivery_window_option_id) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ConfirmDeliveryWindowOptionsResponse;
 
     /**
      * Operation confirmPackingOption.
@@ -235,7 +235,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function confirmPackingOption(AccessToken $accessToken, string $region, string $inbound_plan_id, string $packing_option_id) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ConfirmPackingOptionResponse;
+    public function confirmPackingOption(AccessToken $accessToken, string $region, string $inbound_plan_id, string $packing_option_id) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ConfirmPackingOptionResponse;
 
     /**
      * Operation confirmPlacementOption.
@@ -246,7 +246,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function confirmPlacementOption(AccessToken $accessToken, string $region, string $inbound_plan_id, string $placement_option_id) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ConfirmPlacementOptionResponse;
+    public function confirmPlacementOption(AccessToken $accessToken, string $region, string $inbound_plan_id, string $placement_option_id) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ConfirmPlacementOptionResponse;
 
     /**
      * Operation confirmShipmentContentUpdatePreview.
@@ -258,38 +258,38 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function confirmShipmentContentUpdatePreview(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, string $content_update_preview_id) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ConfirmShipmentContentUpdatePreviewResponse;
+    public function confirmShipmentContentUpdatePreview(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, string $content_update_preview_id) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ConfirmShipmentContentUpdatePreviewResponse;
 
     /**
      * Operation confirmTransportationOptions.
      *
      * @param string $inbound_plan_id Identifier of an inbound plan. (required)
-     * @param Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ConfirmTransportationOptionsRequest $body The body of the request to &#x60;confirmTransportationOptions&#x60;. (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ConfirmTransportationOptionsRequest $body The body of the request to &#x60;confirmTransportationOptions&#x60;. (required)
      *
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function confirmTransportationOptions(AccessToken $accessToken, string $region, string $inbound_plan_id, Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ConfirmTransportationOptionsRequest $body) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ConfirmTransportationOptionsResponse;
+    public function confirmTransportationOptions(AccessToken $accessToken, string $region, string $inbound_plan_id, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ConfirmTransportationOptionsRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ConfirmTransportationOptionsResponse;
 
     /**
      * Operation createInboundPlan.
      *
-     * @param Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CreateInboundPlanRequest $body The body of the request to &#x60;createInboundPlan&#x60;. (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CreateInboundPlanRequest $body The body of the request to &#x60;createInboundPlan&#x60;. (required)
      *
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function createInboundPlan(AccessToken $accessToken, string $region, Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CreateInboundPlanRequest $body) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CreateInboundPlanResponse;
+    public function createInboundPlan(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CreateInboundPlanRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CreateInboundPlanResponse;
 
     /**
      * Operation createMarketplaceItemLabels.
      *
-     * @param Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CreateMarketplaceItemLabelsRequest $body The body of the request to &#x60;createMarketplaceItemLabels&#x60;. (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CreateMarketplaceItemLabelsRequest $body The body of the request to &#x60;createMarketplaceItemLabels&#x60;. (required)
      *
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function createMarketplaceItemLabels(AccessToken $accessToken, string $region, Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CreateMarketplaceItemLabelsRequest $body) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CreateMarketplaceItemLabelsResponse;
+    public function createMarketplaceItemLabels(AccessToken $accessToken, string $region, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CreateMarketplaceItemLabelsRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\CreateMarketplaceItemLabelsResponse;
 
     /**
      * Operation generateDeliveryWindowOptions.
@@ -300,7 +300,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function generateDeliveryWindowOptions(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GenerateDeliveryWindowOptionsResponse;
+    public function generateDeliveryWindowOptions(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GenerateDeliveryWindowOptionsResponse;
 
     /**
      * Operation generatePackingOptions.
@@ -310,53 +310,53 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function generatePackingOptions(AccessToken $accessToken, string $region, string $inbound_plan_id) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GeneratePackingOptionsResponse;
+    public function generatePackingOptions(AccessToken $accessToken, string $region, string $inbound_plan_id) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GeneratePackingOptionsResponse;
 
     /**
      * Operation generatePlacementOptions.
      *
      * @param string $inbound_plan_id Identifier of an inbound plan. (required)
-     * @param Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GeneratePlacementOptionsRequest $body The body of the request to &#x60;generatePlacementOptions&#x60;. (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GeneratePlacementOptionsRequest $body The body of the request to &#x60;generatePlacementOptions&#x60;. (required)
      *
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function generatePlacementOptions(AccessToken $accessToken, string $region, string $inbound_plan_id, Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GeneratePlacementOptionsRequest $body) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GeneratePlacementOptionsResponse;
+    public function generatePlacementOptions(AccessToken $accessToken, string $region, string $inbound_plan_id, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GeneratePlacementOptionsRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GeneratePlacementOptionsResponse;
 
     /**
      * Operation generateSelfShipAppointmentSlots.
      *
      * @param string $inbound_plan_id Identifier of an inbound plan. (required)
      * @param string $shipment_id Identifier of a shipment. A shipment contains the boxes and units being inbounded. (required)
-     * @param Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GenerateSelfShipAppointmentSlotsRequest $body The body of the request to &#x60;generateSelfShipAppointmentSlots&#x60;. (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GenerateSelfShipAppointmentSlotsRequest $body The body of the request to &#x60;generateSelfShipAppointmentSlots&#x60;. (required)
      *
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function generateSelfShipAppointmentSlots(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GenerateSelfShipAppointmentSlotsRequest $body) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GenerateSelfShipAppointmentSlotsResponse;
+    public function generateSelfShipAppointmentSlots(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GenerateSelfShipAppointmentSlotsRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GenerateSelfShipAppointmentSlotsResponse;
 
     /**
      * Operation generateShipmentContentUpdatePreviews.
      *
      * @param string $inbound_plan_id Identifier of an inbound plan. (required)
      * @param string $shipment_id Identifier of a shipment. A shipment contains the boxes and units being inbounded. (required)
-     * @param Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GenerateShipmentContentUpdatePreviewsRequest $body The body of the request to &#x60;generateShipmentContentUpdatePreviews&#x60;. (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GenerateShipmentContentUpdatePreviewsRequest $body The body of the request to &#x60;generateShipmentContentUpdatePreviews&#x60;. (required)
      *
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function generateShipmentContentUpdatePreviews(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GenerateShipmentContentUpdatePreviewsRequest $body) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GenerateShipmentContentUpdatePreviewsResponse;
+    public function generateShipmentContentUpdatePreviews(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GenerateShipmentContentUpdatePreviewsRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GenerateShipmentContentUpdatePreviewsResponse;
 
     /**
      * Operation generateTransportationOptions.
      *
      * @param string $inbound_plan_id Identifier of an inbound plan. (required)
-     * @param Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GenerateTransportationOptionsRequest $body The body of the request to &#x60;generateTransportationOptions&#x60;. (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GenerateTransportationOptionsRequest $body The body of the request to &#x60;generateTransportationOptions&#x60;. (required)
      *
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function generateTransportationOptions(AccessToken $accessToken, string $region, string $inbound_plan_id, Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GenerateTransportationOptionsRequest $body) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GenerateTransportationOptionsResponse;
+    public function generateTransportationOptions(AccessToken $accessToken, string $region, string $inbound_plan_id, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GenerateTransportationOptionsRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GenerateTransportationOptionsResponse;
 
     /**
      * Operation getDeliveryChallanDocument.
@@ -367,7 +367,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function getDeliveryChallanDocument(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GetDeliveryChallanDocumentResponse;
+    public function getDeliveryChallanDocument(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GetDeliveryChallanDocumentResponse;
 
     /**
      * Operation getInboundOperationStatus.
@@ -377,7 +377,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function getInboundOperationStatus(AccessToken $accessToken, string $region, string $operation_id) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\InboundOperationStatus;
+    public function getInboundOperationStatus(AccessToken $accessToken, string $region, string $operation_id) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\InboundOperationStatus;
 
     /**
      * Operation getInboundPlan.
@@ -387,7 +387,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function getInboundPlan(AccessToken $accessToken, string $region, string $inbound_plan_id) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\InboundPlan;
+    public function getInboundPlan(AccessToken $accessToken, string $region, string $inbound_plan_id) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\InboundPlan;
 
     /**
      * Operation getSelfShipAppointmentSlots.
@@ -400,7 +400,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function getSelfShipAppointmentSlots(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, int $page_size = 10, ?string $pagination_token = null) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GetSelfShipAppointmentSlotsResponse;
+    public function getSelfShipAppointmentSlots(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, int $page_size = 10, ?string $pagination_token = null) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\GetSelfShipAppointmentSlotsResponse;
 
     /**
      * Operation getShipment.
@@ -411,7 +411,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function getShipment(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Shipment;
+    public function getShipment(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Shipment;
 
     /**
      * Operation getShipmentContentUpdatePreview.
@@ -423,7 +423,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function getShipmentContentUpdatePreview(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, string $content_update_preview_id) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ContentUpdatePreview;
+    public function getShipmentContentUpdatePreview(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, string $content_update_preview_id) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ContentUpdatePreview;
 
     /**
      * Operation listDeliveryWindowOptions.
@@ -436,7 +436,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function listDeliveryWindowOptions(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, int $page_size = 10, ?string $pagination_token = null) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListDeliveryWindowOptionsResponse;
+    public function listDeliveryWindowOptions(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, int $page_size = 10, ?string $pagination_token = null) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListDeliveryWindowOptionsResponse;
 
     /**
      * Operation listInboundPlanBoxes.
@@ -448,7 +448,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function listInboundPlanBoxes(AccessToken $accessToken, string $region, string $inbound_plan_id, int $page_size = 10, ?string $pagination_token = null) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListInboundPlanBoxesResponse;
+    public function listInboundPlanBoxes(AccessToken $accessToken, string $region, string $inbound_plan_id, int $page_size = 10, ?string $pagination_token = null) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListInboundPlanBoxesResponse;
 
     /**
      * Operation listInboundPlanItems.
@@ -460,7 +460,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function listInboundPlanItems(AccessToken $accessToken, string $region, string $inbound_plan_id, int $page_size = 10, ?string $pagination_token = null) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListInboundPlanItemsResponse;
+    public function listInboundPlanItems(AccessToken $accessToken, string $region, string $inbound_plan_id, int $page_size = 10, ?string $pagination_token = null) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListInboundPlanItemsResponse;
 
     /**
      * Operation listInboundPlanPallets.
@@ -472,7 +472,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function listInboundPlanPallets(AccessToken $accessToken, string $region, string $inbound_plan_id, int $page_size = 10, ?string $pagination_token = null) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListInboundPlanPalletsResponse;
+    public function listInboundPlanPallets(AccessToken $accessToken, string $region, string $inbound_plan_id, int $page_size = 10, ?string $pagination_token = null) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListInboundPlanPalletsResponse;
 
     /**
      * Operation listInboundPlans.
@@ -486,7 +486,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function listInboundPlans(AccessToken $accessToken, string $region, int $page_size = 10, ?string $pagination_token = null, ?string $status = null, ?string $sort_by = null, ?string $sort_order = null) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListInboundPlansResponse;
+    public function listInboundPlans(AccessToken $accessToken, string $region, int $page_size = 10, ?string $pagination_token = null, ?string $status = null, ?string $sort_by = null, ?string $sort_order = null) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListInboundPlansResponse;
 
     /**
      * Operation listItemComplianceDetails.
@@ -497,7 +497,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function listItemComplianceDetails(AccessToken $accessToken, string $region, array $mskus, string $marketplace_id) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListItemComplianceDetailsResponse;
+    public function listItemComplianceDetails(AccessToken $accessToken, string $region, array $mskus, string $marketplace_id) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListItemComplianceDetailsResponse;
 
     /**
      * Operation listPackingGroupBoxes.
@@ -510,7 +510,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function listPackingGroupBoxes(AccessToken $accessToken, string $region, string $inbound_plan_id, string $packing_group_id, int $page_size = 10, ?string $pagination_token = null) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListPackingGroupBoxesResponse;
+    public function listPackingGroupBoxes(AccessToken $accessToken, string $region, string $inbound_plan_id, string $packing_group_id, int $page_size = 10, ?string $pagination_token = null) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListPackingGroupBoxesResponse;
 
     /**
      * Operation listPackingGroupItems.
@@ -523,7 +523,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function listPackingGroupItems(AccessToken $accessToken, string $region, string $inbound_plan_id, string $packing_group_id, int $page_size = 10, ?string $pagination_token = null) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListPackingGroupItemsResponse;
+    public function listPackingGroupItems(AccessToken $accessToken, string $region, string $inbound_plan_id, string $packing_group_id, int $page_size = 10, ?string $pagination_token = null) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListPackingGroupItemsResponse;
 
     /**
      * Operation listPackingOptions.
@@ -535,7 +535,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function listPackingOptions(AccessToken $accessToken, string $region, string $inbound_plan_id, int $page_size = 10, ?string $pagination_token = null) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListPackingOptionsResponse;
+    public function listPackingOptions(AccessToken $accessToken, string $region, string $inbound_plan_id, int $page_size = 10, ?string $pagination_token = null) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListPackingOptionsResponse;
 
     /**
      * Operation listPlacementOptions.
@@ -547,7 +547,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function listPlacementOptions(AccessToken $accessToken, string $region, string $inbound_plan_id, int $page_size = 10, ?string $pagination_token = null) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListPlacementOptionsResponse;
+    public function listPlacementOptions(AccessToken $accessToken, string $region, string $inbound_plan_id, int $page_size = 10, ?string $pagination_token = null) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListPlacementOptionsResponse;
 
     /**
      * Operation listShipmentBoxes.
@@ -560,7 +560,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function listShipmentBoxes(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, int $page_size = 10, ?string $pagination_token = null) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListShipmentBoxesResponse;
+    public function listShipmentBoxes(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, int $page_size = 10, ?string $pagination_token = null) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListShipmentBoxesResponse;
 
     /**
      * Operation listShipmentContentUpdatePreviews.
@@ -573,7 +573,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function listShipmentContentUpdatePreviews(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, int $page_size = 10, ?string $pagination_token = null) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListShipmentContentUpdatePreviewsResponse;
+    public function listShipmentContentUpdatePreviews(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, int $page_size = 10, ?string $pagination_token = null) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListShipmentContentUpdatePreviewsResponse;
 
     /**
      * Operation listShipmentItems.
@@ -586,7 +586,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function listShipmentItems(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, int $page_size = 10, ?string $pagination_token = null) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListShipmentItemsResponse;
+    public function listShipmentItems(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, int $page_size = 10, ?string $pagination_token = null) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListShipmentItemsResponse;
 
     /**
      * Operation listShipmentPallets.
@@ -599,7 +599,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function listShipmentPallets(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, int $page_size = 10, ?string $pagination_token = null) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListShipmentPalletsResponse;
+    public function listShipmentPallets(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, int $page_size = 10, ?string $pagination_token = null) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListShipmentPalletsResponse;
 
     /**
      * Operation listTransportationOptions.
@@ -613,7 +613,7 @@ interface FulfillmentInboundSDK2024Interface
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function listTransportationOptions(AccessToken $accessToken, string $region, string $inbound_plan_id, int $page_size = 10, ?string $pagination_token = null, ?string $placement_option_id = null, ?string $shipment_id = null) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListTransportationOptionsResponse;
+    public function listTransportationOptions(AccessToken $accessToken, string $region, string $inbound_plan_id, int $page_size = 10, ?string $pagination_token = null, ?string $placement_option_id = null, ?string $shipment_id = null) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListTransportationOptionsResponse;
 
     /**
      * Operation scheduleSelfShipAppointment.
@@ -621,79 +621,79 @@ interface FulfillmentInboundSDK2024Interface
      * @param string $inbound_plan_id Identifier of an inbound plan. (required)
      * @param string $shipment_id Identifier of a shipment. A shipment contains the boxes and units being inbounded. (required)
      * @param string $slot_id An identifier to a self-ship appointment slot. (required)
-     * @param Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ScheduleSelfShipAppointmentRequest $body The body of the request to &#x60;scheduleSelfShipAppointment&#x60;. (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ScheduleSelfShipAppointmentRequest $body The body of the request to &#x60;scheduleSelfShipAppointment&#x60;. (required)
      *
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function scheduleSelfShipAppointment(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, string $slot_id, Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ScheduleSelfShipAppointmentRequest $body) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ScheduleSelfShipAppointmentResponse;
+    public function scheduleSelfShipAppointment(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, string $slot_id, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ScheduleSelfShipAppointmentRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ScheduleSelfShipAppointmentResponse;
 
     /**
      * Operation setPackingInformation.
      *
      * @param string $inbound_plan_id Identifier of an inbound plan. (required)
-     * @param Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SetPackingInformationRequest $body The body of the request to &#x60;setPackingInformation&#x60;. (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SetPackingInformationRequest $body The body of the request to &#x60;setPackingInformation&#x60;. (required)
      *
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function setPackingInformation(AccessToken $accessToken, string $region, string $inbound_plan_id, Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SetPackingInformationRequest $body) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SetPackingInformationResponse;
+    public function setPackingInformation(AccessToken $accessToken, string $region, string $inbound_plan_id, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SetPackingInformationRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SetPackingInformationResponse;
 
     /**
      * Operation updateInboundPlanName.
      *
      * @param string $inbound_plan_id Identifier of an inbound plan. (required)
-     * @param Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateInboundPlanNameRequest $body The body of the request to &#x60;updateInboundPlanName&#x60;. (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateInboundPlanNameRequest $body The body of the request to &#x60;updateInboundPlanName&#x60;. (required)
      *
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function updateInboundPlanName(AccessToken $accessToken, string $region, string $inbound_plan_id, Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateInboundPlanNameRequest $body);
+    public function updateInboundPlanName(AccessToken $accessToken, string $region, string $inbound_plan_id, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateInboundPlanNameRequest $body);
 
     /**
      * Operation updateItemComplianceDetails.
      *
      * @param string $marketplace_id The Marketplace ID. Refer to [Marketplace IDs](https://developer-docs.amazon.com/sp-api/docs/marketplace-ids) for a list of possible values. (required)
-     * @param Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateItemComplianceDetailsRequest $body The body of the request to &#x60;updateItemComplianceDetails&#x60;. (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateItemComplianceDetailsRequest $body The body of the request to &#x60;updateItemComplianceDetails&#x60;. (required)
      *
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function updateItemComplianceDetails(AccessToken $accessToken, string $region, string $marketplace_id, Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateItemComplianceDetailsRequest $body) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateItemComplianceDetailsResponse;
+    public function updateItemComplianceDetails(AccessToken $accessToken, string $region, string $marketplace_id, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateItemComplianceDetailsRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateItemComplianceDetailsResponse;
 
     /**
      * Operation updateShipmentName.
      *
      * @param string $inbound_plan_id Identifier of an inbound plan. (required)
      * @param string $shipment_id Identifier of a shipment. A shipment contains the boxes and units being inbounded. (required)
-     * @param Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateShipmentNameRequest $body The body of the request to &#x60;updateShipmentName&#x60;. (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateShipmentNameRequest $body The body of the request to &#x60;updateShipmentName&#x60;. (required)
      *
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function updateShipmentName(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateShipmentNameRequest $body);
+    public function updateShipmentName(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateShipmentNameRequest $body);
 
     /**
      * Operation updateShipmentSourceAddress.
      *
      * @param string $inbound_plan_id Identifier of an inbound plan. (required)
      * @param string $shipment_id Identifier of a shipment. A shipment contains the boxes and units being inbounded. (required)
-     * @param Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateShipmentSourceAddressRequest $body The body of the request to &#x60;updateShipmentSourceAddress&#x60;. (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateShipmentSourceAddressRequest $body The body of the request to &#x60;updateShipmentSourceAddress&#x60;. (required)
      *
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function updateShipmentSourceAddress(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateShipmentSourceAddressRequest $body) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateShipmentSourceAddressResponse;
+    public function updateShipmentSourceAddress(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateShipmentSourceAddressRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateShipmentSourceAddressResponse;
 
     /**
      * Operation updateShipmentTrackingDetails.
      *
      * @param string $inbound_plan_id Identifier of an inbound plan. (required)
      * @param string $shipment_id Identifier of a shipment. A shipment contains the boxes and units being inbounded. (required)
-     * @param Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateShipmentTrackingDetailsRequest $body The body of the request to &#x60;updateShipmentTrackingDetails&#x60;. (required)
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateShipmentTrackingDetailsRequest $body The body of the request to &#x60;updateShipmentTrackingDetails&#x60;. (required)
      *
      * @throws ApiException on non-2xx response
      * @throws InvalidArgumentException
      */
-    public function updateShipmentTrackingDetails(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateShipmentTrackingDetailsRequest $body) : Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateShipmentTrackingDetailsResponse;
+    public function updateShipmentTrackingDetails(AccessToken $accessToken, string $region, string $inbound_plan_id, string $shipment_id, \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateShipmentTrackingDetailsRequest $body) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\UpdateShipmentTrackingDetailsResponse;
 }

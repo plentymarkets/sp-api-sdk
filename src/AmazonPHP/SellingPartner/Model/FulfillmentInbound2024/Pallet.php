@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class Pallet implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class Pallet implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -189,39 +189,54 @@ class Pallet implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillmen
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['dimensions'] !== null) {
-            $this->container['dimensions']->validate();
+            $this->container['dimensions']->listInvalidProperties();
         }
 
         if ($this->container['package_id'] === null) {
-            throw new AssertionException("'package_id' can't be null");
+            $invalidProperties[] = "'package_id' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['package_id']) > 38)) {
-            throw new AssertionException("invalid value for 'package_id', the character length must be smaller than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'package_id', the character length must be smaller than or equal to 38.";
         }
 
         if ((\mb_strlen((string) $this->container['package_id']) < 38)) {
-            throw new AssertionException("invalid value for 'package_id', the character length must be bigger than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'package_id', the character length must be bigger than or equal to 38.";
         }
 
         if (!\preg_match('/^[a-zA-Z0-9-]*$/', (string) $this->container['package_id'])) {
-            throw new AssertionException("invalid value for 'package_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.");
+            $invalidProperties[] = "invalid value for 'package_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.";
         }
 
         if (null !== $this->container['quantity'] && ($this->container['quantity'] > 10000)) {
-            throw new AssertionException("invalid value for 'quantity', must be smaller than or equal to 10000.");
+            $invalidProperties[] = "invalid value for 'quantity', must be smaller than or equal to 10000.";
         }
 
         if (null !== $this->container['quantity'] && ($this->container['quantity'] < 1)) {
-            throw new AssertionException("invalid value for 'quantity', must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'quantity', must be bigger than or equal to 1.";
         }
 
         if ($this->container['weight'] !== null) {
-            $this->container['weight']->validate();
+            $this->container['weight']->listInvalidProperties();
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -235,7 +250,7 @@ class Pallet implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillmen
     /**
      * Sets dimensions.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Dimensions $dimensions dimensions
+     * @param null|Dimensions $dimensions dimensions
      */
     public function setDimensions(?Dimensions $dimensions) : self
     {
@@ -295,7 +310,7 @@ class Pallet implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillmen
     /**
      * Sets stackability.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Stackability $stackability stackability
+     * @param null|Stackability $stackability stackability
      */
     public function setStackability(?Stackability $stackability) : self
     {
@@ -315,7 +330,7 @@ class Pallet implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillmen
     /**
      * Sets weight.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Weight $weight weight
+     * @param null|Weight $weight weight
      */
     public function setWeight(?Weight $weight) : self
     {

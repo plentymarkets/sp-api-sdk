@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class Currency implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class Currency implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -171,23 +171,38 @@ class Currency implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillm
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+
         if ($this->container['amount'] === null) {
-            throw new AssertionException("'amount' can't be null");
+            $invalidProperties[] = "'amount' can't be null";
         }
 
         if ($this->container['code'] === null) {
-            throw new AssertionException("'code' can't be null");
+            $invalidProperties[] = "'code' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['code']) > 3)) {
-            throw new AssertionException("invalid value for 'code', the character length must be smaller than or equal to 3.");
+            $invalidProperties[] = "invalid value for 'code', the character length must be smaller than or equal to 3.";
         }
 
         if ((\mb_strlen((string) $this->container['code']) < 3)) {
-            throw new AssertionException("invalid value for 'code', the character length must be bigger than or equal to 3.");
+            $invalidProperties[] = "invalid value for 'code', the character length must be bigger than or equal to 3.";
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**

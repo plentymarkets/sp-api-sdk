@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class PlacementOption implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class PlacementOption implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -195,53 +195,68 @@ class PlacementOption implements \ArrayAccess, \JsonSerializable, \Stringable, F
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['discounts'] === null) {
-            throw new AssertionException("'discounts' can't be null");
+            $invalidProperties[] = "'discounts' can't be null";
         }
 
         if ($this->container['fees'] === null) {
-            throw new AssertionException("'fees' can't be null");
+            $invalidProperties[] = "'fees' can't be null";
         }
 
         if ($this->container['placement_option_id'] === null) {
-            throw new AssertionException("'placement_option_id' can't be null");
+            $invalidProperties[] = "'placement_option_id' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['placement_option_id']) > 38)) {
-            throw new AssertionException("invalid value for 'placement_option_id', the character length must be smaller than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'placement_option_id', the character length must be smaller than or equal to 38.";
         }
 
         if ((\mb_strlen((string) $this->container['placement_option_id']) < 38)) {
-            throw new AssertionException("invalid value for 'placement_option_id', the character length must be bigger than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'placement_option_id', the character length must be bigger than or equal to 38.";
         }
 
         if (!\preg_match('/^[a-zA-Z0-9-]*$/', (string) $this->container['placement_option_id'])) {
-            throw new AssertionException("invalid value for 'placement_option_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.");
+            $invalidProperties[] = "invalid value for 'placement_option_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.";
         }
 
         if ($this->container['shipment_ids'] === null) {
-            throw new AssertionException("'shipment_ids' can't be null");
+            $invalidProperties[] = "'shipment_ids' can't be null";
         }
 
         if ($this->container['status'] === null) {
-            throw new AssertionException("'status' can't be null");
+            $invalidProperties[] = "'status' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['status']) > 1024)) {
-            throw new AssertionException("invalid value for 'status', the character length must be smaller than or equal to 1024.");
+            $invalidProperties[] = "invalid value for 'status', the character length must be smaller than or equal to 1024.";
         }
 
         if ((\mb_strlen((string) $this->container['status']) < 1)) {
-            throw new AssertionException("invalid value for 'status', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'status', the character length must be bigger than or equal to 1.";
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
      * Gets discounts.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Incentive[]
+     * @return Incentive[]
      */
     public function getDiscounts() : array
     {
@@ -251,7 +266,7 @@ class PlacementOption implements \ArrayAccess, \JsonSerializable, \Stringable, F
     /**
      * Sets discounts.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Incentive[] $discounts discount for the offered option
+     * @param Incentive[] $discounts discount for the offered option
      */
     public function setDiscounts(array $discounts) : self
     {
@@ -283,7 +298,7 @@ class PlacementOption implements \ArrayAccess, \JsonSerializable, \Stringable, F
     /**
      * Gets fees.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Incentive[]
+     * @return Incentive[]
      */
     public function getFees() : array
     {
@@ -293,7 +308,7 @@ class PlacementOption implements \ArrayAccess, \JsonSerializable, \Stringable, F
     /**
      * Sets fees.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Incentive[] $fees fee for the offered option
+     * @param Incentive[] $fees fee for the offered option
      */
     public function setFees(array $fees) : self
     {

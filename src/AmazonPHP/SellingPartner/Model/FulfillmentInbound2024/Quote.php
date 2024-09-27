@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class Quote implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class Quote implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -177,13 +177,28 @@ class Quote implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillment
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['cost'] === null) {
-            throw new AssertionException("'cost' can't be null");
+            $invalidProperties[] = "'cost' can't be null";
         }
 
-        $this->container['cost']->validate();
+        $this->container['cost']->listInvalidProperties();
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -197,7 +212,7 @@ class Quote implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillment
     /**
      * Sets cost.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Currency $cost cost
+     * @param Currency $cost cost
      */
     public function setCost(Currency $cost) : self
     {

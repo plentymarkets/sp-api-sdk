@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class InboundPlanSummary implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class InboundPlanSummary implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -201,57 +201,72 @@ class InboundPlanSummary implements \ArrayAccess, \JsonSerializable, \Stringable
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['created_at'] === null) {
-            throw new AssertionException("'created_at' can't be null");
+            $invalidProperties[] = "'created_at' can't be null";
         }
 
         if ($this->container['inbound_plan_id'] === null) {
-            throw new AssertionException("'inbound_plan_id' can't be null");
+            $invalidProperties[] = "'inbound_plan_id' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['inbound_plan_id']) > 38)) {
-            throw new AssertionException("invalid value for 'inbound_plan_id', the character length must be smaller than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'inbound_plan_id', the character length must be smaller than or equal to 38.";
         }
 
         if ((\mb_strlen((string) $this->container['inbound_plan_id']) < 38)) {
-            throw new AssertionException("invalid value for 'inbound_plan_id', the character length must be bigger than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'inbound_plan_id', the character length must be bigger than or equal to 38.";
         }
 
         if (!\preg_match('/^[a-zA-Z0-9-]*$/', (string) $this->container['inbound_plan_id'])) {
-            throw new AssertionException("invalid value for 'inbound_plan_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.");
+            $invalidProperties[] = "invalid value for 'inbound_plan_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.";
         }
 
         if ($this->container['last_updated_at'] === null) {
-            throw new AssertionException("'last_updated_at' can't be null");
+            $invalidProperties[] = "'last_updated_at' can't be null";
         }
 
         if ($this->container['marketplace_ids'] === null) {
-            throw new AssertionException("'marketplace_ids' can't be null");
+            $invalidProperties[] = "'marketplace_ids' can't be null";
         }
 
         if ($this->container['name'] === null) {
-            throw new AssertionException("'name' can't be null");
+            $invalidProperties[] = "'name' can't be null";
         }
 
         if ($this->container['source_address'] === null) {
-            throw new AssertionException("'source_address' can't be null");
+            $invalidProperties[] = "'source_address' can't be null";
         }
 
-        $this->container['source_address']->validate();
+        $this->container['source_address']->listInvalidProperties();
 
         if ($this->container['status'] === null) {
-            throw new AssertionException("'status' can't be null");
+            $invalidProperties[] = "'status' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['status']) > 1024)) {
-            throw new AssertionException("invalid value for 'status', the character length must be smaller than or equal to 1024.");
+            $invalidProperties[] = "invalid value for 'status', the character length must be smaller than or equal to 1024.";
         }
 
         if ((\mb_strlen((string) $this->container['status']) < 1)) {
-            throw new AssertionException("invalid value for 'status', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'status', the character length must be bigger than or equal to 1.";
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -367,7 +382,7 @@ class InboundPlanSummary implements \ArrayAccess, \JsonSerializable, \Stringable
     /**
      * Sets source_address.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Address $source_address source_address
+     * @param Address $source_address source_address
      */
     public function setSourceAddress(Address $source_address) : self
     {

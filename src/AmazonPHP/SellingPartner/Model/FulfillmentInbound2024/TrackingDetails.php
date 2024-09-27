@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class TrackingDetails implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class TrackingDetails implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -171,15 +171,30 @@ class TrackingDetails implements \ArrayAccess, \JsonSerializable, \Stringable, F
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['ltl_tracking_detail'] !== null) {
-            $this->container['ltl_tracking_detail']->validate();
+            $this->container['ltl_tracking_detail']->listInvalidProperties();
         }
 
         if ($this->container['spd_tracking_detail'] !== null) {
-            $this->container['spd_tracking_detail']->validate();
+            $this->container['spd_tracking_detail']->listInvalidProperties();
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -193,7 +208,7 @@ class TrackingDetails implements \ArrayAccess, \JsonSerializable, \Stringable, F
     /**
      * Sets ltl_tracking_detail.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\LtlTrackingDetail $ltl_tracking_detail ltl_tracking_detail
+     * @param null|LtlTrackingDetail $ltl_tracking_detail ltl_tracking_detail
      */
     public function setLtlTrackingDetail(?LtlTrackingDetail $ltl_tracking_detail) : self
     {
@@ -213,7 +228,7 @@ class TrackingDetails implements \ArrayAccess, \JsonSerializable, \Stringable, F
     /**
      * Sets spd_tracking_detail.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SpdTrackingDetail $spd_tracking_detail spd_tracking_detail
+     * @param null|SpdTrackingDetail $spd_tracking_detail spd_tracking_detail
      */
     public function setSpdTrackingDetail(?SpdTrackingDetail $spd_tracking_detail) : self
     {

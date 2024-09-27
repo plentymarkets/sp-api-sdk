@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class ConfirmTransportationOptionsRequest implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class ConfirmTransportationOptionsRequest implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -165,21 +165,36 @@ class ConfirmTransportationOptionsRequest implements \ArrayAccess, \JsonSerializ
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+
         if ($this->container['transportation_selections'] === null) {
-            throw new AssertionException("'transportation_selections' can't be null");
+            $invalidProperties[] = "'transportation_selections' can't be null";
         }
 
         if ((\count($this->container['transportation_selections']) < 1)) {
-            throw new AssertionException("invalid value for 'transportation_selections', number of items must be greater than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'transportation_selections', number of items must be greater than or equal to 1.";
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
      * Gets transportation_selections.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TransportationSelection[]
+     * @return TransportationSelection[]
      */
     public function getTransportationSelections() : array
     {
@@ -189,7 +204,7 @@ class ConfirmTransportationOptionsRequest implements \ArrayAccess, \JsonSerializ
     /**
      * Sets transportation_selections.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TransportationSelection[] $transportation_selections information needed to confirm one of the available transportation options
+     * @param TransportationSelection[] $transportation_selections information needed to confirm one of the available transportation options
      */
     public function setTransportationSelections(array $transportation_selections) : self
     {

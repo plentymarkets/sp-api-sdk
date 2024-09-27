@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class ListDeliveryWindowOptionsResponse implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class ListDeliveryWindowOptionsResponse implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -171,21 +171,36 @@ class ListDeliveryWindowOptionsResponse implements \ArrayAccess, \JsonSerializab
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['delivery_window_options'] === null) {
-            throw new AssertionException("'delivery_window_options' can't be null");
+            $invalidProperties[] = "'delivery_window_options' can't be null";
         }
 
         if ($this->container['pagination'] !== null) {
-            $this->container['pagination']->validate();
+            $this->container['pagination']->listInvalidProperties();
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
      * Gets delivery_window_options.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\DeliveryWindowOption[]
+     * @return DeliveryWindowOption[]
      */
     public function getDeliveryWindowOptions() : array
     {
@@ -195,7 +210,7 @@ class ListDeliveryWindowOptionsResponse implements \ArrayAccess, \JsonSerializab
     /**
      * Sets delivery_window_options.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\DeliveryWindowOption[] $delivery_window_options delivery window options generated for the placement option
+     * @param DeliveryWindowOption[] $delivery_window_options delivery window options generated for the placement option
      */
     public function setDeliveryWindowOptions(array $delivery_window_options) : self
     {
@@ -215,7 +230,7 @@ class ListDeliveryWindowOptionsResponse implements \ArrayAccess, \JsonSerializab
     /**
      * Sets pagination.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination $pagination pagination
+     * @param null|Pagination $pagination pagination
      */
     public function setPagination(?Pagination $pagination) : self
     {

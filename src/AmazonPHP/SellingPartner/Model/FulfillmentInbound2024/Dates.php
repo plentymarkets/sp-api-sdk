@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class Dates implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class Dates implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -165,11 +165,26 @@ class Dates implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillment
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['ready_to_ship_window'] !== null) {
-            $this->container['ready_to_ship_window']->validate();
+            $this->container['ready_to_ship_window']->listInvalidProperties();
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -183,7 +198,7 @@ class Dates implements \ArrayAccess, \JsonSerializable, \Stringable, Fulfillment
     /**
      * Sets ready_to_ship_window.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Window $ready_to_ship_window ready_to_ship_window
+     * @param null|Window $ready_to_ship_window ready_to_ship_window
      */
     public function setReadyToShipWindow(?Window $ready_to_ship_window) : self
     {

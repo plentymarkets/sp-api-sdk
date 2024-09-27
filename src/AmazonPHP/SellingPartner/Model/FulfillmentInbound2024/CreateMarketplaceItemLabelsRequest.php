@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class CreateMarketplaceItemLabelsRequest implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class CreateMarketplaceItemLabelsRequest implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -201,55 +201,70 @@ class CreateMarketplaceItemLabelsRequest implements \ArrayAccess, \JsonSerializa
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if (null !== $this->container['height'] && ($this->container['height'] > 1E+2)) {
-            throw new AssertionException("invalid value for 'height', must be smaller than or equal to 1E+2.");
+            $invalidProperties[] = "invalid value for 'height', must be smaller than or equal to 1E+2.";
         }
 
         if (null !== $this->container['height'] && ($this->container['height'] < 25)) {
-            throw new AssertionException("invalid value for 'height', must be bigger than or equal to 25.");
+            $invalidProperties[] = "invalid value for 'height', must be bigger than or equal to 25.";
         }
 
         if ($this->container['label_type'] === null) {
-            throw new AssertionException("'label_type' can't be null");
+            $invalidProperties[] = "'label_type' can't be null";
         }
 
         if (null !== $this->container['locale_code'] && !\preg_match('/^[a-z]{2}_[A-Z]{2}$/', (string) $this->container['locale_code'])) {
-            throw new AssertionException("invalid value for 'locale_code', must be conform to the pattern /^[a-z]{2}_[A-Z]{2}$/.");
+            $invalidProperties[] = "invalid value for 'locale_code', must be conform to the pattern /^[a-z]{2}_[A-Z]{2}$/.";
         }
 
         if ($this->container['marketplace_id'] === null) {
-            throw new AssertionException("'marketplace_id' can't be null");
+            $invalidProperties[] = "'marketplace_id' can't be null";
         }
 
         if ((\mb_strlen((string) $this->container['marketplace_id']) > 256)) {
-            throw new AssertionException("invalid value for 'marketplace_id', the character length must be smaller than or equal to 256.");
+            $invalidProperties[] = "invalid value for 'marketplace_id', the character length must be smaller than or equal to 256.";
         }
 
         if ((\mb_strlen((string) $this->container['marketplace_id']) < 1)) {
-            throw new AssertionException("invalid value for 'marketplace_id', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'marketplace_id', the character length must be bigger than or equal to 1.";
         }
 
         if ($this->container['msku_quantities'] === null) {
-            throw new AssertionException("'msku_quantities' can't be null");
+            $invalidProperties[] = "'msku_quantities' can't be null";
         }
 
         if ((\count($this->container['msku_quantities']) > 100)) {
-            throw new AssertionException("invalid value for 'msku_quantities', number of items must be less than or equal to 100.");
+            $invalidProperties[] = "invalid value for 'msku_quantities', number of items must be less than or equal to 100.";
         }
 
         if ((\count($this->container['msku_quantities']) < 1)) {
-            throw new AssertionException("invalid value for 'msku_quantities', number of items must be greater than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'msku_quantities', number of items must be greater than or equal to 1.";
         }
 
         if (null !== $this->container['width'] && ($this->container['width'] > 1E+2)) {
-            throw new AssertionException("invalid value for 'width', must be smaller than or equal to 1E+2.");
+            $invalidProperties[] = "invalid value for 'width', must be smaller than or equal to 1E+2.";
         }
 
         if (null !== $this->container['width'] && ($this->container['width'] < 25)) {
-            throw new AssertionException("invalid value for 'width', must be bigger than or equal to 25.");
+            $invalidProperties[] = "invalid value for 'width', must be bigger than or equal to 25.";
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -283,7 +298,7 @@ class CreateMarketplaceItemLabelsRequest implements \ArrayAccess, \JsonSerializa
     /**
      * Sets label_type.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\LabelPrintType $label_type label_type
+     * @param LabelPrintType $label_type label_type
      */
     public function setLabelType(LabelPrintType $label_type) : self
     {
@@ -335,7 +350,7 @@ class CreateMarketplaceItemLabelsRequest implements \ArrayAccess, \JsonSerializa
     /**
      * Gets msku_quantities.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\MskuQuantity[]
+     * @return MskuQuantity[]
      */
     public function getMskuQuantities() : array
     {
@@ -345,7 +360,7 @@ class CreateMarketplaceItemLabelsRequest implements \ArrayAccess, \JsonSerializa
     /**
      * Sets msku_quantities.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\MskuQuantity[] $msku_quantities represents the quantity of an msku to print item labels for
+     * @param MskuQuantity[] $msku_quantities represents the quantity of an msku to print item labels for
      */
     public function setMskuQuantities(array $msku_quantities) : self
     {
@@ -365,7 +380,7 @@ class CreateMarketplaceItemLabelsRequest implements \ArrayAccess, \JsonSerializa
     /**
      * Sets page_type.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ItemLabelPageType $page_type page_type
+     * @param null|ItemLabelPageType $page_type page_type
      */
     public function setPageType(?ItemLabelPageType $page_type) : self
     {

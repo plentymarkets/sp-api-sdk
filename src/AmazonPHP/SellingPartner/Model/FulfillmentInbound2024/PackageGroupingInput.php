@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class PackageGroupingInput implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class PackageGroupingInput implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -177,49 +177,64 @@ class PackageGroupingInput implements \ArrayAccess, \JsonSerializable, \Stringab
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['boxes'] === null) {
-            throw new AssertionException("'boxes' can't be null");
+            $invalidProperties[] = "'boxes' can't be null";
         }
 
         if ((\count($this->container['boxes']) > 5000)) {
-            throw new AssertionException("invalid value for 'boxes', number of items must be less than or equal to 5000.");
+            $invalidProperties[] = "invalid value for 'boxes', number of items must be less than or equal to 5000.";
         }
 
         if ((\count($this->container['boxes']) < 1)) {
-            throw new AssertionException("invalid value for 'boxes', number of items must be greater than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'boxes', number of items must be greater than or equal to 1.";
         }
 
         if (null !== $this->container['packing_group_id'] && (\mb_strlen((string) $this->container['packing_group_id']) > 38)) {
-            throw new AssertionException("invalid value for 'packing_group_id', the character length must be smaller than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'packing_group_id', the character length must be smaller than or equal to 38.";
         }
 
         if (null !== $this->container['packing_group_id'] && (\mb_strlen((string) $this->container['packing_group_id']) < 38)) {
-            throw new AssertionException("invalid value for 'packing_group_id', the character length must be bigger than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'packing_group_id', the character length must be bigger than or equal to 38.";
         }
 
         if (null !== $this->container['packing_group_id'] && !\preg_match('/^[a-zA-Z0-9-]*$/', (string) $this->container['packing_group_id'])) {
-            throw new AssertionException("invalid value for 'packing_group_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.");
+            $invalidProperties[] = "invalid value for 'packing_group_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.";
         }
 
         if (null !== $this->container['shipment_id'] && (\mb_strlen((string) $this->container['shipment_id']) > 38)) {
-            throw new AssertionException("invalid value for 'shipment_id', the character length must be smaller than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'shipment_id', the character length must be smaller than or equal to 38.";
         }
 
         if (null !== $this->container['shipment_id'] && (\mb_strlen((string) $this->container['shipment_id']) < 38)) {
-            throw new AssertionException("invalid value for 'shipment_id', the character length must be bigger than or equal to 38.");
+            $invalidProperties[] = "invalid value for 'shipment_id', the character length must be bigger than or equal to 38.";
         }
 
         if (null !== $this->container['shipment_id'] && !\preg_match('/^[a-zA-Z0-9-]*$/', (string) $this->container['shipment_id'])) {
-            throw new AssertionException("invalid value for 'shipment_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.");
+            $invalidProperties[] = "invalid value for 'shipment_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.";
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
      * Gets boxes.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxInput[]
+     * @return BoxInput[]
      */
     public function getBoxes() : array
     {
@@ -229,7 +244,7 @@ class PackageGroupingInput implements \ArrayAccess, \JsonSerializable, \Stringab
     /**
      * Sets boxes.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxInput[] $boxes box level information being provided
+     * @param BoxInput[] $boxes box level information being provided
      */
     public function setBoxes(array $boxes) : self
     {

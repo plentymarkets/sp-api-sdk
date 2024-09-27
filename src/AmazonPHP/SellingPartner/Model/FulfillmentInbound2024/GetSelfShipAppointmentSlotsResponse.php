@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class GetSelfShipAppointmentSlotsResponse implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class GetSelfShipAppointmentSlotsResponse implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -171,17 +171,32 @@ class GetSelfShipAppointmentSlotsResponse implements \ArrayAccess, \JsonSerializ
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['pagination'] !== null) {
-            $this->container['pagination']->validate();
+            $this->container['pagination']->listInvalidProperties();
         }
 
         if ($this->container['self_ship_appointment_slots_availability'] === null) {
-            throw new AssertionException("'self_ship_appointment_slots_availability' can't be null");
+            $invalidProperties[] = "'self_ship_appointment_slots_availability' can't be null";
         }
 
-        $this->container['self_ship_appointment_slots_availability']->validate();
+        $this->container['self_ship_appointment_slots_availability']->listInvalidProperties();
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -195,7 +210,7 @@ class GetSelfShipAppointmentSlotsResponse implements \ArrayAccess, \JsonSerializ
     /**
      * Sets pagination.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination $pagination pagination
+     * @param null|Pagination $pagination pagination
      */
     public function setPagination(?Pagination $pagination) : self
     {
@@ -215,7 +230,7 @@ class GetSelfShipAppointmentSlotsResponse implements \ArrayAccess, \JsonSerializ
     /**
      * Sets self_ship_appointment_slots_availability.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SelfShipAppointmentSlotsAvailability $self_ship_appointment_slots_availability self_ship_appointment_slots_availability
+     * @param SelfShipAppointmentSlotsAvailability $self_ship_appointment_slots_availability self_ship_appointment_slots_availability
      */
     public function setSelfShipAppointmentSlotsAvailability(SelfShipAppointmentSlotsAvailability $self_ship_appointment_slots_availability) : self
     {

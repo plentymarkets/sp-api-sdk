@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class ComplianceDetail implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class ComplianceDetail implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -183,35 +183,50 @@ class ComplianceDetail implements \ArrayAccess, \JsonSerializable, \Stringable, 
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if (null !== $this->container['asin'] && (\mb_strlen((string) $this->container['asin']) > 10)) {
-            throw new AssertionException("invalid value for 'asin', the character length must be smaller than or equal to 10.");
+            $invalidProperties[] = "invalid value for 'asin', the character length must be smaller than or equal to 10.";
         }
 
         if (null !== $this->container['asin'] && (\mb_strlen((string) $this->container['asin']) < 1)) {
-            throw new AssertionException("invalid value for 'asin', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'asin', the character length must be bigger than or equal to 1.";
         }
 
         if (null !== $this->container['fnsku'] && (\mb_strlen((string) $this->container['fnsku']) > 10)) {
-            throw new AssertionException("invalid value for 'fnsku', the character length must be smaller than or equal to 10.");
+            $invalidProperties[] = "invalid value for 'fnsku', the character length must be smaller than or equal to 10.";
         }
 
         if (null !== $this->container['fnsku'] && (\mb_strlen((string) $this->container['fnsku']) < 1)) {
-            throw new AssertionException("invalid value for 'fnsku', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'fnsku', the character length must be bigger than or equal to 1.";
         }
 
         if (null !== $this->container['msku'] && (\mb_strlen((string) $this->container['msku']) > 40)) {
-            throw new AssertionException("invalid value for 'msku', the character length must be smaller than or equal to 40.");
+            $invalidProperties[] = "invalid value for 'msku', the character length must be smaller than or equal to 40.";
         }
 
         if (null !== $this->container['msku'] && (\mb_strlen((string) $this->container['msku']) < 1)) {
-            throw new AssertionException("invalid value for 'msku', the character length must be bigger than or equal to 1.");
+            $invalidProperties[] = "invalid value for 'msku', the character length must be bigger than or equal to 1.";
         }
 
         if ($this->container['tax_details'] !== null) {
-            $this->container['tax_details']->validate();
+            $this->container['tax_details']->listInvalidProperties();
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -285,7 +300,7 @@ class ComplianceDetail implements \ArrayAccess, \JsonSerializable, \Stringable, 
     /**
      * Sets tax_details.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\TaxDetails $tax_details tax_details
+     * @param null|TaxDetails $tax_details tax_details
      */
     public function setTaxDetails(?TaxDetails $tax_details) : self
     {

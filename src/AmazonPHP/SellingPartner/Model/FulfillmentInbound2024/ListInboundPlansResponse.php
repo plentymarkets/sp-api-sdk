@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class ListInboundPlansResponse implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class ListInboundPlansResponse implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -171,17 +171,32 @@ class ListInboundPlansResponse implements \ArrayAccess, \JsonSerializable, \Stri
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        $invalidProperties = [];
+         
         if ($this->container['pagination'] !== null) {
-            $this->container['pagination']->validate();
+            $this->container['pagination']->listInvalidProperties();
         }
+
+        return $invalidProperties;
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
      * Gets inbound_plans.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\InboundPlanSummary[]
+     * @return null|InboundPlanSummary[]
      */
     public function getInboundPlans() : ?array
     {
@@ -191,7 +206,7 @@ class ListInboundPlansResponse implements \ArrayAccess, \JsonSerializable, \Stri
     /**
      * Sets inbound_plans.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\InboundPlanSummary[] $inbound_plans a list of inbound plans with minimal information
+     * @param null|InboundPlanSummary[] $inbound_plans a list of inbound plans with minimal information
      */
     public function setInboundPlans(?array $inbound_plans) : self
     {
@@ -211,7 +226,7 @@ class ListInboundPlansResponse implements \ArrayAccess, \JsonSerializable, \Stri
     /**
      * Sets pagination.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Pagination $pagination pagination
+     * @param null|Pagination $pagination pagination
      */
     public function setPagination(?Pagination $pagination) : self
     {

@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class SpdTrackingDetail implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class SpdTrackingDetail implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -165,14 +165,26 @@ class SpdTrackingDetail implements \ArrayAccess, \JsonSerializable, \Stringable,
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        return [];
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
      * Gets spd_tracking_items.
      *
-     * @return null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SpdTrackingItem[]
+     * @return null|SpdTrackingItem[]
      */
     public function getSpdTrackingItems() : ?array
     {
@@ -182,7 +194,7 @@ class SpdTrackingDetail implements \ArrayAccess, \JsonSerializable, \Stringable,
     /**
      * Sets spd_tracking_items.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\SpdTrackingItem[] $spd_tracking_items list of Small Parcel Delivery (SPD) tracking items
+     * @param null|SpdTrackingItem[] $spd_tracking_items list of Small Parcel Delivery (SPD) tracking items
      */
     public function setSpdTrackingItems(?array $spd_tracking_items) : self
     {

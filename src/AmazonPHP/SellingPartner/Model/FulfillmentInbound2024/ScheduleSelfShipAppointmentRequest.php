@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
-use Plenty\AmazonPHP\SellingPartner\FulfillmentInboundModelInterface;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -23,9 +23,9 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class ScheduleSelfShipAppointmentRequest implements \ArrayAccess, \JsonSerializable, \Stringable, FulfillmentInboundModelInterface
+class ScheduleSelfShipAppointmentRequest implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterface
 {
-    final public const DISCRIMINATOR = null;
+    public const DISCRIMINATOR = null;
 
     /**
      * The original name of the model.
@@ -165,8 +165,20 @@ class ScheduleSelfShipAppointmentRequest implements \ArrayAccess, \JsonSerializa
      *
      * @throws AssertionException
      */
-    public function validate() : void
+    public function listInvalidProperties() : array
     {
+        return [];
+    }
+
+    /**
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
     }
 
     /**
@@ -180,7 +192,7 @@ class ScheduleSelfShipAppointmentRequest implements \ArrayAccess, \JsonSerializa
     /**
      * Sets reason_comment.
      *
-     * @param null|\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ReasonComment $reason_comment reason_comment
+     * @param null|ReasonComment $reason_comment reason_comment
      */
     public function setReasonComment(?ReasonComment $reason_comment) : self
     {
