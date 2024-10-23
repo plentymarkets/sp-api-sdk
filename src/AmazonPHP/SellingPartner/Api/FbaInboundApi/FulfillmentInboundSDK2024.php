@@ -15,7 +15,6 @@ use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
 use Psr\Log\LoggerInterface;
-use Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 /**
  * The Selling Partner API for FBA inbound operations.
