@@ -790,7 +790,7 @@ final class FulfillmentInboundSDK
                     $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
                 }
 
-                $this->getLogger('FulfillmentInbound')->debug('amazon_sp_api_sdk::log/fulfillmentInbound.request',
+                $this->getLogger('FulfillmentInbound')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'createInboundShipmentPlan',
