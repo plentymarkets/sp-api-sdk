@@ -573,7 +573,7 @@ final class FulfillmentInboundSDK
                     $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
                 }
 
-                $this->getLogger('FulfillmentInbound')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                $this->getLogger('CreateInboundShipmentRequest')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'createInboundShipment',
@@ -596,9 +596,7 @@ final class FulfillmentInboundSDK
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'createInboundShipment'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('CreateInboundShipmentRequest')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'createInboundShipment',
@@ -788,7 +786,7 @@ final class FulfillmentInboundSDK
                     $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
                 }
 
-                $this->getLogger('FulfillmentInbound')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                $this->getLogger('CreateInboundShipmentPlanRequest')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'createInboundShipmentPlan',
@@ -811,9 +809,7 @@ final class FulfillmentInboundSDK
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'createInboundShipmentPlan'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('CreateInboundShipmentPlanResponse')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'createInboundShipmentPlan',
@@ -3297,8 +3293,7 @@ final class FulfillmentInboundSDK
                     $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
                 }
 
-                $this->getLogger('FulfillmentInbound')->report('module_amazon::log/fbaInbound/debug.requestPayload',
-                    'Amazon Selling Partner API pre request',
+                $this->getLogger('PutTransportDetailsRequest')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'putTransportDetails',
@@ -3321,9 +3316,7 @@ final class FulfillmentInboundSDK
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'putTransportDetails'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('PutTransportDetailsResponse')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'putTransportDetails',
