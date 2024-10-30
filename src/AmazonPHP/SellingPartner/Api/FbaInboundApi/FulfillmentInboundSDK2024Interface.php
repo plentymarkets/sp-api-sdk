@@ -616,6 +616,20 @@ interface FulfillmentInboundSDK2024Interface
     public function listTransportationOptions(AccessToken $accessToken, string $region, string $inbound_plan_id, int $page_size = 10, ?string $pagination_token = null, ?string $placement_option_id = null, ?string $shipment_id = null) : \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListTransportationOptionsResponse;
 
     /**
+     * Operation listPrepDetails
+     *
+     * @param AccessToken $accessToken
+     * @param string $region
+     * @param string $marketplace_id  The marketplace ID. For a list of possible values, refer to [Marketplace IDs](https://developer-docs.amazon.com/sp-api/docs/marketplace-ids). (required)
+     * @param string[] $mskus  A list of merchant SKUs, a merchant-supplied identifier of a specific SKU. (required)
+     *
+     * @throws ApiException on non-2xx response
+     * @throws InvalidArgumentException
+     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\ListPrepDetailsResponse
+     */
+    public function listPrepDetails(AccessToken $accessToken, string $region, $marketplace_id, $mskus);
+
+    /**
      * Operation scheduleSelfShipAppointment.
      *
      * @param string $inbound_plan_id Identifier of an inbound plan. (required)
