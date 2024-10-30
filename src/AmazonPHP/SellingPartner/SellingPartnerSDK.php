@@ -12,7 +12,6 @@ use Plenty\AmazonPHP\SellingPartner\Api\DefinitionsApi\ProductTypesDefinitionsSD
 use Plenty\AmazonPHP\SellingPartner\Api\FbaInboundApi\FBAInboundSDK;
 use Plenty\AmazonPHP\SellingPartner\Api\FbaInboundApi\FulfillmentInboundSDK;
 use Plenty\AmazonPHP\SellingPartner\Api\FbaInboundApi\FulfillmentInboundSDK2024;
-use Plenty\AmazonPHP\SellingPartner\Api\FbaInboundApi\FulfillmentInboundSDK2024Interface;
 use Plenty\AmazonPHP\SellingPartner\Api\FbaInventoryApi\FBAInventorySDK;
 use Plenty\AmazonPHP\SellingPartner\Api\FbaOutboundApi\FulfillmentOutboundSDK;
 use Plenty\AmazonPHP\SellingPartner\Api\FeedsApi\FeedsSDK;
@@ -141,7 +140,7 @@ final class SellingPartnerSDK
         return $this->instantiateSDK(FulfillmentInboundSDK::class);
     }
 
-    public function fulfillmentInbound2024() : FulfillmentInboundSDK2024Interface
+    public function fulfillmentInbound2024() : FulfillmentInboundSDK2024
     {
         return $this->instantiateSDK(FulfillmentInboundSDK2024::class);
     }
