@@ -5031,7 +5031,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
      * @param string $marketplace_id  The marketplace ID. For a list of possible values, refer to [Marketplace IDs](https://developer-docs.amazon.com/sp-api/docs/marketplace-ids). (required)
      * @param string[] $mskus  A list of merchant SKUs, a merchant-supplied identifier of a specific SKU. (required)
      *
-     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ListPrepDetailsResponse
+     * @return ListPrepDetailsResponse
      *@throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      * @throws \Plenty\\AmazonPHP\SellingPartner\Exception\ApiException on non-2xx response
      */
@@ -5116,10 +5116,10 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             );
         }
 
-        return \AmazonPHP\SellingPartner\ObjectSerializer::deserialize(
+        return ObjectSerializer::deserialize(
             $this->configuration,
             (string) $response->getBody(),
-            '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\ListPrepDetailsResponse',
+            '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\ListPrepDetailsResponse',
             []
         );
     }
@@ -5132,7 +5132,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
      * @param string $marketplace_id  The marketplace ID. For a list of possible values, refer to [Marketplace IDs](https://developer-docs.amazon.com/sp-api/docs/marketplace-ids). (required)
      * @param string[] $mskus  A list of merchant SKUs, a merchant-supplied identifier of a specific SKU. (required)
      *
-     * @throws \AmazonPHP\SellingPartner\Exception\InvalidArgumentException
+     * @throws \Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException
      * @return \Psr\Http\Message\RequestInterface
      */
     public function listPrepDetailsRequest(AccessToken $accessToken, string $region, $marketplace_id, $mskus) : RequestInterface
@@ -5178,23 +5178,17 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
         if ($marketplace_id !== null) {
             $queryParams['marketplaceId'] = ObjectSerializer::toString($marketplace_id);
         }
+        if (is_array($mskus)) {
+            $mskus = ObjectSerializer::serializeCollection($mskus, 'form', true);
+        }
         // query params
         if ($mskus !== null) {
-            if('form' === 'form' && is_array($mskus)) {
-                foreach($mskus as $key => $value) {
-                    $queryParams[$key] = $value;
-                }
-            }
-            else {
-                $queryParams['mskus'] = $mskus;
-            }
+            $queryParams['mskus'] =ObjectSerializer::toString($mskus);
         }
 
         if (\count($queryParams)) {
             $query = http_build_query($queryParams);
         }
-
-
 
 
         if ($multipart) {
@@ -5242,7 +5236,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             $request = $request->withHeader($name, $header);
         }
 
-        return \AmazonPHP\SellingPartner\HttpSignatureHeaders::forConfig(
+        return HttpSignatureHeaders::forConfig(
             $this->configuration,
             $accessToken,
             $region,

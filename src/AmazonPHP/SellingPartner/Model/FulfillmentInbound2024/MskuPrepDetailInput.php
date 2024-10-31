@@ -42,8 +42,8 @@ class MskuPrepDetailInput implements ModelInterface, ArrayAccess, \JsonSerializa
       */
     protected static array $openAPITypes = [
         'msku' => 'string',
-        'prep_category' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepCategory',
-        'prep_types' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepType[]'
+        'prep_category' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PrepCategory',
+        'prep_types' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PrepType[]'
     ];
 
     /**

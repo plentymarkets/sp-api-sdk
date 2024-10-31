@@ -41,12 +41,12 @@ class MskuPrepDetail implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static array $openAPITypes = [
-        'all_owners_constraint' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\AllOwnersConstraint',
-        'label_owner_constraint' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\OwnerConstraint',
+        'all_owners_constraint' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\AllOwnersConstraint',
+        'label_owner_constraint' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\OwnerConstraint',
         'msku' => 'string',
-        'prep_category' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepCategory',
-        'prep_owner_constraint' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\OwnerConstraint',
-        'prep_types' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepType[]'
+        'prep_category' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PrepCategory',
+        'prep_owner_constraint' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\OwnerConstraint',
+        'prep_types' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\PrepType[]'
     ];
 
     /**

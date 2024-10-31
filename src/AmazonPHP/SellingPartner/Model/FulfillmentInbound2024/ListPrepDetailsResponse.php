@@ -40,7 +40,7 @@ class ListPrepDetailsResponse implements ModelInterface, \ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static array $openAPITypes = [
-        'msku_prep_details' => '\AmazonPHP\SellingPartner\Model\FulfillmentInbound\MskuPrepDetail[]'
+        'msku_prep_details' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\MskuPrepDetail[]'
     ];
 
     /**
