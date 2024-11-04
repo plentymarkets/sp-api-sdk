@@ -97,7 +97,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -298,7 +298,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -543,7 +543,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -799,7 +799,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -1027,7 +1027,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -1256,7 +1256,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -1512,7 +1512,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -1727,7 +1727,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -1913,7 +1913,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -2100,7 +2100,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -2327,7 +2327,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -2527,7 +2527,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -2744,7 +2744,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -2989,7 +2989,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -3233,7 +3233,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -3449,7 +3449,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -3676,7 +3676,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -3875,7 +3875,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -4077,7 +4077,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -4340,7 +4340,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -4569,7 +4569,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -4827,7 +4827,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -5093,7 +5093,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -5310,7 +5310,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -5546,7 +5546,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -5782,7 +5782,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -6020,7 +6020,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -6253,7 +6253,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -6477,7 +6477,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -6742,7 +6742,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -7006,7 +7006,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -7242,7 +7242,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -7479,7 +7479,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -7744,7 +7744,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -8009,7 +8009,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -8274,7 +8274,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -8540,7 +8540,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -8819,7 +8819,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -9091,7 +9091,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -9307,7 +9307,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -9518,7 +9518,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -9731,7 +9731,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -9971,7 +9971,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
@@ -10216,7 +10216,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
             }
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                "[{$e->getCode()}] {$e->getMessage()}",
+                "[{$e->getCode()}] {$e->getResponse()->getBody()->getContents()}",
                 (int) $e->getCode(),
                 null,
                 null,
