@@ -41,7 +41,7 @@ class InboundOperationStatus implements \ArrayAccess, \JsonSerializable, \String
         'operation' => 'string',
         'operation_id' => 'string',
         'operation_problems' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\OperationProblem[]',
-        'operation_status' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\OperationStatus',
+        'operation_status' => 'string',
     ];
 
     /**
@@ -302,7 +302,7 @@ class InboundOperationStatus implements \ArrayAccess, \JsonSerializable, \String
     /**
      * Gets operation_status.
      */
-    public function getOperationStatus() : OperationStatus
+    public function getOperationStatus() : string
     {
         return $this->container['operation_status'];
     }
@@ -310,9 +310,10 @@ class InboundOperationStatus implements \ArrayAccess, \JsonSerializable, \String
     /**
      * Sets operation_status.
      *
-     * @param OperationStatus $operation_status operation_status
+     * @param string $operation_status
+     * @return InboundOperationStatus
      */
-    public function setOperationStatus(OperationStatus $operation_status) : self
+    public function setOperationStatus(string $operation_status) : self
     {
         $this->container['operation_status'] = $operation_status;
 

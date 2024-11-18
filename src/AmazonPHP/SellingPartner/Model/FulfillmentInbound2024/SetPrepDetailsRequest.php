@@ -6,8 +6,8 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use \ArrayAccess;
-use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -24,7 +24,7 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class MskuPrepDetailInput implements ModelInterface, ArrayAccess, \JsonSerializable
+class SetPrepDetailsRequest implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -33,7 +33,7 @@ class MskuPrepDetailInput implements ModelInterface, ArrayAccess, \JsonSerializa
       *
       * @var string
       */
-    protected static string $openAPIModelName = 'MskuPrepDetailInput';
+    protected static string $openAPIModelName = 'SetPrepDetailsRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -41,9 +41,8 @@ class MskuPrepDetailInput implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static array $openAPITypes = [
-        'msku' => 'string',
-        'prep_category' => 'string',
-        'prep_types' => 'array'
+        'marketplace_id' => 'string',
+        'msku_prep_details' => 'Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\MskuPrepDetailInput[]'
     ];
 
     /**
@@ -54,9 +53,8 @@ class MskuPrepDetailInput implements ModelInterface, ArrayAccess, \JsonSerializa
       * @psalm-var array<string, string|null>
       */
     protected static array $openAPIFormats = [
-        'msku' => null,
-        'prep_category' => null,
-        'prep_types' => null
+        'marketplace_id' => null,
+        'msku_prep_details' => null
     ];
 
     /**
@@ -86,9 +84,8 @@ class MskuPrepDetailInput implements ModelInterface, ArrayAccess, \JsonSerializa
      * @var string[]
      */
     protected static array $attributeMap = [
-        'msku' => 'msku',
-        'prep_category' => 'prepCategory',
-        'prep_types' => 'prepTypes'
+        'marketplace_id' => 'marketplaceId',
+        'msku_prep_details' => 'mskuPrepDetails'
     ];
 
     /**
@@ -97,9 +94,8 @@ class MskuPrepDetailInput implements ModelInterface, ArrayAccess, \JsonSerializa
      * @var string[]
      */
     protected static array $setters = [
-        'msku' => 'setMsku',
-        'prep_category' => 'setPrepCategory',
-        'prep_types' => 'setPrepTypes'
+        'marketplace_id' => 'setMarketplaceId',
+        'msku_prep_details' => 'setMskuPrepDetails'
     ];
 
     /**
@@ -108,9 +104,8 @@ class MskuPrepDetailInput implements ModelInterface, ArrayAccess, \JsonSerializa
      * @var string[]
      */
     protected static array $getters = [
-        'msku' => 'getMsku',
-        'prep_category' => 'getPrepCategory',
-        'prep_types' => 'getPrepTypes'
+        'marketplace_id' => 'getMarketplaceId',
+        'msku_prep_details' => 'getMskuPrepDetails'
     ];
 
     /**
@@ -170,9 +165,8 @@ class MskuPrepDetailInput implements ModelInterface, ArrayAccess, \JsonSerializa
      */
     public function __construct(array $data = null)
     {
-        $this->container['msku'] = $data['msku'] ?? null;
-        $this->container['prep_category'] = $data['prep_category'] ?? null;
-        $this->container['prep_types'] = $data['prep_types'] ?? null;
+        $this->container['marketplace_id'] = $data['marketplace_id'] ?? null;
+        $this->container['msku_prep_details'] = $data['msku_prep_details'] ?? null;
     }
 
     /**
@@ -182,99 +176,99 @@ class MskuPrepDetailInput implements ModelInterface, ArrayAccess, \JsonSerializa
      */
     public function validate() : void
     {
-        if ($this->container['msku'] === null) {
-            throw new AssertionException("'msku' can't be null");
+        if ($this->container['marketplace_id'] === null) {
+            throw new AssertionException("'marketplace_id' can't be null");
         }
 
-        if ((mb_strlen($this->container['msku']) > 40)) {
-            throw new AssertionException("invalid value for 'msku', the character length must be smaller than or equal to 40.");
+        if ((mb_strlen($this->container['marketplace_id']) > 20)) {
+            throw new AssertionException("invalid value for 'marketplace_id', the character length must be smaller than or equal to 20.");
         }
 
-        if ((mb_strlen($this->container['msku']) < 1)) {
-            throw new AssertionException("invalid value for 'msku', the character length must be bigger than or equal to 1.");
+        if ((mb_strlen($this->container['marketplace_id']) < 1)) {
+            throw new AssertionException("invalid value for 'marketplace_id', the character length must be bigger than or equal to 1.");
         }
 
-        if ($this->container['prep_category'] === null) {
-            throw new AssertionException("'prep_category' can't be null");
+        if ($this->container['msku_prep_details'] === null) {
+            throw new AssertionException("'msku_prep_details' can't be null");
         }
 
-        if ($this->container['prep_types'] === null) {
-            throw new AssertionException("'prep_types' can't be null");
+        if ((count($this->container['msku_prep_details']) > 100)) {
+            throw new AssertionException("invalid value for 'msku_prep_details', number of items must be less than or equal to 100.");
+        }
+
+        if ((count($this->container['msku_prep_details']) < 1)) {
+            throw new AssertionException("invalid value for 'msku_prep_details', number of items must be greater than or equal to 1.");
         }
 
     }
 
 
     /**
-     * Gets msku
+     * Gets marketplace_id
      *
      * @return string
      */
-    public function getMsku()
+    public function getMarketplaceId()
     {
-        return $this->container['msku'];
+        return $this->container['marketplace_id'];
     }
 
     /**
-     * Sets msku
+     * Sets marketplace_id
      *
-     * @param string $msku The merchant SKU, a merchant-supplied identifier for a specific SKU.
+     * @param string $marketplace_id The marketplace ID. For a list of possible values, refer to [Marketplace IDs](https://developer-docs.amazon.com/sp-api/docs/marketplace-ids).
      *
      * @return self
      */
-    public function setMsku($msku) : self
+    public function setMarketplaceId($marketplace_id) : self
     {
-        $this->container['msku'] = $msku;
+        $this->container['marketplace_id'] = $marketplace_id;
 
         return $this;
     }
 
     /**
-     * Gets prep_category
+     * Gets msku_prep_details
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepCategory
+     * @return \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\MskuPrepDetailInput[]
      */
-    public function getPrepCategory()
+    public function getMskuPrepDetails()
     {
-        return $this->container['prep_category'];
+        return $this->container['msku_prep_details'];
     }
 
     /**
-     * Sets prep_category
+     * Sets msku_prep_details
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepCategory $prep_category prep_category
+     * @param \Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\MskuPrepDetailInput[] $msku_prep_details A list of MSKUs and related prep details.
      *
      * @return self
      */
-    public function setPrepCategory($prep_category) : self
+    public function setMskuPrepDetails($msku_prep_details) : self
     {
-        $this->container['prep_category'] = $prep_category;
+        $this->container['msku_prep_details'] = $msku_prep_details;
 
         return $this;
     }
-
     /**
-     * Gets prep_types
+     * Validate all properties.
      *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepType[]
+     * @throws AssertionException
      */
-    public function getPrepTypes()
+    public function listInvalidProperties() : array
     {
-        return $this->container['prep_types'];
+        return [];
     }
 
     /**
-     * Sets prep_types
+     * Validate all the properties in the model
+     * return true if all passed.
      *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepType[] $prep_types A list of preparation types associated with a preparation category.
-     *
-     * @return self
+     * @return bool True if all properties are valid
      */
-    public function setPrepTypes($prep_types) : self
+    public function valid() : bool
     {
-        $this->container['prep_types'] = $prep_types;
-
-        return $this;
+        return \count($this->listInvalidProperties()) === 0;
     }
     /**
      * Returns true if offset exists. False otherwise.
@@ -355,16 +349,6 @@ class MskuPrepDetailInput implements ModelInterface, ArrayAccess, \JsonSerializa
     public function toHeaderValue() : string
     {
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
-    }
-
-    public function listInvalidProperties(): array
-    {
-        return [];
-    }
-
-    public function valid(): bool
-    {
-        return \count($this->listInvalidProperties()) === 0;
     }
 }
 

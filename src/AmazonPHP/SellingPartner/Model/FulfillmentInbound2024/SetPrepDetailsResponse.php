@@ -6,8 +6,8 @@ declare(strict_types=1);
 namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
 
 use \ArrayAccess;
-use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\Exception\AssertionException;
+use Plenty\AmazonPHP\SellingPartner\ModelInterface;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
 
 /**
@@ -24,7 +24,7 @@ use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class MskuPrepDetailInput implements ModelInterface, ArrayAccess, \JsonSerializable
+class SetPrepDetailsResponse implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -33,7 +33,7 @@ class MskuPrepDetailInput implements ModelInterface, ArrayAccess, \JsonSerializa
       *
       * @var string
       */
-    protected static string $openAPIModelName = 'MskuPrepDetailInput';
+    protected static string $openAPIModelName = 'SetPrepDetailsResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -41,9 +41,7 @@ class MskuPrepDetailInput implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static array $openAPITypes = [
-        'msku' => 'string',
-        'prep_category' => 'string',
-        'prep_types' => 'array'
+        'operation_id' => 'string'
     ];
 
     /**
@@ -54,9 +52,7 @@ class MskuPrepDetailInput implements ModelInterface, ArrayAccess, \JsonSerializa
       * @psalm-var array<string, string|null>
       */
     protected static array $openAPIFormats = [
-        'msku' => null,
-        'prep_category' => null,
-        'prep_types' => null
+        'operation_id' => null
     ];
 
     /**
@@ -86,9 +82,7 @@ class MskuPrepDetailInput implements ModelInterface, ArrayAccess, \JsonSerializa
      * @var string[]
      */
     protected static array $attributeMap = [
-        'msku' => 'msku',
-        'prep_category' => 'prepCategory',
-        'prep_types' => 'prepTypes'
+        'operation_id' => 'operationId'
     ];
 
     /**
@@ -97,9 +91,7 @@ class MskuPrepDetailInput implements ModelInterface, ArrayAccess, \JsonSerializa
      * @var string[]
      */
     protected static array $setters = [
-        'msku' => 'setMsku',
-        'prep_category' => 'setPrepCategory',
-        'prep_types' => 'setPrepTypes'
+        'operation_id' => 'setOperationId'
     ];
 
     /**
@@ -108,9 +100,7 @@ class MskuPrepDetailInput implements ModelInterface, ArrayAccess, \JsonSerializa
      * @var string[]
      */
     protected static array $getters = [
-        'msku' => 'getMsku',
-        'prep_category' => 'getPrepCategory',
-        'prep_types' => 'getPrepTypes'
+        'operation_id' => 'getOperationId'
     ];
 
     /**
@@ -170,9 +160,7 @@ class MskuPrepDetailInput implements ModelInterface, ArrayAccess, \JsonSerializa
      */
     public function __construct(array $data = null)
     {
-        $this->container['msku'] = $data['msku'] ?? null;
-        $this->container['prep_category'] = $data['prep_category'] ?? null;
-        $this->container['prep_types'] = $data['prep_types'] ?? null;
+        $this->container['operation_id'] = $data['operation_id'] ?? null;
     }
 
     /**
@@ -182,97 +170,65 @@ class MskuPrepDetailInput implements ModelInterface, ArrayAccess, \JsonSerializa
      */
     public function validate() : void
     {
-        if ($this->container['msku'] === null) {
-            throw new AssertionException("'msku' can't be null");
+        if ($this->container['operation_id'] === null) {
+            throw new AssertionException("'operation_id' can't be null");
         }
 
-        if ((mb_strlen($this->container['msku']) > 40)) {
-            throw new AssertionException("invalid value for 'msku', the character length must be smaller than or equal to 40.");
+        if ((mb_strlen($this->container['operation_id']) > 38)) {
+            throw new AssertionException("invalid value for 'operation_id', the character length must be smaller than or equal to 38.");
         }
 
-        if ((mb_strlen($this->container['msku']) < 1)) {
-            throw new AssertionException("invalid value for 'msku', the character length must be bigger than or equal to 1.");
+        if ((mb_strlen($this->container['operation_id']) < 36)) {
+            throw new AssertionException("invalid value for 'operation_id', the character length must be bigger than or equal to 36.");
         }
 
-        if ($this->container['prep_category'] === null) {
-            throw new AssertionException("'prep_category' can't be null");
-        }
-
-        if ($this->container['prep_types'] === null) {
-            throw new AssertionException("'prep_types' can't be null");
+        if (!preg_match("/^[a-zA-Z0-9-]*$/", $this->container['operation_id'])) {
+            throw new AssertionException("invalid value for 'operation_id', must be conform to the pattern /^[a-zA-Z0-9-]*$/.");
         }
 
     }
 
+    /**
+     * Validate all properties.
+     *
+     * @throws AssertionException
+     */
+    public function listInvalidProperties() : array
+    {
+        return [];
+    }
 
     /**
-     * Gets msku
+     * Validate all the properties in the model
+     * return true if all passed.
+     *
+     * @return bool True if all properties are valid
+     */
+    public function valid() : bool
+    {
+        return \count($this->listInvalidProperties()) === 0;
+    }
+
+    /**
+     * Gets operation_id
      *
      * @return string
      */
-    public function getMsku()
+    public function getOperationId()
     {
-        return $this->container['msku'];
+        return $this->container['operation_id'];
     }
 
     /**
-     * Sets msku
+     * Sets operation_id
      *
-     * @param string $msku The merchant SKU, a merchant-supplied identifier for a specific SKU.
+     * @param string $operation_id UUID for the given operation.
      *
      * @return self
      */
-    public function setMsku($msku) : self
+    public function setOperationId($operation_id) : self
     {
-        $this->container['msku'] = $msku;
-
-        return $this;
-    }
-
-    /**
-     * Gets prep_category
-     *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepCategory
-     */
-    public function getPrepCategory()
-    {
-        return $this->container['prep_category'];
-    }
-
-    /**
-     * Sets prep_category
-     *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepCategory $prep_category prep_category
-     *
-     * @return self
-     */
-    public function setPrepCategory($prep_category) : self
-    {
-        $this->container['prep_category'] = $prep_category;
-
-        return $this;
-    }
-
-    /**
-     * Gets prep_types
-     *
-     * @return \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepType[]
-     */
-    public function getPrepTypes()
-    {
-        return $this->container['prep_types'];
-    }
-
-    /**
-     * Sets prep_types
-     *
-     * @param \AmazonPHP\SellingPartner\Model\FulfillmentInbound\PrepType[] $prep_types A list of preparation types associated with a preparation category.
-     *
-     * @return self
-     */
-    public function setPrepTypes($prep_types) : self
-    {
-        $this->container['prep_types'] = $prep_types;
+        $this->container['operation_id'] = $operation_id;
 
         return $this;
     }
@@ -355,16 +311,6 @@ class MskuPrepDetailInput implements ModelInterface, ArrayAccess, \JsonSerializa
     public function toHeaderValue() : string
     {
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
-    }
-
-    public function listInvalidProperties(): array
-    {
-        return [];
-    }
-
-    public function valid(): bool
-    {
-        return \count($this->listInvalidProperties()) === 0;
     }
 }
 
