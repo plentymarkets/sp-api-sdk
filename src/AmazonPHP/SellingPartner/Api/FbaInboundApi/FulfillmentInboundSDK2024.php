@@ -11,6 +11,7 @@ use Plenty\AmazonPHP\SellingPartner\Exception\InvalidArgumentException;
 use Plenty\AmazonPHP\SellingPartner\HttpFactory;
 use Plenty\AmazonPHP\SellingPartner\HttpSignatureHeaders;
 use Plenty\AmazonPHP\SellingPartner\ObjectSerializer;
+use Plenty\Log\Traits\Loggable;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
@@ -28,6 +29,7 @@ use Psr\Log\LoggerInterface;
  */
 final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interface
 {
+    use Loggable;
     public function __construct(private readonly ClientInterface $client, private readonly HttpFactory $httpFactory, private readonly Configuration $configuration, private readonly LoggerInterface $logger)
     {
     }
@@ -54,20 +56,17 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                 $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
             }
 
-            if ($this->configuration->loggingEnabled('FulfillmentInbound', 'cancelInboundPlan')) {
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'cancelInboundPlan'),
-                    'Amazon Selling Partner API pre request',
-                    [
-                        'api' => 'FulfillmentInbound',
-                        'operation' => 'cancelInboundPlan',
-                        'request_correlation_id' => $correlationId,
-                        'request_body' => (string) $sanitizedRequest->getBody(),
-                        'request_headers' => $sanitizedRequest->getHeaders(),
-                        'request_uri' => (string) $sanitizedRequest->getUri(),
-                    ]
-                );
-            }
+            $this->getLogger('cancelInboundPlan')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                [
+                    'api' => 'FulfillmentInbound',
+                    'operation' => 'cancelInboundPlan',
+                    'request_correlation_id' => $correlationId,
+                    'request_body' => (string) $sanitizedRequest->getBody(),
+                    'request_headers' => $sanitizedRequest->getHeaders(),
+                    'request_uri' => (string) $sanitizedRequest->getUri(),
+                ]
+            );
+
 
             $response = $this->client->sendRequest($request);
 
@@ -80,9 +79,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'cancelInboundPlan'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('cancelInboundPlan')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'cancelInboundPlan',
@@ -500,20 +497,17 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                 $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
             }
 
-            if ($this->configuration->loggingEnabled('FulfillmentInbound', 'confirmDeliveryWindowOptions')) {
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'confirmDeliveryWindowOptions'),
-                    'Amazon Selling Partner API pre request',
-                    [
-                        'api' => 'FulfillmentInbound',
-                        'operation' => 'confirmDeliveryWindowOptions',
-                        'request_correlation_id' => $correlationId,
-                        'request_body' => (string) $sanitizedRequest->getBody(),
-                        'request_headers' => $sanitizedRequest->getHeaders(),
-                        'request_uri' => (string) $sanitizedRequest->getUri(),
-                    ]
-                );
-            }
+            $this->getLogger('confirmDeliveryWindowOptions')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                [
+                    'api' => 'FulfillmentInbound',
+                    'operation' => 'confirmDeliveryWindowOptions',
+                    'request_correlation_id' => $correlationId,
+                    'request_body' => (string) $sanitizedRequest->getBody(),
+                    'request_headers' => $sanitizedRequest->getHeaders(),
+                    'request_uri' => (string) $sanitizedRequest->getUri(),
+                ]
+            );
+
 
             $response = $this->client->sendRequest($request);
 
@@ -526,9 +520,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'confirmDeliveryWindowOptions'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('confirmDeliveryWindowOptionsResponse')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'confirmDeliveryWindowOptions',
@@ -984,20 +976,18 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                 $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
             }
 
-            if ($this->configuration->loggingEnabled('FulfillmentInbound', 'confirmPlacementOption')) {
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'confirmPlacementOption'),
-                    'Amazon Selling Partner API pre request',
-                    [
-                        'api' => 'FulfillmentInbound',
-                        'operation' => 'confirmPlacementOption',
-                        'request_correlation_id' => $correlationId,
-                        'request_body' => (string) $sanitizedRequest->getBody(),
-                        'request_headers' => $sanitizedRequest->getHeaders(),
-                        'request_uri' => (string) $sanitizedRequest->getUri(),
-                    ]
-                );
-            }
+            $this->getLogger('confirmPlacementOption')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                'Amazon Selling Partner API pre request',
+                [
+                    'api' => 'FulfillmentInbound',
+                    'operation' => 'confirmPlacementOption',
+                    'request_correlation_id' => $correlationId,
+                    'request_body' => (string) $sanitizedRequest->getBody(),
+                    'request_headers' => $sanitizedRequest->getHeaders(),
+                    'request_uri' => (string) $sanitizedRequest->getUri(),
+                ]
+            );
+
 
             $response = $this->client->sendRequest($request);
 
@@ -1010,9 +1000,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'confirmPlacementOption'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('confirmPlacementOption')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'confirmPlacementOption',
@@ -1469,20 +1457,17 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                 $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
             }
 
-            if ($this->configuration->loggingEnabled('FulfillmentInbound', 'confirmTransportationOptions')) {
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'confirmTransportationOptions'),
-                    'Amazon Selling Partner API pre request',
-                    [
-                        'api' => 'FulfillmentInbound',
-                        'operation' => 'confirmTransportationOptions',
-                        'request_correlation_id' => $correlationId,
-                        'request_body' => (string) $sanitizedRequest->getBody(),
-                        'request_headers' => $sanitizedRequest->getHeaders(),
-                        'request_uri' => (string) $sanitizedRequest->getUri(),
-                    ]
-                );
-            }
+            $this->getLogger('confirmTransportationOptionsRequest')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                [
+                    'api' => 'FulfillmentInbound',
+                    'operation' => 'confirmTransportationOptions',
+                    'request_correlation_id' => $correlationId,
+                    'request_body' => (string) $sanitizedRequest->getBody(),
+                    'request_headers' => $sanitizedRequest->getHeaders(),
+                    'request_uri' => (string) $sanitizedRequest->getUri(),
+                ]
+            );
+
 
             $response = $this->client->sendRequest($request);
 
@@ -1495,9 +1480,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'confirmTransportationOptions'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('confirmTransportationOptionsResponse')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'confirmTransportationOptions',
@@ -1684,20 +1667,17 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                 $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
             }
 
-            if ($this->configuration->loggingEnabled('FulfillmentInbound', 'createInboundPlan')) {
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'createInboundPlan'),
-                    'Amazon Selling Partner API pre request',
-                    [
-                        'api' => 'FulfillmentInbound',
-                        'operation' => 'createInboundPlan',
-                        'request_correlation_id' => $correlationId,
-                        'request_body' => (string) $sanitizedRequest->getBody(),
-                        'request_headers' => $sanitizedRequest->getHeaders(),
-                        'request_uri' => (string) $sanitizedRequest->getUri(),
-                    ]
-                );
-            }
+            $this->getLogger('createInboundPlan')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                [
+                    'api' => 'FulfillmentInbound',
+                    'operation' => 'createInboundPlan',
+                    'request_correlation_id' => $correlationId,
+                    'request_body' => (string) $sanitizedRequest->getBody(),
+                    'request_headers' => $sanitizedRequest->getHeaders(),
+                    'request_uri' => (string) $sanitizedRequest->getUri(),
+                ]
+            );
+
 
             $response = $this->client->sendRequest($request);
 
@@ -1710,9 +1690,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'createInboundPlan'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('createInboundPlanResponse')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'createInboundPlan',
@@ -2057,20 +2035,17 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                 $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
             }
 
-            if ($this->configuration->loggingEnabled('FulfillmentInbound', 'generateDeliveryWindowOptions')) {
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'generateDeliveryWindowOptions'),
-                    'Amazon Selling Partner API pre request',
-                    [
-                        'api' => 'FulfillmentInbound',
-                        'operation' => 'generateDeliveryWindowOptions',
-                        'request_correlation_id' => $correlationId,
-                        'request_body' => (string) $sanitizedRequest->getBody(),
-                        'request_headers' => $sanitizedRequest->getHeaders(),
-                        'request_uri' => (string) $sanitizedRequest->getUri(),
-                    ]
-                );
-            }
+            $this->getLogger('generateDeliveryWindowOptions')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                [
+                    'api' => 'FulfillmentInbound',
+                    'operation' => 'generateDeliveryWindowOptions',
+                    'request_correlation_id' => $correlationId,
+                    'request_body' => (string) $sanitizedRequest->getBody(),
+                    'request_headers' => $sanitizedRequest->getHeaders(),
+                    'request_uri' => (string) $sanitizedRequest->getUri(),
+                ]
+            );
+
 
             $response = $this->client->sendRequest($request);
 
@@ -2083,9 +2058,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'generateDeliveryWindowOptions'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('generateDeliveryWindowOptionsResponse')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'generateDeliveryWindowOptions',
@@ -2484,20 +2457,17 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                 $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
             }
 
-            if ($this->configuration->loggingEnabled('FulfillmentInbound', 'generatePlacementOptions')) {
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'generatePlacementOptions'),
-                    'Amazon Selling Partner API pre request',
-                    [
-                        'api' => 'FulfillmentInbound',
-                        'operation' => 'generatePlacementOptions',
-                        'request_correlation_id' => $correlationId,
-                        'request_body' => (string) $sanitizedRequest->getBody(),
-                        'request_headers' => $sanitizedRequest->getHeaders(),
-                        'request_uri' => (string) $sanitizedRequest->getUri(),
-                    ]
-                );
-            }
+            $this->getLogger('generatePlacementOptions')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                [
+                    'api' => 'FulfillmentInbound',
+                    'operation' => 'generatePlacementOptions',
+                    'request_correlation_id' => $correlationId,
+                    'request_body' => (string) $sanitizedRequest->getBody(),
+                    'request_headers' => $sanitizedRequest->getHeaders(),
+                    'request_uri' => (string) $sanitizedRequest->getUri(),
+                ]
+            );
+
 
             $response = $this->client->sendRequest($request);
 
@@ -2510,9 +2480,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'generatePlacementOptions'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('generatePlacementOptions')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'generatePlacementOptions',
@@ -3190,20 +3158,17 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                 $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
             }
 
-            if ($this->configuration->loggingEnabled('FulfillmentInbound', 'generateTransportationOptions')) {
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'generateTransportationOptions'),
-                    'Amazon Selling Partner API pre request',
-                    [
-                        'api' => 'FulfillmentInbound',
-                        'operation' => 'generateTransportationOptions',
-                        'request_correlation_id' => $correlationId,
-                        'request_body' => (string) $sanitizedRequest->getBody(),
-                        'request_headers' => $sanitizedRequest->getHeaders(),
-                        'request_uri' => (string) $sanitizedRequest->getUri(),
-                    ]
-                );
-            }
+            $this->getLogger('generateTransportationOptions')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                [
+                    'api' => 'FulfillmentInbound',
+                    'operation' => 'generateTransportationOptions',
+                    'request_correlation_id' => $correlationId,
+                    'request_body' => (string) $sanitizedRequest->getBody(),
+                    'request_headers' => $sanitizedRequest->getHeaders(),
+                    'request_uri' => (string) $sanitizedRequest->getUri(),
+                ]
+            );
+
 
             $response = $this->client->sendRequest($request);
 
@@ -3216,9 +3181,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'generateTransportationOptions'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('generateTransportationOptionsResponse')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'generateTransportationOptions',
@@ -3633,20 +3596,16 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                 $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
             }
 
-            if ($this->configuration->loggingEnabled('FulfillmentInbound', 'getInboundOperationStatus')) {
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'getInboundOperationStatus'),
-                    'Amazon Selling Partner API pre request',
-                    [
-                        'api' => 'FulfillmentInbound',
-                        'operation' => 'getInboundOperationStatus',
-                        'request_correlation_id' => $correlationId,
-                        'request_body' => (string) $sanitizedRequest->getBody(),
-                        'request_headers' => $sanitizedRequest->getHeaders(),
-                        'request_uri' => (string) $sanitizedRequest->getUri(),
-                    ]
-                );
-            }
+            $this->getLogger('getInboundOperationStatus')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                [
+                    'api' => 'FulfillmentInbound',
+                    'operation' => 'getInboundOperationStatus',
+                    'request_correlation_id' => $correlationId,
+                    'request_body' => (string) $sanitizedRequest->getBody(),
+                    'request_headers' => $sanitizedRequest->getHeaders(),
+                    'request_uri' => (string) $sanitizedRequest->getUri(),
+                ]
+            );
 
             $response = $this->client->sendRequest($request);
 
@@ -3659,9 +3618,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'getInboundOperationStatus'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('getInboundOperationStatus')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'getInboundOperationStatus',
@@ -3832,20 +3789,16 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                 $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
             }
 
-            if ($this->configuration->loggingEnabled('FulfillmentInbound', 'getInboundPlan')) {
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'getInboundPlan'),
-                    'Amazon Selling Partner API pre request',
-                    [
-                        'api' => 'FulfillmentInbound',
-                        'operation' => 'getInboundPlan',
-                        'request_correlation_id' => $correlationId,
-                        'request_body' => (string) $sanitizedRequest->getBody(),
-                        'request_headers' => $sanitizedRequest->getHeaders(),
-                        'request_uri' => (string) $sanitizedRequest->getUri(),
-                    ]
-                );
-            }
+            $this->getLogger('getInboundPlan')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                [
+                    'api' => 'FulfillmentInbound',
+                    'operation' => 'getInboundPlan',
+                    'request_correlation_id' => $correlationId,
+                    'request_body' => (string) $sanitizedRequest->getBody(),
+                    'request_headers' => $sanitizedRequest->getHeaders(),
+                    'request_uri' => (string) $sanitizedRequest->getUri(),
+                ]
+            );
 
             $response = $this->client->sendRequest($request);
 
@@ -3858,9 +3811,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'getInboundPlan'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('getInboundPlan')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'getInboundPlan',
@@ -4297,20 +4248,16 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                 $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
             }
 
-            if ($this->configuration->loggingEnabled('FulfillmentInbound', 'getShipment')) {
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'getShipment'),
-                    'Amazon Selling Partner API pre request',
-                    [
-                        'api' => 'FulfillmentInbound',
-                        'operation' => 'getShipment',
-                        'request_correlation_id' => $correlationId,
-                        'request_body' => (string) $sanitizedRequest->getBody(),
-                        'request_headers' => $sanitizedRequest->getHeaders(),
-                        'request_uri' => (string) $sanitizedRequest->getUri(),
-                    ]
-                );
-            }
+            $this->getLogger('getShipment')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                [
+                    'api' => 'FulfillmentInbound',
+                    'operation' => 'getShipment',
+                    'request_correlation_id' => $correlationId,
+                    'request_body' => (string) $sanitizedRequest->getBody(),
+                    'request_headers' => $sanitizedRequest->getHeaders(),
+                    'request_uri' => (string) $sanitizedRequest->getUri(),
+                ]
+            );
 
             $response = $this->client->sendRequest($request);
 
@@ -4323,9 +4270,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'getShipment'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('getShipment')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'getShipment',
@@ -4784,20 +4729,16 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                 $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
             }
 
-            if ($this->configuration->loggingEnabled('FulfillmentInbound', 'listDeliveryWindowOptions')) {
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'listDeliveryWindowOptions'),
-                    'Amazon Selling Partner API pre request',
-                    [
-                        'api' => 'FulfillmentInbound',
-                        'operation' => 'listDeliveryWindowOptions',
-                        'request_correlation_id' => $correlationId,
-                        'request_body' => (string) $sanitizedRequest->getBody(),
-                        'request_headers' => $sanitizedRequest->getHeaders(),
-                        'request_uri' => (string) $sanitizedRequest->getUri(),
-                    ]
-                );
-            }
+            $this->getLogger('listDeliveryWindowOptions')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                [
+                    'api' => 'FulfillmentInbound',
+                    'operation' => 'listDeliveryWindowOptions',
+                    'request_correlation_id' => $correlationId,
+                    'request_body' => (string) $sanitizedRequest->getBody(),
+                    'request_headers' => $sanitizedRequest->getHeaders(),
+                    'request_uri' => (string) $sanitizedRequest->getUri(),
+                ]
+            );
 
             $response = $this->client->sendRequest($request);
 
@@ -4810,9 +4751,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'listDeliveryWindowOptions'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('listDeliveryWindowOptionsResponse')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'listDeliveryWindowOptions',
@@ -5049,20 +4988,17 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                 $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
             }
 
-            if ($this->configuration->loggingEnabled('FulfillmentInbound', 'listPrepDetails')) {
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'listPrepDetails'),
-                    'Amazon Selling Partner API pre request',
-                    [
-                        'api' => 'FulfillmentInbound',
-                        'operation' => 'listPrepDetails',
-                        'request_correlation_id' => $correlationId,
-                        'request_body' => (string) $sanitizedRequest->getBody(),
-                        'request_headers' => $sanitizedRequest->getHeaders(),
-                        'request_uri' => (string) $sanitizedRequest->getUri(),
-                    ]
-                );
-            }
+            $this->getLogger('listPrepDetailsRequest')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                [
+                    'api' => 'FulfillmentInbound',
+                    'operation' => 'listPrepDetails',
+                    'request_correlation_id' => $correlationId,
+                    'request_body' => (string) $sanitizedRequest->getBody(),
+                    'request_headers' => $sanitizedRequest->getHeaders(),
+                    'request_uri' => (string) $sanitizedRequest->getUri(),
+                ]
+            );
+
 
             $response = $this->client->sendRequest($request);
 
@@ -5076,9 +5012,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'listPrepDetails'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('listPrepDetailsRequest')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'listPrepDetails',
@@ -5512,20 +5446,16 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                 $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
             }
 
-            if ($this->configuration->loggingEnabled('FulfillmentInbound', 'listInboundPlanItems')) {
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'listInboundPlanItems'),
-                    'Amazon Selling Partner API pre request',
-                    [
-                        'api' => 'FulfillmentInbound',
-                        'operation' => 'listInboundPlanItems',
-                        'request_correlation_id' => $correlationId,
-                        'request_body' => (string) $sanitizedRequest->getBody(),
-                        'request_headers' => $sanitizedRequest->getHeaders(),
-                        'request_uri' => (string) $sanitizedRequest->getUri(),
-                    ]
-                );
-            }
+            $this->getLogger('listInboundPlanItems')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                [
+                    'api' => 'FulfillmentInbound',
+                    'operation' => 'listInboundPlanItems',
+                    'request_correlation_id' => $correlationId,
+                    'request_body' => (string) $sanitizedRequest->getBody(),
+                    'request_headers' => $sanitizedRequest->getHeaders(),
+                    'request_uri' => (string) $sanitizedRequest->getUri(),
+                ]
+            );
 
             $response = $this->client->sendRequest($request);
 
@@ -5538,9 +5468,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'listInboundPlanItems'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('listInboundPlanItems')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'listInboundPlanItems',
@@ -5986,20 +5914,16 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                 $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
             }
 
-            if ($this->configuration->loggingEnabled('FulfillmentInbound', 'listInboundPlans')) {
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'listInboundPlans'),
-                    'Amazon Selling Partner API pre request',
-                    [
-                        'api' => 'FulfillmentInbound',
-                        'operation' => 'listInboundPlans',
-                        'request_correlation_id' => $correlationId,
-                        'request_body' => (string) $sanitizedRequest->getBody(),
-                        'request_headers' => $sanitizedRequest->getHeaders(),
-                        'request_uri' => (string) $sanitizedRequest->getUri(),
-                    ]
-                );
-            }
+            $this->getLogger('listInboundPlans')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                [
+                    'api' => 'FulfillmentInbound',
+                    'operation' => 'listInboundPlans',
+                    'request_correlation_id' => $correlationId,
+                    'request_body' => (string) $sanitizedRequest->getBody(),
+                    'request_headers' => $sanitizedRequest->getHeaders(),
+                    'request_uri' => (string) $sanitizedRequest->getUri(),
+                ]
+            );
 
             $response = $this->client->sendRequest($request);
 
@@ -6012,9 +5936,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'listInboundPlans'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('listInboundPlans')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'listInboundPlans',
@@ -7208,20 +7130,17 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                 $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
             }
 
-            if ($this->configuration->loggingEnabled('FulfillmentInbound', 'listPlacementOptions')) {
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'listPlacementOptions'),
-                    'Amazon Selling Partner API pre request',
-                    [
-                        'api' => 'FulfillmentInbound',
-                        'operation' => 'listPlacementOptions',
-                        'request_correlation_id' => $correlationId,
-                        'request_body' => (string) $sanitizedRequest->getBody(),
-                        'request_headers' => $sanitizedRequest->getHeaders(),
-                        'request_uri' => (string) $sanitizedRequest->getUri(),
-                    ]
-                );
-            }
+            $this->getLogger('listPlacementOptionsRequest')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                [
+                    'api' => 'FulfillmentInbound',
+                    'operation' => 'listPlacementOptions',
+                    'request_correlation_id' => $correlationId,
+                    'request_body' => (string) $sanitizedRequest->getBody(),
+                    'request_headers' => $sanitizedRequest->getHeaders(),
+                    'request_uri' => (string) $sanitizedRequest->getUri(),
+                ]
+            );
+
 
             $response = $this->client->sendRequest($request);
 
@@ -7234,9 +7153,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'listPlacementOptions'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('listPlacementOptionsResponse')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'listPlacementOptions',
@@ -7975,20 +7892,17 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                 $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
             }
 
-            if ($this->configuration->loggingEnabled('FulfillmentInbound', 'listShipmentItems')) {
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'listShipmentItems'),
-                    'Amazon Selling Partner API pre request',
-                    [
-                        'api' => 'FulfillmentInbound',
-                        'operation' => 'listShipmentItems',
-                        'request_correlation_id' => $correlationId,
-                        'request_body' => (string) $sanitizedRequest->getBody(),
-                        'request_headers' => $sanitizedRequest->getHeaders(),
-                        'request_uri' => (string) $sanitizedRequest->getUri(),
-                    ]
-                );
-            }
+            $this->getLogger('listShipmentItemsRequest')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                [
+                    'api' => 'FulfillmentInbound',
+                    'operation' => 'listShipmentItems',
+                    'request_correlation_id' => $correlationId,
+                    'request_body' => (string) $sanitizedRequest->getBody(),
+                    'request_headers' => $sanitizedRequest->getHeaders(),
+                    'request_uri' => (string) $sanitizedRequest->getUri(),
+                ]
+            );
+
 
             $response = $this->client->sendRequest($request);
 
@@ -8001,9 +7915,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'listShipmentItems'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('listShipmentItemsRequest')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'listShipmentItems',
@@ -8506,20 +8418,16 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                 $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
             }
 
-            if ($this->configuration->loggingEnabled('FulfillmentInbound', 'listTransportationOptions')) {
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'listTransportationOptions'),
-                    'Amazon Selling Partner API pre request',
-                    [
-                        'api' => 'FulfillmentInbound',
-                        'operation' => 'listTransportationOptions',
-                        'request_correlation_id' => $correlationId,
-                        'request_body' => (string) $sanitizedRequest->getBody(),
-                        'request_headers' => $sanitizedRequest->getHeaders(),
-                        'request_uri' => (string) $sanitizedRequest->getUri(),
-                    ]
-                );
-            }
+            $this->getLogger('listTransportationOptionsRequest')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                [
+                    'api' => 'FulfillmentInbound',
+                    'operation' => 'listTransportationOptions',
+                    'request_correlation_id' => $correlationId,
+                    'request_body' => (string) $sanitizedRequest->getBody(),
+                    'request_headers' => $sanitizedRequest->getHeaders(),
+                    'request_uri' => (string) $sanitizedRequest->getUri(),
+                ]
+            );
 
             $response = $this->client->sendRequest($request);
 
@@ -8532,9 +8440,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'listTransportationOptions'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('listTransportationOptionsResponse')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'listTransportationOptions',
@@ -9057,20 +8963,17 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                 $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
             }
 
-            if ($this->configuration->loggingEnabled('FulfillmentInbound', 'setPackingInformation')) {
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'setPackingInformation'),
-                    'Amazon Selling Partner API pre request',
-                    [
-                        'api' => 'FulfillmentInbound',
-                        'operation' => 'setPackingInformation',
-                        'request_correlation_id' => $correlationId,
-                        'request_body' => (string) $sanitizedRequest->getBody(),
-                        'request_headers' => $sanitizedRequest->getHeaders(),
-                        'request_uri' => (string) $sanitizedRequest->getUri(),
-                    ]
-                );
-            }
+            $this->getLogger('setPackingInformationRequest')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                [
+                    'api' => 'FulfillmentInbound',
+                    'operation' => 'setPackingInformation',
+                    'request_correlation_id' => $correlationId,
+                    'request_body' => (string) $sanitizedRequest->getBody(),
+                    'request_headers' => $sanitizedRequest->getHeaders(),
+                    'request_uri' => (string) $sanitizedRequest->getUri(),
+                ]
+            );
+
 
             $response = $this->client->sendRequest($request);
 
@@ -9083,9 +8986,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'setPackingInformation'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('setPackingInformationResponse')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'setPackingInformation',
@@ -9264,20 +9165,16 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                 $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
             }
 
-            if ($this->configuration->loggingEnabled('FulfillmentInbound', 'setPrepDetails')) {
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'setPrepDetails'),
-                    'Amazon Selling Partner API pre request',
-                    [
-                        'api' => 'FulfillmentInbound',
-                        'operation' => 'setPackingInformation',
-                        'request_correlation_id' => $correlationId,
-                        'request_body' => (string) $sanitizedRequest->getBody(),
-                        'request_headers' => $sanitizedRequest->getHeaders(),
-                        'request_uri' => (string) $sanitizedRequest->getUri(),
-                    ]
-                );
-            }
+            $this->getLogger('setPrepDetailsRequest')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                [
+                    'api' => 'FulfillmentInbound',
+                    'operation' => 'setPackingInformation',
+                    'request_correlation_id' => $correlationId,
+                    'request_body' => (string) $sanitizedRequest->getBody(),
+                    'request_headers' => $sanitizedRequest->getHeaders(),
+                    'request_uri' => (string) $sanitizedRequest->getUri(),
+                ]
+            );
 
             $response = $this->client->sendRequest($request);
 
@@ -9290,9 +9187,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'setPrepDetails'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('setPrepDetailsResponse')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'setPackingInformation',
@@ -9443,20 +9338,17 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                 $sanitizedRequest = $sanitizedRequest->withoutHeader($sensitiveHeader);
             }
 
-            if ($this->configuration->loggingEnabled('FulfillmentInbound', 'updateInboundPlanName')) {
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'updateInboundPlanName'),
-                    'Amazon Selling Partner API pre request',
-                    [
-                        'api' => 'FulfillmentInbound',
-                        'operation' => 'updateInboundPlanName',
-                        'request_correlation_id' => $correlationId,
-                        'request_body' => (string) $sanitizedRequest->getBody(),
-                        'request_headers' => $sanitizedRequest->getHeaders(),
-                        'request_uri' => (string) $sanitizedRequest->getUri(),
-                    ]
-                );
-            }
+            $this->getLogger('updateInboundPlanNameRequest')->report('module_amazon::log/fbaInbound/debug.requestPayload',
+                [
+                    'api' => 'FulfillmentInbound',
+                    'operation' => 'updateInboundPlanName',
+                    'request_correlation_id' => $correlationId,
+                    'request_body' => (string) $sanitizedRequest->getBody(),
+                    'request_headers' => $sanitizedRequest->getHeaders(),
+                    'request_uri' => (string) $sanitizedRequest->getUri(),
+                ]
+            );
+
 
             $response = $this->client->sendRequest($request);
 
@@ -9469,9 +9361,7 @@ final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interf
                     $sanitizedResponse = $sanitizedResponse->withoutHeader($sensitiveHeader);
                 }
 
-                $this->logger->log(
-                    $this->configuration->logLevel('FulfillmentInbound', 'updateInboundPlanName'),
-                    'Amazon Selling Partner API post request',
+                $this->getLogger('updateInboundPlanNameResponse')->report('module_amazon::log/fbaInbound/debug.requestPayload',
                     [
                         'api' => 'FulfillmentInbound',
                         'operation' => 'updateInboundPlanName',
