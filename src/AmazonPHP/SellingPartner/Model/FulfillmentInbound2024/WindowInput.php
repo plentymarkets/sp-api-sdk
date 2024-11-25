@@ -38,7 +38,7 @@ class WindowInput implements \ArrayAccess, \JsonSerializable, \Stringable, Model
      * @var string[]
      */
     protected static array $openAPITypes = [
-        'start' => '\DateTimeInterface',
+        'start' => 'string',
     ];
 
     /**
@@ -51,7 +51,7 @@ class WindowInput implements \ArrayAccess, \JsonSerializable, \Stringable, Model
      * @psalm-var array<string, string|null>
      */
     protected static array $openAPIFormats = [
-        'start' => 'date-time',
+        'start' => 'string',
     ];
 
     /**
@@ -61,7 +61,7 @@ class WindowInput implements \ArrayAccess, \JsonSerializable, \Stringable, Model
      * @var string[]
      */
     protected static array $attributeMap = [
-        'start' => 'start',
+        'start' => 'string',
     ];
 
     /**
@@ -190,7 +190,7 @@ class WindowInput implements \ArrayAccess, \JsonSerializable, \Stringable, Model
     /**
      * Gets start.
      */
-    public function getStart() : \DateTimeInterface
+    public function getStart() : string
     {
         return $this->container['start'];
     }
@@ -198,9 +198,10 @@ class WindowInput implements \ArrayAccess, \JsonSerializable, \Stringable, Model
     /**
      * Sets start.
      *
-     * @param \DateTimeInterface $start The start date of the window. The time component must be zero.
+     * @param string $start The start date of the window. The time component must be zero.
+     * @return WindowInput
      */
-    public function setStart(\DateTimeInterface $start) : self
+    public function setStart(string $start) : self
     {
         $this->container['start'] = $start;
 
