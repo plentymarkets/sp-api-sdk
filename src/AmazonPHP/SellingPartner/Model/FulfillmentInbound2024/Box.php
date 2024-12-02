@@ -39,7 +39,7 @@ class Box implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterfac
      */
     protected static array $openAPITypes = [
         'box_id' => 'string',
-        'content_information_source' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\BoxContentInformationSource',
+        'content_information_source' => 'string',
         'destination_region' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Region',
         'dimensions' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Dimensions',
         'items' => '\Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024\Item[]',
@@ -306,7 +306,7 @@ class Box implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterfac
     /**
      * Gets content_information_source.
      */
-    public function getContentInformationSource() : ?BoxContentInformationSource
+    public function getContentInformationSource() : ?string
     {
         return $this->container['content_information_source'];
     }
@@ -314,9 +314,9 @@ class Box implements \ArrayAccess, \JsonSerializable, \Stringable, ModelInterfac
     /**
      * Sets content_information_source.
      *
-     * @param null|BoxContentInformationSource $content_information_source content_information_source
+     * @param null|string $content_information_source content_information_source
      */
-    public function setContentInformationSource(?BoxContentInformationSource $content_information_source) : self
+    public function setContentInformationSource(?string $content_information_source) : self
     {
         $this->container['content_information_source'] = $content_information_source;
 
