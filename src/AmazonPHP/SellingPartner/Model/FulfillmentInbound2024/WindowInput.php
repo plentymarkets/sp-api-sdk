@@ -61,7 +61,7 @@ class WindowInput implements \ArrayAccess, \JsonSerializable, \Stringable, Model
      * @var string[]
      */
     protected static array $attributeMap = [
-        'start' => 'string',
+        'start' => 'start',
     ];
 
     /**
