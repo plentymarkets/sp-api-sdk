@@ -30,8 +30,22 @@ use Psr\Log\LoggerInterface;
 final class FulfillmentInboundSDK2024 implements FulfillmentInboundSDK2024Interface
 {
     use Loggable;
-    public function __construct(private readonly ClientInterface $client, private readonly HttpFactory $httpFactory, private readonly Configuration $configuration, private readonly LoggerInterface $logger)
+    
+    private /** [COMPAT] ClientInterface */ $client;
+
+    private /** [COMPAT] HttpFactory */ $httpFactory;
+
+    private /** [COMPAT] Configuration */ $configuration;
+
+    private /** [COMPAT] LoggerInterface */ $logger;
+
+
+    public function __construct(ClientInterface $client, HttpFactory $requestFactory, Configuration $configuration, LoggerInterface $logger)
     {
+        $this->client = $client;
+        $this->httpFactory = $requestFactory;
+        $this->configuration = $configuration;
+        $this->logger = $logger;
     }
 
     /**
