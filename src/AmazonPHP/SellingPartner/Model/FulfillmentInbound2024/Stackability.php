@@ -20,9 +20,9 @@ class Stackability
     /**
      * Possible values of this enum.
      */
-    final public const STACKABLE = 'STACKABLE';
+     public const STACKABLE = 'STACKABLE';
 
-    final public const NON_STACKABLE = 'NON_STACKABLE';
+     public const NON_STACKABLE = 'NON_STACKABLE';
 
     public function __construct(string $value)
     {

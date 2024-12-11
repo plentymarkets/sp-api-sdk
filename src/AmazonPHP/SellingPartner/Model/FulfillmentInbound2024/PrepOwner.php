@@ -20,11 +20,11 @@ class PrepOwner
     /**
      * Possible values of this enum.
      */
-    final public const AMAZON = 'AMAZON';
+     public const AMAZON = 'AMAZON';
 
-    final public const SELLER = 'SELLER';
+     public const SELLER = 'SELLER';
 
-    final public const NONE = 'NONE';
+     public const NONE = 'NONE';
 
     public function __construct(string $value)
     {

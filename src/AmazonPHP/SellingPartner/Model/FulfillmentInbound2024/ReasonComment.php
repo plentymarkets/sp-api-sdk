@@ -20,23 +20,23 @@ class ReasonComment
     /**
      * Possible values of this enum.
      */
-    final public const APPOINTMENT_REQUESTED_BY_MISTAKE = 'APPOINTMENT_REQUESTED_BY_MISTAKE';
+     public const APPOINTMENT_REQUESTED_BY_MISTAKE = 'APPOINTMENT_REQUESTED_BY_MISTAKE';
 
-    final public const VEHICLE_DELAY = 'VEHICLE_DELAY';
+     public const VEHICLE_DELAY = 'VEHICLE_DELAY';
 
-    final public const SLOT_NOT_SUITABLE = 'SLOT_NOT_SUITABLE';
+     public const SLOT_NOT_SUITABLE = 'SLOT_NOT_SUITABLE';
 
-    final public const OUTSIDE_CARRIER_BUSINESS_HOURS = 'OUTSIDE_CARRIER_BUSINESS_HOURS';
+     public const OUTSIDE_CARRIER_BUSINESS_HOURS = 'OUTSIDE_CARRIER_BUSINESS_HOURS';
 
-    final public const UNFAVOURABLE_EXTERNAL_CONDITIONS = 'UNFAVOURABLE_EXTERNAL_CONDITIONS';
+     public const UNFAVOURABLE_EXTERNAL_CONDITIONS = 'UNFAVOURABLE_EXTERNAL_CONDITIONS';
 
-    final public const PROCUREMENT_DELAY = 'PROCUREMENT_DELAY';
+     public const PROCUREMENT_DELAY = 'PROCUREMENT_DELAY';
 
-    final public const SHIPPING_PLAN_CHANGED = 'SHIPPING_PLAN_CHANGED';
+     public const SHIPPING_PLAN_CHANGED = 'SHIPPING_PLAN_CHANGED';
 
-    final public const INCREASED_QUANTITY = 'INCREASED_QUANTITY';
+     public const INCREASED_QUANTITY = 'INCREASED_QUANTITY';
 
-    final public const OTHER = 'OTHER';
+     public const OTHER = 'OTHER';
 
     public function __construct(string $value)
     {

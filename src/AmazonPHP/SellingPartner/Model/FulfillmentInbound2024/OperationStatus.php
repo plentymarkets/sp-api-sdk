@@ -20,11 +20,11 @@ class OperationStatus
     /**
      * Possible values of this enum.
      */
-    final public const SUCCESS = 'SUCCESS';
+     public const SUCCESS = 'SUCCESS';
 
-    final public const FAILED = 'FAILED';
+     public const FAILED = 'FAILED';
 
-    final public const IN_PROGRESS = 'IN_PROGRESS';
+     public const IN_PROGRESS = 'IN_PROGRESS';
 
     public function __construct(string $value)
     {

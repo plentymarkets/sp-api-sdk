@@ -20,27 +20,27 @@ class ItemLabelPageType
     /**
      * Possible values of this enum.
      */
-    final public const A4_21 = 'A4_21';
+     public const A4_21 = 'A4_21';
 
-    final public const A4_24 = 'A4_24';
+     public const A4_24 = 'A4_24';
 
-    final public const A4_24_64X33 = 'A4_24_64x33';
+     public const A4_24_64X33 = 'A4_24_64x33';
 
-    final public const A4_24_66X35 = 'A4_24_66x35';
+     public const A4_24_66X35 = 'A4_24_66x35';
 
-    final public const A4_24_70X36 = 'A4_24_70x36';
+     public const A4_24_70X36 = 'A4_24_70x36';
 
-    final public const A4_24_70X37 = 'A4_24_70x37';
+     public const A4_24_70X37 = 'A4_24_70x37';
 
-    final public const A4_24I = 'A4_24i';
+     public const A4_24I = 'A4_24i';
 
-    final public const A4_27 = 'A4_27';
+     public const A4_27 = 'A4_27';
 
-    final public const A4_40_52X29 = 'A4_40_52x29';
+     public const A4_40_52X29 = 'A4_40_52x29';
 
-    final public const A4_44_48X25 = 'A4_44_48x25';
+     public const A4_44_48X25 = 'A4_44_48x25';
 
-    final public const LETTER_30 = 'Letter_30';
+     public const LETTER_30 = 'Letter_30';
 
     public function __construct(string $value)
     {

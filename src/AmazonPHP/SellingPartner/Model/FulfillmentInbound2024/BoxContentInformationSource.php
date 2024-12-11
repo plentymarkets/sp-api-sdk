@@ -20,11 +20,11 @@ class BoxContentInformationSource
     /**
      * Possible values of this enum.
      */
-    final public const BOX_CONTENT_PROVIDED = 'BOX_CONTENT_PROVIDED';
+    public const BOX_CONTENT_PROVIDED = 'BOX_CONTENT_PROVIDED';
 
-    final public const MANUAL_PROCESS = 'MANUAL_PROCESS';
+    public const MANUAL_PROCESS = 'MANUAL_PROCESS';
 
-    final public const BARCODE_2_D = 'BARCODE_2D';
+    public const BARCODE_2_D = 'BARCODE_2D';
 
     public function __construct(string $value)
     {

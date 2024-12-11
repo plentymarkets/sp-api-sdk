@@ -20,9 +20,9 @@ class UnitOfWeight
     /**
      * Possible values of this enum.
      */
-    final public const LB = 'LB';
+     public const LB = 'LB';
 
-    final public const KG = 'KG';
+     public const KG = 'KG';
 
     public function __construct(string $value)
     {

@@ -20,9 +20,9 @@ class LabelPrintType
     /**
      * Possible values of this enum.
      */
-    final public const STANDARD_FORMAT = 'STANDARD_FORMAT';
+     public const STANDARD_FORMAT = 'STANDARD_FORMAT';
 
-    final public const THERMAL_PRINTING = 'THERMAL_PRINTING';
+     public const THERMAL_PRINTING = 'THERMAL_PRINTING';
 
     public function __construct(string $value)
     {

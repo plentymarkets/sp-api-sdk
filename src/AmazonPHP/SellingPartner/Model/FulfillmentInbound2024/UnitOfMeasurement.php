@@ -20,9 +20,9 @@ class UnitOfMeasurement
     /**
      * Possible values of this enum.
      */
-    final public const IN = 'IN';
+     public const IN = 'IN';
 
-    final public const CM = 'CM';
+     public const CM = 'CM';
 
     public function __construct(string $value)
     {
