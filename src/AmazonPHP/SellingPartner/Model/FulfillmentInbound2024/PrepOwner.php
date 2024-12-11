@@ -16,6 +16,7 @@ namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
  */
 class PrepOwner
 {
+    private string $value;
     /**
      * Possible values of this enum.
      */
@@ -25,8 +26,9 @@ class PrepOwner
 
     final public const NONE = 'NONE';
 
-    public function __construct(private readonly string $value)
+    public function __construct(string $value)
     {
+        $this->value = $value;
     }
 
     /**
@@ -34,7 +36,7 @@ class PrepOwner
      *
      * @return string[]
      */
-    public static function getAllowableEnumValues() : array
+    public static function getAllowableEnumValues(): array
     {
         return [
             self::AMAZON,
@@ -43,7 +45,7 @@ class PrepOwner
         ];
     }
 
-    public function toString() : string
+    public function toString(): string
     {
         return $this->value;
     }

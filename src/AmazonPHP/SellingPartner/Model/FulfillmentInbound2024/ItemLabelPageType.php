@@ -16,6 +16,7 @@ namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
  */
 class ItemLabelPageType
 {
+    private string $value;
     /**
      * Possible values of this enum.
      */
@@ -41,8 +42,9 @@ class ItemLabelPageType
 
     final public const LETTER_30 = 'Letter_30';
 
-    public function __construct(private readonly string $value)
+    public function __construct(string $value)
     {
+        $this->value = $value;
     }
 
     /**
@@ -50,7 +52,7 @@ class ItemLabelPageType
      *
      * @return string[]
      */
-    public static function getAllowableEnumValues() : array
+    public static function getAllowableEnumValues(): array
     {
         return [
             self::A4_21,
@@ -67,7 +69,7 @@ class ItemLabelPageType
         ];
     }
 
-    public function toString() : string
+    public function toString(): string
     {
         return $this->value;
     }

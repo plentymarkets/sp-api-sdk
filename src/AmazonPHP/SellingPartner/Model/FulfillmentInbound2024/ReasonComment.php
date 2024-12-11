@@ -16,6 +16,7 @@ namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
  */
 class ReasonComment
 {
+    private string $value;
     /**
      * Possible values of this enum.
      */
@@ -37,8 +38,9 @@ class ReasonComment
 
     final public const OTHER = 'OTHER';
 
-    public function __construct(private readonly string $value)
+    public function __construct(string $value)
     {
+        $this->value = $value;
     }
 
     /**
@@ -46,7 +48,7 @@ class ReasonComment
      *
      * @return string[]
      */
-    public static function getAllowableEnumValues() : array
+    public static function getAllowableEnumValues(): array
     {
         return [
             self::APPOINTMENT_REQUESTED_BY_MISTAKE,
@@ -61,7 +63,7 @@ class ReasonComment
         ];
     }
 
-    public function toString() : string
+    public function toString(): string
     {
         return $this->value;
     }

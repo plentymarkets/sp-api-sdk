@@ -16,6 +16,7 @@ namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
  */
 class UnitOfWeight
 {
+    private string $value;
     /**
      * Possible values of this enum.
      */
@@ -23,8 +24,9 @@ class UnitOfWeight
 
     final public const KG = 'KG';
 
-    public function __construct(private readonly string $value)
+    public function __construct(string $value)
     {
+        $this->value = $value;
     }
 
     /**
@@ -32,7 +34,7 @@ class UnitOfWeight
      *
      * @return string[]
      */
-    public static function getAllowableEnumValues() : array
+    public static function getAllowableEnumValues(): array
     {
         return [
             self::LB,
@@ -40,7 +42,7 @@ class UnitOfWeight
         ];
     }
 
-    public function toString() : string
+    public function toString(): string
     {
         return $this->value;
     }

@@ -16,6 +16,7 @@ namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
  */
 class OperationStatus
 {
+    private string $status;
     /**
      * Possible values of this enum.
      */
@@ -25,8 +26,9 @@ class OperationStatus
 
     final public const IN_PROGRESS = 'IN_PROGRESS';
 
-    public function __construct(private readonly string $value)
+    public function __construct(string $value)
     {
+        $this->value = $value;
     }
 
     /**
@@ -34,7 +36,7 @@ class OperationStatus
      *
      * @return string[]
      */
-    public static function getAllowableEnumValues() : array
+    public static function getAllowableEnumValues(): array
     {
         return [
             self::SUCCESS,
@@ -43,7 +45,7 @@ class OperationStatus
         ];
     }
 
-    public function toString() : string
+    public function toString(): string
     {
         return $this->value;
     }

@@ -16,6 +16,7 @@ namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
  */
 class BoxContentInformationSource
 {
+    private string $value;
     /**
      * Possible values of this enum.
      */
@@ -25,8 +26,9 @@ class BoxContentInformationSource
 
     final public const BARCODE_2_D = 'BARCODE_2D';
 
-    public function __construct(private readonly string $value)
+    public function __construct(string $value)
     {
+        $this->value = $value;
     }
 
     /**
@@ -34,7 +36,7 @@ class BoxContentInformationSource
      *
      * @return string[]
      */
-    public static function getAllowableEnumValues() : array
+    public static function getAllowableEnumValues(): array
     {
         return [
             self::BOX_CONTENT_PROVIDED,
@@ -43,7 +45,7 @@ class BoxContentInformationSource
         ];
     }
 
-    public function toString() : string
+    public function toString(): string
     {
         return $this->value;
     }

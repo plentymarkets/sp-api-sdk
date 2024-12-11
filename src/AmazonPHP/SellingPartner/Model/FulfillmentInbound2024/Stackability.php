@@ -16,6 +16,7 @@ namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
  */
 class Stackability
 {
+    private string $value;
     /**
      * Possible values of this enum.
      */
@@ -23,8 +24,9 @@ class Stackability
 
     final public const NON_STACKABLE = 'NON_STACKABLE';
 
-    public function __construct(private readonly string $value)
+    public function __construct(string $value)
     {
+        $this->value = $value;
     }
 
     /**
@@ -32,7 +34,7 @@ class Stackability
      *
      * @return string[]
      */
-    public static function getAllowableEnumValues() : array
+    public static function getAllowableEnumValues(): array
     {
         return [
             self::STACKABLE,
@@ -40,7 +42,7 @@ class Stackability
         ];
     }
 
-    public function toString() : string
+    public function toString(): string
     {
         return $this->value;
     }

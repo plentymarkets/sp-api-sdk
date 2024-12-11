@@ -16,6 +16,7 @@ namespace Plenty\AmazonPHP\SellingPartner\Model\FulfillmentInbound2024;
  */
 class UnitOfMeasurement
 {
+    private string $value;
     /**
      * Possible values of this enum.
      */
@@ -23,8 +24,9 @@ class UnitOfMeasurement
 
     final public const CM = 'CM';
 
-    public function __construct(private readonly string $value)
+    public function __construct(string $value)
     {
+        $this->value = $value;
     }
 
     /**
@@ -32,7 +34,7 @@ class UnitOfMeasurement
      *
      * @return string[]
      */
-    public static function getAllowableEnumValues() : array
+    public static function getAllowableEnumValues(): array
     {
         return [
             self::IN,
@@ -40,7 +42,7 @@ class UnitOfMeasurement
         ];
     }
 
-    public function toString() : string
+    public function toString(): string
     {
         return $this->value;
     }
